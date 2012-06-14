@@ -1,0 +1,9 @@
+Package: ch.sukha.TestMachine
+Name: TestMachine
+Depends: mobilesubstrate
+Version: 0.0.1
+Architecture: iphoneos-arm
+Description: An awesome MobileSubstrate tweak!
+Maintainer: Peter Farkas
+Author: Peter Farkas
+Section: Tweaks
