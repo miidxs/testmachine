@@ -29,7 +29,7 @@ TestMachine_FILES = Tweak.xm \
   KIF/Additions/UIWindow-KIFAdditions.m \
   NSData+Base64.m \
   TestMachine.m \
-  XPathDriver.m \
+  IosDriver.m \
   AppHTTPConnection.m \
   Visualizer.m
 
