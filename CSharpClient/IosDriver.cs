@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Text;
 using System.Net;
 using System.IO;
@@ -12,67 +12,19 @@ using CookComputing.XmlRpc;
 /// </summary> 
 public class IosDriver {
 
-    interface IIosDriver : IXmlRpcProxy {
-
-        [XmlRpcMethod("tap")]
-        bool tap(String xpath);
-
-        [XmlRpcMethod("tap")]
-        bool tap(String xpath, double x, double y);
-
-        [XmlRpcMethod("swipe")]
-        bool swipe(String xpath, double x1, double y1, double x2, double y2);
-
-        [XmlRpcMethod("setText")]
-        bool setText(String xpath, String text);
-
-        [XmlRpcMethod("setSwitch")]
-        bool setSwitch(String xpath, bool on);
-
-        [XmlRpcMethod("selectPickerViewRow")]
-        bool selectPickerViewRow(String xpath, int rowIndex, int componentIndex);
-
-        [XmlRpcMethod("scrollToTableViewRow")]
-        bool scrollToTableViewRow(String xpath, int sectionIndex, int rowIndex);
-
-        [XmlRpcMethod("check")]
-        bool check(String xpath);
-
-        [XmlRpcMethod("startPlayingSound")]
-        void startPlayingSound(byte[] data);
-
-        [XmlRpcMethod("pausePlayingSound")]
-        void pausePlayingSound();
-
-        [XmlRpcMethod("resumePlayingSound")]
-        void resumePlayingSound();
-
-        [XmlRpcMethod("startRecordingSound")]
-        void startRecordingSound(double sampleRate);
-
-        [XmlRpcMethod("finishRecordingSound")]
-        byte[] finishRecordingSound();
-
-        [XmlRpcMethod("openUrl")]
-        void openUrl(String url);
-
-        [XmlRpcMethod("notifyPost")]
-        void notifyPost(String name, double delay);
-    }
-
     private const int DEFAULT_PORT = 50000;
 
     private const double TIME_GAP = 2.0;
 
     private String _deviceIp;
 
-    private double _timeOut = 10.0;
+    private double _timeOut = 60.0;
 
     private IIosDriver _client;
 
     private DateTime _startTime;
 
-    public IPhoneDriver(String deviceIp) {
+    public IosDriver(String deviceIp) {
         _deviceIp = deviceIp;
         _client = XmlRpcProxyGen.Create<IIosDriver>();
         SetPort(DEFAULT_PORT);
@@ -242,6 +194,54 @@ public class IosDriver {
     /// </summary>
     public void NotifyPost(String name, double delay) {
         _client.notifyPost(name, delay);
+    }
+
+    public interface IIosDriver : IXmlRpcProxy {
+
+        [XmlRpcMethod("tap")]
+        bool tap(String xpath);
+
+        [XmlRpcMethod("tap")]
+        bool tap(String xpath, double x, double y);
+
+        [XmlRpcMethod("swipe")]
+        bool swipe(String xpath, double x1, double y1, double x2, double y2);
+
+        [XmlRpcMethod("setText")]
+        bool setText(String xpath, String text);
+
+        [XmlRpcMethod("setSwitch")]
+        bool setSwitch(String xpath, bool on);
+
+        [XmlRpcMethod("selectPickerViewRow")]
+        bool selectPickerViewRow(String xpath, int rowIndex, int componentIndex);
+
+        [XmlRpcMethod("scrollToTableViewRow")]
+        bool scrollToTableViewRow(String xpath, int sectionIndex, int rowIndex);
+
+        [XmlRpcMethod("check")]
+        bool check(String xpath);
+
+        [XmlRpcMethod("startPlayingSound")]
+        void startPlayingSound(byte[] data);
+
+        [XmlRpcMethod("pausePlayingSound")]
+        void pausePlayingSound();
+
+        [XmlRpcMethod("resumePlayingSound")]
+        void resumePlayingSound();
+
+        [XmlRpcMethod("startRecordingSound")]
+        void startRecordingSound(double sampleRate);
+
+        [XmlRpcMethod("finishRecordingSound")]
+        byte[] finishRecordingSound();
+
+        [XmlRpcMethod("openUrl")]
+        void openUrl(String url);
+
+        [XmlRpcMethod("notifyPost")]
+        void notifyPost(String name, double delay);
     }
 
     private void Reset() {

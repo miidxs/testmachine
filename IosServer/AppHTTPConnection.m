@@ -129,7 +129,6 @@
 	
 	NSData *browseData = [response dataUsingEncoding:NSUTF8StringEncoding];
 	HTTPDataResponse *r = [[[HTTPDataResponse alloc] initWithData:browseData] autorelease];
-    //[r setHeader:@"Content-Type" value:@"text/xml"];
 	return r;
 }
 
