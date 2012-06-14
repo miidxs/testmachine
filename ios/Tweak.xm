@@ -15,30 +15,46 @@
 	// after reboot, start Settings app
 	// otherwise, the screen will be locked, even if "Auto-Lock" is set to "never"
 	[[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"prefs:"]];
+
+	
+	// http://stackoverflow.com/questions/4141403/reroute-iphone-audio-through-speaker-headphone-or-bluetooth
+	
+	// Display the audio route button (Bluetooth / Speaker / iPhone)
+	UIView *mpVolumeViewParentView = [[UIView alloc] initWithFrame:CGRectMake(0, 80, 320, 240)];
+	mpVolumeViewParentView.backgroundColor = [UIColor clearColor];
+	mpVolumeViewParentView.clipsToBounds = YES;
+	
+	MPVolumeView *systemVolumeSlider = [[MPVolumeView alloc] initWithFrame:CGRectMake(0, 80, 320, 240)];
+	[mpVolumeViewParentView addSubview:systemVolumeSlider];
+	[systemVolumeSlider release];
+	
+	[[[UIApplication sharedApplication] keyWindow] addSubview:mpVolumeViewParentView];
+	[mpVolumeViewParentView release];	
+
 }
 
 %end
 
 
+static BOOL _lock;
 static BOOL _wasActive = FALSE;
-
-static UIView *mpVolumeViewParentView;
 
 %hook UIApplication
 
 + (id)sharedApplication {
 	UIApplication *orig = %orig;
-	if (![orig class]) {
+	if (_lock || ![orig class]) {
 		return orig;
 	}
+	_lock = TRUE;
 
 	BOOL active = (orig.applicationState == UIApplicationStateActive);
 	if (active != _wasActive) {
 		NSString *className = NSStringFromClass([orig class]);
 		if ([className isEqual:@"SpringBoard"]) {
+			_lock = FALSE;
 			return orig;  // handled separately
-		}
-		
+		}	
 		if (active) {
 			NSLog(@"TESTMACHINE: %@ became active", className);
 			
@@ -46,34 +62,14 @@ static UIView *mpVolumeViewParentView;
 			NSLog(@"TESTMACHINE: assigning port number %d", port);
 
 			[TestMachine start:port];
-			
-			if ([className isEqual:@"MediaApplication"]) {
-				// http://stackoverflow.com/questions/4141403/reroute-iphone-audio-through-speaker-headphone-or-bluetooth
-				
-				// Display the audio route button (Bluetooth / Speaker / iPhone)
-				mpVolumeViewParentView = [[UIView alloc] initWithFrame:CGRectMake(0, 240, 320, 240)];
-				mpVolumeViewParentView.backgroundColor = [UIColor clearColor];
-				mpVolumeViewParentView.clipsToBounds = YES;
-				
-				MPVolumeView *systemVolumeSlider = [[MPVolumeView alloc] initWithFrame:CGRectMake(0, 0, 320, 240)];
-				[mpVolumeViewParentView addSubview:systemVolumeSlider];
-				[systemVolumeSlider release];
-				
-				[[[UIApplication sharedApplication] keyWindow] addSubview:mpVolumeViewParentView];
-				[mpVolumeViewParentView release];
-			}
 		} else {
 			NSLog(@"TESTMACHINE: %@ became not active", className);
 
 			[TestMachine stop];
-			
-			if ([className isEqual:@"MediaApplication"]) {
-				[mpVolumeViewParentView removeFromSuperview];
-			}
 		}
 		_wasActive = active;
 	}
-	
+	_lock = FALSE;
     return orig;
 }
 

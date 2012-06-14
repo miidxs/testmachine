@@ -6,20 +6,20 @@
 #import <AudioToolbox/AudioToolbox.h>
 #import "brominet/UIApplication+XMLDescription.h"
 #import "brominet/XPathQuery.h"
-#import "XPathDriver.h"
+#import "IosDriver.h"
 #import "KIF/Additions/UIView-KIFAdditions.h"
 #import "HTTPResponse.h"
 #import <notify.h>
 
 
-static XPathDriver* _instance = NULL;
+static IosDriver* _instance = NULL;
 
 
-@implementation XPathDriver
+@implementation IosDriver
 
-+ (XPathDriver *)instance {
++ (IosDriver *)instance {
 	if (_instance == NULL) {
-		_instance = [[XPathDriver alloc] init];
+		_instance = [[IosDriver alloc] init];
 	}
 	return _instance;
 }

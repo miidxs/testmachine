@@ -5,7 +5,7 @@
 #import "server/HTTPServer.h"
 #import "server/HTTPResponse.h"
 #import "AppHTTPConnection.h"
-#import "XPathDriver.h"
+#import "IosDriver.h"
 #import "brominet/UIApplication+XMLDescription.h"
 #import "NSData+Base64.h"
 #import "Visualizer.h"
@@ -45,7 +45,7 @@
 		[response appendString:@"<?xml version=\"1.0\"?>"];
 		[response appendString:[[UIApplication sharedApplication] xmlDescription]];
 	} else if ([path isEqual:@"/rpc"]) {
-		NSLog(@"TESTMACHINE: request: %@", [[[NSString alloc] initWithData:multipartData encoding:NSUTF8StringEncoding] autorelease]);	
+		//NSLog(@"TESTMACHINE: request: %@", [[[NSString alloc] initWithData:multipartData encoding:NSUTF8StringEncoding] autorelease]);	
 		
 		xmlDoc *doc = xmlReadMemory(multipartData.bytes, multipartData.length, NULL, "UTF-8", 0);
 		xmlXPathContext *xpathCtx = xmlXPathNewContext(doc);
@@ -67,7 +67,7 @@
 		    [response appendString:@"  <param>"];
 		    [response appendString:@"    <value>"];
 
-		    XPathDriver *driver = [XPathDriver instance];
+		    IosDriver *driver = [IosDriver instance];
 		    if ([methodName isEqual:@"tap"]) {
 				if (paramCount == 1) {
 					[response appendFormat:@"      <boolean>%d</boolean>", [driver tap:params[0]]];
@@ -125,7 +125,7 @@
 	    xmlFreeDoc(doc);
 	}
 
-	NSLog(@"TESTMACHINE: response: %@", response);
+	//NSLog(@"TESTMACHINE: response: %@", response);
 	
 	NSData *browseData = [response dataUsingEncoding:NSUTF8StringEncoding];
 	HTTPDataResponse *r = [[[HTTPDataResponse alloc] initWithData:browseData] autorelease];

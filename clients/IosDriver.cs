@@ -5,9 +5,14 @@ using System.IO;
 using System.Threading;
 using CookComputing.XmlRpc;
 
-public class IPhoneDriver {
+/// <summary>
+/// Interface to the test driver for the tests.
+/// This class depends on XML-RPC.NET.
+/// Download XML-RPC.NET http://xmlrpcnet.googlecode.com/files/xml-rpc.net.2.5.0.zip and add CookComputing.XmlRpcV2.dll to the project.
+/// </summary> 
+public class IosDriver {
 
-    interface IXpathDriver : IXmlRpcProxy {
+    interface IIosDriver : IXmlRpcProxy {
 
         [XmlRpcMethod("tap")]
         bool tap(String xpath);
@@ -63,13 +68,13 @@ public class IPhoneDriver {
 
     private double _timeOut = 10.0;
 
-    private IXpathDriver _client;
+    private IIosDriver _client;
 
     private DateTime _startTime;
 
     public IPhoneDriver(String deviceIp) {
         _deviceIp = deviceIp;
-        _client = XmlRpcProxyGen.Create<IXpathDriver>();
+        _client = XmlRpcProxyGen.Create<IIosDriver>();
         SetPort(DEFAULT_PORT);
     }
 

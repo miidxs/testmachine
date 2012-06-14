@@ -1,12 +1,12 @@
 #import <Foundation/Foundation.h>
 #import <AVFoundation/AVFoundation.h>
 
-@interface XPathDriver : NSObject {
+@interface IosDriver : NSObject {
 	AVAudioPlayer *_player;
 	AVAudioRecorder *_recorder;
 }
 
-+ (XPathDriver *)instance;
++ (IosDriver *)instance;
 
 - (id)init;
 
