@@ -8,7 +8,7 @@ using CookComputing.XmlRpc;
 /// <summary>
 /// Interface to the test driver for the tests.
 /// This class depends on XML-RPC.NET.
-/// Download XML-RPC.NET http://xmlrpcnet.googlecode.com/files/xml-rpc.net.2.5.0.zip and add CookComputing.XmlRpcV2.dll to the project.
+/// This class depends on XML-RPC.NET (CookComputing.XmlRpcV2.dll).
 /// </summary> 
 public class IosDriver {
 
