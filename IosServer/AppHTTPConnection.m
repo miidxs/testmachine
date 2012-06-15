@@ -45,7 +45,7 @@
 		[response appendString:@"<?xml version=\"1.0\"?>"];
 		[response appendString:[[UIApplication sharedApplication] xmlDescription]];
 	} else if ([path isEqual:@"/rpc"]) {
-		//NSLog(@"TESTMACHINE: request: %@", [[[NSString alloc] initWithData:multipartData encoding:NSUTF8StringEncoding] autorelease]);	
+		NSLog(@"TESTMACHINE: request: %@", [[[NSString alloc] initWithData:multipartData encoding:NSUTF8StringEncoding] autorelease]);	
 		
 		xmlDoc *doc = xmlReadMemory(multipartData.bytes, multipartData.length, NULL, "UTF-8", 0);
 		xmlXPathContext *xpathCtx = xmlXPathNewContext(doc);
@@ -125,7 +125,7 @@
 	    xmlFreeDoc(doc);
 	}
 
-	//NSLog(@"TESTMACHINE: response: %@", response);
+	NSLog(@"TESTMACHINE: response: %@", response);
 	
 	NSData *browseData = [response dataUsingEncoding:NSUTF8StringEncoding];
 	HTTPDataResponse *r = [[[HTTPDataResponse alloc] initWithData:browseData] autorelease];
