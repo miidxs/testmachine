@@ -127,9 +127,8 @@ public class IosDriver {
     /// </summary>
     public bool Check(String xpath) {
         Reset();
-        DateTime now = DateTime.Now;
         while (!_client.check(xpath)) {
-            if (now.Subtract(_startTime).Seconds > _timeOut) {
+            if (DateTime.Now.Subtract(_startTime).Seconds > _timeOut) {
                 return false;
             }
             Thread.Sleep((int)(TIME_GAP * 1000.0));
@@ -249,8 +248,7 @@ public class IosDriver {
     }
 
     private void FailOrWait() {
-        DateTime now = DateTime.Now;
-        if (now.Subtract(_startTime).Seconds > _timeOut) {
+        if (DateTime.Now.Subtract(_startTime).Seconds > _timeOut) {
             throw new Exception("element not found");
         }
         Thread.Sleep((int) (TIME_GAP * 1000.0));
