@@ -11,12 +11,12 @@
 
 @interface MPMediaQueryInternal : NSObject {
 @private
-	NSMutableSet* _filterPredicates;
-	int _entityOrder;
-	int _groupingType;
-	BOOL _prefetchProperties;
-	NSArray* _items;
-	NSArray* _collections;
+  NSMutableSet* _filterPredicates;
+  int _entityOrder;
+  int _groupingType;
+  BOOL _prefetchProperties;
+  NSArray* _items;
+  NSArray* _collections;
 }
 @end
 

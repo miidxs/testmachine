@@ -10,20 +10,20 @@
 __attribute__((visibility("hidden")))
 @interface UIKBCandidateView : UIKBKeyView <UIKeyboardCandidateList> {
 @private
-	NSArray* m_candidates;
-	NSMutableArray* m_buttons;
-	NSObject* m_delegate;
-	int m_columns;
-	int m_candidatesPerColumn;
-	int m_candidatesPerPage;
-	int m_current;
-	int m_firstShown;
-	int m_firstComposition;
-	int m_candidateCount;
-	UIColor* m_textColor;
-	CGColorRef m_highlightColor;
-	BOOL m_respondsToSelect;
-	BOOL m_respondsToAccept;
+  NSArray* m_candidates;
+  NSMutableArray* m_buttons;
+  NSObject* m_delegate;
+  int m_columns;
+  int m_candidatesPerColumn;
+  int m_candidatesPerPage;
+  int m_current;
+  int m_firstShown;
+  int m_firstComposition;
+  int m_candidateCount;
+  UIColor* m_textColor;
+  CGColorRef m_highlightColor;
+  BOOL m_respondsToSelect;
+  BOOL m_respondsToAccept;
 }
 // inherited: -(id)initWithFrame:(CGRect)frame keyboard:(id)keyboard key:(id)key state:(int)state;
 // inherited: -(void)dealloc;

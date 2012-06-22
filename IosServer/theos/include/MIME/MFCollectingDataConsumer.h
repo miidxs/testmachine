@@ -11,7 +11,7 @@
 @class NSMutableData;
 
 @interface MFCollectingDataConsumer : NSObject <MFDataConsumer> {
-	NSMutableData* _data;
+  NSMutableData* _data;
 }
 // inherited: -(id)init;
 // in a protocol: -(void)appendData:(id)data;

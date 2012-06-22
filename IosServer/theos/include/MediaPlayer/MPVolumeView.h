@@ -13,7 +13,7 @@
 
 @interface MPVolumeView : UIView <NSCoding> {
 @private
-	MPVolumeViewInternal* _internal;
+  MPVolumeViewInternal* _internal;
 }
 -(id)initWithFrame:(CGRect)frame;
 -(void)dealloc;

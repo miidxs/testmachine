@@ -11,27 +11,27 @@
 @class NSMutableString;
 
 @interface MimeEnrichedReader : NSObject {
-	struct {
-		unsigned short buffer[64];
-		CFStringRef theString;
-		unsigned short* directBuffer;
-		XXStruct_ny2fMB rangeToBuffer;
-		int bufferedRangeStart;
-		int bufferedRangeEnd;
-	} _inputBuffer;
-	int _currentIndex;
-	int _inputLength;
-	unsigned _noFillLevel : 30;
-	unsigned _eatOneNewline : 1;
-	unsigned _insideComment : 1;
-	unsigned _wantsPlainText : 1;
-	int _lastQuoteLevel;
-	CFArrayRef _commandStack;
-	id _outputString;
-	NSMutableString* _outputBuffer;
-	CFStringRef _prependHTML;
-	CFStringRef _postpendHTML;
-	float _indentWidth;
+  struct {
+    unsigned short buffer[64];
+    CFStringRef theString;
+    unsigned short* directBuffer;
+    XXStruct_ny2fMB rangeToBuffer;
+    int bufferedRangeStart;
+    int bufferedRangeEnd;
+  } _inputBuffer;
+  int _currentIndex;
+  int _inputLength;
+  unsigned _noFillLevel : 30;
+  unsigned _eatOneNewline : 1;
+  unsigned _insideComment : 1;
+  unsigned _wantsPlainText : 1;
+  int _lastQuoteLevel;
+  CFArrayRef _commandStack;
+  id _outputString;
+  NSMutableString* _outputBuffer;
+  CFStringRef _prependHTML;
+  CFStringRef _postpendHTML;
+  float _indentWidth;
 }
 +(CFCharacterSetRef)punctuationSet;
 +(CFCharacterSetRef)parenSet;

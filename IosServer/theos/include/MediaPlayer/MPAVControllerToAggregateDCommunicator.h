@@ -9,9 +9,9 @@
 
 
 @interface MPAVControllerToAggregateDCommunicator : NSObject {
-	unsigned _lastMediaType;
-	double _playbackStartTime;
-	BOOL _playbackStartTimeIsValid;
+  unsigned _lastMediaType;
+  double _playbackStartTime;
+  BOOL _playbackStartTimeIsValid;
 }
 -(id)init;
 -(void)dealloc;

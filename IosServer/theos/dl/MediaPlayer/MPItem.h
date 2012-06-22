@@ -10,22 +10,22 @@
 @class MPQueueFeeder, NSArray, MPAlternateTracks, NSURL, NSString;
 
 @interface MPItem : AVItem {
-	MPQueueFeeder* _feeder;
-	MPAlternateTracks* _alternateTracks;
-	unsigned _type;
-	double _cachedDuration;
-	double _cachedPlayableDuration;
-	float _defaultPlaybackRate;
-	unsigned _advancedDuringPlayback : 1;
-	unsigned _handledFinishTime : 1;
-	unsigned _hasPlayedThisSession : 1;
-	unsigned _isOnDemandItem : 1;
-	unsigned _wasCountedAsSkipped : 1;
-	unsigned _isStreamable : 2;
-	unsigned _useCachedPlayableDuration : 1;
-	unsigned _watchingAttributes : 1;
-	unsigned _videoDisabled : 1;
-	unsigned _lyricsAvailable : 1;
+  MPQueueFeeder* _feeder;
+  MPAlternateTracks* _alternateTracks;
+  unsigned _type;
+  double _cachedDuration;
+  double _cachedPlayableDuration;
+  float _defaultPlaybackRate;
+  unsigned _advancedDuringPlayback : 1;
+  unsigned _handledFinishTime : 1;
+  unsigned _hasPlayedThisSession : 1;
+  unsigned _isOnDemandItem : 1;
+  unsigned _wasCountedAsSkipped : 1;
+  unsigned _isStreamable : 2;
+  unsigned _useCachedPlayableDuration : 1;
+  unsigned _watchingAttributes : 1;
+  unsigned _videoDisabled : 1;
+  unsigned _lyricsAvailable : 1;
 }
 @property(readonly, retain, nonatomic) MPAlternateTracks* alternateTracks;
 @property(assign, nonatomic) MPQueueFeeder* feeder;

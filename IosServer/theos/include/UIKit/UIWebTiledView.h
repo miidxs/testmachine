@@ -10,13 +10,13 @@
 @class WAKWindow;
 
 @interface UIWebTiledView : UIView {
-	WAKWindow* _wakWindow;
-	int _inGestureType;
-	int _tilingArea;
-	BOOL _didFirstTileLayout;
-	BOOL _layoutTilesInMainThread;
+  WAKWindow* _wakWindow;
+  int _inGestureType;
+  int _tilingArea;
+  BOOL _didFirstTileLayout;
+  BOOL _layoutTilesInMainThread;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	BOOL _tilingModeIsLocked;
+  BOOL _tilingModeIsLocked;
 #endif
 }
 -(id)initWithFrame:(CGRect)frame;

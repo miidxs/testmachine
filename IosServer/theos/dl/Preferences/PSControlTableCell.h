@@ -10,10 +10,10 @@
 @class NSDictionary, NSArray, UIControl, UIProgressIndicator;
 
 @interface PSControlTableCell : PSTableCell {
-	UIControl* _control;
-	UIProgressIndicator* _progressIndicator;
-	NSArray* _values;
-	NSDictionary* _titleDict;
+  UIControl* _control;
+  UIProgressIndicator* _progressIndicator;
+  NSArray* _values;
+  NSDictionary* _titleDict;
 }
 @property(assign) BOOL loading;
 @property(retain) UIControl* control;

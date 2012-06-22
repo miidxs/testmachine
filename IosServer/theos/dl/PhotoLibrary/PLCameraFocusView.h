@@ -10,9 +10,9 @@
 @class CAKeyframeAnimation, NSArray;
 
 @interface PLCameraFocusView : UIView {
-	NSArray* _images;
-	CAKeyframeAnimation* _contentsAnimation;
-	CAKeyframeAnimation* _boundsAnimation;
+  NSArray* _images;
+  CAKeyframeAnimation* _contentsAnimation;
+  CAKeyframeAnimation* _boundsAnimation;
 }
 -(id)init:(BOOL)init;
 // inherited: -(void)dealloc;

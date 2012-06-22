@@ -12,7 +12,7 @@
 @class PSTextView;
 
 @interface PSTextViewTableCell : PSTableCell <UITextViewDelegate> {
-	PSTextView* _textView;
+  PSTextView* _textView;
 }
 @property(retain) PSTextView* textView;
 // inherited: -(void)setValue:(id)value;

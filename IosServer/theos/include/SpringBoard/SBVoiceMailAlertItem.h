@@ -15,11 +15,11 @@ SBAlertItem
 SBDismissOnlyAlertItem
 #endif
 {
-	BOOL _isForVisualVoicemail;
-	unsigned _recordUID;
+  BOOL _isForVisualVoicemail;
+  unsigned _recordUID;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	NSString* _title;
-	NSString* _body;
+  NSString* _title;
+  NSString* _body;
 #endif
 }
 -(BOOL)isForVisualVoicemail;

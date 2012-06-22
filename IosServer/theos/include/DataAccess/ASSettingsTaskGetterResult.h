@@ -10,9 +10,9 @@
 
 @interface ASSettingsTaskGetterResult : NSObject {
 @private
-	int _key;
-	int _status;
-	id _result;
+  int _key;
+  int _status;
+  id _result;
 }
 @property(readonly, assign) int key;
 @property(readonly, assign) int status;

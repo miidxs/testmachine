@@ -12,8 +12,8 @@
 
 @interface AVFileValidator : NSObject {
 @private
-	AVFileValidatorPrivate* _priv;
-	NSString* _validationRules;
+  AVFileValidatorPrivate* _priv;
+  NSString* _validationRules;
 }
 @property(retain) NSString* validationRules;
 -(id)initWithURL:(id)url;

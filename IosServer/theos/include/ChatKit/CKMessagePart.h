@@ -8,9 +8,9 @@
 @class NSData, CKMessage;
 
 @interface CKMessagePart : NSObject {
-	unsigned _height;
-	unsigned _flags;
-	CKMessage* _parentMessage;
+  unsigned _height;
+  unsigned _flags;
+  CKMessage* _parentMessage;
 }
 @property(assign, nonatomic) CKMessage* parentMessage;
 @property(readonly, assign, nonatomic) NSData* highlightData;

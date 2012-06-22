@@ -8,14 +8,14 @@
 
 
 @interface _UISwitchSlider : UISlider {
-	UIView* _labelClipView;
-	UIView* _onLabelView;
-	UIView* _offLabelView;
-	struct {
-		unsigned valueIsSingleton : 1;
-		unsigned hideGaps : 1;
-		unsigned unused : 30;
-	} _switchFlags;
+  UIView* _labelClipView;
+  UIView* _onLabelView;
+  UIView* _offLabelView;
+  struct {
+    unsigned valueIsSingleton : 1;
+    unsigned hideGaps : 1;
+    unsigned unused : 30;
+  } _switchFlags;
 }
 -(id)init;
 -(id)initWithFrame:(CGRect)frame;

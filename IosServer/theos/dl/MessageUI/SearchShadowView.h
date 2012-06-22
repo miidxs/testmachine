@@ -11,7 +11,7 @@
 @class UIImage;
 
 @interface SearchShadowView : UIView {
-	UIImage* _image;
+  UIImage* _image;
 }
 +(id)_shadowImage;
 +(float)defaultHeight;

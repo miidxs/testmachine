@@ -11,7 +11,7 @@
 @class UIWebClip;
 
 @interface SBWidgetApplicationIcon : SBApplicationIcon {
-	UIWebClip* _webClip;
+  UIWebClip* _webClip;
 }
 // inherited: -(id)initWithApplication:(id)application;
 // inherited: -(void)dealloc;

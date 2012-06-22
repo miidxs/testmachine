@@ -13,15 +13,15 @@
 
 @interface MLPhotoBakedThumbnails : NSObject {
 @private
-	int _format;
-	int _singleThumbnailImageLength;
-	int _count;
-	NSMutableData* _thumbnailData;
-	NSMutableArray* _thumbnailImages;
-	NSMutableDictionary* _options;
-	BOOL _optionsAccessed;
-	BOOL _missingHeader;
-	CGSize _size;
+  int _format;
+  int _singleThumbnailImageLength;
+  int _count;
+  NSMutableData* _thumbnailData;
+  NSMutableArray* _thumbnailImages;
+  NSMutableDictionary* _options;
+  BOOL _optionsAccessed;
+  BOOL _missingHeader;
+  CGSize _size;
 }
 @property(readonly, assign, nonatomic) CGRect imageRect;
 @property(readonly, assign, nonatomic) unsigned bitmapInfo;

@@ -11,9 +11,9 @@
 @class UIBezierPath, UIColor;
 
 @interface SBResetProgressView : UIView {
-	UIColor* _progressColor;
-	UIBezierPath* _path;
-	float _resetProgress;
+  UIColor* _progressColor;
+  UIBezierPath* _path;
+  float _resetProgress;
 }
 +(CGSize)defaultSize;
 // inherited: -(void)dealloc;

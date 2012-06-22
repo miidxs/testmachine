@@ -9,11 +9,11 @@
 @class UIFont, UIImageView, NSString;
 
 @interface UISimpleTableCell : UITableCell {
-	UIFont* _font;
-	UIImageView* _iconImageView;
-	unsigned _indentationLevel;
-	NSString* _title;
-	int _titleColor;
+  UIFont* _font;
+  UIImageView* _iconImageView;
+  unsigned _indentationLevel;
+  NSString* _title;
+  int _titleColor;
 }
 +(id)defaultFont;
 -(id)initWithFrame:(CGRect)frame;

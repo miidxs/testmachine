@@ -8,11 +8,11 @@
 
 
 @interface UITextMagnifierTimeWeightedPoint : NSObject {
-	int m_index;
-	struct {
-		CGPoint point;
-		double time;
-	} m_points[16];
+  int m_index;
+  struct {
+    CGPoint point;
+    double time;
+  } m_points[16];
 }
 @property(readonly, assign, nonatomic) CGPoint weightedPoint;
 -(void)clearHistory;

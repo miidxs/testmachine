@@ -10,8 +10,8 @@
 @class NSString;
 
 @interface DAMessageFetchAttachmentRequest : NSObject {
-	NSString* _messageID;
-	NSString* _attachmentName;
+  NSString* _messageID;
+  NSString* _attachmentName;
 }
 -(id)initWithAttachmentName:(id)attachmentName andMessageServerID:(id)anId;
 // inherited: -(void)dealloc;

@@ -10,16 +10,16 @@
 @class NSDictionary;
 
 @interface ASParseRule : NSObject {
-	int _minimumNumber;
-	int _maximumNumber;
-	int _codePage;
-	int _token;
-	Class _objectClass;
-	SEL _setterMethod;
-	int _collectionClassType;
-	NSDictionary* _subclassRuleSet;
-	NSDictionary* _callbackDict;
-	NSDictionary* _streamCallbackDict;
+  int _minimumNumber;
+  int _maximumNumber;
+  int _codePage;
+  int _token;
+  Class _objectClass;
+  SEL _setterMethod;
+  int _collectionClassType;
+  NSDictionary* _subclassRuleSet;
+  NSDictionary* _callbackDict;
+  NSDictionary* _streamCallbackDict;
 }
 -(id)initWithMinimumNumber:(int)minimumNumber maximumNumber:(int)number codePage:(int)page token:(int)token objectClass:(Class)aClass setterMethod:(SEL)method collectionClassType:(int)type callbackDict:(id)dict streamCallbackDict:(id)dict9 subclassRuleSet:(id)set;
 // inherited: -(void)dealloc;

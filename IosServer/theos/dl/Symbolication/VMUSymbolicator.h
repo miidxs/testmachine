@@ -12,11 +12,11 @@
 @class VMUMachTaskContainer, NSMutableArray, NSString, NSArray, NSDictionary, VMUArchitecture;
 
 @interface VMUSymbolicator : NSObject {
-	NSMutableArray* _symbolOwners;
-	NSArray* _symbolOwnerAddressRanges;
-	NSString* _path;
-	VMUMachTaskContainer* _machTaskContainer;
-	BOOL _isProtected;
+  NSMutableArray* _symbolOwners;
+  NSArray* _symbolOwnerAddressRanges;
+  NSString* _path;
+  VMUMachTaskContainer* _machTaskContainer;
+  BOOL _isProtected;
 }
 +(NSArray*)symbolicatorsForPath:(NSString*)path;
 +(VMUSymbolicator*)symbolicatorForPath:(NSString*)path architecture:(VMUArchitecture*)architecture;

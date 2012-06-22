@@ -14,7 +14,7 @@ Cannot find "IOSurfaceAPI.h"? Since it is not free or open source, the file is
 not put here. Nevertheless, if you're using Mac OS X 10.6, you can get a copy
 from
 
-	/System/Library/Frameworks/IOSurface.framework/Headers/IOSurfaceAPI.h
+  /System/Library/Frameworks/IOSurface.framework/Headers/IOSurfaceAPI.h
 
 */
 #include <IOSurface/IOSurfaceAPI.h>

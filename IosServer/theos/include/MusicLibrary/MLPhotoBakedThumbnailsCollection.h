@@ -11,8 +11,8 @@
 
 @interface MLPhotoBakedThumbnailsCollection : NSObject {
 @private
-	NSData* _data;
-	NSMutableDictionary* _bakedThumbnails;
+  NSData* _data;
+  NSMutableDictionary* _bakedThumbnails;
 }
 +(void)setTesting:(BOOL)testing;
 -(id)init;

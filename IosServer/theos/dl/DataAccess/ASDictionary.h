@@ -13,9 +13,9 @@
 @class NSDictionary, NSMutableDictionary;
 
 @interface ASDictionary : ASItem <ASParsingWithSubItems, ASParsingFrontingBasicType, ASParsingAcceptingTopLevelLeaves> {
-	NSMutableDictionary* _items;
-	NSDictionary* _subclassRuleSet;
-	NSMutableDictionary* _placeHolder;
+  NSMutableDictionary* _items;
+  NSDictionary* _subclassRuleSet;
+  NSMutableDictionary* _placeHolder;
 }
 // in a protocol: +(BOOL)acceptsTopLevelLeaves;
 // in a protocol: +(BOOL)parsingLeafNode;

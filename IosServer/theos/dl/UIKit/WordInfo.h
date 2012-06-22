@@ -13,15 +13,15 @@
 @class CandWordString;
 
 @interface WordInfo : CandWord {
-	CandWordString* _yomi;
-	int _inConnection;
-	int _outConnection[10];
-	unsigned char _readingLens[10];
-	unsigned short _lcAttrs[10];
-	unsigned short _rcAttrs[10];
-	unsigned _trievalues[10];
-	int _outConnections;
-	int _weight;
+  CandWordString* _yomi;
+  int _inConnection;
+  int _outConnection[10];
+  unsigned char _readingLens[10];
+  unsigned short _lcAttrs[10];
+  unsigned short _rcAttrs[10];
+  unsigned _trievalues[10];
+  int _outConnections;
+  int _weight;
 }
 -(id)initWithWord:(id)word withYomi:(id)yomi inConnection:(int)connection outConnection:(int)connection4 weight:(int)weight;
 -(void)dealloc;

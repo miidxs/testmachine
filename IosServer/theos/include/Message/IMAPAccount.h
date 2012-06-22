@@ -12,26 +12,26 @@
 @class NSString, NSMutableSet, NSArray, NSRecursiveLock, NSMutableArray, IMAPOperationCache;
 
 @interface IMAPAccount : MailAccount <IMAPMailboxListFilter> {
-	NSString* _separatorChar;
-	CFArrayRef _lastKnownCapabilities;
-	CFArrayRef _cachedConnections;
-	CFArrayRef _mailboxesToSynchronize;
-	unsigned _readBufferSize : 31;
-	unsigned _lastConnectionFailed : 1;
-	unsigned _askedToListenForNotifications : 1;
-	unsigned _pcStylePush : 1;
-	unsigned _setDefaultStyleYet : 1;
-	IMAPOperationCache* _offlineCache;
-	NSMutableSet* _mailboxesWithChangedUidNext;
-	unsigned _greatestInboxUid;
-	double _timeLastFetchedMailboxList;
-	NSRecursiveLock* _flagChangesLock;
-	NSMutableArray* _recentFlagChanges;
-	NSRecursiveLock* _connectionLock;
-	int _nextConnectionTag;
-	void* _packetContextAssertion;
-	NSArray* _lockOrderingArray;
-	NSString* _apsTopic;
+  NSString* _separatorChar;
+  CFArrayRef _lastKnownCapabilities;
+  CFArrayRef _cachedConnections;
+  CFArrayRef _mailboxesToSynchronize;
+  unsigned _readBufferSize : 31;
+  unsigned _lastConnectionFailed : 1;
+  unsigned _askedToListenForNotifications : 1;
+  unsigned _pcStylePush : 1;
+  unsigned _setDefaultStyleYet : 1;
+  IMAPOperationCache* _offlineCache;
+  NSMutableSet* _mailboxesWithChangedUidNext;
+  unsigned _greatestInboxUid;
+  double _timeLastFetchedMailboxList;
+  NSRecursiveLock* _flagChangesLock;
+  NSMutableArray* _recentFlagChanges;
+  NSRecursiveLock* _connectionLock;
+  int _nextConnectionTag;
+  void* _packetContextAssertion;
+  NSArray* _lockOrderingArray;
+  NSString* _apsTopic;
 }
 // inherited: +(void)initialize;
 // inherited: +(id)saslProfileName;

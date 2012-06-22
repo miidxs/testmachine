@@ -13,19 +13,19 @@
 @protocol UIStatusBarStyleDelegate;
 
 @interface UIStatusBar : UIView <UIStatusBarServerClient> {
-	id<UIStatusBarStyleDelegate> _styleDelegate;
-	UIStatusBarWindow *_statusBarWindow;
-	UIStatusBarServer *_statusBarServer;
-	UIStatusBarBackgroundView *_backgroundView;
-	UIStatusBarForegroundView *_foregroundView;
-	UILabel *_doubleHeightLabel;
-	UIStatusBar *_slidingStatusBar;
-	int _requestedStyle;
-	int _styleOverrides;
-	int _style;
-	int _orientation;
-	BOOL _hidden;
-	BOOL _waitingOnCallbackAfterChangingStyleOverridesLocally;
+  id<UIStatusBarStyleDelegate> _styleDelegate;
+  UIStatusBarWindow *_statusBarWindow;
+  UIStatusBarServer *_statusBarServer;
+  UIStatusBarBackgroundView *_backgroundView;
+  UIStatusBarForegroundView *_foregroundView;
+  UILabel *_doubleHeightLabel;
+  UIStatusBar *_slidingStatusBar;
+  int _requestedStyle;
+  int _styleOverrides;
+  int _style;
+  int _orientation;
+  BOOL _hidden;
+  BOOL _waitingOnCallbackAfterChangingStyleOverridesLocally;
 }
 @property(assign, nonatomic) id<UIStatusBarStyleDelegate> styleDelegate;
 @property(assign, nonatomic) UIStatusBarWindow *statusBarWindow;

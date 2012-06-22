@@ -9,7 +9,7 @@
 @class DOMHTMLOptGroupElement;
 
 @interface UIDOMHTMLOptGroupSelectedItem : NSObject <UISelectedItemPrivate> {
-	DOMHTMLOptGroupElement* _node;
+  DOMHTMLOptGroupElement* _node;
 }
 @property(retain, nonatomic) DOMHTMLOptGroupElement* _node;
 -(id)initWithHTMLOptGroupNode:(id)htmloptGroupNode;

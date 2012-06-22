@@ -9,7 +9,7 @@
 @class UIThreePartImageView;
 
 @interface UIAlertSheetTextField : UITextField {
-	UIThreePartImageView* _sheetBackgroundView;
+  UIThreePartImageView* _sheetBackgroundView;
 }
 -(void)dealloc;
 -(void)setBackgroundView:(id)view;

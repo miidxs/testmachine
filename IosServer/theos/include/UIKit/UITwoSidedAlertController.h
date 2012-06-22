@@ -9,13 +9,13 @@
 @protocol UITwoSidedAlertControllerDelegate <NSObject>
 -(void)twoSidedAlertControllerDidDismiss:(UITwoSidedAlertController*)twoSidedAlertController;
 @end
-#define UITwoSidedAlertDelegate UITwoSidedAlertControllerDelegate	// backward compatibility.
+#define UITwoSidedAlertDelegate UITwoSidedAlertControllerDelegate // backward compatibility.
 
 @interface UITwoSidedAlertController : NSObject {
-	UIAlertView* _front;
-	UIAlertView* _back;
-	UIAlertView* _currentAlert;
-	id _delegate;
+  UIAlertView* _front;
+  UIAlertView* _back;
+  UIAlertView* _currentAlert;
+  id _delegate;
 }
 -(void)setDelegate:(id<UITwoSidedAlertDelegate>)delegate;
 -(UIAlertView*)frontAlert;

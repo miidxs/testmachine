@@ -8,9 +8,9 @@
 @class UIColor;
 
 @interface UITableViewCellUnhighlightedState : NSObject {
-	BOOL _opaque;
-	BOOL _highlighted;
-	UIColor* _backgroundColor;
+  BOOL _opaque;
+  BOOL _highlighted;
+  UIColor* _backgroundColor;
 }
 @property(assign) BOOL opaque;
 @property(assign) BOOL highlighted;

@@ -7,7 +7,7 @@
 
 
 @interface UIRuntimeEventConnection : UIRuntimeConnection {
-	unsigned eventMask;
+  unsigned eventMask;
 }
 -(id)initWithCoder:(id)coder;
 -(void)encodeWithCoder:(id)coder;

@@ -10,8 +10,8 @@
 @class NSMutableSet;
 
 @interface ActivityMonitorMultiTarget : NSObject {
-	id _primaryTarget;
-	NSMutableSet* _allTargets;
+  id _primaryTarget;
+  NSMutableSet* _allTargets;
 }
 // inherited: -(void)dealloc;
 -(BOOL)addActivityTarget:(id)target;

@@ -10,9 +10,9 @@
 @class NSMutableArray;
 
 @interface SBDisplayStack : NSObject {
-	NSMutableArray* _displayStack;
-	/*function-pointer*/ void* _pushCallback;
-	/*function-pointer*/ void* _popCallback;
+  NSMutableArray* _displayStack;
+  /*function-pointer*/ void* _pushCallback;
+  /*function-pointer*/ void* _popCallback;
 }
 // inherited: -(id)init;
 // inherited: -(void)dealloc;

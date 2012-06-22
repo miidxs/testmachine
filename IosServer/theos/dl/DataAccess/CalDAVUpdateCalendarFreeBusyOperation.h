@@ -10,10 +10,10 @@
 @class DAVSession, NSString;
 
 @interface CalDAVUpdateCalendarFreeBusyOperation : AYOperation {
-	NSString* _fromURI;
-	NSString* _toURI;
-	NSString* _inboxURI;
-	DAVSession* _session;
+  NSString* _fromURI;
+  NSString* _toURI;
+  NSString* _inboxURI;
+  DAVSession* _session;
 }
 -(id)initWithSession:(id)session fromURI:(id)uri toURI:(id)uri3 inboxURI:(id)uri4;
 // inherited: -(void)dealloc;

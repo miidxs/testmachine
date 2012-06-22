@@ -10,10 +10,10 @@
 @class MimePart;
 
 @interface MimeBody : MessageBody {
-	MimePart* _topLevelPart;
-	unsigned _preferredTextEncoding;
-	unsigned _preferredAlternative : 16;
-	unsigned _numAlternatives : 16;
+  MimePart* _topLevelPart;
+  unsigned _preferredTextEncoding;
+  unsigned _preferredAlternative : 16;
+  unsigned _numAlternatives : 16;
 }
 // inherited: +(void)initialize;
 +(id)versionString;

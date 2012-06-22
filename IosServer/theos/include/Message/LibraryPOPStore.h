@@ -11,7 +11,7 @@
 @class POP3Connection;
 
 @interface LibraryPOPStore : LibraryStore {
-	POP3Connection* _connection;
+  POP3Connection* _connection;
 }
 // inherited: -(id)initWithMailboxUid:(id)mailboxUid readOnly:(BOOL)only;
 -(void)openSynchronouslyUpdatingMetadata:(BOOL)metadata;

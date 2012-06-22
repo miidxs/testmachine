@@ -9,13 +9,13 @@
 @class UIImageView, UIWebSelectionView, UITouch;
 
 @interface UIWebSelectionHandle : UIView {
-	UITouch* _touch;
-	UIImageView* _dragDotView;
-	int _position;
-	int _textPosition;
-	UIWebSelectionView* _tintView;
-	CGSize _touchToCenterOffset;
-	CGSize _centerToSelectionPointOffset;
+  UITouch* _touch;
+  UIImageView* _dragDotView;
+  int _position;
+  int _textPosition;
+  UIWebSelectionView* _tintView;
+  CGSize _touchToCenterOffset;
+  CGSize _centerToSelectionPointOffset;
 }
 @property(assign, nonatomic) int position;
 @property(retain, nonatomic) UITouch* touch;

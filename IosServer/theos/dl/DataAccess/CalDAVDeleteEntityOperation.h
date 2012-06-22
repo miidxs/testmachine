@@ -10,10 +10,10 @@
 @class NSString, NSURL, CalDAVCacheManager, CalDAVAccount;
 
 @interface CalDAVDeleteEntityOperation : NSObject {
-	NSString* _filename;
-	NSURL* _calendarURL;
-	CalDAVAccount* _account;
-	CalDAVCacheManager* _cache;
+  NSString* _filename;
+  NSURL* _calendarURL;
+  CalDAVAccount* _account;
+  CalDAVCacheManager* _cache;
 }
 -(id)initWithFilename:(id)filename calendarURL:(id)url account:(id)account cache:(id)cache;
 // inherited: -(void)dealloc;

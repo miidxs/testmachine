@@ -10,7 +10,7 @@
 @class NSString;
 
 @interface ASClientPolicyManager : ASPolicyManager {
-	NSString* _policyKey;
+  NSString* _policyKey;
 }
 // inherited: -(void)dealloc;
 -(void)_setPolicyKey:(id)key;

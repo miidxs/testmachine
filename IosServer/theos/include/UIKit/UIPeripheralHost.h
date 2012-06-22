@@ -6,23 +6,23 @@
 @class UIView, UIKeyboardAutomatic, UIPeripheralHostState;
 
 @interface UIPeripheralHost : NSObject {
-	UIView* m_peripheralToolbar;
-	UIView* m_peripheral;
-	UIView* m_hostView;
-	UIKeyboardAutomatic* m_automaticKeyboard;
-	BOOL m_automaticAppearanceEnabled;
-	BOOL m_automaticAppearanceEnabledForMail;
-	BOOL m_automaticAppearanceEnabledInternal;
-	BOOL m_automaticKeyboardAnimatingIn;
-	BOOL m_automaticKeyboardPreparedForRotation;
-	int m_automaticKeyboardState;
-	BOOL m_ignoresReloadInputViews;
-	BOOL m_useHideNotificationsWhenNotVisible;
-	int m_automaticKeyboardOrientation;
-	int m_nextAutomaticOrderInDirection;
-	double m_nextAutomaticOrderInDuration;
-	double m_lastAutomaticKeyboardDuration;
-	UIPeripheralHostState* m_targetState;
+  UIView* m_peripheralToolbar;
+  UIView* m_peripheral;
+  UIView* m_hostView;
+  UIKeyboardAutomatic* m_automaticKeyboard;
+  BOOL m_automaticAppearanceEnabled;
+  BOOL m_automaticAppearanceEnabledForMail;
+  BOOL m_automaticAppearanceEnabledInternal;
+  BOOL m_automaticKeyboardAnimatingIn;
+  BOOL m_automaticKeyboardPreparedForRotation;
+  int m_automaticKeyboardState;
+  BOOL m_ignoresReloadInputViews;
+  BOOL m_useHideNotificationsWhenNotVisible;
+  int m_automaticKeyboardOrientation;
+  int m_nextAutomaticOrderInDirection;
+  double m_nextAutomaticOrderInDuration;
+  double m_lastAutomaticKeyboardDuration;
+  UIPeripheralHostState* m_targetState;
 }
 @property(assign, nonatomic) BOOL automaticAppearanceEnabled;
 @property(retain, nonatomic) UIPeripheralHostState* targetState;

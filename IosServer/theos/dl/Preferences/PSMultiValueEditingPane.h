@@ -11,7 +11,7 @@
 @class UISegmentedControl;
 
 @interface PSMultiValueEditingPane : PSEditingPane {
-	UISegmentedControl* _segmentedControl;
+  UISegmentedControl* _segmentedControl;
 }
 // inherited: -(BOOL)requiresKeyboard;
 // inherited: -(BOOL)drawLabel;

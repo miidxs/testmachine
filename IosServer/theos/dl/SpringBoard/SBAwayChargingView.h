@@ -12,15 +12,15 @@
 @class SBBatteryChargingView;
 
 @interface SBAwayChargingView : UIView {
-	SBBatteryChargingView* _chargingView;
-	SBBatteryChargingView* _headsetChargingView;
+  SBBatteryChargingView* _chargingView;
+  SBBatteryChargingView* _headsetChargingView;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	UIImageView* _backgroundView;
+  UIImageView* _backgroundView;
 #endif
-	unsigned _animatingBatteries : 1;
-	unsigned _updateAfterAnimation : 1;
-	unsigned _showingDeviceBattery : 1;
-	unsigned _showingHeadsetBattery : 1;
+  unsigned _animatingBatteries : 1;
+  unsigned _updateAfterAnimation : 1;
+  unsigned _showingDeviceBattery : 1;
+  unsigned _showingHeadsetBattery : 1;
 }
 +(id)backgroundImage __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_3_2);
 +(CGSize)defaultSize;

@@ -10,16 +10,16 @@
 @class NSData, NSDictionary, NSMutableDictionary, MimeBody, MimePart;
 
 @interface WebMessageDocument : WebAttachmentSource {
-	NSDictionary* _partsByURL;
-	NSDictionary* _partsByFilename;
-	NSMutableDictionary* _attachmentsByURL;
-	MimeBody* _mimeBody;
-	MimePart* _htmlPart;
-	NSData* _htmlData;
-	unsigned _preferredCharset;
-	unsigned _downloadRemoteURLs : 1;
-	unsigned _containsRemoteContent : 1;
-	BOOL _messageIsFromEntourage;
+  NSDictionary* _partsByURL;
+  NSDictionary* _partsByFilename;
+  NSMutableDictionary* _attachmentsByURL;
+  MimeBody* _mimeBody;
+  MimePart* _htmlPart;
+  NSData* _htmlData;
+  unsigned _preferredCharset;
+  unsigned _downloadRemoteURLs : 1;
+  unsigned _containsRemoteContent : 1;
+  BOOL _messageIsFromEntourage;
 }
 // inherited: -(void)dealloc;
 // inherited: -(id)init;

@@ -8,8 +8,8 @@
 
 
 @interface UITextFieldBackgroundView : UIView {
-	BOOL _active;
-	float _progress;
+  BOOL _active;
+  float _progress;
 }
 -(void)_updateImages;
 -(id)initWithFrame:(CGRect)frame active:(BOOL)active;

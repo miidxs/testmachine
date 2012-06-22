@@ -10,24 +10,24 @@
 @class SBStatusBar, SBStatusBarCallForwardingView, SBStatusBarBatteryPercentageView, NSMutableArray, SBStatusBarVPNView, SBStatusBarProgressView, SBStatusBarBluetoothView, SBStatusBarAirPortView, SBStatusBarNoServiceView, SBStatusBarCarrierView, SBStatusBarTimeView, SBStatusBarBatteryView, SBStatusBarBluetoothBatteryView, SBStatusBarSignalView;
 
 @interface SBStatusBarContentsView : UIView {
-	SBStatusBar* _statusBar;
-	int _mode;
-	BOOL _dimmed;
-	BOOL _enteringAirplaneMode;
-	UIView* _lockIconView;
-	SBStatusBarTimeView* _timeView;
-	SBStatusBarBatteryView* _batteryView;
-	SBStatusBarBatteryPercentageView* _batteryPercentageView;
-	SBStatusBarSignalView* _signalView;
-	SBStatusBarCarrierView* _carrierView;
-	NSMutableArray* _indicatorViews;
-	SBStatusBarAirPortView* _airPortView;
-	SBStatusBarNoServiceView* _noServiceView;
-	SBStatusBarBluetoothView* _bluetoothView;
-	SBStatusBarProgressView* _progressView;
-	SBStatusBarBluetoothBatteryView* _bluetoothBatteryView;
-	SBStatusBarVPNView* _vpnView;
-	SBStatusBarCallForwardingView* _forwardingView;
+  SBStatusBar* _statusBar;
+  int _mode;
+  BOOL _dimmed;
+  BOOL _enteringAirplaneMode;
+  UIView* _lockIconView;
+  SBStatusBarTimeView* _timeView;
+  SBStatusBarBatteryView* _batteryView;
+  SBStatusBarBatteryPercentageView* _batteryPercentageView;
+  SBStatusBarSignalView* _signalView;
+  SBStatusBarCarrierView* _carrierView;
+  NSMutableArray* _indicatorViews;
+  SBStatusBarAirPortView* _airPortView;
+  SBStatusBarNoServiceView* _noServiceView;
+  SBStatusBarBluetoothView* _bluetoothView;
+  SBStatusBarProgressView* _progressView;
+  SBStatusBarBluetoothBatteryView* _bluetoothBatteryView;
+  SBStatusBarVPNView* _vpnView;
+  SBStatusBarCallForwardingView* _forwardingView;
 }
 +(float)contentAlphaForMode:(int)mode;
 -(id)initWithStatusBar:(id)statusBar mode:(int)mode;

@@ -8,8 +8,8 @@
 
 
 @interface UIDateTableCell : UIImageAndTextTableCell {
-	float _horizontalOffset;
-	float _verticalOffset;
+  float _horizontalOffset;
+  float _verticalOffset;
 }
 -(id)initWithFrame:(CGRect)frame;
 -(void)setHorizontalOffset:(float)offset;

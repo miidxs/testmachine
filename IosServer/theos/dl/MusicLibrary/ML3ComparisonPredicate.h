@@ -12,11 +12,11 @@
 
 @interface ML3ComparisonPredicate : ML3PropertyPredicate {
 @private
-	id _value;
-	NSString* _transformFunction;
-	int _comparison;
-	BOOL _caseInsensitive;
-	BOOL _treatNullAsBlank;
+  id _value;
+  NSString* _transformFunction;
+  int _comparison;
+  BOOL _caseInsensitive;
+  BOOL _treatNullAsBlank;
 }
 @property(retain, nonatomic) id value;
 @property(assign, nonatomic) int comparison;

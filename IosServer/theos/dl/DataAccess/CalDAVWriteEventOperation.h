@@ -10,13 +10,13 @@
 @class ICSCalendar, NSString, NSURL, CalDAVCacheManager, CalDAVAccount;
 
 @interface CalDAVWriteEventOperation : NSObject {
-	ICSCalendar* _calendar;
-	NSURL* _calendarURL;
-	BOOL _overwrite;
-	CalDAVAccount* _account;
-	CalDAVCacheManager* _cache;
-	NSString* _resourcePath;
-	BOOL _wasResourceModifiedByServer;
+  ICSCalendar* _calendar;
+  NSURL* _calendarURL;
+  BOOL _overwrite;
+  CalDAVAccount* _account;
+  CalDAVCacheManager* _cache;
+  NSString* _resourcePath;
+  BOOL _wasResourceModifiedByServer;
 }
 @property(readonly, assign, nonatomic) BOOL wasResourceModifiedByServer;
 @property(readonly, assign, nonatomic) NSString* resourcePath;

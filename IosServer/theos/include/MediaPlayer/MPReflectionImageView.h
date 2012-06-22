@@ -11,11 +11,11 @@
 @class UIImageView, UIGradient;
 
 @interface MPReflectionImageView : UIView {
-	UIImageView* _imageView;
-	unsigned _nonSquareImage : 1;
-	UIImageView* _reflection;
-	UIGradient* _reflectionGradient;
-	float _reflectionHeight;
+  UIImageView* _imageView;
+  unsigned _nonSquareImage : 1;
+  UIImageView* _reflection;
+  UIGradient* _reflectionGradient;
+  float _reflectionHeight;
 }
 @property(retain, nonatomic) UIGradient* reflectionGradient;
 @property(assign, nonatomic) float reflectionHeight;

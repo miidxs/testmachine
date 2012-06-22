@@ -12,21 +12,21 @@
 @class MPVideoBufferLayerContainer, MPMovieSnapshotController, NSString, UIMovieSubtitlesView, CALayer;
 
 @interface MPVideoView : UIView {
-	UIView* _videoBufferContainerView;
-	MPVideoBufferLayerContainer* _videoBufferContainerLayer;
-	CALayer* _videoBufferLayer;
-	UIMovieSubtitlesView* _subtitlesView;
-	CGSize _subtitlesMargin;
-	MPMovieSnapshotController* _snapshotController;
-	NSString* _moviePath;
-	NSString* _movieSubtitle;
-	NSString* _movieTitle;
-	unsigned _scaleMode;
-	double _startTime;
-	double _stopTime;
-	unsigned _effectiveScaleMode;
-	unsigned _disableFudgingScaleToFullScreen : 1;
-	unsigned _requiresIntegralScreenFrame : 1;
+  UIView* _videoBufferContainerView;
+  MPVideoBufferLayerContainer* _videoBufferContainerLayer;
+  CALayer* _videoBufferLayer;
+  UIMovieSubtitlesView* _subtitlesView;
+  CGSize _subtitlesMargin;
+  MPMovieSnapshotController* _snapshotController;
+  NSString* _moviePath;
+  NSString* _movieSubtitle;
+  NSString* _movieTitle;
+  unsigned _scaleMode;
+  double _startTime;
+  double _stopTime;
+  unsigned _effectiveScaleMode;
+  unsigned _disableFudgingScaleToFullScreen : 1;
+  unsigned _requiresIntegralScreenFrame : 1;
 }
 @property(retain, nonatomic) NSString* movieSubtitle;
 @property(retain, nonatomic) NSString* movieTitle;

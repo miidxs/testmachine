@@ -11,13 +11,13 @@
 @class NSString, NSArray, UIFont;
 
 @interface UITableViewIndex : UIControl {
-	NSArray* _titles;
-	UIFont* _font;
-	int _selectedSection;
-	BOOL _pastTop;
-	BOOL _pastBottom;
-	CGSize _cachedSize;
-	CGSize _cachedSizeToFit;
+  NSArray* _titles;
+  UIFont* _font;
+  int _selectedSection;
+  BOOL _pastTop;
+  BOOL _pastBottom;
+  CGSize _cachedSize;
+  CGSize _cachedSizeToFit;
 }
 @property(readonly, assign, nonatomic) int selectedSection;
 @property(readonly, assign, nonatomic) BOOL pastTop;

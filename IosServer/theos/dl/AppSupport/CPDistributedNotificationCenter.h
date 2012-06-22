@@ -11,12 +11,12 @@
 @class NSLock, NSMutableDictionary, NSString;
 
 @interface CPDistributedNotificationCenter : NSObject {
-	NSString* _centerName;
-	NSLock* _lock;
-	CFRunLoopSourceRef _receiveNotificationSource;
-	BOOL _isServer;
-	NSMutableDictionary* _sendPorts;
-	unsigned _startCount;
+  NSString* _centerName;
+  NSLock* _lock;
+  CFRunLoopSourceRef _receiveNotificationSource;
+  BOOL _isServer;
+  NSMutableDictionary* _sendPorts;
+  unsigned _startCount;
 }
 +(CPDistributedNotificationCenter*)centerNamed:(NSString*)centerName;
 -(id)_initWithServerName:(NSString*)serverName;

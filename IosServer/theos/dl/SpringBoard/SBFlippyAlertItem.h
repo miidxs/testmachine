@@ -10,11 +10,11 @@
 @class UIModalView;
 
 @interface SBFlippyAlertItem : SBAlertItem {
-	UIModalView* _frontAlertSheet;
-	UIModalView* _backAlertSheet;
-	BOOL _showingBack;
-	BOOL _isLocked;
-	BOOL _requirePasscode;
+  UIModalView* _frontAlertSheet;
+  UIModalView* _backAlertSheet;
+  BOOL _showingBack;
+  BOOL _isLocked;
+  BOOL _requirePasscode;
 }
 -(Class)frontAlertSheetClass;
 -(Class)backAlertSheetClass;

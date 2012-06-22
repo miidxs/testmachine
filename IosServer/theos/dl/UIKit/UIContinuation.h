@@ -16,10 +16,10 @@
 @end
 
 @interface UIContinuation : NSObject <UIContinuation> {
-	NSMutableDictionary* _properties;
-	id _continuationContext;
-	id _continuationTarget;
-	SEL _continuationSelector;
+  NSMutableDictionary* _properties;
+  id _continuationContext;
+  id _continuationTarget;
+  SEL _continuationSelector;
 }
 -(id)initWithTarget:(id)target context:(id)context continuationSelector:(SEL)selector;
 -(id)context;

@@ -9,11 +9,11 @@
 @class NSString, AVRemaker;
 
 @interface CKAVMediaObject : CKMediaObject {
-	AVRemaker* _remaker;
-	BOOL _remakeSuccessful;
-	BOOL _remakeDidEnd;
-	NSString* _createdFilename;
-	double _approximateDuration;
+  AVRemaker* _remaker;
+  BOOL _remakeSuccessful;
+  BOOL _remakeDidEnd;
+  NSString* _createdFilename;
+  double _approximateDuration;
 }
 @property(assign) BOOL remakeDidEnd;
 +(void)initialize;

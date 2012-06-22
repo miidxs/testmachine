@@ -12,12 +12,12 @@
 @class AVController, AVQueue, NSString, NSTimer;
 
 @interface SBSIMToolkitAlert : SBAlert {
-	BOOL _needsResponse;
-	NSTimer* _timeoutTimer;
-	NSString* _tone;
-	AVController* _avController;
-	AVQueue* _avQueue;
-	BOOL _interruptedAudio;
+  BOOL _needsResponse;
+  NSTimer* _timeoutTimer;
+  NSString* _tone;
+  AVController* _avController;
+  AVQueue* _avQueue;
+  BOOL _interruptedAudio;
 }
 +(CTServerConnectionRef)simToolkitServerConnection;
 +(BOOL)wantsNextUserEvent;

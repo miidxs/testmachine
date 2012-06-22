@@ -12,15 +12,15 @@
 @class NSString, NSDictionary, CLLocationManager, CLHeading, NSMutableArray;
 
 @interface PLLocationController : NSObject <CLLocationManagerDelegate> {
-	CLLocationManager* _locationManager;
-	int _managerRefCount;
-	NSMutableArray* _locationPendingPaths;
-	NSMutableArray* _pendingPathTimestamps;
-	CLHeading* _lastHeading;
-	NSDictionary* _supportDOPInfo;
-	NSDictionary* _exifDictionary;
-	NSString* _locationStr;
-	BOOL _isUpdating;
+  CLLocationManager* _locationManager;
+  int _managerRefCount;
+  NSMutableArray* _locationPendingPaths;
+  NSMutableArray* _pendingPathTimestamps;
+  CLHeading* _lastHeading;
+  NSDictionary* _supportDOPInfo;
+  NSDictionary* _exifDictionary;
+  NSString* _locationStr;
+  BOOL _isUpdating;
 }
 +(id)sharedInstance;
 // inherited: -(void)dealloc;

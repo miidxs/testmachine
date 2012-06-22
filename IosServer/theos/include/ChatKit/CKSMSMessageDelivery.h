@@ -9,11 +9,11 @@
 @class NSString, CKSMSMessage;
 
 @interface CKSMSMessageDelivery : NSObject {
-	NSString* _text;
-	int _group;
-	int _associationID;
-	CKSMSMessage* _message;
-	unsigned _isSending : 1;
+  NSString* _text;
+  int _group;
+  int _associationID;
+  CKSMSMessage* _message;
+  unsigned _isSending : 1;
 }
 @property(assign, nonatomic) CKSMSMessage* message;
 -(id)init;

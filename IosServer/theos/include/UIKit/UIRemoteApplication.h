@@ -9,8 +9,8 @@
 @class NSString;
 
 @interface UIRemoteApplication : NSObject {
-	NSString* _machServiceName;
-	unsigned _port;
+  NSString* _machServiceName;
+  unsigned _port;
 }
 -(id)initWithBundleIdentifier:(id)bundleIdentifier;
 -(id)initWithMachServiceName:(id)machServiceName;

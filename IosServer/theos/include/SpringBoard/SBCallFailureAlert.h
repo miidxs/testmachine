@@ -11,10 +11,10 @@
 @class NSString;
 
 @interface SBCallFailureAlert : SBAlert {
-	int _causeCode;
-	NSString* _address;
-	int _uid;
-	CTCallRef _call;
+  int _causeCode;
+  NSString* _address;
+  int _uid;
+  CTCallRef _call;
 }
 +(BOOL)shouldDisplayForCauseCode:(long)causeCode modemCauseCode:(long)code;
 +(void)activateForCall:(CTCallRef)call causeCode:(long)code;

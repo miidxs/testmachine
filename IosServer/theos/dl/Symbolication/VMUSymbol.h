@@ -13,10 +13,10 @@
 @class VMUSymbolOwner, NSString, NSArray;
 
 @interface VMUSymbol : VMUAddressRange <NSCopying> {
-	NSString* _name;
-	NSString* _mangledName;
-	VMUSymbolOwner* _owner;
-	unsigned _flags;
+  NSString* _name;
+  NSString* _mangledName;
+  VMUSymbolOwner* _owner;
+  unsigned _flags;
 }
 +(id)symbolWithName:(id)name mangledName:(id)name2 addressRange:(VMURange)range owner:(id)owner flags:(unsigned)flags;
 -(id)initWithName:(id)name mangledName:(id)name2 addressRange:(VMURange)range owner:(id)owner flags:(unsigned)flags;

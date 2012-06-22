@@ -11,18 +11,18 @@
 @class NSString, NSMutableString, UIWebDocumentView, UIScrollView, UIView, UIImageView, UITextLabel, UIImage, UIProgressIndicator;
 
 @interface MPTextView : MPSwipableView {
-	UIImage* _albumArtwork;
-	NSString* _rawText;
-	NSMutableString* _text;
-	UIImageView* _background;
-	UIImageView* _faderView;
-	UIWebDocumentView* _webView;
-	UIView* _headerView;
-	UIScrollView* _scrollView;
-	UITextLabel* _loadingLabel;
-	UIProgressIndicator* _loadingIndicator;
-	BOOL _scrollIndicatorFlashDisabled;
-	BOOL _needsLayout;
+  UIImage* _albumArtwork;
+  NSString* _rawText;
+  NSMutableString* _text;
+  UIImageView* _background;
+  UIImageView* _faderView;
+  UIWebDocumentView* _webView;
+  UIView* _headerView;
+  UIScrollView* _scrollView;
+  UITextLabel* _loadingLabel;
+  UIProgressIndicator* _loadingIndicator;
+  BOOL _scrollIndicatorFlashDisabled;
+  BOOL _needsLayout;
 }
 @property(retain, nonatomic) UIView* headerView;
 -(id)initWithFrame:(CGRect)frame;

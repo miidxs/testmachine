@@ -9,12 +9,12 @@
 __attribute__((visibility("hidden")))
 @interface UITextInputArrowKeyHistory : NSObject {
 @private
-	UITextPosition* startPosition;
-	int anchor;
-	int direction;
-	UITextPosition* start;
-	UITextPosition* end;
-	UITextPosition* cursor;
+  UITextPosition* startPosition;
+  int anchor;
+  int direction;
+  UITextPosition* start;
+  UITextPosition* end;
+  UITextPosition* cursor;
 }
 @property(retain, nonatomic) UITextPosition* startPosition;
 @property(assign, nonatomic) int anchor;

@@ -8,7 +8,7 @@
 
 
 @interface UITableViewCellContentMirror : UIView {
-	unsigned _selected : 1;
+  unsigned _selected : 1;
 }
 @property(assign, nonatomic, getter=isSelected) BOOL selected;
 -(id)initWithFrame:(CGRect)frame;

@@ -10,12 +10,12 @@
 @class NSString;
 
 @interface MimeCharset : NSObject {
-	unsigned _encoding;
-	NSString* _primaryLanguage;
-	NSString* _charsetName;
-	unsigned _coversLargeUnicodeSubset : 1;
-	unsigned _useBase64InHeaders : 1;
-	unsigned _canBeUsedForOutgoingMessages : 1;
+  unsigned _encoding;
+  NSString* _primaryLanguage;
+  NSString* _charsetName;
+  unsigned _coversLargeUnicodeSubset : 1;
+  unsigned _useBase64InHeaders : 1;
+  unsigned _canBeUsedForOutgoingMessages : 1;
 }
 +(id)allMimeCharsets:(BOOL)charsets;
 +(id)allMimeCharsets;

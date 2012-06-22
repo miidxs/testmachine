@@ -9,20 +9,20 @@
 #import <Availability2.h>
 
 @interface UINavigationTransitionView : UIView <NSCoding> {
-	id _delegate;
-	UIView* _fromView;
-	UIView* _toView;
-	int _transition;
-	UIView* _firstResponderToRestore;
+  id _delegate;
+  UIView* _fromView;
+  UIView* _toView;
+  int _transition;
+  UIView* _firstResponderToRestore;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	UIWindow* _originalWindow;
+  UIWindow* _originalWindow;
 #endif
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_1
-	float _fromViewAlpha;
+  float _fromViewAlpha;
 #endif
-	unsigned _isTransitioning : 1;
+  unsigned _isTransitioning : 1;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	BOOL _usesRoundedCorners;
+  BOOL _usesRoundedCorners;
 #endif
 }
 @property(assign, nonatomic) id delegate;

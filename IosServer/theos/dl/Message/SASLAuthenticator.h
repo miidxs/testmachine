@@ -11,10 +11,10 @@
 
 @interface SASLAuthenticator : NSObject {
 @private
-	void* _context;
-	AuthScheme* _authScheme;
-	Account* _account;
-	int _authenticationState;
+  void* _context;
+  AuthScheme* _authScheme;
+  Account* _account;
+  int _authenticationState;
 }
 -(id)initWithAuthScheme:(id)authScheme account:(id)account connection:(id)connection;
 // inherited: -(void)dealloc;

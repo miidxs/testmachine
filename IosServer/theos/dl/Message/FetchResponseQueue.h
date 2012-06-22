@@ -10,11 +10,11 @@
 @class LibraryIMAPStore, IMAPConnection;
 
 @interface FetchResponseQueue : BufferedMessageQueue {
-	LibraryIMAPStore* _store;
-	IMAPConnection* _connection;
-	unsigned _localUidNext;
-	unsigned _numNewUIDs;
-	unsigned _newMessageCount;
+  LibraryIMAPStore* _store;
+  IMAPConnection* _connection;
+  unsigned _localUidNext;
+  unsigned _numNewUIDs;
+  unsigned _newMessageCount;
 }
 // inherited: -(id)init;
 // inherited: -(void)dealloc;

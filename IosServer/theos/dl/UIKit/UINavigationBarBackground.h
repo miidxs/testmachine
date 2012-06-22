@@ -9,11 +9,11 @@
 @class UIColor;
 
 @interface UINavigationBarBackground : UIView {
-	int _barStyle;
-	UIColor* _tintColor;
-	struct {
-		unsigned isTranslucent : 1;
-	} _navbarFlags;
+  int _barStyle;
+  UIColor* _tintColor;
+  struct {
+    unsigned isTranslucent : 1;
+  } _navbarFlags;
 }
 -(id)initWithFrame:(CGRect)frame withBarStyle:(int)barStyle withTintColor:(id)tintColor isTranslucent:(BOOL)translucent;
 -(void)dealloc;

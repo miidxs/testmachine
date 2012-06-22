@@ -12,7 +12,7 @@
 
 @interface CADisplay : NSObject {
 @private
-	void* _impl;
+  void* _impl;
 }
 @property(readonly, assign) CGRect bounds;
 @property(readonly, assign) NSString* deviceName;

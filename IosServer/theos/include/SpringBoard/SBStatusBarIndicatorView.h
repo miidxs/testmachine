@@ -11,8 +11,8 @@
 @class NSString;
 
 @interface SBStatusBarIndicatorView : SBStatusBarContentView {
-	BOOL _showIndicatorView;
-	NSString* _indicatorName;
+  BOOL _showIndicatorView;
+  NSString* _indicatorName;
 }
 -(id)initWithName:(NSString*)name andMode:(int)mode;
 // inherited: -(void)dealloc;

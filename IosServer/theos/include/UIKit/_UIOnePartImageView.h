@@ -9,7 +9,7 @@
 @class UIImage;
 
 @interface _UIOnePartImageView : UIView {
-	UIImage* _image;
+  UIImage* _image;
 }
 -(id)initWithFrame:(CGRect)frame;
 -(void)setImage:(id)image;

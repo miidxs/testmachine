@@ -10,9 +10,9 @@
 
 
 @interface ObjectCache : NSObject {
-	int _arrayCapacity;
-	CFArrayRef _keysAndValues;
-	BOOL _useIsEqual;
+  int _arrayCapacity;
+  CFArrayRef _keysAndValues;
+  BOOL _useIsEqual;
 }
 -(id)initWithCapacity:(long)capacity;
 // inherited: -(void)dealloc;

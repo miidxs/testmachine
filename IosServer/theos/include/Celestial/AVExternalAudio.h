@@ -10,7 +10,7 @@
 
 
 @interface AVExternalAudio : NSObject {
-	AVExternalAudioPrivate* _priv;
+  AVExternalAudioPrivate* _priv;
 }
 +(id)avExternalAudio:(id)audio;
 -(id)initWithDelegate:(id)delegate;

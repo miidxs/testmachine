@@ -10,9 +10,9 @@
 @class UIKBKeyset, NSArray, NSMutableArray, NSString, UIKBKeylistReference;
 
 @interface UIKBKeylayout : UIKBShape <NSCoding> {
-	NSString* m_name;
-	UIKBKeyset* m_keyset;
-	NSMutableArray* m_refs;
+  NSString* m_name;
+  UIKBKeyset* m_keyset;
+  NSMutableArray* m_refs;
 }
 @property(retain, nonatomic) NSString* name;
 @property(retain, nonatomic) UIKBKeyset* keyset;

@@ -10,21 +10,21 @@
 @class NSTimer;
 
 @interface UICalloutBarButton : UIButton {
-	SEL m_action;
-	int m_position;
+  SEL m_action;
+  int m_position;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	int m_type;
+  int m_type;
 #endif
-	NSTimer* m_flashTimer;
-	float m_contentWidth;
-	float m_contentScale;
-	int m_flashCount;
-	BOOL m_isText;
-	BOOL m_configured;
-	BOOL m_single;
+  NSTimer* m_flashTimer;
+  float m_contentWidth;
+  float m_contentScale;
+  int m_flashCount;
+  BOOL m_isText;
+  BOOL m_configured;
+  BOOL m_single;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	BOOL m_padLeft;
-	BOOL m_padRight;
+  BOOL m_padLeft;
+  BOOL m_padRight;
 #endif
 }
 @property(readonly, assign, nonatomic) SEL action;

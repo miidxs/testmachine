@@ -10,7 +10,7 @@
 
 
 @interface SBCallAlert : SBAlert {
-	BOOL _causedSuspension;
+  BOOL _causedSuspension;
 }
 // inherited: +(void)registerForAlerts;
 -(id)initWithCall:(CTCallRef)call;

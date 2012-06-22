@@ -8,24 +8,24 @@
 @class CKService, NSMutableDictionary, NSString, NSMutableArray, NSArray, CKMessageComposition, CKMessage;
 
 @interface CKConversation : NSObject {
-	NSMutableArray* _messages;
-	NSString* _name;
-	int _unreadCount;
-	NSMutableArray* _failedMessages;
-	NSMutableArray* _pendingMessages;
-	CKMessage* _latestIncomingMessage;
-	BOOL _hasPlaceholder;
-	CKMessage* _placeholderMessage;
-	NSArray* _names;
-	NSArray* _recipients;
-	int _groupID;
-	NSMutableDictionary* _groupMessages;
-	NSMutableArray* _queuedGroupMessages;
-	int _groupAddStack;
-	BOOL _moreMessagesToLoad;
-	int _limitToLoad;
-	CKService* _service;
-	BOOL _updatesDisabled;
+  NSMutableArray* _messages;
+  NSString* _name;
+  int _unreadCount;
+  NSMutableArray* _failedMessages;
+  NSMutableArray* _pendingMessages;
+  CKMessage* _latestIncomingMessage;
+  BOOL _hasPlaceholder;
+  CKMessage* _placeholderMessage;
+  NSArray* _names;
+  NSArray* _recipients;
+  int _groupID;
+  NSMutableDictionary* _groupMessages;
+  NSMutableArray* _queuedGroupMessages;
+  int _groupAddStack;
+  BOOL _moreMessagesToLoad;
+  int _limitToLoad;
+  CKService* _service;
+  BOOL _updatesDisabled;
 }
 @property(readonly, assign, nonatomic) CKService* service;
 @property(assign, nonatomic) BOOL updatesDisabled;

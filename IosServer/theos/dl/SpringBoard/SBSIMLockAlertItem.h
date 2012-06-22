@@ -9,7 +9,7 @@
 
 
 @interface SBSIMLockAlertItem : SBAlertItem {
-	int _status;
+  int _status;
 }
 +(id)alertTitleForStatus:(int)status languageCode:(id)code;
 +(id)alertTitleForStatus:(int)status;

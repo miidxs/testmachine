@@ -7,12 +7,12 @@
 @class UIPasscodeField, UITextInputTraits;
 
 @interface SBDeviceLockEntryField : UIView <UIKeyInput> {
-	int _style;
-	int _interfaceOrientation;
-	UIPasscodeField* _passcodeField;
-	UITextInputTraits* _textInputTraits;
-	CFCharacterSetRef _numericTrimmingSet;
-	id _delegate;
+  int _style;
+  int _interfaceOrientation;
+  UIPasscodeField* _passcodeField;
+  UITextInputTraits* _textInputTraits;
+  CFCharacterSetRef _numericTrimmingSet;
+  id _delegate;
 }
 @property(assign, nonatomic) UIInterfaceOrientation interfaceOrientation;
 @property(assign, nonatomic) id delegate;

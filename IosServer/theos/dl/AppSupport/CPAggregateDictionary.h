@@ -17,7 +17,7 @@
  */
 
 @interface CPAggregateDictionary : NSObject {
-	CPDistributedMessagingCenter* _center;
+  CPDistributedMessagingCenter* _center;
 }
 @property(readonly, assign, nonatomic, getter=isEnabled) BOOL enabled;
 +(CPAggregateDictionary*)sharedAggregateDictionary;

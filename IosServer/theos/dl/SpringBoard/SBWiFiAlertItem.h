@@ -14,18 +14,18 @@
 @class UITable;
 
 @interface SBWiFiAlertItem : SBAlertItem {
-	NSMutableArray* _networks;
-	NSTimer* _scanTimer;
-	UITable* _table;
-	CGSize _size;
-	int _joinRow;
-	NSString* _password;
-	NSDictionary* _joinDict;
-	SBAlertItem* _childAlert;
-	BOOL _selectingRow;
-	BOOL _storedPassword;
-	BOOL _passwordFailed;
-	BOOL _sentResponse;
+  NSMutableArray* _networks;
+  NSTimer* _scanTimer;
+  UITable* _table;
+  CGSize _size;
+  int _joinRow;
+  NSString* _password;
+  NSDictionary* _joinDict;
+  SBAlertItem* _childAlert;
+  BOOL _selectingRow;
+  BOOL _storedPassword;
+  BOOL _passwordFailed;
+  BOOL _sentResponse;
 }
 -(void)scan;
 // inherited: -(id)init;

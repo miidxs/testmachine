@@ -11,25 +11,25 @@
 
 __attribute__((visibility("hidden")))
 @interface UISegment : UIView {
-	UIView* _info;
+  UIView* _info;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	XXStruct_V8l7SB* _appearance;
+  XXStruct_V8l7SB* _appearance;
 #endif
-	float _width;
-	CGSize _contentOffset;
-	UIColor* _tintColor;
-	int _barStyle;
-	struct {
-		unsigned style : 3;
-		unsigned size : 2;
-		unsigned selected : 1;
-		unsigned highlighted : 1;
-		unsigned showDivider : 1;
-		unsigned hasImage : 1;
-		unsigned isDisclosure : 1;
-		unsigned position : 3;
-		unsigned autosizeText : 1;
-	} _segmentFlags;
+  float _width;
+  CGSize _contentOffset;
+  UIColor* _tintColor;
+  int _barStyle;
+  struct {
+    unsigned style : 3;
+    unsigned size : 2;
+    unsigned selected : 1;
+    unsigned highlighted : 1;
+    unsigned showDivider : 1;
+    unsigned hasImage : 1;
+    unsigned isDisclosure : 1;
+    unsigned position : 3;
+    unsigned autosizeText : 1;
+  } _segmentFlags;
 }
 @property(assign) int controlSize;
 @property(assign, getter=isHighlighted) BOOL highlighted;

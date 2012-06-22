@@ -1,5 +1,5 @@
-/*	NSTask.h
-	Copyright (c) 1996-2007, Apple Inc. All rights reserved.
+/*  NSTask.h
+  Copyright (c) 1996-2007, Apple Inc. All rights reserved.
 */
 
 #import <Foundation/NSObject.h>
@@ -22,9 +22,9 @@
 - (void)setLaunchPath:(NSString *)path;
 - (void)setArguments:(NSArray *)arguments;
 - (void)setEnvironment:(NSDictionary *)dict;
-	// if not set, use current
+  // if not set, use current
 - (void)setCurrentDirectoryPath:(NSString *)path;
-	// if not set, use current
+  // if not set, use current
 
 // set standard I/O channels; may be either an NSFileHandle or an NSPipe
 - (void)setStandardInput:(id)input;
@@ -62,10 +62,10 @@
 @interface NSTask (NSTaskConveniences)
 
 + (NSTask *)launchedTaskWithLaunchPath:(NSString *)path arguments:(NSArray *)arguments;
-	// convenience; create and launch
+  // convenience; create and launch
 
 - (void)waitUntilExit;
-	// poll the runLoop in defaultMode until task completes
+  // poll the runLoop in defaultMode until task completes
 
 @end
 

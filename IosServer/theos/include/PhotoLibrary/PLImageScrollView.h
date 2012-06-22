@@ -12,21 +12,21 @@
 @protocol UIScrollViewDelegate, PLImageScrollViewDelegate;
 
 @interface PLImageScrollView : UIScrollView {
-	PLImageView* _imageView;
-	PLImageTile* _imageTile;
-	CGPoint _grabLoc;
-	BOOL _locked;
-	BOOL _isZooming;
-	BOOL _canFlickDuringTouch;
-	BOOL _dontAdjustOffset;
-	CGSize _padding;
-	struct {
-		unsigned delegateImplementsSiblingForDirection : 1;
-		unsigned allowNegativeOffsets : 1;
-		unsigned reserved : 30;
-	} _imageScrollerFlags;
-	PLImageView* _leftView;
-	PLImageView* _rightView;
+  PLImageView* _imageView;
+  PLImageTile* _imageTile;
+  CGPoint _grabLoc;
+  BOOL _locked;
+  BOOL _isZooming;
+  BOOL _canFlickDuringTouch;
+  BOOL _dontAdjustOffset;
+  CGSize _padding;
+  struct {
+    unsigned delegateImplementsSiblingForDirection : 1;
+    unsigned allowNegativeOffsets : 1;
+    unsigned reserved : 30;
+  } _imageScrollerFlags;
+  PLImageView* _leftView;
+  PLImageView* _rightView;
 }
 @property(assign, nonatomic) id<UIScrollViewDelegate, PLImageScrollViewDelegate> delegate;
 -(CGSize)_contentSizeForView:(id)view;

@@ -12,10 +12,10 @@
 @class NSMutableArray, SBCompassRecalibrationView, UIWindow;
 
 @interface SBCompassRecalibrationController : NSObject {
-	NSMutableArray* _assertionPorts;
+  NSMutableArray* _assertionPorts;
 #if __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_3_2
-	UIWindow* _recalibrationWindow;
-	SBCompassRecalibrationView* _recalibrationView;
+  UIWindow* _recalibrationWindow;
+  SBCompassRecalibrationView* _recalibrationView;
 #endif
 }
 +(id)sharedInstance;

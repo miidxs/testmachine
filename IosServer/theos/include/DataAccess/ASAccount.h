@@ -12,16 +12,16 @@
 @class ASAutodiscoverTask, ASFolderHierarchy, NSMutableSet, NSLock, ASTaskManager, ASProtocol, NSMutableArray;
 
 @interface ASAccount : DAAccount {
-	ASFolderHierarchy* _folderHierarchy;
-	ASTaskManager* _taskManager;
-	ASProtocol* _protocol;
-	CFDictionaryRef _consumers;
-	NSMutableSet* _searchTaskSet;
-	NSMutableArray* _autodiscoveryServersToTry;
-	NSLock* _autodiscoverTaskLock;
-	ASAutodiscoverTask* _autodiscoverTask;
-	BOOL _useHTTPForTesting;
-	BOOL _isValidating;
+  ASFolderHierarchy* _folderHierarchy;
+  ASTaskManager* _taskManager;
+  ASProtocol* _protocol;
+  CFDictionaryRef _consumers;
+  NSMutableSet* _searchTaskSet;
+  NSMutableArray* _autodiscoveryServersToTry;
+  NSLock* _autodiscoverTaskLock;
+  ASAutodiscoverTask* _autodiscoverTask;
+  BOOL _useHTTPForTesting;
+  BOOL _isValidating;
 }
 @property(assign, setter=setASAccountVersion:) int asAccountVersion;
 @property(assign) int mailNumberOfPastDaysToSync;

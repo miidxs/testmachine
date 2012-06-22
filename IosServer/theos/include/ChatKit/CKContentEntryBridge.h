@@ -9,7 +9,7 @@
 @protocol CKContentEntryBridgeClient;
 
 @interface CKContentEntryBridge : NSObject {
-	NSObject<CKContentEntryBridgeClient>* _entryView;
+  NSObject<CKContentEntryBridgeClient>* _entryView;
 }
 @property(assign, nonatomic) NSObject<CKContentEntryBridgeClient>* contentEntryView;
 +(id)newContentEntryBridge;

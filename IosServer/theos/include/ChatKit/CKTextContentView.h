@@ -10,7 +10,7 @@
 @class UILabel;
 
 @interface CKTextContentView : UITextContentView {
-	UILabel* _defaultTextView;
+  UILabel* _defaultTextView;
 }
 +(float)singleLineTextHeight;
 -(id)initWithFrame:(CGRect)frame;

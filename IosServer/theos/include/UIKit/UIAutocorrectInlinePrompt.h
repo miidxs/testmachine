@@ -13,19 +13,19 @@
 __attribute__((visibility("hidden")))
 @interface UIAutocorrectInlinePrompt : UIView <UIKeyboardCandidateList> {
 @private
-	CGRect m_originalTypedTextRect;
-	NSString* m_typedText;
-	NSString* m_correction;
-	UIView* m_typedTextView;
-	UIView* m_correctionView;
-	UIView* m_correctionAnimationView;
-	UIView* m_typedTextAnimationView;
-	UIView* m_correctionShadowView;
-	BOOL m_fits;
-	BOOL m_mouseDown;
-	id m_delegate;
-	unsigned m_index;
-	int m_promptTextType;
+  CGRect m_originalTypedTextRect;
+  NSString* m_typedText;
+  NSString* m_correction;
+  UIView* m_typedTextView;
+  UIView* m_correctionView;
+  UIView* m_correctionAnimationView;
+  UIView* m_typedTextAnimationView;
+  UIView* m_correctionShadowView;
+  BOOL m_fits;
+  BOOL m_mouseDown;
+  id m_delegate;
+  unsigned m_index;
+  int m_promptTextType;
 }
 // inherited: -(id)initWithFrame:(CGRect)frame;
 -(int)textEffectsVisibilityLevel;

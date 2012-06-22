@@ -10,12 +10,12 @@
 @class UITableViewCell;
 
 @interface UITableViewCellEditControl : UIControl {
-	UITableViewCell* _cell;
-	unsigned _style : 2;
-	unsigned _rotated : 1;
-	unsigned _rotating : 1;
-	unsigned _hiding : 1;
-	unsigned _reserved : 27;
+  UITableViewCell* _cell;
+  unsigned _style : 2;
+  unsigned _rotated : 1;
+  unsigned _rotating : 1;
+  unsigned _hiding : 1;
+  unsigned _reserved : 27;
 }
 @property(assign, nonatomic, getter=isHiding) BOOL hiding;
 @property(assign, nonatomic, getter=isRotated) BOOL rotated;

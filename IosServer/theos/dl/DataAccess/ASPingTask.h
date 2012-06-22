@@ -10,10 +10,10 @@
 @class NSSet;
 
 @interface ASPingTask : ASTask {
-	NSSet* _folders;
-	NSSet* _oldFolders;
-	int _seconds;
-	int _oldSeconds;
+  NSSet* _folders;
+  NSSet* _oldFolders;
+  int _seconds;
+  int _oldSeconds;
 }
 -(id)initWithHeartbeat:(int)heartbeat folders:(id)folders oldHeartbeat:(int)heartbeat3 oldFolders:(id)folders4;
 // inherited: -(void)dealloc;

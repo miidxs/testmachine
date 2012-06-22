@@ -12,18 +12,18 @@
 @class NSString, UINavigationBar, NSMutableSet, NSMutableArray, UIView;
 
 @interface PSRootController : NSObject <PSBaseView> {
-	UIView* _contentView;
-	UINavigationBar* _navBar;
-	NSMutableArray* _controllers;
-	NSString* _title;
-	NSString* _idStr;
-	CGSize _size;
-	NSString* _navBarRightButtonTitle;
-	int _navBarRightButtonStyle;
-	BOOL _navBarRightButtonDirty;
-	NSMutableSet* _tasks;
-	BOOL _deallocating;
-	unsigned char _hasTelephony;
+  UIView* _contentView;
+  UINavigationBar* _navBar;
+  NSMutableArray* _controllers;
+  NSString* _title;
+  NSString* _idStr;
+  CGSize _size;
+  NSString* _navBarRightButtonTitle;
+  int _navBarRightButtonStyle;
+  BOOL _navBarRightButtonDirty;
+  NSMutableSet* _tasks;
+  BOOL _deallocating;
+  unsigned char _hasTelephony;
 }
 @property(readonly, retain) UIView* contentView;
 @property(readonly, retain) NSMutableArray* controllers;

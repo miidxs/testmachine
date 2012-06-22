@@ -19,31 +19,31 @@
 #if __IPHONE_OS_VERSION_MAX_ALLOWED < __IPHONE_3_2
 
 typedef enum {
-	UIGestureRecognizerStatePossible,
-	UIGestureRecognizerStateRecognized,
-	UIGestureRecognizerStateChanged,
-	UIGestureRecognizerStateFinished,
-	UIGestureRecognizerStateFailed
+  UIGestureRecognizerStatePossible,
+  UIGestureRecognizerStateRecognized,
+  UIGestureRecognizerStateChanged,
+  UIGestureRecognizerStateFinished,
+  UIGestureRecognizerStateFailed
 } UIGestureRecognizerState;
 
 @interface UIGestureRecognizer : NSObject {
-	id _target;
-	SEL _action;
-	UIView* _view;
-	NSMutableArray* _delayedTouches;
-	UIEvent* _updateEvent;
-	NSMutableSet* _obstacles;
-	NSMutableSet* _vultures;
-	NSMutableSet* _friends;
-	int _state;
-	struct {
-		unsigned pushedRunLoop : 1;
-		unsigned isRotatingRight : 1;
-		unsigned isZoomRubberBandEnabled : 1;
-		unsigned zoomsFromCurrentToMinOrMax : 1;
-		unsigned updatesScroller : 1;
-		unsigned isAnimatingZoomFailure : 1;
-	} _gestureFlags;
+  id _target;
+  SEL _action;
+  UIView* _view;
+  NSMutableArray* _delayedTouches;
+  UIEvent* _updateEvent;
+  NSMutableSet* _obstacles;
+  NSMutableSet* _vultures;
+  NSMutableSet* _friends;
+  int _state;
+  struct {
+    unsigned pushedRunLoop : 1;
+    unsigned isRotatingRight : 1;
+    unsigned isZoomRubberBandEnabled : 1;
+    unsigned zoomsFromCurrentToMinOrMax : 1;
+    unsigned updatesScroller : 1;
+    unsigned isAnimatingZoomFailure : 1;
+  } _gestureFlags;
 }
 @property(assign, nonatomic) id target;
 @property(assign, nonatomic) SEL action;

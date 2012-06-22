@@ -10,7 +10,7 @@
 @class NSString;
 
 @interface PLItem : NSObject {
-	id _internal;
+  id _internal;
 }
 @property(copy, nonatomic) NSString* title;
 @property(readonly, assign, nonatomic) int itemType;

@@ -6,9 +6,9 @@
 @class UILabel;
 
 @interface SBDeviceLockTitleWildcatKeypad : SBDeviceLockTitle {
-	BOOL _highlighted;
-	UILabel* _titleLabel;
-	UILabel* _subtitleLabel;
+  BOOL _highlighted;
+  UILabel* _titleLabel;
+  UILabel* _subtitleLabel;
 }
 // inherited: -(id)_protectedInitWithStyle:(int)style interfaceOrientation:(int)orientation;
 // inherited: -(void)dealloc;

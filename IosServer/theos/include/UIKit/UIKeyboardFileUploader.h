@@ -11,12 +11,12 @@
 @class NSString, NSURL, NSURLConnection;
 
 @interface UIKeyboardFileUploader : NSObject {
-	NSString* _source;
-	NSURL* _destination;
-	id _callbackTarget;
-	SEL _callbackSelector;
-	BOOL _succeeded;
-	NSURLConnection* _connection;
+  NSString* _source;
+  NSURL* _destination;
+  id _callbackTarget;
+  SEL _callbackSelector;
+  BOOL _succeeded;
+  NSURLConnection* _connection;
 }
 @property(retain, nonatomic) NSString* source;
 @property(retain, nonatomic) NSURL* destination;

@@ -11,15 +11,15 @@
 @protocol UITextSelectingContainer;
 
 @interface UITextMagnifierRanged : UIView <UITextMagnifier> {
-	UIView<UITextSelectingContainer>* _target;
-	CGPoint _magnificationPoint;
-	CGPoint _offset;
-	CGPoint _animationPoint;
-	UITextMagnifierTimeWeightedPoint* _weightedPoint;
-	UIView* _magnifierRenderer;
-	UIView* _autoscrollRenderer;
-	int _autoscrollDirections;
-	BOOL _inPlace;
+  UIView<UITextSelectingContainer>* _target;
+  CGPoint _magnificationPoint;
+  CGPoint _offset;
+  CGPoint _animationPoint;
+  UITextMagnifierTimeWeightedPoint* _weightedPoint;
+  UIView* _magnifierRenderer;
+  UIView* _autoscrollRenderer;
+  int _autoscrollDirections;
+  BOOL _inPlace;
 }
 @property(retain, nonatomic) UIView<UITextSelectingContainer>* target;
 @property(assign, nonatomic) CGPoint animationPoint;

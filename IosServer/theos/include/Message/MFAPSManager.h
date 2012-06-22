@@ -20,9 +20,9 @@
 @end
 
 @interface MFAPSManager : AKActor <MFAPSManager> {
-	APSConnection* _pushService;
-	NSMutableSet* _watchedTopics;
-	NSMutableSet* _unwatchedTopics;
+  APSConnection* _pushService;
+  NSMutableSet* _watchedTopics;
+  NSMutableSet* _unwatchedTopics;
 }
 +(id)sharedManager;
 -(void)startAPS;

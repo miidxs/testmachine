@@ -9,23 +9,23 @@
 @class UIFont, NSString;
 
 @interface _UIDateLabelCache : NSObject {
-	double _today;
-	double _noon;
-	double _tomorrow;
-	double _previousWeek;
-	UIFont* _timeDesignatorFont;
-	NSString* _amString;
-	NSString* _pmString;
-	CGSize _amSize;
-	CGSize _pmSize;
-	CFDictionaryRef _dateStringCache;
-	CFDateFormatterRef _timeFormatter;
-	CFDateFormatterRef _shortDateFormatter;
-	CFDateFormatterRef _shortTimeFormatter;
-	CFTimeZoneRef _tz;
-	CFDictionaryRef _dateSizeCache;
-	BOOL _use24HourTime;
-	BOOL _timeDesignatorAppearsBeforeTime;
+  double _today;
+  double _noon;
+  double _tomorrow;
+  double _previousWeek;
+  UIFont* _timeDesignatorFont;
+  NSString* _amString;
+  NSString* _pmString;
+  CGSize _amSize;
+  CGSize _pmSize;
+  CFDictionaryRef _dateStringCache;
+  CFDateFormatterRef _timeFormatter;
+  CFDateFormatterRef _shortDateFormatter;
+  CFDateFormatterRef _shortTimeFormatter;
+  CFTimeZoneRef _tz;
+  CFDictionaryRef _dateSizeCache;
+  BOOL _use24HourTime;
+  BOOL _timeDesignatorAppearsBeforeTime;
 }
 -(BOOL)_timeDesignatorAppearsBeforeTime;
 -(id)init;

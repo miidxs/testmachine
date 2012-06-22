@@ -10,9 +10,9 @@
 
 
 @interface MPButton : UIButton {
-	UIEdgeInsets _hitRectInsets;
-	double _holdDelayInterval;
-	unsigned _holding : 1;
+  UIEdgeInsets _hitRectInsets;
+  double _holdDelayInterval;
+  unsigned _holding : 1;
 }
 @property(assign, nonatomic) UIEdgeInsets hitRectInsets;
 @property(assign, nonatomic) double holdDelayInterval;

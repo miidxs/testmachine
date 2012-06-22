@@ -11,9 +11,9 @@
 @class NSMutableArray, NSDictionary, MFError;
 
 @interface SimpleMoveResponseConsumer : DAMailAccountConsumer <DAMessageMoveRequestConsumer> {
-	NSDictionary* messagesByMessageID;
-	NSMutableArray* failedMessages;
-	MFError* _error;
+  NSDictionary* messagesByMessageID;
+  NSMutableArray* failedMessages;
+  MFError* _error;
 }
 @property(retain, nonatomic) MFError* error;
 // in a protocol: -(void)actionFailed:(int)failed forTask:(id)task error:(id)error;

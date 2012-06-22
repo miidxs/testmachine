@@ -10,10 +10,10 @@
 @class CalDAVPropertyAdaptor, NSDictionary, NSString, DAVSession;
 
 @interface CalDAVListContentsOperation : AYOperation {
-	NSString* _uri;
-	DAVSession* _session;
-	NSDictionary* _propertiesCallbackMap;
-	CalDAVPropertyAdaptor* _adaptor;
+  NSString* _uri;
+  DAVSession* _session;
+  NSDictionary* _propertiesCallbackMap;
+  CalDAVPropertyAdaptor* _adaptor;
 }
 -(id)initWithSession:(id)session URI:(id)uri properties:(id)properties;
 -(id)initWithSession:(id)session URI:(id)uri properties:(id)properties adaptor:(id)adaptor;

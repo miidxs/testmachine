@@ -10,14 +10,14 @@
 @class NSMutableArray, NSMutableDictionary;
 
 @interface MFContactsSearchResultsModel : NSObject {
-	NSMutableArray* _searchResults;
-	NSMutableArray* _recentSearchResults;
-	NSMutableDictionary* _localSearchResultsByAddress;
-	NSMutableDictionary* _serverSearchResultsByAddress;
-	NSMutableDictionary* _recipientsByAddress;
-	unsigned _finishedSearchingForRecentRecipients : 1;
-	unsigned _finishedSearchingForLocalContacts : 1;
-	unsigned _finishedSearchingForRemoteContacts : 1;
+  NSMutableArray* _searchResults;
+  NSMutableArray* _recentSearchResults;
+  NSMutableDictionary* _localSearchResultsByAddress;
+  NSMutableDictionary* _serverSearchResultsByAddress;
+  NSMutableDictionary* _recipientsByAddress;
+  unsigned _finishedSearchingForRecentRecipients : 1;
+  unsigned _finishedSearchingForLocalContacts : 1;
+  unsigned _finishedSearchingForRemoteContacts : 1;
 }
 -(void)resetIncludingResults:(BOOL)results;
 -(void)addResults:(id)results ofType:(int)type;

@@ -9,10 +9,10 @@
 
 
 @interface CPDistributedMessagingCallout : NSObject {
-	id _target;
-	SEL _selector;
-	BOOL _returnsVoid;
-	BOOL _returnsVoidIsValid;
+  id _target;
+  SEL _selector;
+  BOOL _returnsVoid;
+  BOOL _returnsVoidIsValid;
 }
 @property(readonly, retain, nonatomic) id target;
 @property(readonly, assign, nonatomic) SEL selector;

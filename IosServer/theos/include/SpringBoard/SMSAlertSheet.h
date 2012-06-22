@@ -9,8 +9,8 @@
 
 
 @interface SMSAlertSheet : UIModalView {
-	BOOL _showingTagline;
-	BOOL _showingImage;
+  BOOL _showingTagline;
+  BOOL _showingImage;
 }
 -(void)layout;
 -(void)setImageData:(id)data;

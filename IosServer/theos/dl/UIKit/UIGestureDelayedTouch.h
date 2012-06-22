@@ -8,10 +8,10 @@
 @class UITouch, UIEvent;
 
 @interface UIGestureDelayedTouch : NSObject {
-	UITouch* _touch;
-	UITouch* _touchState;
-	UITouch* _savedTouchState;
-	UIEvent* _event;
+  UITouch* _touch;
+  UITouch* _touchState;
+  UITouch* _savedTouchState;
+  UIEvent* _event;
 }
 @property(retain) UITouch* touch;
 @property(retain) UITouch* touchState;

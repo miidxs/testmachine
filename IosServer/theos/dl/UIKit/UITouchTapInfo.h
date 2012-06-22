@@ -8,12 +8,12 @@
 
 
 @interface UITouchTapInfo : NSObject {
-	unsigned _tapCount;
-	float _multiTapDelay;
-	float _rejectAsTapThrehold;
-	float _viewTouchPauseThreshold;
-	CGPoint _startPosition;
-	double _startTime;
+  unsigned _tapCount;
+  float _multiTapDelay;
+  float _rejectAsTapThrehold;
+  float _viewTouchPauseThreshold;
+  CGPoint _startPosition;
+  double _startTime;
 }
 -(void)releaseAndClearWeakRefs;
 -(void)clearTapState;

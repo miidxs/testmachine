@@ -8,13 +8,13 @@
 @class NSString, NSTimer;
 
 @interface UIDelayedAction : NSObject {
-	id m_target;
-	SEL m_action;
-	id m_userInfo;
-	double m_delay;
-	NSTimer* m_timer;
-	BOOL m_canceled;
-	NSString* m_runLoopMode;
+  id m_target;
+  SEL m_action;
+  id m_userInfo;
+  double m_delay;
+  NSTimer* m_timer;
+  BOOL m_canceled;
+  NSString* m_runLoopMode;
 }
 -(id)initWithTarget:(id)target action:(SEL)action userInfo:(id)info delay:(double)delay mode:(id)mode;
 -(id)initWithTarget:(id)target action:(SEL)action userInfo:(id)info delay:(double)delay;

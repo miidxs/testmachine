@@ -17,14 +17,14 @@
 #import "UIGestureRecognizer.h"
 
 @interface UIPinchGestureRecognizer : UIGestureRecognizer {
-	float _lastTouchDistance;
-	double _lastTouchTime;
-	float _velocity;
-	float _previousVelocity;
-	float _scaleThreshold;
-	CGAffineTransform _transform;
-	CGPoint _anchorPoint;
-	unsigned _scrollViewGesture : 1;
+  float _lastTouchDistance;
+  double _lastTouchTime;
+  float _velocity;
+  float _previousVelocity;
+  float _scaleThreshold;
+  CGAffineTransform _transform;
+  CGPoint _anchorPoint;
+  unsigned _scrollViewGesture : 1;
 }
 @property(readonly, assign, nonatomic) float velocity;
 @property(readonly, assign, nonatomic) float scale;

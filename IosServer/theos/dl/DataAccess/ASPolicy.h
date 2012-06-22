@@ -10,9 +10,9 @@
 @class NSString;
 
 @interface ASPolicy : ASItem {
-	NSString* _type;
-	NSString* _key;
-	NSString* _status;
+  NSString* _type;
+  NSString* _key;
+  NSString* _status;
 }
 // inherited: +(BOOL)acceptsTopLevelLeaves;
 // inherited: +(BOOL)parsingLeafNode;

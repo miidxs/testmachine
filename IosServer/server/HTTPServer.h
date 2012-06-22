@@ -5,25 +5,25 @@
 
 @interface HTTPServer : NSObject
 {
-	// Underlying asynchronous TCP/IP socket
-	AsyncSocket *asyncSocket;
-	
-	// Standard delegate
-	id delegate;
-	
-	// HTTP server configuration
-	NSURL *documentRoot;
-	Class connectionClass;
-	
-	// NSNetService and related variables
-	NSNetService *netService;
-	NSString *domain;
-	NSString *type;
-	NSString *name;
-	UInt16 port;
-	NSDictionary *txtRecordDictionary;
-	
-	NSMutableArray *connections;
+  // Underlying asynchronous TCP/IP socket
+  AsyncSocket *asyncSocket;
+  
+  // Standard delegate
+  id delegate;
+  
+  // HTTP server configuration
+  NSURL *documentRoot;
+  Class connectionClass;
+  
+  // NSNetService and related variables
+  NSNetService *netService;
+  NSString *domain;
+  NSString *type;
+  NSString *name;
+  UInt16 port;
+  NSDictionary *txtRecordDictionary;
+  
+  NSMutableArray *connections;
 }
 
 - (id)delegate;

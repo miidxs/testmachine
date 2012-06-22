@@ -11,7 +11,7 @@
 
 @interface SBAwayViewPluginController : NSObject {
 @private
-	UIView* _view;
+  UIView* _view;
 }
 @property(retain, nonatomic) UIView* view;
 +(void)enableBundleNamed:(NSString*)name;

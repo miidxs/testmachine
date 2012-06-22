@@ -8,17 +8,17 @@
 @class UIWebSelectionGraph, UIWebSelection;
 
 @interface UIWebSelectionNode : NSObject {
-	UIWebSelectionNode* _fromTopByExpanding;
-	UIWebSelectionNode* _fromTopByContracting;
-	UIWebSelectionNode* _fromBottomByExpanding;
-	UIWebSelectionNode* _fromBottomByContracting;
-	UIWebSelectionNode* _fromRightByExpanding;
-	UIWebSelectionNode* _fromRightByContracting;
-	UIWebSelectionNode* _fromLeftByExpanding;
-	UIWebSelectionNode* _fromLeftByContracting;
-	UIWebSelectionGraph* _sharedGraph;
-	UIWebSelection* _selection;
-	BOOL _invalid;
+  UIWebSelectionNode* _fromTopByExpanding;
+  UIWebSelectionNode* _fromTopByContracting;
+  UIWebSelectionNode* _fromBottomByExpanding;
+  UIWebSelectionNode* _fromBottomByContracting;
+  UIWebSelectionNode* _fromRightByExpanding;
+  UIWebSelectionNode* _fromRightByContracting;
+  UIWebSelectionNode* _fromLeftByExpanding;
+  UIWebSelectionNode* _fromLeftByContracting;
+  UIWebSelectionGraph* _sharedGraph;
+  UIWebSelection* _selection;
+  BOOL _invalid;
 }
 @property(retain) UIWebSelection* selection;
 -(id)initWithSelection:(id)selection inGraph:(id)graph;

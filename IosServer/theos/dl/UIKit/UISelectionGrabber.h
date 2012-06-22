@@ -9,13 +9,13 @@
 @class UITextRangeView, UISelectionGrabberDot;
 
 @interface UISelectionGrabber : UIView {
-	UISelectionGrabberDot* m_dotView;
-	BOOL m_isDotted;
-	BOOL m_isStart;
-	BOOL m_activeFlattened;
-	BOOL m_alertFlattened;
-	BOOL m_navigationTransitionFlattened;
-	BOOL m_animating;
+  UISelectionGrabberDot* m_dotView;
+  BOOL m_isDotted;
+  BOOL m_isStart;
+  BOOL m_activeFlattened;
+  BOOL m_alertFlattened;
+  BOOL m_navigationTransitionFlattened;
+  BOOL m_animating;
 }
 @property(assign, nonatomic) BOOL isDotted;
 @property(assign, nonatomic) BOOL isStart;

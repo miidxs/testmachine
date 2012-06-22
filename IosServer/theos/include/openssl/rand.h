@@ -79,14 +79,14 @@ extern "C" {
 /* typedef struct rand_meth_st RAND_METHOD; */
 
 struct rand_meth_st
-	{
-	void (*seed)(const void *buf, int num);
-	int (*bytes)(unsigned char *buf, int num);
-	void (*cleanup)(void);
-	void (*add)(const void *buf, int num, double entropy);
-	int (*pseudorand)(unsigned char *buf, int num);
-	int (*status)(void);
-	};
+  {
+  void (*seed)(const void *buf, int num);
+  int (*bytes)(unsigned char *buf, int num);
+  void (*cleanup)(void);
+  void (*add)(const void *buf, int num, double entropy);
+  int (*pseudorand)(unsigned char *buf, int num);
+  int (*status)(void);
+  };
 
 #ifdef BN_DEBUG
 extern int rand_predictable;
@@ -115,9 +115,9 @@ int RAND_poll(void);
 #ifdef OPENSSL_FIPS
 void int_RAND_init_engine_callbacks(void);
 void int_RAND_set_callbacks(
-	int (*set_rand_func)(const RAND_METHOD *meth,
-						const RAND_METHOD **pmeth),
-	const RAND_METHOD *(*get_rand_func)(const RAND_METHOD **pmeth));
+  int (*set_rand_func)(const RAND_METHOD *meth,
+            const RAND_METHOD **pmeth),
+  const RAND_METHOD *(*get_rand_func)(const RAND_METHOD **pmeth));
 #endif
 #endif
 
@@ -137,29 +137,29 @@ void ERR_load_RAND_strings(void);
 /* Error codes for the RAND functions. */
 
 /* Function codes. */
-#define RAND_F_ENG_RAND_GET_RAND_METHOD			 108
-#define RAND_F_FIPS_RAND				 103
-#define RAND_F_FIPS_RAND_BYTES				 102
-#define RAND_F_FIPS_RAND_GET_RAND_METHOD		 109
-#define RAND_F_FIPS_RAND_SET_DT				 106
-#define RAND_F_FIPS_SET_DT				 104
-#define RAND_F_FIPS_SET_PRNG_SEED			 107
-#define RAND_F_FIPS_SET_TEST_MODE			 105
-#define RAND_F_RAND_GET_RAND_METHOD			 101
-#define RAND_F_SSLEAY_RAND_BYTES			 100
+#define RAND_F_ENG_RAND_GET_RAND_METHOD      108
+#define RAND_F_FIPS_RAND         103
+#define RAND_F_FIPS_RAND_BYTES         102
+#define RAND_F_FIPS_RAND_GET_RAND_METHOD     109
+#define RAND_F_FIPS_RAND_SET_DT        106
+#define RAND_F_FIPS_SET_DT         104
+#define RAND_F_FIPS_SET_PRNG_SEED      107
+#define RAND_F_FIPS_SET_TEST_MODE      105
+#define RAND_F_RAND_GET_RAND_METHOD      101
+#define RAND_F_SSLEAY_RAND_BYTES       100
 
 /* Reason codes. */
-#define RAND_R_NON_FIPS_METHOD				 105
-#define RAND_R_NOT_IN_TEST_MODE				 106
-#define RAND_R_NO_KEY_SET				 107
-#define RAND_R_PRNG_ASKING_FOR_TOO_MUCH			 101
-#define RAND_R_PRNG_ERROR				 108
-#define RAND_R_PRNG_KEYED				 109
-#define RAND_R_PRNG_NOT_REKEYED				 102
-#define RAND_R_PRNG_NOT_RESEEDED			 103
-#define RAND_R_PRNG_NOT_SEEDED				 100
-#define RAND_R_PRNG_SEED_MUST_NOT_MATCH_KEY		 110
-#define RAND_R_PRNG_STUCK				 104
+#define RAND_R_NON_FIPS_METHOD         105
+#define RAND_R_NOT_IN_TEST_MODE        106
+#define RAND_R_NO_KEY_SET        107
+#define RAND_R_PRNG_ASKING_FOR_TOO_MUCH      101
+#define RAND_R_PRNG_ERROR        108
+#define RAND_R_PRNG_KEYED        109
+#define RAND_R_PRNG_NOT_REKEYED        102
+#define RAND_R_PRNG_NOT_RESEEDED       103
+#define RAND_R_PRNG_NOT_SEEDED         100
+#define RAND_R_PRNG_SEED_MUST_NOT_MATCH_KEY    110
+#define RAND_R_PRNG_STUCK        104
 
 #ifdef  __cplusplus
 }

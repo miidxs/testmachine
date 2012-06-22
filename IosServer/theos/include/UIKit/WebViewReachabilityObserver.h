@@ -7,7 +7,7 @@
 
 
 @interface WebViewReachabilityObserver : NSObject {
-	id _delegate;
+  id _delegate;
 }
 -(id)init;
 -(void)setDelegate:(id)delegate;

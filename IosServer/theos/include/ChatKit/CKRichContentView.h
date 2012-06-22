@@ -9,7 +9,7 @@
 
 
 @interface CKRichContentView : CKTextContentView <DOMEventListener> {
-	id _richContentDelegate;
+  id _richContentDelegate;
 }
 @property(assign, nonatomic) id richContentDelegate;
 -(id)initWithFrame:(CGRect)frame;

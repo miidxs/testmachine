@@ -1,5 +1,5 @@
-/*	CFUserNotification.h
-	Copyright (c) 2000-2009, Apple Inc.  All rights reserved.
+/*  CFUserNotification.h
+  Copyright (c) 2000-2009, Apple Inc.  All rights reserved.
 */
 
 #if !defined(__COREFOUNDATION_CFUSERNOTIFICATION__)
@@ -99,22 +99,22 @@ SInt32 CFUserNotificationDisplayAlert(CFTimeInterval timeout, CFOptionFlags flag
 /* Flags */
 
 enum {
-    kCFUserNotificationStopAlertLevel 		= 0,
-    kCFUserNotificationNoteAlertLevel 		= 1,
-    kCFUserNotificationCautionAlertLevel 	= 2,
-    kCFUserNotificationPlainAlertLevel		= 3
+    kCFUserNotificationStopAlertLevel     = 0,
+    kCFUserNotificationNoteAlertLevel     = 1,
+    kCFUserNotificationCautionAlertLevel  = 2,
+    kCFUserNotificationPlainAlertLevel    = 3
 };
 
 enum {
-    kCFUserNotificationDefaultResponse		= 0,
-    kCFUserNotificationAlternateResponse	= 1,
-    kCFUserNotificationOtherResponse		= 2,
-    kCFUserNotificationCancelResponse		= 3
+    kCFUserNotificationDefaultResponse    = 0,
+    kCFUserNotificationAlternateResponse  = 1,
+    kCFUserNotificationOtherResponse    = 2,
+    kCFUserNotificationCancelResponse   = 3
 };
 
 enum {
-    kCFUserNotificationNoDefaultButtonFlag 	= (1UL << 5),
-    kCFUserNotificationUseRadioButtonsFlag 	= (1UL << 6)
+    kCFUserNotificationNoDefaultButtonFlag  = (1UL << 5),
+    kCFUserNotificationUseRadioButtonsFlag  = (1UL << 6)
 };
 
 CF_INLINE CFOptionFlags CFUserNotificationCheckBoxChecked(CFIndex i) {return ((CFOptionFlags)(1UL << (8 + i)));}
@@ -165,7 +165,7 @@ const CFStringRef kCFUserNotificationTextFieldValuesKey;
 
 #if MAC_OS_X_VERSION_10_3 <= MAC_OS_X_VERSION_MAX_ALLOWED
 CF_EXPORT
-const CFStringRef kCFUserNotificationPopUpSelectionKey	AVAILABLE_MAC_OS_X_VERSION_10_3_AND_LATER;
+const CFStringRef kCFUserNotificationPopUpSelectionKey  AVAILABLE_MAC_OS_X_VERSION_10_3_AND_LATER;
 #endif
 
 #if (TARGET_OS_EMBEDDED || TARGET_OS_IPHONE)

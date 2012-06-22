@@ -10,8 +10,8 @@
 
 
 @interface LineEndingConverter : NSObject <MFDataConsumer> {
-	id<MFDataConsumer> _consumer;
-	BOOL _lastCR;
+  id<MFDataConsumer> _consumer;
+  BOOL _lastCR;
 }
 +(id)converterWithConsumer:(id)consumer;
 -(id)initWithConsumer:(id)consumer;

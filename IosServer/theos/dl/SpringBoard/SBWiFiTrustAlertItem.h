@@ -10,10 +10,10 @@
 @class NSString, NSArray;
 
 @interface SBWiFiTrustAlertItem : SBAlertItem {
-	NSString* _displayName;
-	NSString* _networkName;
-	NSArray* _certificateArray;
-	BOOL _sentResponse;
+  NSString* _displayName;
+  NSString* _networkName;
+  NSArray* _certificateArray;
+  BOOL _sentResponse;
 }
 // inherited: -(Class)alertSheetClass;
 -(id)initWithCertificateArray:(id)certificateArray networkName:(id)name;

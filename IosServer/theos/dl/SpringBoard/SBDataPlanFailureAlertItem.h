@@ -5,8 +5,8 @@
 #import "SBDataPlanAccountAlertItem.h"
 
 @interface SBDataPlanFailureAlertItem : SBDataPlanAccountAlertItem {
-	NSString* _carrierName;
-	BOOL _newAccount;
+  NSString* _carrierName;
+  BOOL _newAccount;
 }
 @property(copy, nonatomic) NSString* carrierName;
 @property(assign, nonatomic, getter=isNewAccount) BOOL newAccount;

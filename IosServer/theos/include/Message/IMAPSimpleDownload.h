@@ -11,13 +11,13 @@
 @class NSError, NSMutableData, NSString;
 
 @interface IMAPSimpleDownload : IMAPDownload {
-	NSMutableData* _mdata;
-	NSString* _section;
-	NSError* _error;
-	unsigned _length : 32;
-	unsigned _knownLength : 1;
-	unsigned _complete : 1;
-	NSRange _range;
+  NSMutableData* _mdata;
+  NSString* _section;
+  NSError* _error;
+  unsigned _length : 32;
+  unsigned _knownLength : 1;
+  unsigned _complete : 1;
+  NSRange _range;
 }
 -(id)initWithUid:(unsigned long)uid section:(id)section estimatedLength:(unsigned long)length;
 -(id)initWithUid:(unsigned long)uid section:(id)section length:(unsigned long)length;

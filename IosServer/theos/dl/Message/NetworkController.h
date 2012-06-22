@@ -12,13 +12,13 @@
 @class NSTimer;
 
 @interface NetworkController : NSObject {
-	SCDynamicStoreRef _store;
-	unsigned _waitingForDialToFinish : 1;
-	unsigned _checkedNetwork : 1;
-	unsigned _isNetworkUp : 1;
-	unsigned _isFatPipe : 1;
-	unsigned _edgeRequested : 1;
-	NSTimer* _notificationTimer;
+  SCDynamicStoreRef _store;
+  unsigned _waitingForDialToFinish : 1;
+  unsigned _checkedNetwork : 1;
+  unsigned _isNetworkUp : 1;
+  unsigned _isFatPipe : 1;
+  unsigned _edgeRequested : 1;
+  NSTimer* _notificationTimer;
 }
 +(id)sharedInstance;
 // inherited: -(void)dealloc;

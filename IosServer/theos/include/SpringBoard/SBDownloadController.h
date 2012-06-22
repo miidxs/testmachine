@@ -14,9 +14,9 @@
 
 @interface SBDownloadController : NSObject <ISDownloadQueueDelegate> {
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	SSDownloadQueue* _downloadQueue;
+  SSDownloadQueue* _downloadQueue;
 #else
-	ISDownloadQueue* _downloadQueue;
+  ISDownloadQueue* _downloadQueue;
 #endif
 }
 +(SBDownloadController *)sharedInstance;

@@ -10,8 +10,8 @@
 @class NSString;
 
 @interface ASFetchAttachmentTask : ASTask {
-	NSString* _messageServerID;
-	NSString* _attachmentName;
+  NSString* _messageServerID;
+  NSString* _attachmentName;
 }
 // inherited: -(void)finishWithError:(id)error;
 // inherited: -(id)requestBody;

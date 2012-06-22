@@ -12,7 +12,7 @@
 __attribute__((visibility("hidden")))
 @interface MLPlaylistSQL : MLPlaylist {
 @private
-	void* _containerRef;
+  void* _containerRef;
 }
 -(id)initWithDBRecord:(void*)dbrecord;
 -(void*)dbRecord;

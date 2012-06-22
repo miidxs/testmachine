@@ -10,7 +10,7 @@
 @class NSString;
 
 @interface MPVolumeSettingsController : UITwoSidedAlertController <UITwoSidedAlertControllerDelegate> {
-	NSString* _audioCategory;
+  NSString* _audioCategory;
 }
 -(id)initWithAudioCategory:(id)audioCategory;
 -(void)dealloc;

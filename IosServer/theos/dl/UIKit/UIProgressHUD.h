@@ -10,16 +10,16 @@
 @class UIImageView, UILabel, UIProgressIndicator, UIWindow;
 
 @interface UIProgressHUD : UIView {
-	UIProgressIndicator* _progressIndicator;
-	UILabel* _progressMessage;
-	UIImageView* _doneView;
-	UIWindow* _parentWindow;
-	struct {
-		unsigned isShowing : 1;
-		unsigned isShowingText : 1;
-		unsigned fixedFrame : 1;
-		unsigned reserved : 30;
-	} _progressHUDFlags;
+  UIProgressIndicator* _progressIndicator;
+  UILabel* _progressMessage;
+  UIImageView* _doneView;
+  UIWindow* _parentWindow;
+  struct {
+    unsigned isShowing : 1;
+    unsigned isShowingText : 1;
+    unsigned fixedFrame : 1;
+    unsigned reserved : 30;
+  } _progressHUDFlags;
 }
 -(id)_progressIndicator;
 -(id)initWithFrame:(CGRect)frame;

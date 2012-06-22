@@ -6,7 +6,7 @@
 @class NSURL;
 
 @interface SBDataPlanAccountAlertItem : SBDataPlanAlertItem {
-	NSURL* _accountURL;
+  NSURL* _accountURL;
 }
 @property(copy, nonatomic) NSURL* accountURL;
 +(NSString *)laterButtonTitle;

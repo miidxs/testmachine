@@ -11,9 +11,9 @@
 
 
 @interface VMUMemoryView_Swapped : NSObject <VMUMemoryView> {
-	VMURange _addressRange;
-	unsigned long _cursor;
-	char* _data;
+  VMURange _addressRange;
+  unsigned long _cursor;
+  char* _data;
 }
 -(id)initWithAddressRange:(VMURange)addressRange data:(char*)data;
 // in a protocol: -(VMURange)addressRange;

@@ -10,9 +10,9 @@
 @class NSNumber, NSString, NSMutableArray;
 
 @interface ASChangedFolderStore : ASItem {
-	NSMutableArray* _updatedFolders;
-	NSNumber* _status;
-	NSString* _syncKey;
+  NSMutableArray* _updatedFolders;
+  NSNumber* _status;
+  NSString* _syncKey;
 }
 // inherited: +(BOOL)acceptsTopLevelLeaves;
 // inherited: +(BOOL)parsingLeafNode;

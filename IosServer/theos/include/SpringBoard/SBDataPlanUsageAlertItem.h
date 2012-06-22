@@ -6,7 +6,7 @@
 @class NSNumber;
 
 @interface SBDataPlanUsageAlertItem : SBDataPlanAccountAlertItem {
-	NSNumber* _remainingPortion;
+  NSNumber* _remainingPortion;
 }
 @property(retain, nonatomic) NSNumber* remainingPortion;
 -(id)initWithAccountURL:(NSURL *)accountURL usage:(id)usage;

@@ -10,7 +10,7 @@
 
 __attribute__((visibility("hidden")))
 @interface UIScrollViewDelayedTouchesBeganGestureRecognizer : UIGestureRecognizer {
-	UIDelayedAction* _touchDelay;
+  UIDelayedAction* _touchDelay;
 }
 -(void)clearTimer;
 -(void)sendTouchesShouldBegin __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_NA, __MAC_NA, __IPHONE_3_0, __IPHONE_3_1);

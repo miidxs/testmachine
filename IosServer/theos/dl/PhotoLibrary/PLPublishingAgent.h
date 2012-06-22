@@ -12,21 +12,21 @@
 @protocol PLPublishingAgentDelegate;
 
 @interface PLPublishingAgent : NSObject <PLDataArrayInputStreamProgressDelegate> {
-	id _userInfo;
-	id _delegate;
-	NSString* _mediaPath;
-	NSData* _mediaData;
-	BOOL _deleteAfterPublishing;
-	double _changeRate;
-	long long _currentValue;
-	double _estimatedTimeRemaining;
-	long long _maxValue;
-	long long _normalizedCurrentValue;
-	long long _normalizedMaxValue;
-	float _percentComplete;
-	NSMutableArray* _snapshotTimes;
-	NSMutableArray* _snapshotValues;
-	UINavigationController* _parentNavigationController;
+  id _userInfo;
+  id _delegate;
+  NSString* _mediaPath;
+  NSData* _mediaData;
+  BOOL _deleteAfterPublishing;
+  double _changeRate;
+  long long _currentValue;
+  double _estimatedTimeRemaining;
+  long long _maxValue;
+  long long _normalizedCurrentValue;
+  long long _normalizedMaxValue;
+  float _percentComplete;
+  NSMutableArray* _snapshotTimes;
+  NSMutableArray* _snapshotValues;
+  UINavigationController* _parentNavigationController;
 }
 @property(assign, nonatomic) id<PLPublishingAgentDelegate> delegate;
 +(id)publishingAgentForBundleNamed:(id)bundleNamed;

@@ -11,8 +11,8 @@
 @class NSMutableArray, NSMutableDictionary;
 
 @interface MutableMessageHeaders : MessageHeaders {
-	NSMutableDictionary* _headersAdded;
-	NSMutableArray* _headersRemoved;
+  NSMutableDictionary* _headersAdded;
+  NSMutableArray* _headersRemoved;
 }
 // inherited: -(id)mutableCopy;
 // inherited: -(void)dealloc;

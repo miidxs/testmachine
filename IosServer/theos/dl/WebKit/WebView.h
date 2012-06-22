@@ -36,8 +36,8 @@
 #endif
 
 typedef enum _NSSelectionAffinity {
-	NSSelectionAffinityUpstream = 0,
-	NSSelectionAffinityDownstream = 1
+  NSSelectionAffinityUpstream = 0,
+  NSSelectionAffinityDownstream = 1
 } NSSelectionAffinity;
 
 

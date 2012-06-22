@@ -9,10 +9,10 @@
 __attribute__((visibility("hidden")))
 @interface UITextCheckerDictionaryEntry : NSObject {
 @private
-	CFSetRef dictionary;
-	NSData* data;
-	int size;
-	int mtime;
+  CFSetRef dictionary;
+  NSData* data;
+  int size;
+  int mtime;
 }
 // inherited: -(void)dealloc;
 @end

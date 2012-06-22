@@ -11,7 +11,7 @@
 @class NSString;
 
 @interface MPVolumeAlertView : UIAlertView <UIAlertViewDelegate> {
-	NSString* _volumeAudioCategory;
+  NSString* _volumeAudioCategory;
 }
 -(void)dealloc;
 -(id)volumeView;

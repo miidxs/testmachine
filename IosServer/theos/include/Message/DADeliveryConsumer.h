@@ -11,8 +11,8 @@
 @class MFError;
 
 @interface DADeliveryConsumer : DAMailAccountConsumer <DAMessageSendConsumer> {
-	int status;
-	MFError* _error;
+  int status;
+  MFError* _error;
 }
 @property(retain, nonatomic) MFError* error;
 // in a protocol: -(void)messageSentWithContext:(void*)context;

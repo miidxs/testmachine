@@ -8,10 +8,10 @@
 __attribute__((visibility("hidden")))
 @interface UIInputSwitcher : NSObject {
 @private
-	UIDelayedAction* m_switcherDelay;
-	int m_state;
-	UIInputSwitcherView* m_switcherView;
-	NSString* _newMode;
+  UIDelayedAction* m_switcherDelay;
+  int m_state;
+  UIInputSwitcherView* m_switcherView;
+  NSString* _newMode;
 }
 @property(copy, nonatomic) NSString* newMode;
 +(id)sharedInstance;

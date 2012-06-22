@@ -10,22 +10,22 @@
 @class VMUSymbolicator;
 
 @interface VMUBacktrace : NSObject {
-	int _flavor;
-	struct {
-		struct {
-			double t_begin;
-			double t_end;
-			double weight;
-			int pid;
-			unsigned thread_id;
-			unsigned char cpu_num;
-			BOOL supervisor;
-		} context;
-		unsigned* frames;
-		unsigned length;
-		VMUSymbolicator* symbolLookup;
-		double* counts;
-	} _callstack;
+  int _flavor;
+  struct {
+    struct {
+      double t_begin;
+      double t_end;
+      double weight;
+      int pid;
+      unsigned thread_id;
+      unsigned char cpu_num;
+      BOOL supervisor;
+    } context;
+    unsigned* frames;
+    unsigned length;
+    VMUSymbolicator* symbolLookup;
+    double* counts;
+  } _callstack;
 }
 // inherited: +(void)initialize;
 +(void)flush;

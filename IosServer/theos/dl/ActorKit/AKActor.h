@@ -14,7 +14,7 @@
 @end
 
 @interface AKActor : NSObject <AKActor> {
-	AKMailbox* _mailbox;
+  AKMailbox* _mailbox;
 }
 -(id)init;
 -(void)dealloc;

@@ -8,9 +8,9 @@
 #import <Availability2.h>
 
 @interface UIDateLabel : UILabel {
-	double _date;
-	int _dateKey;
-	BOOL _boldForAllLocales;
+  double _date;
+  int _dateKey;
+  BOOL _boldForAllLocales;
 }
 @property(assign, nonatomic) BOOL boldForAllLocales;
 +(id)defaultFont;

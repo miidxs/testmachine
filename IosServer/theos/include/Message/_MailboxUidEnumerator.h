@@ -10,8 +10,8 @@
 @class NSMutableArray;
 
 @interface _MailboxUidEnumerator : NSEnumerator {
-	NSMutableArray* _mailboxes;
-	unsigned _index;
+  NSMutableArray* _mailboxes;
+  unsigned _index;
 }
 // inherited: -(void)dealloc;
 -(id)initWithMailbox:(id)mailbox;

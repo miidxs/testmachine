@@ -11,8 +11,8 @@
 @class NSString;
 
 @interface MFConditionLock : NSConditionLock <MFLockObject> {
-	NSString* _name;
-	id _delegate;
+  NSString* _name;
+  id _delegate;
 }
 +(void)initialize;
 // inherited: -(id)init;

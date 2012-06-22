@@ -25,33 +25,33 @@ NSRange curRange = NSMakeRange(0, [test length]);
 NSUInteger subexprCount = [re numberOfSubexpressions];
 NSRange subexprs[subexprCount];
 while (1) {
-	NSRange newRange = [re matchedRangeForString:test range:curRange subexpressionRanges:subexprs count:subexprCount];
-	if (newRange.location == NSNotFound)
-		break;
-	else {
-		NSLog(@"%@ -> %@", [test substringWithRange:subexprs[0]], [test substringWithRange:subexprs[1]]);
-		
-		// Changing the range alone is buggy.
-		test = [test substringFromIndex:newRange.location + newRange.length];
-		curRange.length = [test length];
-	}
+  NSRange newRange = [re matchedRangeForString:test range:curRange subexpressionRanges:subexprs count:subexprCount];
+  if (newRange.location == NSNotFound)
+    break;
+  else {
+    NSLog(@"%@ -> %@", [test substringWithRange:subexprs[0]], [test substringWithRange:subexprs[1]]);
+    
+    // Changing the range alone is buggy.
+    test = [test substringFromIndex:newRange.location + newRange.length];
+    curRange.length = [test length];
+  }
 }
  @endcode
  
  */
 
 enum {
-	CPRegularExpressionOptionCaseInsensitive = 1,
-	CPRegularExpressionOptionSingleLine = 2,
-	CPRegularExpressionOptionBRESyntax = 4
-	
+  CPRegularExpressionOptionCaseInsensitive = 1,
+  CPRegularExpressionOptionSingleLine = 2,
+  CPRegularExpressionOptionBRESyntax = 4
+  
 };
 typedef NSUInteger CPRegularExpressionOptions;
 
 @interface CPRegularExpression : NSObject <NSCopying, NSCoding> {
 @private
-	NSString* _expressionString;
-	void* _reserved;
+  NSString* _expressionString;
+  void* _reserved;
 }
 // inherited: +(void)initialize;
 +(CPRegularExpression*)regularExpressionWithString:(NSString*)string;

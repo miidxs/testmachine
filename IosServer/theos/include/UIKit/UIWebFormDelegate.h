@@ -12,9 +12,9 @@
 @protocol BrowserDocumentController;
 
 @interface UIWebFormDelegate : NSObject <WebFormDelegate> {
-	UIWebFormCompletionController* _completionController;
-	id<BrowserDocumentController> _controller;
-	NSMutableDictionary* _editedForms;
+  UIWebFormCompletionController* _completionController;
+  id<BrowserDocumentController> _controller;
+  NSMutableDictionary* _editedForms;
 }
 -(void)dealloc;
 -(void)frame:(id)frame sourceFrame:(id)frame2 willSubmitForm:(id)form withValues:(id)values submissionListener:(id)listener;

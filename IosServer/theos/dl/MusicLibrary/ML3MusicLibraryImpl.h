@@ -13,7 +13,7 @@
 __attribute__((visibility("hidden")))
 @interface ML3MusicLibraryImpl : MLMusicLibrary_SQL {
 @private
-	ML3MusicLibrary* _library3;
+  ML3MusicLibrary* _library3;
 }
 +(id)geniusDatabasePath;
 +(BOOL)isPersistentIDForPlaylist:(long long)playlist;

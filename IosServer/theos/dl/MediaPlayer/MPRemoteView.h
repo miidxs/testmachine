@@ -12,7 +12,7 @@
 
 @interface MPRemoteView : UIView {
 @private
-	UIWindow* _window;
+  UIWindow* _window;
 }
 -(id)initWithFrame:(CGRect)frame;
 -(void)dealloc;

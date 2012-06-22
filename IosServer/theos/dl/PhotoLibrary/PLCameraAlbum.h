@@ -11,10 +11,10 @@
 @class MLPhotoDCIMDirectory, NSMutableArray;
 
 @interface PLCameraAlbum : MLPhotoAlbum {
-	MLPhotoDCIMDirectory* _dcimDirectory;
-	NSMutableArray* _pendingImages;
-	BOOL _albumDidChange;
-	BOOL _ignoreNotifications;
+  MLPhotoDCIMDirectory* _dcimDirectory;
+  NSMutableArray* _pendingImages;
+  BOOL _albumDidChange;
+  BOOL _ignoreNotifications;
 }
 +(id)sharedInstance;
 +(id)sharedInstanceIfExists;

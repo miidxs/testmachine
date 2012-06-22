@@ -12,17 +12,17 @@
 @class NSMutableDictionary, NSMutableArray, SBAlertDisplay, UIView;
 
 @interface SBAlertWindow : UIWindow {
-	UIView* _contentLayer;
-	unsigned _isAnimating : 1;
-	unsigned _isInvalid : 1;
-	unsigned _handlerActive : 1;
-	float _finalAlpha;
+  UIView* _contentLayer;
+  unsigned _isAnimating : 1;
+  unsigned _isInvalid : 1;
+  unsigned _handlerActive : 1;
+  float _finalAlpha;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	int _currentOrientation;
+  int _currentOrientation;
 #endif
-	SBAlertDisplay* _currentDisplay;
-	NSMutableArray* _stackedAlertDisplays;
-	NSMutableDictionary* _alertToDisplayMap;
+  SBAlertDisplay* _currentDisplay;
+  NSMutableArray* _stackedAlertDisplays;
+  NSMutableDictionary* _alertToDisplayMap;
 }
 // inherited: +(CGRect)constrainFrameToScreen:(CGRect)screen;
 // inherited: -(id)initWithContentRect:(CGRect)contentRect;

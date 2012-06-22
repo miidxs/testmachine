@@ -11,8 +11,8 @@
 @class MobileCalDAVCalendar;
 
 @interface MobileCalendarChangeApplier : NSObject {
-	MobileCalDAVCalendar* _calendar;
-	int _numChanges;
+  MobileCalDAVCalendar* _calendar;
+  int _numChanges;
 }
 @property(readonly, assign) int numChanges;
 -(id)initWithCalendar:(id)calendar;

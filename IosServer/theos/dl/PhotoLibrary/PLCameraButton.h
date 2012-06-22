@@ -11,18 +11,18 @@
 @class UIView, UIImage, NSArray, UIImageView;
 
 @interface PLCameraButton : UIThreePartButton {
-	UIView* _rotationHolder;
-	UIImageView* _iconView;
-	BOOL _lockEnabled;
-	BOOL _isLandscape;
-	BOOL _dontDrawDisabled;
-	UIImage* _cameraIcon;
-	UIImage* _cameraIconLandscape;
-	NSArray* _videoRecordingIcons;
-	BOOL _videoMode;
-	BOOL _videoIsRecording;
-	int _orientation;
-	BOOL _watchingOrientationChanges;
+  UIView* _rotationHolder;
+  UIImageView* _iconView;
+  BOOL _lockEnabled;
+  BOOL _isLandscape;
+  BOOL _dontDrawDisabled;
+  UIImage* _cameraIcon;
+  UIImage* _cameraIconLandscape;
+  NSArray* _videoRecordingIcons;
+  BOOL _videoMode;
+  BOOL _videoIsRecording;
+  int _orientation;
+  BOOL _watchingOrientationChanges;
 }
 -(id)initWithDefaultSize;
 -(void)_setIcon:(id)icon;

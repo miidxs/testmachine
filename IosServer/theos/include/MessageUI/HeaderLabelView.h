@@ -11,8 +11,8 @@
 @class NSString;
 
 @interface HeaderLabelView : UIView {
-	NSString* _label;
-	unsigned _highlighted : 1;
+  NSString* _label;
+  unsigned _highlighted : 1;
 }
 -(CGColorRef)labelColor;
 -(void)drawRect:(CGRect)rect;

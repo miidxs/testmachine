@@ -10,13 +10,13 @@
 @class NSDate, NSString;
 
 @interface SBAwayItem : NSObject {
-	NSString* _title;
-	NSString* _secondTitle;
-	NSString* _singletonTitle;
-	int _uid;
-	int _type;
-	NSDate* _date;
-	int _count;
+  NSString* _title;
+  NSString* _secondTitle;
+  NSString* _singletonTitle;
+  int _uid;
+  int _type;
+  NSDate* _date;
+  int _count;
 }
 -(id)initWithTitle:(id)title uid:(int)uid type:(int)type date:(id)date count:(int)count;
 -(id)initWithTitle:(id)title uid:(int)uid type:(int)type date:(id)date;

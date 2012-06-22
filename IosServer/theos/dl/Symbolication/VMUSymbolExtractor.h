@@ -10,8 +10,8 @@
 @class NSMutableArray, VMULazySymbolOwner, VMUSymbolOwner;
 
 @interface VMUSymbolExtractor : NSObject {
-	NSMutableArray* _symbols;
-	NSMutableArray* _sourceInfos;
+  NSMutableArray* _symbols;
+  NSMutableArray* _sourceInfos;
 }
 +(unsigned)extractSymbolOwnerFlagsFromHeader:(id)header;
 +(VMULazySymbolOwner*)extractLazySymbolOwnerFromHeader:(id)header;
@@ -19,7 +19,7 @@
 +(id)expandSourceInfos:(id)infos usingSymbols:(id)symbols;
 // inherited: -(id)init;
 -(id)symbols;
--(NSArray*)sourceInfos;	// NSArray of VMUSourceInfo's
+-(NSArray*)sourceInfos; // NSArray of VMUSourceInfo's
 // inherited: -(void)dealloc;
 @end
 

@@ -8,8 +8,8 @@
 
 
 @interface EmojiScrollView : UIScrollView {
-	double _delay;
-	BOOL _canDragToScroll;
+  double _delay;
+  BOOL _canDragToScroll;
 }
 @property(assign) double delay;
 -(id)initWithFrame:(CGRect)frame;

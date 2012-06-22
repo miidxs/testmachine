@@ -8,7 +8,7 @@
 @class UIImageView;
 
 @interface UISearchFieldBackgroundView : UITextFieldBackgroundView {
-	UIImageView* _imageViews[4];
+  UIImageView* _imageViews[4];
 }
 -(void)dealloc;
 -(void)_updateImages;

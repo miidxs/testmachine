@@ -12,23 +12,23 @@
 @class NSString, NSRecursiveLock;
 
 @interface YahooAccount : IMAPAccount {
-	CFSocketRef _socket;
-	CFRunLoopSourceRef _socketRunLoopSource;
-	void* _manager;
-	unsigned _nonce;
-	BOOL _initializedDeviceID;
-	unsigned char _deviceID[16];
-	unsigned short _sequenceNumber;
-	NSRecursiveLock* _cookieLock;
-	double _timeLastReceivedPacket;
-	double _timeLastSentPacket;
-	double _timeLastProvisioned;
-	BOOL _shouldListenForNotifications;
-	BOOL _shouldStartListeningForNotifications;
-	double _timeLastEncounteredAuthenticationError;
-	NSString* _temporaryPassword;
-	NSString* _signature;
-	int _stores;
+  CFSocketRef _socket;
+  CFRunLoopSourceRef _socketRunLoopSource;
+  void* _manager;
+  unsigned _nonce;
+  BOOL _initializedDeviceID;
+  unsigned char _deviceID[16];
+  unsigned short _sequenceNumber;
+  NSRecursiveLock* _cookieLock;
+  double _timeLastReceivedPacket;
+  double _timeLastSentPacket;
+  double _timeLastProvisioned;
+  BOOL _shouldListenForNotifications;
+  BOOL _shouldStartListeningForNotifications;
+  double _timeLastEncounteredAuthenticationError;
+  NSString* _temporaryPassword;
+  NSString* _signature;
+  int _stores;
 }
 // inherited: +(void)initialize;
 +(id)emailAddressHostPart;

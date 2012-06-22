@@ -10,9 +10,9 @@
 @class NSString;
 
 @interface DAMailboxFetchSearchResultRequest : NSObject {
-	NSString* _longID;
-	int _bodyFormat;
-	int _maxSize;
+  NSString* _longID;
+  int _bodyFormat;
+  int _maxSize;
 }
 -(id)initRequestForBodyFormat:(int)bodyFormat withLongID:(id)longID withBodySizeLimit:(int)bodySizeLimit;
 -(id)longID;

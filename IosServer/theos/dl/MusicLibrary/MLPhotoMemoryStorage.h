@@ -12,19 +12,19 @@
 
 @interface MLPhotoMemoryStorage : MLPhoto {
 @private
-	int _imageID;
-	unsigned _durationInMilliseconds;
-	NSString* _videoPath;
-	NSString* _fileExtension;
-	NSString* _metadataPath;
-	NSString* _filenameWithoutExtension;
-	NSDate* _date;
-	NSSet* _extensions;
-	unsigned _writeIsPending : 1;
-	int _type;
-	double _captureTime;
-	double _longitude;
-	double _latitude;
+  int _imageID;
+  unsigned _durationInMilliseconds;
+  NSString* _videoPath;
+  NSString* _fileExtension;
+  NSString* _metadataPath;
+  NSString* _filenameWithoutExtension;
+  NSDate* _date;
+  NSSet* _extensions;
+  unsigned _writeIsPending : 1;
+  int _type;
+  double _captureTime;
+  double _longitude;
+  double _latitude;
 }
 -(id)initWithImageID:(int)imageID;
 -(void)dealloc;

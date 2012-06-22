@@ -11,8 +11,8 @@
 @class SBApplicationIcon;
 
 @interface SBAppProfileNotTrustedAlertItem : SBAlertItem <UIModalViewDelegate> {
-	SBApplicationIcon* _icon;
-	BOOL _launchApp;
+  SBApplicationIcon* _icon;
+  BOOL _launchApp;
 }
 -(id)initWithIcon:(id)icon;
 // inherited: -(void)dealloc;

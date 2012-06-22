@@ -11,16 +11,16 @@
 @protocol VMUMemory;
 
 @interface VMUMachOHeader : VMUHeader {
-	NSString* _name;
-	NSString* _path;
-	NSDate* _timestamp;
-	id<VMUMemory> _memory;
-	unsigned long long _address;
-	unsigned long long _linkEditBase;
-	NSArray* _loadCommands;
-	long long _vmaddrSlide;
-	unsigned _fileType;
-	unsigned _flags;
+  NSString* _name;
+  NSString* _path;
+  NSDate* _timestamp;
+  id<VMUMemory> _memory;
+  unsigned long long _address;
+  unsigned long long _linkEditBase;
+  NSArray* _loadCommands;
+  long long _vmaddrSlide;
+  unsigned _fileType;
+  unsigned _flags;
 }
 -(NSString*)name;
 -(NSString*)path;
@@ -30,7 +30,7 @@
 -(void)setTimestamp:(NSDate*)timestamp;
 -(id<VMUMemory>)memory;
 -(VMUArchitecture*)architecture;
--(NSArray*)loadCommands;	// NSArray of VMULoadCommand's.
+-(NSArray*)loadCommands;  // NSArray of VMULoadCommand's.
 -(unsigned long long)address;
 -(unsigned long long)linkEditBase;
 -(long long)vmaddrSlide;
@@ -39,8 +39,8 @@
 -(BOOL)isFromSharedCache;
 // inherited: -(BOOL)isMachO;
 -(VMUSegmentLoadCommand*)segmentNamed:(NSString*)segmentName;
--(NSArray*)sections;	// NSArray of VMUSection's
--(NSArray*)regions;	// NSArray of VMURegion's
+-(NSArray*)sections;  // NSArray of VMUSection's
+-(NSArray*)regions; // NSArray of VMURegion's
 -(VMUSymTabLoadCommand*)symbolTable;
 -(VMUDySymTabLoadCommand*)dySymbolTable;
 -(id)dyLinkerPath;
@@ -48,7 +48,7 @@
 -(BOOL)isCommpage;
 -(id)commpage;
 -(BOOL)isProtected;
--(NSArray*)segmentAddresses;	// NSArray of VMURegion's
+-(NSArray*)segmentAddresses;  // NSArray of VMURegion's
 // inherited: -(id)signature;
 // inherited: -(id)description;
 // inherited: -(void)dealloc;

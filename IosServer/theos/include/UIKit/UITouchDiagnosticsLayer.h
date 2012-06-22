@@ -9,14 +9,14 @@
 @class UIBezierPath;
 
 @interface UITouchDiagnosticsLayer : UIView {
-	CFArrayRef _eventQueue;
-	UIBezierPath* _hitRectsPath;
-	UIBezierPath* _customHitRectsPath;
-	UIBezierPath* _chargesPath;
-	BOOL _trackTouchEvents;
-	BOOL _displayTouchEvents;
-	BOOL _displayHitRects;
-	BOOL _displayChargeMap;
+  CFArrayRef _eventQueue;
+  UIBezierPath* _hitRectsPath;
+  UIBezierPath* _customHitRectsPath;
+  UIBezierPath* _chargesPath;
+  BOOL _trackTouchEvents;
+  BOOL _displayTouchEvents;
+  BOOL _displayHitRects;
+  BOOL _displayChargeMap;
 }
 -(id)initWithFrame:(CGRect)frame;
 -(void)dealloc;

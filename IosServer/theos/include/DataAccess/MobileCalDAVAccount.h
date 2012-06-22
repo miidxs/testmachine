@@ -12,14 +12,14 @@
 @protocol DAValidityCheckConsumer;
 
 @interface MobileCalDAVAccount : DAAccount {
-	CalDAVAccount* _account;
-	CalDAVSettingsTemplate* _settingsTemplate;
-	CalDAVPrincipal* _principal;
-	int _preferredDaysToSync;
-	NSMutableSet* _calendarUserAddresses;
-	NSMutableSet* _calendars;
-	BOOL _isSpinning;
-	id<DAValidityCheckConsumer> _validityConsumer;
+  CalDAVAccount* _account;
+  CalDAVSettingsTemplate* _settingsTemplate;
+  CalDAVPrincipal* _principal;
+  int _preferredDaysToSync;
+  NSMutableSet* _calendarUserAddresses;
+  NSMutableSet* _calendars;
+  BOOL _isSpinning;
+  id<DAValidityCheckConsumer> _validityConsumer;
 }
 @property(retain) NSSet* calendarUserAddresses;
 @property(retain) NSSet* calendars;

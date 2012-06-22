@@ -12,18 +12,18 @@
 
 @interface MLQueryImpl : NSObject {
 @private
-	MLQuery* _query;
-	CFArrayRef _queryResults;
-	unsigned _countOfUniqueItemsByGroupingProperty;
-	unsigned _trackGroupMembers : 1;
-	unsigned _mixedResultsAllowed : 1;
-	unsigned _orderingIsSorted : 1;
-	unsigned _wasSortedAlphabetically : 1;
-	unsigned _registeredAsCachedQuery : 1;
-	unsigned _evaluationType : 2;
-	unsigned _evaluateEntityExistenceOnlyResult : 1;
-	unsigned _registeredForNotificationsAffectingEvaluationResults : 1;
-	unsigned _usingSections : 1;
+  MLQuery* _query;
+  CFArrayRef _queryResults;
+  unsigned _countOfUniqueItemsByGroupingProperty;
+  unsigned _trackGroupMembers : 1;
+  unsigned _mixedResultsAllowed : 1;
+  unsigned _orderingIsSorted : 1;
+  unsigned _wasSortedAlphabetically : 1;
+  unsigned _registeredAsCachedQuery : 1;
+  unsigned _evaluationType : 2;
+  unsigned _evaluateEntityExistenceOnlyResult : 1;
+  unsigned _registeredForNotificationsAffectingEvaluationResults : 1;
+  unsigned _usingSections : 1;
 }
 +(id)findCachedQueryImplMatchingCriteriaOfQuery:(id)query;
 +(void)registerQueryImpl:(id)impl forCriteriaOfQuery:(id)query;

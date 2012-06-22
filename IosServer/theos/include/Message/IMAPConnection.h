@@ -14,37 +14,37 @@
 @protocol IMAPMailboxListFilter;
 
 @interface IMAPConnection : Connection <WeakReferenceHolder> {
-	id<IMAPMailboxListFilter> _mailboxListFilter;
-	unsigned _capabilityFlags : 13;
-	unsigned _capabilitiesAreFresh : 1;
-	unsigned _gotBadResponse : 1;
-	int _tag;
-	double _connectTime;
-	unsigned _connectionState : 3;
-	NSString* _separatorChar;
-	NSString* _selectedMailbox;
-	NSMutableSet* _capabilities;
-	NSArray* _lastRequiredHeadersArray;
-	NSString* _lastRequiredHeaders;
-	unsigned _commandNumber;
-	NSMutableData* _data;
-	unsigned _readBufferSize;
-	double _expirationTime;
-	InvocationQueue* _streamEventQueue;
-	struct {
-		id<WeaklyReferencedObject> delegate;
-		unsigned shouldHandleUntaggedResponse : 1;
-		unsigned didReceiveResponse : 1;
-		unsigned didFinishSelect : 1;
-		unsigned didDisconnect : 1;
-		unsigned didBeginBodyLoad : 1;
-		unsigned didReceiveMoreBodyData : 1;
-		unsigned didFinishBodyDataLoad : 1;
-		unsigned bodyDataReadSize : 1;
-		unsigned setServerMessageCount : 1;
-	} _delegateState;
-	NSString* _apsDeviceToken;
-	NSString* _apsAccountID;
+  id<IMAPMailboxListFilter> _mailboxListFilter;
+  unsigned _capabilityFlags : 13;
+  unsigned _capabilitiesAreFresh : 1;
+  unsigned _gotBadResponse : 1;
+  int _tag;
+  double _connectTime;
+  unsigned _connectionState : 3;
+  NSString* _separatorChar;
+  NSString* _selectedMailbox;
+  NSMutableSet* _capabilities;
+  NSArray* _lastRequiredHeadersArray;
+  NSString* _lastRequiredHeaders;
+  unsigned _commandNumber;
+  NSMutableData* _data;
+  unsigned _readBufferSize;
+  double _expirationTime;
+  InvocationQueue* _streamEventQueue;
+  struct {
+    id<WeaklyReferencedObject> delegate;
+    unsigned shouldHandleUntaggedResponse : 1;
+    unsigned didReceiveResponse : 1;
+    unsigned didFinishSelect : 1;
+    unsigned didDisconnect : 1;
+    unsigned didBeginBodyLoad : 1;
+    unsigned didReceiveMoreBodyData : 1;
+    unsigned didFinishBodyDataLoad : 1;
+    unsigned bodyDataReadSize : 1;
+    unsigned setServerMessageCount : 1;
+  } _delegateState;
+  NSString* _apsDeviceToken;
+  NSString* _apsAccountID;
 }
 // inherited: +(void)initialize;
 +(void)setReadSizeParameters;

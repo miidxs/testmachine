@@ -10,14 +10,14 @@
 @class NSString, SBDismissOnlyAlertItem;
 
 @interface SBLockdownManager : NSObject {
-	int _state;
-	BOOL _settingUpActivationState;
-	BOOL _isBricked;
-	BOOL _isInternalInstall;
-	BOOL _hasShownWaitingAlertThisSession;
-	BOOL _hasShownMismatchedSIM;
-	SBDismissOnlyAlertItem* _activatingAlertItem;
-	NSString* _unqiueDeviceIdentifier;
+  int _state;
+  BOOL _settingUpActivationState;
+  BOOL _isBricked;
+  BOOL _isInternalInstall;
+  BOOL _hasShownWaitingAlertThisSession;
+  BOOL _hasShownMismatchedSIM;
+  SBDismissOnlyAlertItem* _activatingAlertItem;
+  NSString* _unqiueDeviceIdentifier;
 }
 +(id)sharedInstance;
 // inherited: -(id)init;

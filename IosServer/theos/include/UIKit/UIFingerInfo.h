@@ -8,9 +8,9 @@
 
 
 @interface UIFingerInfo : NSObject {
-	CFDictionaryRef _fingers;
-	int _activeFinger;
-	BOOL _activeFingerLocked;
+  CFDictionaryRef _fingers;
+  int _activeFinger;
+  BOOL _activeFingerLocked;
 }
 -(void)dealloc;
 -(void)startTouch:(XXStruct_$jUSvD)touch withEvent:(GSEventRef)event adjustLocation:(BOOL)location;

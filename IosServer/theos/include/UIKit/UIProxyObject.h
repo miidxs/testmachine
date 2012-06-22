@@ -10,7 +10,7 @@
 @class NSString;
 
 @interface UIProxyObject : NSObject <NSCoding> {
-	NSString* proxiedObjectIdentifier;
+  NSString* proxiedObjectIdentifier;
 }
 +(CFDictionaryRef)proxyDecodingMap;
 +(void)addMappingFromIdentifier:(id)identifier toObject:(id)object forCoder:(id)coder;

@@ -14,28 +14,28 @@
 @class UIColor;
 
 @interface UITextInputTraits : NSObject <UITextInputTraits, UITextInputTraits_Private, NSCopying> {
-	int autocapitalizationType;
-	int autocorrectionType;
+  int autocapitalizationType;
+  int autocorrectionType;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	unsigned keyboardType : 8;
-	unsigned keyboardAppearance : 8;
+  unsigned keyboardType : 8;
+  unsigned keyboardAppearance : 8;
 #else
-	int keyboardType;
-	int keyboardAppearance;
+  int keyboardType;
+  int keyboardAppearance;
 #endif
-	int returnKeyType;
-	BOOL enablesReturnKeyAutomatically;
-	BOOL secureTextEntry;
-	CFCharacterSetRef textTrimmingSet;
-	UIColor* insertionPointColor;
-	unsigned insertionPointWidth;
-	int textLoupeVisibility;
-	int textSelectionBehavior;
-	id textSuggestionDelegate;
-	BOOL contentsIsSingleValue;
-	BOOL acceptsEmoji;
+  int returnKeyType;
+  BOOL enablesReturnKeyAutomatically;
+  BOOL secureTextEntry;
+  CFCharacterSetRef textTrimmingSet;
+  UIColor* insertionPointColor;
+  unsigned insertionPointWidth;
+  int textLoupeVisibility;
+  int textSelectionBehavior;
+  id textSuggestionDelegate;
+  BOOL contentsIsSingleValue;
+  BOOL acceptsEmoji;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	int emptyContentReturnKeyType;
+  int emptyContentReturnKeyType;
 #endif
 }
 // in a protocol: @property(assign, nonatomic) UITextAutocapitalizationType autocapitalizationType;

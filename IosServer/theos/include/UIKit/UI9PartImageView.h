@@ -9,18 +9,18 @@
 @class UIImage;
 
 @interface UI9PartImageView : UIView {
-	UIView* _topLeft;
-	UIView* _topMiddle;
-	UIView* _topRight;
-	UIView* _middleLeft;
-	UIView* _middleMiddle;
-	UIView* _middleRight;
-	UIView* _bottomLeft;
-	UIView* _bottomMiddle;
-	UIView* _bottomRight;
-	XXStruct_4cr1oD _slices;
-	UIImage* _image;
-	unsigned _dontReflow : 1;
+  UIView* _topLeft;
+  UIView* _topMiddle;
+  UIView* _topRight;
+  UIView* _middleLeft;
+  UIView* _middleMiddle;
+  UIView* _middleRight;
+  UIView* _bottomLeft;
+  UIView* _bottomMiddle;
+  UIView* _bottomRight;
+  XXStruct_4cr1oD _slices;
+  UIImage* _image;
+  unsigned _dontReflow : 1;
 }
 -(id)initWithFrame:(CGRect)frame image:(id)image slices:(XXStruct_4cr1oD)slices;
 -(void)dealloc;

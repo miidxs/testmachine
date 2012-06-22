@@ -12,10 +12,10 @@
 
 @interface AVQueue : NSObject {
 @private
-	NSRecursiveLock* _mutex;
-	NSMutableArray* _items;
-	void* _reserved;
-	int _isBeingModifiedCount;
+  NSRecursiveLock* _mutex;
+  NSMutableArray* _items;
+  void* _reserved;
+  int _isBeingModifiedCount;
 }
 +(id)avQueue;
 +(id)queueWithArray:(id)array error:(id*)error;

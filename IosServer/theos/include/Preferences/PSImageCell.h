@@ -11,7 +11,7 @@
 @class UIImageView;
 
 @interface PSImageCell : PSTableCell {
-	UIImageView* _imageView;
+  UIImageView* _imageView;
 }
 -(void)setImageView:(id)view;
 -(void)drawTitleInRect:(CGRect)rect selected:(BOOL)selected;

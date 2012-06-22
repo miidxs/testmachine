@@ -22,20 +22,20 @@ typedef struct __GSEvent * GSEventRef;
 @interface KIFEventProxy : NSObject
 {
 @public
-	unsigned int flags;
-	unsigned int type;
-	unsigned int ignored1;
-	float x1;
-	float y1;
-	float x2;
-	float y2;
-	unsigned int ignored2[10];
-	unsigned int ignored3[7];
-	float sizeX;
-	float sizeY;
-	float x3;
-	float y3;
-	unsigned int ignored4[3];
+    unsigned int flags;
+    unsigned int type;
+    unsigned int ignored1;
+    float x1;
+    float y1;
+    float x2;
+    float y2;
+    unsigned int ignored2[10];
+    unsigned int ignored3[7];
+    float sizeX;
+    float sizeY;
+    float x3;
+    float y3;
+    unsigned int ignored4[3];
 }
 
 @end
@@ -244,7 +244,7 @@ typedef struct __GSEvent * GSEventRef;
 
 - (void)flash;
 {
-	UIColor *originalBackgroundColor = [self.backgroundColor retain];
+    UIColor *originalBackgroundColor = [self.backgroundColor retain];
     for (NSUInteger i = 0; i < 5; i++) {
         self.backgroundColor = [UIColor yellowColor];
         CFRunLoopRunInMode(kCFRunLoopDefaultMode, .05, false);
@@ -444,7 +444,7 @@ typedef struct __GSEvent * GSEventRef;
     eventProxy->sizeX = 1.0;
     eventProxy->sizeY = 1.0;
     eventProxy->flags = ([touch phase] == UITouchPhaseEnded) ? 0x1010180 : 0x3010180;
-    eventProxy->type = 3001;	
+    eventProxy->type = 3001;    
 
     NSSet *allTouches = [event allTouches];
     [event _clearTouches];

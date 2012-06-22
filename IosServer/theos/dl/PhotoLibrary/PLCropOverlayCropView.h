@@ -10,7 +10,7 @@
 
 
 @interface PLCropOverlayCropView : UIView {
-	CGRect _cropRect;
+  CGRect _cropRect;
 }
 -(void)setCropRect:(CGRect)rect;
 -(void)setFrame:(CGRect)frame;

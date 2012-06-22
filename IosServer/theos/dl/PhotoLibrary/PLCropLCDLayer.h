@@ -11,8 +11,8 @@
 @class NSString;
 
 @interface PLCropLCDLayer : UIView {
-	NSString* _subtitle;
-	NSString* _title;
+  NSString* _subtitle;
+  NSString* _title;
 }
 // inherited: -(void)dealloc;
 -(void)setTitle:(id)title;

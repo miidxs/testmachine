@@ -10,9 +10,9 @@
 
 
 @interface SBDownloadingProgressBar : UIImageView {
-	UIImageView* _clipView;
-	UIImageView* _fillView;
-	float _progress;
+  UIImageView* _clipView;
+  UIImageView* _fillView;
+  float _progress;
 }
 +(float)defaultHeight;
 // inherited: -(id)initWithFrame:(CGRect)frame;

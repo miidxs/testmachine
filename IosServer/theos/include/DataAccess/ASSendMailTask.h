@@ -10,7 +10,7 @@
 @class NSData;
 
 @interface ASSendMailTask : ASTask {
-	NSData* _mimeMessage;
+  NSData* _mimeMessage;
 }
 -(id)initWithMessage:(id)message;
 // inherited: -(void)dealloc;

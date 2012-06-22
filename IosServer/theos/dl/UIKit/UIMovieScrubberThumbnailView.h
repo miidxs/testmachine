@@ -8,7 +8,7 @@
 
 
 @interface UIMovieScrubberThumbnailView : UIImageView {
-	unsigned _hasPlaceholderImage : 1;
+  unsigned _hasPlaceholderImage : 1;
 }
 -(void)setHasPlaceholderImage:(BOOL)image;
 -(BOOL)hasPlaceholderImage;

@@ -10,7 +10,7 @@
 @class NSString;
 
 @interface UIImageNibPlaceholder : UIImage <NSCoding> {
-	NSString* runtimeResourceName;
+  NSString* runtimeResourceName;
 }
 -(id)initWithContentsOfFile:(id)file andRuntimeResourceName:(id)name;
 -(id)initWithData:(id)data andRuntimeResourceName:(id)name;

@@ -11,8 +11,8 @@
 @class NSDictionary;
 
 @interface PSSetupController : PSRootController {
-	NSDictionary* _rootInfo;
-	id<PSBaseView> _parentController;
+  NSDictionary* _rootInfo;
+  id<PSBaseView> _parentController;
 }
 // inherited: +(BOOL)isOverlay;
 // inherited: -(void)setupRootListForSize:(CGSize)size;

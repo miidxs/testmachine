@@ -11,27 +11,27 @@
 @class NSString, NSArray;
 
 @interface IMAPOperation : NSObject {
-	unsigned _type : 8;
-	unsigned _temporaryUids : 1;
-	NSString* _mailboxName;
-	union {
-		struct {
-			NSArray* trueFlags;
-			NSArray* falseFlags;
-			CFArrayRef uids;
-		} store;
-		struct {
-			unsigned uid;
-			NSArray* flags;
-			int internalDate;
-			unsigned size;
-		} append;
-		struct {
-			CFArrayRef srcUids;
-			CFArrayRef dstUids;
-			NSString* destinationMailbox;
-		} copy;
-	} _opSpecific;
+  unsigned _type : 8;
+  unsigned _temporaryUids : 1;
+  NSString* _mailboxName;
+  union {
+    struct {
+      NSArray* trueFlags;
+      NSArray* falseFlags;
+      CFArrayRef uids;
+    } store;
+    struct {
+      unsigned uid;
+      NSArray* flags;
+      int internalDate;
+      unsigned size;
+    } append;
+    struct {
+      CFArrayRef srcUids;
+      CFArrayRef dstUids;
+      NSString* destinationMailbox;
+    } copy;
+  } _opSpecific;
 }
 +(id)deserializeFromData:(id)data cursor:(unsigned*)cursor;
 -(unsigned char)_magic;

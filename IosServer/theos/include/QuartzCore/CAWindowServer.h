@@ -12,7 +12,7 @@
 
 @interface CAWindowServer : NSObject {
 @private
-	CAWindowServerImpl* _impl;
+  CAWindowServerImpl* _impl;
 }
 @property(assign) unsigned rendererFlags;
 @property(readonly, assign) NSArray* displays;

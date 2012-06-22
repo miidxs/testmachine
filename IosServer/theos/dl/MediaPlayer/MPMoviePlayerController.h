@@ -12,7 +12,7 @@
 
 @interface MPMoviePlayerController : NSObject {
 @private
-	id _internal;
+  id _internal;
 }
 @property(assign, nonatomic) int scalingMode;
 @property(assign, nonatomic, getter=isFullscreen) BOOL fullscreen;

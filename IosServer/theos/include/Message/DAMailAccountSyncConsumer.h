@@ -12,18 +12,18 @@
 @class ActivityMonitor, NSArray, NSMutableData, NSString;
 
 @interface DAMailAccountSyncConsumer : DAMailAccountConsumer <DAMailboxRequestConsumer, DAMailboxStreamingContentConsumer> {
-	NSArray* requests;
-	NSArray* consumers;
-	NSString* tag;
-	NSString* accountID;
-	BOOL receivedFirstItem;
-	BOOL moreAvailable;
-	BOOL firstSyncBatch;
-	int syncKeyResets;
-	int serverErrors;
-	id _streamConsumer;
-	ActivityMonitor* monitor;
-	NSMutableData* bodyData;
+  NSArray* requests;
+  NSArray* consumers;
+  NSString* tag;
+  NSString* accountID;
+  BOOL receivedFirstItem;
+  BOOL moreAvailable;
+  BOOL firstSyncBatch;
+  int syncKeyResets;
+  int serverErrors;
+  id _streamConsumer;
+  ActivityMonitor* monitor;
+  NSMutableData* bodyData;
 }
 @property(retain, nonatomic) id streamConsumer;
 -(void)reset;

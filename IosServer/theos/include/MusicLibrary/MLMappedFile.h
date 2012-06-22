@@ -12,14 +12,14 @@
 __attribute__((visibility("hidden")))
 @interface MLMappedFile : NSObject {
 @private
-	NSString* _path;
-	int _file;
-	long long _size;
-	unsigned _granularity;
-	unsigned _numberOfSegments;
-	MLMappedFileSegment** _segments;
-	BOOL _dying;
-	BOOL _assumeFileIsFixedSize;
+  NSString* _path;
+  int _file;
+  long long _size;
+  unsigned _granularity;
+  unsigned _numberOfSegments;
+  MLMappedFileSegment** _segments;
+  BOOL _dying;
+  BOOL _assumeFileIsFixedSize;
 }
 +(id)mappedFileWithPath:(id)path fileIsFixedSize:(BOOL)size;
 -(id)initWithPath:(id)path fileIsFixedSize:(BOOL)size;

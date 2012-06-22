@@ -10,7 +10,7 @@
 @class NSString;
 
 @interface PEPServiceConfiguration : NSObject {
-	NSString* _cacheFilePath;
+  NSString* _cacheFilePath;
 }
 +(id)sharedInstance;
 // inherited: -(id)init;

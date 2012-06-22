@@ -11,15 +11,15 @@
 @class NSString;
 
 @interface DALocalDBHelper : NSObject {
-	void* _abDB;
-	int _lastSavedABSequenceNumber;
-	int _abConnectionCount;
-	CalDatabase* _calDB;
-	int _calConnectionCount;
-	NSString* _fakedOutABDBDir;
-	NSString* _fakedOutCalDBDir;
-	id _calUnitTestCallbackObject;
-	SEL _calUnitTestCallbackSelector;
+  void* _abDB;
+  int _lastSavedABSequenceNumber;
+  int _abConnectionCount;
+  CalDatabase* _calDB;
+  int _calConnectionCount;
+  NSString* _fakedOutABDBDir;
+  NSString* _fakedOutCalDBDir;
+  id _calUnitTestCallbackObject;
+  SEL _calUnitTestCallbackSelector;
 }
 +(id)sharedInstanceForAccountType:(id)accountType creatingClass:(Class)aClass;
 -(void*)abDB;

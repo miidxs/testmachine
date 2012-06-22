@@ -10,12 +10,12 @@
 @class NSString, CKMessage;
 
 @interface SBSMSAlertItem : SBAlertItem {
-	CKMessage* _message;
-	int _alignment;
-	BOOL _alignmentHasBeenSet;
-	BOOL _displayingEntireMessage;
-	BOOL _playedSound;
-	NSString* _name;
+  CKMessage* _message;
+  int _alignment;
+  BOOL _alignmentHasBeenSet;
+  BOOL _displayingEntireMessage;
+  BOOL _playedSound;
+  NSString* _name;
 }
 +(BOOL)shouldPlayMessageReceived;
 +(void)playMessageReceived;

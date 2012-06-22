@@ -12,9 +12,9 @@
 __attribute__((visibility("hidden")))
 @interface MLSQLJoin : MLSQLCode {
 @private
-	NSString* _joinedTable;
-	NSString* _joinedTableID;
-	unsigned _joinedTableIDAuto : 1;
+  NSString* _joinedTable;
+  NSString* _joinedTableID;
+  unsigned _joinedTableIDAuto : 1;
 }
 +(id)expressionToken;
 +(id)expressionTokenWhenJoinedToCodeClass:(Class)codeClass joinOp:(id)op;

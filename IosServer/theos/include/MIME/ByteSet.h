@@ -12,7 +12,7 @@
 
 
 @interface ByteSet : NSObject <NSCopying, NSMutableCopying> {
-	BOOL mySet[32];
+  BOOL mySet[32];
 }
 +(id)asciiWhitespaceSet;
 +(id)ASCIIByteSet;

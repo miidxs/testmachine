@@ -14,10 +14,10 @@
 @class NSString;
 
 @interface MFData : NSData <NSCopying, NSMutableCopying, WeaklyReferencedObject> {
-	NSData* _internal;
-	NSString* _path;
-	NSData* _parent;
-	BOOL _subdata;
+  NSData* _internal;
+  NSString* _path;
+  NSData* _parent;
+  BOOL _subdata;
 }
 +(void)setDefaultMappingThresholdInBytes:(unsigned)bytes;
 // inherited: +(id)allocWithZone:(NSZone*)zone;

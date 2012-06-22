@@ -10,7 +10,7 @@
 @class MimePart;
 
 @interface MimeTextAttachment : MessageTextAttachment {
-	MimePart* _mimePart;
+  MimePart* _mimePart;
 }
 // inherited: -(void)dealloc;
 -(id)initWithMimePart:(id)mimePart;

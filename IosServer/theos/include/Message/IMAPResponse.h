@@ -11,9 +11,9 @@
 @class NSArray, NSDictionary, IMAPFetchResult, NSString;
 
 @interface IMAPResponse : NSObject {
-	unsigned _responseType : 8;
-	NSString* _tag;
-	IMAPResponseData _data;
+  unsigned _responseType : 8;
+  NSString* _tag;
+  IMAPResponseData _data;
 }
 -(int)responseType;
 -(void)setResponseType:(int)type;

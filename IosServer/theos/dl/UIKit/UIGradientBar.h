@@ -9,8 +9,8 @@
 @class UIImageView;
 
 @interface UIGradientBar : UIView {
-	UIImageView* _topShineView;
-	UIImageView* _gradientFillView;
+  UIImageView* _topShineView;
+  UIImageView* _gradientFillView;
 }
 +(id)bottomLineColor;
 -(void)_tile;

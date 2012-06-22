@@ -12,7 +12,7 @@
 
 @interface CAWindowServerDisplay : NSObject {
 @private
-	void* _impl;
+  void* _impl;
 }
 @property(copy) NSString* TVSignalType;
 @property(copy) NSString* TVMode;

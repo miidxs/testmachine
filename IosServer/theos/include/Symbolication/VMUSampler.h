@@ -10,22 +10,22 @@
 @class NSConditionLock, VMUSymbolicator, NSMutableArray;
 
 @interface VMUSampler : NSObject {
-	int _pid;
-	unsigned _task;
-	BOOL _needTaskPortDealloc;
-	BOOL _taskIs64Bit;
-	VMUSymbolicator* _symbolicator;
-	double _tbRate;
-	double _tbInterval;
-	NSConditionLock* _stateLock;
-	double _interval;
-	double _timeLimit;
-	unsigned _sampleLimit;
-	BOOL _sampling;
-	unsigned _samplingThreadPort;
-	NSMutableArray* _samples;
-	BOOL _stacksFixed;
-	id _delegate;
+  int _pid;
+  unsigned _task;
+  BOOL _needTaskPortDealloc;
+  BOOL _taskIs64Bit;
+  VMUSymbolicator* _symbolicator;
+  double _tbRate;
+  double _tbInterval;
+  NSConditionLock* _stateLock;
+  double _interval;
+  double _timeLimit;
+  unsigned _sampleLimit;
+  BOOL _sampling;
+  unsigned _samplingThreadPort;
+  NSMutableArray* _samples;
+  BOOL _stacksFixed;
+  id _delegate;
 }
 +(id)sampleAllThreadsOfPID:(int)pid withSymbolicator:(id)symbolicator;
 +(id)sampleAllThreadsOfTask:(unsigned)task withSymbolicator:(id)symbolicator;

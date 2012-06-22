@@ -8,8 +8,8 @@
 __attribute__((visibility("hidden")))
 @interface UIWebBrowserPDFPageLabel : UIView {
 @private
-	UILabel* _label;
-	UIHighlightView* _highlight;
+  UILabel* _label;
+  UIHighlightView* _highlight;
 }
 // inherited: -(id)initWithFrame:(CGRect)frame;
 // -(void)sizeToFit;

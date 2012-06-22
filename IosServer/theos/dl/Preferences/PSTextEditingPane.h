@@ -11,7 +11,7 @@
 @class UITextField;
 
 @interface PSTextEditingPane : PSEditingPane {
-	UITextField* _textField;
+  UITextField* _textField;
 }
 // inherited: +(CGSize)defaultSize;
 // inherited: -(BOOL)drawLabel;

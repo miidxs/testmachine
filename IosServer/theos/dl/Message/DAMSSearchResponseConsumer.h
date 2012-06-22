@@ -11,10 +11,10 @@
 @class MFConditionLock, NSDate;
 
 @interface DAMSSearchResponseConsumer : DAMSBasicConsumer <DADSearchQueryConsumer> {
-	NSDate* latestDateToAdd;
-	MFConditionLock* doneCondition;
-	double timeReceivedLastResponse;
-	unsigned totalCount;
+  NSDate* latestDateToAdd;
+  MFConditionLock* doneCondition;
+  double timeReceivedLastResponse;
+  unsigned totalCount;
 }
 @property(retain, nonatomic) NSDate* latestDateToAdd;
 // inherited: -(id)init;

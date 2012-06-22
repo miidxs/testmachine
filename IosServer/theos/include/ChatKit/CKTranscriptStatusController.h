@@ -8,18 +8,18 @@
 @class NSTimer, NSString, CKSendingProgressView, NSMutableSet, CKConversation, UIView;
 
 @interface CKTranscriptStatusController : NSObject {
-	UIView* _multipleRecipientTitleView;
-	CKSendingProgressView* _statusView;
-	NSString* _title;
-	CKConversation* _conversation;
-	float _lastVal;
-	NSString* _lastMsg;
-	NSTimer* _progressUpdateTimer;
-	NSMutableSet* _currentMessages;
-	BOOL _updatingProgress;
-	BOOL _viewTitle;
-	BOOL _finishingUp;
-	id _delegate;
+  UIView* _multipleRecipientTitleView;
+  CKSendingProgressView* _statusView;
+  NSString* _title;
+  CKConversation* _conversation;
+  float _lastVal;
+  NSString* _lastMsg;
+  NSTimer* _progressUpdateTimer;
+  NSMutableSet* _currentMessages;
+  BOOL _updatingProgress;
+  BOOL _viewTitle;
+  BOOL _finishingUp;
+  id _delegate;
 }
 @property(retain, nonatomic) CKConversation* conversation;
 @property(copy, nonatomic) NSString* title;

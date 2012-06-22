@@ -10,8 +10,8 @@
 
 
 @interface PLCameraLockdownPTPCommunicator : NSObject {
-	CFMessagePortRef _port;
-	int _msgid;
+  CFMessagePortRef _port;
+  int _msgid;
 }
 +(id)sharedInstance;
 -(BOOL)createPortIfNecessary;

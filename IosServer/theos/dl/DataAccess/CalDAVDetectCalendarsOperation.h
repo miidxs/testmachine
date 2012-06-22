@@ -10,10 +10,10 @@
 @class CalDAVServerVersion, NSMutableDictionary, NSString, DAVSession;
 
 @interface CalDAVDetectCalendarsOperation : AYOperation {
-	DAVSession* _session;
-	NSString* _calendarHomePath;
-	NSMutableDictionary* _results;
-	CalDAVServerVersion* _serverVersion;
+  DAVSession* _session;
+  NSString* _calendarHomePath;
+  NSMutableDictionary* _results;
+  CalDAVServerVersion* _serverVersion;
 }
 +(BOOL)privilegeSetIndicatesWriteable:(id)writeable;
 -(id)initWithCalendarHomePath:(id)calendarHomePath session:(id)session;

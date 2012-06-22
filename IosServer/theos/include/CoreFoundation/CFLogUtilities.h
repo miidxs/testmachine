@@ -20,8 +20,8 @@
  * 
  * @APPLE_LICENSE_HEADER_END@
  */
-/*	CFLogUtilities.h
-	Copyright (c) 2004-2009, Apple Inc. All rights reserved.
+/*  CFLogUtilities.h
+  Copyright (c) 2004-2009, Apple Inc. All rights reserved.
 */
 
 /*
@@ -37,7 +37,7 @@
 CF_EXTERN_C_BEGIN
 
 
-enum {	// Legal level values for CFLog()
+enum {  // Legal level values for CFLog()
     kCFLogLevelEmergency = 0,
     kCFLogLevelAlert = 1,
     kCFLogLevelCritical = 2,
@@ -49,12 +49,12 @@ enum {	// Legal level values for CFLog()
 };
 
 CF_EXPORT void CFLog(int32_t level, CFStringRef format, ...);
-/*	Passing in a level value which is outside the range of 0-7 will cause the the call to do nothing.
-	CFLog() logs the message using the asl.h API, and uses the level parameter as the log level.
-	Note that the asl subsystem ignores some log levels by default.
-	CFLog() is not fast, and is not going to be guaranteed to be fast.
-	Even "no-op" CFLogs are not necessarily fast.
-	If you care about performance, you shouldn't be logging.
+/*  Passing in a level value which is outside the range of 0-7 will cause the the call to do nothing.
+  CFLog() logs the message using the asl.h API, and uses the level parameter as the log level.
+  Note that the asl subsystem ignores some log levels by default.
+  CFLog() is not fast, and is not going to be guaranteed to be fast.
+  Even "no-op" CFLogs are not necessarily fast.
+  If you care about performance, you shouldn't be logging.
 */
 
 CF_EXTERN_C_END

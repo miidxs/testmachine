@@ -8,9 +8,9 @@
 #import <Availability2.h>
 
 @interface UIThreePartButton : UIPushButton {
-	XXStruct_UUz0SD _bkgndSlices;
+  XXStruct_UUz0SD _bkgndSlices;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	CGSize _titleOffset;
+  CGSize _titleOffset;
 #endif
 }
 @property(assign, nonatomic) CGSize titleOffset __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_3_2);

@@ -11,16 +11,16 @@
 @class NSTimer, NSString, CalDAVAccount;
 
 @interface CalDAVPrincipal : NSObject {
-	NSString* _uid;
-	NSString* _login;
-	NSString* _server;
-	int _port;
-	NSString* _scheme;
-	NSString* _displayName;
-	BOOL _useKerberos;
-	int _refreshInterval;
-	NSTimer* _refreshTimer;
-	CalDAVAccount* _account;
+  NSString* _uid;
+  NSString* _login;
+  NSString* _server;
+  int _port;
+  NSString* _scheme;
+  NSString* _displayName;
+  BOOL _useKerberos;
+  int _refreshInterval;
+  NSTimer* _refreshTimer;
+  CalDAVAccount* _account;
 }
 @property(retain) NSString* scheme;
 @property(assign) int port;

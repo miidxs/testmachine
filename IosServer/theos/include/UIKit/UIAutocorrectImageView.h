@@ -9,7 +9,7 @@
 @class UIImage;
 
 @interface UIAutocorrectImageView : UIView {
-	UIImage* m_image;
+  UIImage* m_image;
 }
 +(id)imageWithMaskingView:(id)maskingView maskingRect:(CGRect)rect;
 -(id)initWithFrame:(CGRect)frame image:(id)image;

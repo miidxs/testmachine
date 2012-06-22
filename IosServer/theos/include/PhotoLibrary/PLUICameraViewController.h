@@ -11,9 +11,9 @@
 
 
 @interface PLUICameraViewController : PLCameraViewController <UIImagePickerCameraViewController> {
-	int _previousStatusBarMode;
-	int _newStatusBarMode;
-	CGAffineTransform _previewViewTransform;
+  int _previousStatusBarMode;
+  int _newStatusBarMode;
+  CGAffineTransform _previewViewTransform;
 }
 // inherited: -(id)init;
 // inherited: -(BOOL)_displaysFullScreen;

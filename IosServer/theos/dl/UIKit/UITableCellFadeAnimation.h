@@ -7,7 +7,7 @@
 
 
 @interface UITableCellFadeAnimation : UIAnimation {
-	BOOL _select;
+  BOOL _select;
 }
 -(id)initWithTarget:(id)target select:(BOOL)select;
 -(void)dealloc;

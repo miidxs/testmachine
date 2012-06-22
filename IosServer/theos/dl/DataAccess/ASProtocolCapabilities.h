@@ -10,8 +10,8 @@
 @class NSString;
 
 @interface ASProtocolCapabilities : NSObject {
-	NSString* _calConstraintsPlistPath;
-	NSString* _abConstraintsPlistPath;
+  NSString* _calConstraintsPlistPath;
+  NSString* _abConstraintsPlistPath;
 }
 -(id)initWithProtocolVersionString:(id)protocolVersionString;
 // inherited: -(void)dealloc;

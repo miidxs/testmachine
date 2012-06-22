@@ -11,7 +11,7 @@
 
 @interface ML3Album : ML3Collection {
 @private
-	NSNumber* _representativeTrackUIDNumber;
+  NSNumber* _representativeTrackUIDNumber;
 }
 +(void)initialize;
 +(id)databaseTable;

@@ -10,7 +10,7 @@
 @class NSString;
 
 @interface SBApplicationUninstallationOperation : NSOperation {
-	NSString* _bundleIdentifier;
+  NSString* _bundleIdentifier;
 }
 -(id)initWithBundleIdentifier:(id)bundleIdentifier;
 // inherited: -(void)dealloc;

@@ -11,12 +11,12 @@
 @class NSMutableDictionary, NSString;
 
 @interface ASAttendee : ASItem <ASParsingAcceptingTopLevelLeaves> {
-	NSString* _name;
-	NSString* _email;
-	int _status;
-	int _role;
-	int _localId;
-	NSMutableDictionary* _placeHolder;
+  NSString* _name;
+  NSString* _email;
+  int _status;
+  int _role;
+  int _localId;
+  NSMutableDictionary* _placeHolder;
 }
 @property(retain) NSString* name;
 @property(retain) NSString* email;

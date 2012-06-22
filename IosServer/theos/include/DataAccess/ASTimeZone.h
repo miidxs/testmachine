@@ -11,11 +11,11 @@
 
 
 @interface ASTimeZone : NSTimeZone <ASParsingLeafNode> {
-	int _gmtOffset;
-	int _dstOffset;
-	SYSTEMTIME* _standardDate;
-	SYSTEMTIME* _daylightDate;
-	NSTimeZone* _wrappedTimeZone;
+  int _gmtOffset;
+  int _dstOffset;
+  SYSTEMTIME* _standardDate;
+  SYSTEMTIME* _daylightDate;
+  NSTimeZone* _wrappedTimeZone;
 }
 +(BOOL)acceptsTopLevelLeaves;
 +(BOOL)parsingLeafNode;

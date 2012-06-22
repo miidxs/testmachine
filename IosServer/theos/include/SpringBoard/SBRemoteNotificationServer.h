@@ -11,10 +11,10 @@
 @class NSMutableDictionary, NSString;
 
 @interface SBRemoteNotificationServer : NSObject <APSConnectionDelegate> {
-	NSMutableDictionary* _bundleIdentifiersToClients;
-	NSMutableDictionary* _environmentsToConnections;
-	unsigned _lastPlayedAlertSound;
-	NSString* _lastNotificationReceivedBundleIdentifier;
+  NSMutableDictionary* _bundleIdentifiersToClients;
+  NSMutableDictionary* _environmentsToConnections;
+  unsigned _lastPlayedAlertSound;
+  NSString* _lastNotificationReceivedBundleIdentifier;
 }
 +(SBRemoteNotificationServer*)sharedInstance;
 // inherited: -(id)init;

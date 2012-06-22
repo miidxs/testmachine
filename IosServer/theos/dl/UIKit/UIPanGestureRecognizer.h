@@ -28,21 +28,21 @@
 @class NSMutableSet;
 
 @interface UIPanGestureRecognizer : UIGestureRecognizer {
-	CGPoint _firstScreenLocation;
-	CGPoint _lastScreenLocation;
-	double _firstTouchTime;
-	double _lastTouchTime;
-	CGPoint _velocity;
-	CGPoint _previousVelocity;
-	CGAffineTransform _transform;
-	NSMutableSet* _touches;
-	int _lastTouchCount;
-	unsigned _directionalLockEnabled : 1;
-	unsigned _lockVertical : 1;
-	unsigned _lockHorizontal : 1;
-	unsigned _scrollViewGesture : 1;
-	unsigned _hasChildScrollView : 1;
-	unsigned _hasParentScrollView : 1;
+  CGPoint _firstScreenLocation;
+  CGPoint _lastScreenLocation;
+  double _firstTouchTime;
+  double _lastTouchTime;
+  CGPoint _velocity;
+  CGPoint _previousVelocity;
+  CGAffineTransform _transform;
+  NSMutableSet* _touches;
+  int _lastTouchCount;
+  unsigned _directionalLockEnabled : 1;
+  unsigned _lockVertical : 1;
+  unsigned _lockHorizontal : 1;
+  unsigned _scrollViewGesture : 1;
+  unsigned _hasChildScrollView : 1;
+  unsigned _hasParentScrollView : 1;
 }
 @property(readonly, assign, nonatomic) CGPoint velocity;
 @property(readonly, assign, nonatomic) CGSize offset;

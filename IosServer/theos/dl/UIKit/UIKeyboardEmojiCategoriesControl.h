@@ -9,15 +9,15 @@
 @class NSArray, UIImage, NSMutableArray;
 
 @interface UIKeyboardEmojiCategoriesControl : UIControl {
-	int _selected;
-	int _total;
-	NSArray* _selectedImages;
-	NSArray* _unselectedImages;
-	UIImage* _darkDivider;
-	UIImage* _plainDivider;
-	UIImage* _selectedDivider;
-	NSMutableArray* _segmentViews;
-	NSMutableArray* _dividerViews;
+  int _selected;
+  int _total;
+  NSArray* _selectedImages;
+  NSArray* _unselectedImages;
+  UIImage* _darkDivider;
+  UIImage* _plainDivider;
+  UIImage* _selectedDivider;
+  NSMutableArray* _segmentViews;
+  NSMutableArray* _dividerViews;
 }
 @property(assign) int selectedIndex;
 -(id)initWithFrame:(CGRect)frame;

@@ -9,17 +9,17 @@
 @class UITabBarItemProxy, UIImageView, NSMutableArray, UITabBarItem, UITabBar;
 
 @interface UITabBarCustomizeView : UIView {
-	UITabBar* _tabBar;
-	NSMutableArray* _proxies;
-	NSMutableArray* _fixedItems;
-	UITabBarItemProxy* _draggingProxy;
-	UITabBarItem* _draggingItem;
-	UIImageView* _dragImage;
-	UIImageView* _replacementGlow;
-	UITabBarItem* _replaceItem;
-	CGPoint _startPoint;
-	int _gridCount;
-	float _gridOffset;
+  UITabBar* _tabBar;
+  NSMutableArray* _proxies;
+  NSMutableArray* _fixedItems;
+  UITabBarItemProxy* _draggingProxy;
+  UITabBarItem* _draggingItem;
+  UIImageView* _dragImage;
+  UIImageView* _replacementGlow;
+  UITabBarItem* _replaceItem;
+  CGPoint _startPoint;
+  int _gridCount;
+  float _gridOffset;
 }
 -(id)initWithFrame:(CGRect)frame;
 -(void)setTabBar:(id)bar currentItems:(id)items availableItems:(id)items3;

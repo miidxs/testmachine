@@ -11,13 +11,13 @@
 @class NSString;
 
 @interface DARegex : NSObject {
-	NSString* _pattern;
-	struct {
-		int re_magic;
-		unsigned re_nsub;
-		char* re_endp;
-		re_guts* re_g;
-	} _regex;
+  NSString* _pattern;
+  struct {
+    int re_magic;
+    unsigned re_nsub;
+    char* re_endp;
+    re_guts* re_g;
+  } _regex;
 }
 @property(readonly, assign, nonatomic) NSString* pattern;
 +(BOOL)matchesString:(id)string pattern:(id)pattern ignoreCase:(BOOL)aCase;

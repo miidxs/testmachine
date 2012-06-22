@@ -10,18 +10,18 @@
 @class NSString, NSURL, NSSet, DAVSession;
 
 @interface CalDAVGetAccountPropertiesOperation : AYOperation {
-	DAVSession* _session;
-	NSURL* _principalURL;
-	NSString* _principalPath;
-	NSString* _calendarHomePath;
-	NSString* _inboxPath;
-	NSString* _outboxPath;
-	NSString* _dropBoxPath;
-	NSString* _notificationsPath;
-	NSString* _displayName;
-	NSSet* _userAddresses;
-	BOOL _isInboxAvailabilitySupported;
-	BOOL _isCalendarProxySupported;
+  DAVSession* _session;
+  NSURL* _principalURL;
+  NSString* _principalPath;
+  NSString* _calendarHomePath;
+  NSString* _inboxPath;
+  NSString* _outboxPath;
+  NSString* _dropBoxPath;
+  NSString* _notificationsPath;
+  NSString* _displayName;
+  NSSet* _userAddresses;
+  BOOL _isInboxAvailabilitySupported;
+  BOOL _isCalendarProxySupported;
 }
 // inherited: -(id)description;
 -(id)initWithPrincipalURL:(id)principalURL session:(id)session;

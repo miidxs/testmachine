@@ -11,9 +11,9 @@
 
 @interface PLVideoFileGroup : NSObject {
 @private
-	NSURL* _url;
-	NSString* _videoPreviewFilePath;
-	MLPhoto* _photo;
+  NSURL* _url;
+  NSString* _videoPreviewFilePath;
+  MLPhoto* _photo;
 }
 -(id)initWithURL:(id)url forMLPhoto:(id)mlphoto;
 // inherited: -(void)dealloc;

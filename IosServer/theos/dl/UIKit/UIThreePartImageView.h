@@ -9,8 +9,8 @@
 @class UIImage;
 
 @interface UIThreePartImageView : UIView {
-	XXStruct_UUz0SD _slices;
-	UIImage* _image;
+  XXStruct_UUz0SD _slices;
+  UIImage* _image;
 }
 -(void)dealloc;
 -(void)setImage:(id)image;

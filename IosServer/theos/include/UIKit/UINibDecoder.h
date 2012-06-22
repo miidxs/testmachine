@@ -42,31 +42,31 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 __attribute__((visibility("hidden")))
 @interface UINibDecoder : NSCoder {
 @private
-	Class arrayClass;
-	Class setClass;
-	Class dictionaryClass;
-	Class* classes;
-	NSString** missingClasses;
-	UINibDecoderObjectEntry* objects;
-	UINibDecoderValue* values;
-	char* valueTypes;
-	void* valueData;
-	unsigned valueDataSize;
-	UINibDecoderHeader header;
-	id* objectsByObjectID;
-	unsigned* longObjectClassIDs;
-	char* shortObjectClassIDs;
-	unsigned* keyMasks;
-	int inlinedValueKey;
-	UINibDecoderRecursiveState recursiveState;
-	UINibStringIDTable* keyIDTable;
-	id delegate;
-	UIKeyToKeyIDCache keyIDCache;
-	UIKeyAndScopeToValueCache valueCache;
-	int lookupRounds;
-	int maxPossibleLookupRounds;
-	int failedByKeyMask;
-	int savedByKeyMask;
+  Class arrayClass;
+  Class setClass;
+  Class dictionaryClass;
+  Class* classes;
+  NSString** missingClasses;
+  UINibDecoderObjectEntry* objects;
+  UINibDecoderValue* values;
+  char* valueTypes;
+  void* valueData;
+  unsigned valueDataSize;
+  UINibDecoderHeader header;
+  id* objectsByObjectID;
+  unsigned* longObjectClassIDs;
+  char* shortObjectClassIDs;
+  unsigned* keyMasks;
+  int inlinedValueKey;
+  UINibDecoderRecursiveState recursiveState;
+  UINibStringIDTable* keyIDTable;
+  id delegate;
+  UIKeyToKeyIDCache keyIDCache;
+  UIKeyAndScopeToValueCache valueCache;
+  int lookupRounds;
+  int maxPossibleLookupRounds;
+  int failedByKeyMask;
+  int savedByKeyMask;
 }
 @property(assign) id delegate;
 +(id)unarchiveObjectWithData:(id)data;

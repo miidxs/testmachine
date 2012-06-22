@@ -10,7 +10,7 @@
 @class ASContact;
 
 @interface ASContactChangeCommand : ASSyncTaskCommand {
-	ASContact* _contact;
+  ASContact* _contact;
 }
 -(id)initWithContact:(id)contact;
 // inherited: -(void)appendApplicationDataForTask:(id)task toWBXMLData:(id)wbxmldata;

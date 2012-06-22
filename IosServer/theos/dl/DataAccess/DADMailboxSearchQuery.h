@@ -11,14 +11,14 @@
 @class NSDate, NSString;
 
 @interface DADMailboxSearchQuery : DADSearchQuery {
-	NSString* _collectionID;
-	int _bodyType;
-	long long _truncationSize;
-	BOOL _allOrNone;
-	NSDate* _priorToDate;
-	int _MIMESupport;
-	BOOL _deepTraversal;
-	BOOL _rebuildResults;
+  NSString* _collectionID;
+  int _bodyType;
+  long long _truncationSize;
+  BOOL _allOrNone;
+  NSDate* _priorToDate;
+  int _MIMESupport;
+  BOOL _deepTraversal;
+  BOOL _rebuildResults;
 }
 @property(retain) NSString* collectionID;
 @property(assign) int bodyType;

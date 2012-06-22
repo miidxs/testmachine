@@ -10,7 +10,7 @@
 @protocol UITextSelectingContent;
 
 @interface UIVariableDelayLoupeGesture : UILongPressGestureRecognizer {
-	UIView<UITextSelectingContent>* _textView;
+  UIView<UITextSelectingContent>* _textView;
 }
 @property(assign) UIView<UITextSelectingContent>* textView;
 -(BOOL)isCloseToCaret;

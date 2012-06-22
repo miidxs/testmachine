@@ -12,8 +12,8 @@
 __attribute__((visibility("hidden")))
 @interface ML3QueryImpl : MLQueryImpl {
 @private
-	ML3Query* _query3;
-	BOOL _treatCollectionAsVirtualTrack;
+  ML3Query* _query3;
+  BOOL _treatCollectionAsVirtualTrack;
 }
 -(void)dealloc;
 -(id)description;

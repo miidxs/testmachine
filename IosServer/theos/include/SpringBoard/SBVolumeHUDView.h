@@ -4,8 +4,8 @@
 #import "SBHUDView.h"
 
 @interface SBVolumeHUDView : SBHUDView {
-	int _mode;
-	BOOL _headphonesPresent;
+  int _mode;
+  BOOL _headphonesPresent;
 }
 @property(assign, nonatomic) int mode;
 @property(assign, nonatomic) BOOL headphonesPresent;

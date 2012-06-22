@@ -7,11 +7,11 @@
 __attribute__((visibility("hidden")))
 @interface UIKeyboardZoomGesture : UIGestureRecognizer {
 @private
-	BOOL _waiting;
-	int _zoomType;
-	float _initialDistance;
-	double _maximumWaitForMultitouch;
-	double _maximumWaitForMovement;
+  BOOL _waiting;
+  int _zoomType;
+  float _initialDistance;
+  double _maximumWaitForMultitouch;
+  double _maximumWaitForMovement;
 }
 @property(assign, nonatomic) int zoomType;
 @property(assign, nonatomic) double maximumWaitForMultitouch;

@@ -11,28 +11,28 @@
 
 @interface SBSearchTableViewCell : UITableViewCell {
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	UIFont* _titleFont;
-	UIFont* _subtitleFont;
+  UIFont* _titleFont;
+  UIFont* _subtitleFont;
 #endif
-	NSString* _title;
+  NSString* _title;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	NSString* _subtitle;
+  NSString* _subtitle;
 #else
-	UIFont* _titleFont;
+  UIFont* _titleFont;
 #endif
-	NSArray* _subtitleComponents;
+  NSArray* _subtitleComponents;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	NSString* _auxiliaryTitle;
-	NSString* _auxiliarySubtitle;
+  NSString* _auxiliaryTitle;
+  NSString* _auxiliarySubtitle;
 #else
-	UIFont* _subtitleFont;
+  UIFont* _subtitleFont;
 #endif
-	BOOL _badged;
-	BOOL _usesAlternateBackgroundColor;
-	BOOL _isFirstInTableView;
-	BOOL _isFirstInSection;
-	float _sectionHeaderWidth;
-	float _edgeInset;
+  BOOL _badged;
+  BOOL _usesAlternateBackgroundColor;
+  BOOL _isFirstInTableView;
+  BOOL _isFirstInSection;
+  float _sectionHeaderWidth;
+  float _edgeInset;
 }
 @property(retain, nonatomic) NSString* title;
 @property(retain, nonatomic) NSArray* subtitleComponents;

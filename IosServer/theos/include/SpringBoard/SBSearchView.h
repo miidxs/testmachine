@@ -13,20 +13,20 @@
 
 @interface SBSearchView : UIView {
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	SBRoundedCornersView* _roundedCornersView;
+  SBRoundedCornersView* _roundedCornersView;
 #endif
 #if __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_3_2
-	SBRoundedCornerView* _roundedCornerView;
+  SBRoundedCornerView* _roundedCornerView;
 #endif
-	UISearchBar* _searchBar;
-	UITableView* _tableView;
-	UIKeyboard* _keyboard;
-	UILabel* _noResultsLabel;
-	BOOL _isKeyboardVisible;
-	BOOL _inAnimationBlock;
-	BOOL _showSearchKeyWhenAnimatingKeyboard;
+  UISearchBar* _searchBar;
+  UITableView* _tableView;
+  UIKeyboard* _keyboard;
+  UILabel* _noResultsLabel;
+  BOOL _isKeyboardVisible;
+  BOOL _inAnimationBlock;
+  BOOL _showSearchKeyWhenAnimatingKeyboard;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	BOOL _hidesEmptyTableFooter;
+  BOOL _hidesEmptyTableFooter;
 #endif
 }
 @property(readonly, assign, nonatomic) UISearchBar* searchBar;

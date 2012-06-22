@@ -14,24 +14,24 @@
 
 @interface HTTPConnection : NSObject
 {
-	AsyncSocket *asyncSocket;
-	HTTPServer *server;
-	
-	CFHTTPMessageRef request;
-	int numHeaderLines;
-	
-	NSString *nonce;
-	int lastNC;
-	
-	NSObject<HTTPResponse> *httpResponse;
-	
-	NSMutableArray *ranges;
-	NSMutableArray *ranges_headers;
-	NSString *ranges_boundry;
-	int rangeIndex;
-	
-	UInt64 postContentLength;
-	UInt64 postTotalBytesReceived;
+  AsyncSocket *asyncSocket;
+  HTTPServer *server;
+  
+  CFHTTPMessageRef request;
+  int numHeaderLines;
+  
+  NSString *nonce;
+  int lastNC;
+  
+  NSObject<HTTPResponse> *httpResponse;
+  
+  NSMutableArray *ranges;
+  NSMutableArray *ranges_headers;
+  NSString *ranges_boundry;
+  int rangeIndex;
+  
+  UInt64 postContentLength;
+  UInt64 postTotalBytesReceived;
 }
 
 - (id)initWithAsyncSocket:(AsyncSocket *)newSocket forServer:(HTTPServer *)myServer;

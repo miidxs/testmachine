@@ -10,8 +10,8 @@
 @class NSString;
 
 @interface SBPhoneAlertItem : SBAlertItem {
-	NSString* _bodyText;
-	NSString* _title;
+  NSString* _bodyText;
+  NSString* _title;
 }
 -(id)initWithTitle:(id)title bodyText:(id)text;
 // inherited: -(void)dealloc;

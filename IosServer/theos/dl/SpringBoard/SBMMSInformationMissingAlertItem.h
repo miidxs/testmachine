@@ -9,7 +9,7 @@
 
 
 @interface SBMMSInformationMissingAlertItem : SBAlertItem {
-	int _alertType;
+  int _alertType;
 }
 @property(assign, nonatomic) int alertType;
 // inherited: -(void)configure:(BOOL)configure requirePasscodeForActions:(BOOL)actions;

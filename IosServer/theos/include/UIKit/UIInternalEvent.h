@@ -40,7 +40,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 __attribute__((visibility("hidden")))
 @interface UIInternalEvent : UIEvent {
 @private
-	GSEventRef _gsEvent;
+  GSEventRef _gsEvent;
 }
 -(void)_setGSEvent:(GSEventRef)event;
 -(GSEventRef)_gsEvent;

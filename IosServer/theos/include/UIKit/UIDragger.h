@@ -9,21 +9,21 @@
 @class NSArray, UIImageView, UIView;
 
 @interface UIDragger : NSObject {
-	/*function-pointer*/ void* _interpolator;
-	UIView* _target;
-	id _delegate;
-	SEL _action;
-	CGPoint _startLocation;
-	CGPoint _stopLocation;
-	double _duration;
-	BOOL _showFinger;
-	unsigned _port;
-	NSArray* _modes;
-	unsigned long long _startTimestamp;
-	unsigned long long _stopTimestamp;
-	unsigned long long _lastTimestamp;
-	BOOL _waitingForSmoothScrolling;
-	UIImageView* _fingerView;
+  /*function-pointer*/ void* _interpolator;
+  UIView* _target;
+  id _delegate;
+  SEL _action;
+  CGPoint _startLocation;
+  CGPoint _stopLocation;
+  double _duration;
+  BOOL _showFinger;
+  unsigned _port;
+  NSArray* _modes;
+  unsigned long long _startTimestamp;
+  unsigned long long _stopTimestamp;
+  unsigned long long _lastTimestamp;
+  BOOL _waitingForSmoothScrolling;
+  UIImageView* _fingerView;
 }
 -(id)init;
 -(void)dealloc;

@@ -9,7 +9,7 @@
 
 
 @interface VMUSection64 : VMUSection {
-	unsigned _reserved3;
+  unsigned _reserved3;
 }
 -(id)initWithMemory:(id)memory;
 // inherited: -(BOOL)isSection64;

@@ -11,7 +11,7 @@
 @class PLCameraButton;
 
 @interface PLCameraButtonBar : PLPhotosButtonBar {
-	PLCameraButton* _cameraButton;
+  PLCameraButton* _cameraButton;
 }
 @property(retain, nonatomic) PLCameraButton* cameraButton;
 // inherited: +(id)backgroundImage;

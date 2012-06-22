@@ -10,8 +10,8 @@
 @class VMULinkedListEntry;
 
 @interface VMULinkedList : NSObject {
-	VMULinkedListEntry* _head;
-	VMULinkedListEntry* _tail;
+  VMULinkedListEntry* _head;
+  VMULinkedListEntry* _tail;
 }
 +(VMULinkedList*)linkedList;
 // inherited: -(id)init;

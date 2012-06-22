@@ -9,7 +9,7 @@
 @class NSMutableSet;
 
 @interface CKSMSService : CKService {
-	NSMutableSet* _deliveryObjects;
+  NSMutableSet* _deliveryObjects;
 }
 +(id)sharedSMSService;
 +(id)dbPath;

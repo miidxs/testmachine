@@ -10,8 +10,8 @@
 @class NSString;
 
 @interface SBWiFiPasswordAlertItem : SBAlertItem {
-	id _delegate;
-	NSString* _name;
+  id _delegate;
+  NSString* _name;
 }
 -(id)initWithNetworkName:(id)networkName;
 // inherited: -(void)dealloc;

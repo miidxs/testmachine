@@ -13,9 +13,9 @@
 __attribute__((visibility("hidden")))
 @interface MLSectionData : NSObject {
 @private
-	NSMutableArray* _titles;
-	CFArrayRef _locations;
-	unsigned _entityCount;
+  NSMutableArray* _titles;
+  CFArrayRef _locations;
+  unsigned _entityCount;
 }
 @property(readonly, assign, nonatomic) unsigned countOfSections;
 +(id)sectionlessSectionDataForQuery:(id)query;

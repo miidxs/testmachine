@@ -9,8 +9,8 @@
 @class NSData;
 
 @interface CKImageData : NSObject {
-	CGImageSourceRef _imageSource;
-	NSData* _data;
+  CGImageSourceRef _imageSource;
+  NSData* _data;
 }
 @property(readonly, assign, nonatomic) NSData* data;
 -(id)initWithData:(id)data;

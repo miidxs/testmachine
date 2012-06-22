@@ -9,13 +9,13 @@
 @class UITabBar;
 
 @interface UITabBarSwappableImageView : UIView {
-	id _value;
-	id _alternate;
-	BOOL _showAlternate;
-	BOOL _flipped;
-	int _currentAnimation;
-	UITabBar* _tabBar;
-	int _buttonTag;
+  id _value;
+  id _alternate;
+  BOOL _showAlternate;
+  BOOL _flipped;
+  int _currentAnimation;
+  UITabBar* _tabBar;
+  int _buttonTag;
 }
 -(id)initWithImage:(id)image alternateImage:(id)image2;
 -(void)dealloc;

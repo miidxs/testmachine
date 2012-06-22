@@ -12,10 +12,10 @@
 @class UIModalView;
 
 @interface SBAlertItem : NSObject <UIModalViewDelegate> {
-	UIModalView* _alertSheet;
-	BOOL _disallowUnlockAction;
-	BOOL _orderOverSBAlert;
-	BOOL _preventLockOver;
+  UIModalView* _alertSheet;
+  BOOL _disallowUnlockAction;
+  BOOL _orderOverSBAlert;
+  BOOL _preventLockOver;
 }
 -(Class)alertSheetClass;
 -(id)alertSheet;

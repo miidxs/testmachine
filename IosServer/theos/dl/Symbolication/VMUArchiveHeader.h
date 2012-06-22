@@ -10,8 +10,8 @@
 @class NSString, NSMutableArray;
 
 @interface VMUArchiveHeader : VMUHeader {
-	NSMutableArray* _headers;
-	NSString* _path;
+  NSMutableArray* _headers;
+  NSString* _path;
 }
 +(id)archiveHeaderWithMemory:(id)memory path:(id)path timestamp:(id)timestamp;
 -(id)initWithMemory:(id)memory path:(id)path timestamp:(id)timestamp;

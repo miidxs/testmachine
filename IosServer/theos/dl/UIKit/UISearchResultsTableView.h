@@ -9,7 +9,7 @@
 @class UISearchDisplayController;
 
 @interface UISearchResultsTableView : UITableView {
-	UISearchDisplayController* _controller;
+  UISearchDisplayController* _controller;
 }
 @property(assign, nonatomic) UISearchDisplayController* controller;
 -(void)setContentOffset:(CGPoint)offset;

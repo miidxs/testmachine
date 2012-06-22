@@ -11,7 +11,7 @@
 @class UILabel;
 
 @interface MFComposeMultiView : MFComposeHeaderView {
-	UILabel* _accountLabel;
+  UILabel* _accountLabel;
 }
 // inherited: -(void)dealloc;
 -(id)accountLabel;

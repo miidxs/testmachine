@@ -9,16 +9,16 @@
 @class UIView, NSIndexPath;
 
 @interface UIViewAnimation : NSObject {
-	UIView* _view;
-	NSIndexPath* _indexPath;
-	CGRect _endRect;
-	float _endAlpha;
-	float _startFraction;
-	float _endFraction;
-	int _curve;
-	BOOL _animateFromCurrentPosition;
-	BOOL _shouldDeleteAfterAnimation;
-	BOOL _editing;
+  UIView* _view;
+  NSIndexPath* _indexPath;
+  CGRect _endRect;
+  float _endAlpha;
+  float _startFraction;
+  float _endFraction;
+  int _curve;
+  BOOL _animateFromCurrentPosition;
+  BOOL _shouldDeleteAfterAnimation;
+  BOOL _editing;
 }
 @property(readonly, assign, nonatomic) UIView* view;
 @property(readonly, assign, nonatomic) NSIndexPath* indexPath;

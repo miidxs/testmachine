@@ -28,8 +28,8 @@
 @class NSString;
 
 @interface CPExclusiveLock : NSObject <NSLocking> {
-	int _fd;
-	NSString* _name;
+  int _fd;
+  NSString* _name;
 }
 // inherited: -(id)init;
 -(id)initWithName:(NSString*)name;

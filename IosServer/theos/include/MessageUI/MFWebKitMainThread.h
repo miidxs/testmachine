@@ -11,8 +11,8 @@
 @class NSLock;
 
 @interface MFWebKitMainThread : NSObject {
-	CFDictionaryRef _visibleDict;
-	NSLock* _visibleDictLock;
+  CFDictionaryRef _visibleDict;
+  NSLock* _visibleDictLock;
 }
 +(id)sharedInstance;
 // inherited: -(id)init;

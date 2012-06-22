@@ -13,10 +13,10 @@
 @class PLEmptyAlbumView, NSArray, UITableView;
 
 @interface PLLibraryView : UIView <UITableViewDataSource, UITableViewDelegate> {
-	id _delegate;
-	NSArray* _albums;
-	UITableView* _tableView;
-	PLEmptyAlbumView* _emptyLibraryView;
+  id _delegate;
+  NSArray* _albums;
+  UITableView* _tableView;
+  PLEmptyAlbumView* _emptyLibraryView;
 }
 // inherited: -(id)initWithFrame:(CGRect)frame;
 // inherited: -(void)dealloc;

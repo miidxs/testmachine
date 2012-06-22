@@ -11,9 +11,9 @@
 
 @interface MLEQPreset : NSObject {
 @private
-	NSString* _name;
-	NSString* _localizedName;
-	int _builtInPresetType;
+  NSString* _name;
+  NSString* _localizedName;
+  int _builtInPresetType;
 }
 +(id)eqPresetForName:(id)name;
 +(id)eqPresetForBuiltInPresetType:(int)presetType;

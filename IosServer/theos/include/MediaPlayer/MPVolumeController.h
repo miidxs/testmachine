@@ -10,21 +10,21 @@
 @class NSString, NSTimer, AVController;
 
 @interface MPVolumeController : NSObject {
-	AVController* _avController;
-	id _delegate;
-	float _volume;
-	float _unmutedVolume;
-	NSTimer* _fadeTimer;
-	float _fadeVolume;
-	NSString* _debugName;
-	int _volumeBehaviorWhenEnabled;
-	struct {
-		unsigned fadeIncreasesVolume : 1;
-		unsigned enabled : 1;
-		unsigned isSuspending : 1;
-		unsigned shouldPushLocalVolumeToServer : 1;
-		unsigned unused : 28;
-	} _vcBitfields;
+  AVController* _avController;
+  id _delegate;
+  float _volume;
+  float _unmutedVolume;
+  NSTimer* _fadeTimer;
+  float _fadeVolume;
+  NSString* _debugName;
+  int _volumeBehaviorWhenEnabled;
+  struct {
+    unsigned fadeIncreasesVolume : 1;
+    unsigned enabled : 1;
+    unsigned isSuspending : 1;
+    unsigned shouldPushLocalVolumeToServer : 1;
+    unsigned unused : 28;
+  } _vcBitfields;
 }
 +(void)setCurrentVolumeController:(id)controller;
 +(void)removeCurrentVolumeController:(id)controller;

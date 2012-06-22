@@ -11,12 +11,12 @@
 @class UIImageView, UIImage;
 
 @interface SBStatusBarBluetoothView : SBStatusBarContentView {
-	UIImage* _icon;
-	BOOL _animating;
-	UIImageView* _activeView;
-	UIImageView* _baseLayer;
-	BOOL _isStarted;
-	BOOL _showBluetoothView;
+  UIImage* _icon;
+  BOOL _animating;
+  UIImageView* _activeView;
+  UIImageView* _baseLayer;
+  BOOL _isStarted;
+  BOOL _showBluetoothView;
 }
 // inherited: +(void)initialize;
 -(id)icon;

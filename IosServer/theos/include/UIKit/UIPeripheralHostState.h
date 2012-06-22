@@ -8,7 +8,7 @@
 __attribute__((visibility("hidden")))
 @interface UIPeripheralHostState : NSObject {
 @private
-	UIPeripheralAnimationGeometry _geometry;
+  UIPeripheralAnimationGeometry _geometry;
 }
 @property(assign, nonatomic) UIPeripheralAnimationGeometry geometry;
 +(id)stateWithGeometry:(UIPeripheralAnimationGeometry)geometry;

@@ -8,7 +8,7 @@
 
 
 @interface UIAutocorrectShadowView : UIView {
-	int m_edgeType;
+  int m_edgeType;
 }
 -(void)setEdgeType:(int)type;
 -(void)drawRect:(CGRect)rect;

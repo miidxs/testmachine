@@ -12,11 +12,11 @@
 
 @interface ML3ContainerQuery : ML3Query {
 @private
-	ML3Predicate* _containerPredicate;
-	ML3Container* _container;
-	NSLock* _limitCountLock;
-	unsigned _limitCount;
-	BOOL _limitCountLoaded;
+  ML3Predicate* _containerPredicate;
+  ML3Container* _container;
+  NSLock* _limitCountLock;
+  unsigned _limitCount;
+  BOOL _limitCountLoaded;
 }
 @property(readonly, assign) ML3Container* container;
 @property(readonly, assign) NSString* selectLimitingSQL;

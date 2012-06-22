@@ -40,10 +40,10 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 __attribute__((visibility("hidden")))
 @interface UINibStringIDTable : NSObject {
 @private
-	UIStringIDTableBucket** table;
-	UIStringIDTableBucket* buckets;
-	unsigned hashMask;
-	unsigned count;
+  UIStringIDTableBucket** table;
+  UIStringIDTableBucket* buckets;
+  unsigned hashMask;
+  unsigned count;
 }
 -(id)initWithKeysTransferingOwnership:(id*)keysTransferingOwnership count:(unsigned)count;
 // inherited: -(void)dealloc;

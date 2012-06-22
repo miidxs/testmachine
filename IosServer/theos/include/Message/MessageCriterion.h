@@ -12,17 +12,17 @@
 @class NSArray, NSString;
 
 @interface MessageCriterion : NSObject {
-	NSString* _uniqueId;
-	NSString* _criterionIdentifier;
-	NSString* _expression;
-	int _qualifier;
-	NSArray* _criteria;
-	int _dateUnitType;
-	NSString* _name;
-	unsigned _allCriteriaMustBeSatisfied : 1;
-	unsigned _dateIsRelative : 1;
-	int _type;
-	NSArray* _requiredHeaders;
+  NSString* _uniqueId;
+  NSString* _criterionIdentifier;
+  NSString* _expression;
+  int _qualifier;
+  NSArray* _criteria;
+  int _dateUnitType;
+  NSString* _name;
+  unsigned _allCriteriaMustBeSatisfied : 1;
+  unsigned _dateIsRelative : 1;
+  int _type;
+  NSArray* _requiredHeaders;
 }
 +(id)criteriaFromDefaultsArray:(id)defaultsArray;
 +(id)criteriaFromDefaultsArray:(id)defaultsArray removingRecognizedKeys:(BOOL)keys;

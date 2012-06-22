@@ -11,7 +11,7 @@
 
 @interface MPMoviePlayerViewController : UIViewController {
 @private
-	id _internal;
+  id _internal;
 }
 @property(readonly, assign, nonatomic) MPMoviePlayerController* moviePlayer;
 -(id)init;

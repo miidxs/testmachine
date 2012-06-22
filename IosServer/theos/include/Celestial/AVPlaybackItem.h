@@ -11,19 +11,19 @@
 @class NSDictionary, AVItem;
 
 @interface AVPlaybackItem : NSObject {
-	id _delegate;
-	AVItem* _avItem;
-	OpaqueFigPlaybackItem* _fpItem;
-	XXStruct_pwHToB _currentDuration;
-	CGSize _currentSize;
-	BOOL _currentSizeIsValid;
-	BOOL _isPreparingForInspection;
-	BOOL _isInPlayQueue;
-	double _bookmarkTime;
-	NSDictionary* _streamStateNotificationInfo;
-	NSDictionary* _lyricsNotificationInfo;
-	NSDictionary* _inspectionNotificationInfo;
-	NSDictionary* _playToEndNotificationInfo;
+  id _delegate;
+  AVItem* _avItem;
+  OpaqueFigPlaybackItem* _fpItem;
+  XXStruct_pwHToB _currentDuration;
+  CGSize _currentSize;
+  BOOL _currentSizeIsValid;
+  BOOL _isPreparingForInspection;
+  BOOL _isInPlayQueue;
+  double _bookmarkTime;
+  NSDictionary* _streamStateNotificationInfo;
+  NSDictionary* _lyricsNotificationInfo;
+  NSDictionary* _inspectionNotificationInfo;
+  NSDictionary* _playToEndNotificationInfo;
 }
 @property(retain) NSDictionary* inspectionNotificationInfo;
 @property(retain) NSDictionary* playToEndNotificationInfo;

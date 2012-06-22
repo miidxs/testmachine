@@ -12,17 +12,17 @@
 
 @interface DATaskManager : NSObject {
 @private
-	NSMutableArray* _queuedExclusiveTasks;
-	id<DATask> _activeExclusiveTask;
-	NSMutableSet* _independentTasks;
-	NSMutableSet* _heldIndependentTasks;
-	NSMutableSet* _modalHeldIndependentTasks;
-	NSMutableArray* _queuedTasks;
-	id<DATask> _activeQueuedTask;
-	id<DATask> _modalHeldActiveQueuedTask;
-	NSMutableArray* _queuedModalTasks;
-	id<DATask> _activeModalTask;
-	int _state;
+  NSMutableArray* _queuedExclusiveTasks;
+  id<DATask> _activeExclusiveTask;
+  NSMutableSet* _independentTasks;
+  NSMutableSet* _heldIndependentTasks;
+  NSMutableSet* _modalHeldIndependentTasks;
+  NSMutableArray* _queuedTasks;
+  id<DATask> _activeQueuedTask;
+  id<DATask> _modalHeldActiveQueuedTask;
+  NSMutableArray* _queuedModalTasks;
+  id<DATask> _activeModalTask;
+  int _state;
 }
 @property(readonly, assign) id<DATask> activeModalTask;
 @property(readonly, assign) id<DATask> activeQueuedTask;

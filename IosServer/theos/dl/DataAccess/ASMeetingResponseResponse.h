@@ -10,9 +10,9 @@
 @class NSNumber, NSString;
 
 @interface ASMeetingResponseResponse : ASItem {
-	NSString* _requestId;
-	NSNumber* _status;
-	NSString* _eventId;
+  NSString* _requestId;
+  NSNumber* _status;
+  NSString* _eventId;
 }
 // inherited: +(BOOL)acceptsTopLevelLeaves;
 // inherited: +(BOOL)parsingLeafNode;

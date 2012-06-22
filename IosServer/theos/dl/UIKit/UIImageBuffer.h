@@ -7,15 +7,15 @@
 #import <Foundation/NSObject.h>
 
 typedef struct UIColorComponents {
-	CGFloat r, g, b, a;
+  CGFloat r, g, b, a;
 } UIColorComponents;
 
 @interface UIImageBuffer : NSObject {
-	unsigned m_width;
-	unsigned m_height;
-	unsigned m_pixelCount;
-	unsigned m_componentCount;
-	UIColorComponents* m_pixels;
+  unsigned m_width;
+  unsigned m_height;
+  unsigned m_pixelCount;
+  unsigned m_componentCount;
+  UIColorComponents* m_pixels;
 }
 @property(readonly, assign, nonatomic) unsigned width;
 @property(readonly, assign, nonatomic) unsigned height;

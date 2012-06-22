@@ -13,9 +13,9 @@
 @class NSArray, NSMutableArray, NSString, UIKBAttribute;
 
 @interface UIKBAttributeList : NSObject <NSCoding, NSCopying> {
-	NSString* m_name;
-	NSMutableArray* m_list;
-	BOOL m_explicit;
+  NSString* m_name;
+  NSMutableArray* m_list;
+  BOOL m_explicit;
 }
 @property(copy, nonatomic) NSString* name;
 @property(readonly, assign, nonatomic) NSArray* list;

@@ -10,15 +10,15 @@
 @class ASAccount, ASTaskManager, ASPolicy, NSString;
 
 @interface ASPolicyPreflighter : NSObject {
-	ASAccount* _account;
-	NSString* _originalKey;
-	NSString* _newKey;
-	id _delegate;
-	ASPolicy* _policy;
-	ASPolicy* _acknowledgedPolicy;
-	ASTaskManager* _taskManager;
-	id _contextInfo;
-	BOOL _invalidated;
+  ASAccount* _account;
+  NSString* _originalKey;
+  NSString* _newKey;
+  id _delegate;
+  ASPolicy* _policy;
+  ASPolicy* _acknowledgedPolicy;
+  ASTaskManager* _taskManager;
+  id _contextInfo;
+  BOOL _invalidated;
 }
 -(void)setDelegate:(id)delegate;
 -(id)delegate;

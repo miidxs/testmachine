@@ -10,10 +10,10 @@
 @class MPQueueFeeder;
 
 @interface MPQueueFeederState : NSObject {
-	MPQueueFeeder* _feeder;
-	unsigned _currentItemIndex;
-	double _currentTime;
-	int _feederMode;
+  MPQueueFeeder* _feeder;
+  unsigned _currentItemIndex;
+  double _currentTime;
+  int _feederMode;
 }
 @property(copy, nonatomic) MPQueueFeeder* feeder;
 @property(assign, nonatomic) unsigned currentItemIndex;

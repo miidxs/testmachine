@@ -11,7 +11,7 @@
 @class SBVODAlarm;
 
 @interface SBVODAlertItem : SBAlertItem <UIModalViewDelegate> {
-	SBVODAlarm* _alarm;
+  SBVODAlarm* _alarm;
 }
 +(id)activeAlertForAlarm:(id)alarm;
 // inherited: -(void)dealloc;

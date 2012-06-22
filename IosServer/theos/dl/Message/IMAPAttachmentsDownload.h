@@ -10,7 +10,7 @@
 @class LibraryMessage;
 
 @interface IMAPAttachmentsDownload : IMAPCompoundDownload {
-	LibraryMessage* _message;
+  LibraryMessage* _message;
 }
 // inherited: -(void)dealloc;
 -(id)initWithLibraryMessage:(id)libraryMessage;

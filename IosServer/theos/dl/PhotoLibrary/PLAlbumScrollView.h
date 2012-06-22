@@ -12,26 +12,26 @@
 @protocol UIScrollViewDelegate, PLAlbumScrollViewDelegate;
 
 @interface PLAlbumScrollView : UIScrollView {
-	BOOL _dragging;
-	float _lastX;
-	double _lastTimeStamp;
-	float _dragSpeed;
-	float _grabX;
-	CGPoint _grabLoc;
-	float _mySpeed;
-	float _myX;
-	float _destinationX;
-	NSTimer* _updateTimer;
-	int _lastScrollDirection;
-	int _lastDragDirection;
-	BOOL _shouldAdvance;
-	UIView* _leftBackstopView;
-	UIView* _rightBackstopView;
-	float _slowDownFactor;
-	BOOL _scrollTriggered;
-	unsigned _rotationDisabled;
-	unsigned _mouseIsDown : 1;
-	unsigned _isScrolling : 1;
+  BOOL _dragging;
+  float _lastX;
+  double _lastTimeStamp;
+  float _dragSpeed;
+  float _grabX;
+  CGPoint _grabLoc;
+  float _mySpeed;
+  float _myX;
+  float _destinationX;
+  NSTimer* _updateTimer;
+  int _lastScrollDirection;
+  int _lastDragDirection;
+  BOOL _shouldAdvance;
+  UIView* _leftBackstopView;
+  UIView* _rightBackstopView;
+  float _slowDownFactor;
+  BOOL _scrollTriggered;
+  unsigned _rotationDisabled;
+  unsigned _mouseIsDown : 1;
+  unsigned _isScrolling : 1;
 }
 // inherited: @property(assign, nonatomic) id<UIScrollViewDelegate, PLAlbumScrollViewDelegate> delegate;
 // inherited: -(id)initWithFrame:(CGRect)frame;

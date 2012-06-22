@@ -11,7 +11,7 @@
 
 __attribute__((visibility("hidden")))
 @interface UITextFieldBorderView : UIView {
-	UIImage* _image;
+  UIImage* _image;
 }
 -(id)initWithFrame:(CGRect)frame;
 -(void)setImage:(id)image;

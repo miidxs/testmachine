@@ -10,9 +10,9 @@
 @class IMAPAccount, NSArray;
 
 @interface _IMAPMailboxDeletionQueueEntry : NSObject {
-	NSArray* urls;
-	NSArray* paths;
-	IMAPAccount* account;
+  NSArray* urls;
+  NSArray* paths;
+  IMAPAccount* account;
 }
 // inherited: -(void)dealloc;
 @end

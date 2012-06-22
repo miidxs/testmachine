@@ -45,8 +45,8 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 extern "C" {
 #endif
 
-	typedef void* GSWindowRef;
-	
+  typedef void* GSWindowRef;
+  
 #if __cplusplus
 }
 #endif

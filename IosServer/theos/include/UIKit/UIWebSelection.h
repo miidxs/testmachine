@@ -11,11 +11,11 @@
 @protocol UIWebSelectionBlock;
 
 @interface UIWebSelection : NSObject {
-	UIWebDocumentView* _documentView;
-	id<UIWebSelectionBlock> _base;
-	id<UIWebSelectionBlock> _extent;
-	CGSize _desiredSize;
-	DOMRange* _textSelection;
+  UIWebDocumentView* _documentView;
+  id<UIWebSelectionBlock> _base;
+  id<UIWebSelectionBlock> _extent;
+  CGSize _desiredSize;
+  DOMRange* _textSelection;
 }
 @property(readonly, assign, nonatomic) UIWebDocumentView* documentView;
 @property(retain, nonatomic) id<UIWebSelectionBlock> base;

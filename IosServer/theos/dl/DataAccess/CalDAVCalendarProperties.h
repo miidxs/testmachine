@@ -10,13 +10,13 @@
 @class NSArray, NSString;
 
 @interface CalDAVCalendarProperties : NSObject {
-	NSString* _path;
-	NSString* _displayName;
-	NSString* _calendarDescription;
-	NSString* _ctag;
-	NSString* _calendarColor;
-	NSArray* _supportedComponents;
-	int _writeable;
+  NSString* _path;
+  NSString* _displayName;
+  NSString* _calendarDescription;
+  NSString* _ctag;
+  NSString* _calendarColor;
+  NSArray* _supportedComponents;
+  int _writeable;
 }
 @property(retain, nonatomic) NSString* path;
 @property(retain, nonatomic) NSString* displayName;

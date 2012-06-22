@@ -10,7 +10,7 @@
 @class NSString;
 
 @interface ASFolderSyncTask : ASTask {
-	NSString* _previousSyncKey;
+  NSString* _previousSyncKey;
 }
 -(id)initWithPreviousSyncKey:(id)previousSyncKey;
 // inherited: -(int)commandCode;

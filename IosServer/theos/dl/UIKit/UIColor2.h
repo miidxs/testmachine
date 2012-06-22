@@ -14,7 +14,7 @@
 @interface UIColor ()
 +(void)initialize;
 +(id)allocWithZone:(NSZone*)zone;
-#if __IPHONE_OS_VERSION_MAX_ALLOWED < __IPHONE_3_2	// these 2 colors are public in 3.2
+#if __IPHONE_OS_VERSION_MAX_ALLOWED < __IPHONE_3_2  // these 2 colors are public in 3.2
 +(UIColor*)lightTextColor;
 +(UIColor*)darkTextColor;
 #endif

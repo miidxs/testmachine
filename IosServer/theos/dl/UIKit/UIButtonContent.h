@@ -11,11 +11,11 @@
 @class NSString, UIImage, UIColor;
 
 @interface UIButtonContent : NSObject <NSCoding, NSCopying> {
-	NSString* title;
-	UIImage* image;
-	UIImage* background;
-	UIColor* titleColor;
-	UIColor* shadowColor;
+  NSString* title;
+  UIImage* image;
+  UIImage* background;
+  UIColor* titleColor;
+  UIColor* shadowColor;
 }
 @property(retain, nonatomic) NSString* title;
 @property(retain, nonatomic) UIImage* image;

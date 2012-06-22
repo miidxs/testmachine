@@ -6,15 +6,15 @@
 @class SBWallpaperClipView, SBRoundedMaskCornerView;
 
 @interface SBRoundedCornersView : UIView {
-	CGFloat _cornerRadius;
-	SBWallpaperClipView* _topLeftCorner;
-	SBWallpaperClipView* _topRightCorner;
-	SBWallpaperClipView* _bottomLeftCorner;
-	SBWallpaperClipView* _bottomRightCorner;
-	SBRoundedMaskCornerView* _topLeftCornerMask;
-	SBRoundedMaskCornerView* _topRightCornerMask;
-	SBRoundedMaskCornerView* _bottomLeftCornerMask;
-	SBRoundedMaskCornerView* _bottomRightCornerMask;
+  CGFloat _cornerRadius;
+  SBWallpaperClipView* _topLeftCorner;
+  SBWallpaperClipView* _topRightCorner;
+  SBWallpaperClipView* _bottomLeftCorner;
+  SBWallpaperClipView* _bottomRightCorner;
+  SBRoundedMaskCornerView* _topLeftCornerMask;
+  SBRoundedMaskCornerView* _topRightCornerMask;
+  SBRoundedMaskCornerView* _bottomLeftCornerMask;
+  SBRoundedMaskCornerView* _bottomRightCornerMask;
 }
 -(id)initWithFrame:(CGRect)frame cornerRadius:(CGFloat)radius;
 -(void)layoutSubviews;

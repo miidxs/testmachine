@@ -11,8 +11,8 @@
 @class NSString;
 
 @interface MFRecursiveLock : NSRecursiveLock <MFLockObject> {
-	NSString* _name;
-	id _delegate;
+  NSString* _name;
+  id _delegate;
 }
 +(void)initialize;
 // inherited: -(id)init;

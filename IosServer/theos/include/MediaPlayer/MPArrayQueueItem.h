@@ -10,10 +10,10 @@
 @class MPItem, NSString;
 
 @interface MPArrayQueueItem : NSObject {
-	NSString* _path;
-	double _startTime;
-	double _stopTime;
-	MPItem* _rawItem;
+  NSString* _path;
+  double _startTime;
+  double _stopTime;
+  MPItem* _rawItem;
 }
 @property(retain, nonatomic) NSString* path;
 @property(assign, nonatomic) double startTime;

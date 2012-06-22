@@ -12,14 +12,14 @@
 @class NSString;
 
 @interface SBIconLabel : UIControl {
-	NSString* _label;
-	unsigned _drawMoreLegibly : 1;
-	unsigned _inDock : 1;
-	unsigned _ellipsesText : 1;
-	unsigned _kerningAllowed : 1;
-	unsigned _textMightOverlap : 1;
+  NSString* _label;
+  unsigned _drawMoreLegibly : 1;
+  unsigned _inDock : 1;
+  unsigned _ellipsesText : 1;
+  unsigned _kerningAllowed : 1;
+  unsigned _textMightOverlap : 1;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	unsigned _onWallpaper : 1;
+  unsigned _onWallpaper : 1;
 #endif
 }
 -(id)initWithSize:(CGSize)size label:(NSString *)label;

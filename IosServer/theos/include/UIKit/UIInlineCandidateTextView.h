@@ -10,17 +10,17 @@
 @class InlineCandidateCell, NSArray, NSMutableArray;
 
 @interface UIInlineCandidateTextView : UIView {
-	int m_type;
-	int m_edgeType;
-	BOOL m_animating;
-	NSMutableArray* _candidateCellArray;
-	NSArray* _candidates;
-	id _target;
-	SEL _action;
-	unsigned _selectedItem;
-	InlineCandidateCell* _currentlyPushedItem;
-	BOOL _showingArrow;
-	BOOL _arrowHighlighted;
+  int m_type;
+  int m_edgeType;
+  BOOL m_animating;
+  NSMutableArray* _candidateCellArray;
+  NSArray* _candidates;
+  id _target;
+  SEL _action;
+  unsigned _selectedItem;
+  InlineCandidateCell* _currentlyPushedItem;
+  BOOL _showingArrow;
+  BOOL _arrowHighlighted;
 }
 -(id)initWithFrame:(CGRect)frame candidates:(id)candidates type:(int)type maxScreenWidth:(float)width;
 -(void)dealloc;

@@ -9,8 +9,8 @@
 @class UITextLabel, UIImageView;
 
 @interface UIImageAndTextTableCell : UITableCell {
-	UITextLabel* _titleTextLabel;
-	UIImageView* _iconImageView;
+  UITextLabel* _titleTextLabel;
+  UIImageView* _iconImageView;
 }
 +(id)defaultTitleFont;
 -(void)dealloc;

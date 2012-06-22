@@ -8,10 +8,10 @@
 @class NSMutableDictionary, NSMutableArray, NSDictionary;
 
 @interface UIWebFormPasswordsEditor : NSObject {
-	NSDictionary* _credentialsByProtectionSpace;
-	NSMutableArray* _flattenedCredentials;
-	NSMutableDictionary* _credentialToProtectionSpaceMap;
-	BOOL _ignoreNotifications;
+  NSDictionary* _credentialsByProtectionSpace;
+  NSMutableArray* _flattenedCredentials;
+  NSMutableDictionary* _credentialToProtectionSpaceMap;
+  BOOL _ignoreNotifications;
 }
 +(id)sharedPasswordsEditor;
 -(id)protectionSpaceForCredential:(id)credential;

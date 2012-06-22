@@ -11,15 +11,15 @@
 @class NSString, UIModalView;
 
 @interface PSAlert : NSObject <UIModalViewDelegate> {
-	id _delegate;
-	id _userInfo;
-	UIModalView* _sheet;
-	NSString* _body;
-	NSString* _title;
-	NSString* _defaultButton;
-	NSString* _alternateButton;
-	int _buttonClicked;
-	BOOL _displayed;
+  id _delegate;
+  id _userInfo;
+  UIModalView* _sheet;
+  NSString* _body;
+  NSString* _title;
+  NSString* _defaultButton;
+  NSString* _alternateButton;
+  int _buttonClicked;
+  BOOL _displayed;
 }
 @property(retain) id bodyText;
 @property(retain) NSString* title;

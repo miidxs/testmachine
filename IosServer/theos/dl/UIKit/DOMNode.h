@@ -10,7 +10,7 @@
 #import <Availability2.h>
 #import <UIKit/UIKit.h>
 
-@interface DOMNode (UIWebFormAssistantExtras)	// note: On 3.2 this method belongs to the UIWebFormExtensions category.
+@interface DOMNode (UIWebFormAssistantExtras) // note: On 3.2 this method belongs to the UIWebFormExtensions category.
 -(id)createPeripheral;
 @end
 
@@ -193,7 +193,7 @@
 -(void)setApprovedFocus:(BOOL)focus;
 -(BOOL)hasApprovedFocus;
 #endif
--(id)itemTitle __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_3_1);	// on 3.2 this belongs to the UIWebFormExtensions category.
+-(id)itemTitle __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_3_1);  // on 3.2 this belongs to the UIWebFormExtensions category.
 @end
 
 @interface DOMNode (UIWebInteraction)

@@ -13,21 +13,21 @@
 @protocol SBAwayDateViewDelegate;
 
 @interface SBAwayDateView : UIView {
-	NSTimer* _dateTimer;
-	TPLCDTextView* _timeLabel;
-	TPLCDTextView* _titleLabel;
-	NSString* _title;
-	NSString* _artist;
-	NSString* _album;
-	UILabel* _nowPlayingTitleLabel;
-	UILabel* _nowPlayingArtistLabel;
-	UILabel* _nowPlayingAlbumLabel;
-	SBAwayMediaControlsView* _controlsView;
-	id<SBAwayDateViewDelegate> _delegate;
+  NSTimer* _dateTimer;
+  TPLCDTextView* _timeLabel;
+  TPLCDTextView* _titleLabel;
+  NSString* _title;
+  NSString* _artist;
+  NSString* _album;
+  UILabel* _nowPlayingTitleLabel;
+  UILabel* _nowPlayingArtistLabel;
+  UILabel* _nowPlayingAlbumLabel;
+  SBAwayMediaControlsView* _controlsView;
+  id<SBAwayDateViewDelegate> _delegate;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	int _orientation;
+  int _orientation;
 #endif
-	unsigned _isPlaying : 1;
+  unsigned _isPlaying : 1;
 }
 @property(assign, nonatomic) id<SBAwayDateViewDelegate> delegate;
 @property(assign, nonatomic, getter=isPlaying) BOOL playing;

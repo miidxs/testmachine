@@ -13,25 +13,25 @@
 
 @interface ML3Query : NSObject <NSFastEnumeration> {
 @private
-	ML3MusicLibrary* _library;
-	Class _entityClass;
-	ML3Predicate* _predicate;
-	NSArray* _orderingProperties;
-	BOOL _usingSections;
-	NSLock* _sectionsLock;
-	NSMutableArray* _sections;
-	NSLock* _loadedArrayLock;
-	unsigned _loadedArrayCapacity;
-	NSMutableIndexSet* _loadedArrayIndexSet;
-	long long* _loadedPersistentIDArray;
-	NSMutableIndexSet* _loadedAggregateCountArray;
-	unsigned* _loadedAggregatedCountArray;
-	BOOL _hasLoadedEveryPersistentID;
-	int _loadedCountOnlyCount;
-	BOOL _hasLoadedCountOnlyCount;
-	ML3AggregateQuery* _nonDirectAggregateQuery;
-	NSString* _selectPersistentIDsSQLWithLimitClause;
-	NSString* _selectPersistentIDsSQLWithoutLimitClause;
+  ML3MusicLibrary* _library;
+  Class _entityClass;
+  ML3Predicate* _predicate;
+  NSArray* _orderingProperties;
+  BOOL _usingSections;
+  NSLock* _sectionsLock;
+  NSMutableArray* _sections;
+  NSLock* _loadedArrayLock;
+  unsigned _loadedArrayCapacity;
+  NSMutableIndexSet* _loadedArrayIndexSet;
+  long long* _loadedPersistentIDArray;
+  NSMutableIndexSet* _loadedAggregateCountArray;
+  unsigned* _loadedAggregatedCountArray;
+  BOOL _hasLoadedEveryPersistentID;
+  int _loadedCountOnlyCount;
+  BOOL _hasLoadedCountOnlyCount;
+  ML3AggregateQuery* _nonDirectAggregateQuery;
+  NSString* _selectPersistentIDsSQLWithLimitClause;
+  NSString* _selectPersistentIDsSQLWithoutLimitClause;
 }
 @property(readonly, assign) Class entityClass;
 @property(readonly, assign) ML3Predicate* predicate;

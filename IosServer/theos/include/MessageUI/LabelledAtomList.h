@@ -11,12 +11,12 @@
 @class NSMutableArray, UITextLabel;
 
 @interface LabelledAtomList : UIView {
-	NSMutableArray* _addressAtoms;
-	UITextLabel* _label;
-	id _delegate;
-	float _firstLineWidth;
-	unsigned _needsReflow : 1;
-	unsigned _isChangingFrame : 1;
+  NSMutableArray* _addressAtoms;
+  UITextLabel* _label;
+  id _delegate;
+  float _firstLineWidth;
+  unsigned _needsReflow : 1;
+  unsigned _isChangingFrame : 1;
 }
 -(id)initWithLabel:(id)label totalWidth:(float)width firstLineWidth:(float)width3 addresses:(id)addresses arePhoneNumbers:(id)numbers;
 // inherited: -(void)dealloc;

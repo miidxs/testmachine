@@ -11,7 +11,7 @@
 
 
 @interface Romakana : NSObject {
-	BOOL _kanaMode;
+  BOOL _kanaMode;
 }
 +(id)oneKanaToRoma:(id)roma;
 +(id)hiraganaString:(id)string withKanaMode:(BOOL)kanaMode;

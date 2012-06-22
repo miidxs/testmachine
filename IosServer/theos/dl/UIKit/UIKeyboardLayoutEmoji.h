@@ -10,13 +10,13 @@
 @class UIKeyboardEmojiFactory, UIKeyboardEmojiCategoryController, UIKeyboardEmojiScrollView, UIButton, UIKeyboardEmojiCategoriesControl, UIKeyboardEmojiRecentsController;
 
 @interface UIKeyboardLayoutEmoji : UIKeyboardLayout <UIKeyboardEmojiController> {
-	UIKeyboardEmojiScrollView* _emojiView;
-	UIButton* _globeButton;
-	UIButton* _deleteButton;
-	UIKeyboardEmojiCategoriesControl* _categoriesView;
-	UIKeyboardEmojiFactory* _emojiFactory;
-	UIKeyboardEmojiRecentsController* _recentsController;
-	UIKeyboardEmojiCategoryController* _categoryController;
+  UIKeyboardEmojiScrollView* _emojiView;
+  UIButton* _globeButton;
+  UIButton* _deleteButton;
+  UIKeyboardEmojiCategoriesControl* _categoriesView;
+  UIKeyboardEmojiFactory* _emojiFactory;
+  UIKeyboardEmojiRecentsController* _recentsController;
+  UIKeyboardEmojiCategoryController* _categoryController;
 }
 -(id)initWithFrame:(CGRect)frame;
 -(void)dealloc;

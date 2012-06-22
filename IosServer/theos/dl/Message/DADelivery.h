@@ -10,7 +10,7 @@
 @class DAMailAccount;
 
 @interface DADelivery : MailDelivery {
-	DAMailAccount* _DAMailAccount;
+  DAMailAccount* _DAMailAccount;
 }
 // inherited: -(void)dealloc;
 -(void)setDAMailAccount:(id)account;

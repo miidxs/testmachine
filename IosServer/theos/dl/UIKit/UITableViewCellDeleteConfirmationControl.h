@@ -9,7 +9,7 @@
 
 
 @interface UITableViewCellDeleteConfirmationControl : UIControl {
-	BOOL _visible;
+  BOOL _visible;
 }
 @property(assign, nonatomic, getter=isVisible) BOOL visible;
 +(CGSize)defaultSizeForTitle:(id)title;

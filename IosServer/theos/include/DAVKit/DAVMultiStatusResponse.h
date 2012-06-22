@@ -10,9 +10,9 @@
 @class NSString, NSURL;
 
 @interface DAVMultiStatusResponse : NSObject {
-	NSURL* href;
-	NSString* responseDescription;
-	int statusCode;
+  NSURL* href;
+  NSString* responseDescription;
+  int statusCode;
 }
 // inherited: -(id)init;
 -(id)initWithXMLNode:(id)xmlnode;

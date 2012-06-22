@@ -10,8 +10,8 @@
 @class NSArray, NSMutableArray;
 
 @interface ASMailboxSearchResult : ASEmailItem {
-	NSMutableArray* _classes;
-	NSMutableArray* _collectionIDs;
+  NSMutableArray* _classes;
+  NSMutableArray* _collectionIDs;
 }
 @property(retain) NSArray* classes;
 @property(retain) NSArray* collectionIDs;

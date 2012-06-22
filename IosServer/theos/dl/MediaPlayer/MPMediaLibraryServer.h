@@ -12,7 +12,7 @@
 
 @interface MPMediaLibraryServer : NSObject {
 @private
-	MPMediaLibraryRemoteServer* _internal;
+  MPMediaLibraryRemoteServer* _internal;
 }
 +(void)startMediaLibraryServer;
 +(id)sharedInstance;

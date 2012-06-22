@@ -12,60 +12,60 @@
 
 __attribute__((visibility("hidden")))
 @interface UIKeyboardCandidateInline : UIView <UIKeyboardCandidateList> {
-	id _delegate;
-	NSArray* _candidates;
-	unsigned _currentCandidateIndex;
-	unsigned _numCandidates;
-	unsigned _currentPageIndex;
-	int _promptTextType;
-	UILabel* _inlineTextLabel;
-	NSString* _inlineText;
-	CGRect _inlineRect;
-	CGRect _frame;
-	unsigned _lineHeight;
-	unsigned _numColumns;
-	BOOL _alwaysShowBackground;
-	BOOL _showControls;
+  id _delegate;
+  NSArray* _candidates;
+  unsigned _currentCandidateIndex;
+  unsigned _numCandidates;
+  unsigned _currentPageIndex;
+  int _promptTextType;
+  UILabel* _inlineTextLabel;
+  NSString* _inlineText;
+  CGRect _inlineRect;
+  CGRect _frame;
+  unsigned _lineHeight;
+  unsigned _numColumns;
+  BOOL _alwaysShowBackground;
+  BOOL _showControls;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED < __IPHONE_3_2
-	BOOL _showingAll;
-	BOOL _selectedInAll;
+  BOOL _showingAll;
+  BOOL _selectedInAll;
 #endif
-	NSMutableArray* _candidateLines;
-	UIAutocorrectInlinePrompt* _inlineView;
-	UIScroller* _scrollView;
-	UIImageView* _controlsView;
-	UIKeyboardGenericKeyView* _subviewButton;
-	UIKeyboardGenericKeyView* _nextPageButton;
-	UIKeyboardGenericKeyView* _prevPageButton;
-	CGRect _inlineCandidateFrame;
-	float _lazyLayoutNextOriginY;
-	unsigned _lazyLayoutNextCandidateIndex;
-	int _orientation;
-	BOOL _forMobileNotes;
-	BOOL _landscape;
-	BOOL _animating;
-	CGRect _windowFrame;
-	CGPoint _draggingStartOffset;
-	UIImageView* _closeButton;
+  NSMutableArray* _candidateLines;
+  UIAutocorrectInlinePrompt* _inlineView;
+  UIScroller* _scrollView;
+  UIImageView* _controlsView;
+  UIKeyboardGenericKeyView* _subviewButton;
+  UIKeyboardGenericKeyView* _nextPageButton;
+  UIKeyboardGenericKeyView* _prevPageButton;
+  CGRect _inlineCandidateFrame;
+  float _lazyLayoutNextOriginY;
+  unsigned _lazyLayoutNextCandidateIndex;
+  int _orientation;
+  BOOL _forMobileNotes;
+  BOOL _landscape;
+  BOOL _animating;
+  CGRect _windowFrame;
+  CGPoint _draggingStartOffset;
+  UIImageView* _closeButton;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	UIImageView* _expandButton;
+  UIImageView* _expandButton;
 #endif
-	UIImage* _backgroundImage;
-	UIImage* _backgroundTopImage;
-	CGRect _closeButtonFrame;
-	BOOL _showScroller;
-	NSTimer* _deferredLayoutTimer;
-	UIView* _shadowView;
-	BOOL _caretVisible;
-	BOOL _caretblinking;
-	CGRect m_caretRect;
-	UIView* m_caretView;
-	NSTimer* m_caretTimer;
-	BOOL m_caretShowingNow;
-	BOOL m_showingCompletions;
-	UIKeyboardCandidateSafetyNetVie* m_landscapeSafetyNetView;
+  UIImage* _backgroundImage;
+  UIImage* _backgroundTopImage;
+  CGRect _closeButtonFrame;
+  BOOL _showScroller;
+  NSTimer* _deferredLayoutTimer;
+  UIView* _shadowView;
+  BOOL _caretVisible;
+  BOOL _caretblinking;
+  CGRect m_caretRect;
+  UIView* m_caretView;
+  NSTimer* m_caretTimer;
+  BOOL m_caretShowingNow;
+  BOOL m_showingCompletions;
+  UIKeyboardCandidateSafetyNetVie* m_landscapeSafetyNetView;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	int _windowType;
+  int _windowType;
 #endif
 }
 +(id)sharedInstance;

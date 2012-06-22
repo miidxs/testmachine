@@ -11,8 +11,8 @@
 @class NSString;
 
 @interface CAValueFunction : NSObject {
-	NSString* _string;
-	void* _impl;
+  NSString* _string;
+  void* _impl;
 }
 @property(readonly, assign) NSString* name;
 +(id)functionWithName:(id)name;

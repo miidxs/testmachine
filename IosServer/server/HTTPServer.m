@@ -11,39 +11,39 @@
 **/
 - (id)init
 {
-	if(self = [super init])
-	{
-		// Initialize underlying asynchronous tcp/ip socket
-		asyncSocket = [[AsyncSocket alloc] initWithDelegate:self];
-		
-		// Use default connection class of HTTPConnection
-		connectionClass = [HTTPConnection self];
-		
-		// Configure default values for bonjour service
-		
-		// Use a default port of 0
-		// This will allow the kernel to automatically pick an open port for us
-		port = 0;
-		
-		// Bonjour domain. Use the local domain by default
-		domain = @"local.";
-		
-		// If using an empty string ("") for the service name when registering,
-		// the system will automatically use the "Computer Name".
-		// Passing in an empty string will also handle name conflicts
-		// by automatically appending a digit to the end of the name.
-		name = @"";
-		
-		// Initialize an array to hold all the HTTP connections
-		connections = [[NSMutableArray alloc] init];
-		
-		// And register for notifications of closed connections
-		[[NSNotificationCenter defaultCenter] addObserver:self
-												 selector:@selector(connectionDidDie:)
-													 name:HTTPConnectionDidDieNotification
-												   object:nil];
-	}
-	return self;
+    if(self = [super init])
+    {
+        // Initialize underlying asynchronous tcp/ip socket
+        asyncSocket = [[AsyncSocket alloc] initWithDelegate:self];
+        
+        // Use default connection class of HTTPConnection
+        connectionClass = [HTTPConnection self];
+        
+        // Configure default values for bonjour service
+        
+        // Use a default port of 0
+        // This will allow the kernel to automatically pick an open port for us
+        port = 0;
+        
+        // Bonjour domain. Use the local domain by default
+        domain = @"local.";
+        
+        // If using an empty string ("") for the service name when registering,
+        // the system will automatically use the "Computer Name".
+        // Passing in an empty string will also handle name conflicts
+        // by automatically appending a digit to the end of the name.
+        name = @"";
+        
+        // Initialize an array to hold all the HTTP connections
+        connections = [[NSMutableArray alloc] init];
+        
+        // And register for notifications of closed connections
+        [[NSNotificationCenter defaultCenter] addObserver:self
+                                                 selector:@selector(connectionDidDie:)
+                                                     name:HTTPConnectionDidDieNotification
+                                                   object:nil];
+    }
+    return self;
 }
 
 /**
@@ -52,23 +52,23 @@
 **/
 - (void)dealloc
 {
-	// Remove notification observer
-	[[NSNotificationCenter defaultCenter] removeObserver:self];
-	
-	// Stop the server if it's running
-	[self stop];
-	
-	// Release all instance variables
-	[documentRoot release];
-	[netService release];
+    // Remove notification observer
+    [[NSNotificationCenter defaultCenter] removeObserver:self];
+    
+    // Stop the server if it's running
+    [self stop];
+    
+    // Release all instance variables
+    [documentRoot release];
+    [netService release];
     [domain release];
     [name release];
     [type release];
-	[txtRecordDictionary release];
-	[asyncSocket release];
-	[connections release];
-	
-	[super dealloc];
+    [txtRecordDictionary release];
+    [asyncSocket release];
+    [connections release];
+    
+    [super dealloc];
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -80,7 +80,7 @@
 **/
 - (id)delegate
 {
-	return delegate;
+    return delegate;
 }
 
 /**
@@ -88,7 +88,7 @@
 **/
 - (void)setDelegate:(id)newDelegate
 {
-	delegate = newDelegate;
+    delegate = newDelegate;
 }
 
 /**
@@ -102,7 +102,7 @@
 - (void)setDocumentRoot:(NSURL *)value
 {
     if(![documentRoot isEqual:value])
-	{
+    {
         [documentRoot release];
         documentRoot = [value copy];
     }
@@ -131,9 +131,9 @@
 }
 - (void)setDomain:(NSString *)value
 {
-	if(![domain isEqualToString:value])
-	{
-		[domain release];
+    if(![domain isEqualToString:value])
+    {
+        [domain release];
         domain = [value copy];
     }
 }
@@ -147,10 +147,10 @@
 }
 - (void)setType:(NSString *)value
 {
-	if(![type isEqualToString:value])
-	{
-		[type release];
-		type = [value copy];
+    if(![type isEqualToString:value])
+    {
+        [type release];
+        type = [value copy];
     }
 }
 
@@ -163,12 +163,12 @@
     return name;
 }
 - (NSString *)publishedName {
-	return [netService name];
+    return [netService name];
 }
 - (void)setName:(NSString *)value
 {
-	if(![name isEqualToString:value])
-	{
+    if(![name isEqualToString:value])
+    {
         [name release];
         name = [value copy];
     }
@@ -190,21 +190,21 @@
  * The extra data to use for this service via Bonjour.
 **/
 - (NSDictionary *)TXTRecordDictionary {
-	return txtRecordDictionary;
+    return txtRecordDictionary;
 }
 - (void)setTXTRecordDictionary:(NSDictionary *)value
 {
-	if(![txtRecordDictionary isEqualToDictionary:value])
-	{
-		[txtRecordDictionary release];
-		txtRecordDictionary = [value copy];
-		
-		// And update the txtRecord of the netService if it has already been published
-		if(netService)
-		{
-			[netService setTXTRecordData:[NSNetService dataFromTXTRecordDictionary:txtRecordDictionary]];
-		}
-	}
+    if(![txtRecordDictionary isEqualToDictionary:value])
+    {
+        [txtRecordDictionary release];
+        txtRecordDictionary = [value copy];
+        
+        // And update the txtRecord of the netService if it has already been published
+        if(netService)
+        {
+            [netService setTXTRecordData:[NSNetService dataFromTXTRecordDictionary:txtRecordDictionary]];
+        }
+    }
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -213,64 +213,64 @@
 
 - (BOOL)start:(NSError **)error
 {
-	BOOL success = [asyncSocket acceptOnPort:port error:error];
-	
-	if(success)
-	{
-		// Update our port number
-		[self setPort:[asyncSocket localPort]];
-		
-		// Output console message for debugging purposes
-		NSLog(@"Started HTTP server on port %hu", port);
-		
-		// We can only publish our bonjour service if a type has been set
-		if(type != nil)
-		{
-			// Create the NSNetService with our basic parameters
-			netService = [[NSNetService alloc] initWithDomain:domain type:type name:name port:port];
-			
-			[netService setDelegate:self];
-			[netService publish];
-			
-			// Do not set the txtRecordDictionary prior to publishing!!!
-			// This will cause the OS to crash!!!
-			
-			// Set the txtRecordDictionary if we have one
-			if(txtRecordDictionary != nil)
-			{
-				[netService setTXTRecordData:[NSNetService dataFromTXTRecordDictionary:txtRecordDictionary]];
-			}
-		}
-	}
-	else
-	{
-		NSLog(@"Failed to start HTTP Server: %@", *error);
-	}
-	
-	return success;
+    BOOL success = [asyncSocket acceptOnPort:port error:error];
+    
+    if(success)
+    {
+        // Update our port number
+        [self setPort:[asyncSocket localPort]];
+        
+        // Output console message for debugging purposes
+        NSLog(@"Started HTTP server on port %hu", port);
+        
+        // We can only publish our bonjour service if a type has been set
+        if(type != nil)
+        {
+            // Create the NSNetService with our basic parameters
+            netService = [[NSNetService alloc] initWithDomain:domain type:type name:name port:port];
+            
+            [netService setDelegate:self];
+            [netService publish];
+            
+            // Do not set the txtRecordDictionary prior to publishing!!!
+            // This will cause the OS to crash!!!
+            
+            // Set the txtRecordDictionary if we have one
+            if(txtRecordDictionary != nil)
+            {
+                [netService setTXTRecordData:[NSNetService dataFromTXTRecordDictionary:txtRecordDictionary]];
+            }
+        }
+    }
+    else
+    {
+        NSLog(@"Failed to start HTTP Server: %@", *error);
+    }
+    
+    return success;
 }
 
 - (BOOL)stop
 {
-	// First stop publishing the service via bonjour
-	if(netService)
-	{
-		[netService stop];
-		[netService release];
-		netService = nil;
-	}
-	
-	// Now stop the asynchronouse tcp server
-	// This will prevent it from accepting any more connections
-	[asyncSocket disconnect];
-	
-	// Now stop all HTTP connections the server owns
-	@synchronized(connections)
-	{
-		[connections removeAllObjects];
-	}
-	
-	return YES;
+    // First stop publishing the service via bonjour
+    if(netService)
+    {
+        [netService stop];
+        [netService release];
+        netService = nil;
+    }
+    
+    // Now stop the asynchronouse tcp server
+    // This will prevent it from accepting any more connections
+    [asyncSocket disconnect];
+    
+    // Now stop all HTTP connections the server owns
+    @synchronized(connections)
+    {
+        [connections removeAllObjects];
+    }
+    
+    return YES;
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -282,13 +282,13 @@
 **/
 - (uint)numberOfHTTPConnections
 {
-	uint result = 0;
-	
-	@synchronized(connections)
-	{
-		result = [connections count];
-	}
-	return result;
+    uint result = 0;
+    
+    @synchronized(connections)
+    {
+        result = [connections count];
+    }
+    return result;
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -297,13 +297,13 @@
 
 -(void)onSocket:(AsyncSocket *)sock didAcceptNewSocket:(AsyncSocket *)newSocket
 {
-	id newConnection = [[connectionClass alloc] initWithAsyncSocket:newSocket forServer:self];
-	
-	@synchronized(connections)
-	{
-		[connections addObject:newConnection];
-	}
-	[newConnection release];
+    id newConnection = [[connectionClass alloc] initWithAsyncSocket:newSocket forServer:self];
+    
+    @synchronized(connections)
+    {
+        [connections addObject:newConnection];
+    }
+    [newConnection release];
 }
 
 /**
@@ -312,12 +312,12 @@
 **/
 - (void)connectionDidDie:(NSNotification *)notification
 {
-	// Note: This method is called on the thread/runloop that posted the notification
-	
-	@synchronized(connections)
-	{
-		[connections removeObject:[notification object]];
-	}
+    // Note: This method is called on the thread/runloop that posted the notification
+    
+    @synchronized(connections)
+    {
+        [connections removeObject:[notification object]];
+    }
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -330,9 +330,9 @@
 **/
 - (void)netServiceDidPublish:(NSNetService *)ns
 {
-	// Override me to do something here...
-	
-	NSLog(@"Bonjour Service Published: domain(%@) type(%@) name(%@)", [ns domain], [ns type], [ns name]);
+    // Override me to do something here...
+    
+    NSLog(@"Bonjour Service Published: domain(%@) type(%@) name(%@)", [ns domain], [ns type], [ns name]);
 }
 
 /**
@@ -341,10 +341,10 @@
 **/
 - (void)netService:(NSNetService *)ns didNotPublish:(NSDictionary *)errorDict
 {
-	// Override me to do something here...
-	
-	NSLog(@"Failed to Publish Service: domain(%@) type(%@) name(%@)", [ns domain], [ns type], [ns name]);
-	NSLog(@"Error Dict: %@", errorDict);
+    // Override me to do something here...
+    
+    NSLog(@"Failed to Publish Service: domain(%@) type(%@) name(%@)", [ns domain], [ns type], [ns name]);
+    NSLog(@"Error Dict: %@", errorDict);
 }
 
 @end

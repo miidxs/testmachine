@@ -10,8 +10,8 @@
 @class NSMutableIndexSet;
 
 @interface SearchResponseQueue : BaseSyncResponseQueue {
-	NSMutableIndexSet* indexSet;
-	unsigned limit;
+  NSMutableIndexSet* indexSet;
+  unsigned limit;
 }
 // inherited: -(id)init;
 // inherited: -(BOOL)addItem:(id)item;

@@ -9,8 +9,8 @@
 @class NSString, UITableCell;
 
 @interface UIRemoveControlTextButton : UIControl {
-	UITableCell* _tableCell;
-	NSString* _label;
+  UITableCell* _tableCell;
+  NSString* _label;
 }
 -(id)initWithRemoveControl:(id)removeControl withTarget:(id)target withLabel:(id)label;
 -(void)_controlMouseDragged:(GSEventRef)dragged;

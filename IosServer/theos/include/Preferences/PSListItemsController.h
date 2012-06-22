@@ -11,9 +11,9 @@
 @class PSSpecifier;
 
 @interface PSListItemsController : PSListController {
-	int _rowToSelect;
-	BOOL _deferItemSelection;
-	PSSpecifier* _lastSelectedSpecifier;
+  int _rowToSelect;
+  BOOL _deferItemSelection;
+  PSSpecifier* _lastSelectedSpecifier;
 }
 // inherited: -(void)viewWillRedisplay;
 // inherited: -(void)viewWillBecomeVisible:(void*)view;

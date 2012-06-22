@@ -36,83 +36,83 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #if __cplusplus
 extern "C" {
 #endif
-	
+  
 #if 0
-	struct IOSurfaceClientUnknown {
-		int x00;
-		int x04;
-		size_t seed;
-		size_t inUse;
-	};
+  struct IOSurfaceClientUnknown {
+    int x00;
+    int x04;
+    size_t seed;
+    size_t inUse;
+  };
 #endif
-	
-	typedef struct __IOSurfaceClient 
+  
+  typedef struct __IOSurfaceClient 
 #if 0
-	{
-		void* isa;	// 0
-		size_t useCount;	// 4
-		void* address;	// 8
-		IOSurfaceClientID _id;	// c
-		size_t allocSize;	// 10
-		size_t width;	// 14
-		size_t height;	// 18
-		size_t bytesPerRow;	// 1c
-		int offset;	// 20
-		OSType pixelFormat;	// 24
-		size_t planeCount;	// 2c
-		uint16_t bytesPerElement;	// 34
-		uint8_t elementWidth;	// 36
-		uint8_t elementHeight;	// 37
-		struct IOSurfaceClientUnknown* unknown;	// 3c
-		struct {
-			struct IOSurfaceClientUnknown* unknown;	// 40
-			size_t width;	// 44
-			size_t height;	// 48
-			int offset;	// 50
-			size_t bytesPerRow;	// 54
-			uint16_t bytesPerElement;	// 5c
-			uint8_t elementWidth;	// 5e
-			uint8_t elementHeight;	// 5f
-		} planes[];
-	}
+  {
+    void* isa;  // 0
+    size_t useCount;  // 4
+    void* address;  // 8
+    IOSurfaceClientID _id;  // c
+    size_t allocSize; // 10
+    size_t width; // 14
+    size_t height;  // 18
+    size_t bytesPerRow; // 1c
+    int offset; // 20
+    OSType pixelFormat; // 24
+    size_t planeCount;  // 2c
+    uint16_t bytesPerElement; // 34
+    uint8_t elementWidth; // 36
+    uint8_t elementHeight;  // 37
+    struct IOSurfaceClientUnknown* unknown; // 3c
+    struct {
+      struct IOSurfaceClientUnknown* unknown; // 40
+      size_t width; // 44
+      size_t height;  // 48
+      int offset; // 50
+      size_t bytesPerRow; // 54
+      uint16_t bytesPerElement; // 5c
+      uint8_t elementWidth; // 5e
+      uint8_t elementHeight;  // 5f
+    } planes[];
+  }
 #endif
-	IOSurfaceClientRef;
-	
-	typedef uint32_t IOSurfaceClientID;
-	
+  IOSurfaceClientRef;
+  
+  typedef uint32_t IOSurfaceClientID;
+  
 #pragma mark Accessors
-	IOSurfaceClientID IOSurfaceClientGetID(IOSurfaceClientRef client);
-	size_t IOSurfaceClientGetAllocSize(IOSurfaceClientRef client);
-	size_t IOSurfaceClientGetWidth(IOSurfaceClientRef client);
-	size_t IOSurfaceClientGetHeight(IOSurfaceClientRef client);
-	size_t IOSurfaceClientGetBytesPerRow(IOSurfaceClientRef client);
-	uint16_t IOSurfaceClientGetBytesPerElement(IOSurfaceClientRef client);
-	uint8_t IOSurfaceClientGetElementWidth(IOSurfaceClientRef client);
-	uint8_t IOSurfaceClientGetElementHeight(IOSurfaceClientRef client);
-	OSType IOSurfaceClientGetPixelFormat(IOSurfaceClientRef client);
-	void* IOSurfaceClientGetBaseAddress(IOSurfaceClientRef client);	// return address + offset.
-	uint32_t IOSurfaceClientGetSeed(IOSurfaceClientRef client);
-	
-	uint32_t IOSurfaceClientGetUseCount(IOSurfaceClientRef client);
-	bool IOSurfaceClientIsInUse(IOSurfaceClientRef client);
-	
+  IOSurfaceClientID IOSurfaceClientGetID(IOSurfaceClientRef client);
+  size_t IOSurfaceClientGetAllocSize(IOSurfaceClientRef client);
+  size_t IOSurfaceClientGetWidth(IOSurfaceClientRef client);
+  size_t IOSurfaceClientGetHeight(IOSurfaceClientRef client);
+  size_t IOSurfaceClientGetBytesPerRow(IOSurfaceClientRef client);
+  uint16_t IOSurfaceClientGetBytesPerElement(IOSurfaceClientRef client);
+  uint8_t IOSurfaceClientGetElementWidth(IOSurfaceClientRef client);
+  uint8_t IOSurfaceClientGetElementHeight(IOSurfaceClientRef client);
+  OSType IOSurfaceClientGetPixelFormat(IOSurfaceClientRef client);
+  void* IOSurfaceClientGetBaseAddress(IOSurfaceClientRef client); // return address + offset.
+  uint32_t IOSurfaceClientGetSeed(IOSurfaceClientRef client);
+  
+  uint32_t IOSurfaceClientGetUseCount(IOSurfaceClientRef client);
+  bool IOSurfaceClientIsInUse(IOSurfaceClientRef client);
+  
 #pragma mark Accessors for planes
-	size_t IOSurfaceClientGetPlaneCount(IOSurfaceClientRef client);
-	size_t IOSurfaceClientGetWidthOfPlane(IOSurfaceClientRef client, size_t planeIndex);
-	size_t IOSurfaceClientGetHeightOfPlane(IOSurfaceClientRef client, size_t planeIndex);
-	size_t IOSurfaceClientGetBytesPerRowOfPlane(IOSurfaceClientRef client, size_t planeIndex);
-	uint16_t IOSurfaceClientGetBytesPerElementOfPlane(IOSurfaceClientRef client, size_t planeIndex);
-	uint8_t IOSurfaceClientGetElementWidthOfPlane(IOSurfaceClientRef client, size_t planeIndex);
-	uint8_t IOSurfaceClientGetElementHeightOfPlane(IOSurfaceClientRef client, size_t planeIndex);
-	void* IOSurfaceClientGetBaseAddressOfPlane(IOSurfaceClientRef client, size_t planeIndex);
-	uint32_t IOSurfaceClientGetSeedOfPlane(IOSurfaceClientRef client, size_t planeIndex);
-	
+  size_t IOSurfaceClientGetPlaneCount(IOSurfaceClientRef client);
+  size_t IOSurfaceClientGetWidthOfPlane(IOSurfaceClientRef client, size_t planeIndex);
+  size_t IOSurfaceClientGetHeightOfPlane(IOSurfaceClientRef client, size_t planeIndex);
+  size_t IOSurfaceClientGetBytesPerRowOfPlane(IOSurfaceClientRef client, size_t planeIndex);
+  uint16_t IOSurfaceClientGetBytesPerElementOfPlane(IOSurfaceClientRef client, size_t planeIndex);
+  uint8_t IOSurfaceClientGetElementWidthOfPlane(IOSurfaceClientRef client, size_t planeIndex);
+  uint8_t IOSurfaceClientGetElementHeightOfPlane(IOSurfaceClientRef client, size_t planeIndex);
+  void* IOSurfaceClientGetBaseAddressOfPlane(IOSurfaceClientRef client, size_t planeIndex);
+  uint32_t IOSurfaceClientGetSeedOfPlane(IOSurfaceClientRef client, size_t planeIndex);
+  
 #pragma mark Actions
-	void IOSurfaceClientDecrementUseCount(IOSurfaceClientRef client);
-	void IOSurfaceClientIncrementUseCount(IOSurfaceClientRef client);
-	
-	void IOSurfaceClientRemoveSurfaceNotify(IOSurfaceClientRef client);
-	
+  void IOSurfaceClientDecrementUseCount(IOSurfaceClientRef client);
+  void IOSurfaceClientIncrementUseCount(IOSurfaceClientRef client);
+  
+  void IOSurfaceClientRemoveSurfaceNotify(IOSurfaceClientRef client);
+  
 #if __cplusplus
 }
 #endif

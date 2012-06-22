@@ -13,26 +13,26 @@
 
 @interface MLPhotoAlbum : NSObject {
 @private
-	int _albumID;
-	int _filter;
-	NSString* _albumName;
-	NSString* _uuid;
-	NSArray* _imagesAndVideos;
-	NSArray* _filteredImages;
-	int _cachedCount;
-	id _posterImage;
-	BOOL _imagesLoaded;
-	BOOL _isLibrary;
-	unsigned char _albumKind;
-	unsigned long long _playlistID;
-	unsigned long long _songID;
-	int _imageCount;
-	int _videoCount;
-	NSDictionary* _slideshowSettings;
-	int _keyPhotoKeyITunes;
-	int _keyPhotoFaceIndexITunes;
-	int _posterImageIndex;
-	unsigned _didSetPosterImageIndex : 1;
+  int _albumID;
+  int _filter;
+  NSString* _albumName;
+  NSString* _uuid;
+  NSArray* _imagesAndVideos;
+  NSArray* _filteredImages;
+  int _cachedCount;
+  id _posterImage;
+  BOOL _imagesLoaded;
+  BOOL _isLibrary;
+  unsigned char _albumKind;
+  unsigned long long _playlistID;
+  unsigned long long _songID;
+  int _imageCount;
+  int _videoCount;
+  NSDictionary* _slideshowSettings;
+  int _keyPhotoKeyITunes;
+  int _keyPhotoFaceIndexITunes;
+  int _posterImageIndex;
+  unsigned _didSetPosterImageIndex : 1;
 }
 +(id)libraryAlbum;
 -(id)init;

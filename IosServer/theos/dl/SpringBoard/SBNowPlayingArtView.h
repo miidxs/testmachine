@@ -13,8 +13,8 @@
 @class UIImageView;
 
 @interface SBNowPlayingArtView : UIView {
-	UIImageView* _imageView;
-	UIView* _reflection;
+  UIImageView* _imageView;
+  UIView* _reflection;
 }
 // inherited: -(void)dealloc;
 -(void)setAlbumArtImage:(UIImage *)image maxSize:(CGFloat)size;

@@ -13,19 +13,19 @@
 @protocol SASLSecurityLayer;
 
 @interface Connection : NSObject {
-	id<SASLSecurityLayer> _securityLayer;
-	_NSSocket* _socket;
-	char* _buffer;
-	int _bufferRemainingBytes;
-	unsigned _bufferStart;
-	unsigned _bufferLength;
-	unsigned _desiredBufferLength;
-	NSData* _logData;
-	unsigned _dontLogReads;
-	unsigned _readBytesNotLogged;
-	NSMutableString* _readBytesToLog;
-	unsigned _isFetching : 1;
-	unsigned _allowFallbacks : 1;
+  id<SASLSecurityLayer> _securityLayer;
+  _NSSocket* _socket;
+  char* _buffer;
+  int _bufferRemainingBytes;
+  unsigned _bufferStart;
+  unsigned _bufferLength;
+  unsigned _desiredBufferLength;
+  NSData* _logData;
+  unsigned _dontLogReads;
+  unsigned _readBytesNotLogged;
+  NSMutableString* _readBytesToLog;
+  unsigned _isFetching : 1;
+  unsigned _allowFallbacks : 1;
 }
 +(void)readLoggingDefaults;
 // inherited: +(void)initialize;

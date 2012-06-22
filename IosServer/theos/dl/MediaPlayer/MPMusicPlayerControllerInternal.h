@@ -13,19 +13,19 @@
 
 @interface MPMusicPlayerControllerInternal : MPServerObjectProxy <MPMusicPlayerController> {
 @private
-	unsigned _clientPort;
-	CFRunLoopSourceRef _runLoopSource;
-	int _playbackState;
-	int _playbackNotificationObservers;
-	MPMediaQuery* _query;
-	MPMediaItemCollection* _itemCollection;
-	unsigned _didCheckIn : 1;
-	unsigned _useApplicationSpecificQueue : 1;
-	unsigned _useCachedPlaybackState : 1;
-	unsigned _cachedPlaybackStateIsValid : 1;
-	unsigned _allowsRemoteUIAccess : 1;
-	int _inBlockHandlingMessageFromServer;
-	int _inBlockHandlingPlaybackStateChangedMessageFromServer;
+  unsigned _clientPort;
+  CFRunLoopSourceRef _runLoopSource;
+  int _playbackState;
+  int _playbackNotificationObservers;
+  MPMediaQuery* _query;
+  MPMediaItemCollection* _itemCollection;
+  unsigned _didCheckIn : 1;
+  unsigned _useApplicationSpecificQueue : 1;
+  unsigned _useCachedPlaybackState : 1;
+  unsigned _cachedPlaybackStateIsValid : 1;
+  unsigned _allowsRemoteUIAccess : 1;
+  int _inBlockHandlingMessageFromServer;
+  int _inBlockHandlingPlaybackStateChangedMessageFromServer;
 }
 @property(assign) BOOL inBlockHandlingPlaybackStateChangedMessageFromServer;
 @property(assign) BOOL inBlockHandlingMessageFromServer;

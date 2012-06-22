@@ -10,7 +10,7 @@
 @protocol SBIconListPageControlDelegate;
 
 @interface SBIconListPageControl : UIPageControl {
-	id _delegate;
+  id _delegate;
 }
 @property(assign, nonatomic) id<SBIconListPageControlDelegate> delegate;
 // inherited: -(void)touchesBegan:(id)began withEvent:(id)event;

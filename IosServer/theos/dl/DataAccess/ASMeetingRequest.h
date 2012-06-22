@@ -12,13 +12,13 @@
 @class NSNumber, NSMutableDictionary, NSDate, ASEmailItem, NSString;
 
 @interface ASMeetingRequest : ASEvent <ASParsingAcceptingTopLevelLeaves, NSCoding> {
-	NSNumber* _instanceType;
-	NSDate* _recurrenceId;
-	NSMutableDictionary* _placeHolder;
-	int _meetingClassType;
-	ASEmailItem* _parentEmailItem;
-	NSString* _cachedParentFolderId;
-	NSString* _cachedParentServerId;
+  NSNumber* _instanceType;
+  NSDate* _recurrenceId;
+  NSMutableDictionary* _placeHolder;
+  int _meetingClassType;
+  ASEmailItem* _parentEmailItem;
+  NSString* _cachedParentFolderId;
+  NSString* _cachedParentServerId;
 }
 // inherited: +(BOOL)acceptsTopLevelLeaves;
 // inherited: +(BOOL)parsingLeafNode;

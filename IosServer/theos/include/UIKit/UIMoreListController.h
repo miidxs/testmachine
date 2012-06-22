@@ -11,10 +11,10 @@
 @class NSArray, UITableView, UIMoreListCellLayoutManager;
 
 @interface UIMoreListController : UIViewController <UITableViewDelegate, UITableViewDataSource> {
-	UITableView* _table;
-	BOOL _allowsCustomizing;
-	NSArray* _moreViewControllers;
-	UIMoreListCellLayoutManager* _layoutManager;
+  UITableView* _table;
+  BOOL _allowsCustomizing;
+  NSArray* _moreViewControllers;
+  UIMoreListCellLayoutManager* _layoutManager;
 }
 @property(assign, nonatomic) BOOL allowsCustomizing;
 @property(retain, nonatomic) NSArray* moreViewControllers;

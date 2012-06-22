@@ -10,17 +10,17 @@
 @class PLCachedVideoFilesManager, PLPhotoLibrary;
 
 @interface PLLibraryViewController : UIViewController {
-	PLPhotoLibrary* _library;
-	int _previousStatusBarMode;
-	int _newStatusBarMode;
-	PLCachedVideoFilesManager* _cachedVideoFileManager;
-	struct {
-		unsigned albumsInvalid : 1;
-		unsigned visible : 1;
-		unsigned filter : 3;
-		unsigned didSetPreviousStatusBarMode : 1;
-		unsigned reserved : 26;
-	} _libraryControllerFlags;
+  PLPhotoLibrary* _library;
+  int _previousStatusBarMode;
+  int _newStatusBarMode;
+  PLCachedVideoFilesManager* _cachedVideoFileManager;
+  struct {
+    unsigned albumsInvalid : 1;
+    unsigned visible : 1;
+    unsigned filter : 3;
+    unsigned didSetPreviousStatusBarMode : 1;
+    unsigned reserved : 26;
+  } _libraryControllerFlags;
 }
 // inherited: -(id)init;
 // inherited: -(void)dealloc;

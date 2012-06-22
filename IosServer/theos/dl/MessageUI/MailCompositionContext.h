@@ -10,25 +10,25 @@
 @class MessageViewingContext, MailMessage;
 
 typedef enum MailCompositionContextType {
-	MailCompositionContextType_NewMessage,
-	MailCompositionContextType_Draft,
-	MailCompositionContextType_Reply,
-	MailCompositionContextType_ReplyAll,
-	MailCompositionContextType_Forward,
-	
-	MailCompositionContextType_RecoveredAutosave = 6
+  MailCompositionContextType_NewMessage,
+  MailCompositionContextType_Draft,
+  MailCompositionContextType_Reply,
+  MailCompositionContextType_ReplyAll,
+  MailCompositionContextType_Forward,
+  
+  MailCompositionContextType_RecoveredAutosave = 6
 } MailCompositionContextType;
 
 @interface MailCompositionContext : MFMailCompositionContext {
 @private
-	int _composeType;
-	MailMessage* _originalMessage;
-	id _originalContent;
-	MessageViewingContext* _loadingContext;
-	struct {
-		unsigned loadRest : 1;
-		unsigned includeAttachments : 1;
-	} _mailComposeFlags;
+  int _composeType;
+  MailMessage* _originalMessage;
+  id _originalContent;
+  MessageViewingContext* _loadingContext;
+  struct {
+    unsigned loadRest : 1;
+    unsigned includeAttachments : 1;
+  } _mailComposeFlags;
 }
 @property(readonly, assign, nonatomic) MailCompositionContextType composeType;
 @property(readonly, retain, nonatomic) MailMessage* originalMessage;

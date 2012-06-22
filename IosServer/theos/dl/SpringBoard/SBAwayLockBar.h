@@ -6,9 +6,9 @@
 @class UIButton, NSMutableDictionary;
 
 @interface SBAwayLockBar : TPBottomLockBar {
-	UIButton* _bluetoothButton;
-	UIButton* _slideshowButton;
-	NSMutableDictionary* _orientationToButtonImages;
+  UIButton* _bluetoothButton;
+  UIButton* _slideshowButton;
+  NSMutableDictionary* _orientationToButtonImages;
 }
 // inherited: -(void)dealloc;
 -(void)setShowsBluetoothButton:(BOOL)button animated:(BOOL)animated;

@@ -12,14 +12,14 @@
 
 __attribute__((visibility("hidden")))
 @interface UIWebTextRangeView : UIView {
-	UIView<UITextSelectingContainer>* m_container;
-	NSArray* _rects;
-	NSMutableArray* _rectViews;
-	UIWebDragDotView* _topDot;
-	UIWebDragDotView* _bottomDot;
-	BOOL _magnifying;
+  UIView<UITextSelectingContainer>* m_container;
+  NSArray* _rects;
+  NSMutableArray* _rectViews;
+  UIWebDragDotView* _topDot;
+  UIWebDragDotView* _bottomDot;
+  BOOL _magnifying;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED < __IPHONE_3_2
-	id<UIWebTextRangeViewController> _controller;	
+  id<UIWebTextRangeViewController> _controller; 
 #endif
 }
 @property(copy, nonatomic) NSArray* rects;

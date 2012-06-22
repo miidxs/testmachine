@@ -11,14 +11,14 @@
 @class NSString;
 
 @interface LibraryMessage : MailMessage {
-	unsigned _libraryID;
-	NSString* _remoteID;
-	unsigned _uid;
-	unsigned _size;
-	XXStruct_vs6POB _imapFlags;
-	unsigned _mailboxID;
-	unsigned _originalMailboxID;
-	NSString* _messageID;
+  unsigned _libraryID;
+  NSString* _remoteID;
+  unsigned _uid;
+  unsigned _size;
+  XXStruct_vs6POB _imapFlags;
+  unsigned _mailboxID;
+  unsigned _originalMailboxID;
+  NSString* _messageID;
 }
 +(id)messageWithLibraryID:(unsigned)libraryID;
 -(id)initWithLibraryID:(unsigned)libraryID;

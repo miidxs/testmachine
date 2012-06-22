@@ -13,11 +13,11 @@
 @protocol MessageWebLayerDelegate;
 
 @interface MessageWebLayer : UIWebDocumentView {
-	NSArray* _messageFragments;
-	id<MessageWebLayerDelegate> _mwlDelegate;
-	unsigned _shouldRescale : 1;
-	unsigned _unitTests : 1;
-	unsigned _isFromEntourage : 1;
+  NSArray* _messageFragments;
+  id<MessageWebLayerDelegate> _mwlDelegate;
+  unsigned _shouldRescale : 1;
+  unsigned _unitTests : 1;
+  unsigned _isFromEntourage : 1;
 }
 // inherited: +(void)initialize;
 -(id)initWithFrame:(CGRect)frame visibleSize:(CGSize)size;

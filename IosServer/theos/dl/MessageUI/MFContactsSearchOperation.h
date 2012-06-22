@@ -11,11 +11,11 @@
 
 @interface MFContactsSearchOperation : NSOperation {
 @private
-	void* _addressBook;
-	MFContactsSearchManager* _owner;
-	NSNumber* _taskID;
-	NSString* _text;
-	NSSet* _properties;
+  void* _addressBook;
+  MFContactsSearchManager* _owner;
+  NSNumber* _taskID;
+  NSString* _text;
+  NSSet* _properties;
 }
 @property(readonly, assign, nonatomic) void* addressBook;
 @property(readonly, assign, nonatomic) MFContactsSearchManager* owner;

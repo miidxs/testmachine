@@ -11,10 +11,10 @@
 @protocol VMUMemory;
 
 @interface VMUTask : NSObject {
-	id<VMUMemory> _memory;
-	VMUMachTaskContainer* _machTaskContainer;
-	BOOL _isTranslated;
-	NSArray* _headers;
+  id<VMUMemory> _memory;
+  VMUMachTaskContainer* _machTaskContainer;
+  BOOL _isTranslated;
+  NSArray* _headers;
 }
 +(BOOL)pidIsTranslated:(int)translated;
 +(id)findDyldHeaderInMemory:(id)memory address:(unsigned long long)address;

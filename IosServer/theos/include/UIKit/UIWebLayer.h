@@ -7,7 +7,7 @@
 
 
 @interface UIWebLayer : CALayer {
-	BOOL _layoutsSuspended;
+  BOOL _layoutsSuspended;
 }
 -(void)setNeedsLayout;
 -(void)setLayoutsSuspended:(BOOL)suspended;

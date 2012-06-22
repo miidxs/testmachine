@@ -10,9 +10,9 @@
 
 
 @interface SBCallAlertDisplay : SBSlidingAlertDisplay {
-	BOOL _wasToldToStopRinging;
-	BOOL _answered;
-	BOOL _pendingRing;
+  BOOL _wasToldToStopRinging;
+  BOOL _answered;
+  BOOL _pendingRing;
 }
 +(id)createBottomLockBarForDisplay:(id)display;
 // inherited: +(id)createBottomBarForInstance:(id)instance;

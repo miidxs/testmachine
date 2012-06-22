@@ -10,11 +10,11 @@
 @class NSData, NSURL, NSString;
 
 @interface MixedMessageFragment : NSObject {
-	NSString* _markupString;
-	NSData* _markupData;
-	NSString* _mimeType;
-	NSString* _textEncodingName;
-	NSURL* _baseURL;
+  NSString* _markupString;
+  NSData* _markupData;
+  NSString* _mimeType;
+  NSString* _textEncodingName;
+  NSURL* _baseURL;
 }
 -(id)initWithMarkupString:(id)markupString baseURL:(id)url;
 -(id)initWithMarkupData:(id)markupData textEncodingName:(id)name baseURL:(id)url;

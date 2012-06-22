@@ -20,11 +20,11 @@
  [dict setObject:@"2" forKey:@"second"];
  [dict setObject:@"3" forKey:@"third"];
  [dict setObject:@"4" forKey:@"fourth"];
- [dict objectForKey:@"first"];	// Bump "first" as most recently used.
+ [dict objectForKey:@"first"];  // Bump "first" as most recently used.
  [dict setObject:@"5" forKey:@"fifth"];
  [dict setObject:@"6" forKey:@"sixth"]; 
  
- NSLog(@"%@", [dict allKeys]);	// Should have "first", "fourth", "fifth" and "sixth" in any order.
+ NSLog(@"%@", [dict allKeys]);  // Should have "first", "fourth", "fifth" and "sixth" in any order.
  
  [dict release];
  @endcode
@@ -34,10 +34,10 @@
 @class CPLRUDictionaryNode, NSMutableDictionary;
 
 @interface CPLRUDictionary : NSObject {
-	NSMutableDictionary* _dictionary;
-	unsigned _maxCount;
-	CPLRUDictionaryNode* _head;
-	CPLRUDictionaryNode* _tail;
+  NSMutableDictionary* _dictionary;
+  unsigned _maxCount;
+  CPLRUDictionaryNode* _head;
+  CPLRUDictionaryNode* _tail;
 }
 -(id)initWithMaximumCapacity:(NSUInteger)maximumCapacity;
 -(NSUInteger)count;

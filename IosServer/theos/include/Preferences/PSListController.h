@@ -12,26 +12,26 @@
 @protocol PSBaseView;
 
 @interface PSListController : PSViewController {
-	NSMutableDictionary* _cells;
-	BOOL _cachesCells;
-	NSString* _title;
-	UITransitionView* _view;
-	UIPreferencesTable* _table;
-	NSArray* _specifiers;
-	id<PSBaseView> _detailController;
-	id<PSBaseView> _previousController;
-	NSMutableArray* _controllers;
-	NSMutableDictionary* _specifiersByID;
-	BOOL _keyboardWasVisible;
-	BOOL _showingSetupController;
-	BOOL _selectingRow;
-	NSString* _specifierID;
-	PSSpecifier* _specifier;
-	NSMutableArray* _groups;
-	NSMutableArray* _bundleControllers;
-	BOOL _bundlesLoaded;
-	CGRect _cellRect;
-	UIModalView* _alertSheet;
+  NSMutableDictionary* _cells;
+  BOOL _cachesCells;
+  NSString* _title;
+  UITransitionView* _view;
+  UIPreferencesTable* _table;
+  NSArray* _specifiers;
+  id<PSBaseView> _detailController;
+  id<PSBaseView> _previousController;
+  NSMutableArray* _controllers;
+  NSMutableDictionary* _specifiersByID;
+  BOOL _keyboardWasVisible;
+  BOOL _showingSetupController;
+  BOOL _selectingRow;
+  NSString* _specifierID;
+  PSSpecifier* _specifier;
+  NSMutableArray* _groups;
+  NSMutableArray* _bundleControllers;
+  BOOL _bundlesLoaded;
+  CGRect _cellRect;
+  UIModalView* _alertSheet;
 }
 @property(retain) NSArray* specifiers;
 @property(retain) NSString* specifierID;

@@ -11,40 +11,40 @@
 @protocol CAMediaTiming;
 
 @interface UIViewAnimationState : NSObject {
-	UIViewAnimationState* _nextState;
-	NSString* _animationID;
-	void* _context;
-	id _delegate;
-	double _duration;
-	double _delay;
-	double _frameInterval;
-	double _start;
-	int _curve;
-	float _repeatCount;
-	int _transition;
-	UIView* _transitionView;
+  UIViewAnimationState* _nextState;
+  NSString* _animationID;
+  void* _context;
+  id _delegate;
+  double _duration;
+  double _delay;
+  double _frameInterval;
+  double _start;
+  int _curve;
+  float _repeatCount;
+  int _transition;
+  UIView* _transitionView;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	int _filter;
-	UIView* _filterView;
-	float _filterValue;	
+  int _filter;
+  UIView* _filterView;
+  float _filterValue; 
 #endif
-	SEL _willStartSelector;
-	SEL _didEndSelector;
-	int _didEndCount;
-	CGPoint _position;
-	unsigned _willStartSent : 1;
-	unsigned _useCurrentLayerState : 1;
-	unsigned _cacheTransition : 1;
-	unsigned _autoreverses : 1;
-	unsigned _roundsToInteger : 1;
+  SEL _willStartSelector;
+  SEL _didEndSelector;
+  int _didEndCount;
+  CGPoint _position;
+  unsigned _willStartSent : 1;
+  unsigned _useCurrentLayerState : 1;
+  unsigned _cacheTransition : 1;
+  unsigned _autoreverses : 1;
+  unsigned _roundsToInteger : 1;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED < __IPHONE_3_2
-	unsigned _reserved : 27;
+  unsigned _reserved : 27;
 #endif
 }
 +(void)pushViewAnimationState:(id)state context:(void*)context;
 +(void)popAnimationState;
 -(void)dealloc;
--(void)setAnimationAttributes:(id<CAMediaTiming>)attributes;	// save the attributes of the animation state *into* the argument.
+-(void)setAnimationAttributes:(id<CAMediaTiming>)attributes;  // save the attributes of the animation state *into* the argument.
 -(void)animationDidStart:(id)animation;
 -(void)sendDelegateAnimationDidStop:(id)sendDelegateAnimation finished:(BOOL)finished;
 -(void)animationDidStop:(id)animation finished:(BOOL)finished;

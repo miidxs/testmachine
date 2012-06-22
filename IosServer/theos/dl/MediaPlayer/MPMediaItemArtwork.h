@@ -12,7 +12,7 @@
 
 @interface MPMediaItemArtwork : NSObject {
 @private
-	MPMediaItemArtworkInternal* _internal;
+  MPMediaItemArtworkInternal* _internal;
 }
 @property(readonly, assign, nonatomic) CGRect imageCropRect;
 @property(readonly, assign, nonatomic) CGRect bounds;

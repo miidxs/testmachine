@@ -9,8 +9,8 @@
 @class NSMutableArray, NSString, UIKBKey;
 
 @interface UIKBKeylist : NSObject <NSCoding> {
-	NSString* m_name;
-	NSMutableArray* m_keys;
+  NSString* m_name;
+  NSMutableArray* m_keys;
 }
 @property(retain, nonatomic) NSString* name;
 @property(retain, nonatomic) NSMutableArray* keys;

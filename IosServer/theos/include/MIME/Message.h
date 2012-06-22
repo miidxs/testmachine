@@ -11,22 +11,22 @@
 @class NSData, NSString, MessageStore, MessageHeaders, MimeBody;
 
 @interface Message : NSObject {
-	MessageStore* _store;
-	unsigned _preferredEncoding;
-	NSString* _senderAddressComment;
-	unsigned _dateSentInterval;
-	unsigned _dateReceivedInterval;
-	double _generationTime;
-	NSString* _subject;
-	NSString* _to;
-	NSString* _cc;
-	NSString* _sender;
-	NSString* _contentType;
-	NSData* _messageIDHeaderDigest;
-	NSData* _inReplyToHeaderDigest;
-	NSString* _summary;
-	unsigned _calculatedAttachmentInfo : 1;
-	unsigned short _numberOfAttachments;
+  MessageStore* _store;
+  unsigned _preferredEncoding;
+  NSString* _senderAddressComment;
+  unsigned _dateSentInterval;
+  unsigned _dateReceivedInterval;
+  double _generationTime;
+  NSString* _subject;
+  NSString* _to;
+  NSString* _cc;
+  NSString* _sender;
+  NSString* _contentType;
+  NSData* _messageIDHeaderDigest;
+  NSData* _inReplyToHeaderDigest;
+  NSString* _summary;
+  unsigned _calculatedAttachmentInfo : 1;
+  unsigned short _numberOfAttachments;
 }
 // inherited: +(void)initialize;
 +(void)setMessageClassForStore:(id)store;
@@ -50,7 +50,7 @@
 -(id)preferredEmailAddressToReplyWith;
 -(NSString*)messageID;
 -(id)messageIDHeaderDigest;
--(NSString*)messageIDHeader;	// <123456.78901.23@x.mail.hk2.yahoo.com>
+-(NSString*)messageIDHeader;  // <123456.78901.23@x.mail.hk2.yahoo.com>
 -(void)unlockedSetMessageIDHeaderDigest:(id)digest;
 -(void)setMessageIDHeaderDigest:(id)digest;
 -(id)_messageIDHeaderDigestIvar;

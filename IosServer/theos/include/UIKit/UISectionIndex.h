@@ -9,8 +9,8 @@
 @class UISectionTable;
 
 @interface UISectionIndex : UIControl {
-	UISectionTable* _sectionTable;
-	CGPoint _lastMousePoint;
+  UISectionTable* _sectionTable;
+  CGPoint _lastMousePoint;
 }
 +(float)visibleWidth;
 +(float)opaqueVisibleWidth;

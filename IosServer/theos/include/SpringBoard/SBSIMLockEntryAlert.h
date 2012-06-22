@@ -10,7 +10,7 @@
 
 
 @interface SBSIMLockEntryAlert : SBAlert {
-	int _status;
+  int _status;
 }
 // inherited: -(id)alertDisplayViewWithSize:(CGSize)size;
 -(int)status;

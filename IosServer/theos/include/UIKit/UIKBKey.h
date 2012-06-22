@@ -14,18 +14,18 @@
 @class NSArray, NSString, UIKBAttributeList;
 
 @interface UIKBKey : UIKBShape <NSCoding, NSCopying, UIKBCacheKey> {
-	NSString* m_name;
-	NSString* m_representedString;
-	NSString* m_displayString;
-	NSString* m_displayType;
-	NSString* m_interactionType;
-	NSString* m_variantType;
-	UIKBAttributeList* m_attributes;
-	unsigned m_displayTypeHint;
-	NSString* m_displayRowHint;
-	NSArray* m_variantKeys;
-	NSString* m_overrideDisplayString;
-	BOOL m_visible;
+  NSString* m_name;
+  NSString* m_representedString;
+  NSString* m_displayString;
+  NSString* m_displayType;
+  NSString* m_interactionType;
+  NSString* m_variantType;
+  UIKBAttributeList* m_attributes;
+  unsigned m_displayTypeHint;
+  NSString* m_displayRowHint;
+  NSArray* m_variantKeys;
+  NSString* m_overrideDisplayString;
+  BOOL m_visible;
 }
 @property(copy, nonatomic) NSString* name;
 @property(copy, nonatomic) NSString* representedString;

@@ -11,8 +11,8 @@
 @class NSTimer;
 
 @interface SBStatusBarInCallView : SBStatusBarDoubleHeightView {
-	double _inCallDuration;
-	NSTimer* _durationTimer;
+  double _inCallDuration;
+  NSTimer* _durationTimer;
 }
 // inherited: -(void)dealloc;
 // inherited: -(void)start;

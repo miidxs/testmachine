@@ -7,22 +7,22 @@
 @protocol UIPageControllerDelegate;
 
 @interface UIPageController : UIViewController {
-	NSMutableArray* _viewControllers;
-	UIViewController* _disappearingViewController;
-	UIView* _wrapperViews[3];
-	UIScrollView* _scrollView;
-	UIPageControl* _pageControl;
-	id<UIPageControllerDelegate> _delegate;
-	int _pageSpacing;
-	int _visibleIndex;
-	int _pageCount;
-	struct {
-		unsigned _firstTouchForView : 1;
-		unsigned _isTap : 1;
-		unsigned _isWarped : 1;
-		unsigned _isDelayed : 1;
-		unsigned _sentTouchesEnded : 1;
-	} _pageControllerFlags;
+  NSMutableArray* _viewControllers;
+  UIViewController* _disappearingViewController;
+  UIView* _wrapperViews[3];
+  UIScrollView* _scrollView;
+  UIPageControl* _pageControl;
+  id<UIPageControllerDelegate> _delegate;
+  int _pageSpacing;
+  int _visibleIndex;
+  int _pageCount;
+  struct {
+    unsigned _firstTouchForView : 1;
+    unsigned _isTap : 1;
+    unsigned _isWarped : 1;
+    unsigned _isDelayed : 1;
+    unsigned _sentTouchesEnded : 1;
+  } _pageControllerFlags;
 }
 @property(assign, nonatomic) id<UIPageControllerDelegate> delegate;
 @property(assign, nonatomic) int visibleIndex;

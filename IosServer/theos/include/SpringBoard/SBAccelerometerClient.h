@@ -10,13 +10,13 @@
 
 
 @interface SBAccelerometerClient : NSObject {
-	CFMachPortRef _cfMachPort;
-	unsigned _port;
-	double _updateInterval;
-	double _lastUpdateTime;
-	float _xThreshold;
-	float _yThreshold;
-	float _zThreshold;
+  CFMachPortRef _cfMachPort;
+  unsigned _port;
+  double _updateInterval;
+  double _lastUpdateTime;
+  float _xThreshold;
+  float _yThreshold;
+  float _zThreshold;
 }
 @property(assign, nonatomic) unsigned port;
 @property(assign, nonatomic) CFMachPortRef CFMachPort;

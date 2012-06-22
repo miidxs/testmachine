@@ -12,17 +12,17 @@
 @class UIButton, UILabel, UIPushButton, UISlider, MPAudioDeviceController;
 
 @interface SBAwayMediaControlsView : UIView {
-	unsigned _beganSeeking : 1;
-	int _seekingDirection;
-	UIPushButton* _prevButton;
-	UIPushButton* _nextButton;
-	UIPushButton* _playPauseButton;
-	UISlider* _slider;
-	UIButton* _routeButton;
-	UILabel* _routeLabel;
-	MPAudioDeviceController* _audioDeviceController;
+  unsigned _beganSeeking : 1;
+  int _seekingDirection;
+  UIPushButton* _prevButton;
+  UIPushButton* _nextButton;
+  UIPushButton* _playPauseButton;
+  UISlider* _slider;
+  UIButton* _routeButton;
+  UILabel* _routeLabel;
+  MPAudioDeviceController* _audioDeviceController;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	int _orientation;
+  int _orientation;
 #endif
 }
 // inherited: -(id)initWithFrame:(CGRect)frame;

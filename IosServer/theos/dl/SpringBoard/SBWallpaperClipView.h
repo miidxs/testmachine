@@ -6,10 +6,10 @@
 @class SBWallpaperView;
 
 @interface SBWallpaperClipView : UIView {
-	SBWallpaperView* _wallpaperView;
-	CGPoint _contentOffset;
-	CGPoint _unitContentOffset;
-	CGSize _unitContentSize;
+  SBWallpaperView* _wallpaperView;
+  CGPoint _contentOffset;
+  CGPoint _unitContentOffset;
+  CGSize _unitContentSize;
 }
 @property(retain, nonatomic) SBWallpaperView* wallpaperView;
 @property(assign, nonatomic) CGPoint contentOffset;

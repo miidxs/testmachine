@@ -10,7 +10,7 @@
 
 
 @interface SBWiFiIsEnterpriseAlert : SBAlertItem {
-	id _delegate;
+  id _delegate;
 }
 -(void)alertSheet:(id)sheet buttonClicked:(int)clicked;
 // inherited: -(void)configure:(BOOL)configure requirePasscodeForActions:(BOOL)actions;

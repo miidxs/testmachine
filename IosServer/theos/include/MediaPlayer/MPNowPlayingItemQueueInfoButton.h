@@ -12,15 +12,15 @@
 @protocol MPNowPlayingItemQueueInfoButtonDelegate;
 
 @interface MPNowPlayingItemQueueInfoButton : UIButton {
-	UIImage* _infoCircleImage;
-	NSURL* _infoURL;
-	unsigned _infoFeederCount;
-	float _minSizingTextWidth;
-	unsigned _minSizingPositionInQueue;
-	int _layoutDisabledCount;
-	unsigned _allowedDisplayTypes;
-	int _infoTypeForLayout;
-	id<MPNowPlayingItemQueueInfoButtonDelegate> _delegate;
+  UIImage* _infoCircleImage;
+  NSURL* _infoURL;
+  unsigned _infoFeederCount;
+  float _minSizingTextWidth;
+  unsigned _minSizingPositionInQueue;
+  int _layoutDisabledCount;
+  unsigned _allowedDisplayTypes;
+  int _infoTypeForLayout;
+  id<MPNowPlayingItemQueueInfoButtonDelegate> _delegate;
 }
 @property(retain, nonatomic) NSURL* infoURL;
 @property(assign, nonatomic) unsigned allowedDisplayTypes;

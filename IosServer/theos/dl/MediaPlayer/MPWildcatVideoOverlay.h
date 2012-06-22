@@ -12,17 +12,17 @@
 @class MPItem, NSMutableDictionary, MPVideoViewController, MPDetailSlider;
 
 @interface MPWildcatVideoOverlay : UIView <MPDetailSliderDelegate> {
-	MPVideoViewController* _videoViewController;
-	MPItem* _item;
-	MPDetailSlider* _scrubControl;
-	int _interfaceOrientation;
-	BOOL _controlsAutohideDisabled;
-	BOOL _wantsTick;
-	unsigned _desiredParts;
-	unsigned _visibleParts;
-	unsigned _disabledParts;
-	NSMutableDictionary* _tickTimeEvents;
-	double _lastTickTime;
+  MPVideoViewController* _videoViewController;
+  MPItem* _item;
+  MPDetailSlider* _scrubControl;
+  int _interfaceOrientation;
+  BOOL _controlsAutohideDisabled;
+  BOOL _wantsTick;
+  unsigned _desiredParts;
+  unsigned _visibleParts;
+  unsigned _disabledParts;
+  NSMutableDictionary* _tickTimeEvents;
+  double _lastTickTime;
 }
 @property(assign, nonatomic) unsigned desiredParts;
 @property(retain, nonatomic) MPItem* item;

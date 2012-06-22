@@ -10,15 +10,15 @@
 @class NSString, NSArray, VMUSection;
 
 @interface VMUSegmentLoadCommand : VMULoadCommand {
-	NSString* _name;
-	unsigned long long _vmaddr;
-	unsigned long long _vmsize;
-	unsigned long long _fileoff;
-	unsigned long long _filesize;
-	int _maxprot;
-	int _initprot;
-	unsigned _flags;
-	NSArray* _sections;
+  NSString* _name;
+  unsigned long long _vmaddr;
+  unsigned long long _vmsize;
+  unsigned long long _fileoff;
+  unsigned long long _filesize;
+  int _maxprot;
+  int _initprot;
+  unsigned _flags;
+  NSArray* _sections;
 }
 // inherited: -(BOOL)isSegment;
 -(NSString*)name;
@@ -29,7 +29,7 @@
 -(int)maxprot;
 -(int)initprot;
 -(unsigned)flags;
--(NSArray*)sections;	// NSArray of VMUSection's
+-(NSArray*)sections;  // NSArray of VMUSection's
 -(VMUSection*)sectionNamed:(NSString*)sectName;
 // inherited: -(id)description;
 // inherited: -(void)dealloc;

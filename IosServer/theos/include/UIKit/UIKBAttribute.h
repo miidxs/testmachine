@@ -9,8 +9,8 @@
 @class NSString;
 
 @interface UIKBAttribute : NSObject <NSCoding> {
-	NSString* m_name;
-	id m_value;
+  NSString* m_name;
+  id m_value;
 }
 @property(copy, nonatomic) NSString* name;
 @property(copy, nonatomic) id value;

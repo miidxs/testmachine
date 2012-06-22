@@ -9,10 +9,10 @@
 @class UIImage;
 
 @interface _UIPickerViewTopFrame : UIView {
-	UIImage* _leftImage;
-	UIImage* _middleImage;
-	UIImage* _rightImage;
-	float _inset;
+  UIImage* _leftImage;
+  UIImage* _middleImage;
+  UIImage* _rightImage;
+  float _inset;
 }
 -(id)initWithFrame:(CGRect)frame;
 -(void)setLeftImage:(id)image middleImage:(id)image2 rightImage:(id)image3;

@@ -12,8 +12,8 @@
 @class NSSet;
 
 @interface ASRuntimeFixMailAccount : NSObject <ASRuntimeFixProtocol> {
-	BOOL _shouldNotifyMobileMail;
-	NSSet* _supportedMailClasses;
+  BOOL _shouldNotifyMobileMail;
+  NSSet* _supportedMailClasses;
 }
 // inherited: -(id)init;
 // inherited: -(void)dealloc;

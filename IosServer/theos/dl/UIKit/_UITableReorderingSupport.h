@@ -8,18 +8,18 @@
 @class NSArray, UIShadowView, NSTimer;
 
 @interface _UITableReorderingSupport : NSObject {
-	NSArray* _reorderedCells;
-	unsigned _reorderedRow;
-	unsigned _emptySpaceRow;
-	unsigned _lastVisibleRowLocation;
-	unsigned _oldShowScrollerIndicators : 1;
-	unsigned _delegateImplementsCanMoveRow : 1;
-	unsigned _delegateImplementsMoveDestinationRow : 1;
-	unsigned _bottomShadowNeedsToMove : 1;
-	unsigned _reserved : 28;
-	NSTimer* _autoscrollTimer;
-	UIShadowView* _topShadowView;
-	UIShadowView* _bottomShadowView;
+  NSArray* _reorderedCells;
+  unsigned _reorderedRow;
+  unsigned _emptySpaceRow;
+  unsigned _lastVisibleRowLocation;
+  unsigned _oldShowScrollerIndicators : 1;
+  unsigned _delegateImplementsCanMoveRow : 1;
+  unsigned _delegateImplementsMoveDestinationRow : 1;
+  unsigned _bottomShadowNeedsToMove : 1;
+  unsigned _reserved : 28;
+  NSTimer* _autoscrollTimer;
+  UIShadowView* _topShadowView;
+  UIShadowView* _bottomShadowView;
 }
 @end
 

@@ -11,7 +11,7 @@
 
 @interface AVArrayQueueFeeder : AVQueueFeeder {
 @private
-	NSMutableArray* _items;
+  NSMutableArray* _items;
 }
 -(id)init;
 -(id)initWithArray:(id)array;

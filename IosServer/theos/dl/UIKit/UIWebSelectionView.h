@@ -11,45 +11,45 @@
 
 __attribute__((visibility("hidden")))
 @interface UIWebSelectionView : UIView {
-	UIView* _center;
-	CGRect _selectionFrame;
-	UIWebSelectionHandle* _top;
-	UIWebSelectionHandle* _right;
-	UIWebSelectionHandle* _bottom;
-	UIWebSelectionHandle* _left;
-	UIWebSelectionOutline* _outline;
-	UIWebTextRangeView* _textRangeView;
-	UIWebDocumentView* _documentView;
-	UIWebSelectionNode* _selectionNode;
-	UIWebSelectionGraph* _selectionGraph;
-	float _growThreshold;
-	float _shrinkThreshold;
-	struct {
-		UIWebSelectionHandle* scrollingHandle;
-		double startTime;
-		int direction;
-		NSTimer* timer;
-	} _autoscrollData;
-	struct {
-		UIWebSelectionHandle* activeHandle;
-		CGPoint handleCenterStart;
-		float handleOffset;
-	} _blockSelectionData;
-	struct {
-		UIWebSelectionHandle* start;
-		UIWebSelectionHandle* end;
-		CGSize startingOffset;
-		BOOL anchorAtStart;
-		struct {
-			BOOL flipPossible;
-			BOOL rectsChanged;
-			CGRect originalSelectionRect;
-		} flipData;
-	} _rangedSelectionData;
+  UIView* _center;
+  CGRect _selectionFrame;
+  UIWebSelectionHandle* _top;
+  UIWebSelectionHandle* _right;
+  UIWebSelectionHandle* _bottom;
+  UIWebSelectionHandle* _left;
+  UIWebSelectionOutline* _outline;
+  UIWebTextRangeView* _textRangeView;
+  UIWebDocumentView* _documentView;
+  UIWebSelectionNode* _selectionNode;
+  UIWebSelectionGraph* _selectionGraph;
+  float _growThreshold;
+  float _shrinkThreshold;
+  struct {
+    UIWebSelectionHandle* scrollingHandle;
+    double startTime;
+    int direction;
+    NSTimer* timer;
+  } _autoscrollData;
+  struct {
+    UIWebSelectionHandle* activeHandle;
+    CGPoint handleCenterStart;
+    float handleOffset;
+  } _blockSelectionData;
+  struct {
+    UIWebSelectionHandle* start;
+    UIWebSelectionHandle* end;
+    CGSize startingOffset;
+    BOOL anchorAtStart;
+    struct {
+      BOOL flipPossible;
+      BOOL rectsChanged;
+      CGRect originalSelectionRect;
+    } flipData;
+  } _rangedSelectionData;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_1
-	BOOL _creatingSelection;
+  BOOL _creatingSelection;
 #endif
-	int _nestedLayoutCalls;
+  int _nestedLayoutCalls;
 }
 @property(retain, nonatomic) UIWebSelectionNode* selectionNode;
 @property(assign, nonatomic) CGRect selectionFrame;

@@ -10,12 +10,12 @@
 @class NSSet, NSString, UIImage, UIColor;
 
 @interface UINavigationButton : UIButton {
-	NSSet* _possibleTitles;
-	int _style;
-	int _barStyle;
-	UIColor* _tintColor;
-	unsigned _size : 2;
-	unsigned _pad : 30;
+  NSSet* _possibleTitles;
+  int _style;
+  int _barStyle;
+  UIColor* _tintColor;
+  unsigned _size : 2;
+  unsigned _pad : 30;
 }
 @property(assign, nonatomic) int style;
 @property(assign, nonatomic) int barStyle;

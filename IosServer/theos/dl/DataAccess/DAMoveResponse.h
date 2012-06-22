@@ -10,9 +10,9 @@
 @class NSString;
 
 @interface DAMoveResponse : NSObject {
-	int _status;
-	NSString* _sourceID;
-	NSString* _destID;
+  int _status;
+  NSString* _sourceID;
+  NSString* _destID;
 }
 -(id)initWithStatus:(int)status sourceID:(id)anId destID:(id)anId3;
 -(int)status;

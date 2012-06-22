@@ -7,8 +7,8 @@
 
 
 @interface UIAlphaAnimation : UIAnimation {
-	float _startAlpha;
-	float _endAlpha;
+  float _startAlpha;
+  float _endAlpha;
 }
 -(void)setStartAlpha:(float)alpha;
 -(void)setEndAlpha:(float)alpha;

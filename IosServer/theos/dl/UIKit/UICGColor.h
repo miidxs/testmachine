@@ -9,7 +9,7 @@
 __attribute__((visibility("hidden")))
 @interface UICGColor : UIColor {
 @private
-	CGColorRef cachedColor;
+  CGColorRef cachedColor;
 }
 // inherited: -(id)initWithCGColor:(CGColorRef)cgcolor;
 // inherited: -(void)dealloc;

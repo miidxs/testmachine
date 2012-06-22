@@ -11,12 +11,12 @@
 
 __attribute__((visibility("hidden")))
 @interface UIScrubberTimeView : UIView {
-	NSString* _time;
+  NSString* _time;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	UIColor* _timeColor;
-	UIColor* _timeShadowColor;
+  UIColor* _timeColor;
+  UIColor* _timeShadowColor;
 #endif
-	unsigned _align : 2;
+  unsigned _align : 2;
 }
 // inherited: -(id)initWithFrame:(CGRect)frame;
 // inherited: -(void)dealloc;

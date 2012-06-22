@@ -11,7 +11,7 @@
 
 static inline void _DHRelease(id object) __attribute__((always_inline));
 static inline void _DHRelease(id object) {
-	[object release];
+  [object release];
 }
 #define DHScopeReleased __attribute__((cleanup(_DHRelease)))
 #define DHScopedAutoreleasePool() NSAutoreleasePool *DHScopedAutoreleasePool __attribute__((cleanup(_DHRelease),unused)) = [[NSAutoreleasePool alloc] init]

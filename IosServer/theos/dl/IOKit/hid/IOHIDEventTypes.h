@@ -135,11 +135,11 @@ enum {
 };
 
 /*!
-	@typedef IOHIDAccelerometerType
-	@abstract Type of accelerometer event triggered.
+  @typedef IOHIDAccelerometerType
+  @abstract Type of accelerometer event triggered.
     @discussion
-	@constant kIOHIDAccelerometerTypeNormal
-	@constant kIOHIDAccelerometerTypeShake
+  @constant kIOHIDAccelerometerTypeNormal
+  @constant kIOHIDAccelerometerTypeShake
 */
 enum {
     kIOHIDAccelerometerTypeNormal   = 0,
@@ -233,17 +233,17 @@ enum {
 typedef uint32_t IOHIDEventField;
 
 /*!
-	@typedef IOHIDSwipeMask
-	@abstract Mask detailing the type of swipe detected.
+  @typedef IOHIDSwipeMask
+  @abstract Mask detailing the type of swipe detected.
     @discussion
-	@constant kIOHIDProximityDetectionLargeBodyContact
-	@constant kIOHIDProximityDetectionLargeBodyFarField
-	@constant kIOHIDProximityDetectionIrregularObjects
-	@constant kIOHIDProximityDetectionEdgeStraddling
-	@constant kIOHIDProximityDetectionFlatFingerClasp
-	@constant kIOHIDProximityDetectionFingerTouch
-	@constant kIOHIDProximityDetectionReceiver
-	@constant kIOHIDProximityDetectionSmallObjectsHovering
+  @constant kIOHIDProximityDetectionLargeBodyContact
+  @constant kIOHIDProximityDetectionLargeBodyFarField
+  @constant kIOHIDProximityDetectionIrregularObjects
+  @constant kIOHIDProximityDetectionEdgeStraddling
+  @constant kIOHIDProximityDetectionFlatFingerClasp
+  @constant kIOHIDProximityDetectionFingerTouch
+  @constant kIOHIDProximityDetectionReceiver
+  @constant kIOHIDProximityDetectionSmallObjectsHovering
     @constant kIOHIDProximityDetectionReceiverCrude
 */
 enum {
@@ -256,17 +256,17 @@ typedef uint32_t IOHIDSwipeMask;
 
 
 /*!
-	@typedef IOHIDProximityDetectionMask
-	@abstract Proximity mask detailing the inputs that were detected.
+  @typedef IOHIDProximityDetectionMask
+  @abstract Proximity mask detailing the inputs that were detected.
     @discussion
-	@constant kIOHIDProximityDetectionLargeBodyContact
-	@constant kIOHIDProximityDetectionLargeBodyFarField
-	@constant kIOHIDProximityDetectionIrregularObjects
-	@constant kIOHIDProximityDetectionEdgeStraddling
-	@constant kIOHIDProximityDetectionFlatFingerClasp
-	@constant kIOHIDProximityDetectionFingerTouch
-	@constant kIOHIDProximityDetectionReceiver
-	@constant kIOHIDProximityDetectionSmallObjectsHovering
+  @constant kIOHIDProximityDetectionLargeBodyContact
+  @constant kIOHIDProximityDetectionLargeBodyFarField
+  @constant kIOHIDProximityDetectionIrregularObjects
+  @constant kIOHIDProximityDetectionEdgeStraddling
+  @constant kIOHIDProximityDetectionFlatFingerClasp
+  @constant kIOHIDProximityDetectionFingerTouch
+  @constant kIOHIDProximityDetectionReceiver
+  @constant kIOHIDProximityDetectionSmallObjectsHovering
     @constant kIOHIDProximityDetectionReceiverCrude
 */
 enum {
@@ -283,10 +283,10 @@ enum {
 typedef uint32_t IOHIDProximityDetectionMask;
 
 /*!
-	@typedef IOHIDDigitizerType
-	@abstract The type of digitizer path initiating an event.
+  @typedef IOHIDDigitizerType
+  @abstract The type of digitizer path initiating an event.
     @discussion The IOHIDDigitizerType usually corresponds to the Logical Collection usage defined in Digitizer Usage Page (0x0d) of the USB HID Usage Tables.
-	@constant kIOHIDDigitizerTypeStylus
+  @constant kIOHIDDigitizerTypeStylus
     @constant kIOHIDDigitizerTypePuck
     @constant kIOHIDDigitizerTypeFinger
 */
@@ -299,8 +299,8 @@ enum {
 typedef uint32_t IOHIDDigitizerTransducerType;
 
 /*!
-	@typedef IOHIDDigitizerEventMask
-	@abstract Event mask detailing the events being dispatched by a digitizer.
+  @typedef IOHIDDigitizerEventMask
+  @abstract Event mask detailing the events being dispatched by a digitizer.
     @discussion It is possible for digitizer events to contain child digitizer events, effectively, behaving as collections.  
     In the collection case, the child event mask field referrence by kIOHIDEventFieldDigitizerChildEventMask will detail the 
     cumulative event state of the child digitizer events.
@@ -348,7 +348,7 @@ typedef uint32_t IOHIDEventOptionBits;
 
 #ifndef KERNEL
 /*!
-	@typedef IOHIDFloat
+  @typedef IOHIDFloat
 */
 #ifdef __LP64__
 typedef double IOHIDFloat;
@@ -356,7 +356,7 @@ typedef double IOHIDFloat;
 typedef float IOHIDFloat;
 #endif
 /*!
-	@typedef IOHID3DPoint
+  @typedef IOHID3DPoint
 */
 typedef struct _IOHID3DPoint {
     IOHIDFloat  x;

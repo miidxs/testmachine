@@ -8,10 +8,10 @@
 @class NSMutableArray;
 
 @interface _UITableViewDeleteAnimationSupport : NSObject {
-	NSMutableArray* _cellsToDeleteAfterAnimation;
-	int _deleteCount;
-	unsigned _enabledStateBeforeDeleteAnimation : 1;
-	unsigned _reserved : 30;
+  NSMutableArray* _cellsToDeleteAfterAnimation;
+  int _deleteCount;
+  unsigned _enabledStateBeforeDeleteAnimation : 1;
+  unsigned _reserved : 30;
 }
 @end
 

@@ -11,7 +11,7 @@
 @class NSString, LibraryMessage;
 
 @interface MessageLibrary : NSObject {
-	NSString* _path;
+  NSString* _path;
 }
 // inherited: +(void)initialize;
 -(id)initWithPath:(NSString*)path;

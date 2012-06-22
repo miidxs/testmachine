@@ -8,9 +8,9 @@
 @class NSString;
 
 @interface UITableColumn : NSObject {
-	NSString* _identifier;
-	NSString* _title;
-	float _width;
+  NSString* _identifier;
+  NSString* _title;
+  float _width;
 }
 -(id)initWithTitle:(id)title identifier:(id)identifier width:(float)width;
 -(void)dealloc;

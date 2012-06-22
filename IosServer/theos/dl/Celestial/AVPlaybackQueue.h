@@ -11,15 +11,15 @@
 @class NSMutableArray, AVQueue;
 
 @interface AVPlaybackQueue : NSObject {
-	id _delegate;
-	AVQueue* _avItemQueue;
-	NSMutableArray* _pbItemQueue;
-	OpaqueFigPlayer* _figPlayer;
-	int _ignoreAVQueueModifications;
-	BOOL _hasBuiltPlaybackQueue;
-	BOOL _waitingToAddFirstItem;
-	int _avQueueTransactionCount;
-	int _repeatMode;
+  id _delegate;
+  AVQueue* _avItemQueue;
+  NSMutableArray* _pbItemQueue;
+  OpaqueFigPlayer* _figPlayer;
+  int _ignoreAVQueueModifications;
+  BOOL _hasBuiltPlaybackQueue;
+  BOOL _waitingToAddFirstItem;
+  int _avQueueTransactionCount;
+  int _repeatMode;
 }
 -(id)initWithDelegate:(id)delegate figPlayer:(OpaqueFigPlayer*)player;
 -(void)dealloc;

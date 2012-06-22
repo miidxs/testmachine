@@ -9,15 +9,15 @@
 @class NSArray, UIImageView, NSMutableArray, UIToolbar;
 
 @interface UIButtonBarCustomizeView : UIView {
-	UIToolbar* _buttonBar;
-	NSArray* _availableButtons;
-	NSArray* _currentButtons;
-	NSMutableArray* _fixedButtons;
-	UIView* _draggingView;
-	UIImageView* _ghostView;
-	UIImageView* _replacementGlow;
-	UIView* _replaceButton;
-	CGPoint _startPoint;
+  UIToolbar* _buttonBar;
+  NSArray* _availableButtons;
+  NSArray* _currentButtons;
+  NSMutableArray* _fixedButtons;
+  UIView* _draggingView;
+  UIImageView* _ghostView;
+  UIImageView* _replacementGlow;
+  UIView* _replaceButton;
+  CGPoint _startPoint;
 }
 -(void)dealloc;
 -(void)setButtonBar:(id)bar currentButtons:(id)buttons availableButtons:(id)buttons3;

@@ -12,13 +12,13 @@
 @class SBSAccelerometer;
 
 @interface FigAccelerometerDelegate : NSObject <SBSAccelerometerDelegate> {
-	SBSAccelerometer* sbsaccel;
-	pthread_mutex_t ringMutex;
-	int ringIndex;
-	float ringX[64];
-	float ringY[64];
-	float ringZ[64];
-	double ringTime[64];
+  SBSAccelerometer* sbsaccel;
+  pthread_mutex_t ringMutex;
+  int ringIndex;
+  float ringX[64];
+  float ringY[64];
+  float ringZ[64];
+  double ringTime[64];
 }
 -(void)deferOnRunloop_accelerometerEventsEnable;
 -(id)init;

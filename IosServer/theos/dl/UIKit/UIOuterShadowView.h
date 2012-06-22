@@ -12,7 +12,7 @@
 
 __attribute__((visibility("hidden")))
 @interface UIOuterShadowView : UIView {
-	int _arrowStyle;
+  int _arrowStyle;
 }
 -(id)initWithFrame:(CGRect)frame arrowStyle:(int)style;
 -(id)hitTest:(CGPoint)test forEvent:(GSEventRef)event;

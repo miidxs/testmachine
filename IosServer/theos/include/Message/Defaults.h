@@ -10,7 +10,7 @@
 @class NSUserDefaults;
 
 @interface Defaults : NSObject {
-	NSUserDefaults* defaults;
+  NSUserDefaults* defaults;
 }
 +(id)sharedInstance;
 // inherited: -(void)dealloc;

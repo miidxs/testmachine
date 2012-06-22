@@ -11,10 +11,10 @@
 @class UIImage, NSString;
 
 @interface MFAttachmentImageGenerator : UIView {
-	CGSize _textSize;
-	NSString* _displayString;
-	UIImage* _image;
-	UIImage* _cutout;
+  CGSize _textSize;
+  NSString* _displayString;
+  UIImage* _image;
+  UIImage* _cutout;
 }
 +(id)pngDataForAttachment:(id)attachment dimensions:(CGSize*)dimensions;
 +(void)imageData:(id*)data mimeType:(id*)type dimensions:(CGSize*)dimensions forAttachment:(id)attachment;

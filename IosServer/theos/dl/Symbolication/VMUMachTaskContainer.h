@@ -9,8 +9,8 @@
 
 
 @interface VMUMachTaskContainer : NSObject {
-	int _pid;
-	unsigned _task;
+  int _pid;
+  unsigned _task;
 }
 +(id)machTaskContainer;
 +(id)machTaskContainerWithTask:(unsigned)task;

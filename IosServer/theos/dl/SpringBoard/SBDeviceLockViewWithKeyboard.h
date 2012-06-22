@@ -6,8 +6,8 @@
 @class UIKeyboard;
 
 @interface SBDeviceLockViewWithKeyboard : SBDeviceLockView {
-	UIKeyboard* _keyboard;
-	BOOL _isAnimating;
+  UIKeyboard* _keyboard;
+  BOOL _isAnimating;
 }
 // inherited: -(id)initWithStyle:(int)style interfaceOrientation:(int)orientation;
 // inherited: -(id)protectedInitWithStyle:(int)style interfaceOrientation:(int)orientation;

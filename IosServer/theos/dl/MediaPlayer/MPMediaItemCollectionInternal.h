@@ -11,11 +11,11 @@
 
 @interface MPMediaItemCollectionInternal : NSObject {
 @private
-	MPMediaQuery* _itemsQuery;
-	NSArray* _items;
-	unsigned _itemsCount;
-	MPMediaItem* _representativeItem;
-	int _containedMediaTypes;
+  MPMediaQuery* _itemsQuery;
+  NSArray* _items;
+  unsigned _itemsCount;
+  MPMediaItem* _representativeItem;
+  int _containedMediaTypes;
 }
 @end
 

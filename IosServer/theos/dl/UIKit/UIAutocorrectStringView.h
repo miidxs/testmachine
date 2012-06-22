@@ -9,8 +9,8 @@
 @class UIFont, NSString;
 
 @interface UIAutocorrectStringView : UIView {
-	NSString* m_string;
-	UIFont* m_font;
+  NSString* m_string;
+  UIFont* m_font;
 }
 -(id)initWithFrame:(CGRect)frame string:(id)string font:(id)font;
 -(void)dealloc;

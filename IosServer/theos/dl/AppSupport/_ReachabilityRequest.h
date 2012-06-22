@@ -11,13 +11,13 @@
 @class NSLock, NSString;
 
 @interface _ReachabilityRequest : NSObject {
-	NSLock* _lock;
-	NSString* _hostname;
-	SCNetworkReachabilityRef _reachability;
-	unsigned _flags;
-	CFDictionaryRef _observers;
-	BOOL _isReachable;
-	BOOL _receivedAtLeastOneCallback;
+  NSLock* _lock;
+  NSString* _hostname;
+  SCNetworkReachabilityRef _reachability;
+  unsigned _flags;
+  CFDictionaryRef _observers;
+  BOOL _isReachable;
+  BOOL _receivedAtLeastOneCallback;
 }
 @property(assign, nonatomic) NSString* hostname;
 -(id)initWithHostname:(id)hostname;

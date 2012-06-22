@@ -10,17 +10,17 @@
 @class PLProgressView, NSString, AVRemaker, NSTimer;
 
 @interface PLVideoRemaker : NSObject {
-	NSString* _path;
-	NSString* _trimmedPath;
-	double _duration;
-	double _trimStartTime;
-	double _trimEndTime;
-	int _mode;
-	AVRemaker* _remaker;
-	float _percentComplete;
-	NSTimer* _progressTimer;
-	PLProgressView* _progressView;
-	id _delegate;
+  NSString* _path;
+  NSString* _trimmedPath;
+  double _duration;
+  double _trimStartTime;
+  double _trimEndTime;
+  int _mode;
+  AVRemaker* _remaker;
+  float _percentComplete;
+  NSTimer* _progressTimer;
+  PLProgressView* _progressView;
+  id _delegate;
 }
 +(double)maximumDurationForTrimMode:(int)trimMode;
 -(id)initWithPath:(id)path;

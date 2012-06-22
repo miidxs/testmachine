@@ -11,15 +11,15 @@
 @class NSNumber, ASEvent, NSDate;
 
 @interface ASRecurrence : ASItem <NSCoding> {
-	NSNumber* _type;
-	NSNumber* _interval;
-	NSNumber* _dayOfWeek;
-	NSNumber* _dayOfMonth;
-	NSNumber* _weekOfMonth;
-	NSNumber* _monthOfYear;
-	NSDate* _until;
-	NSNumber* _occurrences;
-	ASEvent* _parentEvent;
+  NSNumber* _type;
+  NSNumber* _interval;
+  NSNumber* _dayOfWeek;
+  NSNumber* _dayOfMonth;
+  NSNumber* _weekOfMonth;
+  NSNumber* _monthOfYear;
+  NSDate* _until;
+  NSNumber* _occurrences;
+  ASEvent* _parentEvent;
 }
 // inherited: +(BOOL)acceptsTopLevelLeaves;
 // inherited: +(BOOL)parsingLeafNode;

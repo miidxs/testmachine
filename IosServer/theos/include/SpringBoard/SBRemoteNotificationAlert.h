@@ -10,11 +10,11 @@
 @class NSString, SBApplication;
 
 @interface SBRemoteNotificationAlert : SBAlertItem {
-	SBApplication* _app;
-	NSString* _body;
-	NSString* _actionLabel;
-	BOOL _showActionButton;
-	BOOL _launched;
+  SBApplication* _app;
+  NSString* _body;
+  NSString* _actionLabel;
+  BOOL _showActionButton;
+  BOOL _launched;
 }
 -(id)initWithApplication:(id)application body:(id)body showActionButton:(BOOL)button actionLabel:(id)label;
 // inherited: -(void)dealloc;

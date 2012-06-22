@@ -12,7 +12,7 @@
 
 @interface MPMediaServerPropertyPredicate : NSObject <NSCoding> {
 @private
-	MLPredicate* _predicate;
+  MLPredicate* _predicate;
 }
 @property(readonly, assign, nonatomic) MLPredicate* MLPredicate;
 -(void)dealloc;

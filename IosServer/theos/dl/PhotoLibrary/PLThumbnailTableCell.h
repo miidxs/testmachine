@@ -13,18 +13,18 @@
 
 @interface PLThumbnailTableCell : UITableViewCell {
 @private
-	NSMutableArray* _slideImages;
-	CGImageRef _cgImage;
-	UITouch* _touchForTracking;
-	NSIndexSet* _highlightedIndexesBeforeTracking;
-	NSMutableIndexSet* _highlightedIndexes;
-	NSMutableArray* _highlightedViews;
-	int _thumbnailSelectionStyle;
-	UILongPressGestureRecognizer* _recognizer;
-	unsigned _canShowCopyCallout : 1;
-	unsigned _canShowCutCallout : 1;
-	unsigned _couldShowCopyCallout : 1;
-	id<PLThumbnailTableCellDelegate> _delegate;
+  NSMutableArray* _slideImages;
+  CGImageRef _cgImage;
+  UITouch* _touchForTracking;
+  NSIndexSet* _highlightedIndexesBeforeTracking;
+  NSMutableIndexSet* _highlightedIndexes;
+  NSMutableArray* _highlightedViews;
+  int _thumbnailSelectionStyle;
+  UILongPressGestureRecognizer* _recognizer;
+  unsigned _canShowCopyCallout : 1;
+  unsigned _canShowCutCallout : 1;
+  unsigned _couldShowCopyCallout : 1;
+  id<PLThumbnailTableCellDelegate> _delegate;
 }
 @property(assign, nonatomic) id<PLThumbnailTableCellDelegate> delegate;
 @property(assign, nonatomic) BOOL canShowCutCallout;

@@ -12,17 +12,17 @@
 
 @interface MLPhotoDCIMDirectory : NSObject {
 @private
-	NSString* _dcimPath;
-	NSString* _miscPath;
-	NSString* _posterImagePath;
-	NSMutableArray* _topLevelDirectories;
-	CFDictionaryRef _topLevelDirectoriesByNumber;
-	CFSetRef _unusableTopLevelDirectoryNumbers;
-	int _lastUsedDirectoryNumber;
-	NSMutableDictionary* _userInfo;
-	BOOL _userInfoDidChange;
-	struct flock* _dcimDirectoryLock;
-	int _dcimDirectoryLockDescriptor;
+  NSString* _dcimPath;
+  NSString* _miscPath;
+  NSString* _posterImagePath;
+  NSMutableArray* _topLevelDirectories;
+  CFDictionaryRef _topLevelDirectoriesByNumber;
+  CFSetRef _unusableTopLevelDirectoryNumbers;
+  int _lastUsedDirectoryNumber;
+  NSMutableDictionary* _userInfo;
+  BOOL _userInfoDidChange;
+  struct flock* _dcimDirectoryLock;
+  int _dcimDirectoryLockDescriptor;
 }
 -(BOOL)isValidImageExtension:(id)extension;
 -(BOOL)isValidVideoExtension:(id)extension;

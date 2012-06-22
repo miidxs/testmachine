@@ -7,7 +7,7 @@
 __attribute__((visibility("hidden")))
 @interface UIInputSwitcherSelectionExtraView : UIView {
 @private
-	float m_pointerOffset;
+  float m_pointerOffset;
 }
 @property(assign, nonatomic) float pointerOffset;
 // inherited: -(id)initWithFrame:(CGRect)frame;

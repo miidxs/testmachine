@@ -10,11 +10,11 @@
 @class NSLock, NSMapTable;
 
 @interface VMUProcList : NSObject {
-	NSLock* procLock;
-	NSMapTable* allProcs;
-	NSMapTable* filteredProcs;
-	BOOL appsOnly;
-	BOOL ownedOnly;
+  NSLock* procLock;
+  NSMapTable* allProcs;
+  NSMapTable* filteredProcs;
+  BOOL appsOnly;
+  BOOL ownedOnly;
 }
 // inherited: -(id)init;
 // inherited: -(void)dealloc;

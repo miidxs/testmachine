@@ -6,19 +6,19 @@
 @class UIImage, SBGradientImageView, CAFilter;
 
 @interface SBWallpaperView : UIView {
-	UIImage* _wallpaper;
-	CGRect _wallpaperContentsRect;
-	SBGradientImageView* _topView;
-	SBGradientImageView* _middleView;
-	SBGradientImageView* _bottomView;
-	float _unitTopHeight;
-	float _unitMiddleHeight;
-	float _unitBottomHeight;
-	float _topViewMinColorIntensity;
-	float _bottomViewMinColorIntensity;
-	float _filterAlpha;
-	CAFilter* _topFilter;
-	CAFilter* _bottomFilter;
+  UIImage* _wallpaper;
+  CGRect _wallpaperContentsRect;
+  SBGradientImageView* _topView;
+  SBGradientImageView* _middleView;
+  SBGradientImageView* _bottomView;
+  float _unitTopHeight;
+  float _unitMiddleHeight;
+  float _unitBottomHeight;
+  float _topViewMinColorIntensity;
+  float _bottomViewMinColorIntensity;
+  float _filterAlpha;
+  CAFilter* _topFilter;
+  CAFilter* _bottomFilter;
 }
 @property(readonly, assign, nonatomic) UIImage* image;
 @property(readonly, assign, nonatomic) CGRect imageContentsRect;

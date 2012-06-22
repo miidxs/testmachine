@@ -9,10 +9,10 @@
 
 __attribute__((visibility("hidden")))
 @interface UICompletionTablePrivate : NSObject {
-	id _delegate;
-	id _table;	// UITable in ≤3.1, UITableView in ≥3.2
-	UIShadowView* _shadowView;
-	UIView* _topStrokeView;
+  id _delegate;
+  id _table;  // UITable in ≤3.1, UITableView in ≥3.2
+  UIShadowView* _shadowView;
+  UIView* _topStrokeView;
 }
 // inherited: -(void)dealloc;
 @end

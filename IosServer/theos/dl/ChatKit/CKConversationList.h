@@ -8,11 +8,11 @@
 @class CKService, CKConversation, NSMutableArray;
 
 @interface CKConversationList : NSObject {
-	NSMutableArray* _conversations;
-	CKConversation* _pendingConversation;
-	NSMutableArray* _groupsToDelete;
-	BOOL _fullyLoaded;
-	CKService* _service;
+  NSMutableArray* _conversations;
+  CKConversation* _pendingConversation;
+  NSMutableArray* _groupsToDelete;
+  BOOL _fullyLoaded;
+  CKService* _service;
 }
 @property(readonly, assign, nonatomic) CKService* service;
 -(id)initWithService:(id)service;

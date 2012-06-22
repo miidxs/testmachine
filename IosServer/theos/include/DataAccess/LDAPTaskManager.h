@@ -10,10 +10,10 @@
 @class LDAPTask, LDAPAccount, NSMutableArray;
 
 @interface LDAPTaskManager : NSObject {
-	NSMutableArray* _queuedTasks;
-	LDAPTask* _activeTask;
-	LDAPAccount* _account;
-	BOOL _haveWarnedAboutCert;
+  NSMutableArray* _queuedTasks;
+  LDAPTask* _activeTask;
+  LDAPAccount* _account;
+  BOOL _haveWarnedAboutCert;
 }
 // inherited: -(void)dealloc;
 -(id)user;

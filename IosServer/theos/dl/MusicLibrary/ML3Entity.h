@@ -13,8 +13,8 @@
 
 @interface ML3Entity : NSObject {
 @private
-	ML3MusicLibrary* _library;
-	long long _persistentID;
+  ML3MusicLibrary* _library;
+  long long _persistentID;
 }
 @property(readonly, assign) ML3MusicLibrary* library;
 @property(readonly, assign) long long persistentID;

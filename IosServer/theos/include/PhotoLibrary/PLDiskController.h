@@ -9,14 +9,14 @@
 
 
 @interface PLDiskController : NSObject {
-	double _lastFSCheck;
-	long long _freeDiskSpaceThreshold;
-	struct {
-		unsigned dontWarnOfDiskSpace : 1;
-		unsigned probablyLowOnDiskSpace : 1;
-		unsigned didSetFreeDiskSpaceThreshold : 1;
-		unsigned extra : 29;
-	} _flags;
+  double _lastFSCheck;
+  long long _freeDiskSpaceThreshold;
+  struct {
+    unsigned dontWarnOfDiskSpace : 1;
+    unsigned probablyLowOnDiskSpace : 1;
+    unsigned didSetFreeDiskSpaceThreshold : 1;
+    unsigned extra : 29;
+  } _flags;
 }
 +(id)sharedInstance;
 // inherited: -(id)init;

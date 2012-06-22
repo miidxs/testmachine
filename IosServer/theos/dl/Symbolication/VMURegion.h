@@ -14,8 +14,8 @@
 @class VMUSymbolOwner, NSString;
 
 @interface VMURegion : VMUAddressRange <NSCoding, NSCopying> {
-	VMUSymbolOwner* _owner;
-	NSString* _name;
+  VMUSymbolOwner* _owner;
+  NSString* _name;
 }
 +(id)regionWithOwner:(id)owner name:(id)name addressRange:(VMURange)range;
 -(id)initWithOwner:(id)owner name:(id)name addressRange:(VMURange)range;

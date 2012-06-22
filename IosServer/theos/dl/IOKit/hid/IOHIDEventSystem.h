@@ -44,58 +44,58 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #if __cplusplus
 extern "C" {
 #endif
-			
-	typedef struct ___IOHIDEventSystem
+      
+  typedef struct ___IOHIDEventSystem
 #if 0
-	{
-		CFRuntimeBase _base;	// 0, 4
-		CFMutableSetRef services;	// 8
-		CFMutableSetRef x0c;	// c
-		CFMutableSetRef x10;	// 10
-		CFMutableSetRef matchNotifications;	// 14
-		IONotificationPortRef serviceMatchPort;	// 18
-		IONotificationPortRef x1c;	// 1c
-		void* x20;	// 20
-		IOHIDEventSystemCallback callback;	// 24
-		IOHIDSessionRef session;	// 28
-		pthread_mutex_t mutex;	// 2c
-		CFRunLoopSourceRef migMachSource;	// 58
-		CFMutableSetRef queues;	// 5c
-	}
+  {
+    CFRuntimeBase _base;  // 0, 4
+    CFMutableSetRef services; // 8
+    CFMutableSetRef x0c;  // c
+    CFMutableSetRef x10;  // 10
+    CFMutableSetRef matchNotifications; // 14
+    IONotificationPortRef serviceMatchPort; // 18
+    IONotificationPortRef x1c;  // 1c
+    void* x20;  // 20
+    IOHIDEventSystemCallback callback;  // 24
+    IOHIDSessionRef session;  // 28
+    pthread_mutex_t mutex;  // 2c
+    CFRunLoopSourceRef migMachSource; // 58
+    CFMutableSetRef queues; // 5c
+  }
 #endif
-	* IOHIDEventSystemRef;
-	
-	typedef void(*IOHIDEventSystemCallback)(void* target, void* refcon, IOHIDServiceRef service, IOHIDEventRef event);
-	
-	CFTypeID IOHIDEventSystemGetTypeID(void);
-	IOHIDEventSystemRef IOHIDEventSystemCreate(CFAllocatorRef allocator);
-	
-	CFArrayRef IOHIDEventSystemCopyMatchingServices(IOHIDEventSystemRef system, CFDictionaryRef propertyTable,
-													IOHIDNotificationCallback matchCallback, void* matchTarget, void* matchRefcon, IOHIDNotificationRef* matchNotif);
-	void IOHIDEventSystemRegisterQueue(IOHIDEventSystemRef system, IOHIDEventQueueRef queue);
-	void IOHIDEventSystemUnregisterQueue(IOHIDEventSystemRef system, IOHIDEventQueueRef queue);
-	
-	IOHIDEventRef IOHIDEventSystemCopyEvent(IOHIDEventSystemRef system, IOHIDEventType type, IOHIDEventRef event, IOOptionBits options);
-	
-	CFTypeRef IOHIDEventSystemGetProperty(IOHIDEventSystemRef system, CFStringRef property);
-	Boolean IOHIDEventSystemSetProperty(IOHIDEventSystemRef system, CFStringRef property, CFTypeRef value);
-	
-	Boolean IOHIDEventSystemOpen(IOHIDEventSystemRef system, IOHIDEventSystemCallback callback, void* target, void* refcon, void* unused);
-	void IOHIDEventSystemClose(IOHIDEventSystemRef system, void* unused);
-	
+  * IOHIDEventSystemRef;
+  
+  typedef void(*IOHIDEventSystemCallback)(void* target, void* refcon, IOHIDServiceRef service, IOHIDEventRef event);
+  
+  CFTypeID IOHIDEventSystemGetTypeID(void);
+  IOHIDEventSystemRef IOHIDEventSystemCreate(CFAllocatorRef allocator);
+  
+  CFArrayRef IOHIDEventSystemCopyMatchingServices(IOHIDEventSystemRef system, CFDictionaryRef propertyTable,
+                          IOHIDNotificationCallback matchCallback, void* matchTarget, void* matchRefcon, IOHIDNotificationRef* matchNotif);
+  void IOHIDEventSystemRegisterQueue(IOHIDEventSystemRef system, IOHIDEventQueueRef queue);
+  void IOHIDEventSystemUnregisterQueue(IOHIDEventSystemRef system, IOHIDEventQueueRef queue);
+  
+  IOHIDEventRef IOHIDEventSystemCopyEvent(IOHIDEventSystemRef system, IOHIDEventType type, IOHIDEventRef event, IOOptionBits options);
+  
+  CFTypeRef IOHIDEventSystemGetProperty(IOHIDEventSystemRef system, CFStringRef property);
+  Boolean IOHIDEventSystemSetProperty(IOHIDEventSystemRef system, CFStringRef property, CFTypeRef value);
+  
+  Boolean IOHIDEventSystemOpen(IOHIDEventSystemRef system, IOHIDEventSystemCallback callback, void* target, void* refcon, void* unused);
+  void IOHIDEventSystemClose(IOHIDEventSystemRef system, void* unused);
+  
 #if 0
-	dlfun("IOHIDEventSystemGetTypeID", "I");
-	dlfun("IOHIDEventSystemCreate", "@@");
-	dlfun("IOHIDEventSystemCopyMatchingServices", "@@^v^v^v^@");
-	dlfun("IOHIDEventSystemRegisterQueue", "v@@");
-	dlfun("IOHIDEventSystemUnregisterQueue", "v@@");
-	dlfun("IOHIDEventSystemCopyEvent", "@@I@I");
-	dlfun("IOHIDEventSystemGetProperty", "@@@");
-	dlfun("IOHIDEventSystemSetProperty", "c@@@");
-	dlfun("IOHIDEventSystemOpen", "c@^v^v^v^v");
-	dlfun("IOHIDEventSystemClose", "v@^v");
+  dlfun("IOHIDEventSystemGetTypeID", "I");
+  dlfun("IOHIDEventSystemCreate", "@@");
+  dlfun("IOHIDEventSystemCopyMatchingServices", "@@^v^v^v^@");
+  dlfun("IOHIDEventSystemRegisterQueue", "v@@");
+  dlfun("IOHIDEventSystemUnregisterQueue", "v@@");
+  dlfun("IOHIDEventSystemCopyEvent", "@@I@I");
+  dlfun("IOHIDEventSystemGetProperty", "@@@");
+  dlfun("IOHIDEventSystemSetProperty", "c@@@");
+  dlfun("IOHIDEventSystemOpen", "c@^v^v^v^v");
+  dlfun("IOHIDEventSystemClose", "v@^v");
 #endif
-	
+  
 #if __cplusplus
 }
 #endif

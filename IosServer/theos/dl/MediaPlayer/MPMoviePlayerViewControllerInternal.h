@@ -11,10 +11,10 @@
 
 @interface MPMoviePlayerViewControllerInternal : NSObject {
 @private
-	MPMoviePlayerController* _moviePlayer;
-	BOOL _wasDisplayedAnimated;
-	int _previousStatusBarMode;
-	int _previousStatusBarOrientation;
+  MPMoviePlayerController* _moviePlayer;
+  BOOL _wasDisplayedAnimated;
+  int _previousStatusBarMode;
+  int _previousStatusBarOrientation;
 }
 @end
 

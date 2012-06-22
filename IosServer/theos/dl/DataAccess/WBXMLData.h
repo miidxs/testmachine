@@ -11,10 +11,10 @@
 
 @interface WBXMLData : NSObject {
 @private
-	NSMutableData* _data;
-	unsigned char _currentCodePage;
-	BOOL _haveAppliedCurrentCodePage;
-	NSMutableData* _stateStack;
+  NSMutableData* _data;
+  unsigned char _currentCodePage;
+  BOOL _haveAppliedCurrentCodePage;
+  NSMutableData* _stateStack;
 }
 @property(readonly, assign, nonatomic) NSMutableData* data;
 -(void)_applyCurrentCodePage;

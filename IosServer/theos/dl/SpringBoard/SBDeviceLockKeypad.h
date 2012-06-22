@@ -13,18 +13,18 @@
 
 @interface SBDeviceLockKeypad : TPPhonePad {
 #if __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_3_2
-	UIImage* _deleteIcon;
+  UIImage* _deleteIcon;
 #endif
-	UIPushButton* _deleteButton;
+  UIPushButton* _deleteButton;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	UIPushButton* _cancelButton;
-	BOOL _deleteEnabled;
+  UIPushButton* _cancelButton;
+  BOOL _deleteEnabled;
 #endif
 #if __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_3_2
-	SBEmergencyCallButton* _emergencyCallButton;
-	BOOL _showDeleteIcon;
+  SBEmergencyCallButton* _emergencyCallButton;
+  BOOL _showDeleteIcon;
 #endif
-	BOOL _playKeyboardClicks;
+  BOOL _playKeyboardClicks;
 }
 // inherited: -(id)initWithFrame:(CGRect)frame;
 // inherited: -(void)dealloc;

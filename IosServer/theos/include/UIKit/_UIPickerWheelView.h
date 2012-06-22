@@ -9,7 +9,7 @@
 @class UIPickerView;
 
 @interface _UIPickerWheelView : UIView {
-	UIPickerView* _pickerView;
+  UIPickerView* _pickerView;
 }
 -(id)initWithFrame:(CGRect)frame;
 -(void)setPickerView:(id)view;

@@ -11,8 +11,8 @@
 @class UILabel;
 
 @interface PLTextView : UITextView {
-	UILabel* _placeholder;
-	BOOL _showingPlaceholder;
+  UILabel* _placeholder;
+  BOOL _showingPlaceholder;
 }
 // inherited: -(void)dealloc;
 // inherited: -(void)setContentOffset:(CGPoint)offset;

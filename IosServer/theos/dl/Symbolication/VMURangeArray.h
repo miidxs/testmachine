@@ -10,9 +10,9 @@
 
 
 @interface VMURangeArray : NSObject {
-	unsigned _count;
-	VMURange* _ranges;
-	unsigned _max;
+  unsigned _count;
+  VMURange* _ranges;
+  unsigned _max;
 }
 // inherited: -(id)init;
 -(id)initWithRanges:(const VMURange*)ranges count:(unsigned)count;

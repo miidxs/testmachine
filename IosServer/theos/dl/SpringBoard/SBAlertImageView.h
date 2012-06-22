@@ -11,8 +11,8 @@
 @class UIImageView, UILabel;
 
 @interface SBAlertImageView : UIView {
-	UIImageView* _imageView;
-	UILabel* _labelView;
+  UIImageView* _imageView;
+  UILabel* _labelView;
 }
 -(id)initWithFrame:(CGRect)frame errorString:(id)string;
 -(void)layoutSubviews;

@@ -11,13 +11,13 @@
 @class NSString, NSTimer, UIImage, TPLCDView;
 
 @interface SBAwayInCallController : NSObject {
-	TPLCDView* _lcdView;
-	BOOL _showsInCallInfo;
-	NSTimer* _durationTimer;
-	CTCallRef _displayedCall;
-	NSString* _localizedLabel;
-	UIImage* _callerImage;
-	BOOL _isFullScreen;
+  TPLCDView* _lcdView;
+  BOOL _showsInCallInfo;
+  NSTimer* _durationTimer;
+  CTCallRef _displayedCall;
+  NSString* _localizedLabel;
+  UIImage* _callerImage;
+  BOOL _isFullScreen;
 }
 -(id)initWithLCDView:(id)lcdview;
 // inherited: -(void)dealloc;

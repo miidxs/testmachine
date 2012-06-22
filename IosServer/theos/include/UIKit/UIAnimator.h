@@ -10,12 +10,12 @@
 @class NSMutableArray;
 
 @interface UIAnimator : NSObject {
-	NSMutableArray* _animations;
-	double _lastUpdateTime;
-	GSHeartbeatRef _lcdHeartbeat;
-	GSHeartbeatRef _tvHeartbeat;
-	int _lcdCount;
-	int _tvCount;
+  NSMutableArray* _animations;
+  double _lastUpdateTime;
+  GSHeartbeatRef _lcdHeartbeat;
+  GSHeartbeatRef _tvHeartbeat;
+  int _lcdCount;
+  int _tvCount;
 }
 +(id)sharedAnimator;
 +(void)disableAnimation;

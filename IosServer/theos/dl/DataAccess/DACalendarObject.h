@@ -11,8 +11,8 @@
 @class DACalendarDatabase;
 
 @interface DACalendarObject : NSObject {
-	DACalendarDatabase* _database;
-	void* _ref;
+  DACalendarDatabase* _database;
+  void* _ref;
 }
 @property(readonly, assign, nonatomic) DACalendarDatabase* database;
 @property(readonly, assign, nonatomic) void* ref;

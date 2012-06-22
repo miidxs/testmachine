@@ -11,9 +11,9 @@
 @class UIImageView, UILabel;
 
 @interface MPPortraitControlsOverlay : MPPlaybackControlsView {
-	UILabel* _scrubSpeedLabel;
-	UILabel* _scrubInstructionLabel;
-	UIImageView* _scrubInstructionOverlay;
+  UILabel* _scrubSpeedLabel;
+  UILabel* _scrubInstructionLabel;
+  UIImageView* _scrubInstructionOverlay;
 }
 -(id)initWithFrame:(CGRect)frame;
 -(void)dealloc;

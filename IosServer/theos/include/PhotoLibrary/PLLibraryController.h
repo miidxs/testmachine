@@ -10,8 +10,8 @@
 @class PLLibraryView, UITextField;
 
 @interface PLLibraryController : NSObject {
-	PLLibraryView* _libraryView;
-	UITextField* _nameField;
+  PLLibraryView* _libraryView;
+  UITextField* _nameField;
 }
 // inherited: -(void)dealloc;
 -(void)storeCurrentConfiguration:(id)configuration;

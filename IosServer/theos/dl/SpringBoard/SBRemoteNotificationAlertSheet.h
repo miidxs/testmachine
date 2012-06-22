@@ -9,7 +9,7 @@
 
 
 @interface SBRemoteNotificationAlertSheet : UIModalView {
-	BOOL _lockToPortrait;
+  BOOL _lockToPortrait;
 }
 -(void)setLockToPortrait:(BOOL)portrait;
 -(BOOL)requiresPortraitOrientation;

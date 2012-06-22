@@ -15,12 +15,12 @@
 @class UIImage;
 
 @interface SBClipCornerView : UIView {
-	CGFloat _cornerRadius;
-	int _rectCorner;
-	CGPoint _pathOrigin;
-	CGPathRef _clipPath;
-	UIImage* _backgroundImage;
-	CGRect _backgroundImageSubrect;
+  CGFloat _cornerRadius;
+  int _rectCorner;
+  CGPoint _pathOrigin;
+  CGPathRef _clipPath;
+  UIImage* _backgroundImage;
+  CGRect _backgroundImageSubrect;
 }
 @property(assign, nonatomic) CGFloat cornerRadius;
 @property(retain, nonatomic) UIImage* backgroundImage;

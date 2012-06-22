@@ -10,7 +10,7 @@
 @class UIImageView;
 
 @interface MPAudioRouteCell : UIAlertSheetTableCell {
-	UIImageView* _pickedImage;
+  UIImageView* _pickedImage;
 }
 -(id)initWithRouteName:(id)routeName isPicked:(BOOL)picked;
 -(void)layoutSubviews;

@@ -12,8 +12,8 @@
 @class PSRootController;
 
 @interface PSViewController : NSObject <PSBaseView> {
-	id<PSBaseView> _parentController;
-	PSRootController* _rootController;
+  id<PSBaseView> _parentController;
+  PSRootController* _rootController;
 }
 // in a protocol: +(BOOL)isOverlay;
 // in a protocol: -(id)initForContentSize:(CGSize)contentSize;

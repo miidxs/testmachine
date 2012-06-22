@@ -10,10 +10,10 @@
 @class NSArray, NSNumber;
 
 @interface ASPingItem : ASItem {
-	NSArray* _folders;
-	NSNumber* _heartBeatInterval;
-	NSNumber* _maxFolders;
-	NSNumber* _status;
+  NSArray* _folders;
+  NSNumber* _heartBeatInterval;
+  NSNumber* _maxFolders;
+  NSNumber* _status;
 }
 // inherited: +(BOOL)acceptsTopLevelLeaves;
 // inherited: +(BOOL)parsingLeafNode;

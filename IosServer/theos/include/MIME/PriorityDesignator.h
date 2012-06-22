@@ -9,7 +9,7 @@
 
 
 @interface PriorityDesignator : NSObject {
-	unsigned _priority : 8;
+  unsigned _priority : 8;
 }
 +(id)currentDesignator;
 -(int)priority;

@@ -9,16 +9,16 @@
 @class NSString;
 
 @interface UIKeyboardKeyView : UIView {
-	int m_orientation;
-	int m_type;
-	int m_state;
-	int m_style;
-	int m_mode;
-	NSString* m_labelID;
-	int m_labelAdjustmentX;
-	int m_labelAdjustmentY;
-	float m_cachedFontSize;
-	float m_cachedXHeight;
+  int m_orientation;
+  int m_type;
+  int m_state;
+  int m_style;
+  int m_mode;
+  NSString* m_labelID;
+  int m_labelAdjustmentX;
+  int m_labelAdjustmentY;
+  float m_cachedFontSize;
+  float m_cachedXHeight;
 }
 @property(retain, nonatomic) NSString* labelID;
 @property(assign, nonatomic) int mode;

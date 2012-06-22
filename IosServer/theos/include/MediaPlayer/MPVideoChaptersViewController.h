@@ -12,13 +12,13 @@
 @class MPVideoView, NSArray, UIMovieChapterListView;
 
 @interface MPVideoChaptersViewController : MPViewController <UITableViewDataSource, UITableViewDelegate> {
-	MPVideoView* _videoView;
-	unsigned _currentMarker;
-	NSArray* _chapterTimeMarkers;
-	UIMovieChapterListView* _chapterListView;
-	float _timeColumnWidth;
-	unsigned _haveThumbnails : 1;
-	unsigned _videoOutActive : 1;
+  MPVideoView* _videoView;
+  unsigned _currentMarker;
+  NSArray* _chapterTimeMarkers;
+  UIMovieChapterListView* _chapterListView;
+  float _timeColumnWidth;
+  unsigned _haveThumbnails : 1;
+  unsigned _videoOutActive : 1;
 }
 @property(assign, nonatomic) unsigned currentMarkerIndex;
 @property(retain, nonatomic) MPVideoView* videoView;

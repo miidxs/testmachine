@@ -11,17 +11,17 @@
 @protocol PLPhotoScrollerViewControllerDelegate;
 
 @interface PLPhotoScrollerViewController : UIViewController {
-	id _delegate;
-	id _albumsController;
-	unsigned _itemIndex;
-	UINavigationItem* _navItem;
-	NSArray* _items;
-	id _uiController;
-	int _previousInterfaceOrientation;
-	unsigned _canShowCopyCallout : 1;
-	unsigned _didDisplay : 1;
-	unsigned _modalSheetIsPresent : 1;
-	unsigned _dontChangeStatusBar : 1;
+  id _delegate;
+  id _albumsController;
+  unsigned _itemIndex;
+  UINavigationItem* _navItem;
+  NSArray* _items;
+  id _uiController;
+  int _previousInterfaceOrientation;
+  unsigned _canShowCopyCallout : 1;
+  unsigned _didDisplay : 1;
+  unsigned _modalSheetIsPresent : 1;
+  unsigned _dontChangeStatusBar : 1;
 }
 @property(assign, nonatomic) id<PLPhotoScrollerViewControllerDelegate> delegate;
 @property(assign, nonatomic) BOOL canShowCopyCallout;

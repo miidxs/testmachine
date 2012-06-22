@@ -8,7 +8,7 @@
 @class NSMutableDictionary;
 
 @interface CKMediaObjectManager : NSObject {
-	NSMutableDictionary* _mediaObjectDict;
+  NSMutableDictionary* _mediaObjectDict;
 }
 +(id)sharedInstance;
 -(void)_registerAllMediaTypes;

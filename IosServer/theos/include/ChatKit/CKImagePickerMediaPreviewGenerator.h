@@ -9,11 +9,11 @@
 @class UIImage, NSData, NSDictionary, UIImagePickerController;
 
 @interface CKImagePickerMediaPreviewGenerator : CKMediaPreviewGenerator {
-	UIImage* _image;
-	NSData* _imageData;
-	NSDictionary* _editingInfo;
-	UIImagePickerController* _imagePickerController;
-	CGImageRef _videoPreviewCGImage;
+  UIImage* _image;
+  NSData* _imageData;
+  NSDictionary* _editingInfo;
+  UIImagePickerController* _imagePickerController;
+  CGImageRef _videoPreviewCGImage;
 }
 @property(retain, nonatomic) UIImage* image;
 @property(retain, nonatomic) NSData* imageData;

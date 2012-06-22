@@ -10,11 +10,11 @@
 @class NSString, NSDictionary;
 
 @interface FlagChangeEntry : NSObject {
-	NSString* path;
-	unsigned uid;
-	NSDictionary* changes;
-	unsigned connectionTag;
-	double commitTime;
+  NSString* path;
+  unsigned uid;
+  NSDictionary* changes;
+  unsigned connectionTag;
+  double commitTime;
 }
 -(id)initWithPath:(id)path UID:(unsigned)uid changes:(id)changes;
 // inherited: -(void)dealloc;

@@ -8,9 +8,9 @@
 @class UIImage;
 
 @interface UISliderContent : NSObject {
-	UIImage* thumb;
-	UIImage* minTrack;
-	UIImage* maxTrack;
+  UIImage* thumb;
+  UIImage* minTrack;
+  UIImage* maxTrack;
 }
 @property(retain, nonatomic) UIImage* thumb;
 @property(retain, nonatomic) UIImage* minTrack;

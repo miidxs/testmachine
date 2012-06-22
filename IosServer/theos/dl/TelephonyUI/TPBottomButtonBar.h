@@ -13,12 +13,12 @@
 @class UIImageView, UIView;
 
 @interface TPBottomButtonBar : TPBottomBar {
-	id _delegate;
+  id _delegate;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	UIImageView* _backgroundView;
-	UIView* _well;
+  UIImageView* _backgroundView;
+  UIView* _well;
 #endif
-	TPPushButton* _button;
+  TPPushButton* _button;
 }
 -(id)initForIncomingCallWaitingWithFrame:(CGRect)frame;
 -(id)initForEndCallWithFrame:(CGRect)frame;

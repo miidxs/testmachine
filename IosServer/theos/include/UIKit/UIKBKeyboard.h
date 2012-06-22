@@ -11,10 +11,10 @@
 @class NSArray, NSString, NSDictionary, NSMutableArray, NSMutableDictionary, UIKBKey, UIKBKeyplane;
 
 @interface UIKBKeyboard : UIKBShape <NSCoding, UIKBCacheKey> {
-	NSString* m_name;
-	NSString* m_visualStyle;
-	NSMutableArray* m_keyplanes;
-	NSMutableDictionary* m_keyCache;
+  NSString* m_name;
+  NSString* m_visualStyle;
+  NSMutableArray* m_keyplanes;
+  NSMutableDictionary* m_keyCache;
 }
 @property(retain, nonatomic) NSString* name;
 @property(retain, nonatomic) NSString* visualStyle;

@@ -9,10 +9,10 @@
 @interface iPhoneHTTPServerAppDelegate : NSObject <UIApplicationDelegate> 
 {
     UIWindow *window;
-	HTTPServer *httpServer;
-	NSDictionary *addresses;
-	
-	IBOutlet UILabel *displayInfo;
+  HTTPServer *httpServer;
+  NSDictionary *addresses;
+  
+  IBOutlet UILabel *displayInfo;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;

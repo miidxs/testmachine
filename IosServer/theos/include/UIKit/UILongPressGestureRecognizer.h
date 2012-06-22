@@ -30,16 +30,16 @@
 #else
 
 @interface UILongPressGestureRecognizer : UIGestureRecognizer {
-	NSArray* _touches;
-	NSMutableSet* _activeTouches;
-	BOOL _gotTouchEnd;
-	BOOL _gotTooMany;
-	int _numberOfFingers;
-	double _delay;
-	float _allowableMovement;
-	CGPoint _startPointScreen;
-	UIDelayedAction* _enoughTimeElapsed;
-	id<UILongPressGestureRecognizerDelegate> _delegate;
+  NSArray* _touches;
+  NSMutableSet* _activeTouches;
+  BOOL _gotTouchEnd;
+  BOOL _gotTooMany;
+  int _numberOfFingers;
+  double _delay;
+  float _allowableMovement;
+  CGPoint _startPointScreen;
+  UIDelayedAction* _enoughTimeElapsed;
+  id<UILongPressGestureRecognizerDelegate> _delegate;
 }
 @property(retain, nonatomic) NSArray* touches;
 @property(assign, nonatomic) int numberOfFingers;

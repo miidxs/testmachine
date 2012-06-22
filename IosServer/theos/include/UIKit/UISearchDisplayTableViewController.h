@@ -9,7 +9,7 @@
 __attribute__((visibility("hidden")))
 @interface UISearchDisplayTableViewController : UITableViewController {
 @private
-	UISearchDisplayController* _linkedSearchDisplayController;
+  UISearchDisplayController* _linkedSearchDisplayController;
 }
 -(id)initWithStyle:(int)style searchDisplayController:(id)controller;
 // inherited: -(void)viewDidDisappear:(BOOL)view;

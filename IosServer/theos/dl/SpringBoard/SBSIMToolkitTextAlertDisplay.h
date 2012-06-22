@@ -11,8 +11,8 @@
 @class SBTextDisplayView, UIScroller;
 
 @interface SBSIMToolkitTextAlertDisplay : SBSlidingAlertDisplay {
-	SBTextDisplayView* _contentView;
-	UIScroller* _scroller;
+  SBTextDisplayView* _contentView;
+  UIScroller* _scroller;
 }
 // inherited: +(id)createTopBarForInstance:(id)instance;
 // inherited: +(id)createBottomBarForInstance:(id)instance;

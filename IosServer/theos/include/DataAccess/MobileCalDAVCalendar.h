@@ -11,17 +11,17 @@
 @class MobileCalDAVAccount, NSString;
 
 @interface MobileCalDAVCalendar : NSObject {
-	MobileCalDAVAccount* _account;
-	NSString* _calGUID;
-	NSString* _description;
-	NSString* _path;
-	NSString* _color;
-	BOOL _enabled;
-	void* _calCalendar;
-	int _mostRecentEventChangeIndex;
-	int _mostRecentAlarmChangeIndex;
-	int _mostRecentRecurChangeIndex;
-	int _mostRecentAttendeeChangeIndex;
+  MobileCalDAVAccount* _account;
+  NSString* _calGUID;
+  NSString* _description;
+  NSString* _path;
+  NSString* _color;
+  BOOL _enabled;
+  void* _calCalendar;
+  int _mostRecentEventChangeIndex;
+  int _mostRecentAlarmChangeIndex;
+  int _mostRecentRecurChangeIndex;
+  int _mostRecentAttendeeChangeIndex;
 }
 -(id)initWithCalendarPath:(id)calendarPath account:(id)account;
 // inherited: -(void)dealloc;

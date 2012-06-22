@@ -13,31 +13,31 @@
 __attribute__((visibility("hidden")))
 @interface _UISwappableImageViewAnimationProxy : NSObject {
 @private
-	id _originalObject;
+  id _originalObject;
 }
 -(void)animationDidStop:(id)animation finished:(BOOL)finished;
 @end
 #endif
 
 @interface UISwappableImageView : UIView {
-	id _value;
-	id _alternate;
-	BOOL _showAlternate;
-	BOOL _flipped;
-	BOOL _updateImage;
-	BOOL _bezel;
-	int _bezelStyle;
-	int _currentAnimation;
-	UIToolbar* _buttonBar;
-	int _buttonTag;
+  id _value;
+  id _alternate;
+  BOOL _showAlternate;
+  BOOL _flipped;
+  BOOL _updateImage;
+  BOOL _bezel;
+  int _bezelStyle;
+  int _currentAnimation;
+  UIToolbar* _buttonBar;
+  int _buttonTag;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_1
-	_UISwappableImageViewAnimationProxy* _proxy;
+  _UISwappableImageViewAnimationProxy* _proxy;
 #endif
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	int _barButtonItemStyle;
+  int _barButtonItemStyle;
 #endif
-	id _didFinishTarget;
-	SEL _didFinishSelector;
+  id _didFinishTarget;
+  SEL _didFinishSelector;
 }
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
 -(id)initWithImage:(id)image alternateImage:(id)image2 barStyle:(int)style barButtonItemStyle:(int)style4 tintColor:(id)color bezel:(BOOL)bezel;

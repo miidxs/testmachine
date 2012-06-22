@@ -10,10 +10,10 @@
 @class NSString, NSDate;
 
 @interface VMUDyLibLoadCommand : VMULoadCommand {
-	NSString* _path;
-	NSDate* _timestamp;
-	unsigned _currentVersion;
-	unsigned _compatibilityVersion;
+  NSString* _path;
+  NSDate* _timestamp;
+  unsigned _currentVersion;
+  unsigned _compatibilityVersion;
 }
 // inherited: -(id)initWithMemory:(id)memory;
 -(id)path;

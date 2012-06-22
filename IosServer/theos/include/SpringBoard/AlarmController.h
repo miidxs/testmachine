@@ -10,13 +10,13 @@
 @class SBSleepProofTimer, NSString, NSMutableArray;
 
 @interface AlarmController : NSObject {
-	SBSleepProofTimer* _alarmTimer;
-	NSMutableArray* _alarmList;
-	NSMutableArray* _alarmsToFire;
-	unsigned _isReadingAlarms : 1;
-	SBSleepProofTimer* _countDownTimer;
-	double _countDownUntilTime;
-	NSString* _countDownSoundIdentifier;
+  SBSleepProofTimer* _alarmTimer;
+  NSMutableArray* _alarmList;
+  NSMutableArray* _alarmsToFire;
+  unsigned _isReadingAlarms : 1;
+  SBSleepProofTimer* _countDownTimer;
+  double _countDownUntilTime;
+  NSString* _countDownSoundIdentifier;
 }
 +(id)sharedAlarmController;
 -(void)_loadAlarms;

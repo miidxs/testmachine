@@ -13,8 +13,8 @@
 __attribute__((visibility("hidden")))
 @interface ML3AggregateQuery : ML3Query {
 @private
-	Class _aggregateEntityClass;
-	NSString* _foreignPersistentIDProperty;
+  Class _aggregateEntityClass;
+  NSString* _foreignPersistentIDProperty;
 }
 @property(readonly, assign) Class aggregateEntityClass;
 @property(readonly, assign) NSString* foreignPersistentIDProperty;

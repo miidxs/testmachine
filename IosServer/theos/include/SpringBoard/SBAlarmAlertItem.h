@@ -10,8 +10,8 @@
 @class Alarm;
 
 @interface SBAlarmAlertItem : SBRingingAlertItem {
-	Alarm* _alarm;
-	BOOL _snoozeAlarm;
+  Alarm* _alarm;
+  BOOL _snoozeAlarm;
 }
 -(id)initWithAlarm:(id)alarm;
 // inherited: -(void)dealloc;

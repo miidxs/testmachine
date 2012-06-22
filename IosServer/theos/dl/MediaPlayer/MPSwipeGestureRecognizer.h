@@ -12,10 +12,10 @@
 
 @interface MPSwipeGestureRecognizer : UIGestureRecognizer {
 @private
-	CGPoint _startLocation;
-	double _startTime;
-	UITouch* _trackingTouch;
-	int _swipeDirection;
+  CGPoint _startLocation;
+  double _startTime;
+  UITouch* _trackingTouch;
+  int _swipeDirection;
 }
 @property(readonly, assign, nonatomic) int swipeDirection;
 -(id)initWithTarget:(id)target action:(SEL)action;

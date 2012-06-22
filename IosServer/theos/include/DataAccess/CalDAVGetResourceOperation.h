@@ -10,8 +10,8 @@
 @class DAVSession, NSString;
 
 @interface CalDAVGetResourceOperation : AYOperation {
-	NSString* _uri;
-	DAVSession* _session;
+  NSString* _uri;
+  DAVSession* _session;
 }
 -(id)initWithSession:(id)session URI:(id)uri;
 // inherited: -(void)dealloc;

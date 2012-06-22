@@ -10,7 +10,7 @@
 @class NSString;
 
 @interface VMUDyLinkerLoadCommand : VMULoadCommand {
-	NSString* _name;
+  NSString* _name;
 }
 // inherited: -(id)initWithMemory:(id)memory;
 // inherited: -(BOOL)isDyLinker;

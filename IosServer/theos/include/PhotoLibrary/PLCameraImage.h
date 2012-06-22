@@ -11,12 +11,12 @@
 @class UIImage, NSString, MLPhotoDCFFileGroup;
 
 @interface PLCameraImage : MLPhoto {
-	MLPhotoDCFFileGroup* _fileGroup;
-	UIImage* _thumbnailImage;
-	double _duration;
-	BOOL _hasJPEGData;
-	unsigned _didSetHasJPEGData : 1;
-	unsigned _didSetDuration : 1;
+  MLPhotoDCFFileGroup* _fileGroup;
+  UIImage* _thumbnailImage;
+  double _duration;
+  BOOL _hasJPEGData;
+  unsigned _didSetHasJPEGData : 1;
+  unsigned _didSetDuration : 1;
 }
 @property(readonly, assign, nonatomic) NSString* title;
 +(void)setMaxImageSize:(int)size;

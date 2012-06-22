@@ -10,21 +10,21 @@
 @class NSArray, UIImage;
 
 @interface UIAccentedCharacterView : UIView {
-	NSArray* m_characters;
-	NSArray* m_caps;
-	unsigned m_count;
-	int m_expansion;
-	int m_orientation;
-	float m_stringWidth;
-	UIImage* m_tubeImage;
-	CGRect m_tubeRect;
-	UIImage* m_grabberImage;
-	CGRect m_grabberRect;
-	UIView* m_popupView;
-	UIView* m_selectedView;
-	unsigned m_selectedIndex;
-	BOOL m_dragged;
-	CGPoint m_dragPoint;
+  NSArray* m_characters;
+  NSArray* m_caps;
+  unsigned m_count;
+  int m_expansion;
+  int m_orientation;
+  float m_stringWidth;
+  UIImage* m_tubeImage;
+  CGRect m_tubeRect;
+  UIImage* m_grabberImage;
+  CGRect m_grabberRect;
+  UIView* m_popupView;
+  UIView* m_selectedView;
+  unsigned m_selectedIndex;
+  BOOL m_dragged;
+  CGPoint m_dragPoint;
 }
 -(id)initWithFrame:(CGRect)frame variants:(id)variants expansion:(int)expansion orientation:(int)orientation;
 // inherited: -(void)dealloc;

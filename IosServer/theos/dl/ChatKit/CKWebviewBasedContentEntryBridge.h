@@ -9,8 +9,8 @@
 @class NSMutableArray;
 
 @interface CKWebviewBasedContentEntryBridge : CKContentEntryBridge {
-	NSMutableArray* _resources;
-	int _composeResourcePoolID;
+  NSMutableArray* _resources;
+  int _composeResourcePoolID;
 }
 -(id)init;
 -(void)dealloc;

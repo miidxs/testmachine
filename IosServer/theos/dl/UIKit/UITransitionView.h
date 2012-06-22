@@ -9,27 +9,27 @@
 
 
 @interface UITransitionView : UIView <NSCoding> {
-	UIView* _fromView;
-	UIView* _toView;
-	UIResponder* _firstResponderToRemember;
-	id _delegate;
+  UIView* _fromView;
+  UIView* _toView;
+  UIResponder* _firstResponderToRemember;
+  id _delegate;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	UIWindow* _originalWindow;
+  UIWindow* _originalWindow;
 #endif
-	struct {
+  struct {
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_1
-		unsigned shouldSendTouchPauseUp : 1;
-		unsigned delegateViewHandleTapWithCountEvent : 1;
-		unsigned delegateViewHandleTapWithCountEventFingerCount : 1;
-		unsigned delegateViewHandleTouchPauseIsDown : 1;
-		unsigned reserved : 28;
+    unsigned shouldSendTouchPauseUp : 1;
+    unsigned delegateViewHandleTapWithCountEvent : 1;
+    unsigned delegateViewHandleTapWithCountEventFingerCount : 1;
+    unsigned delegateViewHandleTouchPauseIsDown : 1;
+    unsigned reserved : 28;
 #else
-		unsigned animationInProgress : 1;
-		unsigned ignoresInteractionEvents : 1;
-		unsigned shouldNotifyDidCompleteImmediately : 1;
-		unsigned reserved : 29;
+    unsigned animationInProgress : 1;
+    unsigned ignoresInteractionEvents : 1;
+    unsigned shouldNotifyDidCompleteImmediately : 1;
+    unsigned reserved : 29;
 #endif
-	} _transitionViewFlags;
+  } _transitionViewFlags;
 }
 @property(assign, nonatomic) BOOL shouldNotifyDidCompleteImmediately;
 +(double)defaultDurationForTransition:(int)transition;

@@ -14,32 +14,32 @@
 
 @interface MLQuery : NSObject <NSCoding, NSCopying> {
 @private
-	MLQueryImpl* _queryImpl;
-	MLCompoundPredicate* _cpred;
-	NSMutableArray* _filterPredicates;
-	unsigned _groupingProperty;
-	unsigned _customSortingProperty;
-	void* _cachedPrefixOccurrenceInfo;
-	unsigned* _indexMapping;
-	unsigned _numberOfEntities;
-	unsigned _groupingThreshold;
-	unsigned _indexMappingIsShort : 1;
-	unsigned _needsEvaluation : 1;
-	unsigned _isEvaluating : 1;
-	unsigned _disableAutoInvalidatesForDatabaseChanges : 1;
-	unsigned _filterChanged : 1;
-	unsigned _groupingChanged : 1;
-	unsigned _entityType : 2;
-	unsigned _effectiveEntityType : 2;
-	unsigned _entityOrderType : 4;
-	unsigned _unshuffledEntityOrder : 4;
-	unsigned _preserveIndexMappingForNextEvaluate : 1;
-	unsigned _evaluationType : 2;
-	unsigned _tracksGroupMembers : 1;
-	unsigned _lastGroupTrackSearchUID;
-	unsigned _lastGroupTrackSearchMatchIndex;
-	unsigned _disableEvaluation : 1;
-	unsigned _forceSectionsOff : 1;
+  MLQueryImpl* _queryImpl;
+  MLCompoundPredicate* _cpred;
+  NSMutableArray* _filterPredicates;
+  unsigned _groupingProperty;
+  unsigned _customSortingProperty;
+  void* _cachedPrefixOccurrenceInfo;
+  unsigned* _indexMapping;
+  unsigned _numberOfEntities;
+  unsigned _groupingThreshold;
+  unsigned _indexMappingIsShort : 1;
+  unsigned _needsEvaluation : 1;
+  unsigned _isEvaluating : 1;
+  unsigned _disableAutoInvalidatesForDatabaseChanges : 1;
+  unsigned _filterChanged : 1;
+  unsigned _groupingChanged : 1;
+  unsigned _entityType : 2;
+  unsigned _effectiveEntityType : 2;
+  unsigned _entityOrderType : 4;
+  unsigned _unshuffledEntityOrder : 4;
+  unsigned _preserveIndexMappingForNextEvaluate : 1;
+  unsigned _evaluationType : 2;
+  unsigned _tracksGroupMembers : 1;
+  unsigned _lastGroupTrackSearchUID;
+  unsigned _lastGroupTrackSearchMatchIndex;
+  unsigned _disableEvaluation : 1;
+  unsigned _forceSectionsOff : 1;
 }
 +(void)initialize;
 -(void)_commonInit_MLQuery;

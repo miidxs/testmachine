@@ -12,12 +12,12 @@
 @protocol MPSwipableViewDelegate;
 
 @interface MPSwipableView : UIView {
-	int _enabledGestureTypes;
-	id<MPSwipableViewDelegate> _swipeDelegate;
-	MPTapGestureRecognizer* _tapGestureRecognizer;
-	MPSwipeGestureRecognizer* _swipeGestureRecognizer;
-	MPActivityGestureRecognizer* _activityGestureRecognizer;
-	UIPinchGestureRecognizer* _pinchGestureRecognizer;
+  int _enabledGestureTypes;
+  id<MPSwipableViewDelegate> _swipeDelegate;
+  MPTapGestureRecognizer* _tapGestureRecognizer;
+  MPSwipeGestureRecognizer* _swipeGestureRecognizer;
+  MPActivityGestureRecognizer* _activityGestureRecognizer;
+  UIPinchGestureRecognizer* _pinchGestureRecognizer;
 }
 @property(assign, nonatomic) id<MPSwipableViewDelegate> swipeDelegate;
 @property(assign, nonatomic) int enabledGestureTypes;

@@ -10,9 +10,9 @@
 @class NSMutableArray, CalDAVAccount;
 
 @interface CalDAVOperationQueue : NSObject {
-	BOOL _stopped;
-	CalDAVAccount* _account;
-	NSMutableArray* _operations;
+  BOOL _stopped;
+  CalDAVAccount* _account;
+  NSMutableArray* _operations;
 }
 -(id)initWithAccount:(id)account;
 // inherited: -(void)dealloc;

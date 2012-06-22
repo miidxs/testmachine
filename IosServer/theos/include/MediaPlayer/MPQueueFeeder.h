@@ -13,14 +13,14 @@
 @protocol NSObject;
 
 @interface MPQueueFeeder : AVQueueFeeder <NSCopying> {
-	MPAVController* _avController;
-	NSMutableSet* _itemsWithReferencesToClear;
-	unsigned _repeatType;
-	unsigned _shuffleType;
-	CFDictionaryRef _nextStartTimes;
-	id _representedObject;
-	BOOL _fullScreenPlaybackQueue;
-	BOOL _isSourceChangeInProgress;
+  MPAVController* _avController;
+  NSMutableSet* _itemsWithReferencesToClear;
+  unsigned _repeatType;
+  unsigned _shuffleType;
+  CFDictionaryRef _nextStartTimes;
+  id _representedObject;
+  BOOL _fullScreenPlaybackQueue;
+  BOOL _isSourceChangeInProgress;
 }
 @property(assign, nonatomic) MPAVController* AVController;
 @property(assign, nonatomic) unsigned repeatType;

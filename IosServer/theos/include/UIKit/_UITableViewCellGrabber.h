@@ -9,8 +9,8 @@
 @class UITableViewCell;
 
 @interface _UITableViewCellGrabber : UIControl {
-	UITableViewCell* _cell;
-	CGPoint _downPoint;
+  UITableViewCell* _cell;
+  CGPoint _downPoint;
 }
 +(id)grabberImage;
 -(id)initWithFrame:(CGRect)frame tableViewCell:(id)cell;

@@ -11,16 +11,16 @@
 @class NSString, NSRecursiveLock, AVController, NSMutableArray;
 
 @interface PLVideoThumbnailGenerator : NSObject {
-	AVController* _avController;
-	NSString* _filePath;
-	double _duration;
-	CGSize _naturalSize;
-	NSMutableArray* _outstandingIdentifiers;
-	NSMutableArray* _gatheredIdentifiers;
-	NSMutableArray* _gatheredImages;
-	NSMutableArray* _gatheredTimes;
-	NSRecursiveLock* _lock;
-	XXStruct_z8YKPA* _progressStack;
+  AVController* _avController;
+  NSString* _filePath;
+  double _duration;
+  CGSize _naturalSize;
+  NSMutableArray* _outstandingIdentifiers;
+  NSMutableArray* _gatheredIdentifiers;
+  NSMutableArray* _gatheredImages;
+  NSMutableArray* _gatheredTimes;
+  NSRecursiveLock* _lock;
+  XXStruct_z8YKPA* _progressStack;
 }
 @property(retain) NSString* filePath;
 @property(readonly, assign) AVController* avController;

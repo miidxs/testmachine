@@ -10,14 +10,14 @@
 @class NSMapTable, VMUSymbolicator, NSMutableSet, NSHashTable;
 
 @interface VMUObjectIdentifier : NSObject {
-	unsigned _task;
-	VMUSymbolicator* _symbolicator;
-	NSMapTable* _isaToClassInfo;
-	NSHashTable* _classAddresses;
-	NSMutableSet* _objcRuntimeMallocBlocks;
-	unsigned _cfTypeCount;
-	unsigned _objcClassCount;
-	unsigned _cPlusPlusClassCount;
+  unsigned _task;
+  VMUSymbolicator* _symbolicator;
+  NSMapTable* _isaToClassInfo;
+  NSHashTable* _classAddresses;
+  NSMutableSet* _objcRuntimeMallocBlocks;
+  unsigned _cfTypeCount;
+  unsigned _objcClassCount;
+  unsigned _cPlusPlusClassCount;
 }
 -(id)initWithTask:(unsigned)task symbolicator:(id)symbolicator;
 // inherited: -(void)dealloc;

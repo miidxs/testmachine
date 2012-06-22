@@ -10,17 +10,17 @@
 @class NSData, NSDictionary, NSError, CPDistributedMessagingCenter, NSThread, NSString;
 
 @interface CPDistributedMessagingAsyncOperation : NSOperation {
-	CPDistributedMessagingCenter* _center;
-	NSString* _name;
-	NSData* _userInfoData;
-	NSString* _oolKey;
-	NSData* _oolData;
-	id _target;
-	SEL _selector;
-	void* _context;
-	NSThread* _calloutThread;
-	NSDictionary* _reply;
-	NSError* _error;
+  CPDistributedMessagingCenter* _center;
+  NSString* _name;
+  NSData* _userInfoData;
+  NSString* _oolKey;
+  NSData* _oolData;
+  id _target;
+  SEL _selector;
+  void* _context;
+  NSThread* _calloutThread;
+  NSDictionary* _reply;
+  NSError* _error;
 }
 -(id)initWithCenter:(id)center messageName:(id)name userInfoData:(id)data oolKey:(id)key oolData:(id)data5 target:(id)target selector:(SEL)selector context:(void*)context;
 // inherited: -(void)dealloc;

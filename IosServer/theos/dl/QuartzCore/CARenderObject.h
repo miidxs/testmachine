@@ -12,7 +12,7 @@
 __attribute__((visibility("hidden")))
 @interface CARenderObject : NSObject {
 @private
-	Object* _object;
+  Object* _object;
 }
 +(id)objectWithRenderObject:(Object*)renderObject;
 -(id)initWithRenderObject:(Object*)renderObject;

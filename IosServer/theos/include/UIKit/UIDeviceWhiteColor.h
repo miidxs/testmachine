@@ -8,9 +8,9 @@
 
 
 @interface UIDeviceWhiteColor : UIColor {
-	float whiteComponent;
-	float alphaComponent;
-	CGColorRef cachedColor;
+  float whiteComponent;
+  float alphaComponent;
+  CGColorRef cachedColor;
 }
 -(id)initWithWhite:(float)white alpha:(float)alpha;
 -(id)initWithCGColor:(CGColorRef)cgcolor;

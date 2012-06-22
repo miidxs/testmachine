@@ -6,9 +6,9 @@
 @class UILabel;
 
 @interface SBPasscodeTextField : UITextField {
-	float _letterSpacing;
-	BOOL _usesLargeClearButton;
-	UILabel* _hiddenLabel;
+  float _letterSpacing;
+  BOOL _usesLargeClearButton;
+  UILabel* _hiddenLabel;
 }
 @property(assign, nonatomic) float letterSpacing;
 @property(assign, nonatomic) BOOL usesLargeClearButton;

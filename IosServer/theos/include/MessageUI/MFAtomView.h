@@ -12,13 +12,13 @@
 
 @interface MFAtomView : UIDefaultKeyboardInput {
 @private
-	MFAtomBackgroundView* _background;
-	UILabel* _label;
+  MFAtomBackgroundView* _background;
+  UILabel* _label;
 @protected
-	id _delegate;
-	unsigned _disclosure : 1;
-	unsigned _needsCentering : 1;
-	float _width;
+  id _delegate;
+  unsigned _disclosure : 1;
+  unsigned _needsCentering : 1;
+  float _width;
 }
 +(id)backgroundImageWithDisclosure:(BOOL)disclosure selected:(BOOL)selected;
 +(XXStruct_UUz0SD)backgroundImageSlicesWithDisclosure:(BOOL)disclosure;

@@ -11,9 +11,9 @@
 @class NSString, UIFont, UIColor;
 
 @interface SBTextDisplayView : UIView {
-	NSString* _text;
-	UIFont* _font;
-	UIColor* _fontColor;
+  NSString* _text;
+  UIFont* _font;
+  UIColor* _fontColor;
 }
 -(id)initWithWidth:(float)width font:(id)font fontColor:(id)color;
 // inherited: -(void)dealloc;

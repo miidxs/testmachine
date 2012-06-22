@@ -11,7 +11,7 @@
 @class NSMutableDictionary;
 
 @interface DAVPropFindResponse : DAVMultiStatusResponse {
-	NSMutableDictionary* categorizedProperties;
+  NSMutableDictionary* categorizedProperties;
 }
 // inherited: -(id)init;
 // inherited: -(void)dealloc;

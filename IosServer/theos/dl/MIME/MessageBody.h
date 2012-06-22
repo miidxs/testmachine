@@ -10,7 +10,7 @@
 @class Message;
 
 @interface MessageBody : WRObject {
-	Message* _message;
+  Message* _message;
 }
 -(id)rawData;
 -(id)contentToOffset:(unsigned)offset resultOffset:(unsigned*)offset2 asHTML:(BOOL)html;

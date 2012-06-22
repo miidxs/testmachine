@@ -6,7 +6,7 @@
 @class UIPageController;
 
 @interface UIPageControllerScrollView : UIScrollView {
-	UIPageController* _pageController;
+  UIPageController* _pageController;
 }
 @property(assign, nonatomic) UIPageController* pageController;
 // inherited: -(void)setBounds:(CGRect)bounds;

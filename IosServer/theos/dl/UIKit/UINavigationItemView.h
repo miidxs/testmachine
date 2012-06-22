@@ -11,15 +11,15 @@
 
 __attribute__((visibility("hidden")))
 @interface UINavigationItemView : UIView {
-	UIFont* _font;
-	UINavigationItem* _item;
-	float _titleWidth;
-	BOOL _titleAutosizesToFit;
+  UIFont* _font;
+  UINavigationItem* _item;
+  float _titleWidth;
+  BOOL _titleAutosizesToFit;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	UIView* _topCrossView;
-	UIView* _bottomCrossView;
-	BOOL _isCrossFading;
-#endif	
+  UIView* _topCrossView;
+  UIView* _bottomCrossView;
+  BOOL _isCrossFading;
+#endif  
 }
 -(id)initWithNavigationItem:(id)navigationItem;
 -(id)navigationItem;

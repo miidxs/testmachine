@@ -11,8 +11,8 @@
 @class UIView;
 
 @interface MPFlipTransitionController : MPTransitionController {
-	UIView* _fromView;
-	CGRect _toFrame;
+  UIView* _fromView;
+  CGRect _toFrame;
 }
 @property(retain, nonatomic) UIView* fromView;
 @property(assign, nonatomic) CGRect toFrame;

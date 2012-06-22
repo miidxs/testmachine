@@ -12,7 +12,7 @@
 __attribute__((visibility("hidden")))
 @interface CALayerArray : NSArray {
 @private
-	CALayerArrayIvars _ivars;
+  CALayerArrayIvars _ivars;
 }
 -(id)initWithLayers:(id*)layers count:(unsigned long)count retain:(BOOL)retain;
 // inherited: -(void)dealloc;

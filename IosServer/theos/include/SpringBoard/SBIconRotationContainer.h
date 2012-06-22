@@ -6,10 +6,10 @@
 @class SBIcon;
 
 @interface SBIconRotationContainer : UIView {
-	UIView* _startSnapshot;
-	UIView* _endSnapshot;
-	SBIcon* _icon;
-	BOOL _shouldCrossfade;
+  UIView* _startSnapshot;
+  UIView* _endSnapshot;
+  SBIcon* _icon;
+  BOOL _shouldCrossfade;
 }
 @property(retain, nonatomic) SBIcon* icon;
 // inherited: -(void)dealloc;

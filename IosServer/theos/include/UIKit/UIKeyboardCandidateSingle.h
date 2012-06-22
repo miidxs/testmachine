@@ -6,7 +6,7 @@
 @class NSString;
 
 @interface UIKeyboardCandidateSingle : UIKeyboardCandidate {
-	NSString* _candidate;
+  NSString* _candidate;
 }
 -(id)initWithCandidate:(id)candidate;
 // inherited: -(void)dealloc;

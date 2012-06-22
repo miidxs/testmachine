@@ -10,12 +10,12 @@
 @class DAMailMessage, MailboxUid, Message;
 
 @interface DAMessage : MailMessage {
-	DAMailMessage* _DAMailMessage;
-	Message* _rfc822CreatedMessage;
-	MailboxUid* _mailbox;
-	BOOL _haveTweakedSenderIvar;
-	BOOL _haveTweakedToIvar;
-	BOOL _haveTweakedCcIvar;
+  DAMailMessage* _DAMailMessage;
+  Message* _rfc822CreatedMessage;
+  MailboxUid* _mailbox;
+  BOOL _haveTweakedSenderIvar;
+  BOOL _haveTweakedToIvar;
+  BOOL _haveTweakedCcIvar;
 }
 // inherited: -(void)dealloc;
 -(id)initWithDAMailMessage:(id)damailMessage mailbox:(id)mailbox;

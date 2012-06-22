@@ -10,7 +10,7 @@
 @class ASEvent;
 
 @interface ASEventChangeCommand : ASSyncTaskCommand {
-	ASEvent* _event;
+  ASEvent* _event;
 }
 -(id)initWithEvent:(id)event;
 // inherited: -(void)appendApplicationDataForTask:(id)task toWBXMLData:(id)wbxmldata;

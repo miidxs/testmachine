@@ -10,11 +10,11 @@
 @class NSArray, NSMutableArray, NSString, UIKBAttributeList, UIKBKeylayout;
 
 @interface UIKBKeyplane : NSObject <NSCoding> {
-	NSString* m_name;
-	NSMutableArray* m_keylayouts;
-	UIKBAttributeList* m_attributes;
-	NSMutableArray* m_supportedTypes;
-	NSArray* m_keys;
+  NSString* m_name;
+  NSMutableArray* m_keylayouts;
+  UIKBAttributeList* m_attributes;
+  NSMutableArray* m_supportedTypes;
+  NSArray* m_keys;
 }
 @property(retain, nonatomic) NSString* name;
 @property(retain, nonatomic) NSArray* keylayouts;

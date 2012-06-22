@@ -11,8 +11,8 @@
 @class NSString;
 
 @interface SBSIMLockEntryAlertDisplay : SBSlidingAlertDisplay {
-	NSString* _languageCode;
-	NSString* _code;
+  NSString* _languageCode;
+  NSString* _code;
 }
 -(id)initWithFrame:(CGRect)frame languageCode:(id)code;
 // inherited: -(void)dealloc;

@@ -8,7 +8,7 @@
 @class NSMutableDictionary;
 
 @interface UIKeyboardEmojiFactory : NSObject {
-	NSMutableDictionary* emojiMap;
+  NSMutableDictionary* emojiMap;
 }
 -(id)init;
 -(void)dealloc;

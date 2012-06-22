@@ -11,11 +11,11 @@
 @class PlainTextDocument, NSMutableString;
 
 @interface FormatFlowedWriter : NSObject {
-	PlainTextDocument* _inputDocument;
-	unsigned _encoding;
-	NSMutableString* _outputString;
-	unsigned _addedTrailingSpaces : 1;
-	NSMutableString* _lineString;
+  PlainTextDocument* _inputDocument;
+  unsigned _encoding;
+  NSMutableString* _outputString;
+  unsigned _addedTrailingSpaces : 1;
+  NSMutableString* _lineString;
 }
 +(id)newWithPlainTextDocument:(id)plainTextDocument encoding:(unsigned long)encoding;
 // inherited: -(void)dealloc;

@@ -6,8 +6,8 @@
 @class TPLCDView;
 
 @interface SBDeviceLockTitlePhone : SBDeviceLockTitle {
-	BOOL _highlighted;
-	TPLCDView* _lcdView;
+  BOOL _highlighted;
+  TPLCDView* _lcdView;
 }
 // inherited: -(id)_protectedInitWithStyle:(int)style interfaceOrientation:(int)orientation;
 // inherited: -(void)dealloc;

@@ -8,7 +8,7 @@
 @class NSMutableArray;
 
 @interface CKLoopbackService : CKService {
-	NSMutableArray* _conversations;
+  NSMutableArray* _conversations;
 }
 +(id)sharedLoopbackService;
 -(id)newMessageWithComposition:(id)composition forConversation:(id)conversation;

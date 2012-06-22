@@ -9,11 +9,11 @@
 __attribute__((visibility("hidden")))
 @interface UIKeyboardTouchInfo : NSObject {
 @private
-	UITouch* _touch;
-	UIKBKey* _key;
-	UIKBKeyplane* _keyplane;
-	UIKBKey* _slidOffKey;
-	CGPoint _initialPoint;
+  UITouch* _touch;
+  UIKBKey* _key;
+  UIKBKeyplane* _keyplane;
+  UIKBKey* _slidOffKey;
+  CGPoint _initialPoint;
 }
 @property(retain, nonatomic) UITouch* touch;
 @property(retain, nonatomic) UIKBKey* key;

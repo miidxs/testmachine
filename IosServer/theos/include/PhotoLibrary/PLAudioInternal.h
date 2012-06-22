@@ -11,10 +11,10 @@
 
 @interface PLAudioInternal : MLPhoto {
 @private
-	NSURL* _url;
-	NSString* _title;
-	PLVideoFileGroup* _videoFileGroup;
-	NSString* _temporaryPath;
+  NSURL* _url;
+  NSString* _title;
+  PLVideoFileGroup* _videoFileGroup;
+  NSString* _temporaryPath;
 }
 // inherited: -(void)dealloc;
 // inherited: -(BOOL)isVideo;

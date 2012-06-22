@@ -10,9 +10,9 @@
 @class LDAPTaskManager;
 
 @interface LDAPTask : NSObject {
-	LDAPTaskManager* _taskManager;
-	int _taskID;
-	id _delegate;
+  LDAPTaskManager* _taskManager;
+  int _taskID;
+  id _delegate;
 }
 +(unsigned)uniqueQueryID;
 // inherited: -(id)init;

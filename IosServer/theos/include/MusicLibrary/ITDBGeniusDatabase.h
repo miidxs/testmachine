@@ -10,12 +10,12 @@
 __attribute__((visibility("hidden")))
 @interface ITDBGeniusDatabase : NSObject {
 @private
-	CPSqliteDatabase* _db;
-	CPSqliteConnection* _dbrc;
-	int _transactionCount;
-	double _connectionFailedTime;
-	unsigned _hasGeniusSchema : 1;
-	unsigned _hasGeniusSchemaCached : 1;
+  CPSqliteDatabase* _db;
+  CPSqliteConnection* _dbrc;
+  int _transactionCount;
+  double _connectionFailedTime;
+  unsigned _hasGeniusSchema : 1;
+  unsigned _hasGeniusSchemaCached : 1;
 }
 +(id)geniusDatabaseFilePath;
 +(id)fallbackGeniusDatabaseFilePath;

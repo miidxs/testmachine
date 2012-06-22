@@ -10,9 +10,9 @@
 @class MPMovieTVHUDView, NPTVOutBackgroundView, MPVideoView;
 
 @interface MPTVOutWindow : UIWindow {
-	NPTVOutBackgroundView* _backgroundView;
-	MPMovieTVHUDView* _hudView;
-	MPVideoView* _videoView;
+  NPTVOutBackgroundView* _backgroundView;
+  MPMovieTVHUDView* _hudView;
+  MPVideoView* _videoView;
 }
 @property(retain, nonatomic) MPVideoView* videoView;
 -(id)init;

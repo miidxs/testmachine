@@ -12,14 +12,14 @@
 
 @interface MLPredicate : NSObject <NSCoding> {
 @private
-	unsigned _property;
-	unsigned _valueType;
-	union {
-		NSString* stringValue;
-		unsigned long long unsignedValue;
-	} _value;
-	unsigned _matchesSubstring : 1;
-	unsigned _matchesSearchString : 1;
+  unsigned _property;
+  unsigned _valueType;
+  union {
+    NSString* stringValue;
+    unsigned long long unsignedValue;
+  } _value;
+  unsigned _matchesSubstring : 1;
+  unsigned _matchesSearchString : 1;
 }
 +(void)initialize;
 +(id)predicateForProperty:(unsigned long)property stringValue:(id)value;

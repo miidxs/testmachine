@@ -12,19 +12,19 @@
 @class NSMutableData, NSData, NSString;
 
 @interface POP3Connection : Connection {
-	NSMutableData* _sendBuffer;
-	CFDictionaryRef _listResults;
-	CFDictionaryRef _messageIdsByNumber;
-	CFDictionaryRef _numbersByMessageId;
-	NSData* _apopTimeStamp;
-	id _delegate;
-	unsigned _numberOfMessagesAvailable : 24;
-	unsigned _state : 4;
-	unsigned _delegateRespondsToReceivedNumberOfBytes : 1;
-	unsigned _delegateRespondsToWillRetrieveMessageNumber : 1;
-	unsigned _delegateRespondsToDidRetrieveMessageNumber : 1;
-	unsigned _hidingPassword : 1;
-	NSString* _accountURL;
+  NSMutableData* _sendBuffer;
+  CFDictionaryRef _listResults;
+  CFDictionaryRef _messageIdsByNumber;
+  CFDictionaryRef _numbersByMessageId;
+  NSData* _apopTimeStamp;
+  id _delegate;
+  unsigned _numberOfMessagesAvailable : 24;
+  unsigned _state : 4;
+  unsigned _delegateRespondsToReceivedNumberOfBytes : 1;
+  unsigned _delegateRespondsToWillRetrieveMessageNumber : 1;
+  unsigned _delegateRespondsToDidRetrieveMessageNumber : 1;
+  unsigned _hidingPassword : 1;
+  NSString* _accountURL;
 }
 // inherited: -(id)init;
 // inherited: -(void)dealloc;

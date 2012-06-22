@@ -9,10 +9,10 @@
 @class UIImageView, UITextLabel;
 
 @interface MailToolbarButton : UIThreePartButton {
-	UITextLabel* _titleLabel;
-	UIImageView* _iconView;
-	BOOL _isRed;
-	BOOL _isMinibar;
+  UITextLabel* _titleLabel;
+  UIImageView* _iconView;
+  BOOL _isRed;
+  BOOL _isMinibar;
 }
 -(id)initAsRed:(BOOL)red;
 -(void)dealloc;

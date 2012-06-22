@@ -9,9 +9,9 @@
 @class NSArray, UIMoreListController;
 
 @interface UIMoreNavigationController : UINavigationController {
-	UIMoreListController* _moreListController;
-	UINavigationController* _originalNavigationController;
-	UIViewController* _originalRootViewController;
+  UIMoreListController* _moreListController;
+  UINavigationController* _originalNavigationController;
+  UIViewController* _originalRootViewController;
 }
 @property(assign, nonatomic) UIViewController* displayedViewController;
 @property(assign, nonatomic) BOOL allowsCustomizing;

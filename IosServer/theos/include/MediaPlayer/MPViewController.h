@@ -10,14 +10,14 @@
 @class MPItem, NSTimer, MPTransitionController;
 
 @interface MPViewController : UIViewController {
-	id _delegate;
-	MPItem* _item;
-	int _interfaceOrientation;
-	MPViewController* _pushedViewController;
-	MPTransitionController* _pushedTransitionController;
-	NSTimer* _idleTimerDisablerTimer;
-	unsigned _appearing : 1;
-	unsigned _observesApplicationSuspendResumeEventsOnly : 1;
+  id _delegate;
+  MPItem* _item;
+  int _interfaceOrientation;
+  MPViewController* _pushedViewController;
+  MPTransitionController* _pushedTransitionController;
+  NSTimer* _idleTimerDisablerTimer;
+  unsigned _appearing : 1;
+  unsigned _observesApplicationSuspendResumeEventsOnly : 1;
 }
 @property(retain, nonatomic) MPItem* item;
 @property(assign, nonatomic) int orientation;

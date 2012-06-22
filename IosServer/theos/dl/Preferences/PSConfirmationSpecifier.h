@@ -10,9 +10,9 @@
 @class NSString;
 
 @interface PSConfirmationSpecifier : PSSpecifier {
-	NSString* _title;
-	NSString* _okButton;
-	NSString* _cancelButton;
+  NSString* _title;
+  NSString* _okButton;
+  NSString* _cancelButton;
 }
 @property(retain) NSString* title;
 @property(readonly, retain) NSString* okButton;

@@ -9,10 +9,10 @@
 @class UIKBKeyboard, UIKBKey;
 
 @interface UIKBKeyView : UIView {
-	UIKBKeyboard* m_keyboard;
-	UIKBKey* m_key;
-	int m_state;
-	CGPoint m_drawOrigin;
+  UIKBKeyboard* m_keyboard;
+  UIKBKey* m_key;
+  int m_state;
+  CGPoint m_drawOrigin;
 }
 @property(readonly, assign, nonatomic) UIKBKeyboard* keyboard;
 @property(readonly, assign, nonatomic) UIKBKey* key;

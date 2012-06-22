@@ -10,9 +10,9 @@
 @class NSTimer, NSMutableArray;
 
 @interface SBAlertItemsController : NSObject {
-	NSMutableArray* _lockedAlertItems;
-	NSMutableArray* _unlockedAlertItems;
-	NSTimer* _autoDismissTimer;
+  NSMutableArray* _lockedAlertItems;
+  NSMutableArray* _unlockedAlertItems;
+  NSTimer* _autoDismissTimer;
 }
 +(id)sharedInstance;
 // inherited: -(id)init;

@@ -12,8 +12,8 @@
 
 @interface MPWildcatFullScreenVideoViewController : MPAbstractFullScreenVideoViewController {
 @private
-	MPWildcatFullScreenVideoOverlay* _fullscreenVideoOverlay;
-	unsigned _firstVideoFrameDisplayed : 1;
+  MPWildcatFullScreenVideoOverlay* _fullscreenVideoOverlay;
+  unsigned _firstVideoFrameDisplayed : 1;
 }
 -(id)init;
 -(void)dealloc;

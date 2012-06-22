@@ -11,7 +11,7 @@
 @class NSMutableData;
 
 @interface _DAVGetReader : NSObject <DAVResponseBodyReader> {
-	NSMutableData* _data;
+  NSMutableData* _data;
 }
 // inherited: -(id)init;
 // inherited: -(void)dealloc;

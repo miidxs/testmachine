@@ -10,10 +10,10 @@
 @class VMUSymbolOwner;
 
 @interface VMULinkedListEntry : NSObject {
-	VMULinkedListEntry* _prev;
-	VMULinkedListEntry* _next;
-	unsigned _size;
-	VMUSymbolOwner* _symbolOwner;
+  VMULinkedListEntry* _prev;
+  VMULinkedListEntry* _next;
+  unsigned _size;
+  VMUSymbolOwner* _symbolOwner;
 }
 +(id)linkedListEntryWithSymbolOwner:(id)symbolOwner;
 -(id)initWithSymbolOwner:(id)symbolOwner;

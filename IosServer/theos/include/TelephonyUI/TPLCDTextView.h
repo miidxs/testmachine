@@ -12,21 +12,21 @@
 @class NSString, TPLCDTextViewScrollingView, UIColor, UIFrameAnimation;
 
 @interface TPLCDTextView : UIView {
-	NSString* _text;
-	GSFontRef _font;
-	UIColor* _shadowColor;
-	UIColor* _textColor;
-	TPLCDTextViewScrollingView* _scrollingView;
-	float _fontSize;
-	CGRect _textRect;
-	UIFrameAnimation* _animation;
-	id _delegate;
-	float _minFontSize;
-	unsigned _textRectIsValid : 1;
-	unsigned _centerText : 1;
-	unsigned _animates : 1;
-	unsigned _isAnimating : 1;
-	unsigned _leftTruncates : 1;
+  NSString* _text;
+  GSFontRef _font;
+  UIColor* _shadowColor;
+  UIColor* _textColor;
+  TPLCDTextViewScrollingView* _scrollingView;
+  float _fontSize;
+  CGRect _textRect;
+  UIFrameAnimation* _animation;
+  id _delegate;
+  float _minFontSize;
+  unsigned _textRectIsValid : 1;
+  unsigned _centerText : 1;
+  unsigned _animates : 1;
+  unsigned _isAnimating : 1;
+  unsigned _leftTruncates : 1;
 }
 +(float)defaultMinimumFontSize;
 -(CGRect)textRect;

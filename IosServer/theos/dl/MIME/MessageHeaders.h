@@ -12,8 +12,8 @@
 @class NSData;
 
 @interface MessageHeaders : NSObject <NSCopying> {
-	NSData* _data;
-	unsigned _preferredEncoding;
+  NSData* _data;
+  unsigned _preferredEncoding;
 }
 +(id)basicHeaders;
 +(BOOL)isStructuredHeaderKey:(id)key;

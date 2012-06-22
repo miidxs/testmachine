@@ -12,7 +12,7 @@
 
 @interface MPMovie : NSObject {
 @private
-	id _internal;
+  id _internal;
 }
 @property(assign, nonatomic) double endPlaybackTime;
 @property(assign, nonatomic) double startPlaybackTime;

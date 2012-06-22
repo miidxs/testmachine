@@ -10,7 +10,7 @@
 
 
 @interface AVSystemController : NSObject {
-	AVSystemControllerPrivate* _priv;
+  AVSystemControllerPrivate* _priv;
 }
 +(void)initialize;
 +(id)sharedAVSystemController;

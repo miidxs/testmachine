@@ -15,16 +15,16 @@ static NSObject *ourObserver = nil;
 
 + (void)setSharedObserver:(NSObject*)observer
 {
-	if (observer == ourObserver)
-		return;
+    if (observer == ourObserver)
+        return;
 
-	[ourObserver release];
-	ourObserver = [observer retain];
+    [ourObserver release];
+    ourObserver = [observer retain];
 }
 
 + (id)sharedObserver
 {
-	return ourObserver;
+    return ourObserver;
 }
 
 /**
@@ -33,13 +33,13 @@ static NSObject *ourObserver = nil;
 **/
 - (BOOL)supportsPOST:(NSString *)path withSize:(UInt64)contentLength
 {
-//	NSLog(@"POST:%@", path);
-	
-	dataStartIndex = 0;
-	self.multipartData = [[[NSMutableData alloc] init] autorelease];
-	postHeaderOK = FALSE;
-	
-	return YES;
+//  NSLog(@"POST:%@", path);
+    
+    dataStartIndex = 0;
+    self.multipartData = [[[NSMutableData alloc] init] autorelease];
+    postHeaderOK = FALSE;
+    
+    return YES;
 }
 
 /**
@@ -51,23 +51,23 @@ static NSObject *ourObserver = nil;
 **/
 - (NSObject<HTTPResponse> *)httpResponseForURI:(NSString *)path
 {
-	if (0 == postContentLength)
-		return nil;
+    if (0 == postContentLength)
+        return nil;
 
-	NSLog(@"processing post data: %i", postContentLength);
-	NSString *contents = [[[NSString alloc] initWithData:(self.multipartData) encoding:NSUTF8StringEncoding] autorelease];
-	NSLog(contents);
+    NSLog(@"processing post data: %i", postContentLength);
+    NSString *contents = [[[NSString alloc] initWithData:(self.multipartData) encoding:NSUTF8StringEncoding] autorelease];
+    NSLog(contents);
 
-	NSObject *observer = [MyHTTPConnection sharedObserver];
-	if (!observer)
-		return nil;
+    NSObject *observer = [MyHTTPConnection sharedObserver];
+    if (!observer)
+        return nil;
 
-	NSString* response = [observer performSelector:@selector(runCommandStep:) withObject:(self.multipartData)];
-	self.multipartData = nil;
-	postContentLength = 0;
+    NSString* response = [observer performSelector:@selector(runCommandStep:) withObject:(self.multipartData)];
+    self.multipartData = nil;
+    postContentLength = 0;
 
-	NSData *browseData = [response dataUsingEncoding:NSUTF8StringEncoding];
-	return [[[HTTPDataResponse alloc] initWithData:browseData] autorelease];
+    NSData *browseData = [response dataUsingEncoding:NSUTF8StringEncoding];
+    return [[[HTTPDataResponse alloc] initWithData:browseData] autorelease];
 }
 
 /**
@@ -76,7 +76,7 @@ static NSObject *ourObserver = nil;
 **/
 - (void)processPostDataChunk:(NSData *)postDataChunk
 {
-	[self.multipartData appendData:postDataChunk];
+    [self.multipartData appendData:postDataChunk];
 }
 
 @end

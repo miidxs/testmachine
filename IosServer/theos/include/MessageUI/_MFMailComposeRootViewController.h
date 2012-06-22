@@ -12,11 +12,11 @@
 @protocol MFMailComposeViewControllerDelegate;
 
 @interface _MFMailComposeRootViewController : UIViewController {
-	BOOL _isSuspended;
-	MailCompositionContext* _compositionContext;
-	MailComposeController* _mailComposeController;
-	id<MFMailComposeViewControllerDelegate> _delegate;
-	id _autorotationDelegate;
+  BOOL _isSuspended;
+  MailCompositionContext* _compositionContext;
+  MailComposeController* _mailComposeController;
+  id<MFMailComposeViewControllerDelegate> _delegate;
+  id _autorotationDelegate;
 }
 @property(assign, nonatomic) id<MFMailComposeViewControllerDelegate> delegate;
 @property(assign, nonatomic) id autorotationDelegate;

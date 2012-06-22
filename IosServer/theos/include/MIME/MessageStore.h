@@ -11,21 +11,21 @@
 @class ObjectCache, NSMutableSet;
 
 @interface MessageStore : WRObject {
-	NSMutableSet* _uniqueStrings;
-	union {
-		struct {
-			ObjectCache* _headerDataCache;
-			ObjectCache* _headerCache;
-			ObjectCache* _bodyDataCache;
-			ObjectCache* _bodyCache;
-		} objectCaches;
-		struct {
-			CFDictionaryRef _headerDataCache;
-			CFDictionaryRef _headerCache;
-			CFDictionaryRef _bodyDataCache;
-			CFDictionaryRef _bodyCache;
-		} intKeyCaches;
-	} _caches;
+  NSMutableSet* _uniqueStrings;
+  union {
+    struct {
+      ObjectCache* _headerDataCache;
+      ObjectCache* _headerCache;
+      ObjectCache* _bodyDataCache;
+      ObjectCache* _bodyCache;
+    } objectCaches;
+    struct {
+      CFDictionaryRef _headerDataCache;
+      CFDictionaryRef _headerCache;
+      CFDictionaryRef _bodyDataCache;
+      CFDictionaryRef _bodyCache;
+    } intKeyCaches;
+  } _caches;
 }
 +(Class)headersClass;
 +(Class)classForMimePart;

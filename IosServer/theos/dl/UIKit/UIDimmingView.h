@@ -11,17 +11,17 @@
 
 __attribute__((visibility("hidden")))
 @interface UIDimmingView : UIView {
-	id _delegate;
+  id _delegate;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	UIBarButtonItem* _highlightedBarButtonItem;
-	UIImageView* _highlightedImageView;
-	UIImageView* _backgroundGlow;
-	NSArray* _passthroughViews;
-	BOOL _ignoresTouches;
-	BOOL _dimsStatusBar;
-	UIWindow* _statusBarDimmingWindow;	
+  UIBarButtonItem* _highlightedBarButtonItem;
+  UIImageView* _highlightedImageView;
+  UIImageView* _backgroundGlow;
+  NSArray* _passthroughViews;
+  BOOL _ignoresTouches;
+  BOOL _dimsStatusBar;
+  UIWindow* _statusBarDimmingWindow;  
 #else
-	CGGradientRef _gradient;
+  CGGradientRef _gradient;
 #endif
 }
 @property(assign, nonatomic) id delegate;

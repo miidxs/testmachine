@@ -12,9 +12,9 @@
 
 @interface MPFullScreenVideoViewController : MPAbstractFullScreenVideoViewController {
 @private
-	MPInactivityMonitor* _inactivityMonitor;
-	MPFullScreenVideoOverlay* _overlayView;
-	unsigned _needsInactivityMonitorCreation : 1;
+  MPInactivityMonitor* _inactivityMonitor;
+  MPFullScreenVideoOverlay* _overlayView;
+  unsigned _needsInactivityMonitorCreation : 1;
 }
 -(void)dealloc;
 -(void)viewDidAppear:(BOOL)view;

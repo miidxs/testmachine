@@ -12,16 +12,16 @@
 @class NSTimer, UIEventObservableWindow;
 
 @interface MPInactivityMonitor : NSObject <GSEventMonitor> {
-	double _inactivityDurationInterval;
-	double _lastActivityTime;
-	NSTimer* _timer;
-	id _delegate;
-	int _pendingMouseUpCount;
-	float _referenceTolerance;
-	CGPoint _referencePoint;
-	UIEventObservableWindow* _window;
-	unsigned _monitoring : 1;
-	unsigned _ignorePendingMouseUp : 1;
+  double _inactivityDurationInterval;
+  double _lastActivityTime;
+  NSTimer* _timer;
+  id _delegate;
+  int _pendingMouseUpCount;
+  float _referenceTolerance;
+  CGPoint _referencePoint;
+  UIEventObservableWindow* _window;
+  unsigned _monitoring : 1;
+  unsigned _ignorePendingMouseUp : 1;
 }
 -(id)initForWindow:(id)window inactivityDuration:(double)duration delegate:(id)delegate;
 -(void)setActivityTolerance:(float)tolerance withReferencePoint:(CGPoint)referencePoint;

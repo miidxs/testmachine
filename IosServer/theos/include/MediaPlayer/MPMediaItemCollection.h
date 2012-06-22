@@ -12,7 +12,7 @@
 
 @interface MPMediaItemCollection : NSObject <NSCoding> {
 @private
-	MPMediaItemCollectionInternal* _internal;
+  MPMediaItemCollectionInternal* _internal;
 }
 @property(readonly, assign, nonatomic) int mediaTypes;
 @property(readonly, assign, nonatomic) unsigned count;

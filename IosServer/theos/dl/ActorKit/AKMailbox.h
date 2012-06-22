@@ -9,11 +9,11 @@
 @class AKDispatchQueue, Protocol;
 
 @interface AKMailbox : NSProxy {
-	id _target;
-	Protocol* _publicProtocol;
-	Protocol* _privateProtocol;
-	AKDispatchQueue* _dispatchQueue;
-	qed_queue_u* _queue;
+  id _target;
+  Protocol* _publicProtocol;
+  Protocol* _privateProtocol;
+  AKDispatchQueue* _dispatchQueue;
+  qed_queue_u* _queue;
 }
 @property(assign, nonatomic) id target;
 

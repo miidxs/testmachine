@@ -10,9 +10,9 @@
 @class CALayerHost;
 
 @interface SBContext : NSObject {
-	unsigned _contextId;
-	float _windowLevel;
-	CALayerHost* _layerHost;
+  unsigned _contextId;
+  float _windowLevel;
+  CALayerHost* _layerHost;
 }
 @property(assign, nonatomic) unsigned contextId;
 @property(assign, nonatomic) float windowLevel;

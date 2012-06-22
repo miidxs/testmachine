@@ -11,7 +11,7 @@
 @class UIImageView;
 
 @interface MPPortraitTransportControls : MPTransportControls {
-	UIImageView* _backgroundView;
+  UIImageView* _backgroundView;
 }
 +(float)defaultHeight;
 -(id)init;

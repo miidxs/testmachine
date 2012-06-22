@@ -12,11 +12,11 @@
 @class UIView, UINavigationBar, UITextLabel, UITableView, UIProgressIndicator;
 
 @interface MPAlternateTracksViewController : MPAbstractAlternateTracksViewController <UITableViewDataSource, UITableViewDelegate> {
-	UIView* _backgroundView;
-	UINavigationBar* _navigationBar;
-	UITableView* _table;
-	UIProgressIndicator* _progressIndicator;
-	UITextLabel* _loadingLabel;
+  UIView* _backgroundView;
+  UINavigationBar* _navigationBar;
+  UITableView* _table;
+  UIProgressIndicator* _progressIndicator;
+  UITextLabel* _loadingLabel;
 }
 -(void)dealloc;
 -(void)didChangeToInterfaceOrientation:(int)interfaceOrientation;

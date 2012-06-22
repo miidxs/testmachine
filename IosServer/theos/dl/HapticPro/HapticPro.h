@@ -24,6 +24,6 @@ typedef enum {
 @end
 
 #define HPPerformHapticFeedbackOn(view, feedbackType) \
-	[(([view respondsToSelector:@selector(performHapticFeedback:)])?view:nil) performHapticFeedback:feedbackType]
+  [(([view respondsToSelector:@selector(performHapticFeedback:)])?view:nil) performHapticFeedback:feedbackType]
 #define HPPerformHapticFeedback(feedbackType) \
-	[objc_getClass("HPHapticManager") performHapticFeedback:feedbackType]
+  [objc_getClass("HPHapticManager") performHapticFeedback:feedbackType]

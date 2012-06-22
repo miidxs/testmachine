@@ -12,12 +12,12 @@
 @class NSMutableDictionary, NSDictionary, SBApplication, NSOperationQueue, NSArray;
 
 @interface SBApplicationController : NSObject {
-	NSDictionary* _pendingApplicationDictionaries;
-	NSMutableDictionary* _applications;
-	NSMutableDictionary* _applicationsByBundleIdentifer;
-	SBApplication* _springBoard;
-	unsigned _ignoreUninstallationEventCount;
-	NSOperationQueue* _backgroundOperationQueue;
+  NSDictionary* _pendingApplicationDictionaries;
+  NSMutableDictionary* _applications;
+  NSMutableDictionary* _applicationsByBundleIdentifer;
+  SBApplication* _springBoard;
+  unsigned _ignoreUninstallationEventCount;
+  NSOperationQueue* _backgroundOperationQueue;
 }
 @property(retain) NSDictionary* pendingApplicationDictionaries;
 +(SBApplicationController*)sharedInstance;

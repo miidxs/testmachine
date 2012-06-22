@@ -8,8 +8,8 @@
 
 
 @interface UINavigationItemButtonView : UINavigationItemView {
-	int _style;
-	BOOL _pressed;
+  int _style;
+  BOOL _pressed;
 }
 -(void)drawRect:(CGRect)rect;
 -(id)title;

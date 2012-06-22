@@ -12,9 +12,9 @@
 @class VMUArchitecture;
 
 @interface VMUMemory_Task : VMUMemory_Base <VMUMemory> {
-	char* _data;
-	VMURange _addressRange;
-	VMUArchitecture* _architecture;
+  char* _data;
+  VMURange _addressRange;
+  VMUArchitecture* _architecture;
 }
 +(id)memoryWithData:(char*)data addressRange:(VMURange)range architecture:(id)architecture;
 -(id)initWithData:(char*)data addressRange:(VMURange)range architecture:(id)architecture;

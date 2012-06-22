@@ -12,9 +12,9 @@
 @class NSMutableArray, NSMutableDictionary;
 
 @interface MessageNotificationCenter : NSNotificationCenter <WeakReferenceHolder> {
-	NSMutableDictionary* _notificationMapping;
-	NSMutableArray* _queuedObjects;
-	int _generationNumber;
+  NSMutableDictionary* _notificationMapping;
+  NSMutableArray* _queuedObjects;
+  int _generationNumber;
 }
 // in a protocol: -(void)dealloc;
 // inherited: -(void)addObserver:(id)observer selector:(SEL)selector name:(id)name object:(id)object;

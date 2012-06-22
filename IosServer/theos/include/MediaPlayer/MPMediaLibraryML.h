@@ -12,8 +12,8 @@
 
 @interface MPMediaLibraryML : NSObject <MPMediaLibrary> {
 @private
-	unsigned _filteringDisabled : 1;
-	MPMediaLibrary* _mediaLibrary;
+  unsigned _filteringDisabled : 1;
+  MPMediaLibrary* _mediaLibrary;
 }
 -(id)init;
 -(void)dealloc;

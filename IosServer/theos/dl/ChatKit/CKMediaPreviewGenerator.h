@@ -8,12 +8,12 @@
 @class NSData, CKMediaObject;
 
 @interface CKMediaPreviewGenerator : NSOperation {
-	BOOL _generateComposePreview;
-	int _orientation;
-	CKMediaObject* _mediaObject;
-	id _delegate;
-	NSData* _previewResult;
-	NSData* _composePreviewResult;
+  BOOL _generateComposePreview;
+  int _orientation;
+  CKMediaObject* _mediaObject;
+  id _delegate;
+  NSData* _previewResult;
+  NSData* _composePreviewResult;
 }
 @property(assign, nonatomic) int orientation;
 @property(assign, nonatomic) BOOL generateComposePreview;

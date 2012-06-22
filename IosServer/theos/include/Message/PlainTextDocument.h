@@ -11,8 +11,8 @@
 @class NSMutableArray, NSMutableString;
 
 @interface PlainTextDocument : NSObject {
-	NSMutableString* _text;
-	NSMutableArray* _fragments;
+  NSMutableString* _text;
+  NSMutableArray* _fragments;
 }
 // inherited: -(void)dealloc;
 -(void)appendString:(id)string withQuoteLevel:(unsigned)quoteLevel;

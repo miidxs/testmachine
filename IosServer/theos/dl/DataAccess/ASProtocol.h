@@ -10,7 +10,7 @@
 @class ASProtocolCapabilities;
 
 @interface ASProtocol : NSObject {
-	ASProtocolCapabilities* _capabilities;
+  ASProtocolCapabilities* _capabilities;
 }
 // inherited: -(id)init;
 -(void)_setCapabilitiesVersion:(id)version;

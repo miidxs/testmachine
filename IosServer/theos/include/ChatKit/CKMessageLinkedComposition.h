@@ -8,7 +8,7 @@
 @class CKMessage;
 
 @interface CKMessageLinkedComposition : CKMessageComposition {
-	CKMessage* _message;
+  CKMessage* _message;
 }
 @property(retain, nonatomic) CKMessage* message;
 -(BOOL)isTextOnly;

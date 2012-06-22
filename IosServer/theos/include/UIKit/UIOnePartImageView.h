@@ -9,8 +9,8 @@
 @class UIImage;
 
 @interface UIOnePartImageView : UIView {
-	CGRect _fromRect;
-	UIImage* _image;
+  CGRect _fromRect;
+  UIImage* _image;
 }
 -(void)dealloc;
 -(void)setImage:(id)image;

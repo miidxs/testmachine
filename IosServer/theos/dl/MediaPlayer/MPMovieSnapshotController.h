@@ -11,12 +11,12 @@
 @class MPVideoView, CALayer, NSMutableArray;
 
 @interface MPMovieSnapshotController : NSObject {
-	MPVideoView* _videoView;
-	CALayer* _layer;
-	NSMutableArray* _pendingSnapshots;
-	unsigned _expectingTimeJump : 1;
-	unsigned _pendingRestore : 1;
-	float _originalTime;
+  MPVideoView* _videoView;
+  CALayer* _layer;
+  NSMutableArray* _pendingSnapshots;
+  unsigned _expectingTimeJump : 1;
+  unsigned _pendingRestore : 1;
+  float _originalTime;
 }
 -(void)dealloc;
 -(void)cancel;

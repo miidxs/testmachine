@@ -11,8 +11,8 @@
 @class UIImageView;
 
 @interface MPMovieTVHUDView : UIView {
-	int _currentState;
-	UIImageView* _playbackMode;
+  int _currentState;
+  UIImageView* _playbackMode;
 }
 -(id)initWithFrame:(CGRect)frame;
 -(void)_changeState;

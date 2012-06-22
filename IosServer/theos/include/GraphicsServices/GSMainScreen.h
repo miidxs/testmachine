@@ -38,23 +38,23 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 #if __cplusplus
 extern "C" {
-#endif	
+#endif  
 
 #if __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_3_2
-	CGRect GSFullScreenApplicationContentRect();
+  CGRect GSFullScreenApplicationContentRect();
 #endif
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	CGSize GSMainScreenPixelSize(void);	// default to 320 x 480.
-	CGSize GSMainScreenPointSize(void);	// default to 320 x 480.
+  CGSize GSMainScreenPixelSize(void); // default to 320 x 480.
+  CGSize GSMainScreenPointSize(void); // default to 320 x 480.
 #endif
-	
-	void GSSetMainScreenInfo(CGSize screenSize, CGFloat screenScale, int screenOrientation);
-	CGAffineTransform GSMainScreenPositionTransform();
-	CGAffineTransform GSMainScreenWindowTransform();
-	int GSMainScreenOrientation();
-	CGFloat GSMainScreenScaleFactor();
-	CGSize GSMainScreenSize();
-	
+  
+  void GSSetMainScreenInfo(CGSize screenSize, CGFloat screenScale, int screenOrientation);
+  CGAffineTransform GSMainScreenPositionTransform();
+  CGAffineTransform GSMainScreenWindowTransform();
+  int GSMainScreenOrientation();
+  CGFloat GSMainScreenScaleFactor();
+  CGSize GSMainScreenSize();
+  
 #if __cplusplus
 }
 #endif

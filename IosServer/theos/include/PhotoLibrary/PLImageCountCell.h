@@ -10,7 +10,7 @@
 @class UILabel;
 
 @interface PLImageCountCell : UITableViewCell {
-	UILabel* _titleLabel;
+  UILabel* _titleLabel;
 }
 -(void)setTitleText:(id)text;
 // inherited: -(void)setTextAlignment:(int)alignment;

@@ -9,9 +9,9 @@
 @class NSString;
 
 @interface UIRuntimeConnection : NSObject <NSCoding> {
-	id source;
-	id destination;
-	NSString* label;
+  id source;
+  id destination;
+  NSString* label;
 }
 -(id)initWithCoder:(id)coder;
 -(void)encodeWithCoder:(id)coder;

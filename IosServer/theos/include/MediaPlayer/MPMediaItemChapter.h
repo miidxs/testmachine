@@ -11,10 +11,10 @@
 
 @interface MPMediaItemChapter : NSObject {
 @private
-	NSString* _title;
-	unsigned _chapterIndex;
-	double _playbackTime;
-	double _duration;
+  NSString* _title;
+  unsigned _chapterIndex;
+  double _playbackTime;
+  double _duration;
 }
 @property(copy, nonatomic) NSString* title;
 @property(assign, nonatomic) unsigned chapterIndex;

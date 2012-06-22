@@ -12,7 +12,7 @@
 
 @interface ML3SectionCollator : NSObject {
 @private
-	NSMutableArray* _languages;
+  NSMutableArray* _languages;
 }
 @property(readonly, assign, nonatomic) UCollator* stringICUCollator;
 @property(readonly, assign, nonatomic) UCollator* sectionICUCollator;

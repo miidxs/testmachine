@@ -9,9 +9,9 @@
 @class UIImageView;
 
 @interface UICalloutBarOverlay : UIView {
-	UIImageView* m_hiArrow;
-	CGRect m_arrowRect;
-	float m_dividerOffsets[8];
+  UIImageView* m_hiArrow;
+  CGRect m_arrowRect;
+  float m_dividerOffsets[8];
 }
 -(id)initWithFrame:(CGRect)frame;
 -(void)dealloc;

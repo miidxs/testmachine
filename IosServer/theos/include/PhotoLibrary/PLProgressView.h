@@ -11,11 +11,11 @@
 @class UILabel, UIImageView;
 
 @interface PLProgressView : UIView {
-	UIImageView* _backgroundView;
-	UILabel* _labelView;
-	UIImageView* _progressView;
-	UIImageView* _wellView;
-	unsigned _didLayout : 1;
+  UIImageView* _backgroundView;
+  UILabel* _labelView;
+  UIImageView* _progressView;
+  UIImageView* _wellView;
+  unsigned _didLayout : 1;
 }
 // inherited: -(id)initWithFrame:(CGRect)frame;
 // inherited: -(void)dealloc;

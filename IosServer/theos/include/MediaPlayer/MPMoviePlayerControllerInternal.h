@@ -10,7 +10,7 @@
 
 @interface MPMoviePlayerControllerInternal : NSObject {
 @private
-	id _implementation;
+  id _implementation;
 }
 @end
 

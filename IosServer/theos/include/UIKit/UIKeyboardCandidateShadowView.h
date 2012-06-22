@@ -9,9 +9,9 @@
 
 __attribute__((visibility("hidden")))
 @interface UIKeyboardCandidateShadowView : UIView {
-	BOOL _landscape;
+  BOOL _landscape;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	int _windowType;
+  int _windowType;
 #endif
 }
 // -(id)initWithFrame:(CGRect)frame;

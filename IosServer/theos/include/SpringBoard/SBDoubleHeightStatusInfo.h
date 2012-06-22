@@ -10,11 +10,11 @@
 @class NSString;
 
 @interface SBDoubleHeightStatusInfo : NSObject {
-	int _doubleHeightMode;
-	int _priority;
-	NSString* _prefixText;
-	NSString* _statusText;
-	NSString* _bundleID;
+  int _doubleHeightMode;
+  int _priority;
+  NSString* _prefixText;
+  NSString* _statusText;
+  NSString* _bundleID;
 }
 @property(assign, nonatomic) int doubleHeightMode;
 @property(retain, nonatomic) NSString* prefixText;

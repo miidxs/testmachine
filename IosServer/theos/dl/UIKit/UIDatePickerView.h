@@ -11,37 +11,37 @@
 @class NSTimeZone, NSCalendar, NSDateComponents, UILabel, UIDatePicker, NSDate, NSString, NSLocale;
 
 @interface UIDatePickerView : UIPickerView <UIPickerViewDelegate, UIPickerViewDataSource> {
-	int _datePickerMode;
-	NSLocale* _locale;
-	NSTimeZone* _timeZone;
-	NSCalendar* _calendar;
-	NSDate* _date;
-	NSDate* _minimumDate;
-	NSDate* _maximumDate;
-	double _countDownDuration;
-	int _minuteInterval;
-	NSDateComponents* _referenceComponents;
-	double _todaySinceReferenceDate;
-	NSDateComponents* _todayDateComponents;
-	NSString* _amString;
-	NSString* _pmString;
-	UILabel* _hourLabel;
-	UILabel* _minuteLabel;
-	UIDatePicker* _datePickerDelegate;
-	id _delegateOfDatePicker;
-	int _numberOfDaysInCurrentMonth;
-	int _expectedAMPM;
-	NSDateComponents* _minDateComponents;
-	NSDateComponents* _maxDateComponents;
-	struct {
-		unsigned dateOrder : 2;
-		unsigned timeOrder : 2;
-		unsigned weekdayOrder : 1;
-		unsigned staggerTimeIntervals : 1;
-		unsigned loadingDateOrTime : 1;
-		unsigned highlightsToday : 1;
-		unsigned reserved : 24;
-	} _datePickerFlags;
+  int _datePickerMode;
+  NSLocale* _locale;
+  NSTimeZone* _timeZone;
+  NSCalendar* _calendar;
+  NSDate* _date;
+  NSDate* _minimumDate;
+  NSDate* _maximumDate;
+  double _countDownDuration;
+  int _minuteInterval;
+  NSDateComponents* _referenceComponents;
+  double _todaySinceReferenceDate;
+  NSDateComponents* _todayDateComponents;
+  NSString* _amString;
+  NSString* _pmString;
+  UILabel* _hourLabel;
+  UILabel* _minuteLabel;
+  UIDatePicker* _datePickerDelegate;
+  id _delegateOfDatePicker;
+  int _numberOfDaysInCurrentMonth;
+  int _expectedAMPM;
+  NSDateComponents* _minDateComponents;
+  NSDateComponents* _maxDateComponents;
+  struct {
+    unsigned dateOrder : 2;
+    unsigned timeOrder : 2;
+    unsigned weekdayOrder : 1;
+    unsigned staggerTimeIntervals : 1;
+    unsigned loadingDateOrTime : 1;
+    unsigned highlightsToday : 1;
+    unsigned reserved : 24;
+  } _datePickerFlags;
 }
 @property(assign, nonatomic) int datePickerMode;
 @property(retain, nonatomic) NSLocale* locale;

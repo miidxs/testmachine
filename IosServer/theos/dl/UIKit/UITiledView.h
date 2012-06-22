@@ -12,26 +12,26 @@
 @class NSMutableArray, NSString;
 
 @interface UITiledView : UIView {
-	NSMutableArray* _rows;
-	NSMutableArray* _unusedTiles;
-	NSString* _minificationFilter;
-	CGRect _visibleRect;
-	CGRect _requiredDrawRect;
-	CGRect _dirtyRect;
-	CGSize _tileSize;
-	CGSize _firstTileSize;
-	CGPoint _tileOrigin;
-	unsigned _maxTileCount;
-	BOOL _drawsGrid;
-	BOOL _isTilingEnabled;
-	BOOL _logsTilingChanges;
-	BOOL _tileDrawingEnabled;
-	BOOL _inLayout;
-	BOOL _allNewTilesNeeded;
-	BOOL _positionsTilesFromOrigin;
-	BOOL _sizesTilesToFit;
-	BOOL _tilesOpaque;
-	BOOL _adjustsMaxTileCountDynamically;
+  NSMutableArray* _rows;
+  NSMutableArray* _unusedTiles;
+  NSString* _minificationFilter;
+  CGRect _visibleRect;
+  CGRect _requiredDrawRect;
+  CGRect _dirtyRect;
+  CGSize _tileSize;
+  CGSize _firstTileSize;
+  CGPoint _tileOrigin;
+  unsigned _maxTileCount;
+  BOOL _drawsGrid;
+  BOOL _isTilingEnabled;
+  BOOL _logsTilingChanges;
+  BOOL _tileDrawingEnabled;
+  BOOL _inLayout;
+  BOOL _allNewTilesNeeded;
+  BOOL _positionsTilesFromOrigin;
+  BOOL _sizesTilesToFit;
+  BOOL _tilesOpaque;
+  BOOL _adjustsMaxTileCountDynamically;
 }
 +(Class)tileClass;
 -(unsigned)_usedTileCount;

@@ -54,7 +54,7 @@
 @end
 
 @interface MPMusicPlayerController : NSObject {
-	MPMusicPlayerControllerInternal* _internal;
+  MPMusicPlayerControllerInternal* _internal;
 }
 @property(assign, nonatomic) unsigned currentChapterIndex;
 @property(readonly, assign, nonatomic) unsigned indexOfNowPlayingItem;

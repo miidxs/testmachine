@@ -12,7 +12,7 @@
 @class NSString;
 
 @interface CalDAVServerVersion : NSObject <NSCopying> {
-	double _version;
+  double _version;
 }
 @property(assign, nonatomic) double version;
 @property(readonly, assign, nonatomic) NSString* calendarConstraintsPath;

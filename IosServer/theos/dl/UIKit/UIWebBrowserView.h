@@ -9,29 +9,29 @@
 @protocol UIFormPeripheral;
 
 @interface UIWebBrowserView : UIWebDocumentView <UIWebFormAccessoryDelegate, BrowserDocumentController> {
-	UIWebFormAccessory* _accessory;
-	NSObject<UIFormPeripheral>* _input;
-	DOMNode* _currentAssistedNode;
-	CGRect _inputViewBounds;
-	unsigned _accessoryEnabled : 1;
-	unsigned _forceInputView : 1;
-	unsigned _formIsAutoFilling : 1;
-	UIWebTouchEventsGestureRecognizer* _webTouchEventsGestureRecognizer;
-	UIWebFormDelegate* _formDelegate;
-	struct {
-		NSMutableArray* all;
-		NSMutableArray* html;
-		NSMutableArray* javascript;
-		NSMutableArray* css;
-		NSMutableArray* error;
-		NSMutableArray* warning;
-		NSMutableArray* tip;
-		NSMutableArray* log;
-	} _messages;
-	struct {
-		WebPDFView* view;
-		NSTimer* timer;
-	} _pdf;
+  UIWebFormAccessory* _accessory;
+  NSObject<UIFormPeripheral>* _input;
+  DOMNode* _currentAssistedNode;
+  CGRect _inputViewBounds;
+  unsigned _accessoryEnabled : 1;
+  unsigned _forceInputView : 1;
+  unsigned _formIsAutoFilling : 1;
+  UIWebTouchEventsGestureRecognizer* _webTouchEventsGestureRecognizer;
+  UIWebFormDelegate* _formDelegate;
+  struct {
+    NSMutableArray* all;
+    NSMutableArray* html;
+    NSMutableArray* javascript;
+    NSMutableArray* css;
+    NSMutableArray* error;
+    NSMutableArray* warning;
+    NSMutableArray* tip;
+    NSMutableArray* log;
+  } _messages;
+  struct {
+    WebPDFView* view;
+    NSTimer* timer;
+  } _pdf;
 }
 @property(retain, nonatomic) UIWebFormAccessory* _accessory;
 @property(retain, nonatomic) NSObject<UIFormPeripheral>* _input;

@@ -9,7 +9,7 @@
 
 
 @interface DAResponse : DAAction {
-	int _status;
+  int _status;
 }
 -(id)initWithAction:(int)action context:(id)context status:(int)status;
 -(int)status;

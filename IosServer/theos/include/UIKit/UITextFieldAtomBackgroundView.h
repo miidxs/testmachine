@@ -8,7 +8,7 @@
 
 
 @interface UITextFieldAtomBackgroundView : UIView {
-	int _atomStyle;
+  int _atomStyle;
 }
 +(id)_blueAtomBackgroundImage;
 +(id)_purpleAtomBackgroundImage;

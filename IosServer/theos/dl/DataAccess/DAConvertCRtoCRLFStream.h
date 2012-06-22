@@ -11,15 +11,15 @@
 @class NSData;
 
 @interface DAConvertCRtoCRLFStream : NSInputStream {
-	NSData* _data;
-	unsigned _readOffset;
-	BOOL _lastByteCopiedWasCR;
-	BOOL _openEventSent;
-	unsigned _streamStatus;
-	id _delegate;
-	CFRunLoopSourceRef _rls;
-	/*function-pointer*/ void* _clientCallback;
-	XXStruct_4pnlqD _clientContext;
+  NSData* _data;
+  unsigned _readOffset;
+  BOOL _lastByteCopiedWasCR;
+  BOOL _openEventSent;
+  unsigned _streamStatus;
+  id _delegate;
+  CFRunLoopSourceRef _rls;
+  /*function-pointer*/ void* _clientCallback;
+  XXStruct_4pnlqD _clientContext;
 }
 -(void)_streamEventTrigger;
 -(void)_scheduleCallback;

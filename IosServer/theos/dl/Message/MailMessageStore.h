@@ -12,32 +12,32 @@
 @class ActivityMonitor, NSMutableArray, NSTimer, MailAccount, MailboxUid;
 
 @interface MailMessageStore : MessageStore {
-	struct {
-		unsigned isReadOnly : 1;
-		unsigned hasUnsavedChangesToMessageData : 1;
-		unsigned haveOpenLockFile : 1;
-		unsigned rebuildingTOC : 1;
-		unsigned compacting : 1;
-		unsigned cancelInvalidation : 1;
-		unsigned forceInvalidation : 1;
-		unsigned isWritingChangesToDisk : 1;
-		unsigned isTryingToClose : 1;
-		unsigned compactOnClose : 1;
-		unsigned reserved : 22;
-	} _flags;
-	MailboxUid* _mailboxUid;
-	MailAccount* _account;
-	NSMutableArray* _allMessages;
-	unsigned _allMessagesSize;
-	unsigned _deletedMessagesSize;
-	unsigned _deletedMessageCount;
-	unsigned _unreadMessageCount;
-	unsigned _lastFetchCount;
-	unsigned _generationNumber;
-	int _state;
-	NSTimer* _timer;
-	double timeOfLastAutosaveOperation;
-	ActivityMonitor* _openMonitor;
+  struct {
+    unsigned isReadOnly : 1;
+    unsigned hasUnsavedChangesToMessageData : 1;
+    unsigned haveOpenLockFile : 1;
+    unsigned rebuildingTOC : 1;
+    unsigned compacting : 1;
+    unsigned cancelInvalidation : 1;
+    unsigned forceInvalidation : 1;
+    unsigned isWritingChangesToDisk : 1;
+    unsigned isTryingToClose : 1;
+    unsigned compactOnClose : 1;
+    unsigned reserved : 22;
+  } _flags;
+  MailboxUid* _mailboxUid;
+  MailAccount* _account;
+  NSMutableArray* _allMessages;
+  unsigned _allMessagesSize;
+  unsigned _deletedMessagesSize;
+  unsigned _deletedMessageCount;
+  unsigned _unreadMessageCount;
+  unsigned _lastFetchCount;
+  unsigned _generationNumber;
+  int _state;
+  NSTimer* _timer;
+  double timeOfLastAutosaveOperation;
+  ActivityMonitor* _openMonitor;
 }
 +(BOOL)createEmptyStoreIfNeededForPath:(id)path;
 +(BOOL)createEmptyStoreForPath:(id)path;
@@ -79,7 +79,7 @@
 -(unsigned)unreadCount;
 -(BOOL)hasMessageForAccount:(id)account;
 -(unsigned)indexOfMessage:(id)message;
--(NSArray*)copyOfAllMessages;	// array of LibraryMessages
+-(NSArray*)copyOfAllMessages; // array of LibraryMessages
 -(id)copyOfMessagesInRange:(NSRange)range;
 -(id)mutableCopyOfAllMessages;
 -(id)copyOfAllMessagesWithOptions:(unsigned)options;

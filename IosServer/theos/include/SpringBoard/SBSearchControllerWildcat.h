@@ -4,7 +4,7 @@
 #import "SBSearchController.h"
 
 @interface SBSearchControllerWildcat : SBSearchController {
-	void* _addressBook;
+  void* _addressBook;
 }
 // inherited: -(void)dealloc;
 // inherited: -(void)controllerWasDeactivated;

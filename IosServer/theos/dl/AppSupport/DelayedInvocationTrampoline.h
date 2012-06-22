@@ -9,7 +9,7 @@
 
 
 @interface DelayedInvocationTrampoline : InvocationTrampoline {
-	double _delay;
+  double _delay;
 }
 -(id)initWithTarget:(id)target delay:(double)delay;
 // inherited: -(void)forwardInvocation:(id)invocation;

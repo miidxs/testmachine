@@ -9,13 +9,13 @@
 @class UIImageView, UILabel, CKSummaryLabel, CKConversation, UIDateLabel;
 
 @interface CKConversationListCell : UITableViewCell {
-	CKConversation* _conversation;
-	UIDateLabel* _dateLabel;
-	CKSummaryLabel* _summaryLabel;
-	CKSummaryLabel* _backupSummaryLabel;
-	UIImageView* _unreadIndicatorImageView;
-	UILabel* _fromLabel;
-	UIImageView* _groupImageView;
+  CKConversation* _conversation;
+  UIDateLabel* _dateLabel;
+  CKSummaryLabel* _summaryLabel;
+  CKSummaryLabel* _backupSummaryLabel;
+  UIImageView* _unreadIndicatorImageView;
+  UILabel* _fromLabel;
+  UIImageView* _groupImageView;
 }
 +(id)identifier;
 +(float)cellHeight;

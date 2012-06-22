@@ -9,14 +9,14 @@
 @class UITouch, UIDelayedAction;
 
 @interface UIDragRecognizer : UIGestureRecognizer {
-	double _maximumDeviation;
-	double _minimumDistance;
-	CGPoint _startPosition;
-	BOOL _restrictsToAngle;
-	double _angle;
-	UITouch* _touch;
-	UIDelayedAction* _tooSlow;
-	double _startAngle;
+  double _maximumDeviation;
+  double _minimumDistance;
+  CGPoint _startPosition;
+  BOOL _restrictsToAngle;
+  double _angle;
+  UITouch* _touch;
+  UIDelayedAction* _tooSlow;
+  double _startAngle;
 }
 @property(assign, nonatomic) double maximumDeviation;
 @property(assign, nonatomic) CGPoint startPosition;

@@ -9,24 +9,24 @@
 
 
 @interface VMUDySymTabLoadCommand : VMULoadCommand {
-	unsigned _ilocalsym;
-	unsigned _nlocalsym;
-	unsigned _iextdefsym;
-	unsigned _nextdefsym;
-	unsigned _iundefsym;
-	unsigned _nundefsym;
-	unsigned _tocoff;
-	unsigned _ntoc;
-	unsigned _modtaboff;
-	unsigned _nmodtab;
-	unsigned _extrefsymoff;
-	unsigned _nextrefsyms;
-	unsigned _indirectsymoff;
-	unsigned _nindirectsyms;
-	unsigned _extreloff;
-	unsigned _nextrel;
-	unsigned _locreloff;
-	unsigned _nlocrel;
+  unsigned _ilocalsym;
+  unsigned _nlocalsym;
+  unsigned _iextdefsym;
+  unsigned _nextdefsym;
+  unsigned _iundefsym;
+  unsigned _nundefsym;
+  unsigned _tocoff;
+  unsigned _ntoc;
+  unsigned _modtaboff;
+  unsigned _nmodtab;
+  unsigned _extrefsymoff;
+  unsigned _nextrefsyms;
+  unsigned _indirectsymoff;
+  unsigned _nindirectsyms;
+  unsigned _extreloff;
+  unsigned _nextrel;
+  unsigned _locreloff;
+  unsigned _nlocrel;
 }
 // inherited: -(id)initWithMemory:(id)memory;
 // inherited: -(BOOL)isDySymTab;

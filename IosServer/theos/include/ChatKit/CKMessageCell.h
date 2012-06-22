@@ -8,11 +8,11 @@
 @class UIButton, CKBalloonView;
 
 @interface CKMessageCell : UITableViewCell {
-	CKBalloonView* _balloonView;
-	UIButton* _failedButton;
-	float _topPadding;
-	float _bottomPadding;
-	id _replacementMessageBubbleData;
+  CKBalloonView* _balloonView;
+  UIButton* _failedButton;
+  float _topPadding;
+  float _bottomPadding;
+  id _replacementMessageBubbleData;
 }
 @property(readonly, assign, nonatomic) CKBalloonView* balloonView;
 @property(retain, nonatomic) id replacementMessageBubbleData;

@@ -11,10 +11,10 @@
 @class YahooAccount;
 
 @interface XYMPKIAuthenticator : SASLAuthenticator {
-	BOOL sentInitialResponse;
-	YahooAccount* _yahooAccount;
-	lockdown_connection* _lockdown;
-	BOOL _usedCachedSignature;
+  BOOL sentInitialResponse;
+  YahooAccount* _yahooAccount;
+  lockdown_connection* _lockdown;
+  BOOL _usedCachedSignature;
 }
 // inherited: -(id)responseForServerData:(id)serverData;
 // inherited: -(id)saslName;

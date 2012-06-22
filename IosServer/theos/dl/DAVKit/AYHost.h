@@ -11,14 +11,14 @@
 @class NSData, NSArray;
 
 @interface AYHost : AYOperation {
-	CFHostRef _hostRef;
-	CFHostClientContext _context;
-	NSArray* _names;
-	NSArray* _addresses;
-	NSData* _isReachable;
-	BOOL _wasCreatedFromName;
-	id _origin;
-	int _infoType;
+  CFHostRef _hostRef;
+  CFHostClientContext _context;
+  NSArray* _names;
+  NSArray* _addresses;
+  NSData* _isReachable;
+  BOOL _wasCreatedFromName;
+  id _origin;
+  int _infoType;
 }
 +(id)hostWithName:(id)name;
 +(id)hostWithAddress:(id)address;

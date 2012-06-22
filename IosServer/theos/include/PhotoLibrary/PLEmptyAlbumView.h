@@ -11,10 +11,10 @@
 @class MLPhotoAlbum, UIImageView, UITextLabel;
 
 @interface PLEmptyAlbumView : UIView {
-	UIImageView* _icon;
-	UITextLabel* _title;
-	UITextLabel* _message;
-	MLPhotoAlbum* _album;
+  UIImageView* _icon;
+  UITextLabel* _title;
+  UITextLabel* _message;
+  MLPhotoAlbum* _album;
 }
 -(id)_emptyRollImageForAlbum:(id)album;
 -(id)_messageForAlbum:(id)album;

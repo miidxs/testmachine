@@ -11,12 +11,12 @@
 @class NSMutableArray, NSFileHandle, IMAPAccount;
 
 @interface IMAPOperationCache : WRObject {
-	IMAPAccount* _account;
-	NSFileHandle* _handle;
-	NSMutableArray* _ops;
-	unsigned _lastUid;
-	unsigned _lastSave;
-	unsigned _lastUidValidity;
+  IMAPAccount* _account;
+  NSFileHandle* _handle;
+  NSMutableArray* _ops;
+  unsigned _lastUid;
+  unsigned _lastSave;
+  unsigned _lastUidValidity;
 }
 -(id)initWithIMAPAccount:(id)imapaccount;
 // inherited: -(void)dealloc;

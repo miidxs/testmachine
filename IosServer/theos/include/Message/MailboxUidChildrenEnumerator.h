@@ -10,9 +10,9 @@
 @class NSMutableArray;
 
 @interface MailboxUidChildrenEnumerator : NSEnumerator {
-	NSMutableArray* _mailboxes;
-	unsigned _index;
-	BOOL _includeHidden;
+  NSMutableArray* _mailboxes;
+  unsigned _index;
+  BOOL _includeHidden;
 }
 // inherited: -(void)dealloc;
 -(id)_initWithMailbox:(id)mailbox includeHiddenChildren:(BOOL)children;

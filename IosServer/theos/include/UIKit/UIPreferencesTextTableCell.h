@@ -10,10 +10,10 @@
 @class UILabel, UITextField;
 
 @interface UIPreferencesTextTableCell : UIPreferencesTableCell <UITextFieldDelegate> {
-	UITextField* _textField;
-	UILabel* _valueSuffixLabel;
-	float _textFieldOffset;
-	SEL _returnAction;
+  UITextField* _textField;
+  UILabel* _valueSuffixLabel;
+  float _textFieldOffset;
+  SEL _returnAction;
 }
 -(id)initWithFrame:(CGRect)frame;
 -(void)setTextFieldOffset:(float)offset;

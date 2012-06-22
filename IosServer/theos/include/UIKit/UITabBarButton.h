@@ -10,15 +10,15 @@
 @class UILabel, UITabBarButtonBadge, UITabBarSelectionIndicatorView;
 
 @interface UITabBarButton : UIControl {
-	CGRect _hitRect;
-	UIView* _info;
-	UILabel* _label;
-	UITabBarButtonBadge* _badge;
-	UITabBarSelectionIndicatorView* _selectedIndicator;
-	BOOL _onState;
-	BOOL _barHeight;
-	BOOL _badgeAnimated;
-	UIEdgeInsets _infoInsets;
+  CGRect _hitRect;
+  UIView* _info;
+  UILabel* _label;
+  UITabBarButtonBadge* _badge;
+  UITabBarSelectionIndicatorView* _selectedIndicator;
+  BOOL _onState;
+  BOOL _barHeight;
+  BOOL _badgeAnimated;
+  UIEdgeInsets _infoInsets;
 }
 +(id)_defaultLabelFont;
 +(id)_defaultLabelColor;

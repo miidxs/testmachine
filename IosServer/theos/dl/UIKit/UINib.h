@@ -9,11 +9,11 @@
 @class NSData, UINibDecoder;
 
 @interface UINib : NSObject {
-	NSData* archiveData;
+  NSData* archiveData;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_1
-	UINibDecoder* nibDecoder;
+  UINibDecoder* nibDecoder;
 #endif
-	BOOL instantiatingForSimulator;
+  BOOL instantiatingForSimulator;
 }
 -(id)initWithData:(id)data;
 -(id)initWithContentsOfURL:(id)url;

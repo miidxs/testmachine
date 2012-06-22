@@ -12,10 +12,10 @@
 @class DAVChallenge, NSString;
 
 @interface _DAVNaiveAuthStore : NSObject <DAVAuthStore> {
-	NSString* baseHost;
-	NSString* baseScheme;
-	int basePort;
-	DAVChallenge* authChallenge;
+  NSString* baseHost;
+  NSString* baseScheme;
+  int basePort;
+  DAVChallenge* authChallenge;
 }
 // inherited: -(id)init;
 // inherited: -(void)dealloc;

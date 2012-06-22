@@ -9,22 +9,22 @@
 @class UIView;
 
 @interface UIViewTapInfo : NSObject {
-	id _delegate;
-	UIView* _view;
-	int _tapDownCount;
-	int _fingerCount;
-	float _multiTapDelay;
-	float _rejectAsTapThrehold;
-	float _viewTouchPauseThreshold;
-	CGPoint _startPosition;
-	double _startTime;
-	struct {
-		unsigned shouldSendTouchPauseUp : 1;
-		unsigned delegateViewHandleTapWithCountEvent : 1;
-		unsigned delegateViewHandleTapWithCountEventFingerCount : 1;
-		unsigned delegateViewHandleTouchPauseIsDown : 1;
-		unsigned reserved : 28;
-	} _tapInfoFlags;
+  id _delegate;
+  UIView* _view;
+  int _tapDownCount;
+  int _fingerCount;
+  float _multiTapDelay;
+  float _rejectAsTapThrehold;
+  float _viewTouchPauseThreshold;
+  CGPoint _startPosition;
+  double _startTime;
+  struct {
+    unsigned shouldSendTouchPauseUp : 1;
+    unsigned delegateViewHandleTapWithCountEvent : 1;
+    unsigned delegateViewHandleTapWithCountEventFingerCount : 1;
+    unsigned delegateViewHandleTouchPauseIsDown : 1;
+    unsigned reserved : 28;
+  } _tapInfoFlags;
 }
 -(id)initWithDelegate:(id)delegate view:(id)view;
 -(void)releaseAndClearWeakRefs;

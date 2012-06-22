@@ -10,10 +10,10 @@
 @class NSData;
 
 @interface DigestMD5Authenticator : SASLAuthenticator {
-	unsigned _maxbuf : 16;
-	unsigned _securityLevel : 2;
-	NSData* _expectedResponse;
-	void* _cryptInfo;
+  unsigned _maxbuf : 16;
+  unsigned _securityLevel : 2;
+  NSData* _expectedResponse;
+  void* _cryptInfo;
 }
 // inherited: -(void)dealloc;
 // inherited: -(void)setAuthenticationState:(int)state;

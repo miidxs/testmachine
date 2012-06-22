@@ -8,19 +8,19 @@
 
 
 @interface UIMovieScrubberTrackOverlayView : UIView {
-	double _value;
-	double _minimumValue;
-	double _maximumValue;
-	double _startValue;
-	double _endValue;
-	UIView* _leftFillView;
-	UIView* _rightFillView;
-	UIView* _innerShadowView;
-	CGRect _leftFillFrame;
-	CGRect _rightFillFrame;
-	unsigned _editingHandle;
-	unsigned _editing : 1;
-	unsigned _zoomed : 1;
+  double _value;
+  double _minimumValue;
+  double _maximumValue;
+  double _startValue;
+  double _endValue;
+  UIView* _leftFillView;
+  UIView* _rightFillView;
+  UIView* _innerShadowView;
+  CGRect _leftFillFrame;
+  CGRect _rightFillFrame;
+  unsigned _editingHandle;
+  unsigned _editing : 1;
+  unsigned _zoomed : 1;
 }
 -(id)initWithFrame:(CGRect)frame;
 -(void)setFrame:(CGRect)frame;

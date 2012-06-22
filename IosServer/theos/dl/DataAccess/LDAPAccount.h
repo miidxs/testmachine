@@ -11,9 +11,9 @@
 @class NSMutableSet, LDAPTaskManager;
 
 @interface LDAPAccount : DAAccount {
-	CFDictionaryRef _consumers;
-	LDAPTaskManager* _taskManager;
-	NSMutableSet* _searchTaskSet;
+  CFDictionaryRef _consumers;
+  LDAPTaskManager* _taskManager;
+  NSMutableSet* _searchTaskSet;
 }
 @property(assign, setter=setLDAPAccountVersion:) int ldapAccountVersion;
 // inherited: +(Class)accountClass;

@@ -11,11 +11,11 @@
 @class NSTimer, NSDictionary;
 
 @interface SBMediaController : NSObject {
-	int _manualVolumeChangeCount;
-	NSDictionary* _nowPlayingInfo;
-	float _pendingVolumeChange;
-	NSTimer* _volumeCommitTimer;
-	BOOL _debounceVolumeRepeat;
+  int _manualVolumeChangeCount;
+  NSDictionary* _nowPlayingInfo;
+  float _pendingVolumeChange;
+  NSTimer* _volumeCommitTimer;
+  BOOL _debounceVolumeRepeat;
 }
 +(id)sharedInstance;
 // inherited: -(id)init;

@@ -11,11 +11,11 @@
 @class UIImageView;
 
 @interface SBStatusBarCallForwardingView : SBStatusBarContentView {
-	UIImageView* _imageView;
-	BOOL _setOnce;
-	BOOL _showIndicator;
-	BOOL _showForwardingView;
-	BOOL _showOnLeft;
+  UIImageView* _imageView;
+  BOOL _setOnce;
+  BOOL _showIndicator;
+  BOOL _showForwardingView;
+  BOOL _showOnLeft;
 }
 // inherited: -(id)init;
 -(void)updateIndicator;

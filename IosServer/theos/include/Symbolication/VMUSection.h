@@ -10,17 +10,17 @@
 @class NSString;
 
 @interface VMUSection : NSObject {
-	NSString* _sectionName;
-	NSString* _segmentName;
-	unsigned long long _addr;
-	unsigned long long _size;
-	unsigned _offset;
-	unsigned _align;
-	unsigned _reloff;
-	unsigned _nreloc;
-	unsigned _flags;
-	unsigned _reserved1;
-	unsigned _reserved2;
+  NSString* _sectionName;
+  NSString* _segmentName;
+  unsigned long long _addr;
+  unsigned long long _size;
+  unsigned _offset;
+  unsigned _align;
+  unsigned _reloff;
+  unsigned _nreloc;
+  unsigned _flags;
+  unsigned _reserved1;
+  unsigned _reserved2;
 }
 -(BOOL)isSection32;
 -(BOOL)isSection64;

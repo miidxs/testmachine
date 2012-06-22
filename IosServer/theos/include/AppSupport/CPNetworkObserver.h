@@ -17,17 +17,17 @@
 
 @interface CPNetworkObserver : NSObject {
 @private
-	NSLock* _lock;
-	NSMutableDictionary* _reachabilityRequests;
-	unsigned _networkReachability;
-	SCNetworkReachabilityRef _networkReach;
-	CFDictionaryRef _networkObservers;
-	SCPreferencesRef _wifiPreferences;
-	CFDictionaryRef _wifiObservers;
-	BOOL _networkNotified;
-	BOOL _networkReachable;
-	BOOL _wifiNotified;
-	BOOL _wifiEnabled;
+  NSLock* _lock;
+  NSMutableDictionary* _reachabilityRequests;
+  unsigned _networkReachability;
+  SCNetworkReachabilityRef _networkReach;
+  CFDictionaryRef _networkObservers;
+  SCPreferencesRef _wifiPreferences;
+  CFDictionaryRef _wifiObservers;
+  BOOL _networkNotified;
+  BOOL _networkReachable;
+  BOOL _wifiNotified;
+  BOOL _wifiEnabled;
 }
 +(CPNetworkObserver*)sharedNetworkObserver;
 // inherited: -(id)init;

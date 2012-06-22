@@ -10,17 +10,17 @@
 @class NSArray, PlainTextDocument, MailDelivery, MailAccount, DeliveryAccount, MutableMessageHeaders, NSString, Message;
 
 @interface OutgoingMessageDelivery : WRObject {
-	Message* _message;
-	MutableMessageHeaders* _headers;
-	NSArray* _mixedContent;
-	BOOL _textPartsAreHTML;
-	NSString* _htmlBody;
-	PlainTextDocument* _plainTextAlternative;
-	NSArray* _otherHTMLAndAttachments;
-	id _delegate;
-	MailAccount* _archiveAccount;
-	DeliveryAccount* _deliveryAccount;
-	MailDelivery* _currentDeliveryObject;
+  Message* _message;
+  MutableMessageHeaders* _headers;
+  NSArray* _mixedContent;
+  BOOL _textPartsAreHTML;
+  NSString* _htmlBody;
+  PlainTextDocument* _plainTextAlternative;
+  NSArray* _otherHTMLAndAttachments;
+  id _delegate;
+  MailAccount* _archiveAccount;
+  DeliveryAccount* _deliveryAccount;
+  MailDelivery* _currentDeliveryObject;
 }
 +(id)newWithMessage:(id)message;
 +(id)newWithHeaders:(id)headers mixedContent:(id)content textPartsAreHTML:(BOOL)html;

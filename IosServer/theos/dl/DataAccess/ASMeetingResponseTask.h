@@ -10,10 +10,10 @@
 @class ASEventUID, NSString;
 
 @interface ASMeetingResponseTask : ASTask {
-	NSString* _emailItemFolderId;
-	NSString* _emailItemServerId;
-	int _meetingResponse;
-	ASEventUID* _eventUID;
+  NSString* _emailItemFolderId;
+  NSString* _emailItemServerId;
+  int _meetingResponse;
+  ASEventUID* _eventUID;
 }
 -(id)initWithEmailItemFolderId:(id)emailItemFolderId emailItemServerId:(id)anId meetingResponse:(int)response eventUID:(id)uid;
 // inherited: -(void)dealloc;

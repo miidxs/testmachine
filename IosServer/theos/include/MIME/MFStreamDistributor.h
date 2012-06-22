@@ -11,7 +11,7 @@
 @class NSMutableSet;
 
 @interface MFStreamDistributor : NSObject <MFDataConsumer> {
-	NSMutableSet* _consumers;
+  NSMutableSet* _consumers;
 }
 // inherited: -(id)init;
 -(void)addConsumer:(id)consumer;

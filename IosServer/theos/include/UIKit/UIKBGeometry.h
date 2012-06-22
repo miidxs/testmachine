@@ -11,16 +11,16 @@
 @class NSString;
 
 @interface UIKBGeometry : NSObject <NSCoding, NSCopying> {
-	NSString* m_name;
-	UIKBLength m_x;
-	UIKBLength m_y;
-	UIKBLength m_w;
-	UIKBLength m_h;
-	UIKBLength m_paddingTop;
-	UIKBLength m_paddingLeft;
-	UIKBLength m_paddingBottom;
-	UIKBLength m_paddingRight;
-	BOOL m_explicit;
+  NSString* m_name;
+  UIKBLength m_x;
+  UIKBLength m_y;
+  UIKBLength m_w;
+  UIKBLength m_h;
+  UIKBLength m_paddingTop;
+  UIKBLength m_paddingLeft;
+  UIKBLength m_paddingBottom;
+  UIKBLength m_paddingRight;
+  BOOL m_explicit;
 }
 @property(retain, nonatomic) NSString* name;
 @property(assign, nonatomic, setter=setX:) UIKBLength x;
@@ -48,13 +48,13 @@
 @end
 
 static inline UIKBGeometry* UIKBGeometryForKeyWithPercentages(UIKBGeometry *geom, float x, float y, float w, float h) {
-	geom.x = UIKBLengthMakePercentage(x);
-	geom.y = UIKBLengthMakePercentage(y);
-	geom.w = UIKBLengthMakePercentage(w);
-	geom.h = UIKBLengthMakePercentage(h);
-	geom.paddingLeft = UIKBLengthMakePixel(1);
-	geom.paddingRight = UIKBLengthMakePixel(1);
-	return geom;
+  geom.x = UIKBLengthMakePercentage(x);
+  geom.y = UIKBLengthMakePercentage(y);
+  geom.w = UIKBLengthMakePercentage(w);
+  geom.h = UIKBLengthMakePercentage(h);
+  geom.paddingLeft = UIKBLengthMakePixel(1);
+  geom.paddingRight = UIKBLengthMakePixel(1);
+  return geom;
 }
 // So that simply including this header won't link UIKBGeometry
 #define UIKBGeometryForKeyWithPercentages(x, y, w, h) UIKBGeometryForKeyWithPercentages([UIKBGeometry geometry], x, y, w, h)

@@ -10,12 +10,12 @@
 
 
 @interface SBSyncController : NSObject {
-	int _syncState;
-	int _restoreState;
-	int _resetState;
-	int _sofwareUpdateState;
-	CFMachPortRef _backupAgentCFPort;
-	BOOL _showingResetUI;
+  int _syncState;
+  int _restoreState;
+  int _resetState;
+  int _sofwareUpdateState;
+  CFMachPortRef _backupAgentCFPort;
+  BOOL _showingResetUI;
 }
 +(id)sharedInstance;
 // inherited: -(void)dealloc;

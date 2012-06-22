@@ -10,7 +10,7 @@
 
 
 @interface VMURangeValue : VMUAddressRange {
-	int _value;
+  int _value;
 }
 +(id)rangeValueWithRange:(VMURange)range value:(int)value;
 -(id)initWithRange:(VMURange)range value:(int)value;

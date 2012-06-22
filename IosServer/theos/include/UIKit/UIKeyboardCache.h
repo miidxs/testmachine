@@ -9,19 +9,19 @@
 __attribute__((visibility("hidden")))
 @interface UIKeyboardCache : NSObject {
 @private
-	NSMutableDictionary* _keyToEntryMap;
-	NSString* _nextKey;
-	long _currentWeight;
-	long _maxWeight;
-	NSMutableArray* _recentlyUsed;
-	NSMutableArray* _inProgress;
-	int _mappedDataFd;
-	char* _mappedData;
-	unsigned _mappedDataLength;
-	XXStruct_iXKIAB _header;
-	NSTimer* _writeTimer;
-	BOOL _diskFull;
-	BOOL _canWrite;
+  NSMutableDictionary* _keyToEntryMap;
+  NSString* _nextKey;
+  long _currentWeight;
+  long _maxWeight;
+  NSMutableArray* _recentlyUsed;
+  NSMutableArray* _inProgress;
+  int _mappedDataFd;
+  char* _mappedData;
+  unsigned _mappedDataLength;
+  XXStruct_iXKIAB _header;
+  NSTimer* _writeTimer;
+  BOOL _diskFull;
+  BOOL _canWrite;
 }
 +(id)sharedCache;
 +(id)compoundKeyFromKeys:(id)keys;

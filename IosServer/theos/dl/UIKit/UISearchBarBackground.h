@@ -9,11 +9,11 @@
 @class UIImage, UIColor;
 
 @interface UISearchBarBackground : UIView {
-	UIColor* _tintColor;
-	UIImage* _backgroundImage;
-	unsigned _barStyle : 3;
-	unsigned _isTranslucent : 1;
-	unsigned _usesEmbeddedAppearance : 1;
+  UIColor* _tintColor;
+  UIImage* _backgroundImage;
+  unsigned _barStyle : 3;
+  unsigned _isTranslucent : 1;
+  unsigned _usesEmbeddedAppearance : 1;
 }
 @property(retain, nonatomic) UIColor* tintColor;
 @property(retain, nonatomic) UIImage* backgroundImage;

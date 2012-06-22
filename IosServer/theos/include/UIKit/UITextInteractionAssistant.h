@@ -13,21 +13,21 @@
 __attribute__((visibility("hidden")))
 @interface UITextInteractionAssistant : NSObject {
 @private
-	UIView<UITextSelectingContainer>* _view;
-	NSMutableArray* _recognizers;
-	UILongPressGestureRecognizer* loupeGesture;
-	int _autoscrollRamp;
-	float _autoscrollFactor;
-	CGPoint _autoscrollBasePoint;
-	CGPoint _autoscrollUntransformedExtentPoint;
-	CGPoint _loupeGestureEndPoint;
+  UIView<UITextSelectingContainer>* _view;
+  NSMutableArray* _recognizers;
+  UILongPressGestureRecognizer* loupeGesture;
+  int _autoscrollRamp;
+  float _autoscrollFactor;
+  CGPoint _autoscrollBasePoint;
+  CGPoint _autoscrollUntransformedExtentPoint;
+  CGPoint _loupeGestureEndPoint;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	UITextChecker* _textChecker;
+  UITextChecker* _textChecker;
 #endif
-	BOOL _inGesture;
-	BOOL _autoscrolled;
-	BOOL _isTryingToHighlightLink;
-	BOOL _wasShowingCommands;
+  BOOL _inGesture;
+  BOOL _autoscrolled;
+  BOOL _isTryingToHighlightLink;
+  BOOL _wasShowingCommands;
 }
 @property(retain, nonatomic) UILongPressGestureRecognizer* loupeGesture;
 @property(assign, nonatomic) BOOL inGesture;

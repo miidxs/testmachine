@@ -10,8 +10,8 @@
 @class AYOperation;
 
 @interface _AYOperationEndWaiter : NSObject {
-	AYOperation* _operation;
-	BOOL _finished;
+  AYOperation* _operation;
+  BOOL _finished;
 }
 -(id)initWithOperation:(id)operation;
 // inherited: -(void)dealloc;

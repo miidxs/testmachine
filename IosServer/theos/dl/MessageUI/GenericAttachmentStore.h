@@ -10,12 +10,12 @@
 @class NSMutableArray, NSMutableDictionary;
 
 @interface GenericAttachmentStore : WebAttachmentSource {
-	NSMutableDictionary* _attachmentsByURL;
-	NSMutableArray* _attachmentsOrder;
-	unsigned _size;
-	unsigned _imagesSize;
-	int _priority;
-	BOOL _outgoing;
+  NSMutableDictionary* _attachmentsByURL;
+  NSMutableArray* _attachmentsOrder;
+  unsigned _size;
+  unsigned _imagesSize;
+  int _priority;
+  BOOL _outgoing;
 }
 -(id)initOutgoing;
 // inherited: -(void)dealloc;

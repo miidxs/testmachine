@@ -13,17 +13,17 @@
 @class NSMutableDictionary, NSData, NSString, NSArray;
 
 @interface DAAccount : BasicAccount <AccountCreationProtocol> {
-	int _accountTypes;
-	BOOL _hasDirtyBits;
-	BOOL _hasInitted;
-	BOOL _shouldPromptForPassword;
-	BOOL _haveLookedUpPassword;
-	NSString* _cachedPassword;
-	BOOL _shouldFailAllTasks;
-	int _originalAccountTypes;
-	int _contactsChangeType;
-	int _eventsChangeType;
-	NSMutableDictionary* _haveWarnedAboutCertDict;
+  int _accountTypes;
+  BOOL _hasDirtyBits;
+  BOOL _hasInitted;
+  BOOL _shouldPromptForPassword;
+  BOOL _haveLookedUpPassword;
+  NSString* _cachedPassword;
+  BOOL _shouldFailAllTasks;
+  int _originalAccountTypes;
+  int _contactsChangeType;
+  int _eventsChangeType;
+  NSMutableDictionary* _haveWarnedAboutCertDict;
 }
 @property(copy) NSData* identityPersist;
 @property(assign) BOOL shouldFailAllTasks;

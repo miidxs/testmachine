@@ -14,25 +14,25 @@
 __attribute__((visibility("hidden")))
 #endif
 @interface UIFieldEditor : UIWebDocumentView <UIAutoscrollContainer> {
-	DOMDocument* _document;
-	DOMHTMLElement* _textElement;
-	DOMHTMLElement* _sizeElement;
-	NSString* _initialText;
-	NSString* _initialStyle;
-	UIView* _proxiedView;
+  DOMDocument* _document;
+  DOMHTMLElement* _textElement;
+  DOMHTMLElement* _sizeElement;
+  NSString* _initialText;
+  NSString* _initialStyle;
+  UIView* _proxiedView;
 @private
-	unsigned _changingView : 1;
-	unsigned _mouseWasDragged : 1;
-	unsigned _disableNotifications : 1;
+  unsigned _changingView : 1;
+  unsigned _mouseWasDragged : 1;
+  unsigned _disableNotifications : 1;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED < __IPHONE_3_2
-	unsigned _shouldMaintainFirstResponderWhenEndEditing : 1;
+  unsigned _shouldMaintainFirstResponderWhenEndEditing : 1;
 #endif
-	unsigned _isResigningFirstResponder : 1;
-	unsigned _delegateRespondsToFieldEditorDidChange : 1;
-	unsigned _delegateRespondsToShouldInsertText : 1;
-	unsigned _delegateRespondsToShouldReplaceWithText : 1;
-	unsigned _fieldEditorReentrancyGuard : 1;
-	unsigned _reserved : 22;
+  unsigned _isResigningFirstResponder : 1;
+  unsigned _delegateRespondsToFieldEditorDidChange : 1;
+  unsigned _delegateRespondsToShouldInsertText : 1;
+  unsigned _delegateRespondsToShouldReplaceWithText : 1;
+  unsigned _fieldEditorReentrancyGuard : 1;
+  unsigned _reserved : 22;
 }
 // in a protocol: @property(assign, nonatomic) CGPoint autoscrollContentOffset;
 +(id)activeFieldEditor;

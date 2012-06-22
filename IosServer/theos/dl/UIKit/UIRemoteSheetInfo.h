@@ -8,12 +8,12 @@
 @class UIView, UIRemoteView;
 
 @interface UIRemoteSheetInfo : NSObject {
-	UIView* _sheetView;
-	UIRemoteView* _remoteView;
-	id _delegate;
-	SEL _selector;
-	void* _context;
-	int _returnCode;
+  UIView* _sheetView;
+  UIRemoteView* _remoteView;
+  id _delegate;
+  SEL _selector;
+  void* _context;
+  int _returnCode;
 }
 @property(retain, nonatomic) UIView* sheetView;
 @property(retain, nonatomic) UIRemoteView* remoteView;

@@ -11,8 +11,8 @@
 
 
 @interface SBPasscodeAlertItem : SBAlertItem <UITextFieldDelegate> {
-	int _mode;
-	int _unlockScreenType;
+  int _mode;
+  int _unlockScreenType;
 }
 -(id)initWithPasscodeMode:(int)passcodeMode unlockScreenType:(int)type;
 -(void)alertSheet:(id)sheet buttonClicked:(int)clicked;

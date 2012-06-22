@@ -11,8 +11,8 @@
 @class MessageLibrary, Message;
 
 @interface DALibraryConsumerFactory : NSObject <MessageDataConsumerFactory> {
-	MessageLibrary* _library;
-	Message* _message;
+  MessageLibrary* _library;
+  Message* _message;
 }
 @property(retain, nonatomic) MessageLibrary* library;
 @property(retain, nonatomic) Message* message;

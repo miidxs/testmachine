@@ -10,8 +10,8 @@
 
 
 @interface MFAtomBackgroundView : UIView {
-	unsigned _selected : 1;
-	unsigned _disclosure : 1;
+  unsigned _selected : 1;
+  unsigned _disclosure : 1;
 }
 -(void)drawRect:(CGRect)rect;
 -(BOOL)selected;

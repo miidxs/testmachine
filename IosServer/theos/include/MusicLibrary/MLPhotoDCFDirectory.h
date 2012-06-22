@@ -12,10 +12,10 @@
 
 @interface MLPhotoDCFDirectory : MLPhotoDCFObject {
 @private
-	MLPhotoDCIMDirectory* _dcimDirectory;
-	CFDictionaryRef _fileGroupsByNumber;
-	int _maxFileGroupNumber;
-	int _lastUsedFileGroupNumber;
+  MLPhotoDCIMDirectory* _dcimDirectory;
+  CFDictionaryRef _fileGroupsByNumber;
+  int _maxFileGroupNumber;
+  int _lastUsedFileGroupNumber;
 }
 +(void)initializeFileGroupPrefixAndExtensions;
 +(id)fileGroupRequiredEmptyPrefixes;

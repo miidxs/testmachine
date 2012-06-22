@@ -6,17 +6,17 @@
 #import <Availability2.h>
 
 typedef enum {
-	UIBezierPathRoundedLeftEdge = 1,
-	UIBezierPathRoundedTopEdge = 2,
-	UIBezierPathRoundedRightEdge = 4,
-	UIBezierPathRoundedBottomEdge = 8,
+  UIBezierPathRoundedLeftEdge = 1,
+  UIBezierPathRoundedTopEdge = 2,
+  UIBezierPathRoundedRightEdge = 4,
+  UIBezierPathRoundedBottomEdge = 8,
 } UIBezierPathRoundedEdges;
 
 typedef enum {
-	UIBezierPathRoundedTopLeftCorner = 1,
-	UIBezierPathRoundedTopRightCorner = 2,
-	UIBezierPathRoundedBottomLeftCorner = 4,
-	UIBezierPathRoundedBottomRightCorner = 8,
+  UIBezierPathRoundedTopLeftCorner = 1,
+  UIBezierPathRoundedTopRightCorner = 2,
+  UIBezierPathRoundedBottomLeftCorner = 4,
+  UIBezierPathRoundedBottomRightCorner = 8,
 } UIBezierPathRoundedCorners;
 
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
@@ -49,8 +49,8 @@ typedef enum {
 #import <Foundation/NSObject.h>
 
 @interface UIBezierPath : NSObject {
-	CGPathRef _pathRef;
-	float _width;
+  CGPathRef _pathRef;
+  float _width;
 }
 +(id)bezierPath;
 +(id)bezierPathForBottomOfRect:(CGRect)rect withCornerRadius:(float)cornerRadius;

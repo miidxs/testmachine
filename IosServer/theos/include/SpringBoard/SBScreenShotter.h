@@ -9,7 +9,7 @@
 
 
 @interface SBScreenShotter : NSObject {
-	BOOL _writingScreenshot;
+  BOOL _writingScreenshot;
 }
 @property(assign) BOOL writingScreenshot;
 +(id)sharedInstance;

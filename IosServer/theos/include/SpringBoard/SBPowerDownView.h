@@ -11,11 +11,11 @@
 @class TPBottomButtonBar, NSTimer, SBPowerDownController, TPTopLockBar;
 
 @interface SBPowerDownView : SBAlertDisplay {
-	UIView* _dimView;
-	TPTopLockBar* _lockView;
-	TPBottomButtonBar* _cancelView;
-	SBPowerDownController* _powerDownController;
-	NSTimer* _autoDismissTimer;
+  UIView* _dimView;
+  TPTopLockBar* _lockView;
+  TPBottomButtonBar* _cancelView;
+  SBPowerDownController* _powerDownController;
+  NSTimer* _autoDismissTimer;
 }
 // inherited: -(id)initWithFrame:(CGRect)frame;
 // inherited: -(void)dealloc;

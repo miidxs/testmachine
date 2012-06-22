@@ -12,21 +12,21 @@
 @class UIImageView, UIImage, UILabel;
 
 @interface SBBatteryChargingView : UIView {
-	int _type;
-	UIImageView* _topBatteryView;
-	UIImageView* _bottomBatteryView;
+  int _type;
+  UIImageView* _topBatteryView;
+  UIImageView* _bottomBatteryView;
 #if __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_3_2
-	UIImageView* _reflectionView;
+  UIImageView* _reflectionView;
 #endif
-	UIImage* _lastBatteryImage;
+  UIImage* _lastBatteryImage;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	UILabel* _percentLabel;
+  UILabel* _percentLabel;
 #endif
-	int _lastBatteryIndex;
+  int _lastBatteryIndex;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	int _lastBatteryPercentage;
+  int _lastBatteryPercentage;
 #endif
-	unsigned _showReflection : 1;
+  unsigned _showReflection : 1;
 }
 +(CGSize)defaultSizeForType:(int)type;
 +(float)batteryHeightForType:(int)type;

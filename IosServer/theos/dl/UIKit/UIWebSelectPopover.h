@@ -11,11 +11,11 @@
 __attribute__((visibility("hidden")))
 @interface UIWebSelectPopover : NSObject <UIWebSelectControl, UIPopoverControllerDelegate> {
 @private
-	UIWebSelectTableViewController* _tableViewController;
-	UIPopoverController* _popoverController;
-	UIKeyboard* _keyboard;
-	float _popoverHeight;
-	BOOL _isRotating;
+  UIWebSelectTableViewController* _tableViewController;
+  UIPopoverController* _popoverController;
+  UIKeyboard* _keyboard;
+  float _popoverHeight;
+  BOOL _isRotating;
 }
 @property(retain, nonatomic) UIWebSelectTableViewController* _tableViewController;
 @property(retain, nonatomic) UIPopoverController* _popoverController;

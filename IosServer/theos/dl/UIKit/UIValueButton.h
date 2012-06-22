@@ -9,18 +9,18 @@
 @class UIImage, NSString, UIColor;
 
 @interface UIValueButton : UIThreePartButton {
-	int _displayStyle;
-	NSString* _labelString;
-	NSString* _valueString;
-	NSString* _valueStyle;
-	NSString* _valueHighlightStyle;
-	UIImage* _labelBadgeImage;
-	float _disclosureAlpha;
-	UIColor* _valueColor;
-	struct {
-		unsigned style : 1;
-		unsigned reserved : 31;
-	} _valueButtonFlags;
+  int _displayStyle;
+  NSString* _labelString;
+  NSString* _valueString;
+  NSString* _valueStyle;
+  NSString* _valueHighlightStyle;
+  UIImage* _labelBadgeImage;
+  float _disclosureAlpha;
+  UIColor* _valueColor;
+  struct {
+    unsigned style : 1;
+    unsigned reserved : 31;
+  } _valueButtonFlags;
 }
 +(float)defaultHeight;
 +(CGRect)frameRectForOpaqueContentRect:(CGRect)opaqueContentRect;

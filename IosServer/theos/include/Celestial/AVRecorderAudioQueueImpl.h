@@ -12,25 +12,25 @@
 @class NSMutableDictionary;
 
 @interface AVRecorderAudioQueueImpl : NSObject <AVRecorderImpl> {
-	BOOL _isActive;
-	BOOL _isRecording;
-	BOOL _isWriting;
-	NSMutableDictionary* _attributes;
-	unsigned _fileType;
-	unsigned _audioCodec;
-	long long _maxPCMFramesToRecord;
-	BOOL _haveRecordedMaxPCMFrames;
-	AudioStreamBasicDescription _recordingFormat;
-	OpaqueAudioFileID* _audioFile;
-	OpaqueAudioQueue* _audioQueue;
-	unsigned _numDeviceChannels;
-	AudioQueueLevelMeterState* _audioLevels;
-	AudioQueueLevelMeterState* _audioLevelsDB;
-	unsigned _totalBytesRecorded;
-	unsigned _totalPacketsRecorded;
-	unsigned _totalFramesRecorded;
-	AudioQueueBuffer* _buffers[3];
-	BOOL _bufferUsed[3];
+  BOOL _isActive;
+  BOOL _isRecording;
+  BOOL _isWriting;
+  NSMutableDictionary* _attributes;
+  unsigned _fileType;
+  unsigned _audioCodec;
+  long long _maxPCMFramesToRecord;
+  BOOL _haveRecordedMaxPCMFrames;
+  AudioStreamBasicDescription _recordingFormat;
+  OpaqueAudioFileID* _audioFile;
+  OpaqueAudioQueue* _audioQueue;
+  unsigned _numDeviceChannels;
+  AudioQueueLevelMeterState* _audioLevels;
+  AudioQueueLevelMeterState* _audioLevelsDB;
+  unsigned _totalBytesRecorded;
+  unsigned _totalPacketsRecorded;
+  unsigned _totalFramesRecorded;
+  AudioQueueBuffer* _buffers[3];
+  BOOL _bufferUsed[3];
 }
 -(id)init;
 -(id)initWithAttributes:(id)attributes;

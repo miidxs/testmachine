@@ -11,7 +11,7 @@
 
 @interface MPMediaPlaylist : MPMediaItemCollection {
 @private
-	MPMediaPlaylistInternal* _playlistInternal;
+  MPMediaPlaylistInternal* _playlistInternal;
 }
 +(BOOL)canFilterByProperty:(id)property;
 +(void)_createFilterableDictionary;

@@ -11,13 +11,13 @@
 @protocol VMUMemory;
 
 @interface VMUDwarfExtractor : VMUSymbolExtractor {
-	BOOL _shouldUseTaskBasedAddresses;
-	NSMutableDictionary* _abbrevDicts;
-	id<VMUMemory> _infoMem;
-	id<VMUMemory> _abbrevMem;
-	id<VMUMemory> _lineMem;
-	id<VMUMemory> _strMem;
-	VMUMachOHeader* _hdr;
+  BOOL _shouldUseTaskBasedAddresses;
+  NSMutableDictionary* _abbrevDicts;
+  id<VMUMemory> _infoMem;
+  id<VMUMemory> _abbrevMem;
+  id<VMUMemory> _lineMem;
+  id<VMUMemory> _strMem;
+  VMUMachOHeader* _hdr;
 }
 +(VMUDwarfExtractor*)dwarfExtractorWithMachOHeader:(id)machOHeader;
 -(id)initWithMachOHeader:(id)machOHeader;

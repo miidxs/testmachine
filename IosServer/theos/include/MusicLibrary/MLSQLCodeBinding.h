@@ -13,15 +13,15 @@
 __attribute__((visibility("hidden")))
 @interface MLSQLCodeBinding : NSObject {
 @private
-	unsigned _valueType;
-	union {
-		NSString* stringValue;
-		NSData* dataValue;
-		unsigned uint32Value;
-		unsigned long long uint64Value;
-		long long int64Value;
-		long long rowidValue;
-	} _value;
+  unsigned _valueType;
+  union {
+    NSString* stringValue;
+    NSData* dataValue;
+    unsigned uint32Value;
+    unsigned long long uint64Value;
+    long long int64Value;
+    long long rowidValue;
+  } _value;
 }
 +(id)placeholder;
 +(id)bindingWithUInt32:(unsigned)uint32;

@@ -10,13 +10,13 @@
 @class NSDictionary, NSNumber, NSString;
 
 @interface ASChangedCollectionLeaf : ASItem {
-	int _changeType;
-	NSString* _serverID;
-	NSString* _clientID;
-	NSNumber* _status;
-	BOOL _isResponse;
-	BOOL _validateOpeningTokens;
-	NSDictionary* _applicationData;
+  int _changeType;
+  NSString* _serverID;
+  NSString* _clientID;
+  NSNumber* _status;
+  BOOL _isResponse;
+  BOOL _validateOpeningTokens;
+  NSDictionary* _applicationData;
 }
 // inherited: +(BOOL)acceptsTopLevelLeaves;
 // inherited: +(BOOL)parsingLeafNode;

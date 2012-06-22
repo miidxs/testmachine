@@ -12,15 +12,15 @@
 @class UIKeyboard, SBTextDisplayView, UINavigationBar, UITextField, UIScroller;
 
 @interface SBAlertInputView : SBSlidingAlertDisplay <UITextFieldDelegate> {
-	UITextField* _inputTextField;
-	UIKeyboard* _keyboard;
-	SBTextDisplayView* _textDisplay;
-	UIScroller* _scroller;
-	UINavigationBar* _bar;
-	BOOL _digitsOnly;
-	id _delegate;
-	int _minLength;
-	int _maxLength;
+  UITextField* _inputTextField;
+  UIKeyboard* _keyboard;
+  SBTextDisplayView* _textDisplay;
+  UIScroller* _scroller;
+  UINavigationBar* _bar;
+  BOOL _digitsOnly;
+  id _delegate;
+  int _minLength;
+  int _maxLength;
 }
 // inherited: +(id)createTopBarForInstance:(id)instance;
 // inherited: +(id)createBottomBarForInstance:(id)instance;

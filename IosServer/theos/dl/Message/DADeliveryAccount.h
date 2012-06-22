@@ -10,7 +10,7 @@
 @class DAMailAccount;
 
 @interface DADeliveryAccount : DeliveryAccount {
-	DAMailAccount* _DAMailAccount;
+  DAMailAccount* _DAMailAccount;
 }
 -(id)initWithDAMailAccount:(id)damailAccount;
 // inherited: -(Class)deliveryClass;

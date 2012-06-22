@@ -9,7 +9,7 @@
 __attribute__((visibility("hidden")))
 @interface UITextRangeImpl : UITextRange {
 @private
-	DOMRange* _domRange;
+  DOMRange* _domRange;
 }
 @property(retain, nonatomic) DOMRange* domRange;
 +(id)wrapDOMRange:(id)range;

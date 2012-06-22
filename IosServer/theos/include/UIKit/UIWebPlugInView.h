@@ -11,10 +11,10 @@
 @class UIWebDocumentView, UIView;
 
 @interface UIWebPlugInView : WAKView {
-	UIWebDocumentView* _webView;
-	UIView* _uiView;
-	CFRunLoopObserverRef _mainRunLoopDrawObserver;
-	BOOL _isFullScreen;
+  UIWebDocumentView* _webView;
+  UIView* _uiView;
+  CFRunLoopObserverRef _mainRunLoopDrawObserver;
+  BOOL _isFullScreen;
 }
 -(id)initWithWebView:(id)webView plugInView:(id)view;
 // inherited: -(void)dealloc;

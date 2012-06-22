@@ -12,15 +12,15 @@
 
 @interface SBIconModel : NSObject {
 #if __IPHONE_OS_VERSION_MAX_ALLOWED < __IPHONE_3_2
-	NSString* _iconCachePath;
-	NSString* _smallIconCachePath;
+  NSString* _iconCachePath;
+  NSString* _smallIconCachePath;
 #endif
-	NSDictionary* _previousIconState;
-	NSMutableArray* _iconLists;
-	SBButtonBar* _buttonBar;
-	NSMutableDictionary* _allIcons;
-	NSSet* _hiddenIconTags;
-	NSSet* _visibleIconTags;
+  NSDictionary* _previousIconState;
+  NSMutableArray* _iconLists;
+  SBButtonBar* _buttonBar;
+  NSMutableDictionary* _allIcons;
+  NSSet* _hiddenIconTags;
+  NSSet* _visibleIconTags;
 }
 +(SBIconModel*)sharedInstance;
 +(NSInteger)maxIconListCount;
@@ -42,7 +42,7 @@
 -(NSArray*)allIcons;
 -(SBIcon*)iconForDisplayIdentifier:(NSString*)displayIdentifier;
 -(SBIcon*)iconForDisplayIdentifier:(NSString*)displayIdentifier andSpotlightCategory:(id)category;
--(NSDictionary*)iconState;	// {iconLists=..., buttonBar=...}
+-(NSDictionary*)iconState;  // {iconLists=..., buttonBar=...}
 -(void)noteIconStateChangedExternally;
 -(SBButtonBar*)buttonBar;
 -(NSArray*)iconLists;

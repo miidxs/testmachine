@@ -12,12 +12,12 @@
 
 @interface MPVolumeSlider : UISlider {
 @private
-	NSTimer* _commitTimer;
-	NSString* _volumeAudioCategory;
-	int _style;
-	UILabel* _routeNameLabel;
-	UIImageView* _thumbImageView;
-	UIImageView* _thumbMaskImageView;
+  NSTimer* _commitTimer;
+  NSString* _volumeAudioCategory;
+  int _style;
+  UILabel* _routeNameLabel;
+  UIImageView* _thumbImageView;
+  UIImageView* _thumbMaskImageView;
 }
 @property(readonly, assign, nonatomic) int style;
 @property(copy, nonatomic) NSString* volumeAudioCategory;

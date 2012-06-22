@@ -8,7 +8,7 @@
 @class NSMutableArray;
 
 @interface UIWebSelectionGraph : NSObject {
-	NSMutableArray* _selectionNodes;
+  NSMutableArray* _selectionNodes;
 }
 -(id)init;
 -(void)dealloc;

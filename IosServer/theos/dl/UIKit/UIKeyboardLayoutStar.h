@@ -11,86 +11,86 @@
 
 __attribute__((visibility("hidden")))
 @interface UIKeyboardLayoutStar : UIKeyboardLayout {
-	UIKBKeyboard* m_keyboard;
-	UIKBKeyplane* m_keyplane;
-	NSString* m_keyboardName;
-	NSString* m_keyplaneName;
-	int m_appearance;
-	UIKBKey* m_activeKey;
+  UIKBKeyboard* m_keyboard;
+  UIKBKeyplane* m_keyplane;
+  NSString* m_keyboardName;
+  NSString* m_keyplaneName;
+  int m_appearance;
+  UIKBKey* m_activeKey;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED < __IPHONE_3_2
-	CGPoint m_dragPoint;
+  CGPoint m_dragPoint;
 #endif
-	UIKBKeyplaneView* m_keyplaneView;
+  UIKBKeyplaneView* m_keyplaneView;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	UIView* m_savedKeyplaneView;
-	UIView* m_animationKeyplaneBackground;
+  UIView* m_savedKeyplaneView;
+  UIView* m_animationKeyplaneBackground;
 #endif
-	int m_keyboardType;
+  int m_keyboardType;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	UIView* m_animationBackgroundView;
-	UIView* m_animationFromView;
-	UIView* m_animationToView;
-	CGPoint m_initialDragPoint;
-	CGPoint m_dragPrevPoint;
-	float m_dragValues[4];
-	float m_dragVelocity;
-	double m_prevTouchUpTime;
-	int m_prevUpActions;	
+  UIView* m_animationBackgroundView;
+  UIView* m_animationFromView;
+  UIView* m_animationToView;
+  CGPoint m_initialDragPoint;
+  CGPoint m_dragPrevPoint;
+  float m_dragValues[4];
+  float m_dragVelocity;
+  double m_prevTouchUpTime;
+  int m_prevUpActions;  
 #endif
 @package
-	NSMutableDictionary* m_keyboards;
+  NSMutableDictionary* m_keyboards;
 @protected
-	NSMutableDictionary* m_states;
-	NSMutableDictionary* m_allKeys;
-	NSMutableDictionary* m_renderedKeys;
-	NSMutableDictionary* m_allKeyplaneViews;
-	NSMutableSet* m_variantKeyTokens;
+  NSMutableDictionary* m_states;
+  NSMutableDictionary* m_allKeys;
+  NSMutableDictionary* m_renderedKeys;
+  NSMutableDictionary* m_allKeyplaneViews;
+  NSMutableSet* m_variantKeyTokens;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	NSMutableSet* m_validInputStrings;
+  NSMutableSet* m_validInputStrings;
 #endif
-	NSString* m_localizedInputMode;
-	NSMutableArray* m_keyIndexMap;
-	NSMutableDictionary* m_activatedKeys;
+  NSString* m_localizedInputMode;
+  NSMutableArray* m_keyIndexMap;
+  NSMutableDictionary* m_activatedKeys;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	CFDictionaryRef m_extendedTouchInfoMap;
+  CFDictionaryRef m_extendedTouchInfoMap;
 #endif
-	NSTimer* m_activatedTimer;
-	int m_preferredTrackingChangeCount;
+  NSTimer* m_activatedTimer;
+  int m_preferredTrackingChangeCount;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	int m_shiftTrackingChangeCount;
+  int m_shiftTrackingChangeCount;
 #endif
-	USetRef m_accentInfo;
-	USetRef m_hasAccents;
-	id m_spaceTarget;
-	SEL m_spaceAction;
-	SEL m_spaceLongAction;
-	id m_returnTarget;
-	SEL m_returnAction;
-	SEL m_returnLongAction;
-	id m_deleteTarget;
-	SEL m_deleteAction;
-	SEL m_deleteLongAction;
-	BOOL m_secureTextEntry;
-	BOOL m_shift;
+  USetRef m_accentInfo;
+  USetRef m_hasAccents;
+  id m_spaceTarget;
+  SEL m_spaceAction;
+  SEL m_spaceLongAction;
+  id m_returnTarget;
+  SEL m_returnAction;
+  SEL m_returnLongAction;
+  id m_deleteTarget;
+  SEL m_deleteAction;
+  SEL m_deleteLongAction;
+  BOOL m_secureTextEntry;
+  BOOL m_shift;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	BOOL m_autoshift;
+  BOOL m_autoshift;
 #endif
-	BOOL m_settingShift;
-	BOOL m_didLongPress;
-	BOOL m_dragged;
-	BOOL m_dragChangedKey;
-	BOOL m_touchDownInMoreKey;
+  BOOL m_settingShift;
+  BOOL m_didLongPress;
+  BOOL m_dragged;
+  BOOL m_dragChangedKey;
+  BOOL m_touchDownInMoreKey;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	BOOL m_wasShifted;
-	BOOL m_dragDismissStarted;
-	UISwipeGestureRecognizer* m_rightSwipeRecognizer;
-	UISwipeGestureRecognizer* m_leftSwipeRecognizer;
-	UISwipeGestureRecognizer* m_upSwipeRecognizer;
-	UISwipeGestureRecognizer* m_flickGestureRecognizer;
-	NSSet* m_flickKeys;
-	BOOL m_preRotateShift;
-	NSString* m_preRotateKeyplaneName;
-#endif	
+  BOOL m_wasShifted;
+  BOOL m_dragDismissStarted;
+  UISwipeGestureRecognizer* m_rightSwipeRecognizer;
+  UISwipeGestureRecognizer* m_leftSwipeRecognizer;
+  UISwipeGestureRecognizer* m_upSwipeRecognizer;
+  UISwipeGestureRecognizer* m_flickGestureRecognizer;
+  NSSet* m_flickKeys;
+  BOOL m_preRotateShift;
+  NSString* m_preRotateKeyplaneName;
+#endif  
 }
 @property(readonly, assign, nonatomic) UIKBKeyboard* keyboard;
 @property(readonly, assign, nonatomic) UIKBKeyplane* keyplane;

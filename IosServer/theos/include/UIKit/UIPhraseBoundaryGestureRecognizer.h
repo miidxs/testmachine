@@ -10,11 +10,11 @@
 @protocol UITextSelectingContainer;
 
 @interface UIPhraseBoundaryGestureRecognizer : UILongPressGestureRecognizer {
-	UIView<UITextSelectingContainer>* _containerView;
-	UIDelayedAction* _secondDelayTimer;
-	double _secondDelay;
-	BOOL _secondDelayElapsed;
-	id _userData;
+  UIView<UITextSelectingContainer>* _containerView;
+  UIDelayedAction* _secondDelayTimer;
+  double _secondDelay;
+  BOOL _secondDelayElapsed;
+  id _userData;
 }
 @property(assign, nonatomic) UIView<UITextSelectingContainer>* containerView;
 @property(assign, nonatomic) double secondDelay;

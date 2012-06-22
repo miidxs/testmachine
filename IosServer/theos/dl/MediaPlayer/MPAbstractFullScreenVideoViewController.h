@@ -11,10 +11,10 @@
 
 
 @interface MPAbstractFullScreenVideoViewController : MPVideoViewController <MPSwipableViewDelegate> {
-	unsigned _requestExitAfterHidingControls : 1;
-	unsigned _rotateAfterHidingControls : 1;
-	unsigned _showControlsAfterRotate : 1;
-	unsigned _autoHidingForItemChange : 1;
+  unsigned _requestExitAfterHidingControls : 1;
+  unsigned _rotateAfterHidingControls : 1;
+  unsigned _showControlsAfterRotate : 1;
+  unsigned _autoHidingForItemChange : 1;
 }
 -(id)init;
 -(void)dealloc;

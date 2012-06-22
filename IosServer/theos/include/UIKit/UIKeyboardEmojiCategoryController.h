@@ -9,9 +9,9 @@
 @protocol UIKeyboardEmojiController;
 
 @interface UIKeyboardEmojiCategoryController : NSObject {
-	id<UIKeyboardEmojiController> emojiController;
-	NSMutableDictionary* categories;
-	NSMutableDictionary* _defaultsData;
+  id<UIKeyboardEmojiController> emojiController;
+  NSMutableDictionary* categories;
+  NSMutableDictionary* _defaultsData;
 }
 @property(retain) NSDictionary* defaultsData;
 -(id)initWithController:(id)controller;

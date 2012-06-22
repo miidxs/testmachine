@@ -17,13 +17,13 @@
 typedef struct __CTCall* CTCallRef;
 
 typedef struct SBApplicationTimes {
-	double _field1;
-	double _field2;
-	double _field3;
-	double _field4;
-	double _field5;
-	double _field6;
-	double _field7;
+  double _field1;
+  double _field2;
+  double _field3;
+  double _field4;
+  double _field5;
+  double _field6;
+  double _field7;
 } SBApplicationTimes;
 
 typedef struct _MISProfile* MISProfileRef;
@@ -37,9 +37,9 @@ typedef struct __WiFiDeviceClient WiFiDeviceClient;
 typedef struct __WiFiNetwork WiFiNetwork;
 
 typedef struct {
-	unsigned char voicemailAvailable;
-	int voicemailCount;
-	long long voicemailID;
+  unsigned char voicemailAvailable;
+  int voicemailCount;
+  long long voicemailID;
 } XXStruct_EX3dgA;
 
 typedef struct CalEventExpirationMonitor CalEventExpirationMonitor;
@@ -47,8 +47,8 @@ typedef struct CalEventExpirationMonitor CalEventExpirationMonitor;
 typedef struct CalAlarmEngine CalAlarmEngine;
 
 typedef struct {
-	double _field1;
-	double _field2;
+  double _field1;
+  double _field2;
 } XXStruct_UNJ7RC;
 
 

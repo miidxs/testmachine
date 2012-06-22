@@ -8,9 +8,9 @@
 @class NSIndexSet;
 
 @interface UIGroupDeletionItem : NSObject {
-	unsigned _lastIndex;
-	int _group;
-	NSIndexSet* _indexes;
+  unsigned _lastIndex;
+  int _group;
+  NSIndexSet* _indexes;
 }
 -(id)initWithGroup:(int)group;
 -(id)initWithGroup:(int)group andIndexes:(id)indexes;

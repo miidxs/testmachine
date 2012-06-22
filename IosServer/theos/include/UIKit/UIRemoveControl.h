@@ -9,21 +9,21 @@
 @class NSString, UIRemoveControlMinusButton;
 
 @interface UIRemoveControl : UIView {
-	UIView* _target;
-	id _delegate;
-	UIView* _removeConfirmationButton;
-	UIRemoveControlMinusButton* _minusButton;
-	NSString* _label;
-	struct {
-		unsigned removeButtonVisible : 1;
-		unsigned removeConfirmationVisible : 1;
-		unsigned removedFromTargetWhenHidden : 1;
-		unsigned disableToggleRotate : 1;
-		unsigned tableCellTarget : 1;
-		unsigned alwaysHideRemoveButton : 1;
-		unsigned editingStyle : 3;
-		unsigned reserved : 23;
-	} _removeControlFlags;
+  UIView* _target;
+  id _delegate;
+  UIView* _removeConfirmationButton;
+  UIRemoveControlMinusButton* _minusButton;
+  NSString* _label;
+  struct {
+    unsigned removeButtonVisible : 1;
+    unsigned removeConfirmationVisible : 1;
+    unsigned removedFromTargetWhenHidden : 1;
+    unsigned disableToggleRotate : 1;
+    unsigned tableCellTarget : 1;
+    unsigned alwaysHideRemoveButton : 1;
+    unsigned editingStyle : 3;
+    unsigned reserved : 23;
+  } _removeControlFlags;
 }
 +(float)removeButtonWidth;
 +(BOOL)removeConfirmationsVisibleInView:(id)view;

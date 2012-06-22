@@ -11,13 +11,13 @@
 @class TPBottomButtonBar, TPCallWaitingButton, TPPushButton;
 
 @interface SBCallWaitingAlertDisplay : SBCallAlertDisplay {
-	TPCallWaitingButton* _ignoreButton;
-	TPCallWaitingButton* _answerButton;
-	TPPushButton* _answerAndReleaseButton;
-	TPBottomButtonBar* _animatingBottomBar;
-	unsigned _didRelease : 1;
-	unsigned _didHeldRelease : 1;
-	unsigned _setupForThree : 1;
+  TPCallWaitingButton* _ignoreButton;
+  TPCallWaitingButton* _answerButton;
+  TPPushButton* _answerAndReleaseButton;
+  TPBottomButtonBar* _animatingBottomBar;
+  unsigned _didRelease : 1;
+  unsigned _didHeldRelease : 1;
+  unsigned _setupForThree : 1;
 }
 // inherited: +(id)createBottomBarForInstance:(id)instance;
 +(id)_createBottomButtonBarForDisplay:(id)display;

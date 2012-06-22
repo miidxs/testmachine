@@ -10,12 +10,12 @@
 
 
 @interface VMUTraceRecord : NSObject {
-	unsigned seqnum;
-	unsigned type;
-	unsigned address;
-	unsigned argument;
-	unsigned depth;
-	unsigned* frames;
+  unsigned seqnum;
+  unsigned type;
+  unsigned address;
+  unsigned argument;
+  unsigned depth;
+  unsigned* frames;
 }
 -(id)initWithLoggingRecord:(XXStruct_qFPbxC*)loggingRecord forTask:(unsigned)task;
 -(id)initWithBacktrace:(id)backtrace forTask:(unsigned)task;

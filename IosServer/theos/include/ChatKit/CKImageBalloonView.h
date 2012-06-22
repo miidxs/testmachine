@@ -9,8 +9,8 @@
 @class UIImage;
 
 @interface CKImageBalloonView : CKBalloonView {
-	UIImage* _img;
-	UIImage* _balloonImage;
+  UIImage* _img;
+  UIImage* _balloonImage;
 }
 +(CGPoint)offsetForBubbleInsetAtPoint:(CGPoint)point;
 +(float)additionalHeightForBubbleWhenInsetAtPoint:(CGPoint)point;

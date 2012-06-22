@@ -11,9 +11,9 @@
 @class SBInstalledApplicationIcon, UIPushButton;
 
 @interface SBAppRatingsAlertItem : SBAlertItem <UIModalViewDelegate> {
-	SBInstalledApplicationIcon* _icon;
-	UIPushButton* _rateButton;
-	BOOL _uninstallOnDismiss;
+  SBInstalledApplicationIcon* _icon;
+  UIPushButton* _rateButton;
+  BOOL _uninstallOnDismiss;
 }
 -(id)initWithIcon:(id)icon uninstallOnDismiss:(BOOL)dismiss;
 // inherited: -(void)dealloc;

@@ -7,7 +7,7 @@
 
 
 @interface NSInvocationReflector : NSProxy {
-	id _target;
+  id _target;
 }
 -(id)initWithTarget:(id)target;
 -(void)dealloc;

@@ -10,8 +10,8 @@
 @class NSTimer, NSDate;
 
 @interface _CPPowerAssertionThread : NSThread {
-	NSTimer* _timer;
-	NSDate* _earliest;
+  NSTimer* _timer;
+  NSDate* _earliest;
 }
 // inherited: -(void)main;
 -(void)addAssertion:(id)assertion;

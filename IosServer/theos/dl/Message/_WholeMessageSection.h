@@ -11,7 +11,7 @@
 @class NSData;
 
 @interface _WholeMessageSection : NSObject <MessageDataSection> {
-	NSData* _data;
+  NSData* _data;
 }
 @property(retain, nonatomic) NSData* data;
 // in a protocol: -(BOOL)isPartial;

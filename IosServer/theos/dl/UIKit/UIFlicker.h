@@ -9,14 +9,14 @@
 @class UIView;
 
 @interface UIFlicker : NSObject {
-	UIView* _target;
-	CGPoint _startLocation;
-	int _throwIterations;
-	id _delegate;
-	int _mouseUpCount;
-	int _mouseDraggedCount;
-	float _delay;
-	CGPoint _offset;
+  UIView* _target;
+  CGPoint _startLocation;
+  int _throwIterations;
+  id _delegate;
+  int _mouseUpCount;
+  int _mouseDraggedCount;
+  float _delay;
+  CGPoint _offset;
 }
 -(void)_mouseDraggedMemberListTest;
 -(void)_mouseUpMemberListTest;

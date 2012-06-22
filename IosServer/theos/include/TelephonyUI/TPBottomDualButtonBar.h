@@ -12,8 +12,8 @@
 @class TPPushButton;
 
 @interface TPBottomDualButtonBar : TPBottomButtonBar {
-	TPPushButton* _button2;
-	unsigned _drawSeparator : 1;
+  TPPushButton* _button2;
+  unsigned _drawSeparator : 1;
 }
 -(id)initForIncomingCallWithFrame:(CGRect)frame;
 -(id)initForCallFailureWithFrame:(CGRect)frame;

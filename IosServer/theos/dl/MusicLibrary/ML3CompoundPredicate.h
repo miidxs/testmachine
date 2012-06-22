@@ -12,7 +12,7 @@
 
 @interface ML3CompoundPredicate : ML3Predicate {
 @private
-	NSArray* _predicates;
+  NSArray* _predicates;
 }
 @property(readonly, assign, nonatomic) NSString* compoundOperatorJoiner;
 @property(retain, nonatomic) NSArray* predicates;

@@ -10,18 +10,18 @@
 @class NSCalendarDate, NSString;
 
 @interface Alarm : NSObject {
-	unsigned _alarmHour;
-	unsigned _alarmMinute;
-	int _alarmSetting;
-	NSString* _alarmSoundIdentifier;
-	NSString* _alarmTitle;
-	NSCalendarDate* _snoozeUntilDate;
-	unsigned _isActive : 1;
-	unsigned _repeats : 1;
-	unsigned _allowsSnooze : 1;
-	unsigned _dontSendUpdate : 1;
-	unsigned _dontStopSnoozing : 1;
-	unsigned _reserved : 27;
+  unsigned _alarmHour;
+  unsigned _alarmMinute;
+  int _alarmSetting;
+  NSString* _alarmSoundIdentifier;
+  NSString* _alarmTitle;
+  NSCalendarDate* _snoozeUntilDate;
+  unsigned _isActive : 1;
+  unsigned _repeats : 1;
+  unsigned _allowsSnooze : 1;
+  unsigned _dontSendUpdate : 1;
+  unsigned _dontStopSnoozing : 1;
+  unsigned _reserved : 27;
 }
 // inherited: -(id)description;
 -(void)_update;

@@ -38,19 +38,19 @@ extern "C" {
 #endif
 
 #include <CoreFoundation/CoreFoundation.h>
-#include <Availability.h>	// for __OSX_AVAILABLE_STARTING.
+#include <Availability.h> // for __OSX_AVAILABLE_STARTING.
 #include <mach/mig.h>
-	
-	typedef CFRunLoopSourceRef CPMIGServerSourceRef;
-	
-	CPMIGServerSourceRef CPCreateMIGServerSource(mig_subsystem_t subsystem, mach_port_t receivePort, CFIndex order);
-	CPMIGServerSourceRef CPCreateMIGServerSourceWithContext(mig_subsystem_t subsystem, mach_port_t receivePort, CFIndex order, void* context) __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_2_1);
-	
-	mach_port_t CPGetMachPortForMIGServerSource(CPMIGServerSourceRef source);
-	void* CPGetContextForCalloutCurrentMIGServerSource(CPMIGServerSourceRef source) __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_2_1);	///< BUG: The context source is shared among the whole thread.
-	
-	CPMIGServerSourceRef CPSHCreateMIGServerSource(void* unused1, CFIndex order, mig_subsystem_t subsystem, void* unused2, mach_port_t receivePort) __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_NA, __MAC_NA, __IPHONE_2_0, __IPHONE_3_0);	
-	
+  
+  typedef CFRunLoopSourceRef CPMIGServerSourceRef;
+  
+  CPMIGServerSourceRef CPCreateMIGServerSource(mig_subsystem_t subsystem, mach_port_t receivePort, CFIndex order);
+  CPMIGServerSourceRef CPCreateMIGServerSourceWithContext(mig_subsystem_t subsystem, mach_port_t receivePort, CFIndex order, void* context) __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_2_1);
+  
+  mach_port_t CPGetMachPortForMIGServerSource(CPMIGServerSourceRef source);
+  void* CPGetContextForCalloutCurrentMIGServerSource(CPMIGServerSourceRef source) __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_2_1); ///< BUG: The context source is shared among the whole thread.
+  
+  CPMIGServerSourceRef CPSHCreateMIGServerSource(void* unused1, CFIndex order, mig_subsystem_t subsystem, void* unused2, mach_port_t receivePort) __OSX_AVAILABLE_BUT_DEPRECATED(__MAC_NA, __MAC_NA, __IPHONE_2_0, __IPHONE_3_0); 
+  
 #if __cplusplus
 }
 #endif

@@ -10,7 +10,7 @@
 @class NSString;
 
 @interface ASWAPXMLPolicy : ASPolicy {
-	NSString* _data;
+  NSString* _data;
 }
 // inherited: +(BOOL)acceptsTopLevelLeaves;
 // inherited: +(BOOL)parsingLeafNode;

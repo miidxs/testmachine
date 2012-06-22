@@ -12,15 +12,15 @@
 @class NSMutableArray, NSMutableData, NSString;
 
 @interface SMTPConnection : Connection {
-	unsigned _lastResponseCode : 31;
-	unsigned _hideLoggedData : 1;
-	id _lastResponse;
-	NSMutableArray* _serviceExtensions;
-	NSMutableData* _mdata;
-	NSString* _domainName;
-	int _originalSocketTimeout;
-	int _lastCommandTimestamp;
-	id _delegate;
+  unsigned _lastResponseCode : 31;
+  unsigned _hideLoggedData : 1;
+  id _lastResponse;
+  NSMutableArray* _serviceExtensions;
+  NSMutableData* _mdata;
+  NSString* _domainName;
+  int _originalSocketTimeout;
+  int _lastCommandTimestamp;
+  id _delegate;
 }
 // inherited: +(void)initialize;
 // inherited: -(id)init;

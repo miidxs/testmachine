@@ -17,27 +17,27 @@
 __attribute__((visibility("hidden")))
 @interface UIClientRotationContext : NSObject {
 @private
-	UIView* _headerView;
-	UIView* _footerView;
-	UIView* _contentView;
-	UIView* _rotatingSnapshotView;
-	UIView* _footerStartSnapshotView;
-	UIView* _footerEndSnapshotView;
-	BOOL _headerWasHidden;
-	BOOL _footerWasHidden;
-	BOOL _contentWasHidden;
-	BOOL _skipFooterRotation;
-	BOOL _skipHeaderRotation;
-	int _fromOrientation;
-	int _toOrientation;
-	float _duration;
-	UIView* _headerSnapshotViewStart;
-	UIView* _footerSnapshotViewStart;
-	UIView* _contentSnapshotViewStart;
-	float _contentTopAdjustment;
-	id _rotatingClient;
-	XXStruct_Nw9VXC _rotationSettings;
-	UIWindow* _window;
+  UIView* _headerView;
+  UIView* _footerView;
+  UIView* _contentView;
+  UIView* _rotatingSnapshotView;
+  UIView* _footerStartSnapshotView;
+  UIView* _footerEndSnapshotView;
+  BOOL _headerWasHidden;
+  BOOL _footerWasHidden;
+  BOOL _contentWasHidden;
+  BOOL _skipFooterRotation;
+  BOOL _skipHeaderRotation;
+  int _fromOrientation;
+  int _toOrientation;
+  float _duration;
+  UIView* _headerSnapshotViewStart;
+  UIView* _footerSnapshotViewStart;
+  UIView* _contentSnapshotViewStart;
+  float _contentTopAdjustment;
+  id _rotatingClient;
+  XXStruct_Nw9VXC _rotationSettings;
+  UIWindow* _window;
 }
 @property(readonly, assign, nonatomic) id rotatingClient;
 @property(readonly, assign, nonatomic) UIView* contentView;

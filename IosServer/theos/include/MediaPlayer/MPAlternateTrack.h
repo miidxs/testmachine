@@ -10,9 +10,9 @@
 @class NSString;
 
 @interface MPAlternateTrack : NSObject {
-	int _trackID;
-	NSString* _languageCode;
-	NSString* _name;
+  int _trackID;
+  NSString* _languageCode;
+  NSString* _name;
 }
 +(id)copyOffTrack;
 +(id)threeCharCodesForEncodedISO639_2_T:(id)encodedISO639_2_T;

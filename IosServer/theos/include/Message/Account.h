@@ -12,17 +12,17 @@
 @class NSString;
 
 @interface Account : BasicAccount <WeaklyReferencedObject> {
-	unsigned _isOffline : 1;
-	unsigned _autosynchronizingEnabled : 1;
-	unsigned _isActive : 2;
+  unsigned _isOffline : 1;
+  unsigned _autosynchronizingEnabled : 1;
+  unsigned _isActive : 2;
 }
 // inherited: +(void)initialize;
-+(NSDictionary*)basicAccountProperties;	// {Type="MobileMe"; "Type String"="MobileMe"; "Short Type String"="MobileMe"; Class="iToolsAccount"};
++(NSDictionary*)basicAccountProperties; // {Type="MobileMe"; "Type String"="MobileMe"; "Short Type String"="MobileMe"; Class="iToolsAccount"};
 +(id)createAccountWithDictionary:(id)dictionary;
 +(BOOL)haveAccountsBeenConfigured;
 +(BOOL)isPredefinedAccountType;
 +(id)predefinedValueForKey:(id)key;
-+(NSArray*)supportedDataclasses;	// NSArray of NSStrings
++(NSArray*)supportedDataclasses;  // NSArray of NSStrings
 +(id)readAccountsUsingKey:(id)key;
 +(void)saveAccounts:(id)accounts usingKey:(id)key;
 +(void)saveAccountInfoToDefaults;

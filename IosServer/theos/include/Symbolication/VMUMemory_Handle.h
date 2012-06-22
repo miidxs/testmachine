@@ -12,10 +12,10 @@
 @class VMUArchitecture;
 
 @interface VMUMemory_Handle : VMUMemory_Base <VMUMemory> {
-	id<VMUMemory> _parent;
-	char* _data;
-	VMURange _addressRange;
-	VMUArchitecture* _architecture;
+  id<VMUMemory> _parent;
+  char* _data;
+  VMURange _addressRange;
+  VMUArchitecture* _architecture;
 }
 -(id)initWithParent:(id)parent addressRange:(VMURange)range architecture:(id)architecture data:(char*)data;
 // in a protocol: -(VMURange)addressRange;

@@ -14,7 +14,7 @@
 @class UIImage;
 
 @interface SBNowPlayingReflectionView : UIView {
-	UIImage* _image;
+  UIImage* _image;
 }
 // inherited: -(void)dealloc;
 -(void)setImage:(UIImage *)image;

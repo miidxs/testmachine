@@ -8,14 +8,14 @@
 @class NSArray, UIImage;
 
 @interface _UIImageViewExtendedStorage : NSObject {
-	BOOL _highlighted;
-	UIImage* _image;
-	UIImage* _highlightedImage;
-	NSArray* _animationImages;
-	NSArray* _highlightedAnimationImages;
-	double _animationDuration;
-	int _animationRepeatCount;
-	int _drawMode;
+  BOOL _highlighted;
+  UIImage* _image;
+  UIImage* _highlightedImage;
+  NSArray* _animationImages;
+  NSArray* _highlightedAnimationImages;
+  double _animationDuration;
+  int _animationRepeatCount;
+  int _drawMode;
 }
 -(void)dealloc;
 @end

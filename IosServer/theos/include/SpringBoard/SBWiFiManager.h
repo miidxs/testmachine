@@ -12,25 +12,25 @@
 @class NSMutableDictionary, NSTimer;
 
 @interface SBWiFiManager : NSObject {
-	WiFiManagerClient* _manager;
-	WiFiDeviceClient* _device;
-	WiFiNetwork* _currentNetwork;
-	BOOL _currentNetworkHasBeenSet;
-	BOOL _powered;
-	BOOL _poweredHasBeenSet;
-	int _rssiThreshold;
-	BOOL _joining;
-	int _signalStrengthBars;
-	BOOL _signalStrengthHasBeenSet;
-	NSTimer* _signalStrengthTimer;
-	int _shouldPollSignalStrength;
-	BOOL _canPollSignalStrength;
+  WiFiManagerClient* _manager;
+  WiFiDeviceClient* _device;
+  WiFiNetwork* _currentNetwork;
+  BOOL _currentNetworkHasBeenSet;
+  BOOL _powered;
+  BOOL _poweredHasBeenSet;
+  int _rssiThreshold;
+  BOOL _joining;
+  int _signalStrengthBars;
+  BOOL _signalStrengthHasBeenSet;
+  NSTimer* _signalStrengthTimer;
+  int _shouldPollSignalStrength;
+  BOOL _canPollSignalStrength;
 #if __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_3_2
-	NSMutableDictionary* _securityDict;
+  NSMutableDictionary* _securityDict;
 #endif
-	id _delegate;
-	unsigned _notificationID;
-	double _lastSignalStrengthUpdateTime;
+  id _delegate;
+  unsigned _notificationID;
+  double _lastSignalStrengthUpdateTime;
 }
 +(SBWiFiManager *)sharedInstance;
 +(BOOL)hasWiFi;

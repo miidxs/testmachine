@@ -10,8 +10,8 @@
 @class NSOperationQueue;
 
 @interface OperationQueueInvocationTrampoline : InvocationTrampoline {
-	NSOperationQueue* _queue;
-	int _priority;
+  NSOperationQueue* _queue;
+  int _priority;
 }
 -(id)initWithTarget:(id)target operationQueue:(id)queue priority:(int)priority;
 // inherited: -(void)dealloc;

@@ -12,9 +12,9 @@
 @class NSString;
 
 @interface VMUSourceInfo : VMUAddressRange <NSCopying> {
-	NSString* _path;
-	unsigned _lineNumber;
-	unsigned _fileOffset;
+  NSString* _path;
+  unsigned _lineNumber;
+  unsigned _fileOffset;
 }
 +(VMUSourceInfo*)sourceInfoWithPath:(id)path addressRange:(VMURange)range lineNumber:(unsigned)number fileOffset:(unsigned)offset;
 -(id)initWithPath:(id)path addressRange:(VMURange)range lineNumber:(unsigned)number fileOffset:(unsigned)offset;

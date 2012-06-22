@@ -11,8 +11,8 @@
 @class NSString;
 
 @interface SBStatusBarNoServiceView : SBStatusBarContentView {
-	NSString* _errorString;
-	BOOL _showNoServiceView;
+  NSString* _errorString;
+  BOOL _showNoServiceView;
 }
 +(id)displayStringForSIMStatus:(id)simstatus;
 +(id)displayStringForRegistrationStatus:(int)registrationStatus;

@@ -9,15 +9,15 @@
 @class UISectionIndex, NSMutableArray, NSSet, UISectionTable;
 
 @interface UISectionList : UIView {
-	UISectionTable* _table;
-	UISectionIndex* _index;
-	NSMutableArray* _titles;
-	NSSet* _indexTitlesAsSet;
-	int _sectionCount;
-	float _listWidth;
-	struct {
-		unsigned isTranslucent : 1;
-	} _sectionListFlags;
+  UISectionTable* _table;
+  UISectionIndex* _index;
+  NSMutableArray* _titles;
+  NSSet* _indexTitlesAsSet;
+  int _sectionCount;
+  float _listWidth;
+  struct {
+    unsigned isTranslucent : 1;
+  } _sectionListFlags;
 }
 +(float)defaultIndexWidth;
 -(id)initWithFrame:(CGRect)frame showSectionIndex:(BOOL)index;

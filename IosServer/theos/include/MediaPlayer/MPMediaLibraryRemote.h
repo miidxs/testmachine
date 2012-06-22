@@ -13,14 +13,14 @@
 
 @interface MPMediaLibraryRemote : MPServerObjectProxy <MPMediaLibrary> {
 @private
-	MPMediaLibrary* _mediaLibrary;
-	NSMachPort* _launchNotifyPort;
-	int _launchNotifyPortToken;
-	unsigned _didCheckIn : 1;
-	unsigned _serverPort;
-	unsigned _clientPort;
-	CFRunLoopSourceRef _runLoopSource;
-	unsigned _serverConnectionDeathCount;
+  MPMediaLibrary* _mediaLibrary;
+  NSMachPort* _launchNotifyPort;
+  int _launchNotifyPortToken;
+  unsigned _didCheckIn : 1;
+  unsigned _serverPort;
+  unsigned _clientPort;
+  CFRunLoopSourceRef _runLoopSource;
+  unsigned _serverConnectionDeathCount;
 }
 -(id)init;
 -(void)dealloc;

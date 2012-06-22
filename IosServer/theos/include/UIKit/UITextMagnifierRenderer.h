@@ -8,7 +8,7 @@
 
 
 @interface UITextMagnifierRenderer : UIView {
-	int m_autoscrollDirections;
+  int m_autoscrollDirections;
 }
 @property(assign, nonatomic) int autoscrollDirections;
 -(id)initWithFrame:(CGRect)frame;

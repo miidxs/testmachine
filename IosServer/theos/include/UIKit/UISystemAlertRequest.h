@@ -9,10 +9,10 @@
 @class UIModalView;
 
 @interface UISystemAlertRequest : NSObject <UIModalViewDelegate> {
-	int _alertID;
-	UIModalView* _sheet;
-	id _target;
-	SEL _action;
+  int _alertID;
+  UIModalView* _sheet;
+  id _target;
+  SEL _action;
 }
 -(id)initWithAlertID:(int)alertID sheet:(id)sheet target:(id)target action:(SEL)action;
 -(void)dealloc;

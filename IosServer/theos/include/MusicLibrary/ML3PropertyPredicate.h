@@ -11,7 +11,7 @@
 
 @interface ML3PropertyPredicate : ML3Predicate {
 @private
-	NSString* _property;
+  NSString* _property;
 }
 @property(copy, nonatomic) NSString* property;
 -(id)initWithProperty:(id)property;

@@ -7,9 +7,9 @@
 __attribute__((visibility("hidden")))
 @interface UIDropShadowView : UIView {
 @private
-	float _shadowRadius;
-	float _shadowOpacity;
-	float _cornerRadius;
+  float _shadowRadius;
+  float _shadowOpacity;
+  float _cornerRadius;
 }
 @property(assign) float shadowRadius;
 @property(assign) float shadowOpacity;

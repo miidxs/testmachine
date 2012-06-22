@@ -10,17 +10,17 @@
 @class UITransitionView, UIViewController, UIWindow;
 
 @interface UIWindowController : NSObject {
-	UITransitionView* _transitionView;
-	UIWindow* _window;
-	int _currentTransition;
-	id _target;
-	SEL _didEndSelector;
-	UIViewController* _fromViewController;
-	UIViewController* _toViewController;
-	CGPoint _beginOriginForToView;
-	CGPoint _endOriginForToView;
+  UITransitionView* _transitionView;
+  UIWindow* _window;
+  int _currentTransition;
+  id _target;
+  SEL _didEndSelector;
+  UIViewController* _fromViewController;
+  UIViewController* _toViewController;
+  CGPoint _beginOriginForToView;
+  CGPoint _endOriginForToView;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	BOOL _presenting;
+  BOOL _presenting;
 #endif
 }
 @property(assign, nonatomic) UIWindow* window;

@@ -13,14 +13,14 @@
 
 @interface MusicLibrary : NSObject {
 @private
-	NSString* _basePath;
-	void* _bridge;
-	unsigned _needsFlush : 1;
-	unsigned _skippedUpdatePurchasedContent : 1;
-	unsigned _disableExternalPlaylistNotifications : 1;
-	unsigned _autoflushScheduled : 1;
-	double _autoflushTargetTime;
-	NSDictionary* _purchasedContentFolders;
+  NSString* _basePath;
+  void* _bridge;
+  unsigned _needsFlush : 1;
+  unsigned _skippedUpdatePurchasedContent : 1;
+  unsigned _disableExternalPlaylistNotifications : 1;
+  unsigned _autoflushScheduled : 1;
+  double _autoflushTargetTime;
+  NSDictionary* _purchasedContentFolders;
 }
 +(void)_postDatabaseChangeNotificationName:(id)name changeType:(int)type;
 +(void)postDatabaseContentsWillChangeNotification:(int)postDatabaseContents;

@@ -10,37 +10,37 @@
 @class NSMutableData, NSURLConnection, NSString, UIImage, NSURL;
 
 @interface UIWebClip : NSObject {
-	NSString* identifier;
-	NSURL* pageURL;
-	NSURL* precomposedIconURL;
-	NSURL* iconURL;
-	NSURL* startupImageURL;
+  NSString* identifier;
+  NSURL* pageURL;
+  NSURL* precomposedIconURL;
+  NSURL* iconURL;
+  NSURL* startupImageURL;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	NSURL* startupLandscapeImageURL;
+  NSURL* startupLandscapeImageURL;
 #endif
-	NSString* title;
-	float scale;
-	CGPoint scrollPoint;
-	BOOL fullScreen;
+  NSString* title;
+  float scale;
+  CGPoint scrollPoint;
+  BOOL fullScreen;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	BOOL classicMode;
+  BOOL classicMode;
 #endif
-	BOOL removalDisallowed;
-	int statusBarStyle;
-	UIImage* iconImage;
-	UIImage* startupImage;
+  BOOL removalDisallowed;
+  int statusBarStyle;
+  UIImage* iconImage;
+  UIImage* startupImage;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	UIImage* startupLandscapeImage;
+  UIImage* startupLandscapeImage;
 #endif
-	id delegate;
+  id delegate;
 @private
-	NSMutableData* _customIconData;
-	NSURLConnection* _iconConnection;
-	NSMutableData* _customStartupImageData;
-	NSURLConnection* _startupImageConnection;
+  NSMutableData* _customIconData;
+  NSURLConnection* _iconConnection;
+  NSMutableData* _customStartupImageData;
+  NSURLConnection* _startupImageConnection;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	NSMutableData* _customStartupLandscapeImageData;
-	NSURLConnection* _startupLandscapeImageConnection;
+  NSMutableData* _customStartupLandscapeImageData;
+  NSURLConnection* _startupLandscapeImageConnection;
 #endif
 }
 @property(copy) NSString* identifier;

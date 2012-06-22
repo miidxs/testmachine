@@ -10,9 +10,9 @@
 @class NSString;
 
 @interface CDLRProperty : NSObject {
-	int type;
-	NSString* value;
-	int statusCode;
+  int type;
+  NSString* value;
+  int statusCode;
 }
 @property(assign, nonatomic) int type;
 @property(retain, nonatomic) NSString* value;

@@ -10,7 +10,7 @@
 @class YahooAccount;
 
 @interface XYMCOOKIEAuthenticator : SASLAuthenticator {
-	YahooAccount* _yahooAccount;
+  YahooAccount* _yahooAccount;
 }
 // inherited: -(id)responseForServerData:(id)serverData;
 // inherited: -(id)saslName;

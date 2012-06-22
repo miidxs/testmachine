@@ -13,13 +13,13 @@ public class IosDriverTest extends TestCase {
         _driver.setPort(59247);  // Settings app
     }
     
-	public void testTap() throws Exception {
-	    _driver.tap("//PSTableCell[title[contains(text(), 'About')]]");
-	} 
-	
-	public void testTapXY() throws Exception {
+  public void testTap() throws Exception {
+      _driver.tap("//PSTableCell[title[contains(text(), 'About')]]");
+  } 
+  
+  public void testTapXY() throws Exception {
         _driver.tap("//PSTableCell[title[contains(text(), 'About')]]", 10, 10);
-	} 
+  } 
 
     public void testSwipe() throws Exception {
         _driver.swipe("//UIWindow", 0, 200, 0, 0);

@@ -10,9 +10,9 @@
 @class ActivityMonitor;
 
 @interface MonitoredInvocation : NSInvocation {
-	NSInvocation* _invocation;
-	ActivityMonitor* _monitor;
-	BOOL _shouldLogInvocation;
+  NSInvocation* _invocation;
+  ActivityMonitor* _monitor;
+  BOOL _shouldLogInvocation;
 }
 // inherited: +(id)invocationWithMethodSignature:(id)methodSignature;
 +(id)invocationWithSelector:(SEL)selector target:(id)target taskName:(id)name priority:(int)priority canBeCancelled:(BOOL)cancelled;

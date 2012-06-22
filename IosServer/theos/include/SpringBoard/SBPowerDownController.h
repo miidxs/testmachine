@@ -12,10 +12,10 @@
 @class SBPowerDownView;
 
 @interface SBPowerDownController : SBAlert {
-	int _count;
-	id _delegate;
-	SBPowerDownView* _powerDownView;
-	BOOL _isFront;
+  int _count;
+  id _delegate;
+  SBPowerDownView* _powerDownView;
+  BOOL _isFront;
 }
 +(SBPowerDownController *)sharedInstance;
 // inherited: -(void)dealloc;

@@ -10,9 +10,9 @@
 @class NSString;
 
 @interface SBDismissOnlyAlertItem : SBAlertItem {
-	NSString* _title;
-	NSString* _body;
-	double _autoDismissInterval;
+  NSString* _title;
+  NSString* _body;
+  double _autoDismissInterval;
 }
 -(id)initWithTitle:(id)title body:(id)body;
 // inherited: -(void)dealloc;

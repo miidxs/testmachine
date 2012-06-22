@@ -10,11 +10,11 @@
 @class NSCondition;
 
 @interface AVCallbackHandler : NSObject {
-	id _target;
-	SEL _action;
-	SEL _mainThreadAction;
-	NSCondition* _condition;
-	id _params;
+  id _target;
+  SEL _action;
+  SEL _mainThreadAction;
+  NSCondition* _condition;
+  id _params;
 }
 @property(assign) id target;
 @property(assign) SEL action;

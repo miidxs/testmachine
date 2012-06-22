@@ -9,8 +9,8 @@
 @class CKProgressBar, UILabel;
 
 @interface CKSendingProgressView : UIView {
-	CKProgressBar* _sendingProgress;
-	UILabel* _statusLabel;
+  CKProgressBar* _sendingProgress;
+  UILabel* _statusLabel;
 }
 +(CGRect)defaultFrame;
 -(id)initWithFrame:(CGRect)frame;

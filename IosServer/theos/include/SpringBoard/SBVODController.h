@@ -10,12 +10,12 @@
 @class NSTimer, NSMutableSet, NSMutableArray;
 
 @interface SBVODController : NSObject {
-	NSMutableArray* _alarms;
-	NSMutableSet* _alarmsToFire;
-	NSMutableSet* _alarmsToFireWhenMovieEnds;
-	NSTimer* _timer;
-	NSTimer* _movieTimeoutTimer;
-	unsigned _reloadingForBoot : 1;
+  NSMutableArray* _alarms;
+  NSMutableSet* _alarmsToFire;
+  NSMutableSet* _alarmsToFireWhenMovieEnds;
+  NSTimer* _timer;
+  NSTimer* _movieTimeoutTimer;
+  unsigned _reloadingForBoot : 1;
 }
 +(id)sharedInstance;
 // inherited: -(id)init;

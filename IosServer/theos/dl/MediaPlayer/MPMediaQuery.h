@@ -14,7 +14,7 @@
 
 @interface MPMediaQuery : NSObject <NSCoding, NSCopying> {
 @private
-	MPMediaQueryInternal* _internal;
+  MPMediaQueryInternal* _internal;
 }
 @property(assign, nonatomic) int groupingType;
 @property(readonly, assign, nonatomic) NSArray* collections;

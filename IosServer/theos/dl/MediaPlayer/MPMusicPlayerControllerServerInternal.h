@@ -12,14 +12,14 @@
 
 @interface MPMusicPlayerControllerServerInternal : MPServerObject <MPMusicPlayerController> {
 @private
-	int _shuffleMode;
-	int _repeatMode;
-	NSMutableArray* _clientPorts;
-	unsigned _useApplicationSpecificQueue : 1;
-	MLQuery* _query;
-	unsigned _queuePrepared : 1;
-	int _extendedModeNotifyToken;
-	unsigned _allowsRemoteUIAccess : 1;
+  int _shuffleMode;
+  int _repeatMode;
+  NSMutableArray* _clientPorts;
+  unsigned _useApplicationSpecificQueue : 1;
+  MLQuery* _query;
+  unsigned _queuePrepared : 1;
+  int _extendedModeNotifyToken;
+  unsigned _allowsRemoteUIAccess : 1;
 }
 +(BOOL)_canSeedGeniusWithItem:(id)item;
 -(id)init;

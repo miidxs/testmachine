@@ -9,7 +9,7 @@
 
 
 @interface MPServerObjectProxy : NSObject {
-	unsigned _didPrepareForRemoteSelectorInvocation : 1;
+  unsigned _didPrepareForRemoteSelectorInvocation : 1;
 }
 +(id)_center;
 -(id)init;

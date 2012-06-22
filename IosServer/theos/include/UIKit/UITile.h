@@ -11,8 +11,8 @@
 #import <UIKit/UIView.h>
 
 @interface UITile : UIView {
-	CGRect _dirtyRect;
-	BOOL _hasDrawnContent;
+  CGRect _dirtyRect;
+  BOOL _hasDrawnContent;
 }
 -(id)initWithFrame:(CGRect)frame;
 -(id)hitTest:(CGPoint)test forEvent:(GSEventRef)event;

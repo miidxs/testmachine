@@ -9,8 +9,8 @@
 
 
 @interface DAMailboxGetUpdatesRequest : DAMailboxRequest {
-	int _maxSize;
-	int _bodyFormat;
+  int _maxSize;
+  int _bodyFormat;
 }
 -(id)initRequestForBodyFormat:(int)bodyFormat withBodySizeLimit:(int)bodySizeLimit;
 -(int)maxSize;

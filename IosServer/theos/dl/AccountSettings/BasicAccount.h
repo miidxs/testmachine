@@ -12,9 +12,9 @@
 @protocol AccountRefreshProtocol;
 
 @interface BasicAccount : NSObject {
-	NSMutableDictionary* _properties;
-	id<AccountRefreshProtocol> _syncAccount;
-	id _fullAccount;
+  NSMutableDictionary* _properties;
+  id<AccountRefreshProtocol> _syncAccount;
+  id _fullAccount;
 }
 // inherited: +(void)initialize;
 +(id)accountWithType:(id)type class:(id)aClass;

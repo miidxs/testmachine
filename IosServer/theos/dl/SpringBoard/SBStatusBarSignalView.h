@@ -10,10 +10,10 @@
 
 
 @interface SBStatusBarSignalView : SBStatusBarContentView {
-	int _raw;
-	int _bars;
-	int _percentage;
-	BOOL _showSignalView;
+  int _raw;
+  int _bars;
+  int _percentage;
+  BOOL _showSignalView;
 }
 // inherited: -(id)init;
 // inherited: -(void)dealloc;

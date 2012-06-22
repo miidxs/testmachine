@@ -13,48 +13,48 @@
 @class SBApplication, SBDimmingWindow, SBUIController;
 
 @interface SpringBoard : UIApplication {
-	SBUIController* _uiController;
-	NSTimer* _menuButtonTimer;
-	NSTimer* _lockButtonTimer;
-	NSTimer* _idleTimer;
-	NSTimer* _autoLockTimer;
-	double _lastTimeIdleCausedDim;
-	double _headsetButtonDownTime;
-	GSEventRef _headsetDownEvent;
-	int _headsetClickCount;
-	SBDimmingWindow* _simulatedBlankingWindow;
-	unsigned _headsetButtonClickCount : 8;
-	unsigned _menuButtonClickCount : 8;
+  SBUIController* _uiController;
+  NSTimer* _menuButtonTimer;
+  NSTimer* _lockButtonTimer;
+  NSTimer* _idleTimer;
+  NSTimer* _autoLockTimer;
+  double _lastTimeIdleCausedDim;
+  double _headsetButtonDownTime;
+  GSEventRef _headsetDownEvent;
+  int _headsetClickCount;
+  SBDimmingWindow* _simulatedBlankingWindow;
+  unsigned _headsetButtonClickCount : 8;
+  unsigned _menuButtonClickCount : 8;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	unsigned _waitingForMenuDoubleTapAfterActingOnSingleTap : 1;
+  unsigned _waitingForMenuDoubleTapAfterActingOnSingleTap : 1;
 #endif
-	unsigned _screenshotWasTaken : 1;
-	unsigned _disableAutoDimming : 1;
-	unsigned _nextLockUpLocks : 1;
-	unsigned _poweringDown : 1;
-	unsigned _autoDimmed : 1;
-	unsigned _autoDimmedToBlack : 1;
-	unsigned _headsetDownDelayedActionPerformed : 1;
-	unsigned _nowPlayingAppIsPlaying : 1;
+  unsigned _screenshotWasTaken : 1;
+  unsigned _disableAutoDimming : 1;
+  unsigned _nextLockUpLocks : 1;
+  unsigned _poweringDown : 1;
+  unsigned _autoDimmed : 1;
+  unsigned _autoDimmedToBlack : 1;
+  unsigned _headsetDownDelayedActionPerformed : 1;
+  unsigned _nowPlayingAppIsPlaying : 1;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	unsigned _isSeekingInMedia : 1;
-	int _mediaSeekDirection;
-	unsigned _springBoardRequestsAccelerometerEvents;
-	int _activeInterfaceOrientation;
+  unsigned _isSeekingInMedia : 1;
+  int _mediaSeekDirection;
+  unsigned _springBoardRequestsAccelerometerEvents;
+  int _activeInterfaceOrientation;
 #endif
-	int _UIOrientation;
-	NSURL* _menuDoubleTapURL;
-	int _notifyDontAnimateREOToken;
-	int _notifyDontAllowMediaHUDToken;
-	double _sampleSystemStartTime;
-	NSDictionary* _startAppsCPUTimes;
-	CFDictionaryRef _registeredSimpleRemoteAppToPriority;
-	SBApplication* _registeredSimpleRemoteApp;
-	SBApplication* _nowPlayingApp;
-	NSString* _originatingOpenURLDisplayId;
-	NSMutableArray* _disableNowPlayingHUDAssertionBundleIds;
-	NSNumberFormatter* _decimalFormatter;
-	NSNumberFormatter* _percentFormatter;
+  int _UIOrientation;
+  NSURL* _menuDoubleTapURL;
+  int _notifyDontAnimateREOToken;
+  int _notifyDontAllowMediaHUDToken;
+  double _sampleSystemStartTime;
+  NSDictionary* _startAppsCPUTimes;
+  CFDictionaryRef _registeredSimpleRemoteAppToPriority;
+  SBApplication* _registeredSimpleRemoteApp;
+  SBApplication* _nowPlayingApp;
+  NSString* _originatingOpenURLDisplayId;
+  NSMutableArray* _disableNowPlayingHUDAssertionBundleIds;
+  NSNumberFormatter* _decimalFormatter;
+  NSNumberFormatter* _percentFormatter;
 }
 // inherited: +(BOOL)registerForSystemEvents;
 // inherited: +(BOOL)rendersLocally;

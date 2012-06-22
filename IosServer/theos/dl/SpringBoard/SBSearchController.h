@@ -16,33 +16,33 @@
 @class SBSearchView, NSTimer, NSArray, NSDateFormatter, SPSearchResult, SPSearchResultDeserializer, SPDaemonQueryToken, NSString, NSMutableArray, NSDate;
 
 @interface SBSearchController : NSObject <UISearchBarDelegate, UITableViewDataSource, UITableViewDelegate, SPDaemonQueryDelegate> {
-	SBSearchView* _searchView;
-	NSString* _queryString;
+  SBSearchView* _searchView;
+  NSString* _queryString;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	NSDateFormatter* _dayDateFormatter;
-	NSDateFormatter* _timeDateFormatter;
+  NSDateFormatter* _dayDateFormatter;
+  NSDateFormatter* _timeDateFormatter;
 #endif
 #if __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_3_2
-	NSDateFormatter* _dateFormatter;
+  NSDateFormatter* _dateFormatter;
 #endif
-	int _domainOrdering[12];
-	NSArray* _querySearchDomains;
-	BOOL _querySearchDomainsIncludesApplications;
-	int _sectionToGroupMap[12];
-	BOOL _sectionToGroupMapIsValid;
-	int _resultSectionCount;
-	int _applicationsSectionIndex;
-	SPSearchResult* _cursor;
-	SPSearchResultDeserializer* _resultGroups[12];
-	SPSearchResultDeserializer* _accumulatingResultGroups[12];
-	BOOL _resultGroupsIsCurrent[12];
-	SPDaemonQueryToken* _currentToken;
-	NSMutableArray* _matchingLaunchingIcons;
-	NSTimer* _clearSearchTimer;
-	NSDate* _clearSearchDate;
-	BOOL _reloadingTableContent;
+  int _domainOrdering[12];
+  NSArray* _querySearchDomains;
+  BOOL _querySearchDomainsIncludesApplications;
+  int _sectionToGroupMap[12];
+  BOOL _sectionToGroupMapIsValid;
+  int _resultSectionCount;
+  int _applicationsSectionIndex;
+  SPSearchResult* _cursor;
+  SPSearchResultDeserializer* _resultGroups[12];
+  SPSearchResultDeserializer* _accumulatingResultGroups[12];
+  BOOL _resultGroupsIsCurrent[12];
+  SPDaemonQueryToken* _currentToken;
+  NSMutableArray* _matchingLaunchingIcons;
+  NSTimer* _clearSearchTimer;
+  NSDate* _clearSearchDate;
+  BOOL _reloadingTableContent;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	int _previousSectionCount;
+  int _previousSectionCount;
 #endif
 }
 @property(retain, nonatomic) SBSearchView* searchView;

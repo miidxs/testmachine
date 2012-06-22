@@ -12,10 +12,10 @@
 
 @interface AccountsManager : NSObject {
 @private
-	NSMutableArray* _accounts;
-	NSMutableDictionary* _accountsByID;
-	unsigned _dataVersion;
-	NSArray* _runtimeFixers;
+  NSMutableArray* _accounts;
+  NSMutableDictionary* _accountsByID;
+  unsigned _dataVersion;
+  NSArray* _runtimeFixers;
 }
 +(void)_migrateAccountsIfNeeded;
 +(id)displayNameForGroupOfAccountType:(id)accountType forBeginningOfSentence:(BOOL)sentence;

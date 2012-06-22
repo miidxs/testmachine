@@ -10,7 +10,7 @@
 
 
 @interface MessageFlags : NSObject <NSCoding> {
-	unsigned realFlags;
+  unsigned realFlags;
 }
 // in a protocol: -(id)initWithCoder:(id)coder;
 // in a protocol: -(void)encodeWithCoder:(id)coder;

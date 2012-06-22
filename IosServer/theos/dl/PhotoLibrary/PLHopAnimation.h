@@ -10,17 +10,17 @@
 
 
 @interface PLHopAnimation : UIFrameAnimation {
-	CGPoint _startMid;
-	CGPoint _endMid;
-	CGPoint _control1;
-	CGPoint _control2;
-	float _aX;
-	float _bX;
-	float _cX;
-	float _aY;
-	float _bY;
-	float _cY;
-	double _cumulativeTime;
+  CGPoint _startMid;
+  CGPoint _endMid;
+  CGPoint _control1;
+  CGPoint _control2;
+  float _aX;
+  float _bX;
+  float _cX;
+  float _aY;
+  float _bY;
+  float _cY;
+  double _cumulativeTime;
 }
 -(void)updateControlPoints;
 // inherited: -(void)setStartFrame:(CGRect)frame;

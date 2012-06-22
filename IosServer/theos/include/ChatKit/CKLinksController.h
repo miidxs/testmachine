@@ -10,10 +10,10 @@
 @class UINavigationController, NSArray, UITableView;
 
 @interface CKLinksController : UIViewController <UITableViewDataSource, UITableViewDelegate> {
-	id _delegate;
-	UINavigationController* _navigationController;
-	NSArray* _linkProps;
-	UITableView* _table;
+  id _delegate;
+  UINavigationController* _navigationController;
+  NSArray* _linkProps;
+  UITableView* _table;
 }
 -(id)initWithNavigationController:(id)navigationController;
 -(void)dealloc;

@@ -9,10 +9,10 @@
 __attribute__((visibility("hidden")))
 @interface UIWebFormAccessory : UIImageView {
 @private
-	UIButton* _done;
-	UISegmentedControl* _tab;
-	UIButton* _autofill;
-	id<UIWebFormAccessoryDelegate> delegate;
+  UIButton* _done;
+  UISegmentedControl* _tab;
+  UIButton* _autofill;
+  id<UIWebFormAccessoryDelegate> delegate;
 }
 @property(retain, nonatomic) UIButton* _done;
 @property(retain, nonatomic) UISegmentedControl* _tab;

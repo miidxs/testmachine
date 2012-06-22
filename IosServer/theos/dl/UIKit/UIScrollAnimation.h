@@ -8,8 +8,8 @@
 
 
 @interface UIScrollAnimation : UIAnimation {
-	CGPoint _startPoint;
-	CGPoint _endPoint;
+  CGPoint _startPoint;
+  CGPoint _endPoint;
 }
 -(void)setStartPoint:(CGPoint)point;
 -(void)setEndPoint:(CGPoint)point;

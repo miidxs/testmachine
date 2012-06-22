@@ -11,9 +11,9 @@
 @class NSTimer;
 
 @interface SBUSSDAlert : SBAlert {
-	unsigned _receivedString : 1;
-	unsigned _dismissOnActivate : 1;
-	NSTimer* _delayedDismissTimer;
+  unsigned _receivedString : 1;
+  unsigned _dismissOnActivate : 1;
+  NSTimer* _delayedDismissTimer;
 }
 +(void)registerForSettingsAlerts;
 // inherited: +(void)registerForAlerts;

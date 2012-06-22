@@ -12,7 +12,7 @@
 __attribute__((visibility("hidden")))
 @interface ML3UnaryPredicate : ML3Predicate {
 @private
-	ML3Predicate* _predicate;
+  ML3Predicate* _predicate;
 }
 @property(retain, nonatomic) ML3Predicate* predicate;
 +(id)predicateWithPredicate:(id)predicate;

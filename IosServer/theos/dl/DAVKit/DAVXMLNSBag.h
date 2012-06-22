@@ -10,10 +10,10 @@
 @class NSMutableDictionary;
 
 @interface DAVXMLNSBag : NSObject {
-	NSMutableDictionary* tagMapping;
-	NSMutableDictionary* allNS;
-	unsigned nsCounter;
-	void* reserved1;
+  NSMutableDictionary* tagMapping;
+  NSMutableDictionary* allNS;
+  unsigned nsCounter;
+  void* reserved1;
 }
 // inherited: +(void)initialize;
 +(id)_smartTagForTag:(id)tag;

@@ -9,7 +9,7 @@
 __attribute__((visibility("hidden")))
 @interface UITextPositionImpl : UITextPosition {
 @private
-	WebVisiblePosition* _webVisiblePosition;
+  WebVisiblePosition* _webVisiblePosition;
 }
 @property(retain, nonatomic) WebVisiblePosition* webVisiblePosition;
 +(id)wrapWebVisiblePosition:(id)position;

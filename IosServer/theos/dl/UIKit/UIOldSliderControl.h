@@ -10,37 +10,37 @@
 @class UIImage;
 
 @interface UIOldSliderControl : UIControl {
-	UIImage* _sliderLeftFillCap;
-	XXUnion_a01swB _sliderLeftFill;
-	XXUnion_a01swB _sliderRightFill;
-	UIImage* _minValueImage;
-	UIImage* _maxValueImage;
-	int _numberOfTickMarks;
-	float _hitOffset;
-	UIImage* _sliderRightCap;
-	UIImage* _sliderRightFullCap;
-	UIImage* _sliderLeftCap;
-	struct {
-		unsigned allowsOnlyTickMarks : 1;
-		unsigned animating : 1;
-		unsigned showValue : 1;
-		unsigned layeredFill : 1;
-		unsigned continuous : 1;
-		unsigned sendActionDuringAnimation : 1;
-		unsigned alternateColors : 1;
-		unsigned shouldFlipValue : 1;
-		unsigned needsNonOpaqueFills : 1;
-		unsigned reserved : 24;
-	} _sliderFlags;
-	float _value;
-	float _animationEndValue;
-	float _minValue;
-	float _maxValue;
-	UIView* _knob;
-	double _lastTrackingTime;
-	double _idleTrackingTime;
-	CGPoint _lastTrackingPoint;
-	CGPoint _idleTrackingPoint;
+  UIImage* _sliderLeftFillCap;
+  XXUnion_a01swB _sliderLeftFill;
+  XXUnion_a01swB _sliderRightFill;
+  UIImage* _minValueImage;
+  UIImage* _maxValueImage;
+  int _numberOfTickMarks;
+  float _hitOffset;
+  UIImage* _sliderRightCap;
+  UIImage* _sliderRightFullCap;
+  UIImage* _sliderLeftCap;
+  struct {
+    unsigned allowsOnlyTickMarks : 1;
+    unsigned animating : 1;
+    unsigned showValue : 1;
+    unsigned layeredFill : 1;
+    unsigned continuous : 1;
+    unsigned sendActionDuringAnimation : 1;
+    unsigned alternateColors : 1;
+    unsigned shouldFlipValue : 1;
+    unsigned needsNonOpaqueFills : 1;
+    unsigned reserved : 24;
+  } _sliderFlags;
+  float _value;
+  float _animationEndValue;
+  float _minValue;
+  float _maxValue;
+  UIView* _knob;
+  double _lastTrackingTime;
+  double _idleTrackingTime;
+  CGPoint _lastTrackingPoint;
+  CGPoint _idleTrackingPoint;
 }
 -(id)init;
 -(id)initWithFrame:(CGRect)frame;

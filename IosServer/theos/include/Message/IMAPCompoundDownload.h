@@ -10,7 +10,7 @@
 @class NSMutableArray;
 
 @interface IMAPCompoundDownload : IMAPDownload {
-	NSMutableArray* _subdownloads;
+  NSMutableArray* _subdownloads;
 }
 // inherited: -(void)dealloc;
 -(id)subdownloads;

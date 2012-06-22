@@ -11,9 +11,9 @@
 @class UIImage;
 
 @interface MPArtworkInfo : NSObject {
-	UIImage* _image;
-	CGRect _imageSubRect;
-	double _time;
+  UIImage* _image;
+  CGRect _imageSubRect;
+  double _time;
 }
 @property(retain, nonatomic) UIImage* image;
 @property(assign, nonatomic) CGRect imageSubRect;

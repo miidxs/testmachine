@@ -6,7 +6,7 @@
 @class SBDeviceLockViewWithKeyboard;
 
 @interface SBDeviceLockKeyboard : UIKeyboard {
-	SBDeviceLockViewWithKeyboard* _deviceLockView;
+  SBDeviceLockViewWithKeyboard* _deviceLockView;
 }
 -(id)initWithFrame:(CGRect)frame deviceLockView:(SBDeviceLockViewWithKeyboard *)view;
 // inherited: -(BOOL)canDismiss;

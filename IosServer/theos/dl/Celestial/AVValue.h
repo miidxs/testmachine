@@ -9,7 +9,7 @@
 
 
 @interface AVValue : NSObject {
-	SEL _selector;
+  SEL _selector;
 }
 +(id)valueWithSelector:(SEL)selector;
 -(id)initWithSelector:(SEL)selector;

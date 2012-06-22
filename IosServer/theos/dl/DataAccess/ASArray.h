@@ -12,8 +12,8 @@
 @class NSDictionary, NSMutableArray;
 
 @interface ASArray : ASItem <ASParsingWithSubItems, ASParsingFrontingBasicType> {
-	NSMutableArray* _items;
-	NSDictionary* _subclassRuleSet;
+  NSMutableArray* _items;
+  NSDictionary* _subclassRuleSet;
 }
 // in a protocol: +(BOOL)acceptsTopLevelLeaves;
 // in a protocol: +(BOOL)parsingLeafNode;

@@ -9,7 +9,7 @@
 
 
 @interface DAMailboxRequest : NSObject {
-	int _type;
+  int _type;
 }
 -(int)requestType;
 -(int)bodyFormat;

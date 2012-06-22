@@ -10,7 +10,7 @@
 @class ASEmailItem;
 
 @interface ASMailMessage : DAMailMessage {
-	ASEmailItem* _ASEmailItem;
+  ASEmailItem* _ASEmailItem;
 }
 // inherited: -(void)dealloc;
 -(id)initWithASEmailItem:(id)asemailItem;

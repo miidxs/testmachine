@@ -8,11 +8,11 @@
 @class NSData, CKMediaObject, UIImage;
 
 @interface CKMediaObjectMessagePart : CKMessagePart {
-	CKMediaObject* _mediaObject;
-	UIImage* _composeImage;
-	NSData* _previewData;
-	NSData* _composeData;
-	NSData* _dataForHighlight;
+  CKMediaObject* _mediaObject;
+  UIImage* _composeImage;
+  NSData* _previewData;
+  NSData* _composeData;
+  NSData* _dataForHighlight;
 }
 @property(readonly, assign, nonatomic) UIImage* composeImage;
 @property(readonly, assign, nonatomic) CKMediaObject* mediaObject;

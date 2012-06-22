@@ -10,11 +10,11 @@
 @class NSString, SBDisplay;
 
 @interface SBLaunchAlertItem : SBAlertItem {
-	SBDisplay* _associatedDisplay;
-	int _type;
-	NSString* _bundleID;
-	BOOL _isDataAlert;
-	BOOL _usesCellNetwork;
+  SBDisplay* _associatedDisplay;
+  int _type;
+  NSString* _bundleID;
+  BOOL _isDataAlert;
+  BOOL _usesCellNetwork;
 }
 -(id)initWithLaunchAlertType:(int)launchAlertType dataAlert:(BOOL)alert usesCellNetwork:(BOOL)network bundleID:(id)anId;
 // inherited: -(void)dealloc;

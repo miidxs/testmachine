@@ -10,8 +10,8 @@
 @class ASSettingsTaskUserInformationGetResponse, NSNumber;
 
 @interface ASSettingsTaskUserInformationResponse : ASItem {
-	NSNumber* _status;
-	ASSettingsTaskUserInformationGetResponse* _getResponse;
+  NSNumber* _status;
+  ASSettingsTaskUserInformationGetResponse* _getResponse;
 }
 @property(retain, nonatomic) NSNumber* status;
 @property(retain, nonatomic) ASSettingsTaskUserInformationGetResponse* getResponse;

@@ -1,5 +1,5 @@
-/*	NSCalendarDate.h
-	Copyright (c) 1994-2009, Apple Inc. All rights reserved.
+/*  NSCalendarDate.h
+  Copyright (c) 1994-2009, Apple Inc. All rights reserved.
 */
 
 #import <Foundation/NSDate.h>
@@ -8,11 +8,11 @@
 
 @interface NSCalendarDate : NSDate {
 @private
-    NSUInteger		refCount;
-    NSTimeInterval 	_timeIntervalSinceReferenceDate;
-    NSTimeZone		*_timeZone;
-    NSString 		*_formatString;
-    void		*_reserved;
+    NSUInteger    refCount;
+    NSTimeInterval  _timeIntervalSinceReferenceDate;
+    NSTimeZone    *_timeZone;
+    NSString    *_formatString;
+    void    *_reserved;
 }
 
 /*    DEPRECATED DEPRECATED DEPRECATED

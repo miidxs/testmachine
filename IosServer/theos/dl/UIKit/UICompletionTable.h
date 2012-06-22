@@ -14,7 +14,7 @@
 <UITableViewDelegate, UITableViewDataSource> 
 #endif
 {
-	UICompletionTablePrivate* _private;
+  UICompletionTablePrivate* _private;
 }
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
 @property(assign, nonatomic) UIEdgeInsets contentInset;

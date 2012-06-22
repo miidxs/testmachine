@@ -10,21 +10,21 @@
 @class NSString, NSTimer, CPAggregateDictionary;
 
 @interface SBAggregateDCommunicator : NSObject {
-	CPAggregateDictionary* _dictionary;
-	NSTimer* _periodicFlushTimer;
-	NSString* _lastApplicationActivatedIdentifier;
-	double _lastApplicationActivatedTime;
-	double _backlightOnStartTime;
-	BOOL _backlightOnStartTimeWasOnBattery;
-	BOOL _backlightOnStartTimeIsValid;
-	double _awakeTimeStart;
-	BOOL _awakeTimeStartWasOnBattery;
-	BOOL _awakeTimeStartIsValid;
-	int _lastConnectionType;
-	double _lastConnectionTime;
-	BOOL _lastConnectionTimeIsValid;
-	double _vpnUsageStartTime;
-	BOOL _vpnUsageStartTimeIsValid;
+  CPAggregateDictionary* _dictionary;
+  NSTimer* _periodicFlushTimer;
+  NSString* _lastApplicationActivatedIdentifier;
+  double _lastApplicationActivatedTime;
+  double _backlightOnStartTime;
+  BOOL _backlightOnStartTimeWasOnBattery;
+  BOOL _backlightOnStartTimeIsValid;
+  double _awakeTimeStart;
+  BOOL _awakeTimeStartWasOnBattery;
+  BOOL _awakeTimeStartIsValid;
+  int _lastConnectionType;
+  double _lastConnectionTime;
+  BOOL _lastConnectionTimeIsValid;
+  double _vpnUsageStartTime;
+  BOOL _vpnUsageStartTimeIsValid;
 }
 @property(retain, nonatomic) NSString* lastApplicationActivatedIdentifier;
 +(id)sharedInstance;

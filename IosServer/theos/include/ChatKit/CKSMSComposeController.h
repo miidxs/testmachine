@@ -9,14 +9,14 @@
 @class NSMutableArray;
 
 @interface CKSMSComposeController : CKTranscriptController {
-	NSMutableArray* _presetMessageParts;
-	id _delegate;
-	BOOL _mimeType;
-	BOOL _alreadySetUp;
-	BOOL _shouldReenableAutomaticKeyboard;
-	NSMutableArray* _partsToInsert;
-	NSMutableArray* _typesToInsert;
-	int _entryViewInvisible;
+  NSMutableArray* _presetMessageParts;
+  id _delegate;
+  BOOL _mimeType;
+  BOOL _alreadySetUp;
+  BOOL _shouldReenableAutomaticKeyboard;
+  NSMutableArray* _partsToInsert;
+  NSMutableArray* _typesToInsert;
+  int _entryViewInvisible;
 }
 @property(assign, nonatomic) id delegate;
 @property(retain, nonatomic) NSMutableArray* presetMessageParts;

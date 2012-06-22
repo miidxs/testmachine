@@ -11,8 +11,8 @@
 @class NSMutableArray;
 
 @interface SBAppRatingsStarControl : UIControl {
-	NSMutableArray* _stars;
-	int _currentIndex;
+  NSMutableArray* _stars;
+  int _currentIndex;
 }
 // inherited: -(id)initWithFrame:(CGRect)frame;
 // inherited: -(void)dealloc;

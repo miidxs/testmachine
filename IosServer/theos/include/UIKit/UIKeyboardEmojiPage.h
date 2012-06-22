@@ -10,21 +10,21 @@
 @protocol UIKeyboardEmojiController;
 
 @interface UIKeyboardEmojiPage : UIControl {
-	NSArray* _emoji;
-	NSMutableArray* _emojiViews;
-	int _numRows;
-	int _numCols;
-	int _numPages;
-	float _horizontalGap;
-	float _verticalGap;
-	CGRect _keyActivationRect;
-	NSString* _optionalText;
-	id<UIKeyboardEmojiController> _controller;
-	UITouch* _activeTouch;
-	BOOL _needsLayout;
-	UIKeyboardEmojiView* _touched;
-	UIKeyboardEmojiView* _pendingDisplay;
-	UIKeyboardEmojiView* _onDisplay;
+  NSArray* _emoji;
+  NSMutableArray* _emojiViews;
+  int _numRows;
+  int _numCols;
+  int _numPages;
+  float _horizontalGap;
+  float _verticalGap;
+  CGRect _keyActivationRect;
+  NSString* _optionalText;
+  id<UIKeyboardEmojiController> _controller;
+  UITouch* _activeTouch;
+  BOOL _needsLayout;
+  UIKeyboardEmojiView* _touched;
+  UIKeyboardEmojiView* _pendingDisplay;
+  UIKeyboardEmojiView* _onDisplay;
 }
 @property(retain) UIKeyboardEmojiView* touched;
 @property(retain) NSArray* emoji;

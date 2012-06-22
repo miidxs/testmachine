@@ -12,18 +12,18 @@
 @class NSString, NSArray;
 
 @interface VMUProcInfo : NSObject <SafeVMUProcInfoProtocol> {
-	unsigned _task;
-	BOOL _needTaskPortDealloc;
-	NSString* _name;
-	int _cpuType;
-	NSArray* _envVars;
-	NSString* _procTableName;
-	NSString* _realAppName;
-	NSString* _requestedAppName;
-	NSString* _firstArg;
-	int _pid;
-	int _ppid;
-	struct timeval _startTime;
+  unsigned _task;
+  BOOL _needTaskPortDealloc;
+  NSString* _name;
+  int _cpuType;
+  NSArray* _envVars;
+  NSString* _procTableName;
+  NSString* _realAppName;
+  NSString* _requestedAppName;
+  NSString* _firstArg;
+  int _pid;
+  int _ppid;
+  struct timeval _startTime;
 }
 // in a protocol: +(id)getProcessIds;
 // in a protocol: +(BOOL)isProcessRunning:(int)running;

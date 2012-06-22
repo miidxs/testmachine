@@ -11,15 +11,15 @@
 @class MediaPickerModalContext, MPRemoteView, NSString;
 
 @interface MPMediaPickerControllerServer : NSObject {
-	MPRemoteView* _remoteViewForHosting;
-	MediaPickerModalContext* _modalContext;
-	int _mediaTypes;
-	unsigned _replyPort;
-	CFMachPortRef _replyPortRef;
-	NSString* _prompt;
-	unsigned _allowsPickingMultipleItems : 1;
-	unsigned _wantsNavigationButtons : 1;
-	unsigned _wantsSheetBarStyle : 1;
+  MPRemoteView* _remoteViewForHosting;
+  MediaPickerModalContext* _modalContext;
+  int _mediaTypes;
+  unsigned _replyPort;
+  CFMachPortRef _replyPortRef;
+  NSString* _prompt;
+  unsigned _allowsPickingMultipleItems : 1;
+  unsigned _wantsNavigationButtons : 1;
+  unsigned _wantsSheetBarStyle : 1;
 }
 +(void)startMediaPickerControllerServer;
 +(id)sharedInstance;

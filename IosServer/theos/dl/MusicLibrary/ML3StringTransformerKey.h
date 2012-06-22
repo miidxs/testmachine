@@ -13,9 +13,9 @@
 __attribute__((visibility("hidden")))
 @interface ML3StringTransformerKey : NSObject <NSCopying> {
 @private
-	unsigned short* _characters;
-	unsigned _length;
-	BOOL _isCopy;
+  unsigned short* _characters;
+  unsigned _length;
+  BOOL _isCopy;
 }
 -(void)setCharacters:(const unsigned short*)characters length:(unsigned)length;
 -(void)dealloc;

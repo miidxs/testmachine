@@ -11,7 +11,7 @@
 
 @interface MPMovieView : UIView {
 @private
-	id<MPMovieViewDelegate> _delegate;
+  id<MPMovieViewDelegate> _delegate;
 }
 @property(assign, nonatomic) id<MPMovieViewDelegate> delegate;
 -(void)willMoveToWindow:(id)window;

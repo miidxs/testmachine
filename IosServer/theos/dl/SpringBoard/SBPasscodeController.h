@@ -10,11 +10,11 @@
 @class NSString, SBPasscodeAlertItem;
 
 @interface SBPasscodeController : NSObject {
-	SBPasscodeAlertItem* _alertItem;
-	int _mode;
-	NSString* _password;
-	NSString* _originalPassword;
-	int _unlockScreenType;
+  SBPasscodeAlertItem* _alertItem;
+  int _mode;
+  NSString* _password;
+  NSString* _originalPassword;
+  int _unlockScreenType;
 }
 +(id)sharedInstance;
 // inherited: -(void)dealloc;

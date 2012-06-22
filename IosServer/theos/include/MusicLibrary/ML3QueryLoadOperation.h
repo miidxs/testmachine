@@ -13,9 +13,9 @@
 __attribute__((visibility("hidden")))
 @interface ML3QueryLoadOperation : NSOperation {
 @private
-	ML3Query* _query;
-	sqlite3_stmt* _statement;
-	NSLock* _statementLock;
+  ML3Query* _query;
+  sqlite3_stmt* _statement;
+  NSLock* _statementLock;
 }
 @property(retain) ML3Query* query;
 @property(assign) sqlite3_stmt* statement;

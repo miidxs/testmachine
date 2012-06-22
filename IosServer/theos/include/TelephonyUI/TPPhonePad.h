@@ -11,20 +11,20 @@
 #import <Availability2.h>
 
 @interface TPPhonePad : UIControl {
-	int _downKey;
-	id _delegate;
-	BOOL _playsSounds;
-	float _topHeight;
-	float _midHeight;
-	float _bottomHeight;
-	float _leftWidth;
-	float _midWidth;
-	float _rightWidth;
-	CFSetRef _inflightSounds;
-	CFDictionaryRef _keyToButtonMap;
-	unsigned _incompleteSounds;
-	unsigned _delegateSoundCallbacks : 1;
-	unsigned _soundsActivated : 1;
+  int _downKey;
+  id _delegate;
+  BOOL _playsSounds;
+  float _topHeight;
+  float _midHeight;
+  float _bottomHeight;
+  float _leftWidth;
+  float _midWidth;
+  float _rightWidth;
+  CFSetRef _inflightSounds;
+  CFDictionaryRef _keyToButtonMap;
+  unsigned _incompleteSounds;
+  unsigned _delegateSoundCallbacks : 1;
+  unsigned _soundsActivated : 1;
 }
 +(BOOL)shouldStringAutoDial:(id)dial givenLastChar:(BOOL)aChar;
 +(BOOL)launchFieldTestIfNeeded:(id)needed;

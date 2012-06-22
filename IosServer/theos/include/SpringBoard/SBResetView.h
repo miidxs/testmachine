@@ -11,8 +11,8 @@
 @class NSTimer, SBResetProgressView;
 
 @interface SBResetView : UIView {
-	SBResetProgressView* _progressView;
-	NSTimer* _progressTimer;
+  SBResetProgressView* _progressView;
+  NSTimer* _progressTimer;
 }
 // inherited: -(id)initWithFrame:(CGRect)frame;
 // inherited: -(void)dealloc;

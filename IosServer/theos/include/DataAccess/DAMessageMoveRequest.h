@@ -10,9 +10,9 @@
 @class NSString;
 
 @interface DAMessageMoveRequest : NSObject {
-	NSString* _message;
-	NSString* _fromFolder;
-	NSString* _toFolder;
+  NSString* _message;
+  NSString* _fromFolder;
+  NSString* _toFolder;
 }
 -(id)initMoveRequestWithMessage:(id)message fromFolder:(id)folder toFolder:(id)folder3;
 -(id)message;

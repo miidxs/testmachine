@@ -8,8 +8,8 @@
 @class UIImageView, UIBarButtonItem;
 
 @interface UIBarButtonItemProxy : NSObject {
-	UIBarButtonItem* _item;
-	UIImageView* _view;
+  UIBarButtonItem* _item;
+  UIImageView* _view;
 }
 -(id)initWithItem:(id)item inToolbar:(id)toolbar;
 -(void)dealloc;

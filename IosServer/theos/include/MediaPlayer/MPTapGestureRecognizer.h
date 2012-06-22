@@ -12,10 +12,10 @@
 
 @interface MPTapGestureRecognizer : UIGestureRecognizer {
 @private
-	unsigned _lastTapCount;
-	CGPoint _tapLocation;
-	UITouch* _trackingTouch;
-	NSTimer* _tapHandleTimer;
+  unsigned _lastTapCount;
+  CGPoint _tapLocation;
+  UITouch* _trackingTouch;
+  NSTimer* _tapHandleTimer;
 }
 @property(assign) unsigned tapCount;
 -(id)initWithTarget:(id)target action:(SEL)action;

@@ -11,8 +11,8 @@
 
 
 @interface DAAction : NSObject {
-	int _action;
-	id _context;
+  int _action;
+  id _context;
 }
 // inherited: -(void)dealloc;
 -(id)initWithAction:(int)action context:(id)context;

@@ -12,21 +12,21 @@
 @protocol PLDataArrayInputStreamProgressDelegate;
 
 @interface PLDataArrayInputStream : NSInputStream {
-	NSArray* _dataArray;
-	NSMutableData* _bodyData;
-	unsigned _dataCount;
-	unsigned _dataLength;
-	unsigned _dataOffset;
-	unsigned _currentIndex;
-	unsigned _currentOffset;
-	unsigned _currentLength;
-	BOOL _openEventSent;
-	unsigned _streamStatus;
-	id _delegate;
-	id<PLDataArrayInputStreamProgressDelegate> _progressDelegate;
-	CFRunLoopSourceRef _rls;
-	/*function-pointer*/ void* _clientCallback;
-	XXStruct_4pnlqD _clientContext;
+  NSArray* _dataArray;
+  NSMutableData* _bodyData;
+  unsigned _dataCount;
+  unsigned _dataLength;
+  unsigned _dataOffset;
+  unsigned _currentIndex;
+  unsigned _currentOffset;
+  unsigned _currentLength;
+  BOOL _openEventSent;
+  unsigned _streamStatus;
+  id _delegate;
+  id<PLDataArrayInputStreamProgressDelegate> _progressDelegate;
+  CFRunLoopSourceRef _rls;
+  /*function-pointer*/ void* _clientCallback;
+  XXStruct_4pnlqD _clientContext;
 }
 @property(assign, nonatomic) id<PLDataArrayInputStreamProgressDelegate> progressDelegate;
 -(id)initWithDataArray:(id)dataArray;

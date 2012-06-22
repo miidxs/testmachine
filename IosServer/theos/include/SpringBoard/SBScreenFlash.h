@@ -9,9 +9,9 @@
 #import <Availability2.h>
 
 @interface SBScreenFlash : NSObject {
-	UIWindow* _flashWindow;
-	UIView* _flashView;
-	BOOL _windowVisible;
+  UIWindow* _flashWindow;
+  UIView* _flashView;
+  BOOL _windowVisible;
 }
 +(SBScreenFlash *)sharedInstance;
 -(void)_tearDown;

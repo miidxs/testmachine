@@ -11,16 +11,16 @@
 
 @interface MFMailCompositionContext : NSObject {
 @private
-	NSString* _sendingAddress;
-	NSString* _subject;
-	NSArray* _toRecipients;
-	NSArray* _ccRecipients;
-	NSArray* _bccRecipients;
-	NSString* _messageBody;
-	GenericAttachmentStore* _attachments;
-	struct {
-		unsigned keyboardVisible : 1;
-	} _composeFlags;
+  NSString* _sendingAddress;
+  NSString* _subject;
+  NSArray* _toRecipients;
+  NSArray* _ccRecipients;
+  NSArray* _bccRecipients;
+  NSString* _messageBody;
+  GenericAttachmentStore* _attachments;
+  struct {
+    unsigned keyboardVisible : 1;
+  } _composeFlags;
 }
 @property(copy, nonatomic) NSString* sendingAddress;
 @property(copy, nonatomic) NSString* subject;

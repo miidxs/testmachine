@@ -9,8 +9,8 @@
 @class UIColor;
 
 @interface UICheckeredPatternView : UIView {
-	UIColor* m_patternColor;
-	UIColor* m_checkerColor;
+  UIColor* m_patternColor;
+  UIColor* m_checkerColor;
 }
 -(id)initWithFrame:(CGRect)frame;
 -(void)dealloc;

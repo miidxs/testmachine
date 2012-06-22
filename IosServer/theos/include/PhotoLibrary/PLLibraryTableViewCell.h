@@ -11,11 +11,11 @@
 @class UIImage, UILabel;
 
 @interface PLLibraryTableViewCell : UITableViewCell {
-	CGRect _posterImageRect;
-	UIImage* _posterImage;
-	UILabel* _titleTextLabel;
-	UILabel* _countLabel;
-	BOOL _textNeedsLayout;
+  CGRect _posterImageRect;
+  UIImage* _posterImage;
+  UILabel* _titleTextLabel;
+  UILabel* _countLabel;
+  BOOL _textNeedsLayout;
 }
 // inherited: -(id)initWithFrame:(CGRect)frame reuseIdentifier:(id)identifier;
 // inherited: -(void)dealloc;

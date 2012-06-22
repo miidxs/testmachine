@@ -13,8 +13,8 @@
 __attribute__((visibility("hidden")))
 @interface MLPhotoDCFObject : NSObject {
 @private
-	NSString* _name;
-	int _number;
+  NSString* _name;
+  int _number;
 }
 +(id)validDCFNameForName:(id)name requiredLength:(int)length nameLength:(int)length3 number:(int*)number numberRange:(NSRange)range suffix:(id)suffix;
 -(id)initWithName:(id)name number:(int)number;

@@ -11,30 +11,30 @@
 @class NSDictionary, PLCameraView, PLPhotoLibrary, UIWindow, PLCameraButtonBar, UITransitionView, NSString;
 
 @interface PLUIController : NSObject {
-	id _delegate;
-	UIWindow* _window;
-	struct {
-		unsigned showingCamera : 1;
-		unsigned allowsAlbumSelection : 1;
-		unsigned allowsPlayingSlideshow : 1;
-		unsigned allowsFullSizeImageDisplay : 1;
-		unsigned displayingPhotoPicker : 1;
-		unsigned allowsZoomingWhenCropping : 1;
-		unsigned cropPhotoAfterSelection : 1;
-		unsigned showCancelInNavBar : 1;
-		unsigned showingCameraPreview : 1;
-		unsigned hasStartedLocation : 1;
-		unsigned wantsThrowViewOnSave : 1;
-	} _flags;
-	PLPhotoLibrary* _model;
-	UITransitionView* _fullScreenTransitionView;
-	PLCameraView* _cameraView;
-	PLCameraButtonBar* _cameraRollButtonBar;
-	int _barStyle;
-	NSString* _cropTitle;
-	NSString* _cropSubtitle;
-	NSString* _cropButtonTitle;
-	NSDictionary* _configuration;
+  id _delegate;
+  UIWindow* _window;
+  struct {
+    unsigned showingCamera : 1;
+    unsigned allowsAlbumSelection : 1;
+    unsigned allowsPlayingSlideshow : 1;
+    unsigned allowsFullSizeImageDisplay : 1;
+    unsigned displayingPhotoPicker : 1;
+    unsigned allowsZoomingWhenCropping : 1;
+    unsigned cropPhotoAfterSelection : 1;
+    unsigned showCancelInNavBar : 1;
+    unsigned showingCameraPreview : 1;
+    unsigned hasStartedLocation : 1;
+    unsigned wantsThrowViewOnSave : 1;
+  } _flags;
+  PLPhotoLibrary* _model;
+  UITransitionView* _fullScreenTransitionView;
+  PLCameraView* _cameraView;
+  PLCameraButtonBar* _cameraRollButtonBar;
+  int _barStyle;
+  NSString* _cropTitle;
+  NSString* _cropSubtitle;
+  NSString* _cropButtonTitle;
+  NSDictionary* _configuration;
 }
 +(id)sharedInstance;
 +(BOOL)runningPhotosApplication;

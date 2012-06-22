@@ -11,14 +11,14 @@
 @protocol UITextSelectingContainer;
 
 @interface UITextMagnifierCaret : UIView <UITextMagnifier> {
-	UIView<UITextSelectingContainer>* _target;
-	CGPoint _magnificationPoint;
-	CGPoint _offset;
-	UITextMagnifierTimeWeightedPoint* _weightedPoint;
-	float _yOffset;
-	UIView* _magnifierRenderer;
-	UIView* _autoscrollRenderer;
-	int _autoscrollDirections;
+  UIView<UITextSelectingContainer>* _target;
+  CGPoint _magnificationPoint;
+  CGPoint _offset;
+  UITextMagnifierTimeWeightedPoint* _weightedPoint;
+  float _yOffset;
+  UIView* _magnifierRenderer;
+  UIView* _autoscrollRenderer;
+  int _autoscrollDirections;
 }
 @property(retain, nonatomic) UIView<UITextSelectingContainer>* target;
 @property(assign, nonatomic) CGPoint offset;

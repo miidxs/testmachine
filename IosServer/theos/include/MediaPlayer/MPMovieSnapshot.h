@@ -11,12 +11,12 @@
 @class UIView;
 
 @interface MPMovieSnapshot : NSObject {
-	id _delegate;
-	CGSize _size;
-	int _interfaceOrientation;
-	float _time;
-	float _originalTime;
-	UIView* _snapshot;
+  id _delegate;
+  CGSize _size;
+  int _interfaceOrientation;
+  float _time;
+  float _originalTime;
+  UIView* _snapshot;
 }
 +(id)infoWithSize:(CGSize)size orientation:(int)orientation time:(float)time delegate:(id)delegate;
 -(void)dealloc;

@@ -11,8 +11,8 @@
 @class UITable, NSArray;
 
 @interface SBSIMToolkitListDisplay : SBSlidingAlertDisplay {
-	UITable* _table;
-	NSArray* _items;
+  UITable* _table;
+  NSArray* _items;
 }
 // inherited: +(id)createTopBarForInstance:(id)instance;
 // inherited: -(void)dealloc;

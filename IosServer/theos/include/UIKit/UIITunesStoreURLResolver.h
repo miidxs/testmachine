@@ -9,22 +9,22 @@
 @class NSArray;
 
 typedef enum {
-	UIITunesStoreURLTypeInvalid,
-	UIITunesStoreURLTypeMusicStore,
-	UIITunesStoreURLTypeAppStore,
+  UIITunesStoreURLTypeInvalid,
+  UIITunesStoreURLTypeMusicStore,
+  UIITunesStoreURLTypeAppStore,
 } UIITunesStoreURLType;
 
 __attribute__((visibility("hidden")))
 @interface UIITunesStoreURLResolver : NSObject {
-	NSArray* _appStoreHostPatterns;
-	NSArray* _appStorePathPatterns;
+  NSArray* _appStoreHostPatterns;
+  NSArray* _appStorePathPatterns;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	NSArray* _bookStoreHostPatterns;
-	NSArray* _bookStorePathPatterns;
+  NSArray* _bookStoreHostPatterns;
+  NSArray* _bookStorePathPatterns;
 #endif
-	NSArray* _hostWhiteList;
-	NSArray* _musicStoreHostPatterns;
-	NSArray* _musicStorePathPatterns;
+  NSArray* _hostWhiteList;
+  NSArray* _musicStoreHostPatterns;
+  NSArray* _musicStorePathPatterns;
 }
 +(void)invalidate;
 +(UIITunesStoreURLResolver*)sharedResolver;

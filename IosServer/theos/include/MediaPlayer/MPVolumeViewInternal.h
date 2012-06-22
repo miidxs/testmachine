@@ -11,10 +11,10 @@
 
 @interface MPVolumeViewInternal : NSObject {
 @private
-	MPVolumeSlider* _volumeSlider;
-	UIButton* _routeButton;
-	UILabel* _routeLabel;
-	MPAudioDeviceController* _audioDeviceController;
+  MPVolumeSlider* _volumeSlider;
+  UIButton* _routeButton;
+  UILabel* _routeLabel;
+  MPAudioDeviceController* _audioDeviceController;
 }
 @end
 

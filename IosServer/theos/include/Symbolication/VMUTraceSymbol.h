@@ -11,11 +11,11 @@
 @class NSString;
 
 @interface VMUTraceSymbol : NSObject {
-	unsigned address;
-	NSString* name;
-	NSString* library;
-	NSString* filename;
-	int lineNumber;
+  unsigned address;
+  NSString* name;
+  NSString* library;
+  NSString* filename;
+  int lineNumber;
 }
 -(id)initWithPC:(unsigned)pc withSymbolicator:(id)symbolicator;
 -(id)initWithCString:(char*)cstring length:(long)length withLine:(int)line;

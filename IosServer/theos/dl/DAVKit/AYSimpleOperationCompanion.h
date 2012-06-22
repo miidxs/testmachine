@@ -11,7 +11,7 @@
 @class AYOperation;
 
 @interface AYSimpleOperationCompanion : NSObject <AYOperationCompanion> {
-	AYOperation* _operation;
+  AYOperation* _operation;
 }
 -(id)initWithOperation:(id)operation;
 -(id)operation;

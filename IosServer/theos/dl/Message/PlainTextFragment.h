@@ -10,8 +10,8 @@
 
 
 @interface PlainTextFragment : NSObject {
-	NSRange _range;
-	unsigned _quoteLevel;
+  NSRange _range;
+  unsigned _quoteLevel;
 }
 @end
 

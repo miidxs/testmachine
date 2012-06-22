@@ -12,7 +12,7 @@
 
 @interface MPMediaPickerView : UIView {
 @private
-	MPMediaPickerController* _parentController;
+  MPMediaPickerController* _parentController;
 }
 @property(assign, nonatomic) MPMediaPickerController* parentController;
 -(void)didMoveToWindow;

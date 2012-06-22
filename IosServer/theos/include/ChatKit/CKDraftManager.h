@@ -8,9 +8,9 @@
 @class NSMutableSet, NSMutableDictionary, NSArray;
 
 @interface CKDraftManager : NSObject {
-	NSMutableDictionary* _cachedDrafts;
-	NSMutableSet* _dirtyDraftIDs;
-	NSArray* _pendingRecipients;
+  NSMutableDictionary* _cachedDrafts;
+  NSMutableSet* _dirtyDraftIDs;
+  NSArray* _pendingRecipients;
 }
 +(id)sharedInstance;
 +(void)_createPendingRecipientPath;

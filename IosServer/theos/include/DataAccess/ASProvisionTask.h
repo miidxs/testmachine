@@ -10,9 +10,9 @@
 @class ASPolicy, NSString;
 
 @interface ASProvisionTask : ASTask {
-	int _type;
-	ASPolicy* _policy;
-	NSString* _key;
+  int _type;
+  ASPolicy* _policy;
+  NSString* _key;
 }
 -(id)_initWithType:(int)type policy:(id)policy key:(id)key;
 -(id)initWithOriginalKeyForPolicyRequest:(id)policyRequest;

@@ -10,12 +10,12 @@
 @class NSString, NSDictionary;
 
 @interface SBVODAlarm : NSObject {
-	NSString* _title;
-	NSString* _path;
-	NSDictionary* _rentalInfo;
-	unsigned _loadingRentalInfo : 1;
-	unsigned _sanityCheckingExpiration : 1;
-	unsigned _watched : 1;
+  NSString* _title;
+  NSString* _path;
+  NSDictionary* _rentalInfo;
+  unsigned _loadingRentalInfo : 1;
+  unsigned _sanityCheckingExpiration : 1;
+  unsigned _watched : 1;
 }
 +(void)cancelPendingLoads;
 +(void)_rentalInfoThread;

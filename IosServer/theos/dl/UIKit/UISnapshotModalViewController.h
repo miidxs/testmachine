@@ -8,8 +8,8 @@
 
 
 @interface UISnapshotModalViewController : UIViewController {
-	int _interfaceOrientation;
-	UIViewController* _disappearingViewController;
+  int _interfaceOrientation;
+  UIViewController* _disappearingViewController;
 }
 @property(retain, nonatomic) UIViewController* disappearingViewController;
 -(id)initWithInterfaceOrientation:(int)interfaceOrientation;

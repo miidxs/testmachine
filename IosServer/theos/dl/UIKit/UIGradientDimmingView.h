@@ -8,7 +8,7 @@
 __attribute__((visibility("hidden")))
 @interface UIGradientDimmingView : UIDimmingView {
 @private
-	CGGradientRef _gradient;
+  CGGradientRef _gradient;
 }
 // inherited: -(id)initWithFrame:(CGRect)frame;
 // inherited: -(void)dealloc;

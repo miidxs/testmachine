@@ -10,8 +10,8 @@
 @class MPAudioDeviceController;
 
 @interface MPAudioRoutingPicker : UIAlertView {
-	MPAudioDeviceController* _audioDeviceController;
-	BOOL _ignoringInteractionEvents;
+  MPAudioDeviceController* _audioDeviceController;
+  BOOL _ignoringInteractionEvents;
 }
 -(id)initWithAVController:(id)avcontroller;
 -(void)setAVController:(id)controller;

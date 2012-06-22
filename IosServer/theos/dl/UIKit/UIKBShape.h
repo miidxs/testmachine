@@ -10,11 +10,11 @@
 @class UIKBGeometry;
 
 @interface UIKBShape : NSObject <NSCoding> {
-	UIKBGeometry* m_geometry;
-	CGRect m_originalFrame;
-	CGRect m_frame;
-	CGRect m_paddedFrame;
-	unsigned m_uid;
+  UIKBGeometry* m_geometry;
+  CGRect m_originalFrame;
+  CGRect m_frame;
+  CGRect m_paddedFrame;
+  unsigned m_uid;
 }
 @property(retain, nonatomic) UIKBGeometry* geometry;
 @property(assign, nonatomic) CGRect frame;

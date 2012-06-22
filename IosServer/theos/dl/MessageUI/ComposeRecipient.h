@@ -12,11 +12,11 @@
 @class NSString;
 
 @interface ComposeRecipient : NSObject {
-	void* _record;
-	int _property;
-	int _identifier;
-	NSString* _address;
-	NSString* _label;
+  void* _record;
+  int _property;
+  int _identifier;
+  NSString* _address;
+  NSString* _label;
 }
 +(id)recipientWithRecord:(void*)record property:(int)property identifier:(int)identifier;
 +(id)recipientWithProperty:(int)property address:(id)address;

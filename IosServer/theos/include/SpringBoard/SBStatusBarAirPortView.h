@@ -10,14 +10,14 @@
 
 
 @interface SBStatusBarAirPortView : SBStatusBarContentView {
-	int _dataConnectionType;
-	int _signalStrength;
-	unsigned _showsAirPortBars : 1;
-	unsigned _showsCellDataIndicator : 1;
-	unsigned _isPolling : 1;
-	unsigned _didSetIndicatorFlags : 1;
-	BOOL _showsAirPortView;
-	float _overlap;
+  int _dataConnectionType;
+  int _signalStrength;
+  unsigned _showsAirPortBars : 1;
+  unsigned _showsCellDataIndicator : 1;
+  unsigned _isPolling : 1;
+  unsigned _didSetIndicatorFlags : 1;
+  BOOL _showsAirPortView;
+  float _overlap;
 }
 // inherited: -(id)init;
 // inherited: -(void)dealloc;

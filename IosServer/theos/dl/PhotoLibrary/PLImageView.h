@@ -15,18 +15,18 @@
 @class PLVideoView, UILabel, NSString;
 
 @interface PLImageView : UIImageView {
-	NSString* _name;
-	UIView* _borderView;
-	PLVideoView* _videoView;
-	UILabel* _textBadge;
-	unsigned _shadowEnabled : 1;
-	unsigned _suppressShadowDrawing : 1;
-	unsigned _borderIsVisible : 1;
-	float _aspectRatio;
-	double _lastBorderAlphaTime;
-	double _lastShadowAlphaTime;
-	float _transitionProgress;
-	BOOL _edgeAntialiasingEnabled;
+  NSString* _name;
+  UIView* _borderView;
+  PLVideoView* _videoView;
+  UILabel* _textBadge;
+  unsigned _shadowEnabled : 1;
+  unsigned _suppressShadowDrawing : 1;
+  unsigned _borderIsVisible : 1;
+  float _aspectRatio;
+  double _lastBorderAlphaTime;
+  double _lastShadowAlphaTime;
+  float _transitionProgress;
+  BOOL _edgeAntialiasingEnabled;
 }
 @property(copy, nonatomic) NSString* name;
 @property(assign, nonatomic) float transitionProgress;
@@ -63,28 +63,28 @@
 @class MLPhoto;
 
 @interface PLImageView : UITiledView <PLItemView> {
-	id _delegate;
-	id _orientationDelegate;
-	CGImageRef _fullSizeImageRef;
-	CGImageRef _thumbnailImageRef;
-	CGImageRef _contentsImageRef;
-	CGAffineTransform _contentsTransform;
-	CGAffineTransform _imageTransform;
-	int _imageOrientation;
-	int _orientationWhenLastDisplayed;
-	CGSize _fullSize;
-	MLPhoto* _modelImage;
-	BOOL _setOriginDuringAnimation;
-	float _startScale;
-	float _endScale;
-	CGSize _endContentSize;
-	CGSize _startContentSize;
-	float _zoomProgress;
-	BOOL _zoomToFillInsteadOfToFit;
-	BOOL _useLessThanMinZoomForZoomedOutTest;
-	BOOL _allowZoomToFill;
-	float _imageViewZoomScale;
-	double _lastTouchEventTimestamp;
+  id _delegate;
+  id _orientationDelegate;
+  CGImageRef _fullSizeImageRef;
+  CGImageRef _thumbnailImageRef;
+  CGImageRef _contentsImageRef;
+  CGAffineTransform _contentsTransform;
+  CGAffineTransform _imageTransform;
+  int _imageOrientation;
+  int _orientationWhenLastDisplayed;
+  CGSize _fullSize;
+  MLPhoto* _modelImage;
+  BOOL _setOriginDuringAnimation;
+  float _startScale;
+  float _endScale;
+  CGSize _endContentSize;
+  CGSize _startContentSize;
+  float _zoomProgress;
+  BOOL _zoomToFillInsteadOfToFit;
+  BOOL _useLessThanMinZoomForZoomedOutTest;
+  BOOL _allowZoomToFill;
+  float _imageViewZoomScale;
+  double _lastTouchEventTimestamp;
 }
 // inherited: +(Class)tileClass;
 // inherited: -(id)initWithFrame:(CGRect)frame;

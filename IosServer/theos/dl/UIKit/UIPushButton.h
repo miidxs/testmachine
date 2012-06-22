@@ -10,24 +10,24 @@
 @class NSString, UIFont;
 
 @interface UIPushButton : UIControl {
-	NSString* _title;
-	UIFont* _font;
-	CGSize _shadowOffset;
-	CGSize _imageOffset;
-	CGSize _titlePadding;
-	CFDictionaryRef _info;
-	struct {
-		unsigned selected : 1;
-		unsigned drawShadow : 1;
-		unsigned disableAutosizeToFit : 1;
-		unsigned drawContentsCentered : 1;
-		unsigned reverseShadowDirectionWhenHighlighted : 1;
-		unsigned stretchBackground : 1;
-		unsigned showPressFeedback : 1;
-		unsigned disabledDimsImage : 1;
-		unsigned alwaysHandleScrollerMouseEvent : 1;
-		unsigned drawsImageOnRight : 1;
-	} _pushButtonFlags;
+  NSString* _title;
+  UIFont* _font;
+  CGSize _shadowOffset;
+  CGSize _imageOffset;
+  CGSize _titlePadding;
+  CFDictionaryRef _info;
+  struct {
+    unsigned selected : 1;
+    unsigned drawShadow : 1;
+    unsigned disableAutosizeToFit : 1;
+    unsigned drawContentsCentered : 1;
+    unsigned reverseShadowDirectionWhenHighlighted : 1;
+    unsigned stretchBackground : 1;
+    unsigned showPressFeedback : 1;
+    unsigned disabledDimsImage : 1;
+    unsigned alwaysHandleScrollerMouseEvent : 1;
+    unsigned drawsImageOnRight : 1;
+  } _pushButtonFlags;
 }
 +(id)defaultFont;
 -(id)initWithFrame:(CGRect)frame;

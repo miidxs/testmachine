@@ -10,16 +10,16 @@
 @class ASFolderItemsSyncResponse, NSArray, NSNumber, NSString;
 
 @interface ASCollection : ASItem {
-	int _collectionClassType;
-	NSString* _syncKey;
-	NSString* _collectionId;
-	NSNumber* _status;
-	NSNumber* _moreAvailable;
-	NSArray* _changedItems;
-	NSArray* _responseItems;
-	ASFolderItemsSyncResponse* _parentResponse;
-	int _sniffableType;
-	BOOL _checkedShouldSniffInvites;
+  int _collectionClassType;
+  NSString* _syncKey;
+  NSString* _collectionId;
+  NSNumber* _status;
+  NSNumber* _moreAvailable;
+  NSArray* _changedItems;
+  NSArray* _responseItems;
+  ASFolderItemsSyncResponse* _parentResponse;
+  int _sniffableType;
+  BOOL _checkedShouldSniffInvites;
 }
 // inherited: +(BOOL)acceptsTopLevelLeaves;
 // inherited: +(BOOL)parsingLeafNode;

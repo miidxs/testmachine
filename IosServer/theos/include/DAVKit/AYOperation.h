@@ -11,24 +11,24 @@
 @protocol AYNotificationDelegate, AYGroup;
 
 @interface AYOperation : NSObject {
-	id _asyncProxy;
-	NSThread* _currentThread;
-	NSThread* _baseThread;
-	AYOperation* _parentOperation;
-	AYOperation* _mainOperation;
-	AYOperation* _currentChildOperation;
-	id<AYGroup> _group;
-	NSLock* _operationLock;
-	NSError* _error;
-	BOOL _operationEnded;
-	BOOL _operationAborted;
-	BOOL _silent;
-	BOOL _canAbortNow;
-	BOOL _inAbortProcess;
-	int _currentMark;
-	void* _reserved;
-	id<AYNotificationDelegate> _notificationDelegate;
-	NSMutableDictionary* _privateInfos;
+  id _asyncProxy;
+  NSThread* _currentThread;
+  NSThread* _baseThread;
+  AYOperation* _parentOperation;
+  AYOperation* _mainOperation;
+  AYOperation* _currentChildOperation;
+  id<AYGroup> _group;
+  NSLock* _operationLock;
+  NSError* _error;
+  BOOL _operationEnded;
+  BOOL _operationAborted;
+  BOOL _silent;
+  BOOL _canAbortNow;
+  BOOL _inAbortProcess;
+  int _currentMark;
+  void* _reserved;
+  id<AYNotificationDelegate> _notificationDelegate;
+  NSMutableDictionary* _privateInfos;
 }
 +(void)_initCurrentThread;
 +(void)_initMainThread;

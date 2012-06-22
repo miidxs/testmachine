@@ -11,16 +11,16 @@
 @class NSData, NSString;
 
 @interface MailInlineTextAttachment : MessageTextAttachment {
-	NSData* _cachedImageData;
-	NSString* _cachedMimeType;
-	NSString* _encodingGuess;
-	CGSize _cachedImageSize;
-	float _constrainedWidth;
-	unsigned _numBytes;
-	unsigned _isBeingLoaded : 1;
-	unsigned _cachedDataIsPlaceholder : 1;
-	unsigned _shouldNotLoadFully : 1;
-	unsigned _shouldNotDisplayInline;
+  NSData* _cachedImageData;
+  NSString* _cachedMimeType;
+  NSString* _encodingGuess;
+  CGSize _cachedImageSize;
+  float _constrainedWidth;
+  unsigned _numBytes;
+  unsigned _isBeingLoaded : 1;
+  unsigned _cachedDataIsPlaceholder : 1;
+  unsigned _shouldNotLoadFully : 1;
+  unsigned _shouldNotDisplayInline;
 }
 // inherited: -(void)inlineDisplayData:(id*)data mimeType:(id*)type;
 -(void)_generateInlineData;

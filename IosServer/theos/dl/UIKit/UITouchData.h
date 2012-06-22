@@ -9,12 +9,12 @@
 @class UITouch;
 
 @interface UITouchData : NSObject {
-	CGPoint startTouchDownLocation;
-	unsigned lastTapCount;
-	double lastTouchUpTimestamp;
-	double lastTouchDownTimestamp;
-	BOOL touchIsValidTap;
-	UITouch* lastTouch;
+  CGPoint startTouchDownLocation;
+  unsigned lastTapCount;
+  double lastTouchUpTimestamp;
+  double lastTouchDownTimestamp;
+  BOOL touchIsValidTap;
+  UITouch* lastTouch;
 }
 @end
 

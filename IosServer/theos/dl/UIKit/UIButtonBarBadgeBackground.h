@@ -9,7 +9,7 @@
 @class UIImage;
 
 @interface UIButtonBarBadgeBackground : UIView {
-	UIImage* _image;
+  UIImage* _image;
 }
 -(id)initWithImage:(id)image;
 -(void)dealloc;

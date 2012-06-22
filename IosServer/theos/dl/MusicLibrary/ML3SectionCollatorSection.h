@@ -12,10 +12,10 @@
 __attribute__((visibility("hidden")))
 @interface ML3SectionCollatorSection : NSObject {
 @private
-	NSString* _header;
-	unsigned short* _headerCharacters;
-	unsigned _headerLength;
-	ML3SectionCollator* _sectionCollator;
+  NSString* _header;
+  unsigned short* _headerCharacters;
+  unsigned _headerLength;
+  ML3SectionCollator* _sectionCollator;
 }
 @property(copy, nonatomic) NSString* header;
 @property(assign, nonatomic) ML3SectionCollator* sectionCollator;

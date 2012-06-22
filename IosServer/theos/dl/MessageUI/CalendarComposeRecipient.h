@@ -10,7 +10,7 @@
 @class NSString;
 
 @interface CalendarComposeRecipient : ComposeRecipient {
-	NSString* _calAttendeeName;
+  NSString* _calAttendeeName;
 }
 // inherited: -(void)dealloc;
 -(id)initWithComposeRecipient:(id)composeRecipient;

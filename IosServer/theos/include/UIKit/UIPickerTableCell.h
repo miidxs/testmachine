@@ -8,8 +8,8 @@
 
 
 @interface UIPickerTableCell : UIImageAndTextTableCell {
-	unsigned _checked : 1;
-	unsigned _reserved : 31;
+  unsigned _checked : 1;
+  unsigned _reserved : 31;
 }
 -(id)initWithFrame:(CGRect)frame;
 -(void)updateHighlightColors;

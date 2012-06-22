@@ -11,9 +11,9 @@
 @class NSString;
 
 @interface SBSIMLockPUKEntryAlertDisplay : SBSIMLockEntryAlertDisplay {
-	int _state;
-	NSString* _enteredPUKCode;
-	NSString* _newPIN;
+  int _state;
+  NSString* _enteredPUKCode;
+  NSString* _newPIN;
 }
 // inherited: -(void)dealloc;
 -(id)_pukAttemptsRemainingLabel;

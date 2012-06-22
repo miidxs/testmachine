@@ -13,15 +13,15 @@
 
 @interface VolumeControl : NSObject {
 #if __IPHONE_OS_VERSION_MAX_ALLOWED < __IPHONE_3_2
-	UIWindow* _volumeWindow;
-	VolumeControlView* _volumeView;
-	BOOL _windowVisible;
+  UIWindow* _volumeWindow;
+  VolumeControlView* _volumeView;
+  BOOL _windowVisible;
 #endif
-	BOOL _debounce;
-	int _mode;
-	NSMutableSet* _alwaysHiddenCategories;
-	NSString* _lastDisplayedCategory;
-	NSString* _lastEventCategory;
+  BOOL _debounce;
+  int _mode;
+  NSMutableSet* _alwaysHiddenCategories;
+  NSString* _lastDisplayedCategory;
+  NSString* _lastEventCategory;
 }
 +(VolumeControl *)sharedVolumeControl;
 // inherited: -(id)init;

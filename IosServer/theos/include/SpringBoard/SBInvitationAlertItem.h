@@ -11,15 +11,15 @@
 @class NSString;
 
 @interface SBInvitationAlertItem : SBAlertItem {
-	NSString* _title;
-	NSString* _organizer;
-	double _startDate;
-	double _endDate;
-	int _eventId;
-	BOOL _allDay;
-	BOOL _floats;
-	int _count;
-	int _status;
+  NSString* _title;
+  NSString* _organizer;
+  double _startDate;
+  double _endDate;
+  int _eventId;
+  BOOL _allDay;
+  BOOL _floats;
+  int _count;
+  int _status;
 }
 +(id)activeInvitationAlertItems;
 +(void)_addActiveItem:(id)item;

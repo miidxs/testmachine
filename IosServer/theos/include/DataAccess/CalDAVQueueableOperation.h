@@ -11,12 +11,12 @@
 @class NSError, CalDAVOperationQueue;
 
 @interface CalDAVQueueableOperation : NSObject {
-	CalDAVOperationQueue* _queue;
-	NSError* _error;
-	BOOL _running;
-	int _retryCounter;
-	BOOL _pendingRetry;
-	BOOL _finished;
+  CalDAVOperationQueue* _queue;
+  NSError* _error;
+  BOOL _running;
+  int _retryCounter;
+  BOOL _pendingRetry;
+  BOOL _finished;
 }
 -(id)initWithQueue:(id)queue;
 // inherited: -(void)dealloc;

@@ -10,10 +10,10 @@
 @class MessageLibrary, NSDate, MailboxUid, SqliteMessageIDStore;
 
 @interface POPDownloadQueue : BufferedMessageQueue {
-	SqliteMessageIDStore* _uidStore;
-	MessageLibrary* _library;
-	MailboxUid* _mailbox;
-	NSDate* startDate;
+  SqliteMessageIDStore* _uidStore;
+  MessageLibrary* _library;
+  MailboxUid* _mailbox;
+  NSDate* startDate;
 }
 // inherited: -(id)init;
 // inherited: -(BOOL)addItem:(id)item;

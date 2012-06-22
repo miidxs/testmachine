@@ -11,8 +11,8 @@
 @class NSArray;
 
 @interface SBAwayItemsView : UIModalView {
-	NSArray* _displayedItems;
-	float _widestLabel;
+  NSArray* _displayedItems;
+  float _widestLabel;
 }
 +(GSFontRef)createItemTypeFont;
 // inherited: -(id)init;

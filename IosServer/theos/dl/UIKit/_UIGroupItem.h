@@ -8,13 +8,13 @@
 @class NSString;
 
 @interface _UIGroupItem : NSObject {
-	NSString* _title;
-	float offset;
-	int _rowCountBeforeGroup;
-	int _childCount;
-	unsigned _isRadioGroup : 1;
-	unsigned _isLabelGroup : 1;
-	unsigned _reserved : 30;
+  NSString* _title;
+  float offset;
+  int _rowCountBeforeGroup;
+  int _childCount;
+  unsigned _isRadioGroup : 1;
+  unsigned _isLabelGroup : 1;
+  unsigned _reserved : 30;
 }
 -(id)initWithTitle:(id)title childCount:(int)count rowCountBeforeGroup:(int)group isRadioGroup:(BOOL)group4;
 -(void)dealloc;

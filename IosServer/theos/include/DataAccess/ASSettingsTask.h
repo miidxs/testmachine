@@ -11,8 +11,8 @@
 
 @interface ASSettingsTask : ASTask {
 @private
-	NSArray* _getters;
-	NSDictionary* _setters;
+  NSArray* _getters;
+  NSDictionary* _setters;
 }
 @property(retain) NSArray* getters;
 @property(retain) NSDictionary* setters;

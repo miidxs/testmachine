@@ -11,9 +11,9 @@
 
 @interface MPMediaPropertyPredicateInternal : NSObject {
 @private
-	NSString* _property;
-	id _value;
-	int _comparisonType;
+  NSString* _property;
+  id _value;
+  int _comparisonType;
 }
 @end
 

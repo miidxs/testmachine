@@ -15,10 +15,10 @@
 __attribute__((visibility("hidden")))
 @interface UIClassicController : NSObject {
 @private
-	UIWindow* _window;
-	UIImageView* _imageView;
-	UIStatusBarViewController* _statusBarViewController;
-	UIZoomViewController* _zoomViewController;
+  UIWindow* _window;
+  UIImageView* _imageView;
+  UIStatusBarViewController* _statusBarViewController;
+  UIZoomViewController* _zoomViewController;
 }
 +(UIClassicController*)sharedClassicController;
 -(void)dealloc;

@@ -19,163 +19,163 @@
 @protocol UIFormAssistantDelegate;
 
 @interface UIWebDocumentView : UIWebTiledView <UIKeyboardInput, UIModalViewDelegate, UILongPressGestureRecognizerDelegate> {
-	int _retainCount;
-	WKWindow* _wkWindow;
-	WebView* _webView;
-	WebViewReachabilityObserver* _reachabilityObserver;
-	id m_parentTextView;
-	id _delegate;
-	id _textSuggestionDelegate;
-	id _editingDelegate;
+  int _retainCount;
+  WKWindow* _wkWindow;
+  WebView* _webView;
+  WebViewReachabilityObserver* _reachabilityObserver;
+  id m_parentTextView;
+  id _delegate;
+  id _textSuggestionDelegate;
+  id _editingDelegate;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED < __IPHONE_3_2
-	float _doubleTapDelay;
+  float _doubleTapDelay;
 #endif
-	CGRect _doubleTapRect;
-	CGRect _mainDocumentDoubleTapRect;
-	CGPoint _scrollPoint;
-	CGPoint _doubleTapStartPosition;
-	double _doubleTapStartTime;
-	CGSize _pendingSize;
-	int _orientation;
-	DOMHTMLElement* _standaloneEditingElement;
-	CGPoint _mouseDownPoint;
-	double _mouseDownTime;
-	UIAutoscroll* _autoscroll;
-	CFDictionaryRef _plugInViews;
-	int m_selectionGranularity;
-	BOOL m_selectionGranularityIncreasing;
-	CALayer* _contentLayersHostingLayer;
-	UITextInputTraits* _traits;
+  CGRect _doubleTapRect;
+  CGRect _mainDocumentDoubleTapRect;
+  CGPoint _scrollPoint;
+  CGPoint _doubleTapStartPosition;
+  double _doubleTapStartTime;
+  CGSize _pendingSize;
+  int _orientation;
+  DOMHTMLElement* _standaloneEditingElement;
+  CGPoint _mouseDownPoint;
+  double _mouseDownTime;
+  UIAutoscroll* _autoscroll;
+  CFDictionaryRef _plugInViews;
+  int m_selectionGranularity;
+  BOOL m_selectionGranularityIncreasing;
+  CALayer* _contentLayersHostingLayer;
+  UITextInputTraits* _traits;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	id<UITextInputDelegate> _inputDelegate;
-	UITapGestureRecognizer* _singleTapGestureRecognizer;
-	UITapGestureRecognizer* _doubleTapGestureRecognizer;
-	UITapGestureRecognizer* _twoFingerDoubleTapGestureRecognizer;
-	UILongPressGestureRecognizer* _highlightLongPressGestureRecognizer;
-	UILongPressGestureRecognizer* _longPressGestureRecognizer;
-	UIPanGestureRecognizer* _twoFingerPanGestureRecognizer;
-#else	
-	struct {
-		NSMutableArray* all;
-		NSMutableArray* html;
-		NSMutableArray* javascript;
-		NSMutableArray* css;
-		NSMutableArray* error;
-		NSMutableArray* warning;
-		NSMutableArray* tip;
-		NSMutableArray* log;
-	} _messages;
-	struct {
-		unsigned isEdited : 1;
-		unsigned allowsUnapprovedFocus : 1;
-		unsigned isAutoFilling : 1;
-		id<UIFormAssistantDelegate> delegate;
-		UIWebFormDelegate* formDelegate;
-	} _forms;
+  id<UITextInputDelegate> _inputDelegate;
+  UITapGestureRecognizer* _singleTapGestureRecognizer;
+  UITapGestureRecognizer* _doubleTapGestureRecognizer;
+  UITapGestureRecognizer* _twoFingerDoubleTapGestureRecognizer;
+  UILongPressGestureRecognizer* _highlightLongPressGestureRecognizer;
+  UILongPressGestureRecognizer* _longPressGestureRecognizer;
+  UIPanGestureRecognizer* _twoFingerPanGestureRecognizer;
+#else 
+  struct {
+    NSMutableArray* all;
+    NSMutableArray* html;
+    NSMutableArray* javascript;
+    NSMutableArray* css;
+    NSMutableArray* error;
+    NSMutableArray* warning;
+    NSMutableArray* tip;
+    NSMutableArray* log;
+  } _messages;
+  struct {
+    unsigned isEdited : 1;
+    unsigned allowsUnapprovedFocus : 1;
+    unsigned isAutoFilling : 1;
+    id<UIFormAssistantDelegate> delegate;
+    UIWebFormDelegate* formDelegate;
+  } _forms;
 #endif
-	struct {
-		NSTimer* timer;
-		CGPoint location;
-		BOOL isBlocked;
-		BOOL isCancelled;
-		BOOL isOnWebThread;
-		BOOL isDisplayingHighlight;
-		BOOL attemptedClick;
-		BOOL isGestureScrolling;
-		CGPoint gestureScrollPoint;
-		CGPoint gestureCurrentPoint;
-		BOOL hasAttemptedGestureScrolling;
+  struct {
+    NSTimer* timer;
+    CGPoint location;
+    BOOL isBlocked;
+    BOOL isCancelled;
+    BOOL isOnWebThread;
+    BOOL isDisplayingHighlight;
+    BOOL attemptedClick;
+    BOOL isGestureScrolling;
+    CGPoint gestureScrollPoint;
+    CGPoint gestureCurrentPoint;
+    BOOL hasAttemptedGestureScrolling;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED < __IPHONE_3_2
-		UIView* candidate;
-		BOOL forwardingGuard;
-		SEL mouseUpForwarder;
-		SEL mouseDraggedForwarder;
+    UIView* candidate;
+    BOOL forwardingGuard;
+    SEL mouseUpForwarder;
+    SEL mouseDraggedForwarder;
 #endif
-		DOMNode* element;
-		BOOL defersCallbacksState;
-		UIInformalDelegate* delegate;
-		int interactionSheetType;
-		UIActionSheet* interactionSheet;
-		BOOL allowsImageSheet;
-		BOOL allowsDataDetectorsSheet;
+    DOMNode* element;
+    BOOL defersCallbacksState;
+    UIInformalDelegate* delegate;
+    int interactionSheetType;
+    UIActionSheet* interactionSheet;
+    BOOL allowsImageSheet;
+    BOOL allowsDataDetectorsSheet;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED < __IPHONE_3_2
-		struct {
-			BOOL active;
-			BOOL defaultPrevented;
-			NSMutableArray* regions;
+    struct {
+      BOOL active;
+      BOOL defaultPrevented;
+      NSMutableArray* regions;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_1
-			float originalGestureDistance;
-			float originalGestureAngle;
+      float originalGestureDistance;
+      float originalGestureAngle;
 #endif
-		} directEvents;
+    } directEvents;
 #endif
-	} _interaction;
+  } _interaction;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED < __IPHONE_3_2
-	struct {
-		WebPDFView* view;
-		NSTimer* timer;
-	} _pdf;
+  struct {
+    WebPDFView* view;
+    NSTimer* timer;
+  } _pdf;
 #endif
-	struct {
-		CGSize size;
-		float initialScale;
-		float minimumScale;
-		float maximumScale;
-		BOOL allowsUserScaling;
-	} _viewportConfigurations[6];
-	CGSize _minimumSize;
-	int _documentType;
-	float _documentScale;
-	CGRect _documentBounds;
-	int _enabledGestures;
-	unsigned _customConfigurations;
-	unsigned _mouseDownCount;
-	unsigned _dataDetectorTypes;
-	unsigned _webCoreNeedsSetNeedsDisplay : 1;
-	unsigned _webCoreNeedsDraw : 1;
-	unsigned _ignoresFocusingMouse : 1;
-	unsigned _ignoresKeyEvents : 1;
-	unsigned _autoresizes : 1;
-	unsigned _scalesToFit : 1;
+  struct {
+    CGSize size;
+    float initialScale;
+    float minimumScale;
+    float maximumScale;
+    BOOL allowsUserScaling;
+  } _viewportConfigurations[6];
+  CGSize _minimumSize;
+  int _documentType;
+  float _documentScale;
+  CGRect _documentBounds;
+  int _enabledGestures;
+  unsigned _customConfigurations;
+  unsigned _mouseDownCount;
+  unsigned _dataDetectorTypes;
+  unsigned _webCoreNeedsSetNeedsDisplay : 1;
+  unsigned _webCoreNeedsDraw : 1;
+  unsigned _ignoresFocusingMouse : 1;
+  unsigned _ignoresKeyEvents : 1;
+  unsigned _autoresizes : 1;
+  unsigned _scalesToFit : 1;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	unsigned _updatesScrollView : 1;
+  unsigned _updatesScrollView : 1;
 #endif
-	unsigned _hasCustomScale : 1;
-	unsigned _userScrolled : 1;
-	unsigned _pageNeedsReset : 1;
-	unsigned _hasScrollPoint : 1;
-	unsigned _setNeedsDisplayWasForced : 1;
-	unsigned _gesturesDisabled : 1;
-	unsigned _doubleTapRectIsReplaced : 1;
-	unsigned _standaloneEditableView : 1;
-	unsigned _widgetEditingView : 1;
-	unsigned _mouseDragged : 1;
-	unsigned _mouseReentrancyGuard : 1;
-	unsigned _isShowingFullScreenPlugIn : 1;
-	unsigned _isSettingRedrawFrame : 1;
-	unsigned _needsScrollNotifications : 1;
-	unsigned _loadsSynchronously : 1;
-	unsigned _mouseDown : 1;
-	unsigned _usePreTimberlineTransparencyBehavior : 1;
-	unsigned _geolocationDialogAllowed : 1;
-	unsigned _usingMinimalTilesDuringLoading : 1;
-	unsigned _sheetsCount : 2;
-	unsigned _didFirstVisuallyNonEmptyLayout : 1;
-	unsigned _loadInProgress : 1;
-	unsigned _uiwdvIsResigningFirstResponder : 1;
+  unsigned _hasCustomScale : 1;
+  unsigned _userScrolled : 1;
+  unsigned _pageNeedsReset : 1;
+  unsigned _hasScrollPoint : 1;
+  unsigned _setNeedsDisplayWasForced : 1;
+  unsigned _gesturesDisabled : 1;
+  unsigned _doubleTapRectIsReplaced : 1;
+  unsigned _standaloneEditableView : 1;
+  unsigned _widgetEditingView : 1;
+  unsigned _mouseDragged : 1;
+  unsigned _mouseReentrancyGuard : 1;
+  unsigned _isShowingFullScreenPlugIn : 1;
+  unsigned _isSettingRedrawFrame : 1;
+  unsigned _needsScrollNotifications : 1;
+  unsigned _loadsSynchronously : 1;
+  unsigned _mouseDown : 1;
+  unsigned _usePreTimberlineTransparencyBehavior : 1;
+  unsigned _geolocationDialogAllowed : 1;
+  unsigned _usingMinimalTilesDuringLoading : 1;
+  unsigned _sheetsCount : 2;
+  unsigned _didFirstVisuallyNonEmptyLayout : 1;
+  unsigned _loadInProgress : 1;
+  unsigned _uiwdvIsResigningFirstResponder : 1;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	unsigned _classicMode : 1;
-	unsigned _sizeUpdatesSuspended : 1;
-	unsigned _sizeUpdateOccurredWhileSuspended : 1;
-#endif	
-	WebThreadSafeUndoManager* _undoManager;
-	UIWebSelectionAssistant* _webSelectionAssistant;
-	UITextInteractionAssistant* _textSelectionAssistant;
-	UITextSelectionView* _textSelectionView;
+  unsigned _classicMode : 1;
+  unsigned _sizeUpdatesSuspended : 1;
+  unsigned _sizeUpdateOccurredWhileSuspended : 1;
+#endif  
+  WebThreadSafeUndoManager* _undoManager;
+  UIWebSelectionAssistant* _webSelectionAssistant;
+  UITextInteractionAssistant* _textSelectionAssistant;
+  UITextSelectionView* _textSelectionView;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	UITextChecker* _textChecker;
+  UITextChecker* _textChecker;
 #endif
-	UIEdgeInsets _caretInsets;
+  UIEdgeInsets _caretInsets;
 }
 // in a protocol: @property(assign, nonatomic) UITextAutocapitalizationType autocapitalizationType;
 // in a protocol: @property(assign, nonatomic) UITextAutocorrectionType autocorrectionType;

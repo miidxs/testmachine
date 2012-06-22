@@ -14,22 +14,22 @@
 #else
 @interface UIMotionEvent : UIEvent {
 #endif
-	id _motionAccelerometer;
-	int _subtype;
-	int _shakeState;
-	int _stateMachineState;
-	double _shakeStartTime;
-	double _lastMovementTime;
-	double _highLevelTime;
-	double _lowEndTimeout;
-	NSTimer* _idleTimer;
-	BOOL _sentMotionBegan;
-	float _lowPassState[10];
-	unsigned _lowPassStateIndex;
-	unsigned _highPassStateIndex;
-	float _highPassState[2];
+  id _motionAccelerometer;
+  int _subtype;
+  int _shakeState;
+  int _stateMachineState;
+  double _shakeStartTime;
+  double _lastMovementTime;
+  double _highLevelTime;
+  double _lowEndTimeout;
+  NSTimer* _idleTimer;
+  BOOL _sentMotionBegan;
+  float _lowPassState[10];
+  unsigned _lowPassStateIndex;
+  unsigned _highPassStateIndex;
+  float _highPassState[2];
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_1
-	int notifyToken;
+  int notifyToken;
 #endif
 }
 @property(assign, nonatomic) int shakeState;

@@ -10,10 +10,10 @@
 @class IMAPFetchResult, NSString;
 
 @interface _IMAPFetchUnit : NSObject {
-	unsigned uid;
-	NSString* fetchItem;
+  unsigned uid;
+  NSString* fetchItem;
 @private
-	IMAPFetchResult* _expectedFetchResult;
+  IMAPFetchResult* _expectedFetchResult;
 }
 // inherited: -(void)dealloc;
 -(void)_setupExpectedFetchResult;

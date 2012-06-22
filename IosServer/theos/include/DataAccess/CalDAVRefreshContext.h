@@ -9,10 +9,10 @@
 
 
 @interface CalDAVRefreshContext : NSObject {
-	BOOL _isForced;
-	BOOL _isCalendarsOnly;
-	BOOL _didDownloadEvents;
-	BOOL _didSaveDatabase;
+  BOOL _isForced;
+  BOOL _isCalendarsOnly;
+  BOOL _didDownloadEvents;
+  BOOL _didSaveDatabase;
 }
 @property(assign, nonatomic) BOOL isForced;
 @property(assign, nonatomic) BOOL isCalendarsOnly;

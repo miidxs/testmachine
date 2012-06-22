@@ -7,34 +7,34 @@
 
 @interface UIPopoverView : UIView {
 @private
-	id _delegate;
-	UIView* _contentView;
-	UIView* _bgView;
-	SEL _presentAnimationCompletedSelector;
-	SEL _dismissAnimationCompletedSelector;
-	UIDimmingView* _dimmingView;
-	UIViewController* _viewController;
-	int _direction;
-	int _backgroundStyle;
-	NSArray* _passthroughViews;
-	float _offset;
-	float _sizeAdjustmentForKeyboard;
-	float _slideAdjustmentForKeyboard;
-	CGRect _desiredPresentationRect;
-	CGRect _preferredFrame;
-	CGSize _contentSize;
-	CGPoint _contentOrigin;
-	UIView* _toolbarShineImage;
-	UIWindow* _popoverHostingWindow;
-	BOOL _fastMode;
-	UILayoutContainerView* _roundedLayoutContainerView;
-	CGRect _popoverTargetRect;
-	CGRect _screenPreferredFrame;
-	struct {
-		unsigned disableTopSeparator : 1;
-		unsigned disableBottomSeparator : 1;
-		unsigned selected : 1;
-	} _popoverFlags;
+  id _delegate;
+  UIView* _contentView;
+  UIView* _bgView;
+  SEL _presentAnimationCompletedSelector;
+  SEL _dismissAnimationCompletedSelector;
+  UIDimmingView* _dimmingView;
+  UIViewController* _viewController;
+  int _direction;
+  int _backgroundStyle;
+  NSArray* _passthroughViews;
+  float _offset;
+  float _sizeAdjustmentForKeyboard;
+  float _slideAdjustmentForKeyboard;
+  CGRect _desiredPresentationRect;
+  CGRect _preferredFrame;
+  CGSize _contentSize;
+  CGPoint _contentOrigin;
+  UIView* _toolbarShineImage;
+  UIWindow* _popoverHostingWindow;
+  BOOL _fastMode;
+  UILayoutContainerView* _roundedLayoutContainerView;
+  CGRect _popoverTargetRect;
+  CGRect _screenPreferredFrame;
+  struct {
+    unsigned disableTopSeparator : 1;
+    unsigned disableBottomSeparator : 1;
+    unsigned selected : 1;
+  } _popoverFlags;
 }
 @property(assign, nonatomic) id delegate;
 @property(readonly, retain, nonatomic) UIView* contentView;

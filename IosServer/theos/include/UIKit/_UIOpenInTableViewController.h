@@ -7,7 +7,7 @@
 __attribute__((visibility("hidden")))
 @interface _UIOpenInTableViewController : UITableViewController {
 @private
-	UIDocumentInteractionController* _documentInteractionController;
+  UIDocumentInteractionController* _documentInteractionController;
 }
 -(id)initWithDocumentInteractionController:(id)documentInteractionController;
 // inherited: -(int)tableView:(id)view numberOfRowsInSection:(int)section;

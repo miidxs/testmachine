@@ -9,10 +9,10 @@
 #import <Availability2.h>
 
 @interface SBTetherController : NSObject {
-	int _tetherState;
-	unsigned _demoCardConnection;
+  int _tetherState;
+  unsigned _demoCardConnection;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	int _lastOrientationCode;
+  int _lastOrientationCode;
 #endif
 }
 +(SBTetherController *)sharedInstance;

@@ -11,8 +11,8 @@
 @class SBStatusBarContentsView;
 
 @interface SBStatusBarContentView : UIView {
-	SBStatusBarContentsView* _contentsView;
-	int _mode;
+  SBStatusBarContentsView* _contentsView;
+  int _mode;
 }
 -(id)initWithContentsView:(id)contentsView;
 // inherited: -(id)initWithFrame:(CGRect)frame;

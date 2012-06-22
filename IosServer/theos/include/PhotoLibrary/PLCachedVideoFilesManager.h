@@ -12,11 +12,11 @@
 @class NSLock, NSMutableDictionary, MLPhotoLibrary, NSDate;
 
 @interface PLCachedVideoFilesManager : NSObject <MLPhotoBakedThumbnailsDelegate> {
-	MLPhotoLibrary* _photoLibrary;
-	BOOL _cancelPostProcessing;
-	NSLock* _cancellationLock;
-	NSMutableDictionary* _videosMetadata;
-	NSDate* _currentDatabaseModTime;
+  MLPhotoLibrary* _photoLibrary;
+  BOOL _cancelPostProcessing;
+  NSLock* _cancellationLock;
+  NSMutableDictionary* _videosMetadata;
+  NSDate* _currentDatabaseModTime;
 }
 -(id)initWithPhotoLibrary:(id)photoLibrary;
 // inherited: -(void)dealloc;

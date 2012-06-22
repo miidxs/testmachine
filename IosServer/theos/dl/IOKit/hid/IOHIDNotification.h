@@ -38,42 +38,42 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #if __cplusplus
 extern "C" {
 #endif
-	
-	typedef void(*IOHIDNotificationCallback)(void* target, void* refcon);
-	
-	typedef struct __IOHIDNotification
+  
+  typedef void(*IOHIDNotificationCallback)(void* target, void* refcon);
+  
+  typedef struct __IOHIDNotification
 #if 0
-	{
-		CFRuntimeBase _base;	// 0, 4
-		IOHIDNotificationCallback clientCallback;	// 8
-		void* clientTarget;	// c
-		void* clientRefcon;	// 10
-		IOHIDNotificationCallback ownerCallback;	// 14
-		void* ownerTarget;	// 18
-		void* ownerRefcon;	// 1c
-	}
+  {
+    CFRuntimeBase _base;  // 0, 4
+    IOHIDNotificationCallback clientCallback; // 8
+    void* clientTarget; // c
+    void* clientRefcon; // 10
+    IOHIDNotificationCallback ownerCallback;  // 14
+    void* ownerTarget;  // 18
+    void* ownerRefcon;  // 1c
+  }
 #endif
-	* IOHIDNotificationRef;
-	
+  * IOHIDNotificationRef;
+  
 #pragma mark -
 #pragma mark Creators
-	
-	CFTypeID IOHIDNotificationGetTypeID();
-	
-	IOHIDNotificationRef IOHIDNotificationCreate(CFAllocatorRef allocator,
-												 IOHIDNotificationCallback ownerCallback, void* ownerTarget, void* ownerRefcon,
-												 IOHIDNotificationCallback clientCallback, void* clientTarget, void* clientRefcon);
-	
+  
+  CFTypeID IOHIDNotificationGetTypeID();
+  
+  IOHIDNotificationRef IOHIDNotificationCreate(CFAllocatorRef allocator,
+                         IOHIDNotificationCallback ownerCallback, void* ownerTarget, void* ownerRefcon,
+                         IOHIDNotificationCallback clientCallback, void* clientTarget, void* clientRefcon);
+  
 #pragma mark -
 #pragma mark Accessors
-	
-	IOHIDNotificationCallback IOHIDNotificationGetClientCallback(IOHIDNotificationRef notification);
-	void* IOHIDNotificationGetClientTarget(IOHIDNotificationRef notification);
-	void* IOHIDNotificationGetClientRefcon(IOHIDNotificationRef notification);
-	IOHIDNotificationCallback IOHIDNotificationGetOwnerCallback(IOHIDNotificationRef notification);
-	void* IOHIDNotificationGetOwnerTarget(IOHIDNotificationRef notification);
-	void* IOHIDNotificationGetOwnerRefcon(IOHIDNotificationRef notification);
-		
+  
+  IOHIDNotificationCallback IOHIDNotificationGetClientCallback(IOHIDNotificationRef notification);
+  void* IOHIDNotificationGetClientTarget(IOHIDNotificationRef notification);
+  void* IOHIDNotificationGetClientRefcon(IOHIDNotificationRef notification);
+  IOHIDNotificationCallback IOHIDNotificationGetOwnerCallback(IOHIDNotificationRef notification);
+  void* IOHIDNotificationGetOwnerTarget(IOHIDNotificationRef notification);
+  void* IOHIDNotificationGetOwnerRefcon(IOHIDNotificationRef notification);
+    
 #if __cplusplus
 }
 #endif

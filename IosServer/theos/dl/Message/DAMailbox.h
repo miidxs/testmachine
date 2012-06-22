@@ -10,7 +10,7 @@
 @class DAFolder;
 
 @interface DAMailbox : MailboxUid {
-	DAFolder* _DAFolder;
+  DAFolder* _DAFolder;
 }
 -(id)initWithName:(id)name attributes:(unsigned)attributes account:(id)account folder:(id)folder;
 // inherited: -(id)description;

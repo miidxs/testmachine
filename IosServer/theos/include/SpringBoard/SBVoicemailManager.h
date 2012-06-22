@@ -10,10 +10,10 @@
 
 
 @interface SBVoicemailManager : NSObject {
-	XXStruct_EX3dgA _alertMark;
-	XXStruct_EX3dgA _awayItemMark;
-	BOOL _hasVisualVoicemail;
-	int _visualVoicemailSubscriptionToken;
+  XXStruct_EX3dgA _alertMark;
+  XXStruct_EX3dgA _awayItemMark;
+  BOOL _hasVisualVoicemail;
+  int _visualVoicemailSubscriptionToken;
 }
 +(id)sharedInstance;
 // inherited: -(id)init;

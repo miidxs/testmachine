@@ -10,9 +10,9 @@
 @class NSString;
 
 @interface SBEdgeActivationAlertItem : SBAlertItem {
-	int _error;
-	NSString* _reason;
-	BOOL _suggestWiFi;
+  int _error;
+  NSString* _reason;
+  BOOL _suggestWiFi;
 }
 -(id)initWithErrorCode:(int)errorCode reason:(id)reason suggestWiFi:(BOOL)fi;
 // inherited: -(void)dealloc;

@@ -8,11 +8,11 @@
 @class NSArray, NSString;
 
 @interface CKMessageStandaloneComposition : CKMessageComposition {
-	NSString* _textString;
-	NSString* _markupString;
-	NSString* _subject;
-	NSArray* _resources;
-	BOOL _isTextOnly;
+  NSString* _textString;
+  NSString* _markupString;
+  NSString* _subject;
+  NSArray* _resources;
+  BOOL _isTextOnly;
 }
 @property(copy, nonatomic) NSString* markupString;
 @property(copy, nonatomic) NSString* textString;

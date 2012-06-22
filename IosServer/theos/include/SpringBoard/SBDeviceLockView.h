@@ -6,11 +6,11 @@
 @class SBDeviceLockTitle, SBDeviceLockEntryField;
 
 @interface SBDeviceLockView : UIView {
-	int _style;
-	int _interfaceOrientation;
-	SBDeviceLockTitle* _statusView;
-	SBDeviceLockEntryField* _entryView;
-	id _delegate;
+  int _style;
+  int _interfaceOrientation;
+  SBDeviceLockTitle* _statusView;
+  SBDeviceLockEntryField* _entryView;
+  id _delegate;
 }
 @property(readonly, assign, nonatomic) int style;
 @property(assign, nonatomic) int interfaceOrientation;

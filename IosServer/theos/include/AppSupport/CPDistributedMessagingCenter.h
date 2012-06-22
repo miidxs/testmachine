@@ -11,14 +11,14 @@
 @class NSLock, NSMutableDictionary, NSOperationQueue, NSString, NSDictionary, NSError;
 
 @interface CPDistributedMessagingCenter : NSObject {
-	NSString* _centerName;
-	NSLock* _lock;
-	unsigned _sendPort;
-	CFMachPortRef _invalidationPort;
-	NSOperationQueue* _asyncQueue;
-	CFRunLoopSourceRef _serverSource;
-	NSString* _requiredEntitlement;
-	NSMutableDictionary* _callouts;
+  NSString* _centerName;
+  NSLock* _lock;
+  unsigned _sendPort;
+  CFMachPortRef _invalidationPort;
+  NSOperationQueue* _asyncQueue;
+  CFRunLoopSourceRef _serverSource;
+  NSString* _requiredEntitlement;
+  NSMutableDictionary* _callouts;
 }
 +(CPDistributedMessagingCenter*)centerNamed:(NSString*)serverName;
 -(id)_initWithServerName:(NSString*)serverName;

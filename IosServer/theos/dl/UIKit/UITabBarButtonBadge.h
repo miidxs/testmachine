@@ -8,9 +8,9 @@
 
 
 @interface UITabBarButtonBadge : UIView {
-	UIView* _value;
-	UIView* _background;
-	UIView* _alternate;
+  UIView* _value;
+  UIView* _background;
+  UIView* _alternate;
 }
 -(id)initWithValue:(id)value blinks:(BOOL)blinks;
 -(void)dealloc;

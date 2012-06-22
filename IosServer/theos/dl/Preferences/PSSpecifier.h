@@ -11,43 +11,43 @@
 @class NSMutableDictionary, NSDictionary, NSString, NSArray;
 
 typedef enum PSCellType {
-	PSGroupCell,
-	PSLinkCell,
-	PSLinkListCell,
-	PSListItemCell,
-	PSTitleValueCell,
-	PSSliderCell,
-	PSSwitchCell,
-	PSStaticTextCell,
-	PSEditTextCell,
-	PSSegmentCell,
-	PSGiantIconCell,
-	PSGiantCell,
-	PSSecureEditTextCell,
-	PSButtonCell,
-	PSEditTextViewCell,
+  PSGroupCell,
+  PSLinkCell,
+  PSLinkListCell,
+  PSListItemCell,
+  PSTitleValueCell,
+  PSSliderCell,
+  PSSwitchCell,
+  PSStaticTextCell,
+  PSEditTextCell,
+  PSSegmentCell,
+  PSGiantIconCell,
+  PSGiantCell,
+  PSSecureEditTextCell,
+  PSButtonCell,
+  PSEditTextViewCell,
 } PSCellType;
 
 @interface PSSpecifier : NSObject {
 @public
-	id target;
-	SEL getter;
-	SEL setter;
-	SEL action;
-	Class detailControllerClass;
-	PSCellType cellType;
-	Class editPaneClass;
-	UIKeyboardType keyboardType;
-	UITextAutocapitalizationType autoCapsType;
-	UITextAutocorrectionType autoCorrectionType;
-	int textFieldType;
+  id target;
+  SEL getter;
+  SEL setter;
+  SEL action;
+  Class detailControllerClass;
+  PSCellType cellType;
+  Class editPaneClass;
+  UIKeyboardType keyboardType;
+  UITextAutocapitalizationType autoCapsType;
+  UITextAutocorrectionType autoCorrectionType;
+  int textFieldType;
 @private
-	NSString* _name;
-	NSArray* _values;
-	NSDictionary* _titleDict;
-	NSDictionary* _shortTitleDict;
-	id _userInfo;
-	NSMutableDictionary* _properties;
+  NSString* _name;
+  NSArray* _values;
+  NSDictionary* _titleDict;
+  NSDictionary* _shortTitleDict;
+  id _userInfo;
+  NSMutableDictionary* _properties;
 }
 @property(retain) NSMutableDictionary* properties;
 @property(retain) NSString* name;

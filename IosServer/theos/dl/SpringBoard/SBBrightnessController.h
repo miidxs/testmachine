@@ -7,7 +7,7 @@
 #import <GraphicsServices/GSEvent.h>
 
 @interface SBBrightnessController : NSObject {
-	BOOL _debounce;
+  BOOL _debounce;
 }
 +(SBBrightnessController *)sharedBrightnessController;
 -(CGFloat)_calcButtonRepeatDelay;

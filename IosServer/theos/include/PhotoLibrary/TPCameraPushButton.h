@@ -11,7 +11,7 @@
 @class UIImageView;
 
 @interface TPCameraPushButton : TPPushButton {
-	UIImageView* _cameraIcon;
+  UIImageView* _cameraIcon;
 }
 // inherited: -(void)dealloc;
 -(void)setShowsCameraIcon:(BOOL)icon;

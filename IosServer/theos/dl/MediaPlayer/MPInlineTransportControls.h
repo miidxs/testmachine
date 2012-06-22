@@ -12,8 +12,8 @@
 
 @interface MPInlineTransportControls : MPTransportControls {
 @private
-	UILabel* _loadingMovieLabel;
-	UIActivityIndicatorView* _loadingMovieIndicator;
+  UILabel* _loadingMovieLabel;
+  UIActivityIndicatorView* _loadingMovieIndicator;
 }
 @property(readonly, assign, nonatomic) CGRect availableProgressControlAreaFrame;
 -(id)initWithFrame:(CGRect)frame;

@@ -10,8 +10,8 @@
 @class NSArray;
 
 @interface ASGetOptionsTask : ASTask {
-	NSArray* _versionArray;
-	NSArray* _commandArray;
+  NSArray* _versionArray;
+  NSArray* _commandArray;
 }
 +(void)__setUsePort:(BOOL)port;
 // inherited: -(id)httpMethod;

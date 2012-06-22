@@ -12,7 +12,7 @@
 
 @interface MPInlineVideoOverlay : MPWildcatVideoOverlay {
 @private
-	MPInlineTransportControls* _transportControls;
+  MPInlineTransportControls* _transportControls;
 }
 -(id)initWithFrame:(CGRect)frame;
 -(void)dealloc;

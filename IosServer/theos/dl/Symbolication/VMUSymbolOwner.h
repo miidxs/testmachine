@@ -14,13 +14,13 @@
 @protocol VMUMemory;
 
 @interface VMUSymbolOwner : NSObject <NSCopying> {
-	NSString* _name;
-	NSDictionary* _signature;
-	id<VMUMemory> _textMemory;
-	NSArray* _regions;
-	NSArray* _symbols;
-	NSArray* _sourceInfos;
-	unsigned _flags;
+  NSString* _name;
+  NSDictionary* _signature;
+  id<VMUMemory> _textMemory;
+  NSArray* _regions;
+  NSArray* _symbols;
+  NSArray* _sourceInfos;
+  unsigned _flags;
 }
 +(id)symbolOwnerWithName:(id)name signature:(id)signature textMemory:(id)memory regions:(id)regions symbols:(id)symbols sourceInfos:(id)infos flags:(unsigned)flags;
 -(id)initWithName:(id)name signature:(id)signature textMemory:(id)memory regions:(id)regions symbols:(id)symbols sourceInfos:(id)infos flags:(unsigned)flags;
@@ -29,7 +29,7 @@
 -(NSString*)path;
 -(VMUArchitecture*)architecture;
 -(BOOL)containsAddress:(unsigned long long)address;
--(NSArray*)regions;	// NSArray of VMURegion's
+-(NSArray*)regions; // NSArray of VMURegion's
 -(id)regionsForName:(id)name;
 -(id)regionForAddress:(unsigned long long)address;
 -(VMUSymbol*)symbolForAddress:(unsigned long long)address;
@@ -37,8 +37,8 @@
 -(VMUSymbol*)symbolForName:(id)name;
 -(id)symbolsForMangledName:(id)mangledName;
 -(VMUSourceInfo*)sourceInfoForAddress:(unsigned long long)address;
--(NSArray*)symbols;	// NSArray of VMUSymbol's
--(NSArray*)sourceInfos;	// NSArray of VMUSourceInfo's
+-(NSArray*)symbols; // NSArray of VMUSymbol's
+-(NSArray*)sourceInfos; // NSArray of VMUSourceInfo's
 -(id)symbolsInAddressRange:(VMURange)addressRange;
 -(id)sourceInfosInAddressRange:(VMURange)addressRange;
 -(unsigned)flags;

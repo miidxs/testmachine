@@ -11,8 +11,8 @@
 @class NSURL;
 
 @interface _AYFileLogger : AYLogger {
-	FILE* _logFile;
-	NSURL* _urlToFile;
+  FILE* _logFile;
+  NSURL* _urlToFile;
 }
 // inherited: -(id)init;
 // inherited: -(void)dealloc;

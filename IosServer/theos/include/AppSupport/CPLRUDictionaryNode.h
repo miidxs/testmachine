@@ -9,10 +9,10 @@
 
 
 @interface CPLRUDictionaryNode : NSObject {
-	id _key;
-	id _object;
-	CPLRUDictionaryNode* next;
-	CPLRUDictionaryNode* prev;
+  id _key;
+  id _object;
+  CPLRUDictionaryNode* next;
+  CPLRUDictionaryNode* prev;
 }
 @property(readonly, assign, nonatomic) id key;
 @property(retain, nonatomic) id object;

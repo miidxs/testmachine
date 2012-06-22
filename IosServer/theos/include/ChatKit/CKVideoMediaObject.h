@@ -9,9 +9,9 @@
 @class NSDictionary, NSString;
 
 @interface CKVideoMediaObject : CKAVMediaObject {
-	NSDictionary* _transcodeOptions;
-	CGImageRef _videoPreviewCGImage;
-	NSString* _transcodePath;
+  NSDictionary* _transcodeOptions;
+  CGImageRef _videoPreviewCGImage;
+  NSString* _transcodePath;
 }
 +(id)mimeTypesToFileExtensions;
 -(void)dealloc;

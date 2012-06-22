@@ -10,36 +10,36 @@
 @class UILabel, NSMutableArray, NSTimer, UIImageView;
 
 @interface UICalloutView : UIControl {
-	UIImageView* _leftCap;
-	UIImageView* _rightCap;
-	UIImageView* _topAnchor;
-	UIImageView* _bottomAnchor;
-	UIImageView* _leftBackground;
-	UIImageView* _rightBackground;
-	UILabel* _title;
-	UILabel* _subtitle;
-	UILabel* _temporary;
-	UIView* _leftView;
-	UIView* _rightView;
-	struct {
-		CGPoint origin;
-		CGPoint offset;
-		int position;
-		CGPoint desiredPoint;
-		CGRect desiredBounds;
-	} _anchor;
-	CGRect _frame;
-	id _delegate;
-	struct {
-		unsigned shouldSendTouchPauseUp : 1;
-		unsigned delegateViewHandleTapWithCountEvent : 1;
-		unsigned delegateViewHandleTapWithCountEventFingerCount : 1;
-		unsigned delegateViewHandleTouchPauseIsDown : 1;
-		unsigned reserved : 28;
-	} _flags;
-	NSMutableArray* _fadeInViews;
-	NSMutableArray* _fadeOutViews;
-	NSTimer* _layoutAnimationTimer;
+  UIImageView* _leftCap;
+  UIImageView* _rightCap;
+  UIImageView* _topAnchor;
+  UIImageView* _bottomAnchor;
+  UIImageView* _leftBackground;
+  UIImageView* _rightBackground;
+  UILabel* _title;
+  UILabel* _subtitle;
+  UILabel* _temporary;
+  UIView* _leftView;
+  UIView* _rightView;
+  struct {
+    CGPoint origin;
+    CGPoint offset;
+    int position;
+    CGPoint desiredPoint;
+    CGRect desiredBounds;
+  } _anchor;
+  CGRect _frame;
+  id _delegate;
+  struct {
+    unsigned shouldSendTouchPauseUp : 1;
+    unsigned delegateViewHandleTapWithCountEvent : 1;
+    unsigned delegateViewHandleTapWithCountEventFingerCount : 1;
+    unsigned delegateViewHandleTouchPauseIsDown : 1;
+    unsigned reserved : 28;
+  } _flags;
+  NSMutableArray* _fadeInViews;
+  NSMutableArray* _fadeOutViews;
+  NSTimer* _layoutAnimationTimer;
 }
 @property(retain, nonatomic) UIView* leftView;
 @property(retain, nonatomic) UIView* rightView;

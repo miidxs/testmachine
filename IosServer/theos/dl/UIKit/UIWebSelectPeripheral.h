@@ -11,8 +11,8 @@
 __attribute__((visibility("hidden")))
 @interface UIWebSelectPeripheral : NSObject <UIFormPeripheral> {
 @private
-	DOMHTMLSelectElement* _selectionNode;
-	id<UIWebSelectControl> _selectControl;
+  DOMHTMLSelectElement* _selectionNode;
+  id<UIWebSelectControl> _selectControl;
 }
 @property(retain, nonatomic) DOMHTMLSelectElement* _selectionNode;
 @property(retain, nonatomic) id<UIWebSelectControl> _selectControl;

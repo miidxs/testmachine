@@ -11,12 +11,12 @@
 @class UIButton, UILabel, UISlider;
 
 @interface SBNowPlayingAlertSheet : UIModalView {
-	CGRect normalSliderFrame;
-	CGRect narrowSliderFrame;
-	BOOL showingSliderOrLabel;
-	UIButton* routeButton;
-	UISlider* volumeSlider;
-	UILabel* routeLabel;
+  CGRect normalSliderFrame;
+  CGRect narrowSliderFrame;
+  BOOL showingSliderOrLabel;
+  UIButton* routeButton;
+  UISlider* volumeSlider;
+  UILabel* routeLabel;
 }
 @property(assign, nonatomic) CGRect normalSliderFrame;
 @property(assign, nonatomic) CGRect narrowSliderFrame;

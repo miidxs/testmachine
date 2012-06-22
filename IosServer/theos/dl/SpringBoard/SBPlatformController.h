@@ -13,9 +13,9 @@
 @class NSMutableDictionary, NSString;
 
 @interface SBPlatformController : NSObject {
-	NSString* _currentConfigurationName;
-	NSMutableDictionary* _currentConfiguration;
-	NSMutableDictionary* _currentCapabilities;
+  NSString* _currentConfigurationName;
+  NSMutableDictionary* _currentConfiguration;
+  NSMutableDictionary* _currentCapabilities;
 }
 +(SBPlatformController *)sharedInstance;
 // inherited: -(id)init;
@@ -41,7 +41,7 @@
 #endif
 @end
 
-@interface SBPlatformController (Private)	// the actual category name is (private), but C++ rejects this.
+@interface SBPlatformController (Private) // the actual category name is (private), but C++ rejects this.
 -(NSString *)currentConfigurationName;
 -(void)postCurrentConfiguration;
 -(void)_mergeDictionary:(id)dictionary intoDictionary:(id)dictionary2;

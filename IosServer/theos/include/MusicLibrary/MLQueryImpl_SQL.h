@@ -12,10 +12,10 @@
 __attribute__((visibility("hidden")))
 @interface MLQueryImpl_SQL : MLQueryImpl {
 @private
-	CFArrayRef _indexCharRunDataRef;
-	unsigned _indexCharRunDataPropertyType;
-	CPRecordIDDictionaryRef _groupMembersMappingRef;
-	unsigned long long _searchedPlaylistPersistentID;
+  CFArrayRef _indexCharRunDataRef;
+  unsigned _indexCharRunDataPropertyType;
+  CPRecordIDDictionaryRef _groupMembersMappingRef;
+  unsigned long long _searchedPlaylistPersistentID;
 }
 -(CPRecordStoreRef)_storeRef;
 -(void)prepareToEvaluate;

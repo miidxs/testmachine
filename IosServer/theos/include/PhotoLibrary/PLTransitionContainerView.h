@@ -10,7 +10,7 @@
 @class PLImageScrollView;
 
 @interface PLTransitionContainerView : UIView {
-	PLImageScrollView* _scroller;
+  PLImageScrollView* _scroller;
 }
 -(id)scroller;
 -(void)setRotationView:(id)view scroller:(id)scroller;

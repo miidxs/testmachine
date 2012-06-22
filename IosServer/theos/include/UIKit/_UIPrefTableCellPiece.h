@@ -8,8 +8,8 @@
 
 
 @interface _UIPrefTableCellPiece : UIImageView {
-	CGRect _originalFrame;
-	UIView* _syncPiece;
+  CGRect _originalFrame;
+  UIView* _syncPiece;
 }
 -(id)initWithFrame:(CGRect)frame;
 -(void)dealloc;

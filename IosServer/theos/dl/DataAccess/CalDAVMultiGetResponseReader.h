@@ -11,9 +11,9 @@
 @class NSMutableData, NSMutableDictionary;
 
 @interface CalDAVMultiGetResponseReader : NSObject <DAVResponseBodyReader> {
-	NSMutableData* _readData;
-	NSMutableDictionary* _etags;
-	NSMutableDictionary* _calendarData;
+  NSMutableData* _readData;
+  NSMutableDictionary* _etags;
+  NSMutableDictionary* _calendarData;
 }
 // inherited: -(id)init;
 // inherited: -(void)dealloc;

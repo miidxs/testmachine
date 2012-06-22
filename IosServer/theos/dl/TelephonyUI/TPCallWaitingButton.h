@@ -11,8 +11,8 @@
 @class TPPushButton;
 
 @interface TPCallWaitingButton : UIThreePartButton {
-	TPPushButton* _innerButton;
-	unsigned _type : 1;
+  TPPushButton* _innerButton;
+  unsigned _type : 1;
 }
 +(CGSize)defaultSizeForType:(int)type;
 +(float)defaultVerticalCenteringOffset;

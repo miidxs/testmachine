@@ -10,9 +10,9 @@
 @class NSRecursiveLock, AVFileValidator;
 
 @interface PLSynchronousFileValidator : NSObject {
-	AVFileValidator* _fileValidator;
-	NSRecursiveLock* _lock;
-	BOOL _isValid;
+  AVFileValidator* _fileValidator;
+  NSRecursiveLock* _lock;
+  BOOL _isValid;
 }
 -(id)initWithPath:(id)path;
 -(void)_setupOnMainThread:(id)thread;

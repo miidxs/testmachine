@@ -13,7 +13,7 @@
 
 @interface MLTrack : NSObject <NSCopying> {
 @private
-	void* _trackInfoContext;
+  void* _trackInfoContext;
 }
 @property(copy, nonatomic) NSString* lyrics;
 -(id)initWithTrackContext:(void*)trackContext;

@@ -11,9 +11,9 @@
 @class DATaskManager, NSDictionary, NSMutableDictionary, NSURL, NSString, NSData;
 
 @interface SubCalAccount : DAAccount {
-	DATaskManager* _taskManager;
-	NSMutableDictionary* _consumers;
-	NSData* _tmpICSData;
+  DATaskManager* _taskManager;
+  NSMutableDictionary* _consumers;
+  NSData* _tmpICSData;
 }
 @property(retain, nonatomic) NSMutableDictionary* consumers;
 @property(assign) int subCalAccountVersion;

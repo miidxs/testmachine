@@ -8,8 +8,8 @@
 @class NSDictionary, NSString;
 
 @interface CKAudioMediaObject : CKAVMediaObject {
-	NSDictionary* _transcodeOptions;
-	NSString* _transcodePath;
+  NSDictionary* _transcodeOptions;
+  NSString* _transcodePath;
 }
 +(id)mimeTypesToFileExtensions;
 -(void)dealloc;

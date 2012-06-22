@@ -11,27 +11,27 @@
 @class NSMutableIndexSet, MPItem, UILabel, MPButton, NSString;
 
 @interface MPTransportControls : UIView {
-	id _target;
-	MPItem* _item;
-	unsigned _desiredParts;
-	unsigned _disabledParts;
-	NSMutableIndexSet* _heldParts;
-	unsigned _visibleParts;
-	unsigned _forVideo : 1;
-	unsigned _playing : 1;
-	MPButton* _alternatesButton;
-	MPButton* _bookmarkButton;
-	MPButton* _chaptersButton;
-	MPButton* _devicePickerButton;
-	MPButton* _emailButton;
-	MPButton* _nextButton;
-	MPButton* _playButton;
-	MPButton* _previousButton;
-	MPButton* _scaleButton;
-	MPButton* _rewind30SecondsButton;
-	MPButton* _toggleFullscreenButton;
-	id _volumeSlider;
-	UILabel* _routeNameLabel;
+  id _target;
+  MPItem* _item;
+  unsigned _desiredParts;
+  unsigned _disabledParts;
+  NSMutableIndexSet* _heldParts;
+  unsigned _visibleParts;
+  unsigned _forVideo : 1;
+  unsigned _playing : 1;
+  MPButton* _alternatesButton;
+  MPButton* _bookmarkButton;
+  MPButton* _chaptersButton;
+  MPButton* _devicePickerButton;
+  MPButton* _emailButton;
+  MPButton* _nextButton;
+  MPButton* _playButton;
+  MPButton* _previousButton;
+  MPButton* _scaleButton;
+  MPButton* _rewind30SecondsButton;
+  MPButton* _toggleFullscreenButton;
+  id _volumeSlider;
+  UILabel* _routeNameLabel;
 }
 @property(assign, nonatomic) unsigned desiredParts;
 @property(assign, nonatomic) unsigned disabledParts;

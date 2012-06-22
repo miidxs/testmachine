@@ -11,16 +11,16 @@
 @class NSTimer;
 
 @interface MPMediaVolumeSlider : UIOldSliderControl {
-	NSTimer* _commitTimer;
-	float _hitBufferY;
-	float _hitBufferHeight;
-	float _lastCommittedValue;
-	float _lastTrackingValue;
-	unsigned _tracking : 1;
-	unsigned _endingTracking : 1;
-	unsigned _appModeIsMovie : 1;
-	unsigned _updatingVolumeForExternalChange : 1;
-	unsigned _lastCommitSucceeded : 1;
+  NSTimer* _commitTimer;
+  float _hitBufferY;
+  float _hitBufferHeight;
+  float _lastCommittedValue;
+  float _lastTrackingValue;
+  unsigned _tracking : 1;
+  unsigned _endingTracking : 1;
+  unsigned _appModeIsMovie : 1;
+  unsigned _updatingVolumeForExternalChange : 1;
+  unsigned _lastCommitSucceeded : 1;
 }
 @property(assign, nonatomic, getter=isForMovie) BOOL forMovie;
 +(float)defaultHeight;

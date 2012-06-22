@@ -9,19 +9,19 @@
 
 
 @interface MessageWriter : NSObject {
-	unsigned _createsMimeAlternatives : 1;
-	unsigned _createsRichText : 1;
-	unsigned _createsPlainTextOnly : 1;
-	unsigned _allows8BitMimeParts : 1;
-	unsigned _allowsBinaryMimeParts : 1;
-	unsigned _allowsAppleDoubleAttachments : 1;
-	unsigned _signsOutput : 1;
-	unsigned _encryptsOutput : 1;
-	unsigned _writeSizeDispositionParameter : 1;
-	unsigned _allowsQuotedPrintable : 1;
-	unsigned _preferredEncoding;
-	unsigned _encodingHint;
-	id _delegate;
+  unsigned _createsMimeAlternatives : 1;
+  unsigned _createsRichText : 1;
+  unsigned _createsPlainTextOnly : 1;
+  unsigned _allows8BitMimeParts : 1;
+  unsigned _allowsBinaryMimeParts : 1;
+  unsigned _allowsAppleDoubleAttachments : 1;
+  unsigned _signsOutput : 1;
+  unsigned _encryptsOutput : 1;
+  unsigned _writeSizeDispositionParameter : 1;
+  unsigned _allowsQuotedPrintable : 1;
+  unsigned _preferredEncoding;
+  unsigned _encodingHint;
+  id _delegate;
 }
 // inherited: -(id)init;
 // inherited: -(void)dealloc;

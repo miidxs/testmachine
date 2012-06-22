@@ -9,11 +9,11 @@
 @class NSString;
 
 @interface UISectionHeaderCell : UIView {
-	NSString* _title;
-	struct {
-		unsigned style : 1;
-		unsigned reserved : 31;
-	} _sectionHeaderCellFlags;
+  NSString* _title;
+  struct {
+    unsigned style : 1;
+    unsigned reserved : 31;
+  } _sectionHeaderCellFlags;
 }
 +(id)defaultTitleFont;
 -(id)initWithFrame:(CGRect)frame;

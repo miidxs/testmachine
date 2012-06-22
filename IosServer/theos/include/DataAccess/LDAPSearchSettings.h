@@ -10,9 +10,9 @@
 @class NSString;
 
 @interface LDAPSearchSettings : NSObject {
-	NSString* _searchDescription;
-	NSString* _searchBase;
-	int _scope;
+  NSString* _searchDescription;
+  NSString* _searchBase;
+  int _scope;
 }
 @property(retain) NSString* searchDescription;
 @property(retain) NSString* searchBase;

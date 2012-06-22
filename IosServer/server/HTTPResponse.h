@@ -14,8 +14,8 @@
 
 @interface HTTPFileResponse : NSObject <HTTPResponse>
 {
-	NSString *filePath;
-	NSFileHandle *fileHandle;
+  NSString *filePath;
+  NSFileHandle *fileHandle;
 }
 
 - (id)initWithFilePath:(NSString *)filePath;
@@ -25,8 +25,8 @@
 
 @interface HTTPDataResponse : NSObject <HTTPResponse>
 {
-	unsigned offset;
-	NSData *data;
+  unsigned offset;
+  NSData *data;
 }
 
 - (id)initWithData:(NSData *)data;

@@ -11,9 +11,9 @@
 @class ComposeRecipient, UITextInputTraits;
 
 @interface MFComposeRecipientAtom : MFAtomView {
-	ComposeRecipient* _recipient;
+  ComposeRecipient* _recipient;
 @private
-	UITextInputTraits* _traits;
+  UITextInputTraits* _traits;
 }
 -(id)initWithFrame:(CGRect)frame recipient:(id)recipient;
 // inherited: -(void)dealloc;

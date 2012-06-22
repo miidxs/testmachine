@@ -11,7 +11,7 @@
 @class UIColor;
 
 @interface RoundedBorderView : UIView {
-	UIColor* _color;
+  UIColor* _color;
 }
 -(id)initWithFrame:(CGRect)frame color:(id)color;
 // inherited: -(void)dealloc;

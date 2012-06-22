@@ -12,13 +12,13 @@
 
 @interface ASTaskManager : DATaskManager <ASPolicyManagerDelegate> {
 @private
-	ASPolicyManager* _policyManager;
-	ASAccount* _account;
-	NSError* _versionError;
-	NSMutableDictionary* _taskIDToTask;
-	ASTask* _modalGetOptionsTask;
-	ASGetOptionsTask* _getOptionsTask;
-	ASTask* _modalPolicyKeyUpdateTask;
+  ASPolicyManager* _policyManager;
+  ASAccount* _account;
+  NSError* _versionError;
+  NSMutableDictionary* _taskIDToTask;
+  ASTask* _modalGetOptionsTask;
+  ASGetOptionsTask* _getOptionsTask;
+  ASTask* _modalPolicyKeyUpdateTask;
 }
 -(id)initWithAccount:(id)account policyManager:(id)manager;
 // inherited: -(void)dealloc;

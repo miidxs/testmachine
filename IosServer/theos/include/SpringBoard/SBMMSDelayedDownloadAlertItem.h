@@ -10,8 +10,8 @@
 @class NSString;
 
 @interface SBMMSDelayedDownloadAlertItem : SBAlertItem {
-	NSString* _fromAddress;
-	int _messageCount;
+  NSString* _fromAddress;
+  int _messageCount;
 }
 // inherited: -(void)dealloc;
 -(void)setMessage:(id)message;

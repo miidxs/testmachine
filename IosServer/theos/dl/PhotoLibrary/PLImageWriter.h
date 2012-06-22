@@ -12,9 +12,9 @@
 @class NSRecursiveLock, NSMutableArray;
 
 @interface PLImageWriter : NSObject <MLPhotoBakedThumbnailsDelegate> {
-	NSMutableArray* _jobs;
-	NSRecursiveLock* _jobsLock;
-	BOOL _writerThreadRunning;
+  NSMutableArray* _jobs;
+  NSRecursiveLock* _jobsLock;
+  BOOL _writerThreadRunning;
 }
 +(id)sharedWriter;
 +(void)decorateThumbnail:(id)thumbnail inContext:(CGContextRef)context;

@@ -5,8 +5,8 @@
 #import <UIKit/UIView.h>
 
 @interface SBRoundedMaskCornerView : UIView {
-	float _cornerRadius;
-	unsigned _corner;
+  float _cornerRadius;
+  unsigned _corner;
 }
 -(id)initWithCorner:(unsigned)corner radius:(float)radius;
 -(void)drawRect:(CGRect)rect;

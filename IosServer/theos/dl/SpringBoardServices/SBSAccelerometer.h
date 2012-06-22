@@ -13,23 +13,23 @@
 
 @protocol SBSAccelerometerDelegate
 -(void)accelerometer:(SBSAccelerometer*)accelerometer didAccelerateWithTimeStamp:(NSTimeInterval)timestamp
-				   x:(float)x y:(float)y z:(float)z eventType:(unsigned)type;
+           x:(float)x y:(float)y z:(float)z eventType:(unsigned)type;
 @optional
 -(void)accelerometer:(SBSAccelerometer*)accelerometer didChangeDeviceOrientation:(UIDeviceOrientation)newOrientation;
 @end
 
 @interface SBSAccelerometer : NSObject {
-	id<SBSAccelerometerDelegate> _delegate;
-	CFRunLoopSourceRef _accelerometerEventsSource;
-	CFRunLoopRef _accelerometerEventsRunLoop;
-	NSTimeInterval _interval;
-	NSLock* _lock;
-	BOOL _orientationEventsEnabled;
-	int _orientationEventsToken;
-	NSThread* _orientationEventsThread;
-	float _xThreshold;
-	float _yThreshold;
-	float _zThreshold;
+  id<SBSAccelerometerDelegate> _delegate;
+  CFRunLoopSourceRef _accelerometerEventsSource;
+  CFRunLoopRef _accelerometerEventsRunLoop;
+  NSTimeInterval _interval;
+  NSLock* _lock;
+  BOOL _orientationEventsEnabled;
+  int _orientationEventsToken;
+  NSThread* _orientationEventsThread;
+  float _xThreshold;
+  float _yThreshold;
+  float _zThreshold;
 }
 @property(assign, nonatomic) id<SBSAccelerometerDelegate> delegate;
 @property(assign, nonatomic) BOOL orientationEventsEnabled;

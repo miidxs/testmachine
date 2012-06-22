@@ -10,8 +10,8 @@
 @class MutableMessageHeaders, MessageBody;
 
 @interface OutgoingMessage : MailMessage {
-	MessageBody* messageBody;
-	MutableMessageHeaders* messageHeaders;
+  MessageBody* messageBody;
+  MutableMessageHeaders* messageHeaders;
 }
 // inherited: -(void)dealloc;
 -(void)setMessageBody:(id)body;

@@ -11,29 +11,29 @@
 @class NSMutableArray, MessageCriterion, NSMutableDictionary, MailAccount, NSString, NSDictionary, NSArray, MessageStore;
 
 typedef enum {
-	MailboxUidType_Trash = 1,
-	MailboxUidType_Sent = 2,
-	MailboxUidType_Drafts = 3,
-	MailboxUidType_Outbox = 4,
-	MailboxUidType_Inbox = 5,
+  MailboxUidType_Trash = 1,
+  MailboxUidType_Sent = 2,
+  MailboxUidType_Drafts = 3,
+  MailboxUidType_Outbox = 4,
+  MailboxUidType_Inbox = 5,
 } MailboxUidType;
 
 @interface MailboxUid : WRObject <WeakReferenceHolder> {
-	NSString* uniqueId;
-	MailAccount* _account;
-	NSString* _pathComponent;
-	unsigned _attributes;
-	MailboxUid* _parent;
-	NSMutableArray* _children;
-	MailAccount* _representedAccount;
-	NSString* pendingNameChange;
-	MessageCriterion* _criterion;
-	BOOL allCriteriaMustBeSatisfied;
-	NSString* _realFullPath;
-	unsigned _numberOfGenericChildren;
-	NSString* _permanentTag;
-	int _type;
-	NSMutableDictionary* _userInfo;
+  NSString* uniqueId;
+  MailAccount* _account;
+  NSString* _pathComponent;
+  unsigned _attributes;
+  MailboxUid* _parent;
+  NSMutableArray* _children;
+  MailAccount* _representedAccount;
+  NSString* pendingNameChange;
+  MessageCriterion* _criterion;
+  BOOL allCriteriaMustBeSatisfied;
+  NSString* _realFullPath;
+  unsigned _numberOfGenericChildren;
+  NSString* _permanentTag;
+  int _type;
+  NSMutableDictionary* _userInfo;
 }
 +(NSString*)specialNameForType:(int)type;
 // in a protocol: -(void)dealloc;
@@ -86,7 +86,7 @@ typedef enum {
 -(BOOL)isSpecialMailboxUid;
 -(BOOL)isOutgoingMailboxUid;
 -(NSString*)accountRelativePath;
--(NSString*)fullPathNonNil;	// /var/mobile/Library/Mail/.../*.imapmbox
+-(NSString*)fullPathNonNil; // /var/mobile/Library/Mail/.../*.imapmbox
 -(NSString*)fullPath;
 -(NSString*)realFullPath;
 -(NSString*)tildeAbbreviatedPath;

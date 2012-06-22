@@ -10,10 +10,10 @@
 @class NSArray, NSString;
 
 @interface _CPPowerAssertion : NSObject {
-	unsigned _assertion;
-	double _timeout;
-	NSString* _identifier;
-	NSArray* _stack;
+  unsigned _assertion;
+  double _timeout;
+  NSString* _identifier;
+  NSArray* _stack;
 }
 @property(assign, nonatomic) double timeout;
 -(id)initWithIdentifier:(id)identifier timeout:(double)timeout;

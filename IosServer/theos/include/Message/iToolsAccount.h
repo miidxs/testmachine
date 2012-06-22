@@ -11,13 +11,13 @@
 @class InvocationQueue;
 
 @interface iToolsAccount : IMAPAccount {
-	AOSNotificationSessionRef _notificationSession;
-	InvocationQueue* _connectionInvocationQueue;
-	BOOL _subscribed;
+  AOSNotificationSessionRef _notificationSession;
+  InvocationQueue* _connectionInvocationQueue;
+  BOOL _subscribed;
 }
 // inherited: +(id)basicAccountProperties;
-+(NSString*)emailAddressHostPart;	// = mac.com
-+(NSString*)deliveryHostName;		// = smtp.mac.com
++(NSString*)emailAddressHostPart; // = mac.com
++(NSString*)deliveryHostName;   // = smtp.mac.com
 // inherited: +(id)defaultPathNameForAccountWithHostname:(id)hostname username:(id)username;
 // inherited: +(id)displayedAccountTypeString;
 // inherited: +(id)hostname;

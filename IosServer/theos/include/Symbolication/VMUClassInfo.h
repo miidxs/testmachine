@@ -10,9 +10,9 @@
 @class NSString;
 
 @interface VMUClassInfo : NSObject {
-	NSString* _className;
-	NSString* _binaryName;
-	NSString* _type;
+  NSString* _className;
+  NSString* _binaryName;
+  NSString* _type;
 }
 +(id)classInfoWithClassName:(id)className binaryName:(id)name type:(id)type;
 -(id)initWithClassName:(id)className binaryName:(id)name type:(id)type;

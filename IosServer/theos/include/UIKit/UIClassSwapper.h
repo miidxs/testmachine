@@ -8,8 +8,8 @@
 @class NSString;
 
 @interface UIClassSwapper : NSObject {
-	NSString* className;
-	id object;
+  NSString* className;
+  id object;
 }
 +(id)swapperForObject:(id)object withClassName:(id)className;
 -(id)initWithObject:(id)object andClassName:(id)name;

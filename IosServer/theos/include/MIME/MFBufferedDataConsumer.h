@@ -11,9 +11,9 @@
 @class NSString;
 
 @interface MFBufferedDataConsumer : NSObject <MFDataConsumer> {
-	id _data;
-	int _fd;
-	NSString* _path;
+  id _data;
+  int _fd;
+  NSString* _path;
 }
 // inherited: -(id)init;
 // inherited: -(void)dealloc;

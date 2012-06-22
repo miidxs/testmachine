@@ -8,7 +8,7 @@
 @class NSString;
 
 @interface CKSMSDeferredMessage : CKMessage {
-	NSString* _address;
+  NSString* _address;
 }
 -(id)initWithAddress:(id)address;
 -(void)dealloc;

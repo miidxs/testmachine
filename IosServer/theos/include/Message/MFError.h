@@ -10,7 +10,7 @@
 @class NSMutableDictionary;
 
 @interface MFError : NSError {
-	NSMutableDictionary* _moreUserInfo;
+  NSMutableDictionary* _moreUserInfo;
 }
 +(id)errorWithDomain:(id)domain code:(long)code localizedDescription:(id)description;
 +(id)errorWithDomain:(id)domain code:(long)code localizedDescription:(id)description title:(id)title userInfo:(id)info;

@@ -11,24 +11,24 @@
 @class UIView, UIImage, UIImageView;
 
 @interface PLCameraVideoSwitch : UIControl {
-	UIImageView* _wellImageView;
-	UIImageView* _handleImageView;
-	UIImageView* _cameraImageView;
-	UIImageView* _videoImageView;
-	UIView* _wellMaskContainerView;
-	UIImage* _wellImage;
-	UIImage* _handleImage;
-	UIImage* _handleDownImage;
-	UIImage* _cameraImage;
-	UIImage* _cameraLandscapeImage;
-	UIImage* _videoImage;
-	UIImage* _videoLandscapeImage;
-	int _orientation;
-	float _trackingHorizontalLocation;
-	unsigned _on : 1;
-	unsigned _didLayoutViews : 1;
-	unsigned _didMove : 1;
-	unsigned _lockEnabled : 1;
+  UIImageView* _wellImageView;
+  UIImageView* _handleImageView;
+  UIImageView* _cameraImageView;
+  UIImageView* _videoImageView;
+  UIView* _wellMaskContainerView;
+  UIImage* _wellImage;
+  UIImage* _handleImage;
+  UIImage* _handleDownImage;
+  UIImage* _cameraImage;
+  UIImage* _cameraLandscapeImage;
+  UIImage* _videoImage;
+  UIImage* _videoLandscapeImage;
+  int _orientation;
+  float _trackingHorizontalLocation;
+  unsigned _on : 1;
+  unsigned _didLayoutViews : 1;
+  unsigned _didMove : 1;
+  unsigned _lockEnabled : 1;
 }
 @property(assign, nonatomic, getter=isOn) BOOL on;
 // inherited: -(id)initWithFrame:(CGRect)frame;

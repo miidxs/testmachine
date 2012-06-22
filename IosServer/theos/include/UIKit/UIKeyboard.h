@@ -16,12 +16,12 @@
 <UIKeyboardImplGeometryDelegate>
 #endif
 {
-	UIImage* m_snapshot;
-	UITextInputTraits* m_defaultTraits;
-	BOOL m_typingDisabled;
+  UIImage* m_snapshot;
+  UITextInputTraits* m_defaultTraits;
+  BOOL m_typingDisabled;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	BOOL m_minimized;
-	BOOL m_respondingToImplGeometryChange;
+  BOOL m_minimized;
+  BOOL m_respondingToImplGeometryChange;
 #endif
 }
 // in a protocol: @property(assign, nonatomic, getter=isMinimized) BOOL minimized;

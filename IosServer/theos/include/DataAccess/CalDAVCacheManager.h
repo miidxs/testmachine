@@ -11,10 +11,10 @@
 @class NSMutableSet, MobileCalDAVCalendar, NSMutableDictionary;
 
 @interface CalDAVCacheManager : NSObject {
-	MobileCalDAVCalendar* _calendar;
-	NSMutableDictionary* _filenameToModifiedLocallyMap;
-	NSMutableSet* _locallyDeletedFilenames;
-	NSMutableDictionary* _externalIDToLocalUIDMap;
+  MobileCalDAVCalendar* _calendar;
+  NSMutableDictionary* _filenameToModifiedLocallyMap;
+  NSMutableSet* _locallyDeletedFilenames;
+  NSMutableDictionary* _externalIDToLocalUIDMap;
 }
 +(id)cacheControllerForCalendar:(id)calendar;
 +(void)clearAllCacheControllers;

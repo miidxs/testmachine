@@ -12,23 +12,23 @@
 @class CalDAVOperationQueue, MobileCalDAVAccount, DAVSession, NSError, CalDAVPrincipal, NSRecursiveLock, NSString, NSArray;
 
 @interface CalDAVAccount : NSObject <CalNetworkChangeNotificationListener> {
-	CalDAVPrincipal* _principal;
-	MobileCalDAVAccount* _mobileAccount;
-	BOOL _isDelegate;
-	BOOL _isWritable;
-	NSString* _principalPath;
-	NSString* _userDisplayName;
-	NSString* _uid;
-	DAVSession* _session;
-	NSError* _lastOperationError;
-	NSArray* _tempCalendarList;
-	int _queryOfficeHoursRunning;
-	NSRecursiveLock* _connectedStateLock;
-	int _connectedState;
-	BOOL _userPrefersOffline;
-	NSError* _connectionError;
-	CalDAVOperationQueue* _operationQueue;
-	BOOL _checkingCredentials;
+  CalDAVPrincipal* _principal;
+  MobileCalDAVAccount* _mobileAccount;
+  BOOL _isDelegate;
+  BOOL _isWritable;
+  NSString* _principalPath;
+  NSString* _userDisplayName;
+  NSString* _uid;
+  DAVSession* _session;
+  NSError* _lastOperationError;
+  NSArray* _tempCalendarList;
+  int _queryOfficeHoursRunning;
+  NSRecursiveLock* _connectedStateLock;
+  int _connectedState;
+  BOOL _userPrefersOffline;
+  NSError* _connectionError;
+  CalDAVOperationQueue* _operationQueue;
+  BOOL _checkingCredentials;
 }
 -(void)setPrincipal:(id)principal;
 -(id)principal;

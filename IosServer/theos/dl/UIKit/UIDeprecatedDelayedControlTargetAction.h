@@ -8,7 +8,7 @@
 
 
 @interface UIDeprecatedDelayedControlTargetAction : UIControlTargetAction {
-	GSEventRef _event;
+  GSEventRef _event;
 }
 -(void)dealloc;
 @end

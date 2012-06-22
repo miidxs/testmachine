@@ -11,9 +11,9 @@
 @class NSString, NSMutableData;
 
 @interface _DAVLockBodyReader : NSObject <DAVResponseBodyReader> {
-	NSMutableData* readData;
-	NSString* lockToken;
-	int timeout;
+  NSMutableData* readData;
+  NSString* lockToken;
+  int timeout;
 }
 // inherited: -(id)init;
 // inherited: -(void)dealloc;

@@ -6,7 +6,7 @@
 #import <WebKit/DOMHTMLInputElement.h>
 #import <Availability2.h>
 
-@interface DOMHTMLInputElement (UIWebViewAdditions)	// Note: the category name is UITextInputAdditions in 3.2.
+@interface DOMHTMLInputElement (UIWebViewAdditions) // Note: the category name is UITextInputAdditions in 3.2.
 -(id)textInputTraits;
 -(id)text;
 -(BOOL)isSecure;

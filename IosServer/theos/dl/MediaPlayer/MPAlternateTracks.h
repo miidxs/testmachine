@@ -10,9 +10,9 @@
 @class NSDictionary, MPItem, NSMutableDictionary;
 
 @interface MPAlternateTracks : NSObject {
-	MPItem* _item;
-	NSDictionary* _alternateTracks;
-	NSMutableDictionary* _trackChangeDictionary;
+  MPItem* _item;
+  NSDictionary* _alternateTracks;
+  NSMutableDictionary* _trackChangeDictionary;
 }
 @property(readonly, assign, nonatomic, getter=isLoaded) BOOL loaded;
 -(id)initWithItem:(id)item;

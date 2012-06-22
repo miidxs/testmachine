@@ -9,13 +9,13 @@
 @class NSArray, UIImageView;
 
 @interface UIMovieScrubberEditingView : UIView {
-	UIImageView* _leftImageView;
-	UIImageView* _middleImageView;
-	UIImageView* _rightImageView;
-	NSArray* _activeImages;
-	NSArray* _inactiveImages;
-	unsigned _isActive : 1;
-	unsigned _centerHandleEnabled : 1;
+  UIImageView* _leftImageView;
+  UIImageView* _middleImageView;
+  UIImageView* _rightImageView;
+  NSArray* _activeImages;
+  NSArray* _inactiveImages;
+  unsigned _isActive : 1;
+  unsigned _centerHandleEnabled : 1;
 }
 @property(assign, nonatomic, getter=isEditing) BOOL editing;
 -(id)initWithFrame:(CGRect)frame;

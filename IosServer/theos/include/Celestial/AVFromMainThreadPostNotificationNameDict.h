@@ -10,7 +10,7 @@
 @class NSMutableDictionary;
 
 @interface AVFromMainThreadPostNotificationNameDict : NSObject {
-	NSMutableDictionary* _obj;
+  NSMutableDictionary* _obj;
 }
 +(id)dict;
 -(id)init;

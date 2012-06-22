@@ -9,26 +9,26 @@
 @class _UITableCellTransientData;
 
 @interface UITableCell : UIView {
-	_UITableCellTransientData* _transientData;
-	float _rightMargin;
-	struct {
-		unsigned dontShowSelection : 1;
-		unsigned showDisclosure : 1;
-		unsigned showTopSeparator : 1;
-		unsigned separatorStyle : 3;
-		unsigned selectionStyle : 3;
-		unsigned hideDisclosure : 1;
-		unsigned isBeingDeleted : 1;
-		unsigned disclosureClickable : 1;
-		unsigned selectionFadeFraction : 11;
-		unsigned disclosureStyle : 1;
-		unsigned showingRemoveControl : 1;
-		unsigned alignment : 3;
-		unsigned showDisclosureWhenReordering : 1;
-		unsigned fadeDisclosure : 1;
-		unsigned reserved : 2;
-	} _tableCellFlags;
-	UIView* _disclosureView;
+  _UITableCellTransientData* _transientData;
+  float _rightMargin;
+  struct {
+    unsigned dontShowSelection : 1;
+    unsigned showDisclosure : 1;
+    unsigned showTopSeparator : 1;
+    unsigned separatorStyle : 3;
+    unsigned selectionStyle : 3;
+    unsigned hideDisclosure : 1;
+    unsigned isBeingDeleted : 1;
+    unsigned disclosureClickable : 1;
+    unsigned selectionFadeFraction : 11;
+    unsigned disclosureStyle : 1;
+    unsigned showingRemoveControl : 1;
+    unsigned alignment : 3;
+    unsigned showDisclosureWhenReordering : 1;
+    unsigned fadeDisclosure : 1;
+    unsigned reserved : 2;
+  } _tableCellFlags;
+  UIView* _disclosureView;
 }
 -(id)disclosureImage;
 -(id)disclosurePressedImage;

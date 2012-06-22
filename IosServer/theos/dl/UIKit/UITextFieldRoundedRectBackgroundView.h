@@ -8,7 +8,7 @@
 @class UIImageView;
 
 @interface UITextFieldRoundedRectBackgroundView : UITextFieldBackgroundView {
-	UIImageView* _imageViews[3][4];
+  UIImageView* _imageViews[3][4];
 }
 -(void)dealloc;
 -(void)_updateImages;

@@ -9,7 +9,7 @@
 
 
 @interface MPCrossfadeTransitionController : MPTransitionController {
-	int _statusBarMode;
+  int _statusBarMode;
 }
 @property(assign, nonatomic) int statusBarMode;
 -(id)init;

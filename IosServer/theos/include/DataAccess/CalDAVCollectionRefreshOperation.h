@@ -11,10 +11,10 @@
 @class MobileCalDAVCalendar, MobileCalDAVAccount, CalDAVCacheManager;
 
 @interface CalDAVCollectionRefreshOperation : AYOperation {
-	MobileCalDAVAccount* _account;
-	MobileCalDAVCalendar* _calendar;
-	CalDAVCacheManager* _cache;
-	id _delegate;
+  MobileCalDAVAccount* _account;
+  MobileCalDAVCalendar* _calendar;
+  CalDAVCacheManager* _cache;
+  id _delegate;
 }
 +(id)propertiesForCollection;
 -(id)initWithAccount:(id)account calendar:(id)calendar delegate:(id)delegate;

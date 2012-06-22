@@ -13,8 +13,8 @@
 @class DOMNode;
 
 @interface UIKeyboardPeripheral : UIKeyboard <UIFormPeripheral> {
-	DOMNode* _textNode;
-	int _orientation;
+  DOMNode* _textNode;
+  int _orientation;
 }
 @property(retain, nonatomic) DOMNode* _textNode;
 +(id)createPeripheral;

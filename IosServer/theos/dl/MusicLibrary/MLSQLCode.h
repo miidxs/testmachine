@@ -13,18 +13,18 @@
 __attribute__((visibility("hidden")))
 @interface MLSQLCode : NSObject {
 @private
-	NSString* _text;
-	NSMutableArray* _bindings;
-	MLSQLCode* _orderBy;
-	MLSQLCode* _groupBy;
-	MLSQLCode* _limitBy;
-	NSMutableArray* _joins;
-	NSMutableArray* _subexpressions;
-	NSMutableArray* _subexpressionOperators;
-	NSMutableArray* _predicates;
-	NSMutableArray* _predicateOperators;
-	unsigned _isTextTerminated : 1;
-	unsigned _isToken : 1;
+  NSString* _text;
+  NSMutableArray* _bindings;
+  MLSQLCode* _orderBy;
+  MLSQLCode* _groupBy;
+  MLSQLCode* _limitBy;
+  NSMutableArray* _joins;
+  NSMutableArray* _subexpressions;
+  NSMutableArray* _subexpressionOperators;
+  NSMutableArray* _predicates;
+  NSMutableArray* _predicateOperators;
+  unsigned _isTextTerminated : 1;
+  unsigned _isToken : 1;
 }
 +(id)openParenCode;
 +(id)closeParenCode;

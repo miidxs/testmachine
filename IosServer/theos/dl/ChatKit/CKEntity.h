@@ -8,13 +8,13 @@
 @class CKService, NSString;
 
 @interface CKEntity : NSObject {
-	int _addressBookUID;
-	int _identifier;
-	int _propertyType;
-	BOOL _foundABNameForSender;
-	BOOL _senderIsVoicemail;
-	void* _abRecord;
-	CKService* _service;
+  int _addressBookUID;
+  int _identifier;
+  int _propertyType;
+  BOOL _foundABNameForSender;
+  BOOL _senderIsVoicemail;
+  void* _abRecord;
+  CKService* _service;
 }
 @property(readonly, assign, nonatomic) CKService* service;
 @property(assign, nonatomic) int addressBookUID;

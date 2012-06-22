@@ -37,10 +37,10 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 __attribute__((visibility("hidden")))
 @interface UITableViewScrollTestParameters : NSObject {
 @private
-	int _iterations;
-	int _yDelta;
-	int _scrollLength;
-	NSString* _currentTest;
+  int _iterations;
+  int _yDelta;
+  int _scrollLength;
+  NSString* _currentTest;
 }
 @property(assign, nonatomic) int iterations;
 @property(retain, nonatomic) NSString* currentTest;

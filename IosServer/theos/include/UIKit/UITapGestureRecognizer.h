@@ -34,12 +34,12 @@
 @class NSArray, NSMutableArray;
 
 @interface UITapGestureRecognizer : UIGestureRecognizer {
-	int _numberOfFingers;
-	int _numberOfTaps;
-	CGPoint _location;
-	int _touchesAtMaxTaps;
-	BOOL _gotEnoughTouches;
-	NSMutableArray* _touches;
+  int _numberOfFingers;
+  int _numberOfTaps;
+  CGPoint _location;
+  int _touchesAtMaxTaps;
+  BOOL _gotEnoughTouches;
+  NSMutableArray* _touches;
 }
 @property(assign, nonatomic) int numberOfTaps;
 @property(assign, nonatomic) int numberOfFingers;

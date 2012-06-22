@@ -12,7 +12,7 @@
 
 @interface MPMediaServerPlaylist : NSObject <NSCoding> {
 @private
-	MLPlaylist* _playlist;
+  MLPlaylist* _playlist;
 }
 -(id)initWithMLPlaylist:(id)mlplaylist;
 -(void)dealloc;

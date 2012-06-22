@@ -6,9 +6,9 @@
 @class UIWindow, UIView, SBHUDView;
 
 @interface SBHUDController : NSObject {
-	UIWindow* _hudWindow;
-	UIView* _hudContentView;
-	SBHUDView* _hudView;
+  UIWindow* _hudWindow;
+  UIView* _hudContentView;
+  SBHUDView* _hudView;
 }
 +(SBHUDController *)sharedHUDController;
 // inherited: -(void)dealloc;

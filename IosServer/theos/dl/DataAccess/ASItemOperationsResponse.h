@@ -10,8 +10,8 @@
 @class NSArray, NSNumber;
 
 @interface ASItemOperationsResponse : ASItem {
-	NSNumber* _status;
-	NSArray* _fetchResponses;
+  NSNumber* _status;
+  NSArray* _fetchResponses;
 }
 // inherited: +(BOOL)acceptsTopLevelLeaves;
 // inherited: +(BOOL)parsingLeafNode;

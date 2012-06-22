@@ -10,20 +10,20 @@
 @class NSArray, NSDictionary, NSString, NSMutableArray;
 
 @interface ASGALSearchResult : ASItem {
-	NSDictionary* _applicationData;
-	NSString* _longID;
-	NSMutableArray* _classes;
-	NSMutableArray* _collectionIDs;
-	NSString* _phone;
-	NSString* _office;
-	NSString* _title;
-	NSString* _company;
-	NSString* _alias;
-	NSString* _firstName;
-	NSString* _lastName;
-	NSString* _homePhone;
-	NSString* _mobilePhone;
-	NSString* _emailAddress;
+  NSDictionary* _applicationData;
+  NSString* _longID;
+  NSMutableArray* _classes;
+  NSMutableArray* _collectionIDs;
+  NSString* _phone;
+  NSString* _office;
+  NSString* _title;
+  NSString* _company;
+  NSString* _alias;
+  NSString* _firstName;
+  NSString* _lastName;
+  NSString* _homePhone;
+  NSString* _mobilePhone;
+  NSString* _emailAddress;
 }
 @property(retain) NSString* longID;
 @property(retain) NSArray* classes;

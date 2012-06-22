@@ -12,14 +12,14 @@
 @class MPPortraitControlsOverlay, MPItem, MPTextView, MPNowPlayingItemQueueInfoButton;
 
 @interface MPPortraitInfoOverlay : UIView <MPPlaybackControlsDelegate> {
-	id _delegate;
-	MPItem* _item;
-	unsigned _visibleParts;
-	MPPortraitControlsOverlay* _controlsView;
-	MPTextView* _displayableTextView;
-	MPNowPlayingItemQueueInfoButton* _itemQueueInfoButton;
-	unsigned _transitioning : 1;
-	unsigned _allowsDetailScrubbing : 1;
+  id _delegate;
+  MPItem* _item;
+  unsigned _visibleParts;
+  MPPortraitControlsOverlay* _controlsView;
+  MPTextView* _displayableTextView;
+  MPNowPlayingItemQueueInfoButton* _itemQueueInfoButton;
+  unsigned _transitioning : 1;
+  unsigned _allowsDetailScrubbing : 1;
 }
 @property(assign, nonatomic) id delegate;
 @property(retain, nonatomic) MPItem* item;

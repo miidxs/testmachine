@@ -10,9 +10,9 @@
 @class NSArray, NSNumber;
 
 @interface ASSearchResponse : ASItem {
-	NSArray* _stores;
-	NSNumber* _status;
-	int _expectedResultType;
+  NSArray* _stores;
+  NSNumber* _status;
+  int _expectedResultType;
 }
 @property(retain) NSArray* stores;
 @property(copy) NSNumber* status;

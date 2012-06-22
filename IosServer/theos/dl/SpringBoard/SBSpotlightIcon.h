@@ -11,9 +11,9 @@
 @class NSString, SBApplication;
 
 @interface SBSpotlightIcon : SBIcon {
-	SBApplication* _app;
-	NSString* _iconPath;
-	NSString* _spotlightCategory;
+  SBApplication* _app;
+  NSString* _iconPath;
+  NSString* _spotlightCategory;
 }
 +(id)displayIdentifierForSpotlightCategory:(id)spotlightCategory andAppDisplayIdentifier:(id)identifier;
 -(id)initWithAppDisplayIdentifier:(id)appDisplayIdentifier spotlightCategory:(id)category iconName:(id)name;

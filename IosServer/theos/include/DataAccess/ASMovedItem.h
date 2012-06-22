@@ -10,9 +10,9 @@
 @class NSNumber, NSString;
 
 @interface ASMovedItem : ASItem {
-	NSString* _srcMsgId;
-	NSNumber* _status;
-	NSString* _dstMsgId;
+  NSString* _srcMsgId;
+  NSNumber* _status;
+  NSString* _dstMsgId;
 }
 // inherited: +(BOOL)acceptsTopLevelLeaves;
 // inherited: +(BOOL)parsingLeafNode;

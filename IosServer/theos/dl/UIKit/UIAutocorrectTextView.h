@@ -10,14 +10,14 @@
 @class UIFont, NSString;
 
 @interface UIAutocorrectTextView : UIView {
-	NSString* m_string;
-	int m_type;
-	int m_edgeType;
-	UIFont* m_textFont;
-	BOOL m_animating;
+  NSString* m_string;
+  int m_type;
+  int m_edgeType;
+  UIFont* m_textFont;
+  BOOL m_animating;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	BOOL m_textHighlighted;
-	BOOL m_cancelHighlighted;
+  BOOL m_textHighlighted;
+  BOOL m_cancelHighlighted;
 #endif
 }
 -(id)initWithFrame:(CGRect)frame string:(id)string type:(int)type edgeType:(int)type4;

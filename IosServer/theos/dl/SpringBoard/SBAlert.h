@@ -11,9 +11,9 @@
 @class NSMutableDictionary, SBAlertWindow, SBAlertDisplay;
 
 @interface SBAlert : SBDisplay {
-	SBAlertDisplay* _display;
-	NSMutableDictionary* _dictionary;
-	SBAlertWindow* _deferredAlertWindow;
+  SBAlertDisplay* _display;
+  NSMutableDictionary* _dictionary;
+  SBAlertWindow* _deferredAlertWindow;
 }
 +(void)registerForAlerts;
 +(id)alertWindow;

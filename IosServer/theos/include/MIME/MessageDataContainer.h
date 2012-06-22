@@ -10,9 +10,9 @@
 @class NSData;
 
 @interface MessageDataContainer : NSObject {
-	NSData* _data;
-	BOOL _partial;
-	BOOL _incomplete;
+  NSData* _data;
+  BOOL _partial;
+  BOOL _incomplete;
 }
 -(id)initWithData:(id)data partial:(BOOL)partial incomplete:(BOOL)incomplete;
 -(id)initWithData:(id)data;

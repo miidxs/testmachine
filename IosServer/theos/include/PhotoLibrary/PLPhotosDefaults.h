@@ -10,11 +10,11 @@
 @class NSString;
 
 @interface PLPhotosDefaults : NSObject {
-	BOOL _shouldRepeat;
-	BOOL _shouldShuffle;
-	int _transition;
-	int _secondsPerSlide;
-	NSString* _musicForSlideshow;
+  BOOL _shouldRepeat;
+  BOOL _shouldShuffle;
+  int _transition;
+  int _secondsPerSlide;
+  NSString* _musicForSlideshow;
 }
 +(id)sharedInstance;
 +(int)randomTransition;

@@ -5,8 +5,8 @@
 #import <UIKit/UIView.h>
 
 @interface SBDeviceLockTitle : UIView {
-	int _style;
-	int _interfaceOrientation;
+  int _style;
+  int _interfaceOrientation;
 }
 @property(assign, nonatomic) int interfaceOrientation;
 @property(retain, nonatomic) NSString* subtitle;

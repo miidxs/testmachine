@@ -39,22 +39,22 @@ decompiled code, we get
 
 @implementation UIView (SyntheticEvents)
 -(NSDictionary*)_scriptingInfo {
-	
+    
 }
 
 -(NSArray*)scriptingInfoWithChildren {
-	NSMutableArray* res = [NSMutableArray array];
-	NSMutableDictionary* info = [self _scriptingInfo];
-	NSArray* sublayers = [_layer.sublayers copy];
-	if ([sublayers count] != 0) {
-		for (CALayer* sublayer in sublayers) {
-			UIView* view = _UIView(sublayer);
-			if (view != nil && !view.hidden)
-				[res addObjectsFromArray:[view scriptingInfoWithChildren]];
-		}
-		[info setValue:res forKey:@"Children"];
-	}
-	[sublayers release];
-	return [NSArray arrayWithObject:info];
+    NSMutableArray* res = [NSMutableArray array];
+    NSMutableDictionary* info = [self _scriptingInfo];
+    NSArray* sublayers = [_layer.sublayers copy];
+    if ([sublayers count] != 0) {
+        for (CALayer* sublayer in sublayers) {
+            UIView* view = _UIView(sublayer);
+            if (view != nil && !view.hidden)
+                [res addObjectsFromArray:[view scriptingInfoWithChildren]];
+        }
+        [info setValue:res forKey:@"Children"];
+    }
+    [sublayers release];
+    return [NSArray arrayWithObject:info];
 }
 @end

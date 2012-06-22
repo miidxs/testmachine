@@ -10,21 +10,21 @@
 
 
 @interface UIGroupTableViewCellBackground : UIView {
-	int _sectionLocation;
-	int _animationCount;
+  int _sectionLocation;
+  int _animationCount;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	int _selectionStyle;
-	int _separatorStyle;
-	UIView* _topSeparatorView;
-	UIView* _bottomSeparatorView;
-	struct {
-		unsigned disableTopSeparator : 1;
-		unsigned disableBottomSeparator : 1;
-		unsigned selected : 1;
-	} _groupBackgroundFlags;	
+  int _selectionStyle;
+  int _separatorStyle;
+  UIView* _topSeparatorView;
+  UIView* _bottomSeparatorView;
+  struct {
+    unsigned disableTopSeparator : 1;
+    unsigned disableBottomSeparator : 1;
+    unsigned selected : 1;
+  } _groupBackgroundFlags;  
 #else
-	BOOL _disableSeparator;
-	UIView* _separatorView;
+  BOOL _disableSeparator;
+  UIView* _separatorView;
 #endif
 }
 @property(assign, nonatomic) int sectionLocation;

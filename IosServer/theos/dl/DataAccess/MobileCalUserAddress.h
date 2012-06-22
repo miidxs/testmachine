@@ -10,8 +10,8 @@
 @class NSURL, MobileCalDAVAccount;
 
 @interface MobileCalUserAddress : NSObject {
-	MobileCalDAVAccount* _account;
-	NSURL* _address;
+  MobileCalDAVAccount* _account;
+  NSURL* _address;
 }
 +(id)userAddress:(id)address forAccount:(id)account;
 +(id)userAddressFromDictionaryRepresentation:(id)dictionaryRepresentation forAccount:(id)account;

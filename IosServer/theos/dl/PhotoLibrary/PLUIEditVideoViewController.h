@@ -13,11 +13,11 @@
 @class UINavigationItem, NSDictionary, UIImagePickerController;
 
 @interface PLUIEditVideoViewController : PLUIImageViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate> {
-	NSDictionary* _options;
-	UIImagePickerController* _imagePicker;
-	UINavigationItem* _navItem;
-	id _delegate;
-	unsigned _canCreateMetadata;
+  NSDictionary* _options;
+  UIImagePickerController* _imagePicker;
+  UINavigationItem* _navItem;
+  id _delegate;
+  unsigned _canCreateMetadata;
 }
 // inherited: -(BOOL)_displaysFullScreen;
 -(BOOL)_editingForThirdParty;

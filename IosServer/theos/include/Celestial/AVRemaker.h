@@ -10,7 +10,7 @@
 
 
 @interface AVRemaker : NSObject {
-	AVRemakerPrivate* _priv;
+  AVRemakerPrivate* _priv;
 }
 @property(readonly, assign) double progress;
 @property(readonly, assign) double maxDurationWithinLimits;

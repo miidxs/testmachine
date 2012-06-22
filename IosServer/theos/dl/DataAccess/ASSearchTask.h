@@ -10,7 +10,7 @@
 @class DADSearchQuery;
 
 @interface ASSearchTask : ASTask {
-	DADSearchQuery* _query;
+  DADSearchQuery* _query;
 }
 @property(readonly, assign) DADSearchQuery* query;
 -(id)initWithQuery:(id)query;

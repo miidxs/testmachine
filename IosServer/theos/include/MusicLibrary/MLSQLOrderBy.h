@@ -12,9 +12,9 @@
 __attribute__((visibility("hidden")))
 @interface MLSQLOrderBy : MLSQLCode {
 @private
-	NSString* _indexCharSelectionString;
-	NSString* _displayColumnName;
-	BOOL _descending;
+  NSString* _indexCharSelectionString;
+  NSString* _displayColumnName;
+  BOOL _descending;
 }
 @property(assign, nonatomic) BOOL descending;
 +(id)expressionToken;

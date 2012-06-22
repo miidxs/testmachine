@@ -8,9 +8,9 @@
 @class UIView, UIControl, UIRemoveControl;
 
 @interface _UITableViewCellOldEditingData : NSObject {
-	UIRemoveControl* _removeControl;
-	UIControl* _grabber;
-	UIView* _separator;
+  UIRemoveControl* _removeControl;
+  UIControl* _grabber;
+  UIView* _separator;
 }
 @property(retain, nonatomic) UIControl* reorderControl;
 @property(retain, nonatomic) UIView* separatorView;

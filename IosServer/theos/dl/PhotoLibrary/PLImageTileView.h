@@ -15,8 +15,8 @@
 
 
 @interface PLImageTileView : UITiledView {
-	id _delegate;
-	unsigned _notifyTapDelegate : 1;
+  id _delegate;
+  unsigned _notifyTapDelegate : 1;
 }
 // inherited: +(Class)tileClass;
 +(int)tileWidth;

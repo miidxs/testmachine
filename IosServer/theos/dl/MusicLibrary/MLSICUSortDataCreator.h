@@ -11,7 +11,7 @@
 
 @interface MLSICUSortDataCreator : NSObject {
 @private
-	CPSqliteDatabase* _libraryDB;
+  CPSqliteDatabase* _libraryDB;
 }
 -(id)initWithLibraryStore:(CPRecordStoreRef)libraryStore;
 -(void)notifyDatabaseContentsWillChange;

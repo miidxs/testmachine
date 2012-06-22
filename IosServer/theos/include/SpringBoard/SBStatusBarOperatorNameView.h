@@ -11,9 +11,9 @@
 @class NSString;
 
 @interface SBStatusBarOperatorNameView : SBStatusBarContentView {
-	float _letterSpacing;
-	NSString* _operatorName;
-	BOOL _fullSize;
+  float _letterSpacing;
+  NSString* _operatorName;
+  BOOL _fullSize;
 }
 -(id)initWithOperatorName:(id)operatorName;
 // inherited: -(void)dealloc;

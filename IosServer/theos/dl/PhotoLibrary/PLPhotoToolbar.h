@@ -10,7 +10,7 @@
 
 
 @interface PLPhotoToolbar : PLToolbar {
-	int _photosCurrentButtonGroup;
+  int _photosCurrentButtonGroup;
 }
 -(void)setFrame:(CGRect)frame;
 -(float)originXDeltaForButtonTag:(int)buttonTag;

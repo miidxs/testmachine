@@ -11,7 +11,7 @@ extern "C" {
 typedef IOReturn IOSurfaceAcceleratorReturn;
 
 enum {
-	kIOSurfaceAcceleratorSuccess = 0,
+  kIOSurfaceAcceleratorSuccess = 0,
 };
 
 typedef struct __IOSurfaceAccelerator *IOSurfaceAcceleratorRef;

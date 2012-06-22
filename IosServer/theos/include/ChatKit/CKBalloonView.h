@@ -9,21 +9,21 @@
 @class NSString, CKMessagePart;
 
 @interface CKBalloonView : UIView {
-	id _delegate;
-	id _tapDelegate;
-	int _orientation;
-	float _bubbleAlpha;
-	float _tightenedWidth;
-	unsigned _hasURLs : 1;
-	unsigned _draws : 1;
-	unsigned _forceTighten : 1;
-	unsigned _balloonHighlight : 1;
-	float _topMargin;
-	CKMessagePart* _messagePart;
-	NSString* _subject;
-	unsigned _preview : 1;
-	unsigned _isIgnoringSingleTap : 1;
-	unsigned _calloutRegistered : 1;
+  id _delegate;
+  id _tapDelegate;
+  int _orientation;
+  float _bubbleAlpha;
+  float _tightenedWidth;
+  unsigned _hasURLs : 1;
+  unsigned _draws : 1;
+  unsigned _forceTighten : 1;
+  unsigned _balloonHighlight : 1;
+  float _topMargin;
+  CKMessagePart* _messagePart;
+  NSString* _subject;
+  unsigned _preview : 1;
+  unsigned _isIgnoringSingleTap : 1;
+  unsigned _calloutRegistered : 1;
 }
 @property(copy, nonatomic) NSString* subject;
 @property(assign, nonatomic) id delegate;

@@ -9,7 +9,7 @@
 @class UILabel;
 
 @interface _UILabeledPushButton : UIThreePartButton {
-	UILabel* _textLabel;
+  UILabel* _textLabel;
 }
 -(void)dealloc;
 -(void)setLabel:(id)label;

@@ -13,63 +13,63 @@
 @class UITouch, SBIconListPageControl, SBIcon, SBIconScrollView, SBIconList, UIView, NSTimer, SBSearchView, SBIconModel, TPLCDTextView, SBIconContentView;
 
 @interface SBIconController : NSObject <UIScrollViewDelegate, SBIconListPageControlDelegate> {
-	SBIconModel* _iconModel;
-	UIView* _contentView;
-	SBIconScrollView* _scrollView;
-	SBIconListPageControl* _pageControl;
-	int _currentIconListIndex;
-	int _currentColumnIndex;
-	TPLCDTextView* _idleText;
-	float _currentIdleTextOffset;
-	SBSearchView* _searchView;
+  SBIconModel* _iconModel;
+  UIView* _contentView;
+  SBIconScrollView* _scrollView;
+  SBIconListPageControl* _pageControl;
+  int _currentIconListIndex;
+  int _currentColumnIndex;
+  TPLCDTextView* _idleText;
+  float _currentIdleTextOffset;
+  SBSearchView* _searchView;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	int _orientation;
+  int _orientation;
 #endif
-	SBIcon* _lastClickedIcon;
-	double _lastClickedTime;
-	SBIcon* _iconToInstall;
-	SBIcon* _grabbedIcon;
-	SBIconList* _grabbedIconList;
+  SBIcon* _lastClickedIcon;
+  double _lastClickedTime;
+  SBIcon* _iconToInstall;
+  SBIcon* _grabbedIcon;
+  SBIconList* _grabbedIconList;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	int _grabbedIndex;
+  int _grabbedIndex;
 #endif
 #if __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_3_2
-	int _grabbedX;
-	int _grabbedY;
+  int _grabbedX;
+  int _grabbedY;
 #endif
-	SBIcon* _swappedIcon;
-	SBIconList* _swappedIconList;
+  SBIcon* _swappedIcon;
+  SBIconList* _swappedIconList;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	int _swappedIndex;
+  int _swappedIndex;
 #endif
 #if __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_3_2
-	int _swappedX;
-	int _swappedY;
+  int _swappedX;
+  int _swappedY;
 #endif
-	SBIconList* _destinationIconList;
+  SBIconList* _destinationIconList;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	int _destinationIndex;
+  int _destinationIndex;
 #endif
 #if __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_3_2
-	int _destinationX;
-	int _destinationY;
+  int _destinationX;
+  int _destinationY;
 #endif
-	NSTimer* _scrollPageTimer;
-	unsigned _didScroll : 1;
-	unsigned _isEditing : 1;
-	unsigned _compacted : 1;
-	unsigned _willSwap : 1;
-	unsigned _animatedScrolling : 1;
-	unsigned _scrollingToSearch : 1;
-	unsigned _movedFromOrigin : 1;
+  NSTimer* _scrollPageTimer;
+  unsigned _didScroll : 1;
+  unsigned _isEditing : 1;
+  unsigned _compacted : 1;
+  unsigned _willSwap : 1;
+  unsigned _animatedScrolling : 1;
+  unsigned _scrollingToSearch : 1;
+  unsigned _movedFromOrigin : 1;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	unsigned _disableUpdatingCurrentIconList : 1;
-	unsigned _delayResumingAutorotation : 1;
-	unsigned _onWallpaper : 1;
+  unsigned _disableUpdatingCurrentIconList : 1;
+  unsigned _delayResumingAutorotation : 1;
+  unsigned _onWallpaper : 1;
 #endif
-	float _iconAlpha;
-	float _searchViewAlpha;
-	UITouch* _lastTouch;
+  float _iconAlpha;
+  float _searchViewAlpha;
+  UITouch* _lastTouch;
 }
 +(SBIconController*)sharedInstance;
 // inherited: -(id)init;

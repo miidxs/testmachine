@@ -12,17 +12,17 @@
 
 
 @interface MFMutableData : NSMutableData <NSCopying, NSMutableCopying> {
-	void* _bytes;
-	unsigned _length;
-	unsigned _mappedLength;
-	unsigned _capacity;
-	unsigned _threshold;
-	char* _path;
-	int _fd;
-	unsigned _flushFrom;
-	BOOL _flush;
-	BOOL _immutable;
-	BOOL _vm;
+  void* _bytes;
+  unsigned _length;
+  unsigned _mappedLength;
+  unsigned _capacity;
+  unsigned _threshold;
+  char* _path;
+  int _fd;
+  unsigned _flushFrom;
+  BOOL _flush;
+  BOOL _immutable;
+  BOOL _vm;
 }
 // inherited: -(id)init;
 -(id)initWithBytes:(const void*)bytes length:(unsigned)length;

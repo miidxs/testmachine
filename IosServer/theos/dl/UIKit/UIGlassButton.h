@@ -9,7 +9,7 @@
 @class UIColor;
 
 @interface UIGlassButton : UIButton {
-	UIColor* _tintColor;
+  UIColor* _tintColor;
 }
 @property(retain, nonatomic) UIColor* tintColor;
 -(id)initWithFrame:(CGRect)frame;

@@ -11,7 +11,7 @@
 
 @interface MPInlineAudioTransportControls : MPTransportControls {
 @private
-	int _style;
+  int _style;
 }
 -(id)initWithFrame:(CGRect)frame style:(int)style;
 -(void)reloadForAdditions:(id)additions removals:(id)removals animate:(BOOL)animate;

@@ -10,23 +10,23 @@
 @class NSArray, NSData, NSDate, NSString;
 
 @interface IMAPFetchResult : NSObject {
-	int _itemType;
-	union {
-		NSArray* envelope;
-		NSDate* internalDate;
-		unsigned messageSize;
-		NSArray* bodyStructure;
-		struct {
-			NSString* section;
-			unsigned startOffset;
-			NSData* sectionData;
-		} bodySectionInfo;
-		unsigned uid;
-		struct {
-			unsigned messageFlags;
-			NSArray* customFlags;
-		} flags;
-	} _typeSpecific;
+  int _itemType;
+  union {
+    NSArray* envelope;
+    NSDate* internalDate;
+    unsigned messageSize;
+    NSArray* bodyStructure;
+    struct {
+      NSString* section;
+      unsigned startOffset;
+      NSData* sectionData;
+    } bodySectionInfo;
+    unsigned uid;
+    struct {
+      unsigned messageFlags;
+      NSArray* customFlags;
+    } flags;
+  } _typeSpecific;
 }
 -(id)initWithType:(int)type;
 // inherited: -(void)dealloc;

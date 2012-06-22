@@ -14,12 +14,12 @@ __attribute__((visibility("hidden")))
 @interface UITouchesEvent : UIInternalEvent {
 #else
 @interface UITouchesEvent : UIEvent {
-	GSEventRef _gsEvent;
+  GSEventRef _gsEvent;
 #endif
-	NSMutableSet* _touches;
-	CFDictionaryRef _keyedTouches;
+  NSMutableSet* _touches;
+  CFDictionaryRef _keyedTouches;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	CFDictionaryRef _sortedGestureRecognizersByWindow;
+  CFDictionaryRef _sortedGestureRecognizersByWindow;
 #endif
 }
 #if 0

@@ -9,7 +9,7 @@
 @class NSString;
 
 @interface CKSimpleBalloonView : CKBalloonView {
-	NSString* _text;
+  NSString* _text;
 }
 +(CGFloat)minimumBubbleHeight;
 +(CGFloat)heightForText:(NSString*)text width:(CGFloat)width includeBuffers:(BOOL)buffers;

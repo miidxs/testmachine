@@ -9,9 +9,9 @@
 @class NSDate, NSMutableArray;
 
 @interface CKTranscriptBubbleData : NSObject {
-	NSMutableArray* _bubbleDataArray;
-	float _balloonWidth;
-	NSDate* _nextEligibleTimestamp;
+  NSMutableArray* _bubbleDataArray;
+  float _balloonWidth;
+  NSDate* _nextEligibleTimestamp;
 }
 @property(assign, nonatomic) float balloonWidth;
 +(Class)balloonClassForMessagePart:(id)messagePart;

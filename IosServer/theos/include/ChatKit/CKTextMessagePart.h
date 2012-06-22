@@ -8,8 +8,8 @@
 @class NSString;
 
 @interface CKTextMessagePart : CKMessagePart {
-	NSString* _text;
-	NSString* _contentLocation;
+  NSString* _text;
+  NSString* _contentLocation;
 }
 @property(copy, nonatomic) NSString* contentLocation;
 -(id)detachedCopy;

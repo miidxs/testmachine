@@ -11,7 +11,7 @@
 
 @interface AVRecorder : NSObject {
 @private
-	AVRecorderPrivate* _priv;
+  AVRecorderPrivate* _priv;
 }
 -(id)init;
 -(void)dealloc;

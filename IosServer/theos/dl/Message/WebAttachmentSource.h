@@ -11,8 +11,8 @@
 @class NSURL;
 
 @interface WebAttachmentSource : WRObject {
-	NSURL* _baseURL;
-	unsigned _uniqueId : 30;
+  NSURL* _baseURL;
+  unsigned _uniqueId : 30;
 }
 +(id)invalidBaseURL;
 // inherited: -(void)dealloc;

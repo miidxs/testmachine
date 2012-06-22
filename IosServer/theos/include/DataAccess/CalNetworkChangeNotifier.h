@@ -11,13 +11,13 @@
 @class NSMutableArray;
 
 @interface CalNetworkChangeNotifier : NSObject {
-	SCDynamicStoreRef _store;
-	CFRunLoopSourceRef _runLoopSource;
-	NSMutableArray* _listeners;
-	BOOL _pendingPost;
-	BOOL _asleep;
-	BOOL _checkedNetwork;
-	BOOL _isNetworkUp;
+  SCDynamicStoreRef _store;
+  CFRunLoopSourceRef _runLoopSource;
+  NSMutableArray* _listeners;
+  BOOL _pendingPost;
+  BOOL _asleep;
+  BOOL _checkedNetwork;
+  BOOL _isNetworkUp;
 }
 +(id)sharedNotifier;
 +(BOOL)enableNotifications;

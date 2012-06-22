@@ -10,11 +10,11 @@
 @class NSConditionLock, NSMutableArray;
 
 @interface RequestQueue : NSObject {
-	NSConditionLock* _condition;
-	NSMutableArray* _requests;
-	NSMutableArray* _consumers;
-	unsigned _waitingOutside;
-	unsigned _waitingInside;
+  NSConditionLock* _condition;
+  NSMutableArray* _requests;
+  NSMutableArray* _consumers;
+  unsigned _waitingOutside;
+  unsigned _waitingInside;
 }
 // inherited: -(id)init;
 -(void)addRequest:(id)request consumer:(id)consumer;

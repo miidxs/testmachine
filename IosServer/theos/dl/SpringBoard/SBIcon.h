@@ -13,41 +13,41 @@
 
 @interface SBIcon : UIView {
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	UIImageView* _shadow;
+  UIImageView* _shadow;
 #endif
 #if __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_3_2
-	NSString* _filenameSafeDisplayIdentifier;
+  NSString* _filenameSafeDisplayIdentifier;
 #endif
-	SBIconImageView* _image;
-	UIImageView* _reflection;
+  SBIconImageView* _image;
+  UIImageView* _reflection;
 #if __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_3_2
-	UIView* _grayFilterView;
+  UIView* _grayFilterView;
 #endif
-	SBIconBadge* _badge;
-	id _badgeNumberOrString;
-	SBIconLabel* _label;
-	UIPushButton* _closeBox;
-	unsigned _isShowingImages : 1;
-	unsigned _drawsLabel : 1;
-	unsigned _isHidden : 1;
-	unsigned _isRevealable : 1;
-	unsigned _inDock : 1;
-	unsigned _isGrabbed : 1;
-	unsigned _isGrabbing : 1;
-	unsigned _highlighted : 1;
-	unsigned _isJittering : 1;
-	unsigned _allowJitter : 1;
-	unsigned _touchDownInIcon : 1;
+  SBIconBadge* _badge;
+  id _badgeNumberOrString;
+  SBIconLabel* _label;
+  UIPushButton* _closeBox;
+  unsigned _isShowingImages : 1;
+  unsigned _drawsLabel : 1;
+  unsigned _isHidden : 1;
+  unsigned _isRevealable : 1;
+  unsigned _inDock : 1;
+  unsigned _isGrabbed : 1;
+  unsigned _isGrabbing : 1;
+  unsigned _highlighted : 1;
+  unsigned _isJittering : 1;
+  unsigned _allowJitter : 1;
+  unsigned _touchDownInIcon : 1;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	unsigned _disableAutorotation : 1;
-	unsigned _onWallpaper : 1;
+  unsigned _disableAutorotation : 1;
+  unsigned _onWallpaper : 1;
 #endif
-	NSTimer* _delayedUnhighlightTimer;
-	CGPoint _unjitterPoint;
-	CGPoint _grabPoint;
-	NSTimer* _grabTimer;
+  NSTimer* _delayedUnhighlightTimer;
+  CGPoint _unjitterPoint;
+  CGPoint _grabPoint;
+  NSTimer* _grabTimer;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	UIImage* _cachedIconImages[3];
+  UIImage* _cachedIconImages[3];
 #endif
 }
 +(CGSize)defaultIconSize;

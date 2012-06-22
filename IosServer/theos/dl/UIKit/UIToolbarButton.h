@@ -9,22 +9,22 @@
 @class UILabel, UIColor, UIToolbarButtonBadge, UISelectionIndicatorView;
 
 @interface UIToolbarButton : UIControl {
-	CGRect _hitRect;
-	UIView* _info;
-	UILabel* _label;
-	UIToolbarButtonBadge* _badge;
-	UISelectionIndicatorView* _selectedIndicator;
-	int _barStyle;
-	int _style;
-	UIEdgeInsets _glowAdjust;
-	BOOL _onState;
-	BOOL _barHeight;
-	BOOL _badgeAnimated;
-	BOOL _bezel;
-	float _width;
-	float _labelHeight;
-	UIEdgeInsets _infoInsets;
-	UIColor* _tintColor;
+  CGRect _hitRect;
+  UIView* _info;
+  UILabel* _label;
+  UIToolbarButtonBadge* _badge;
+  UISelectionIndicatorView* _selectedIndicator;
+  int _barStyle;
+  int _style;
+  UIEdgeInsets _glowAdjust;
+  BOOL _onState;
+  BOOL _barHeight;
+  BOOL _badgeAnimated;
+  BOOL _bezel;
+  float _width;
+  float _labelHeight;
+  UIEdgeInsets _infoInsets;
+  UIColor* _tintColor;
 }
 +(id)_defaultLabelFont;
 +(id)_defaultLabelColor;

@@ -6,7 +6,7 @@
 #import <WebKit/DOMHTMLTextAreaElement.h>
 #import <Availability2.h>
 
-@interface DOMHTMLTextAreaElement (UIWebViewAdditions)	// note: the category name is UITextInputAdditions in 3.2.
+@interface DOMHTMLTextAreaElement (UIWebViewAdditions)  // note: the category name is UITextInputAdditions in 3.2.
 -(id)textInputTraits;
 -(BOOL)isTextControl;
 -(void)setSelectionWithPoint:(CGPoint)point __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_3_2);

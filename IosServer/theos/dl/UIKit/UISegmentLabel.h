@@ -8,7 +8,7 @@
 
 __attribute__((visibility("hidden")))
 @interface UISegmentLabel : UILabel {
-	int _style;
+  int _style;
 }
 #if __IPHONE_OS_VERSION_MAX_ALLOWED < __IPHONE_3_2
 -(id)initWithSegmentedControlStyle:(int)segmentedControlStyle;

@@ -8,8 +8,8 @@
 
 
 @interface _UIStretchableImage : UIImage {
-	int _leftCapWidth;
-	int _topCapHeight;
+  int _leftCapWidth;
+  int _topCapHeight;
 }
 -(id)initWithImage:(id)image leftCapWidth:(int)width topCapHeight:(int)height;
 @end

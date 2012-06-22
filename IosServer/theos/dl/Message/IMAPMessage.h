@@ -11,10 +11,10 @@
 @class NSArray;
 
 @interface IMAPMessage : MailMessage {
-	unsigned _size;
-	XXStruct_vs6POB _imapFlags;
-	NSArray* _customFlags;
-	unsigned _uid;
+  unsigned _size;
+  XXStruct_vs6POB _imapFlags;
+  NSArray* _customFlags;
+  unsigned _uid;
 }
 // inherited: +(void)initialize;
 -(id)initWithFlags:(unsigned long)flags customFlags:(id)flags2 size:(unsigned)size uid:(unsigned long)uid;

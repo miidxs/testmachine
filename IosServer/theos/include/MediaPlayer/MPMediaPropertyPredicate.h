@@ -11,7 +11,7 @@
 
 @interface MPMediaPropertyPredicate : MPMediaPredicate {
 @private
-	MPMediaPropertyPredicateInternal* _internal;
+  MPMediaPropertyPredicateInternal* _internal;
 }
 @property(assign, nonatomic) int comparisonType;
 @property(copy, nonatomic) id value;

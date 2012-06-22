@@ -13,26 +13,26 @@
 
 @interface SBIconList : UIView {
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	int _orientation;
+  int _orientation;
 #endif
-	SBIcon* _bouncedIcon;
+  SBIcon* _bouncedIcon;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	NSMutableArray* _icons;
+  NSMutableArray* _icons;
 #endif
 #if __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_3_2
-	NSMutableArray* _iconMatrix;
+  NSMutableArray* _iconMatrix;
 #endif
-	NSMutableArray* _removedIcons;
+  NSMutableArray* _removedIcons;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	NSMutableArray* _iconContainerMatrix;
+  NSMutableArray* _iconContainerMatrix;
 #endif
-	unsigned _scattered : 1;
-	unsigned _needsLayout : 1;
-	unsigned _stateIsDirty : 1;
+  unsigned _scattered : 1;
+  unsigned _needsLayout : 1;
+  unsigned _stateIsDirty : 1;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	unsigned _rotating : 1;
-	unsigned _onWallpaper : 1;
-	UIView* _fadeView;
+  unsigned _rotating : 1;
+  unsigned _onWallpaper : 1;
+  UIView* _fadeView;
 #endif
 }
 // inherited: -(id)initWithFrame:(CGRect)frame;

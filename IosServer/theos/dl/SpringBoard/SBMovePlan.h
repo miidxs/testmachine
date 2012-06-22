@@ -11,15 +11,15 @@
 @class SBIcon, SBIconList;
 
 @interface SBMovePlan : NSObject {
-	SBIcon* _icon;
-	SBIconList* _source;
-	SBIconList* _destination;
+  SBIcon* _icon;
+  SBIconList* _source;
+  SBIconList* _destination;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	NSInteger _index;
+  NSInteger _index;
 #endif
 #if __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_3_2
-	NSInteger _x;
-	NSInteger _y;
+  NSInteger _x;
+  NSInteger _y;
 #endif
 }
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2

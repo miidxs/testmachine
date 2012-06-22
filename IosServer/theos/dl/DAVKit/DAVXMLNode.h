@@ -11,10 +11,10 @@
 @class NSDictionary, NSMutableArray, NSString;
 
 @interface DAVXMLNode : NSObject {
-	NSMutableArray* _children;
-	NSDictionary* _attributes;
-	NSString* _content;
-	NSString* _name;
+  NSMutableArray* _children;
+  NSDictionary* _attributes;
+  NSString* _content;
+  NSString* _name;
 }
 +(id)textNodeWithContent:(id)content;
 +(id)nodeWithName:(id)name attributes:(id)attributes;

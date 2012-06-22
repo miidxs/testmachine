@@ -9,8 +9,8 @@
 @class UITableCell;
 
 @interface _UITableCellGrabber : UIControl {
-	UITableCell* _cell;
-	CGPoint _downPoint;
+  UITableCell* _cell;
+  CGPoint _downPoint;
 }
 -(id)initWithCell:(id)cell;
 -(void)drawRect:(CGRect)rect;

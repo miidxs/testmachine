@@ -14,8 +14,8 @@
 
 __attribute__((visibility("hidden")))
 @interface UIWebViewLabel : UIView {
-	UILabel* _label;
-	UIHighlightView* _highlight;
+  UILabel* _label;
+  UIHighlightView* _highlight;
 }
 -(id)initWithFrame:(CGRect)frame;
 -(void)sizeToFit;

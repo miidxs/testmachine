@@ -11,8 +11,8 @@
 
 @interface MLITImageLibrary : NSObject {
 @private
-	void* _imageLibrary;
-	unsigned _triedToLoadDatabase : 1;
+  void* _imageLibrary;
+  unsigned _triedToLoadDatabase : 1;
 }
 +(id)sharedLibrary;
 +(MLArtworkFormatSpec)artworkFormatSpecForArtworkFormatID:(unsigned)artworkFormatID;

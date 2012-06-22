@@ -11,7 +11,7 @@
 @class NSString;
 
 @interface _DAVBasicChallenge : DAVChallenge {
-	NSString* authString;
+  NSString* authString;
 }
 -(id)initWithAuthString:(id)authString;
 // inherited: -(void)dealloc;

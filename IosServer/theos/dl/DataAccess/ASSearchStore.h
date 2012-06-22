@@ -10,10 +10,10 @@
 @class NSArray, NSNumber, NSString, NSMutableArray;
 
 @interface ASSearchStore : ASItem {
-	NSMutableArray* _results;
-	NSNumber* _status;
-	NSNumber* _total;
-	NSString* _range;
+  NSMutableArray* _results;
+  NSNumber* _status;
+  NSNumber* _total;
+  NSString* _range;
 }
 @property(retain) NSArray* results;
 @property(copy) NSNumber* status;

@@ -11,7 +11,7 @@
 @class NSArray, DACalendar;
 
 @interface DACalendarDatabase : DACalendarObject {
-	BOOL _isChangeLoggingEnabled;
+  BOOL _isChangeLoggingEnabled;
 }
 @property(readonly, assign, nonatomic) DACalendar* defaultCalendarForNewEvents;
 @property(readonly, assign, nonatomic) DACalendar* defaultLocalCalendar;

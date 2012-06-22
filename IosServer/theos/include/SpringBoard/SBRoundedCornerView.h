@@ -15,11 +15,11 @@
 @class SBClipCornerView;
 
 @interface SBRoundedCornerView : UIView {
-	SBClipCornerView* _clipCornerViews[4];
-	CGFloat _cornerRadius;
-	CGFloat _cornerSize;
-	CGFloat _edgeInset;
-	UIImageView* _imageSuperview;
+  SBClipCornerView* _clipCornerViews[4];
+  CGFloat _cornerRadius;
+  CGFloat _cornerSize;
+  CGFloat _edgeInset;
+  UIImageView* _imageSuperview;
 }
 -(id)initWithCornerRadius:(CGFloat)cornerRadius size:(CGFloat)size inset:(CGFloat)inset imageSuperview:(UIView *)superview;
 -(CGPoint)_originForCornerIndex:(int)cornerIndex withBoundsSize:(CGSize)boundsSize;

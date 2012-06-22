@@ -12,10 +12,10 @@
 @class MPAudioDeviceController;
 
 @interface SBNowPlayingAlertItem : SBFlippyAlertItem <UIModalViewDelegate> {
-	unsigned _beganSeeking : 1;
-	unsigned _deferLayout : 1;
-	unsigned _needsLayout : 1;
-	MPAudioDeviceController* _audioDeviceController;
+  unsigned _beganSeeking : 1;
+  unsigned _deferLayout : 1;
+  unsigned _needsLayout : 1;
+  MPAudioDeviceController* _audioDeviceController;
 }
 // inherited: -(id)init;
 // inherited: -(void)dealloc;

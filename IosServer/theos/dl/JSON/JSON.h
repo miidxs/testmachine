@@ -12,9 +12,9 @@
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_1
 
 @interface JSON : NSObject {
-	unsigned options;
-	NSError** error;
-	unsigned depth;
+  unsigned options;
+  NSError** error;
+  unsigned depth;
 }
 -(id)initWithOptions:(unsigned)options error:(NSError**)error;
 -(void)setErrorWithCode:(unsigned)code description:(NSString*)description;
@@ -36,9 +36,9 @@
 __attribute__((visibility("hidden")))
 @interface JSONParser : JSON {
 @private
-	char* c;
-	char* start;
-	char* end;
+  char* c;
+  char* start;
+  char* end;
 }
 -(id)objectWithData:(id)data;
 -(unsigned)stringEncodingForJSONData:(id)jsondata;

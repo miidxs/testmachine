@@ -8,7 +8,7 @@
 
 
 @interface UIButtonLabel : UILabel {
-	BOOL _reverseShadow;
+  BOOL _reverseShadow;
 }
 -(void)setFont:(id)font;
 -(void)setLineBreakMode:(int)mode;

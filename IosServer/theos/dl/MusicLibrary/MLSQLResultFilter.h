@@ -13,9 +13,9 @@
 __attribute__((visibility("hidden")))
 @interface MLSQLResultFilter : NSObject {
 @private
-	NSNumber* _countLimit;
-	NSNumber* _sumLimitValue;
-	NSString* _sumLimitColumnName;
+  NSNumber* _countLimit;
+  NSNumber* _sumLimitValue;
+  NSString* _sumLimitColumnName;
 }
 @property(copy, nonatomic) NSNumber* countLimit;
 @property(copy, nonatomic) NSNumber* sumLimitValue;

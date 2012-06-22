@@ -33,15 +33,15 @@ __BEGIN_DECLS
 typedef struct __IOHIDUserDevice * IOHIDUserDeviceRef;
 
 /*!
-	@function   IOHIDUserDeviceGetTypeID
-	@abstract   Returns the type identifier of all IOHIDUserDevice instances.
+  @function   IOHIDUserDeviceGetTypeID
+  @abstract   Returns the type identifier of all IOHIDUserDevice instances.
 */
 CF_EXPORT
 CFTypeID IOHIDUserDeviceGetTypeID(void);
 
 /*!
-	@function   IOHIDUserDeviceCreate
-	@abstract   Creates an virtual IOHIDDevice in the kernel.
+  @function   IOHIDUserDeviceCreate
+  @abstract   Creates an virtual IOHIDDevice in the kernel.
     @discussion The io_service_t passed in this method must reference an object 
                 in the kernel of type IOHIDUserDevice.
     @param      allocator Allocator to be used during creation.
@@ -55,8 +55,8 @@ IOHIDUserDeviceRef IOHIDUserDeviceCreate(
 
 
 /*!
-	@function   IOHIDUserDeviceHandleReport
-	@abstract   Dispatch a report to the IOHIDUserDevice.
+  @function   IOHIDUserDeviceHandleReport
+  @abstract   Dispatch a report to the IOHIDUserDevice.
 */
 CF_EXPORT
 IOReturn IOHIDUserDeviceHandleReport(

@@ -10,11 +10,11 @@
 @class NSMutableDictionary;
 
 @interface DAAccountManager : NSObject {
-	NSMutableDictionary* _accounts;
-	NSMutableDictionary* _accountsToAdd;
-	NSMutableDictionary* _accountsToRemove;
-	BOOL _accountSaveInProgress;
-	int _pendingAccountSetupCount;
+  NSMutableDictionary* _accounts;
+  NSMutableDictionary* _accountsToAdd;
+  NSMutableDictionary* _accountsToRemove;
+  BOOL _accountSaveInProgress;
+  int _pendingAccountSetupCount;
 }
 +(void)vendDaemonManagers:(Class)managers;
 +(id)sharedInstance;

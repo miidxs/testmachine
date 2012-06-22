@@ -8,9 +8,9 @@
 
 
 @interface UIFrameAnimation : UIAnimation {
-	CGRect _startFrame;
-	CGRect _endFrame;
-	int _fieldsToChange;
+  CGRect _startFrame;
+  CGRect _endFrame;
+  int _fieldsToChange;
 }
 -(id)initWithTarget:(id)target;
 -(void)setStartFrame:(CGRect)frame;

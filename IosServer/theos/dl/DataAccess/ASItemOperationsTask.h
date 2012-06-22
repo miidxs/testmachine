@@ -10,11 +10,11 @@
 @class NSArray, ASMailMessage;
 
 @interface ASItemOperationsTask : ASTask {
-	NSArray* _commands;
-	int _numReplacedItems;
-	int _bodyTruncationBytes;
-	int _mimeSupport;
-	ASMailMessage* _streamingMailMessage;
+  NSArray* _commands;
+  int _numReplacedItems;
+  int _bodyTruncationBytes;
+  int _mimeSupport;
+  ASMailMessage* _streamingMailMessage;
 }
 // inherited: -(int)commandCode;
 // inherited: -(void)dealloc;

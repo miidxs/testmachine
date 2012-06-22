@@ -13,9 +13,9 @@
 @protocol DAMFStreamingContentConsumer;
 
 @interface DAMessageStoreSearchResultBodyConsumer : NSObject <DAMailboxFetchSearchResultConsumer, DAMailboxStreamingContentConsumer> {
-	MFConditionLock* _doneCondition;
-	id<DAMFStreamingContentConsumer> _streamConsumer;
-	MFError* _error;
+  MFConditionLock* _doneCondition;
+  id<DAMFStreamingContentConsumer> _streamConsumer;
+  MFError* _error;
 }
 @property(retain, nonatomic) MFError* error;
 @property(retain, nonatomic) id<DAMFStreamingContentConsumer> streamConsumer;

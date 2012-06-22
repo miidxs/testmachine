@@ -8,8 +8,8 @@
 
 
 @interface UIGroupInsertionItem : NSObject {
-	int _index;
-	NSRange _range;
+  int _index;
+  NSRange _range;
 }
 -(id)initWithExistingGroup:(int)existingGroup andRowRange:(NSRange)range;
 -(id)initWithNewGroupBeforeGroup:(int)newGroupBeforeGroup andRowCount:(int)count;

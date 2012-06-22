@@ -10,7 +10,7 @@
 @class NSArray;
 
 @interface MPArrayQueueFeeder : MPQueueFeeder {
-	NSArray* _queueItems;
+  NSArray* _queueItems;
 }
 @property(readonly, assign, nonatomic) NSArray* items;
 -(id)initWithItems:(id)items;

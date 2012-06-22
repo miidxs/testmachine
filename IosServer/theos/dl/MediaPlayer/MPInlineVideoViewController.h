@@ -12,32 +12,32 @@
 
 @interface MPInlineVideoViewController : MPVideoViewController {
 @private
-	int _videoOverlayStyle;
-	MPInlineVideoOverlay* _inlineOverlayView;
-	MPWildcatFullScreenVideoOverlay* _fullscreenOverlayView;
-	MPWildcatAudioOverlay* _audioOverlayView;
-	int _audioOverlayStyle;
-	BOOL _overlayViewIsVisible;
-	NSString* _playbackErrorDescription;
-	UITapGestureRecognizer* _tapGestureRecognizer;
-	UITapGestureRecognizer* _doubleTapGestureRecognizer;
-	UITapGestureRecognizer* _fullscreenTapGestureRecognizer;
-	UITapGestureRecognizer* _fullscreenDoubleTapGestureRecognizer;
-	UIPinchGestureRecognizer* _pinchGestureRecognizer;
-	UIPinchGestureRecognizer* _fullscreenPinchGestureRecognizer;
-	NSTimer* _idleTimer;
-	unsigned _wantsOverlayVisibleWhenItemIsAvailable : 1;
-	unsigned _wantsOverlayVisibleWhenItemIsAvailableAnimated : 1;
-	unsigned _animatingOverlay : 1;
-	UIView* _fullscreenView;
-	UIView* _superviewBeforeFullscreen;
-	unsigned _indexInSuperviewBeforeFullscreen;
-	CGRect _nonFullscreenDestinationFrame;
-	int _desiredInterfaceOrientation;
-	int _previousStatusBarMode;
-	unsigned _isFullscreen : 1;
-	unsigned _animatingFullscreenTransition : 1;
-	unsigned _contentViewDidClipToBounds : 1;
+  int _videoOverlayStyle;
+  MPInlineVideoOverlay* _inlineOverlayView;
+  MPWildcatFullScreenVideoOverlay* _fullscreenOverlayView;
+  MPWildcatAudioOverlay* _audioOverlayView;
+  int _audioOverlayStyle;
+  BOOL _overlayViewIsVisible;
+  NSString* _playbackErrorDescription;
+  UITapGestureRecognizer* _tapGestureRecognizer;
+  UITapGestureRecognizer* _doubleTapGestureRecognizer;
+  UITapGestureRecognizer* _fullscreenTapGestureRecognizer;
+  UITapGestureRecognizer* _fullscreenDoubleTapGestureRecognizer;
+  UIPinchGestureRecognizer* _pinchGestureRecognizer;
+  UIPinchGestureRecognizer* _fullscreenPinchGestureRecognizer;
+  NSTimer* _idleTimer;
+  unsigned _wantsOverlayVisibleWhenItemIsAvailable : 1;
+  unsigned _wantsOverlayVisibleWhenItemIsAvailableAnimated : 1;
+  unsigned _animatingOverlay : 1;
+  UIView* _fullscreenView;
+  UIView* _superviewBeforeFullscreen;
+  unsigned _indexInSuperviewBeforeFullscreen;
+  CGRect _nonFullscreenDestinationFrame;
+  int _desiredInterfaceOrientation;
+  int _previousStatusBarMode;
+  unsigned _isFullscreen : 1;
+  unsigned _animatingFullscreenTransition : 1;
+  unsigned _contentViewDidClipToBounds : 1;
 }
 @property(assign, nonatomic) int audioOverlayStyle;
 @property(copy, nonatomic) NSString* playbackErrorDescription;

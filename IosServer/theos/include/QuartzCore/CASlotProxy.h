@@ -12,7 +12,7 @@
 __attribute__((visibility("hidden")))
 @interface CASlotProxy : NSObject {
 @private
-	Proxy* _proxy;
+  Proxy* _proxy;
 }
 -(id)initWithName:(unsigned)name;
 // inherited: -(void)dealloc;

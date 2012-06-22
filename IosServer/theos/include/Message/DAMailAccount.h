@@ -11,33 +11,33 @@
 @protocol ASAccountActorMessages;
 
 @interface DAMailAccount : MailAccount {
-	NSObject<ASAccountActorMessages>* _accountConduit;
-	DAAccount* _daAccount;
-	NSString* _cachedAccountID;
-	NSString* _cachedDisplayName;
-	NSString* _cachedEmailAddress;
-	NSArray* _cachedEmailAddresses;
-	BOOL _cachedCalendarEnabled;
-	NSString* _cachedInboxFolderID;
-	NSString* _cachedSentMessagesFolderID;
-	NSString* _cachedTrashFolderID;
-	DAMailbox* _temporaryInbox;
-	BOOL _startListeningOnHierarchyChange;
-	BOOL _loadedInitialMailboxList;
-	BOOL _receivedInitialMailboxUpdate;
-	BOOL _doneInitialInboxCheck;
-	BOOL _observingPushedFoldersPrefsChanged;
-	int _supportsServerSearch;
-	unsigned _daysToSync;
-	NSMutableDictionary* _requestQueuesByFolderID;
-	NSSet* _watchedFolderIds;
-	NSCountedSet* _userFocusMailboxIds;
+  NSObject<ASAccountActorMessages>* _accountConduit;
+  DAAccount* _daAccount;
+  NSString* _cachedAccountID;
+  NSString* _cachedDisplayName;
+  NSString* _cachedEmailAddress;
+  NSArray* _cachedEmailAddresses;
+  BOOL _cachedCalendarEnabled;
+  NSString* _cachedInboxFolderID;
+  NSString* _cachedSentMessagesFolderID;
+  NSString* _cachedTrashFolderID;
+  DAMailbox* _temporaryInbox;
+  BOOL _startListeningOnHierarchyChange;
+  BOOL _loadedInitialMailboxList;
+  BOOL _receivedInitialMailboxUpdate;
+  BOOL _doneInitialInboxCheck;
+  BOOL _observingPushedFoldersPrefsChanged;
+  int _supportsServerSearch;
+  unsigned _daysToSync;
+  NSMutableDictionary* _requestQueuesByFolderID;
+  NSSet* _watchedFolderIds;
+  NSCountedSet* _userFocusMailboxIds;
 }
 +(id)folderIDForRelativePath:(id)relativePath accountID:(id*)anId;
 +(id)accountDirectoryPrefix;
 // inherited: +(id)displayedAccountTypeString;
 // inherited: +(id)displayedShortAccountTypeString;
-+(NSString*)_URLScheme;	// as
++(NSString*)_URLScheme; // as
 +(void)removeStaleExchangeDBRows;
 +(void)_removeStaleExchangeDirectories:(id)directories;
 +(id)accountIDForDirectoryName:(id)directoryName isAccountDirectory:(BOOL*)directory;

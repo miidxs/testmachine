@@ -17,33 +17,33 @@
 <UIWindowDelegate>
 #endif
 {
-	UIWindow* _window;
-	UIView* _iconsView;
-	UIView* _buttonBarContainerView;
-	UIView* _contentView;
+  UIWindow* _window;
+  UIView* _iconsView;
+  UIView* _buttonBarContainerView;
+  UIView* _contentView;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	SBWallpaperView* _wallpaperView;
+  SBWallpaperView* _wallpaperView;
 #endif
-	SBZoomView* _zoomLayer;
+  SBZoomView* _zoomLayer;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	UIView* _scatterFadeView;
+  UIView* _scatterFadeView;
 #endif
-	id _volumeHandler;
-	BOOL _restoringIconList;
-	BOOL _lastVolumeDownToControl;
-	BOOL _shouldAutoLock;
-	float _batteryCapacity;
-	float _curvedBatteryCapacity;
-	BOOL _isBatteryCharging;
-	BOOL _isOnAC;
-	BOOL _connectedToUnusableFirewire;
-	int _batteryLoggingStartCapacity;
-	unsigned char _headsetBatteryCapacity;
-	BOOL _isHeadsetCharging;
-	BOOL _isHeadsetDocked;
-	BOOL _ignoreHeadsetEvents;
+  id _volumeHandler;
+  BOOL _restoringIconList;
+  BOOL _lastVolumeDownToControl;
+  BOOL _shouldAutoLock;
+  float _batteryCapacity;
+  float _curvedBatteryCapacity;
+  BOOL _isBatteryCharging;
+  BOOL _isOnAC;
+  BOOL _connectedToUnusableFirewire;
+  int _batteryLoggingStartCapacity;
+  unsigned char _headsetBatteryCapacity;
+  BOOL _isHeadsetCharging;
+  BOOL _isHeadsetDocked;
+  BOOL _ignoreHeadsetEvents;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	int _orientation;
+  int _orientation;
 #endif
 }
 +(int)displayedLevelForLockScreenBatteryLevel:(int)lockScreenBatteryLevel;
@@ -51,7 +51,7 @@
 -(void)_indicateConnectedToPower;
 // inherited: -(void)dealloc;
 // inherited: -(id)init;
--(void)animateAppleDown:(BOOL)animated;	// Zoom out the Apple logo.
+-(void)animateAppleDown:(BOOL)animated; // Zoom out the Apple logo.
 -(BOOL)launchedAfterLanguageRestart;
 -(void)clearLaunchedAfterLanguageRestart;
 -(void)localeChanged;
@@ -59,7 +59,7 @@
 -(void)finishLaunching;
 -(void)systemControllerRouteChanged:(id)changed;
 -(void)lock:(BOOL)lock;
--(void)lock;	// Simulate pressing the "lock" button.
+-(void)lock;  // Simulate pressing the "lock" button.
 -(void)clearZoomLayer;
 -(UIView *)contentView;
 -(UIWindow *)window;
@@ -72,7 +72,7 @@
 -(void)animateApplicationActivation:(id)activation animateDefaultImage:(BOOL)image scatterIcons:(BOOL)icons;
 -(void)animateApplicationActivationDidStop:(id)animateApplicationActivation finished:(id)finished context:(void*)context;
 -(void)tearDownIconListAndBar;
--(void)animateApplicationSuspend:(SBApplication*)suspend;	// Zoom out and suspend the app
+-(void)animateApplicationSuspend:(SBApplication*)suspend; // Zoom out and suspend the app
 -(void)applicationSuspendAnimationDidStop:(SBApplication *)applicationSuspendAnimation finished:(id)finished context:(void*)context;
 -(void)animateApplicationSuspendFlip:(id)flip;
 -(void)applicationSuspendFlipDidStop:(SBApplication *)applicationSuspendFlip;

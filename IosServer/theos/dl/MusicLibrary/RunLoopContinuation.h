@@ -12,13 +12,13 @@
 __attribute__((visibility("hidden")))
 @interface RunLoopContinuation : NSObject {
 @private
-	id _target;
-	SEL _continuationSelector;
-	SEL _terminationSelector;
-	NSMutableDictionary* _context;
-	NSInvocation* _continuationInvocation;
-	double _delay;
-	BOOL _shouldPerformSynchronouslyWithNoDelay;
+  id _target;
+  SEL _continuationSelector;
+  SEL _terminationSelector;
+  NSMutableDictionary* _context;
+  NSInvocation* _continuationInvocation;
+  double _delay;
+  BOOL _shouldPerformSynchronouslyWithNoDelay;
 }
 @property(assign, nonatomic) double delay;
 @property(assign, nonatomic) BOOL shouldPerformSynchronouslyWithNoDelay;

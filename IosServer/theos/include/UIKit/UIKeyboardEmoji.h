@@ -8,10 +8,10 @@
 @class NSString;
 
 @interface UIKeyboardEmoji : NSObject {
-	NSString* _name;
-	NSString* _imageName;
-	NSString* _codePoint;
-	unsigned short _unicodeCharacter;
+  NSString* _name;
+  NSString* _imageName;
+  NSString* _codePoint;
+  unsigned short _unicodeCharacter;
 }
 @property(retain) NSString* name;
 @property(retain) NSString* imageName;

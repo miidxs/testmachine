@@ -10,21 +10,21 @@
 @class NSFileHandle, NSString, NSMutableArray;
 
 @interface ASParseContext : NSObject {
-	NSMutableArray* _dataBuffers;
-	unsigned _offsetIntoFirstData;
-	long long _curOffset;
-	int _codePage;
-	NSString* _parseErrorReason;
-	BOOL _moreDataExpected;
-	int _dataGeneration;
-	long long _expectedTotalBytesCount;
-	long long _currentBytesReceivedCount;
-	unsigned _lastFoundBufferWithoutLineEnding;
-	unsigned _numTokensInBuffersWithoutLineEndings;
-	BOOL _lastLookedAtBufferHadStringEndPrefix;
-	NSFileHandle* _logFileHandle;
-	NSString* _logFilePath;
-	int _streamingState;
+  NSMutableArray* _dataBuffers;
+  unsigned _offsetIntoFirstData;
+  long long _curOffset;
+  int _codePage;
+  NSString* _parseErrorReason;
+  BOOL _moreDataExpected;
+  int _dataGeneration;
+  long long _expectedTotalBytesCount;
+  long long _currentBytesReceivedCount;
+  unsigned _lastFoundBufferWithoutLineEnding;
+  unsigned _numTokensInBuffersWithoutLineEndings;
+  BOOL _lastLookedAtBufferHadStringEndPrefix;
+  NSFileHandle* _logFileHandle;
+  NSString* _logFilePath;
+  int _streamingState;
 }
 @property(assign, nonatomic) int streamingState;
 // inherited: -(id)init;

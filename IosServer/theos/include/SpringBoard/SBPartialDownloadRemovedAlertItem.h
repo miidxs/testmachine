@@ -12,7 +12,7 @@
 #import "SBAlertItem.h"
 
 @interface SBPartialDownloadRemovedAlertItem : SBAlertItem {
-	BOOL _allRemoved;
+  BOOL _allRemoved;
 }
 -(id)initWithAllDownloadsRemoved:(BOOL)allDownloadsRemoved;
 -(void)alertSheet:(id)sheet buttonClicked:(int)clicked;

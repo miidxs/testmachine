@@ -11,8 +11,8 @@
 
 @interface MPMoviePlayerControllerOld : NSObject {
 @private
-	MPMoviePlayerController* _moviePlayer;
-	MPMoviePlayerControllerInternalOld* _internalOld;
+  MPMoviePlayerController* _moviePlayer;
+  MPMoviePlayerControllerInternalOld* _internalOld;
 }
 +(Class)windowClass;
 +(void)_setCurrentMoviePlayerController:(id)controller;

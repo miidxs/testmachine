@@ -13,17 +13,17 @@
 
 @interface MPMediaPickerControllerInternal : NSObject {
 @private
-	int _mediaTypes;
-	unsigned _allowsPickingMultipleItems : 1;
-	NSString* _prompt;
-	id<MPMediaPickerControllerDelegate> _delegate;
-	unsigned _serverPort;
-	CFMachPortRef _serverPortRef;
-	unsigned _replyPort;
-	CFRunLoopSourceRef _replyPortRunLoopSource;
-	UIWindow* _layerHostProxyWindow;
-	CALayerHost* _layerHost;
-	unsigned _layerHostIsActive : 1;
+  int _mediaTypes;
+  unsigned _allowsPickingMultipleItems : 1;
+  NSString* _prompt;
+  id<MPMediaPickerControllerDelegate> _delegate;
+  unsigned _serverPort;
+  CFMachPortRef _serverPortRef;
+  unsigned _replyPort;
+  CFRunLoopSourceRef _replyPortRunLoopSource;
+  UIWindow* _layerHostProxyWindow;
+  CALayerHost* _layerHost;
+  unsigned _layerHostIsActive : 1;
 }
 @end
 

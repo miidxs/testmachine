@@ -11,13 +11,13 @@
 @class NSString, NSTimer, UIFont;
 
 @interface TPLockTextView : UIView {
-	NSString* _label;
-	CGImageRef _textCache;
-	char* _textData;
-	NSTimer* _maskTimer;
-	double _maskStartTime;
-	UIFont* _labelFont;
-	float _fps;
+  NSString* _label;
+  CGImageRef _textCache;
+  char* _textData;
+  NSTimer* _maskTimer;
+  double _maskStartTime;
+  UIFont* _labelFont;
+  float _fps;
 }
 -(void)_cacheLabel:(id)label size:(CGSize)size;
 -(id)initWithLabel:(id)label fontSize:(float)size;

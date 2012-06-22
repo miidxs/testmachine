@@ -10,13 +10,13 @@
 
 
 @interface Base64Encoder : NSObject <MFDataConsumer> {
-	id<MFDataConsumer> _consumer;
-	char* _table;
-	unsigned _left;
-	unsigned char _leftovers[3];
-	unsigned _line;
-	unsigned _lineBreak;
-	BOOL _padChar;
+  id<MFDataConsumer> _consumer;
+  char* _table;
+  unsigned _left;
+  unsigned char _leftovers[3];
+  unsigned _line;
+  unsigned _lineBreak;
+  BOOL _padChar;
 }
 @property(readonly, assign, nonatomic) id<MFDataConsumer> dataConsumer;
 @property(assign, nonatomic) unsigned lineBreak;

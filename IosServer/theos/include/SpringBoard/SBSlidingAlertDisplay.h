@@ -12,43 +12,43 @@
 @class UIKeyboard, SBPasscodeField, SBDeviceLockKeypad, SBEmergencyCallView, TPLCDView, SBDeviceLockView;
 
 @interface SBSlidingAlertDisplay : SBAlertDisplay {
-	UIImageView* _backgroundView;
-	UIView* _topBar;
-	UIView* _bottomBar;
+  UIImageView* _backgroundView;
+  UIView* _topBar;
+  UIView* _bottomBar;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	UIView* _overlayView;
-	SBDeviceLockView* _deviceLockView;
+  UIView* _overlayView;
+  SBDeviceLockView* _deviceLockView;
 #endif
 #if __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_3_2
-	TPLCDView* _deviceLockStatusView;
-	SBDeviceLockKeypad* _deviceLockKeypad;
-	UIKeyboard* _deviceLockKeyboard;
-	UIImageView* _deviceLockEntryBackground;
-	SBPasscodeField* _deviceLockEntryField;
+  TPLCDView* _deviceLockStatusView;
+  SBDeviceLockKeypad* _deviceLockKeypad;
+  UIKeyboard* _deviceLockKeyboard;
+  UIImageView* _deviceLockEntryBackground;
+  SBPasscodeField* _deviceLockEntryField;
 #endif
-	SBEmergencyCallView* _emergencyCallView;
-	UIView* _emergencyCallTopBar;
+  SBEmergencyCallView* _emergencyCallView;
+  UIView* _emergencyCallTopBar;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED < __IPHONE_3_2
-	NSString* _lastPasscode;
-	int _okFontSize;
-	int _cancelFontSize;
+  NSString* _lastPasscode;
+  int _okFontSize;
+  int _cancelFontSize;
 #endif
-	BOOL _playKeyboardClicks;
+  BOOL _playKeyboardClicks;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED < __IPHONE_3_2
-	int _alphanumericPIN;
-	BOOL _alphanumericPINLoaded;
+  int _alphanumericPIN;
+  BOOL _alphanumericPINLoaded;
 #endif
-	unsigned _animatingEmergencyCall : 1;
-	unsigned _animatingIn : 1;
-	unsigned _animatingOut : 1;
+  unsigned _animatingEmergencyCall : 1;
+  unsigned _animatingIn : 1;
+  unsigned _animatingOut : 1;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	unsigned _animatingDeviceLock : 1;
+  unsigned _animatingDeviceLock : 1;
 #endif
-	unsigned _showingDeviceLock : 1;
-	unsigned _showingDeviceUnlockFailure : 1;
+  unsigned _showingDeviceLock : 1;
+  unsigned _showingDeviceUnlockFailure : 1;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	unsigned _isDisplayingWallpaper : 1;
-	int _currentOrientation;
+  unsigned _isDisplayingWallpaper : 1;
+  int _currentOrientation;
 #endif
 }
 +(id)createTopBarForInstance:(id)instance;

@@ -14,7 +14,7 @@
 @class CandWordString;
 
 @interface CandWord : NSObject <NSCopying> {
-	CandWordString* _word;
+  CandWordString* _word;
 }
 -(id)initWithWord:(NSString*)word;
 -(void)dealloc;

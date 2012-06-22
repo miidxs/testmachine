@@ -8,12 +8,12 @@
 @class LabelledAtomList, UITextLabel, UIPushButton;
 
 @interface CKAtomListView : UIView {
-	LabelledAtomList* _atomList;
-	UITextLabel* _recipientListLabel;
-	UIPushButton* _detailsButton;
-	UIPushButton* _hideDetailsButton;
-	id _delegate;
-	unsigned _expanded : 1;
+  LabelledAtomList* _atomList;
+  UITextLabel* _recipientListLabel;
+  UIPushButton* _detailsButton;
+  UIPushButton* _hideDetailsButton;
+  id _delegate;
+  unsigned _expanded : 1;
 }
 -(id)initWithLabel:(id)label totalWidth:(float)width addresses:(id)addresses arePhoneNumbers:(id)numbers;
 -(void)dealloc;

@@ -11,7 +11,7 @@
 @class SBApplicationIcon;
 
 @interface SBAppProfileExpiredAlertItem : SBAlertItem <UIModalViewDelegate> {
-	SBApplicationIcon* _icon;
+  SBApplicationIcon* _icon;
 }
 -(id)initWithIcon:(id)icon;
 // inherited: -(void)dealloc;

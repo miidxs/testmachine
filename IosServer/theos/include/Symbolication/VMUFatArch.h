@@ -10,10 +10,10 @@
 @protocol VMUMemory;
 
 @interface VMUFatArch : NSObject {
-	unsigned _fileOffset;
-	unsigned _size;
-	unsigned _alignment;
-	id<VMUMemory> _memory;
+  unsigned _fileOffset;
+  unsigned _size;
+  unsigned _alignment;
+  id<VMUMemory> _memory;
 }
 +(id)fatArchWithMemory:(id)memory memoryView:(id)view;
 +(id)fatArchWithMemory:(id)memory fileOffset:(unsigned)offset size:(unsigned)size alignment:(unsigned)alignment;

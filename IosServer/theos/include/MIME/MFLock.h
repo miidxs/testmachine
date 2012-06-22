@@ -11,8 +11,8 @@
 @class NSString;
 
 @interface MFLock : NSLock <MFLockObject> {
-	NSString* _name;
-	id _delegate;
+  NSString* _name;
+  id _delegate;
 }
 +(void)initialize;
 // inherited: -(id)init;

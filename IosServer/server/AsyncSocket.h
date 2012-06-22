@@ -19,12 +19,12 @@ extern NSString *const AsyncSocketErrorDomain;
 
 enum AsyncSocketError
 {
-	AsyncSocketCFSocketError = kCFSocketError,	// From CFSocketError enum.
-	AsyncSocketNoError = 0,						// Never used.
-	AsyncSocketCanceledError,					// onSocketWillConnect: returned NO.
-	AsyncSocketReadMaxedOutError,               // Reached set maxLength without completing
-	AsyncSocketReadTimeoutError,
-	AsyncSocketWriteTimeoutError
+  AsyncSocketCFSocketError = kCFSocketError,  // From CFSocketError enum.
+  AsyncSocketNoError = 0,           // Never used.
+  AsyncSocketCanceledError,         // onSocketWillConnect: returned NO.
+  AsyncSocketReadMaxedOutError,               // Reached set maxLength without completing
+  AsyncSocketReadTimeoutError,
+  AsyncSocketWriteTimeoutError
 };
 typedef enum AsyncSocketError AsyncSocketError;
 
@@ -97,29 +97,29 @@ typedef enum AsyncSocketError AsyncSocketError;
 
 @interface AsyncSocket : NSObject
 {
-	CFSocketRef theSocket;             // IPv4 accept or connect socket
-	CFSocketRef theSocket6;            // IPv6 accept or connect socket
-	CFReadStreamRef theReadStream;
-	CFWriteStreamRef theWriteStream;
+  CFSocketRef theSocket;             // IPv4 accept or connect socket
+  CFSocketRef theSocket6;            // IPv6 accept or connect socket
+  CFReadStreamRef theReadStream;
+  CFWriteStreamRef theWriteStream;
 
-	CFRunLoopSourceRef theSource;      // For theSocket
-	CFRunLoopSourceRef theSource6;     // For theSocket6
-	CFRunLoopRef theRunLoop;
-	CFSocketContext theContext;
+  CFRunLoopSourceRef theSource;      // For theSocket
+  CFRunLoopSourceRef theSource6;     // For theSocket6
+  CFRunLoopRef theRunLoop;
+  CFSocketContext theContext;
 
-	NSMutableArray *theReadQueue;
-	AsyncReadPacket *theCurrentRead;
-	NSTimer *theReadTimer;
-	NSMutableData *partialReadBuffer;
-	
-	NSMutableArray *theWriteQueue;
-	AsyncWritePacket *theCurrentWrite;
-	NSTimer *theWriteTimer;
+  NSMutableArray *theReadQueue;
+  AsyncReadPacket *theCurrentRead;
+  NSTimer *theReadTimer;
+  NSMutableData *partialReadBuffer;
+  
+  NSMutableArray *theWriteQueue;
+  AsyncWritePacket *theCurrentWrite;
+  NSTimer *theWriteTimer;
 
-	id theDelegate;
-	Byte theFlags;
-	
-	long theUserData;
+  id theDelegate;
+  Byte theFlags;
+  
+  long theUserData;
 }
 
 - (id)init;

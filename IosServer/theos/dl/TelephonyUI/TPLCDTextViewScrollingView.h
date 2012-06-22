@@ -11,7 +11,7 @@
 @class TPLCDTextView;
 
 @interface TPLCDTextViewScrollingView : UIView {
-	TPLCDTextView* _owner;
+  TPLCDTextView* _owner;
 }
 -(id)initWithFrame:(CGRect)frame owner:(id)owner;
 -(void)setOwner:(id)owner;

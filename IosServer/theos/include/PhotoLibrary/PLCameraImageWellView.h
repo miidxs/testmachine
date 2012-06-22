@@ -11,15 +11,15 @@
 @class UIView, UIImage, UIImageView;
 
 @interface PLCameraImageWellView : UIButton {
-	UIImage* _shadowImage;
-	UIImage* _thumbnailImage;
-	UIImage* _thumbnailImageSelected;
-	UIView* _maskContainerView;
-	UIImageView* _thumbnailImageView;
-	UIImageView* _innerShadowImageView;
-	UIImageView* _staticMaskView;
-	BOOL _watchingOrientationChanges;
-	int _deviceOrientation;
+  UIImage* _shadowImage;
+  UIImage* _thumbnailImage;
+  UIImage* _thumbnailImageSelected;
+  UIView* _maskContainerView;
+  UIImageView* _thumbnailImageView;
+  UIImageView* _innerShadowImageView;
+  UIImageView* _staticMaskView;
+  BOOL _watchingOrientationChanges;
+  int _deviceOrientation;
 }
 // inherited: -(id)initWithFrame:(CGRect)frame;
 // inherited: -(void)setFrame:(CGRect)frame;

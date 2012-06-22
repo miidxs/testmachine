@@ -14,17 +14,17 @@
 @protocol UIFormPeripheral;
 
 @interface UIFormAssistant : UIView {
-	UIButton* _done;
-	UISegmentedControl* _tab;
-	UIButton* _autofill;
-	UIImageView* _navigation;
-	UITransitionView* _transition;
-	UIView<UIFormPeripheral>* _currentPeripheral;
-	UIPeripheralTransition* _helper;
-	int _orientation;
-	WebView* _webView;
+  UIButton* _done;
+  UISegmentedControl* _tab;
+  UIButton* _autofill;
+  UIImageView* _navigation;
+  UITransitionView* _transition;
+  UIView<UIFormPeripheral>* _currentPeripheral;
+  UIPeripheralTransition* _helper;
+  int _orientation;
+  WebView* _webView;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_1
-	BOOL _autoFillAllowed;
+  BOOL _autoFillAllowed;
 #endif
 }
 @property(retain, nonatomic) UIView<UIFormPeripheral>* _currentPeripheral;

@@ -11,7 +11,7 @@
 
 @interface MPWildcatAlternateTracksViewController : MPAbstractAlternateTracksViewController {
 @private
-	UITableView* _tableView;
+  UITableView* _tableView;
 }
 -(id)init;
 -(void)dealloc;

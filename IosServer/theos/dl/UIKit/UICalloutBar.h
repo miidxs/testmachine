@@ -10,38 +10,38 @@
 @class NSArray, NSMutableArray, UICalloutBarOverlay;
 
 @interface UICalloutBar : UIView {
-	id m_delegate;
-	CGPoint m_pointBelowControls;
-	CGPoint m_pointAboveControls;
+  id m_delegate;
+  CGPoint m_pointBelowControls;
+  CGPoint m_pointAboveControls;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED < __IPHONE_3_1
-	BOOL m_pointPositionedBelowControls;
+  BOOL m_pointPositionedBelowControls;
 #else
-	CGPoint m_targetPoint;
-	int m_targetDirection;
+  CGPoint m_targetPoint;
+  int m_targetDirection;
 #endif
-	BOOL m_fadeAfterCommand;
-	BOOL m_updateVisibleItems;
+  BOOL m_fadeAfterCommand;
+  BOOL m_updateVisibleItems;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_1
-	BOOL m_shouldAppear;
+  BOOL m_shouldAppear;
 #endif
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	BOOL m_showExtras;
+  BOOL m_showExtras;
 #endif
-	CGRect m_controlFrame;
-	CGRect m_targetRect;
+  CGRect m_controlFrame;
+  CGRect m_targetRect;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	int m_arrowDirection;
+  int m_arrowDirection;
 #endif
-	NSMutableArray* m_buttons;
-	NSMutableArray* m_rectsToEvade;
-	UICalloutBarOverlay* m_overlay;
-	double m_fadedTime;
+  NSMutableArray* m_buttons;
+  NSMutableArray* m_rectsToEvade;
+  UICalloutBarOverlay* m_overlay;
+  double m_fadedTime;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_1
-	id m_responderTarget;
+  id m_responderTarget;
 #endif
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	NSArray* m_replacements;
-	NSArray* m_extraItems;
+  NSArray* m_replacements;
+  NSArray* m_extraItems;
 #endif
 }
 @property(assign, nonatomic) CGPoint pointAboveControls;

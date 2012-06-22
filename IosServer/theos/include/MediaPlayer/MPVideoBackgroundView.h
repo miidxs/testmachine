@@ -10,14 +10,14 @@
 @class UIImage, UITextLabel, UIImageView;
 
 @interface MPVideoBackgroundView : UIView {
-	int _interfaceOrientation;
-	UIImageView* _imageView;
-	UIImageView* _iconView;
-	UIImageView* _customBackgroundImageView;
-	UIImageView* _backgroundPlaceholderView;
-	UIImageView* _backgroundPlaceholderImageView;
-	UITextLabel* _infoTitle;
-	UITextLabel* _infoSubTitle;
+  int _interfaceOrientation;
+  UIImageView* _imageView;
+  UIImageView* _iconView;
+  UIImageView* _customBackgroundImageView;
+  UIImageView* _backgroundPlaceholderView;
+  UIImageView* _backgroundPlaceholderImageView;
+  UITextLabel* _infoTitle;
+  UITextLabel* _infoSubTitle;
 }
 @property(assign, nonatomic) int interfaceOrientation;
 @property(readonly, assign, nonatomic) UIView* backgroundPlaceholderView;

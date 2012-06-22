@@ -9,13 +9,13 @@
 @class NSArray, UIColor, NSMutableArray;
 
 @interface UIHighlightView : UIView {
-	UIColor* _color;
-	float _cornerRadius;
-	CGRect _invertedHighlightClipRect;
-	NSArray* _cornerRadii;
-	NSMutableArray* _innerBounds;
-	NSMutableArray* _innerQuads;
-	BOOL _invertHighlight;
+  UIColor* _color;
+  float _cornerRadius;
+  CGRect _invertedHighlightClipRect;
+  NSArray* _cornerRadii;
+  NSMutableArray* _innerBounds;
+  NSMutableArray* _innerQuads;
+  BOOL _invertHighlight;
 }
 -(id)initWithFrame:(CGRect)frame;
 -(void)cleanUp;

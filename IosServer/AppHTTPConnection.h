@@ -8,9 +8,9 @@
 
 @interface AppHTTPConnection : HTTPConnection
 {
-	int dataStartIndex;
-	NSMutableData* multipartData;
-	BOOL postHeaderOK;
+  int dataStartIndex;
+  NSMutableData* multipartData;
+  BOOL postHeaderOK;
 }
 
 @property(nonatomic, retain) NSMutableData* multipartData;

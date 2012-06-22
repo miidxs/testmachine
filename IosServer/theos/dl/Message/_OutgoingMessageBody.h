@@ -10,7 +10,7 @@
 @class NSMutableData;
 
 @interface _OutgoingMessageBody : MessageBody {
-	NSMutableData* rawData;
+  NSMutableData* rawData;
 }
 // inherited: -(void)dealloc;
 -(id)mutableData;

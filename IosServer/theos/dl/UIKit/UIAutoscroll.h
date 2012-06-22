@@ -10,14 +10,14 @@
 @protocol UIAutoscrollContainer;
 
 @interface UIAutoscroll : NSObject {
-	id m_target;
-	CGPoint m_point;
-	UIView<UIAutoscrollContainer>* m_scrollContainer;
-	int m_directions;
-	double m_repeatInterval;
-	NSTimer* m_timer;
-	int m_count;
-	BOOL m_active;
+  id m_target;
+  CGPoint m_point;
+  UIView<UIAutoscrollContainer>* m_scrollContainer;
+  int m_directions;
+  double m_repeatInterval;
+  NSTimer* m_timer;
+  int m_count;
+  BOOL m_active;
 }
 @property(retain, nonatomic) id target;
 @property(retain, nonatomic) UIView<UIAutoscrollContainer>* scrollContainer;

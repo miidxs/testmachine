@@ -11,10 +11,10 @@
 @class UIBezierPath;
 
 @interface MPAlternateTrackCellBackgroundView : UIView {
-	int _sectionLocation;
-	int _selectionStyle;
-	UIBezierPath* _fillPath;
-	UIBezierPath* _strokePath;
+  int _sectionLocation;
+  int _selectionStyle;
+  UIBezierPath* _fillPath;
+  UIBezierPath* _strokePath;
 }
 @property(assign, nonatomic) int selectionStyle;
 @property(assign, nonatomic) int sectionLocation;

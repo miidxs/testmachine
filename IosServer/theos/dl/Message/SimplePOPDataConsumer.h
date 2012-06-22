@@ -11,7 +11,7 @@
 @class NSMutableData;
 
 @interface SimplePOPDataConsumer : NSObject <DataConsumer> {
-	NSMutableData* _data;
+  NSMutableData* _data;
 }
 // in a protocol: -(void)appendData:(id)data;
 // in a protocol: -(void)done;

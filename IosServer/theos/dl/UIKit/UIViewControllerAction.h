@@ -8,9 +8,9 @@
 @class NSString, UIViewController;
 
 @interface UIViewControllerAction : NSObject {
-	UIViewController* _viewController;
-	NSString* _name;
-	BOOL _animated;
+  UIViewController* _viewController;
+  NSString* _name;
+  BOOL _animated;
 }
 @property(assign, nonatomic) UIViewController* viewController;
 @property(retain, nonatomic) NSString* name;

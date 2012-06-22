@@ -8,7 +8,7 @@
 @class UIView;
 
 @interface _UIPickerViewWrappingTableCell : UITableCell {
-	UIView* _wrappedView;
+  UIView* _wrappedView;
 }
 -(void)dealloc;
 -(void)setWrappedView:(id)view;

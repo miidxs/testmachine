@@ -10,21 +10,21 @@
 @class NSArray, ActivityMonitor, Account, MFError;
 
 @interface AccountValidator : NSObject {
-	Account* _account;
-	id _delegate;
-	ActivityMonitor* _accountValidationActivity;
-	struct {
-		unsigned useSSL : 1;
-		unsigned incomingServerSupportsSSL : 1;
-		unsigned smtpServerSupportsSSL : 1;
-		unsigned validationInProgress : 1;
-		unsigned canceled : 1;
-		unsigned unused : 27;
-	} _flags;
-	MFError* _incomingServerValidationError;
-	MFError* _smtpServerValidationError;
-	NSArray* _incomingServerAuthSchemes;
-	NSArray* _smtpServerAuthSchemes;
+  Account* _account;
+  id _delegate;
+  ActivityMonitor* _accountValidationActivity;
+  struct {
+    unsigned useSSL : 1;
+    unsigned incomingServerSupportsSSL : 1;
+    unsigned smtpServerSupportsSSL : 1;
+    unsigned validationInProgress : 1;
+    unsigned canceled : 1;
+    unsigned unused : 27;
+  } _flags;
+  MFError* _incomingServerValidationError;
+  MFError* _smtpServerValidationError;
+  NSArray* _incomingServerAuthSchemes;
+  NSArray* _smtpServerAuthSchemes;
 }
 // inherited: -(id)init;
 // inherited: -(void)dealloc;

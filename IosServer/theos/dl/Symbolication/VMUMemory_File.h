@@ -12,14 +12,14 @@
 @class NSDate, VMUArchitecture, NSString, NSMutableDictionary;
 
 @interface VMUMemory_File : VMUMemory_Base <VMUMemory> {
-	char* _mappedAddress;
-	unsigned _mappedSize;
-	NSDate* _lastModifiedTimestamp;
-	VMURange _addressRange;
-	VMURange _fileRange;
-	NSString* _path;
-	VMUArchitecture* _architecture;
-	NSMutableDictionary* _sharedCacheMap;
+  char* _mappedAddress;
+  unsigned _mappedSize;
+  NSDate* _lastModifiedTimestamp;
+  VMURange _addressRange;
+  VMURange _fileRange;
+  NSString* _path;
+  VMUArchitecture* _architecture;
+  NSMutableDictionary* _sharedCacheMap;
 }
 +(VMUMachOHeader*)headerWithPath:(NSString*)path;
 +(VMUMachOHeader*)headerFromSharedCacheWithPath:(NSString*)path;

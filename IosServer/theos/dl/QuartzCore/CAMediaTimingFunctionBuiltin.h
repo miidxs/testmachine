@@ -10,7 +10,7 @@
 __attribute__((visibility("hidden")))
 @interface CAMediaTimingFunctionBuiltin : CAMediaTimingFunction {
 @private
-	unsigned _index;
+  unsigned _index;
 }
 // inherited: -(void)_getPoints:(float*)points;
 // inherited: -(id)description;

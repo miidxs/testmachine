@@ -10,11 +10,11 @@
 
 
 @interface SBVoiceControlAlert : SBAlert {
-	struct {
-		unsigned shouldBeActivated : 1;
-		unsigned isReadyToBeActivated : 1;
-		unsigned hasBeenActivated : 1;
-	} _voiceControlFlags;
+  struct {
+    unsigned shouldBeActivated : 1;
+    unsigned isReadyToBeActivated : 1;
+    unsigned hasBeenActivated : 1;
+  } _voiceControlFlags;
 }
 +(id)pendingOrActiveAlert;
 // inherited: +(void)registerForAlerts;

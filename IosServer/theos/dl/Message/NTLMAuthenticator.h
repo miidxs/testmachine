@@ -10,8 +10,8 @@
 
 
 @interface NTLMAuthenticator : SASLAuthenticator {
-	NtlmGenerator* _ntlmGeneratorRef;
-	int _ntlmError;
+  NtlmGenerator* _ntlmGeneratorRef;
+  int _ntlmError;
 }
 // inherited: -(void)dealloc;
 // inherited: -(void)setAuthenticationState:(int)state;

@@ -9,12 +9,12 @@
 @class NSString, NSArray;
 
 @interface UIKBKeylistReference : NSObject <NSCoding> {
-	NSString* m_name;
-	id m_value;
-	NSArray* m_nameElements;
-	int m_startKeyIndex;
-	int m_endKeyIndex;
-	unsigned m_flags;
+  NSString* m_name;
+  id m_value;
+  NSArray* m_nameElements;
+  int m_startKeyIndex;
+  int m_endKeyIndex;
+  unsigned m_flags;
 }
 @property(retain, nonatomic) NSString* name;
 @property(retain, nonatomic) id value;

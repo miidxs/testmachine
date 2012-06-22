@@ -9,7 +9,7 @@
 @class NSMutableArray;
 
 @interface UICompositeImageView : UIView {
-	NSMutableArray* m_images;
+  NSMutableArray* m_images;
 }
 -(id)initWithFrame:(CGRect)frame;
 -(void)dealloc;

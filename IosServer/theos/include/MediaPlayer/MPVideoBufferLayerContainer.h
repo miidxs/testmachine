@@ -10,7 +10,7 @@
 
 
 @interface MPVideoBufferLayerContainer : CALayer {
-	unsigned _animationsEnablesCount;
+  unsigned _animationsEnablesCount;
 }
 +(id)defaultValueForKey:(id)key;
 -(id)actionForKey:(id)key;

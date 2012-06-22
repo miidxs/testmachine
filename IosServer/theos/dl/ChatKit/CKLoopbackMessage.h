@@ -7,9 +7,9 @@
 
 
 @interface CKLoopbackMessage : CKMessage {
-	BOOL _isOutgoing;
-	BOOL _isRead;
-	BOOL _isPlaceholder;
+  BOOL _isOutgoing;
+  BOOL _isRead;
+  BOOL _isPlaceholder;
 }
 -(void)dealloc;
 -(id)initWithConversation:(id)conversation text:(id)text date:(id)date;

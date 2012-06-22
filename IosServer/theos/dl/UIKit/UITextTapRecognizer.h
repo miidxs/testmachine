@@ -22,17 +22,17 @@
 @class NSMutableSet, NSArray, NSMutableArray;
 
 @interface UITextTapRecognizer : UIGestureRecognizer {
-	int _numberOfFingers;
-	int _numberOfTaps;
-	NSMutableSet* _activeTouches;
-	BOOL _noNewTouches;
-	int _currentNumberOfFingers;
-	int _currentNumberOfTaps;
-	int _timerOn;
-	CGPoint _location;
-	CGPoint _startPoint;
-	float _allowableMovement;
-	NSMutableArray* _touches;
+  int _numberOfFingers;
+  int _numberOfTaps;
+  NSMutableSet* _activeTouches;
+  BOOL _noNewTouches;
+  int _currentNumberOfFingers;
+  int _currentNumberOfTaps;
+  int _timerOn;
+  CGPoint _location;
+  CGPoint _startPoint;
+  float _allowableMovement;
+  NSMutableArray* _touches;
 }
 @property(readonly, assign, nonatomic) CGPoint location;
 @property(assign, nonatomic) int numberOfTaps;

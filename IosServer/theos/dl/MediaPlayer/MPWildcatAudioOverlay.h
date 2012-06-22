@@ -12,23 +12,23 @@
 
 @interface MPWildcatAudioOverlay : MPPlaybackControlsView {
 @private
-	MPVideoViewController* _videoViewController;
-	int _style;
-	UIView* _backgroundView;
-	MPInlineAudioTransportControls* _transportControls;
-	UILabel* _streamingLabel;
-	NSString* _playbackErrorDescription;
-	UILabel* _playbackErrorDescriptionLabel;
-	UIImageView* _leftImageView;
-	UIImageView* _trackImageView;
-	UIImageView* _leftStretchImageView;
-	UIImageView* _rightStretchImageView;
-	UIImageView* _rightImageView;
-	UIImageView* _largeLeftImageView;
-	UIImageView* _largeMiddleLeftImageView;
-	UIImageView* _largeTrackImageView;
-	UIImageView* _largeMiddleRightImageView;
-	UIImageView* _largeRightImageView;
+  MPVideoViewController* _videoViewController;
+  int _style;
+  UIView* _backgroundView;
+  MPInlineAudioTransportControls* _transportControls;
+  UILabel* _streamingLabel;
+  NSString* _playbackErrorDescription;
+  UILabel* _playbackErrorDescriptionLabel;
+  UIImageView* _leftImageView;
+  UIImageView* _trackImageView;
+  UIImageView* _leftStretchImageView;
+  UIImageView* _rightStretchImageView;
+  UIImageView* _rightImageView;
+  UIImageView* _largeLeftImageView;
+  UIImageView* _largeMiddleLeftImageView;
+  UIImageView* _largeTrackImageView;
+  UIImageView* _largeMiddleRightImageView;
+  UIImageView* _largeRightImageView;
 }
 @property(copy, nonatomic) NSString* playbackErrorDescription;
 @property(assign, nonatomic) int style;

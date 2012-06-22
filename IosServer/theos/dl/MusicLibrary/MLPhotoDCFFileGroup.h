@@ -12,18 +12,18 @@
 
 @interface MLPhotoDCFFileGroup : MLPhotoDCFObject {
 @private
-	id _delegate;
-	MLPhotoDCFDirectory* _directory;
-	NSString* _directoryPath;
-	NSString* _prebakedThumbnailPath;
-	NSString* _videoFileExtension;
-	NSMutableSet* _extensions;
-	NSDate* _date;
-	NSString* _preferredExtension;
-	unsigned _hash;
-	unsigned _hashComputed : 1;
-	unsigned _addedExtensions : 1;
-	unsigned _writeIsPending : 1;
+  id _delegate;
+  MLPhotoDCFDirectory* _directory;
+  NSString* _directoryPath;
+  NSString* _prebakedThumbnailPath;
+  NSString* _videoFileExtension;
+  NSMutableSet* _extensions;
+  NSDate* _date;
+  NSString* _preferredExtension;
+  unsigned _hash;
+  unsigned _hashComputed : 1;
+  unsigned _addedExtensions : 1;
+  unsigned _writeIsPending : 1;
 }
 +(CGImageRef)createThumbnailOfImage:(CGImageRef)image format:(int)format fullPath:(id)path orientation:(int)orientation outThumbnailData:(id*)data;
 -(id)initWithName:(id)name number:(int)number directory:(id)directory;

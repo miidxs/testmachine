@@ -12,7 +12,7 @@
 
 @interface AVController : NSObject {
 @private
-	AVControllerPrivate* _priv;
+  AVControllerPrivate* _priv;
 }
 +(id)compatibleAudioRouteForRoute:(id)route;
 +(void)setEnableNetworkMode:(BOOL)mode;

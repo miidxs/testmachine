@@ -10,10 +10,10 @@
 @class YahooAccount, NSMutableData, MFError;
 
 @interface YahooDelivery : MailDelivery {
-	NSMutableData* _responseData;
-	BOOL _done;
-	MFError* _error;
-	YahooAccount* _yahooAccount;
+  NSMutableData* _responseData;
+  BOOL _done;
+  MFError* _error;
+  YahooAccount* _yahooAccount;
 }
 // inherited: +(void)initialize;
 // inherited: -(void)setAccount:(id)account;

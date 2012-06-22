@@ -11,7 +11,7 @@
 
 @interface DAMailAccountConsumer : NSObject {
 @private
-	NSConditionLock* _doneCondition;
+  NSConditionLock* _doneCondition;
 }
 // inherited: -(id)init;
 -(void)setDone:(BOOL)done;

@@ -11,15 +11,15 @@
 @class NSMutableDictionary, NSInvocation;
 
 @interface ASItem : NSObject <ASParsing> {
-	ASItem* _root;
-	ASItem* _parent;
-	int _codePage;
-	int _token;
-	NSObject<ASParsing>* _currentlyParsingSubItem;
-	int _currentlyParsingCPTNumber;
-	NSInvocation* _currentStreamInvocation;
-	int _parsingState;
-	NSMutableDictionary* _parseRuleUsageNumbers;
+  ASItem* _root;
+  ASItem* _parent;
+  int _codePage;
+  int _token;
+  NSObject<ASParsing>* _currentlyParsingSubItem;
+  int _currentlyParsingCPTNumber;
+  NSInvocation* _currentStreamInvocation;
+  int _parsingState;
+  NSMutableDictionary* _parseRuleUsageNumbers;
 }
 // in a protocol: +(BOOL)acceptsTopLevelLeaves;
 // in a protocol: +(BOOL)parsingLeafNode;

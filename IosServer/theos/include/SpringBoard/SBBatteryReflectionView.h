@@ -5,9 +5,9 @@
 #import <UIKit/UIKit.h>
 
 @interface SBBatteryReflectionView : UIView {
-	UIImage* _image;
-	UIImage* _maskImage;
-	CGFloat _bottomMargin;
+  UIImage* _image;
+  UIImage* _maskImage;
+  CGFloat _bottomMargin;
 }
 -(id)initWithImage:(UIImage *)image bottomMargin:(CGFloat)margin;
 // inherited: -(void)dealloc;

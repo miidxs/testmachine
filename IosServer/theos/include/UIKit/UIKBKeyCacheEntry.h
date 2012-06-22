@@ -8,8 +8,8 @@
 @class UIKBKey, UIKBKeyplane;
 
 @interface UIKBKeyCacheEntry : NSObject {
-	UIKBKey* m_key;
-	UIKBKeyplane* m_keyplane;
+  UIKBKey* m_key;
+  UIKBKeyplane* m_keyplane;
 }
 @property(readonly, retain, nonatomic) UIKBKey* key;
 @property(readonly, retain, nonatomic) UIKBKeyplane* keyplane;

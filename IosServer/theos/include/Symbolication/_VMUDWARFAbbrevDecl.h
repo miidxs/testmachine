@@ -10,9 +10,9 @@
 @class NSArray;
 
 @interface _VMUDWARFAbbrevDecl : NSObject {
-	unsigned long long _tag;
-	BOOL _hasChildren;
-	NSArray* _attributes;
+  unsigned long long _tag;
+  BOOL _hasChildren;
+  NSArray* _attributes;
 }
 +(id)abbrevDeclWithTag:(unsigned long long)tag withChildren:(BOOL)children withAttributes:(id)attributes;
 // inherited: -(id)description;

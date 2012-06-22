@@ -8,9 +8,9 @@
 
 
 @interface UIPickerScrollAnimation : UIAnimation {
-	float _initialDuration;
-	CGPoint _originalOffset;
-	CGPoint _targetOffset;
+  float _initialDuration;
+  CGPoint _originalOffset;
+  CGPoint _targetOffset;
 }
 -(CGPoint)targetOffset;
 -(void)setTargetOffset:(CGPoint)offset;

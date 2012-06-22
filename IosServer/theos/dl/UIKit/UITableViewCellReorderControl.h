@@ -9,8 +9,8 @@
 @class UITableViewCell;
 
 @interface UITableViewCellReorderControl : UIControl {
-	UITableViewCell* _cell;
-	CGPoint _downPoint;
+  UITableViewCell* _cell;
+  CGPoint _downPoint;
 }
 +(id)grabberImage;
 +(CGSize)defaultSize;

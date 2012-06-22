@@ -11,7 +11,7 @@
 
 @interface MLCompoundPredicate : NSObject {
 @private
-	MLCompoundPredicateStruct _cpred;
+  MLCompoundPredicateStruct _cpred;
 }
 +(void)_normalizeCompoundPredicate:(MLCompoundPredicateStruct*)predicate;
 +(MLCompoundPredicateStruct)_compoundPredicateStructFromPredicates:(id)predicates retainedFields:(BOOL)fields normalized:(BOOL)normalized;

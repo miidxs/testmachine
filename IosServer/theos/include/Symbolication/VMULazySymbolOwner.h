@@ -11,10 +11,10 @@
 @class NSDictionary, NSString, NSArray;
 
 @interface VMULazySymbolOwner : NSObject {
-	NSString* _name;
-	NSDictionary* _signature;
-	NSArray* _regions;
-	unsigned _flags;
+  NSString* _name;
+  NSDictionary* _signature;
+  NSArray* _regions;
+  unsigned _flags;
 }
 +(id)lazySymbolOwnerWithName:(id)name signature:(id)signature regions:(id)regions flags:(unsigned)flags;
 -(id)initWithName:(id)name signature:(id)signature regions:(id)regions flags:(unsigned)flags;

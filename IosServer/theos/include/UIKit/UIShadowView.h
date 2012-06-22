@@ -9,7 +9,7 @@
 @class UIImage;
 
 @interface UIShadowView : UIView {
-	UIImage* _image;
+  UIImage* _image;
 }
 +(UIImage*)topShadowImage;
 +(UIImage*)bottomShadowImage;

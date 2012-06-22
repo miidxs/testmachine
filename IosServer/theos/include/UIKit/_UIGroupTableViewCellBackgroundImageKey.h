@@ -42,21 +42,21 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 __attribute__((visibility("hidden")))
 @interface _UIGroupTableViewCellBackgroundImageKey : NSObject <NSCopying> {
 @private
-	BOOL _opaque;
+  BOOL _opaque;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	BOOL _selected;
+  BOOL _selected;
 #endif
-	CGSize _size;
-	UIColor* _backgroundColor;
-	UIColor* _borderColor;
+  CGSize _size;
+  UIColor* _backgroundColor;
+  UIColor* _borderColor;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	UIColor* _topShadowColor;
-	UIColor* _bottomShadowColor;
+  UIColor* _topShadowColor;
+  UIColor* _bottomShadowColor;
 #endif
-	UIColor* _fillColor;
-	float _leftPhase;
-	float _rightPhase;
-	int _sectionLocation;
+  UIColor* _fillColor;
+  float _leftPhase;
+  float _rightPhase;
+  int _sectionLocation;
 }
 @property(assign, nonatomic) BOOL opaque;
 @property(assign, nonatomic) CGSize size;

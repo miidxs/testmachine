@@ -9,9 +9,9 @@
 @class UIImage;
 
 @interface UIKeyboardLanguageIndicator : UIView {
-	UIImage* m_image;
-	float m_textSize;
-	int m_style;
+  UIImage* m_image;
+  float m_textSize;
+  int m_style;
 }
 -(id)initWithFrame:(CGRect)frame;
 -(void)dealloc;

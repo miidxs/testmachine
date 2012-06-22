@@ -8,8 +8,8 @@
 __attribute__((visibility("hidden")))
 @interface UIZoomViewController : UIViewController {
 @private
-	UIWindow* _window;
-	UIButton* _zoomButton;
+  UIWindow* _window;
+  UIButton* _zoomButton;
 }
 // inherited: -(id)init;
 // inherited: -(void)dealloc;

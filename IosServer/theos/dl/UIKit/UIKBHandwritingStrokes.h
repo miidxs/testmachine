@@ -6,7 +6,7 @@
 #import "UIKit-Structs.h"
 
 @interface UIKBHandwritingStrokes : NSObject <NSCopying> {
-	KBStrokeList* _strokes;
+  KBStrokeList* _strokes;
 }
 -(id)initWithStrokes:(KBStrokeList*)strokes;
 // inherited: -(void)dealloc;

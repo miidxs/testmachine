@@ -10,7 +10,7 @@
 @class ASEvent;
 
 @interface ASEventPseudoDeleteCommand : ASEventChangeCommand {
-	ASEvent* _actualEvent;
+  ASEvent* _actualEvent;
 }
 // inherited: -(id)initWithEvent:(id)event;
 // inherited: -(void)appendApplicationDataForTask:(id)task toWBXMLData:(id)wbxmldata;

@@ -10,8 +10,8 @@
 @protocol ASPolicyManagerDelegate;
 
 @interface ASPolicyManager : NSObject {
-	id _delegate;
-	BOOL _updatingPolicy;
+  id _delegate;
+  BOOL _updatingPolicy;
 }
 @property(assign) id<ASPolicyManagerDelegate> delegate;
 -(BOOL)updatingPolicy;

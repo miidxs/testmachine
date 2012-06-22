@@ -10,10 +10,10 @@
 @class NSArray, NSNumber, NSString;
 
 @interface ASProvisionResponse : ASItem {
-	NSArray* _policies;
-	NSNumber* _status;
-	BOOL _remoteWipe;
-	NSString* _policyType;
+  NSArray* _policies;
+  NSNumber* _status;
+  BOOL _remoteWipe;
+  NSString* _policyType;
 }
 // inherited: +(BOOL)acceptsTopLevelLeaves;
 // inherited: +(BOOL)parsingLeafNode;

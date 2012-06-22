@@ -18,21 +18,21 @@
 <ISDownloadDelegate> 
 #endif
 {
-	NSString* _displayID;
-	NSString* _bundleID;
+  NSString* _displayID;
+  NSString* _bundleID;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	ISDownload* _download;
+  ISDownload* _download;
 #else
-	SSDownload* _download;
+  SSDownload* _download;
 #endif
-	SBDownloadingProgressBar* _progressView;
-	float _progress;
-	BOOL _installing;
-	BOOL _wasUninstalledByUser;
+  SBDownloadingProgressBar* _progressView;
+  float _progress;
+  BOOL _installing;
+  BOOL _wasUninstalledByUser;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	ISDownloadStatus* _lastStatus;
+  ISDownloadStatus* _lastStatus;
 #else
-	SSDownloadStatus* _lastStatus;
+  SSDownloadStatus* _lastStatus;
 #endif
 }
 +(NSString *)displayIdentifierForDownloadUniqueID:(id)downloadUniqueID;

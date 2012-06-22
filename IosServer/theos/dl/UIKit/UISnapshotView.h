@@ -7,11 +7,11 @@
 __attribute__((visibility("hidden")))
 @interface UISnapshotView : UIView {
 @private
-	UIEdgeInsets _edgePadding;
-	UIColor* _edgePaddingColor;
-	UIView* _imageView;
-	unsigned _disableEdgeAntialiasing : 1;
-	unsigned _disableSubviewLayout : 1;
+  UIEdgeInsets _edgePadding;
+  UIColor* _edgePaddingColor;
+  UIView* _imageView;
+  unsigned _disableEdgeAntialiasing : 1;
+  unsigned _disableSubviewLayout : 1;
 }
 @property(assign, nonatomic) UIEdgeInsets edgePadding;
 @property(retain, nonatomic) UIColor* edgePaddingColor;

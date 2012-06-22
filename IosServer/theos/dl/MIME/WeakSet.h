@@ -12,7 +12,7 @@
 
 @interface WeakSet : WRObject <WeakReferenceHolder> {
 @private
-	CFSetRef _set;
+  CFSetRef _set;
 }
 // inherited: -(id)init;
 // in a protocol: -(void)dealloc;

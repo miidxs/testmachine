@@ -11,8 +11,8 @@
 @class NSString;
 
 @interface LDAPGetDefaultSearchBaseTask : LDAPTask {
-	ldap* _ld;
-	NSString* _defaultNamingContext;
+  ldap* _ld;
+  NSString* _defaultNamingContext;
 }
 // inherited: -(void)dealloc;
 -(id)_initializeServer;

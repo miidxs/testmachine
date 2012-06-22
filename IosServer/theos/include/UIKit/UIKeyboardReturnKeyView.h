@@ -8,8 +8,8 @@
 
 
 @interface UIKeyboardReturnKeyView : UIKeyboardKeyView {
-	int m_originalStyle;
-	int m_subtype;
+  int m_originalStyle;
+  int m_subtype;
 }
 -(id)initWithFrame:(CGRect)frame orientation:(int)orientation style:(int)style;
 -(CFDataRef)createCacheKey;

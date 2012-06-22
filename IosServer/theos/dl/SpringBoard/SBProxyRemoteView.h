@@ -10,9 +10,9 @@
 @class NSString, SBApplication;
 
 @interface SBProxyRemoteView : UIView {
-	id _delegate;
-	SBApplication* _app;
-	NSString* _remoteViewIdentifier;
+  id _delegate;
+  SBApplication* _app;
+  NSString* _remoteViewIdentifier;
 }
 @property(retain, nonatomic) NSString* remoteViewIdentifier;
 @property(assign, nonatomic) id delegate;

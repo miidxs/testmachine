@@ -6,7 +6,7 @@
 #import <WebKit/DOMHTMLSelectElement.h>
 #import <Availability2.h>
 
-@interface DOMHTMLSelectElement (UIWebFormAssistantExtras)	// note: the category name is UIWebFormPeripheral in 3.2.
+@interface DOMHTMLSelectElement (UIWebFormAssistantExtras)  // note: the category name is UIWebFormPeripheral in 3.2.
 -(id)createPeripheral;
 @end
 

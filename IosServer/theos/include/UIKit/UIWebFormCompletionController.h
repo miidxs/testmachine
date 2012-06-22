@@ -10,11 +10,11 @@
 @class NSString, DOMElement, DOMHTMLInputElement, NSMutableDictionary;
 
 @interface UIWebFormCompletionController : NSObject {
-	DOMHTMLInputElement* _element;
-	NSString* _fieldName;
-	DOMElement* _form;
-	BOOL _isLoginForm;
-	NSMutableDictionary* _items;
+  DOMHTMLInputElement* _element;
+  NSString* _fieldName;
+  DOMElement* _form;
+  BOOL _isLoginForm;
+  NSMutableDictionary* _items;
 }
 +(BOOL)previousDataCompletionEnabled;
 +(BOOL)shouldSaveFormData;

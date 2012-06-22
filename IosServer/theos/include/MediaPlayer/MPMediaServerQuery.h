@@ -12,9 +12,9 @@
 
 @interface MPMediaServerQuery : NSObject <NSCoding> {
 @private
-	MLQuery* _query;
-	int _entityOrder;
-	BOOL _prefetchProperties;
+  MLQuery* _query;
+  int _entityOrder;
+  BOOL _prefetchProperties;
 }
 @property(readonly, assign, nonatomic) MLQuery* MLQuery;
 -(id)initWithMLQuery:(id)mlquery;

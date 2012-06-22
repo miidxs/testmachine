@@ -4,7 +4,7 @@
 #import "SBHUDView.h"
 
 @interface SBRingerHUDView : SBHUDView {
-	BOOL _silent;
+  BOOL _silent;
 }
 @property(assign, nonatomic, getter=isSilent) BOOL silent;
 -(void)_updateSilentImage;

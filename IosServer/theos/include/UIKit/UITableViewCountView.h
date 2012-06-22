@@ -9,8 +9,8 @@
 @class NSString;
 
 @interface UITableViewCountView : UILabel {
-	NSString* _countString;
-	int _count;
+  NSString* _countString;
+  int _count;
 }
 -(id)initWithFrame:(CGRect)frame withCountString:(id)countString withCount:(int)count;
 -(void)dealloc;

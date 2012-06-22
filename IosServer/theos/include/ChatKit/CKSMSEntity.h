@@ -9,10 +9,10 @@
 @class NSString;
 
 @interface CKSMSEntity : CKEntity {
-	NSString* _cachedName;
-	unsigned _accepted : 1;
-	unsigned _generated : 1;
-	CKSMSAddressRef _smsAddress;
+  NSString* _cachedName;
+  unsigned _accepted : 1;
+  unsigned _generated : 1;
+  CKSMSAddressRef _smsAddress;
 }
 @property(readonly, assign, nonatomic) CKSMSAddressRef smsAddress;
 +(NSArray*)copyAllSMSEntities;

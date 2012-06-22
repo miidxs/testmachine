@@ -9,10 +9,10 @@
 
 
 @interface VMUSymTabLoadCommand : VMULoadCommand {
-	unsigned _symoff;
-	unsigned _nsyms;
-	unsigned _stroff;
-	unsigned _strsize;
+  unsigned _symoff;
+  unsigned _nsyms;
+  unsigned _stroff;
+  unsigned _strsize;
 }
 // inherited: -(id)initWithMemory:(id)memory;
 // inherited: -(BOOL)isSymTab;

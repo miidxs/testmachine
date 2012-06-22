@@ -11,10 +11,10 @@
 
 @interface MPMediaItemInternal : NSObject {
 @private
-	unsigned long long _uid;
-	NSMutableDictionary* _storage;
-	unsigned _didPrefetchCommonProperties : 1;
-	MLTrack* _track;
+  unsigned long long _uid;
+  NSMutableDictionary* _storage;
+  unsigned _didPrefetchCommonProperties : 1;
+  MLTrack* _track;
 }
 @end
 

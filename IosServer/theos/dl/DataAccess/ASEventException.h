@@ -12,10 +12,10 @@
 @class NSNumber, NSMutableDictionary, NSDate;
 
 @interface ASEventException : ASEvent <ASParsingAcceptingTopLevelLeaves, NSCoding> {
-	NSNumber* _isDeleted;
-	NSDate* _exceptionStartTime;
-	NSMutableDictionary* _placeHolder;
-	ASEvent* _originalEvent;
+  NSNumber* _isDeleted;
+  NSDate* _exceptionStartTime;
+  NSMutableDictionary* _placeHolder;
+  ASEvent* _originalEvent;
 }
 // inherited: +(BOOL)acceptsTopLevelLeaves;
 // inherited: +(BOOL)parsingLeafNode;

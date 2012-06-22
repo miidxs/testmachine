@@ -11,7 +11,7 @@
 
 
 @interface SBTVOutController : NSObject {
-	int _tvOutMode;
+  int _tvOutMode;
 }
 @property(assign, nonatomic) int tvOutMode;
 +(SBTVOutController *)sharedInstance;
@@ -27,7 +27,7 @@
 #endif
 @end
 
-@interface SBTVOutController (Private)	// the actual category name is (private), but C++ rejects this.
+@interface SBTVOutController (Private)  // the actual category name is (private), but C++ rejects this.
 -(void)_handleIapServerConnectionDied;
 -(void)_tetherSettingChanged:(id)changed __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_3_2);
 -(void)startListeningForSettingsChanges;

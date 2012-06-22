@@ -10,12 +10,12 @@
 @class ASCollection, NSNumber, NSMutableArray;
 
 @interface ASFolderItemsSyncResponse : ASItem {
-	ASCollection* _collection;
-	NSNumber* _status;
-	NSMutableArray* _meetingRequestDatas;
-	NSMutableArray* _deliveryIdsToClear;
-	NSMutableArray* _deliveryIdsToSoftClear;
-	int _collectionClassType;
+  ASCollection* _collection;
+  NSNumber* _status;
+  NSMutableArray* _meetingRequestDatas;
+  NSMutableArray* _deliveryIdsToClear;
+  NSMutableArray* _deliveryIdsToSoftClear;
+  int _collectionClassType;
 }
 // inherited: +(BOOL)acceptsTopLevelLeaves;
 // inherited: +(BOOL)parsingLeafNode;

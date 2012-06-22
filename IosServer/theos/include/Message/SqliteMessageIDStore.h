@@ -11,9 +11,9 @@
 @class NSString, MailMessageLibrary;
 
 @interface SqliteMessageIDStore : NSObject {
-	NSString* _url;
-	int _mailboxRowid;
-	MailMessageLibrary* _library;
+  NSString* _url;
+  int _mailboxRowid;
+  MailMessageLibrary* _library;
 }
 -(id)initWithLibrary:(id)library URLString:(id)string;
 -(void)_loadMailboxRowidIfNecessary:(sqlite3*)necessary;

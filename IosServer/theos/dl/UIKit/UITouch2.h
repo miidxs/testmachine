@@ -23,7 +23,7 @@
 @property(assign, nonatomic, setter=_setPathIdentity:) unsigned char _pathIdentity;
 @property(assign, nonatomic, setter=_setPathMajorRadius:) float _pathMajorRadius;
 #else
--(id)gestureRecognizers;	// it becomes a public property in 3.2
+-(id)gestureRecognizers;  // it becomes a public property in 3.2
 #endif
 -(void)_loadStateFromTouch:(id)touch;
 @end

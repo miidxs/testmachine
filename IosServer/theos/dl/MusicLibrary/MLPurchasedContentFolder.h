@@ -11,12 +11,12 @@
 
 @interface MLPurchasedContentFolder : NSObject {
 @private
-	NSMutableSet* _purchasedContentXMLFilesLoaded;
-	NSMutableDictionary* _purchasedContentInfo;
-	NSString* _basePath;
-	id _delegate;
-	RunLoopContinuation* _loadPurchasesContinuation;
-	double _lastPurchaseNotificationTime;
+  NSMutableSet* _purchasedContentXMLFilesLoaded;
+  NSMutableDictionary* _purchasedContentInfo;
+  NSString* _basePath;
+  id _delegate;
+  RunLoopContinuation* _loadPurchasesContinuation;
+  double _lastPurchaseNotificationTime;
 }
 @property(readonly, assign, nonatomic) NSString* basePath;
 +(void)_createParentFolderIfNecessary:(id)necessary;

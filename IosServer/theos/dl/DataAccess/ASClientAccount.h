@@ -10,9 +10,9 @@
 @class NSMutableSet;
 
 @interface ASClientAccount : ASAccount {
-	NSMutableSet* _daemonMonitoredFolders;
-	NSMutableSet* _foldersToRetryForMonitoring;
-	NSMutableSet* _folderIDsOnRemoteHold;
+  NSMutableSet* _daemonMonitoredFolders;
+  NSMutableSet* _foldersToRetryForMonitoring;
+  NSMutableSet* _folderIDsOnRemoteHold;
 }
 // inherited: -(id)_newPolicyManager;
 // inherited: -(id)initWithProperties:(id)properties;

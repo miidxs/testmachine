@@ -11,26 +11,26 @@
 @class NSDictionary, PLImageTile, PLCropOverlay, PLUIController, UIAnimation, NSString;
 
 @interface PLPhotoPicker : UIView {
-	id _delegate;
-	PLUIController* _uiController;
-	UIView* _contentView;
-	UIView* _syncingContentView;
-	PLCropOverlay* _cropOverlay;
-	PLImageTile* _imageTile;
-	UIAnimation* _throwAnimation;
-	NSString* _progressLabel;
-	NSDictionary* _customCropTitles;
-	struct {
-		unsigned customAllowsPlayingSlideshowFlagInfo : 2;
-		unsigned customAllowsFullSizeImageDisplayFlagInfo : 2;
-		unsigned customAllowsZoomingWhenCroppingFlagInfo : 2;
-		unsigned customCropPhotoAfterSelectionFlagInfo : 2;
-		unsigned customShowCropUI : 2;
-		unsigned customShowCamera : 2;
-		unsigned syncing : 1;
-		unsigned cancel : 1;
-		unsigned unused : 18;
-	} _ppBitfields;
+  id _delegate;
+  PLUIController* _uiController;
+  UIView* _contentView;
+  UIView* _syncingContentView;
+  PLCropOverlay* _cropOverlay;
+  PLImageTile* _imageTile;
+  UIAnimation* _throwAnimation;
+  NSString* _progressLabel;
+  NSDictionary* _customCropTitles;
+  struct {
+    unsigned customAllowsPlayingSlideshowFlagInfo : 2;
+    unsigned customAllowsFullSizeImageDisplayFlagInfo : 2;
+    unsigned customAllowsZoomingWhenCroppingFlagInfo : 2;
+    unsigned customCropPhotoAfterSelectionFlagInfo : 2;
+    unsigned customShowCropUI : 2;
+    unsigned customShowCamera : 2;
+    unsigned syncing : 1;
+    unsigned cancel : 1;
+    unsigned unused : 18;
+  } _ppBitfields;
 }
 // inherited: -(id)initWithFrame:(CGRect)frame;
 // inherited: -(void)dealloc;

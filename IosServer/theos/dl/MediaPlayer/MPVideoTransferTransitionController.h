@@ -11,9 +11,9 @@
 @class UIView, MPVideoView, UINavigationBar;
 
 @interface MPVideoTransferTransitionController : MPTransitionController {
-	MPVideoView* _inflightVideoView;
-	UINavigationBar* _portraitNavigationBar;
-	UIView* _transitionBehindView;
+  MPVideoView* _inflightVideoView;
+  UINavigationBar* _portraitNavigationBar;
+  UIView* _transitionBehindView;
 }
 @property(retain, nonatomic) UINavigationBar* portraitNavigationBar;
 @property(retain, nonatomic) UIView* transitionBehindView;

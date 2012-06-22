@@ -11,9 +11,9 @@
 @class NSArray, NSMutableData;
 
 @interface DAVMultiStatusBodyReader : NSObject <DAVResponseBodyReader> {
-	Class responseClass;
-	NSMutableData* readData;
-	NSArray* responses;
+  Class responseClass;
+  NSMutableData* readData;
+  NSArray* responses;
 }
 +(id)multiStatusBodyReader;
 +(id)multiStatusBodyReaderWithResponseClass:(Class)responseClass;

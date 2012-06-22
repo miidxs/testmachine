@@ -10,12 +10,12 @@
 @class NSData, NSString;
 
 @interface POPMessage : MailMessage {
-	int _messageNumber;
-	NSString* _messageID;
-	NSData* _messageData;
-	BOOL _messageDataIsComplete;
-	unsigned _size;
-	NSString* _accountURL;
+  int _messageNumber;
+  NSString* _messageID;
+  NSData* _messageData;
+  BOOL _messageDataIsComplete;
+  unsigned _size;
+  NSString* _accountURL;
 }
 // inherited: -(void)dealloc;
 -(int)messageNumber;

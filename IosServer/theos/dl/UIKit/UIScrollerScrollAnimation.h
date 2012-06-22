@@ -8,8 +8,8 @@
 
 
 @interface UIScrollerScrollAnimation : UIAnimation {
-	CGPoint _originalOffset;
-	CGPoint _targetOffset;
+  CGPoint _originalOffset;
+  CGPoint _targetOffset;
 }
 -(CGPoint)targetOffset;
 -(void)setTargetOffset:(CGPoint)offset;

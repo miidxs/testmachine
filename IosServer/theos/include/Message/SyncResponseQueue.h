@@ -9,7 +9,7 @@
 
 
 @interface SyncResponseQueue : BaseSyncResponseQueue {
-	BOOL _shouldSyncFlags;
+  BOOL _shouldSyncFlags;
 }
 // inherited: -(BOOL)addItem:(id)item;
 // inherited: -(BOOL)shouldSyncFlags;

@@ -12,16 +12,16 @@
 @class NSString;
 
 @interface TPPushButton : UIThreePartButton {
-	NSString* _plusSeparatedTitle;
-	int _tpcolor;
-	float _titleImagePadding;
-	float _titleImageRightMargin;
-	float _titleVerticalOffset;
-	float _iconVerticalOffset;
-	float _iconAlpha;
-	float _minimumFontSize;
+  NSString* _plusSeparatedTitle;
+  int _tpcolor;
+  float _titleImagePadding;
+  float _titleImageRightMargin;
+  float _titleVerticalOffset;
+  float _iconVerticalOffset;
+  float _iconAlpha;
+  float _minimumFontSize;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	BOOL _imageIsOptional;
+  BOOL _imageIsOptional;
 #endif
 }
 +(float)defaultHeight;

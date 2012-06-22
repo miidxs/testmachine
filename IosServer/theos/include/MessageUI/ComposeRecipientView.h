@@ -13,20 +13,20 @@
 @class NSMutableArray, NSMutableDictionary, ComposeRecipientAtom, UIPushButton, NSArray, UIImage, UITextField;
 
 @interface ComposeRecipientView : MFComposeHeaderView <UITextFieldDelegate, ABPeoplePickerNavigationControllerDelegate> {
-	NSMutableArray* _recipients;
-	NSMutableDictionary* _atoms;
-	ComposeRecipientAtom* _opaqueTextAtom;
-	UIPushButton* _addButton;
-	BOOL _editable;
-	BOOL _becomingFirstResponder;
-	BOOL _ignoreFirstResponderChanges;
-	BOOL _picking;
-	NSArray* _properties;
-	UIImage* _buttonImage;
-	UIImage* _pressedImage;
-	int _maxRecipients;
-	BOOL _parentIsClosing;
-	UITextField* _textField;
+  NSMutableArray* _recipients;
+  NSMutableDictionary* _atoms;
+  ComposeRecipientAtom* _opaqueTextAtom;
+  UIPushButton* _addButton;
+  BOOL _editable;
+  BOOL _becomingFirstResponder;
+  BOOL _ignoreFirstResponderChanges;
+  BOOL _picking;
+  NSArray* _properties;
+  UIImage* _buttonImage;
+  UIImage* _pressedImage;
+  int _maxRecipients;
+  BOOL _parentIsClosing;
+  UITextField* _textField;
 }
 // inherited: -(id)initWithFrame:(CGRect)frame;
 -(int)composeRecipientAtomKeyboardType:(id)type;

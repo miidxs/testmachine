@@ -6,21 +6,21 @@
 
 @interface UIMultiColumnsNavigationTransitionView : UIView <NSCoding> {
 @private
-	id _delegate;
-	int _transition;
-	UIView* _firstResponderViewToRestore;
-	unsigned _isTransitioning : 1;
-	float _columnWidth;
-	int _columnCount;
-	NSArray* _fromViews;
-	NSArray* _toViews;
-	NSArray* _viewsToRemove;
-	NSArray* _viewsToAdd;
-	NSArray* _displayedViews;
-	CFDictionaryRef _dividerViews;
-	CFDictionaryRef _containerViews;
-	UIColor* _dividersColor;
-	float _dividersWidth;
+  id _delegate;
+  int _transition;
+  UIView* _firstResponderViewToRestore;
+  unsigned _isTransitioning : 1;
+  float _columnWidth;
+  int _columnCount;
+  NSArray* _fromViews;
+  NSArray* _toViews;
+  NSArray* _viewsToRemove;
+  NSArray* _viewsToAdd;
+  NSArray* _displayedViews;
+  CFDictionaryRef _dividerViews;
+  CFDictionaryRef _containerViews;
+  UIColor* _dividersColor;
+  float _dividersWidth;
 }
 @property(assign, nonatomic) id delegate;
 @property(assign, nonatomic) float columnWidth;

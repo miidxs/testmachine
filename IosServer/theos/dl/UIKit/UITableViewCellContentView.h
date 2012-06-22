@@ -8,7 +8,7 @@
 __attribute__((visibility("hidden")))
 @interface UITableViewCellContentView : UIView {
 @private
-	CALayer* _mask;
+  CALayer* _mask;
 }
 @property(retain, nonatomic) CALayer* mask;
 -(id)_cell;

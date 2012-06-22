@@ -11,7 +11,7 @@
 
 @interface AVSubtitleLayerUsingWebKit : CALayer {
 @private
-	AVSubtitleLayerUsingWebKitPrivate* _priv;
+  AVSubtitleLayerUsingWebKitPrivate* _priv;
 }
 -(id)init;
 -(void)dealloc;

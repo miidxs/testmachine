@@ -10,8 +10,8 @@
 @class AVController, NSTimer;
 
 @interface SBRingingAlertItem : SBAlertItem {
-	AVController* _avController;
-	NSTimer* _autoMuteTimer;
+  AVController* _avController;
+  NSTimer* _autoMuteTimer;
 }
 -(id)soundIdentifier;
 -(id)_avController;

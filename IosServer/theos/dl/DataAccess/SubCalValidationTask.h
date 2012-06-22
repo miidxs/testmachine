@@ -12,17 +12,17 @@
 @protocol SubCalValidationTaskDelegate;
 
 @interface SubCalValidationTask : SubCalDATask {
-	id<SubCalValidationTaskDelegate> _delegate;
-	SubCalURLRequest* _request;
-	NSURL* _subscriptionURL;
-	NSString* _username;
-	NSString* _password;
-	BOOL _performQuickValidation;
-	NSMutableData* _icsData;
-	NSString* _calendarName;
-	BOOL _foundBeginVCal;
-	BOOL _foundCalName;
-	unsigned _searchIndex;
+  id<SubCalValidationTaskDelegate> _delegate;
+  SubCalURLRequest* _request;
+  NSURL* _subscriptionURL;
+  NSString* _username;
+  NSString* _password;
+  BOOL _performQuickValidation;
+  NSMutableData* _icsData;
+  NSString* _calendarName;
+  BOOL _foundBeginVCal;
+  BOOL _foundCalName;
+  unsigned _searchIndex;
 }
 @property(assign) id<SubCalValidationTaskDelegate> delegate;
 @property(retain, nonatomic) NSURL* subscriptionURL;

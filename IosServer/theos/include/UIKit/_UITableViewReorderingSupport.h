@@ -8,17 +8,17 @@
 @class UIShadowView, UITableViewCell, NSTimer, NSIndexPath;
 
 @interface _UITableViewReorderingSupport : NSObject {
-	UITableViewCell* _reorderedCell;
-	NSIndexPath* _initialIndexPath;
-	NSIndexPath* _targetIndexPath;
-	unsigned _oldShowHorizontalScrollIndicator : 1;
-	unsigned _oldShowVerticalScrollIndicator : 1;
-	unsigned _bottomShadowNeedsToMove : 1;
-	unsigned _reserved : 29;
-	NSTimer* _autoscrollTimer;
-	UIShadowView* _topShadowView;
-	UIShadowView* _bottomShadowView;
-	BOOL _wasScrollingEnabled;
+  UITableViewCell* _reorderedCell;
+  NSIndexPath* _initialIndexPath;
+  NSIndexPath* _targetIndexPath;
+  unsigned _oldShowHorizontalScrollIndicator : 1;
+  unsigned _oldShowVerticalScrollIndicator : 1;
+  unsigned _bottomShadowNeedsToMove : 1;
+  unsigned _reserved : 29;
+  NSTimer* _autoscrollTimer;
+  UIShadowView* _topShadowView;
+  UIShadowView* _bottomShadowView;
+  BOOL _wasScrollingEnabled;
 }
 @end
 

@@ -12,17 +12,17 @@
 
 __attribute__((visibility("hidden")))
 @interface UITextSelectionView : UIView {
-	UIView<UITextSelectingContainer>* m_view;
-	int m_state;
-	NSTimer* m_caretTimer;
-	UIView* m_caretView;
-	UITextRangeView* m_rangeView;
-	BOOL m_caretBlinks;
-	BOOL m_caretNeedsColorUpdate;
-	BOOL m_caretShowingNow;
-	BOOL m_selectionChanging;
-	BOOL m_showRangedSelection;
-	BOOL m_visible;
+  UIView<UITextSelectingContainer>* m_view;
+  int m_state;
+  NSTimer* m_caretTimer;
+  UIView* m_caretView;
+  UITextRangeView* m_rangeView;
+  BOOL m_caretBlinks;
+  BOOL m_caretNeedsColorUpdate;
+  BOOL m_caretShowingNow;
+  BOOL m_selectionChanging;
+  BOOL m_showRangedSelection;
+  BOOL m_visible;
 }
 @property(assign, nonatomic) BOOL caretBlinks;
 @property(readonly, assign, nonatomic) UIView* caretView;

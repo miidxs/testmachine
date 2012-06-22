@@ -10,9 +10,9 @@
 @class NSFileHandle, NSString;
 
 @interface CalDAVHTTPTrafficLog : NSObject {
-	BOOL _enabled;
-	NSString* _path;
-	NSFileHandle* _fileHandle;
+  BOOL _enabled;
+  NSString* _path;
+  NSFileHandle* _fileHandle;
 }
 @property(assign, nonatomic) BOOL enabled;
 @property(retain, nonatomic) NSString* path;

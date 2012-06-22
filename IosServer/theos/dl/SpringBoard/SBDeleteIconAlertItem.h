@@ -11,7 +11,7 @@
 @class SBIcon;
 
 @interface SBDeleteIconAlertItem : SBAlertItem <UIModalViewDelegate> {
-	SBIcon* _icon;
+  SBIcon* _icon;
 }
 -(id)initWithIcon:(id)icon;
 // inherited: -(void)dealloc;

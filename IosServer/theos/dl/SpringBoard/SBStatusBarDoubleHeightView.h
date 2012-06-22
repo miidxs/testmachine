@@ -11,9 +11,9 @@
 @class NSString, UIFont;
 
 @interface SBStatusBarDoubleHeightView : SBStatusBarContentView {
-	NSString* _durationPreamble;
-	CGSize _durationPreambleSize;
-	UIFont* _font;
+  NSString* _durationPreamble;
+  CGSize _durationPreambleSize;
+  UIFont* _font;
 }
 // inherited: -(id)init;
 // inherited: -(void)dealloc;

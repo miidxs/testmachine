@@ -13,11 +13,11 @@
 __attribute__((visibility("hidden")))
 #endif
 @interface UICompositeImageElement : NSObject {
-	UIImage* m_image;
-	CGRect m_fromRect;
-	CGRect m_toRect;
-	int m_operation;
-	float m_fraction;
+  UIImage* m_image;
+  CGRect m_fromRect;
+  CGRect m_toRect;
+  int m_operation;
+  float m_fraction;
 }
 +(id)elementWithImage:(id)image toRect:(CGRect)rect fromRect:(CGRect)rect3 operation:(int)operation fraction:(float)fraction;
 -(id)initWithImage:(id)image toRect:(CGRect)rect fromRect:(CGRect)rect3 operation:(int)operation fraction:(float)fraction;

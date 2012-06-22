@@ -11,11 +11,11 @@
 @class NSMutableArray;
 
 @interface BufferedQueue : NSObject <Queue> {
-	unsigned _maximumSize;
-	double _maximumLatency;
-	double _timeOfLastFlush;
-	NSMutableArray* _queue;
-	unsigned _currentSize;
+  unsigned _maximumSize;
+  double _maximumLatency;
+  double _timeOfLastFlush;
+  NSMutableArray* _queue;
+  unsigned _currentSize;
 }
 -(id)initWithMaximumSize:(unsigned)maximumSize latency:(double)latency;
 // inherited: -(id)init;

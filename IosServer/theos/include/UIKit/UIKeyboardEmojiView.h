@@ -9,10 +9,10 @@
 @class UIImageView, UIKeyboardEmoji;
 
 @interface UIKeyboardEmojiView : UIControl {
-	UIKeyboardEmoji* _emoji;
-	UIView* _popup;
-	UIImageView* _imageView;
-	UIView* _pressedView;
+  UIKeyboardEmoji* _emoji;
+  UIView* _popup;
+  UIImageView* _imageView;
+  UIView* _pressedView;
 }
 @property(retain) UIKeyboardEmoji* emoji;
 @property(retain) UIView* popup;

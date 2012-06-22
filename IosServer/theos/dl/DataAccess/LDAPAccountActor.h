@@ -11,7 +11,7 @@
 @class LDAPAccount;
 
 @interface LDAPAccountActor : AKActor <DAAccountActorMessages> {
-	LDAPAccount* _account;
+  LDAPAccount* _account;
 }
 // in a protocol: -(oneway void)cancelTaskWithID:(int)anId;
 // in a protocol: -(oneway void)performSearchQuery:(id)query consumer:(id)consumer;

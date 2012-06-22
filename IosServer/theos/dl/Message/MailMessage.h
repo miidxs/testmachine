@@ -10,9 +10,9 @@
 
 @class MailAccount, NSString, MailboxUid;
 @interface MailMessage : Message {
-	unsigned _messageFlags;
-	XXStruct_CIR1YD _flags;
-	unsigned char _subjectPrefixLength;
+  unsigned _messageFlags;
+  XXStruct_CIR1YD _flags;
+  unsigned char _subjectPrefixLength;
 }
 // inherited: +(void)setMessageClassForStore:(id)store;
 +(id)messageWithRFC822Data:(id)rfc822Data;

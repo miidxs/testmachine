@@ -11,9 +11,9 @@
 
 @interface ML3StringTransformer : NSObject {
 @private
-	NSString* _nameTransform;
-	CPLRUDictionary* _transformCache;
-	NSLock* _transformCacheLock;
+  NSString* _nameTransform;
+  CPLRUDictionary* _transformCache;
+  NSLock* _transformCacheLock;
 }
 @property(retain, nonatomic) NSString* nameTransform;
 +(id)sharedInstance;

@@ -8,8 +8,8 @@
 @class NSInvocation, Protocol;
 
 @interface NSInvocationUnifier : NSProxy {
-	NSInvocation* _curry;
-	Protocol* _protocol;
+  NSInvocation* _curry;
+  Protocol* _protocol;
 }
 -(id)initWithInvocation:(NSInvocation*)invocation protocol:(Protocol*)protocol;
 -(void)dealloc;

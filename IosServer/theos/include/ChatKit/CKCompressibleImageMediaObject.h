@@ -9,7 +9,7 @@
 @class CKImageData;
 
 @interface CKCompressibleImageMediaObject : CKMediaObject {
-	CKImageData* _imageData;
+  CKImageData* _imageData;
 }
 +(id)mimeTypesToFileExtensions;
 +(id)previewDataMIMEType;

@@ -10,10 +10,10 @@
 @class NSString;
 
 @interface PSTextFieldSpecifier : PSSpecifier {
-	SEL bestGuess;
+  SEL bestGuess;
 @private
-	NSString* _placeholder;
-	NSString* _suffix;
+  NSString* _placeholder;
+  NSString* _suffix;
 }
 @property(retain) NSString* placeholder;
 @property(retain) NSString* suffix;

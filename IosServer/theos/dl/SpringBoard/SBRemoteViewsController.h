@@ -11,8 +11,8 @@
 @class NSMutableDictionary;
 
 @interface SBRemoteViewsController : NSObject {
-	NSMutableDictionary* _registeredRemoteViewInfos;
-	NSMutableDictionary* _unregisteredRemoteViewInfos;
+  NSMutableDictionary* _registeredRemoteViewInfos;
+  NSMutableDictionary* _unregisteredRemoteViewInfos;
 }
 +(id)sharedInstance;
 // inherited: -(id)init;

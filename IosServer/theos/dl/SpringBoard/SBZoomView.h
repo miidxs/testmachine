@@ -13,10 +13,10 @@
 @interface SBZoomView : UIView
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
 {
-	BOOL _hasImage;
-	BOOL _hasFullSizedImage;
-	BOOL _usesRoundedCorners;
-	NSMutableArray* _cornerViews;
+  BOOL _hasImage;
+  BOOL _hasFullSizedImage;
+  BOOL _usesRoundedCorners;
+  NSMutableArray* _cornerViews;
 }
 // inherited: -(id)initWithFrame:(CGRect)frame;
 -(id)initWithSnapshotFrame:(CGRect)snapshotFrame image:(id)image originalImageOrientation:(int)orientation currentImageOrientation:(int)orientation4 interfaceOrientation:(int)orientation5 doubleHeightStatusBar:(BOOL)bar preventSplit:(BOOL)split chrome:(id)chrome chromeStatusBarStyle:(int)style;

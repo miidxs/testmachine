@@ -7,8 +7,8 @@
 __attribute__((visibility("hidden")))
 @interface UIGestureRecognizerTarget : NSObject {
 @private
-	id _target;
-	SEL _action;
+  id _target;
+  SEL _action;
 }
 // inherited: -(id)description;
 @end

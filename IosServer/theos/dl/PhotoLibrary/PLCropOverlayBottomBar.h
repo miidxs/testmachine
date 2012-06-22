@@ -11,22 +11,22 @@
 @class UIImage, PLCropOverlayBottomBarButton, UILabel, UIImageView, UIButton, PLCameraButton, NSString;
 
 @interface PLCropOverlayBottomBar : UIView {
-	UIImage* _backgroundImage;
-	UIImageView* _takePhotoView;
-	PLCameraButton* _shutterButton;
-	PLCropOverlayBottomBarButton* _cancelButton;
-	UIView* _modeSwitch;
-	UIButton* _playPauseButton;
-	UIImage* _playImage;
-	UIImage* _pauseImage;
-	NSString* _title;
-	UIImageView* _editPhotoView;
-	PLCropOverlayBottomBarButton* _editCancelButton;
-	PLCropOverlayBottomBarButton* _editDoneButton;
-	UILabel* _editLabel;
-	id _delegate;
-	unsigned _takingPhotoView : 1;
-	unsigned _wasEnabled : 1;
+  UIImage* _backgroundImage;
+  UIImageView* _takePhotoView;
+  PLCameraButton* _shutterButton;
+  PLCropOverlayBottomBarButton* _cancelButton;
+  UIView* _modeSwitch;
+  UIButton* _playPauseButton;
+  UIImage* _playImage;
+  UIImage* _pauseImage;
+  NSString* _title;
+  UIImageView* _editPhotoView;
+  PLCropOverlayBottomBarButton* _editCancelButton;
+  PLCropOverlayBottomBarButton* _editDoneButton;
+  UILabel* _editLabel;
+  id _delegate;
+  unsigned _takingPhotoView : 1;
+  unsigned _wasEnabled : 1;
 }
 // inherited: -(id)initWithFrame:(CGRect)frame;
 -(void)adjustButtonWidths;

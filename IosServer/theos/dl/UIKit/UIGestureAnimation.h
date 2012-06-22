@@ -8,8 +8,8 @@
 
 
 @interface UIGestureAnimation : UIAnimation {
-	SEL _progressSelector;
-	int _gestureType;
+  SEL _progressSelector;
+  int _gestureType;
 }
 -(id)initWithTarget:(id)target progressSelector:(SEL)selector gestureType:(int)type;
 -(void)setProgress:(float)progress;

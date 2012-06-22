@@ -40,13 +40,13 @@ extern "C" {
 #else
 #include <stdbool.h>
 #endif
-	
-	// when style == 1, 1024 bytes will be written as "1KB" instead of "1.0 KB".
-	CFStringRef CPFSSizeStringsWithStyle(float size, bool style);
-	
-	// equivalent to CPFSSizeStringsWithStyle(size, false);
-	CFStringRef CPFSSizeStrings(float size);
-	
+  
+  // when style == 1, 1024 bytes will be written as "1KB" instead of "1.0 KB".
+  CFStringRef CPFSSizeStringsWithStyle(float size, bool style);
+  
+  // equivalent to CPFSSizeStringsWithStyle(size, false);
+  CFStringRef CPFSSizeStrings(float size);
+  
 #if __cplusplus
 }
 #endif

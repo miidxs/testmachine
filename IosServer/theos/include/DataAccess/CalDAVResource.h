@@ -10,9 +10,9 @@
 @class NSData, NSString;
 
 @interface CalDAVResource : NSObject {
-	NSString* _filename;
-	NSString* _etag;
-	NSData* _data;
+  NSString* _filename;
+  NSString* _etag;
+  NSData* _data;
 }
 // inherited: -(void)dealloc;
 -(id)filename;

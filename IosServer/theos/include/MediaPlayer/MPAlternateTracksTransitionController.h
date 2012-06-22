@@ -10,8 +10,8 @@
 @class MPVideoViewController, UIImageView;
 
 @interface MPAlternateTracksTransitionController : MPTransitionController {
-	MPVideoViewController* _videoController;
-	UIImageView* _snapshotCoverImageView;
+  MPVideoViewController* _videoController;
+  UIImageView* _snapshotCoverImageView;
 }
 @property(assign, nonatomic) MPVideoViewController* videoController;
 -(void)transition:(unsigned)transition;

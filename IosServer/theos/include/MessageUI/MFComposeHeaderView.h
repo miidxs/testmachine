@@ -12,10 +12,10 @@
 @class NSString, HeaderLabelView;
 
 @interface MFComposeHeaderView : UIView {
-	NSString* _label;
-	HeaderLabelView* _labelView;
-	id _delegate;
-	UIView* _separator;
+  NSString* _label;
+  HeaderLabelView* _labelView;
+  id _delegate;
+  UIView* _separator;
 }
 +(float)defaultHeight;
 -(CGColorRef)labelColor;

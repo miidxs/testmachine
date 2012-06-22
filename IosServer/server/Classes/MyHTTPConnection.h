@@ -8,9 +8,9 @@
 
 @interface MyHTTPConnection : HTTPConnection
 {
-	int dataStartIndex;
-	NSMutableData* multipartData;
-	BOOL postHeaderOK;
+  int dataStartIndex;
+  NSMutableData* multipartData;
+  BOOL postHeaderOK;
 }
 
 + (void)setSharedObserver:(NSObject*)observer;

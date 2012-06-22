@@ -14,10 +14,10 @@
 
 @interface DAMessageBodyFetchConsumer : NSObject <RequestQueueResponseConsumer, DAMailAccountStreamConsumerFactory> {
 @private
-	id<DAMFStreamingContentConsumer> _streamConsumer;
-	BOOL _succeeded;
-	MFError* _error;
-	NSData* _data;
+  id<DAMFStreamingContentConsumer> _streamConsumer;
+  BOOL _succeeded;
+  MFError* _error;
+  NSData* _data;
 }
 @property(retain, nonatomic) id<DAMFStreamingContentConsumer> streamConsumer;
 @property(retain, nonatomic) MFError* error;

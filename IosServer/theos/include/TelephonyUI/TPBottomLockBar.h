@@ -12,16 +12,16 @@
 @class TPLockKnobView, NSArray, TPLockTextView, NSTimer;
 
 @interface TPBottomLockBar : TPBottomBar {
-	NSArray* _labels;
-	int _currentLabelIndex;
-	NSTimer* _cycleLabelTimer;
-	id _delegate;
-	id _representedObject;
-	TPLockKnobView* _knobView;
-	UIView* _trackArrow;
-	TPLockTextView* _labelView;
-	float _knobTrackInsetLeft;
-	float _fontSize;
+  NSArray* _labels;
+  int _currentLabelIndex;
+  NSTimer* _cycleLabelTimer;
+  id _delegate;
+  id _representedObject;
+  TPLockKnobView* _knobView;
+  UIView* _trackArrow;
+  TPLockTextView* _labelView;
+  float _knobTrackInsetLeft;
+  float _fontSize;
 }
 +(CGSize)defaultSize;
 -(id)initWithFrame:(CGRect)frame knobImage:(id)image;

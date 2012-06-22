@@ -10,7 +10,7 @@
 @class NSString;
 
 @interface ASItemOperationsFetchResult : ASEmailItem {
-	NSString* _classString;
+  NSString* _classString;
 }
 @property(retain) NSString* classString;
 // inherited: +(BOOL)acceptsTopLevelLeaves;

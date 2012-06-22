@@ -11,11 +11,11 @@
 @class NSMutableArray, SBAwayController;
 
 @interface SBAwayModel : NSObject {
-	SBAwayController* _controller;
-	NSMutableArray* _standardVMs;
-	NSMutableArray* _calls;
-	NSMutableArray* _SMSs;
-	NSMutableArray* _otherAwayItems;
+  SBAwayController* _controller;
+  NSMutableArray* _standardVMs;
+  NSMutableArray* _calls;
+  NSMutableArray* _SMSs;
+  NSMutableArray* _otherAwayItems;
 }
 +(BOOL)shouldHideSMSSender;
 -(id)initWithController:(id)controller;

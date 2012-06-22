@@ -8,10 +8,10 @@
 @class UITableViewController;
 
 @interface UITableViewControllerKeyboardSupport : NSObject {
-	UITableViewController* _tableViewController;
-	float _adjustmentForKeyboard;
-	unsigned _viewIsDisappearing : 1;
-	unsigned _registeredForNotifications : 1;
+  UITableViewController* _tableViewController;
+  float _adjustmentForKeyboard;
+  unsigned _viewIsDisappearing : 1;
+  unsigned _registeredForNotifications : 1;
 }
 @property(assign, nonatomic) float adjustmentForKeyboard;
 @property(assign, nonatomic) BOOL registeredForNotifications;

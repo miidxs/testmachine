@@ -10,7 +10,7 @@
 @protocol UITextSelectingContent;
 
 @interface UISelectionTapRecognizer : UITextTapRecognizer {
-	UIView<UITextSelectingContent>* _textView;
+  UIView<UITextSelectingContent>* _textView;
 }
 @property(assign) UIView<UITextSelectingContent>* textView;
 -(BOOL)isCloseToSelection;

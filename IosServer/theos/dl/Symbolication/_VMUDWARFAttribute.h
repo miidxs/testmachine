@@ -9,8 +9,8 @@
 
 
 @interface _VMUDWARFAttribute : NSObject {
-	unsigned long long _name;
-	unsigned long long _form;
+  unsigned long long _name;
+  unsigned long long _form;
 }
 +(id)attributeWithName:(unsigned long long)name withForm:(unsigned long long)form;
 +(void)skipForm:(unsigned long long)form withView:(id)view wordSize:(unsigned char)size;

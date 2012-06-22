@@ -12,7 +12,7 @@
 
 @interface MPMusicPlayerControllerServer : NSObject {
 @private
-	MPMusicPlayerControllerServerInternal* _internal;
+  MPMusicPlayerControllerServerInternal* _internal;
 }
 +(void)startMusicPlayerControllerServer;
 +(id)sharedInstance;

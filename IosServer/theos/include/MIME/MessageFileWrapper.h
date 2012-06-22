@@ -10,14 +10,14 @@
 @class NSMutableDictionary, NSData, NSString;
 
 @interface MessageFileWrapper : NSObject {
-	NSString* _path;
-	NSString* _filename;
-	NSString* _preferredFilename;
-	NSData* _data;
-	NSMutableDictionary* _attributes;
-	NSString* _linkDestination;
-	NSString* _url;
-	int _type;
+  NSString* _path;
+  NSString* _filename;
+  NSString* _preferredFilename;
+  NSData* _data;
+  NSMutableDictionary* _attributes;
+  NSString* _linkDestination;
+  NSString* _url;
+  int _type;
 }
 +(id)_supportedImageFileExtensions;
 -(void)setType:(unsigned long)type;

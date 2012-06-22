@@ -6,11 +6,11 @@
 @class UIClipCornerView, UIImage;
 
 @interface UIRoundedCornerView : UIView {
-	UIClipCornerView* _clipCornerViews[4];
-	float _cornerRadius;
-	float _cornerSize;
-	float _edgeInset;
-	UIImage* _imageBackground;
+  UIClipCornerView* _clipCornerViews[4];
+  float _cornerRadius;
+  float _cornerSize;
+  float _edgeInset;
+  UIImage* _imageBackground;
 }
 -(id)initWithCornerRadius:(float)cornerRadius size:(float)size inset:(float)inset;
 -(void)setImageBackground:(id)background;

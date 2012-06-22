@@ -12,10 +12,10 @@
 @class NSString;
 
 @interface DADSearchQuery : NSObject <NSCopying> {
-	int _state;
-	unsigned _timeLimit;
-	NSRange _range;
-	NSString* _searchString;
+  int _state;
+  unsigned _timeLimit;
+  NSRange _range;
+  NSString* _searchString;
 }
 @property(assign) NSRange range;
 @property(assign) unsigned timeLimit;

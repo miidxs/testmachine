@@ -10,15 +10,15 @@
 @class UIThreePartButton, CKContentEntryView;
 
 @interface CKMessageEntryView : UI9PartImageView <UIScrollViewDelegate> {
-	CKContentEntryView* _contentField;
-	UI9PartImageView* _balloonFGView;
-	UI9PartImageView* _balloonBGView;
-	UI9PartImageView* _balloonBGSendingView;
-	UIThreePartButton* _sendButton;
-	CGRect _finalFrame;
-	BOOL _isAnimating;
-	BOOL _textFieldLoaded;
-	id _delegate;
+  CKContentEntryView* _contentField;
+  UI9PartImageView* _balloonFGView;
+  UI9PartImageView* _balloonBGView;
+  UI9PartImageView* _balloonBGSendingView;
+  UIThreePartButton* _sendButton;
+  CGRect _finalFrame;
+  BOOL _isAnimating;
+  BOOL _textFieldLoaded;
+  id _delegate;
 }
 @property(assign, nonatomic) id delegate;
 +(CGRect)sendButtonFrame:(CGRect)frame;

@@ -8,7 +8,7 @@
 
 
 @interface UIKeyboardCandidateInlineScroller : UIScroller {
-	UIView* _savedLastHighlightedView;
+  UIView* _savedLastHighlightedView;
 }
 -(void)mouseUp:(GSEventRef)up;
 -(void)mouseDown:(GSEventRef)down;

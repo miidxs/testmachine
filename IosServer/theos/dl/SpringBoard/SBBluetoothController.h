@@ -10,7 +10,7 @@
 @class NSMutableArray;
 
 @interface SBBluetoothController : NSObject {
-	NSMutableArray* _devices;
+  NSMutableArray* _devices;
 }
 +(id)sharedInstance;
 // inherited: -(void)dealloc;

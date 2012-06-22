@@ -12,33 +12,33 @@
 
 __attribute__((visibility("hidden")))
 @interface UITextRangeView : UIView {
-	UITextSelectionView* m_selectionView;
-	UIView<UITextSelectingContainer>* m_container;
+  UITextSelectionView* m_selectionView;
+  UIView<UITextSelectingContainer>* m_container;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	int m_mode;
+  int m_mode;
 #endif
-	NSArray* m_rects;
-	NSMutableArray* m_rectViews;
-	UITouch* m_activeTouch;
-	CGRect m_startEdge;
-	CGRect m_endEdge;
-	CGPoint m_basePoint;
-	CGPoint m_extentPoint;
-	CGPoint m_initialBasePoint;
-	CGPoint m_initialExtentPoint;
-	float m_initialDistance;
-	CGPoint m_touchOffset;
-	double m_firstMovedTime;
-	UISelectionGrabber* m_startGrabber;
-	UISelectionGrabber* m_endGrabber;
-	BOOL m_animateUpdate;
-	BOOL m_baseIsStart;
-	BOOL m_commandsWereShowing;
-	BOOL m_inGesture;
-	BOOL m_magnifying;
-	BOOL m_scrolling;
-	BOOL m_scaling;
-	BOOL m_rotating;
+  NSArray* m_rects;
+  NSMutableArray* m_rectViews;
+  UITouch* m_activeTouch;
+  CGRect m_startEdge;
+  CGRect m_endEdge;
+  CGPoint m_basePoint;
+  CGPoint m_extentPoint;
+  CGPoint m_initialBasePoint;
+  CGPoint m_initialExtentPoint;
+  float m_initialDistance;
+  CGPoint m_touchOffset;
+  double m_firstMovedTime;
+  UISelectionGrabber* m_startGrabber;
+  UISelectionGrabber* m_endGrabber;
+  BOOL m_animateUpdate;
+  BOOL m_baseIsStart;
+  BOOL m_commandsWereShowing;
+  BOOL m_inGesture;
+  BOOL m_magnifying;
+  BOOL m_scrolling;
+  BOOL m_scaling;
+  BOOL m_rotating;
 }
 @property(assign, nonatomic) int mode __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_3_2);
 @property(copy, nonatomic) NSArray* rects;

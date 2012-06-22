@@ -8,10 +8,10 @@
 @class NSDate, UILabel;
 
 @interface UIWeekMonthDayTableCell : UIDateTableCell {
-	UILabel* _weekdayLabel;
-	NSDate* _date;
-	float _weekdayWidth;
-	BOOL _weekdayLast;
+  UILabel* _weekdayLabel;
+  NSDate* _date;
+  float _weekdayWidth;
+  BOOL _weekdayLast;
 }
 -(void)dealloc;
 -(id)date;

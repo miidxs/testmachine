@@ -10,7 +10,7 @@
 @class PSListController;
 
 @interface PSBundleController : NSObject {
-	PSListController* _parent;
+  PSListController* _parent;
 }
 -(void)load;
 -(void)unload;

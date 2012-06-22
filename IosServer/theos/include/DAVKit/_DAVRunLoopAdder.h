@@ -10,7 +10,7 @@
 
 
 @interface _DAVRunLoopAdder : NSObject {
-	CFRunLoopSourceRef _source;
+  CFRunLoopSourceRef _source;
 }
 -(id)initWithRunLoopSource:(CFRunLoopSourceRef)runLoopSource;
 -(void)addRunLoopSource;

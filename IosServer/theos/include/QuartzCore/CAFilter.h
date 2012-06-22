@@ -14,11 +14,11 @@
 
 @interface CAFilter : NSObject <NSCopying, NSMutableCopying> {
 @private
-	unsigned _type;
-	NSString* _name;
-	unsigned _flags;
-	CAAttrListRef _attr;
-	void* _cache;
+  unsigned _type;
+  NSString* _name;
+  unsigned _flags;
+  CAAttrListRef _attr;
+  void* _cache;
 }
 @property(assign) BOOL cachesInputImage;
 @property(assign, getter=isEnabled) BOOL enabled;

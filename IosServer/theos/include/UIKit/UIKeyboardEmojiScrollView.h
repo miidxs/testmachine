@@ -11,13 +11,13 @@
 @protocol UIKeyboardEmojiController;
 
 @interface UIKeyboardEmojiScrollView : UIView <UIScrollViewDelegate> {
-	UIKeyboardEmojiCategory* _category;
-	UIPageControl* _pageControl;
-	UIScrollView* _scrollView;
-	UILabel* _categoryLabel;
-	NSMutableArray* _pages;
-	int _currentPage;
-	id<UIKeyboardEmojiController> _controller;
+  UIKeyboardEmojiCategory* _category;
+  UIPageControl* _pageControl;
+  UIScrollView* _scrollView;
+  UILabel* _categoryLabel;
+  NSMutableArray* _pages;
+  int _currentPage;
+  id<UIKeyboardEmojiController> _controller;
 }
 @property(assign) id<UIKeyboardEmojiController> controller;
 -(id)initWithFrame:(CGRect)frame;

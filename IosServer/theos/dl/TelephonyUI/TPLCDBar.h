@@ -4,7 +4,7 @@
 @class UIImage;
 
 @interface TPLCDBar : UIImageView {
-	UIImage* _barBackground;
+  UIImage* _barBackground;
 }
 @property(retain, nonatomic) UIImage* barBackground;
 +(void)preloadImages;

@@ -6,7 +6,7 @@
 @class UIView;
 
 @interface SBDeviceLockKeypadWildcat : SBDeviceLockKeypad {
-	UIView* _glowView;
+  UIView* _glowView;
 }
 // inherited: +(id)keypadImage;
 // inherited: +(id)pressedImage;

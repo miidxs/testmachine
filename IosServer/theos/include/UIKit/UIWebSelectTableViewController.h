@@ -10,12 +10,12 @@
 __attribute__((visibility("hidden")))
 @interface UIWebSelectTableViewController : UITableViewController <UIKeyInput> {
 @private
-	DOMHTMLSelectElement* _selectionNode;
-	NSArray* _cachedItems;
-	unsigned _singleSelectionIndex;
-	BOOL _allowsMultipleSelection;
-	float _popoverHeight;
-	UIWebSelectPopover* _popover;
+  DOMHTMLSelectElement* _selectionNode;
+  NSArray* _cachedItems;
+  unsigned _singleSelectionIndex;
+  BOOL _allowsMultipleSelection;
+  float _popoverHeight;
+  UIWebSelectPopover* _popover;
 }
 @property(retain, nonatomic) DOMHTMLSelectElement* _selectionNode;
 @property(retain, nonatomic) NSArray* _cachedItems;

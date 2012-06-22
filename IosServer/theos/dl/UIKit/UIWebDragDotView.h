@@ -9,8 +9,8 @@
 @class UIImageView;
 
 @interface UIWebDragDotView : UIView {
-	UIImageView* _ball;
-	BOOL m_dotAtTop;
+  UIImageView* _ball;
+  BOOL m_dotAtTop;
 }
 @property(assign, nonatomic) BOOL showsBall;
 -(id)initWithFrame:(CGRect)frame withDotAtTop:(BOOL)top;

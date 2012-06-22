@@ -11,12 +11,12 @@
 @class NSMutableSet, NSCountedSet, NSMutableDictionary, NSString;
 
 @interface DAPowerAssertionManager : NSObject {
-	NSString* _uuid;
-	NSCountedSet* _contexts;
-	NSMutableDictionary* _groupIdentifierToContexts;
-	CFDictionaryRef _contextToGroupIdentifier;
-	NSMutableSet* _heldAsideGroupIdentifiers;
-	NSCountedSet* _heldAsideContexts;
+  NSString* _uuid;
+  NSCountedSet* _contexts;
+  NSMutableDictionary* _groupIdentifierToContexts;
+  CFDictionaryRef _contextToGroupIdentifier;
+  NSMutableSet* _heldAsideGroupIdentifiers;
+  NSCountedSet* _heldAsideContexts;
 }
 +(void)vendDaemons:(Class)daemons;
 +(id)sharedPowerAssertionManager;

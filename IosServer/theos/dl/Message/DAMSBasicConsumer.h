@@ -10,12 +10,12 @@
 @class ActivityMonitor, DAMessageStore, MFError, MailMessageLibrary, DAMailbox;
 
 @interface DAMSBasicConsumer : BufferedQueue {
-	DAMailbox* mailbox;
-	DAMessageStore* store;
-	MailMessageLibrary* library;
-	ActivityMonitor* monitor;
-	int numNewMessages;
-	MFError* error;
+  DAMailbox* mailbox;
+  DAMessageStore* store;
+  MailMessageLibrary* library;
+  ActivityMonitor* monitor;
+  int numNewMessages;
+  MFError* error;
 }
 @property(retain, nonatomic) ActivityMonitor* monitor;
 @property(retain, nonatomic) MFError* error;

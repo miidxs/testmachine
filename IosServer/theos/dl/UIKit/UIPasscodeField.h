@@ -12,18 +12,18 @@
 @class NSMutableArray, UIPushButton, NSMutableString, NSString;
 
 @interface UIPasscodeField : UIView <UITextFieldDelegate> {
-	NSMutableString* _value;
-	NSMutableArray* _entryFields;
-	NSMutableArray* _entryBackgrounds;
-	UIPushButton* _okButton;
-	BOOL _opaqueBackground;
-	BOOL _centerHorizontally;
-	int _keyboardType;
-	int _keyboardAppearance;
+  NSMutableString* _value;
+  NSMutableArray* _entryFields;
+  NSMutableArray* _entryBackgrounds;
+  UIPushButton* _okButton;
+  BOOL _opaqueBackground;
+  BOOL _centerHorizontally;
+  int _keyboardType;
+  int _keyboardAppearance;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	int _emptyContentReturnKeyType;
+  int _emptyContentReturnKeyType;
 #endif
-	id _delegate;
+  id _delegate;
 }
 +(CGFloat)defaultHeight;
 // inherited: -(id)initWithFrame:(CGRect)frame;

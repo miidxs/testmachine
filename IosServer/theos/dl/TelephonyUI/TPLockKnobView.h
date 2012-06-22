@@ -12,10 +12,10 @@
 @class UIAlphaAnimation, TPBottomLockBar;
 
 @interface TPLockKnobView : UIImageView {
-	TPBottomLockBar* _track;
-	UIAlphaAnimation* _animation;
-	float _centerDelta;
-	BOOL _tracking;
+  TPBottomLockBar* _track;
+  UIAlphaAnimation* _animation;
+  float _centerDelta;
+  BOOL _tracking;
 }
 -(BOOL)pointInside:(CGPoint)inside withEvent:(id)event;
 -(void)setLockView:(id)view;

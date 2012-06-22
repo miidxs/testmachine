@@ -9,8 +9,8 @@
 #import <Availability2.h>
 
 @interface SBSheetController : NSObject {
-	NSMutableDictionary* _appToSheetMap;
-	UIWindow* _presentationWindow;
+  NSMutableDictionary* _appToSheetMap;
+  UIWindow* _presentationWindow;
 }
 +(SBSheetController *)sharedInstance;
 // inherited: -(id)init;

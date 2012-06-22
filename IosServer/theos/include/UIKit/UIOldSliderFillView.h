@@ -9,7 +9,7 @@
 @class UIImage;
 
 @interface UIOldSliderFillView : UIView {
-	UIImage* _sliderImage;
+  UIImage* _sliderImage;
 }
 -(id)initWithFrame:(CGRect)frame image:(id)image;
 -(void)drawRect:(CGRect)rect;

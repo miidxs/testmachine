@@ -9,7 +9,7 @@
 
 
 @interface PLMoviePlayerController : UIMoviePlayerController {
-	id _playerDelegate;
+  id _playerDelegate;
 }
 +(void)reset;
 +(id)sharedMoviePlayerController;

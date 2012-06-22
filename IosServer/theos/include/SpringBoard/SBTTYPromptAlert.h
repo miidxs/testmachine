@@ -11,8 +11,8 @@
 @class NSString;
 
 @interface SBTTYPromptAlert : SBAlert {
-	NSString* _number;
-	int _uid;
+  NSString* _number;
+  int _uid;
 }
 +(void)displayForNumber:(id)number addressBookUID:(int)uid;
 +(BOOL)dialNumberPromptingIfNecessary:(id)necessary addressBookUID:(int)uid urlAddition:(id)addition;

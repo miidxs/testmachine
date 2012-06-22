@@ -10,9 +10,9 @@
 @class NSString;
 
 @interface DAMailboxSetFlagsRequest : DAMailboxRequest {
-	unsigned long long _onFlags;
-	unsigned long long _offFlags;
-	NSString* _messageID;
+  unsigned long long _onFlags;
+  unsigned long long _offFlags;
+  NSString* _messageID;
 }
 -(id)initRequestWithSetFlags:(unsigned long long)setFlags unsetFlags:(unsigned long long)flags message:(id)message;
 // inherited: -(void)dealloc;

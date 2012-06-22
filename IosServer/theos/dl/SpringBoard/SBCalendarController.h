@@ -10,12 +10,12 @@
 
 
 @interface SBCalendarController : NSObject {
-	CFDateFormatterRef _dayFormatter;
-	CFDateRef _lastScheduledWake;
-	int _unreadInvitationCount;
-	CalEventExpirationMonitor* _expirationMonitor;
-	CalAlarmEngine* _alarmEngine;
-	CalDatabase* _database;
+  CFDateFormatterRef _dayFormatter;
+  CFDateRef _lastScheduledWake;
+  int _unreadInvitationCount;
+  CalEventExpirationMonitor* _expirationMonitor;
+  CalAlarmEngine* _alarmEngine;
+  CalDatabase* _database;
 }
 +(id)sharedInstance;
 // inherited: -(id)init;

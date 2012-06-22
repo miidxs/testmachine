@@ -12,18 +12,18 @@
 @class CLLocationManager;
 
 @interface FigCoreLocationDelegate : NSObject <CLLocationManagerDelegate> {
-	CLLocationManager* locationManager;
-	OpaqueFigClock* clock;
-	opaqueFigBufferQueue* outputQueue;
-	OpaqueBlockBuffer* previousLocationSample;
-	OpaqueBlockBuffer* previousHeadingSample;
-	XXStruct_pwHToB previousSampleTime;
-	opaqueFigFormatDescription* formatDescription;
-	OpaqueFigSimpleMutex* mutex;
-	int distanceSensitivity;
-	int headingSensitivity;
-	BOOL didStartUpdatingLocation;
-	BOOL didStartUpdatingHeading;
+  CLLocationManager* locationManager;
+  OpaqueFigClock* clock;
+  opaqueFigBufferQueue* outputQueue;
+  OpaqueBlockBuffer* previousLocationSample;
+  OpaqueBlockBuffer* previousHeadingSample;
+  XXStruct_pwHToB previousSampleTime;
+  opaqueFigFormatDescription* formatDescription;
+  OpaqueFigSimpleMutex* mutex;
+  int distanceSensitivity;
+  int headingSensitivity;
+  BOOL didStartUpdatingLocation;
+  BOOL didStartUpdatingHeading;
 }
 @property(assign) OpaqueFigClock* clock;
 @property(assign) opaqueFigBufferQueue* outputQueue;

@@ -10,7 +10,7 @@
 
 
 @interface PSEditableListController : PSListController {
-	BOOL _editable;
+  BOOL _editable;
 }
 @property(assign) BOOL editable;
 // inherited: -(id)initForContentSize:(CGSize)contentSize;

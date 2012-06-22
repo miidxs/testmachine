@@ -11,8 +11,8 @@
 
 @interface ML3QuerySection : NSObject {
 @private
-	NSRange _range;
-	unsigned _sectionIndex;
+  NSRange _range;
+  unsigned _sectionIndex;
 }
 @property(assign, nonatomic) NSRange range;
 @property(assign, nonatomic) unsigned sectionIndex;

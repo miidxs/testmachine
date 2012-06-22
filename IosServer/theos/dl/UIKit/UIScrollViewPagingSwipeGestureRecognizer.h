@@ -8,11 +8,11 @@
 __attribute__((visibility("hidden")))
 @interface UIScrollViewPagingSwipeGestureRecognizer : UIGestureRecognizer {
 @private
-	UIDelayedAction* _swipeFailureDelay;
-	CGPoint _startLocation;
-	CGPoint _lastLocation;
-	double _lastTime;
-	int _directionalFailureCount;
+  UIDelayedAction* _swipeFailureDelay;
+  CGPoint _startLocation;
+  CGPoint _lastLocation;
+  double _lastTime;
+  int _directionalFailureCount;
 }
 -(void)clearTimer;
 -(void)enoughTimeElapsed:(id)elapsed;

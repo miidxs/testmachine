@@ -6,7 +6,7 @@
 @class SBDeviceLockKeypad;
 
 @interface SBDeviceLockViewWithKeypad : SBDeviceLockView {
-	SBDeviceLockKeypad* _keypad;
+  SBDeviceLockKeypad* _keypad;
 }
 // inherited: -(id)initWithStyle:(int)style interfaceOrientation:(int)orientation;
 // inherited: -(id)protectedInitWithStyle:(int)style interfaceOrientation:(int)orientation;

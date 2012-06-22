@@ -10,13 +10,13 @@
 @class NSString, NSURL;
 
 @interface MPTimeMarker : NSObject {
-	double _duration;
-	unsigned _index;
-	id _thumbnail;
-	double _time;
-	NSString* _title;
-	NSURL* _url;
-	int _chapterProperty;
+  double _duration;
+  unsigned _index;
+  id _thumbnail;
+  double _time;
+  NSString* _title;
+  NSURL* _url;
+  int _chapterProperty;
 }
 @property(assign, nonatomic) double duration;
 @property(assign, nonatomic) unsigned index;

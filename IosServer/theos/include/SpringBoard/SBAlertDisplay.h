@@ -12,9 +12,9 @@
 @class SBAlert;
 
 @interface SBAlertDisplay : UIView {
-	SBAlert* _alert;
-	unsigned _displaysAboveStatusBar : 1;
-	unsigned _shouldAnimateIn : 1;
+  SBAlert* _alert;
+  unsigned _displaysAboveStatusBar : 1;
+  unsigned _shouldAnimateIn : 1;
 }
 -(void)setAlert:(id)alert;
 -(id)alert;

@@ -9,15 +9,15 @@
 __attribute__((visibility("hidden")))
 @interface UIKeyboardCandidateBar : UIView <UIKeyboardCandidateList> {
 @private
-	NSObject* m_delegate;
-	NSArray* m_candidates;
-	NSString* m_inlineText;
-	NSMutableArray* m_cells;
-	void* m_pageIndex;
-	unsigned m_currentOffset;
-	unsigned m_currentLimit;
-	unsigned m_currentCandidateIndex;
-	int m_currentPage;
+  NSObject* m_delegate;
+  NSArray* m_candidates;
+  NSString* m_inlineText;
+  NSMutableArray* m_cells;
+  void* m_pageIndex;
+  unsigned m_currentOffset;
+  unsigned m_currentLimit;
+  unsigned m_currentCandidateIndex;
+  int m_currentPage;
 }
 +(id)sharedInstanceWithFrame:(CGRect)frame;
 +(id)sharedInstance;

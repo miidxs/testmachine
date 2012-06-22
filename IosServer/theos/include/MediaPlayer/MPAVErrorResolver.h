@@ -10,7 +10,7 @@
 @protocol MPAVErrorResolverDelegate;
 
 @interface MPAVErrorResolver : NSObject {
-	id<MPAVErrorResolverDelegate> _delegate;
+  id<MPAVErrorResolverDelegate> _delegate;
 }
 @property(assign, nonatomic) id<MPAVErrorResolverDelegate> delegate;
 -(void)resolveError:(id)error;

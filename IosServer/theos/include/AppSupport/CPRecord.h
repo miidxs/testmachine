@@ -36,11 +36,11 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #if __cplusplus
 extern "C" {
 #endif
-	
-	typedef struct __CPRecordStore* CPRecordStoreRef;
-	typedef struct __CPRecordIDArray* CPRecordIDArrayRef;
-	typedef struct __CPRecordIDDictionary* CPRecordIDDictionaryRef;
-	
+  
+  typedef struct __CPRecordStore* CPRecordStoreRef;
+  typedef struct __CPRecordIDArray* CPRecordIDArrayRef;
+  typedef struct __CPRecordIDDictionary* CPRecordIDDictionaryRef;
+  
 #if __cplusplus
 }
 #endif

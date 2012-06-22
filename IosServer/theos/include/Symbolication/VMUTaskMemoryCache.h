@@ -10,10 +10,10 @@
 
 
 @interface VMUTaskMemoryCache : NSObject {
-	XXStruct_MQXXZB* _memoryRegions;
-	unsigned _task;
-	BOOL _taskIs64Bit;
-	BOOL _stopped;
+  XXStruct_MQXXZB* _memoryRegions;
+  unsigned _task;
+  BOOL _taskIs64Bit;
+  BOOL _stopped;
 }
 +(BOOL)taskIs64Bit:(unsigned)bit;
 -(void)initMemoryRegions;

@@ -10,11 +10,11 @@
 @class NSLock;
 
 @interface SBResetManager : NSObject {
-	BOOL _threadRunning;
-	NSLock* _lock;
-	int _mode;
-	NSLock* _progressLock;
-	float _progress;
+  BOOL _threadRunning;
+  NSLock* _lock;
+  int _mode;
+  NSLock* _progressLock;
+  float _progress;
 }
 +(id)sharedInstance;
 // inherited: -(id)init;

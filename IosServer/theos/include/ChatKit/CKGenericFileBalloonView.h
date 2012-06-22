@@ -9,10 +9,10 @@
 @class NSString, UIImage;
 
 @interface CKGenericFileBalloonView : CKBalloonView {
-	UIImage* _icon;
-	NSString* _text;
-	NSString* _subtext;
-	float _originalWidth;
+  UIImage* _icon;
+  NSString* _text;
+  NSString* _subtext;
+  float _originalWidth;
 }
 @property(copy, nonatomic) NSString* text;
 @property(copy, nonatomic) NSString* subtext;

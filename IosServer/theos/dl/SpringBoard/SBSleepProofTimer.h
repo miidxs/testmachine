@@ -10,14 +10,14 @@
 @class NSTimer, NSString, NSDate;
 
 @interface SBSleepProofTimer : NSObject {
-	NSDate* _fireDate;
-	id _target;
-	SEL _selector;
-	NSString* _identifier;
-	NSTimer* _timer;
-	NSTimer* _preventSleepTimer;
-	BOOL _isWakeScheduled;
-	void* _powerAssertion;
+  NSDate* _fireDate;
+  id _target;
+  SEL _selector;
+  NSString* _identifier;
+  NSTimer* _timer;
+  NSTimer* _preventSleepTimer;
+  BOOL _isWakeScheduled;
+  void* _powerAssertion;
 }
 +(id)scheduledTimerWithFireDate:(id)fireDate target:(id)target selector:(SEL)selector identifier:(id)identifier;
 -(id)initWithFireDate:(id)fireDate target:(id)target selector:(SEL)selector identifier:(id)identifier;

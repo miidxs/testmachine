@@ -9,20 +9,20 @@
 @class NSMutableArray, UISectionList;
 
 @interface UISectionTable : UITable {
-	UISectionList* _sectionList;
-	NSRange _visibleHeaders;
-	NSMutableArray* _visibleHeaderViews;
-	float _rightMargin;
-	NSMutableArray* _reusableHeaderCells;
-	NSMutableArray* _reusableTransparentHeaderCells;
-	int _reusableHeaderCapacity;
-	struct {
-		unsigned shouldSendTouchPauseUp : 1;
-		unsigned delegateViewHandleTapWithCountEvent : 1;
-		unsigned delegateViewHandleTapWithCountEventFingerCount : 1;
-		unsigned delegateViewHandleTouchPauseIsDown : 1;
-		unsigned reserved : 28;
-	} _sectionTableFlags;
+  UISectionList* _sectionList;
+  NSRange _visibleHeaders;
+  NSMutableArray* _visibleHeaderViews;
+  float _rightMargin;
+  NSMutableArray* _reusableHeaderCells;
+  NSMutableArray* _reusableTransparentHeaderCells;
+  int _reusableHeaderCapacity;
+  struct {
+    unsigned shouldSendTouchPauseUp : 1;
+    unsigned delegateViewHandleTapWithCountEvent : 1;
+    unsigned delegateViewHandleTapWithCountEventFingerCount : 1;
+    unsigned delegateViewHandleTouchPauseIsDown : 1;
+    unsigned reserved : 28;
+  } _sectionTableFlags;
 }
 -(id)initWithFrame:(CGRect)frame sectionList:(id)list;
 -(id)initWithSize:(CGSize)size sectionList:(id)list;

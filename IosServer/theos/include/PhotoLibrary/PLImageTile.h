@@ -16,11 +16,11 @@
 @class PLImageScrollView, PLVideoView, UITiledView, PLRotationView;
 
 @interface PLImageTile : UITile {
-	UITiledView* _tiledView;
-	PLRotationView* _rotationView;
-	PLImageScrollView* _imageScroller;
-	PLVideoView* _videoView;
-	int _index;
+  UITiledView* _tiledView;
+  PLRotationView* _rotationView;
+  PLImageScrollView* _imageScroller;
+  PLVideoView* _videoView;
+  int _index;
 }
 +(Class)tileViewClass;
 +(id)_createImageTileWithFrame:(CGRect)frame imageSize:(CGSize)size allowZoomToFill:(BOOL)fill;

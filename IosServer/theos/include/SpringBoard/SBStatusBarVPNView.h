@@ -11,12 +11,12 @@
 @class UIImageView;
 
 @interface SBStatusBarVPNView : SBStatusBarContentView {
-	UIImageView* _imageView;
-	BOOL _setOnce;
-	BOOL _showIndicator;
-	BOOL _showVpnView;
-	BOOL _showOnLeft;
-	float _overlap;
+  UIImageView* _imageView;
+  BOOL _setOnce;
+  BOOL _showIndicator;
+  BOOL _showVpnView;
+  BOOL _showOnLeft;
+  float _overlap;
 }
 // inherited: -(id)init;
 -(void)updateIndicator;

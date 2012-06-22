@@ -42,40 +42,40 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #if __cplusplus
 extern "C" {
 #endif
-			
-	typedef struct __IOHIDEventSystemClient
+      
+  typedef struct __IOHIDEventSystemClient
 #if 0
-	{
-		void* x00;
-		CFMachPortRef serverPort;	// 4
-		CFRunLoopSourceRef serverSource;	// 8
-		IOHIDEventSystemClientEventCallback callback;	// c
-		void* target;	// 10
-		void* refcon;	// 14
-		CFMachPortRef queuePort;	// 18
-		CFRunLoopSourceRef queueSource;	// 1c
-		CFRunLoopSourceRef source2;	// 24
-		CFRunLoopTimerRef timer;	// 28
-		IOHIDEventQueueRef queue;	// 2c
-		CFRunLoopRef runloop;	// 34
-		CFStringRef mode;	// 38
-	}
+  {
+    void* x00;
+    CFMachPortRef serverPort; // 4
+    CFRunLoopSourceRef serverSource;  // 8
+    IOHIDEventSystemClientEventCallback callback; // c
+    void* target; // 10
+    void* refcon; // 14
+    CFMachPortRef queuePort;  // 18
+    CFRunLoopSourceRef queueSource; // 1c
+    CFRunLoopSourceRef source2; // 24
+    CFRunLoopTimerRef timer;  // 28
+    IOHIDEventQueueRef queue; // 2c
+    CFRunLoopRef runloop; // 34
+    CFStringRef mode; // 38
+  }
 #endif
-	* IOHIDEventSystemClientRef;
-	
-	typedef void(*IOHIDEventSystemClientEventCallback)(void* target, void* refcon, IOHIDEventQueueRef queue, IOHIDEventRef event);
-	
-	void IOHIDEventSystemClientRegisterEventCallback(IOHIDEventSystemClientRef client, IOHIDEventSystemClientEventCallback callback, void* target, void* refcon);
-	void IOHIDEventSystemClientUnregisterEventCallback(IOHIDEventSystemClientRef client);
-	
-	void IOHIDEventSystemClientUnscheduleWithRunLoop(IOHIDEventSystemClientRef client, CFRunLoopRef runloop, CFStringRef mode);
-	void IOHIDEventSystemClientScheduleWithRunLoop(IOHIDEventSystemClientRef client, CFRunLoopRef runloop, CFStringRef mode);
-	
-	CFPropertyListRef IOHIDEventSystemClientCopyProperty(IOHIDEventSystemClientRef client, CFStringRef property);
-	Boolean IOHIDEventSystemClientSetProperty(IOHIDEventSystemClientRef client, CFStringRef property, CFPropertyListRef value);
-	
-	IOHIDEventSystemClientRef IOHIDEventSystemClient(void);
-	
+  * IOHIDEventSystemClientRef;
+  
+  typedef void(*IOHIDEventSystemClientEventCallback)(void* target, void* refcon, IOHIDEventQueueRef queue, IOHIDEventRef event);
+  
+  void IOHIDEventSystemClientRegisterEventCallback(IOHIDEventSystemClientRef client, IOHIDEventSystemClientEventCallback callback, void* target, void* refcon);
+  void IOHIDEventSystemClientUnregisterEventCallback(IOHIDEventSystemClientRef client);
+  
+  void IOHIDEventSystemClientUnscheduleWithRunLoop(IOHIDEventSystemClientRef client, CFRunLoopRef runloop, CFStringRef mode);
+  void IOHIDEventSystemClientScheduleWithRunLoop(IOHIDEventSystemClientRef client, CFRunLoopRef runloop, CFStringRef mode);
+  
+  CFPropertyListRef IOHIDEventSystemClientCopyProperty(IOHIDEventSystemClientRef client, CFStringRef property);
+  Boolean IOHIDEventSystemClientSetProperty(IOHIDEventSystemClientRef client, CFStringRef property, CFPropertyListRef value);
+  
+  IOHIDEventSystemClientRef IOHIDEventSystemClient(void);
+  
 #if __cplusplus
 }
 #endif

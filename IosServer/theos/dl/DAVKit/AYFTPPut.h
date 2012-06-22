@@ -12,12 +12,12 @@
 @class NSURL, NSMutableData, NSString;
 
 @interface AYFTPPut : AYOperation {
-	NSString* _username;
-	NSString* _password;
-	NSURL* _url;
-	CFWriteStreamRef _writeStream;
-	NSMutableData* _writeData;
-	long long _writeSize;
+  NSString* _username;
+  NSString* _password;
+  NSURL* _url;
+  CFWriteStreamRef _writeStream;
+  NSMutableData* _writeData;
+  long long _writeSize;
 }
 +(id)putRequestWithURL:(id)url username:(id)username password:(id)password data:(id)data;
 -(id)initPutRequestWithURL:(id)url username:(id)username password:(id)password data:(id)data;

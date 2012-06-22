@@ -10,11 +10,11 @@
 
 
 @interface SBStatusBarBatteryView : SBStatusBarContentView {
-	int _batteryCapacity;
-	float _curvedCapacity;
-	BOOL _batteryCharging;
-	BOOL _isOnAC;
-	BOOL _showBatteryView;
+  int _batteryCapacity;
+  float _curvedCapacity;
+  BOOL _batteryCharging;
+  BOOL _isOnAC;
+  BOOL _showBatteryView;
 }
 -(void)updateBattery;
 -(void)_batteryStatusChanged:(id)changed;

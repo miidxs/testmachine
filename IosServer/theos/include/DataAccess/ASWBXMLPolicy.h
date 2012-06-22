@@ -10,7 +10,7 @@
 @class NSMutableDictionary;
 
 @interface ASWBXMLPolicy : ASPolicy {
-	NSMutableDictionary* _policyData;
+  NSMutableDictionary* _policyData;
 }
 // inherited: +(BOOL)acceptsTopLevelLeaves;
 // inherited: +(BOOL)parsingLeafNode;

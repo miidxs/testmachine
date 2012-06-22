@@ -8,17 +8,17 @@
 __attribute__((visibility("hidden")))
 @interface UIKeyboardSwipeGesture : UIGestureRecognizer {
 @private
-	double _maximumDuration;
-	float _verticalScale;
-	float _horizontalScale;
-	float _minimumHorizontalMovement;
-	float _maximumHorizontalMovement;
-	float _minimumVerticalMovement;
-	float _maximumVerticalMovement;
-	double _startTime;
-	int _numberOfFingers;
-	NSMutableArray* _activeTouches;
-	unsigned _timerOn : 1;
+  double _maximumDuration;
+  float _verticalScale;
+  float _horizontalScale;
+  float _minimumHorizontalMovement;
+  float _maximumHorizontalMovement;
+  float _minimumVerticalMovement;
+  float _maximumVerticalMovement;
+  double _startTime;
+  int _numberOfFingers;
+  NSMutableArray* _activeTouches;
+  unsigned _timerOn : 1;
 }
 @property(assign, nonatomic) int numberOfFingers;
 @property(assign, nonatomic) float minimumVerticalMovement;

@@ -12,8 +12,8 @@
 @class UITextField;
 
 @interface MFComposeSubjectView : MFComposeHeaderView <UITextFieldDelegate> {
-	UITextField* _textField;
-	unsigned _delegateRespondsToTextChange : 1;
+  UITextField* _textField;
+  unsigned _delegateRespondsToTextChange : 1;
 }
 // inherited: -(id)initWithFrame:(CGRect)frame;
 // inherited: -(void)layoutSubviews;

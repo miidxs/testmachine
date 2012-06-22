@@ -13,8 +13,8 @@
 __attribute__((visibility("hidden")))
 @interface MLSQLSelectRecords : MLSQLSelect {
 @private
-	XXStruct_T9QubB* _classDesc;
-	NSString* _recordTableID;
+  XXStruct_T9QubB* _classDesc;
+  NSString* _recordTableID;
 }
 +(unsigned)countOfRecordFromStore:(CPRecordStoreRef)store recordClass:(const XXStruct_T9QubB*)aClass where:(id)where;
 +(id)expressionToken;

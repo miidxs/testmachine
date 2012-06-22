@@ -11,16 +11,16 @@
 
 __attribute__((visibility("hidden")))
 @interface UITapAndAHalfRecognizer : UIGestureRecognizer {
-	CGPoint _startPoint;
-	float _allowableMovement;
-	int _numberOfFullTaps;
+  CGPoint _startPoint;
+  float _allowableMovement;
+  int _numberOfFullTaps;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	double _minimumFinalPressDuration;
+  double _minimumFinalPressDuration;
 #endif
-	NSMutableSet* _activeTouches;
-	int _currentNumberOfTaps;
-	UITouch* _touch;
-	UIDelayedAction* _tapTimer;
+  NSMutableSet* _activeTouches;
+  int _currentNumberOfTaps;
+  UITouch* _touch;
+  UIDelayedAction* _tapTimer;
 }
 @property(assign, nonatomic) int numberOfFullTaps;
 @property(retain, nonatomic) UITouch* touch;

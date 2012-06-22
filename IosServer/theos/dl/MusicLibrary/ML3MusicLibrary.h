@@ -13,10 +13,10 @@
 
 @interface ML3MusicLibrary : NSObject {
 @private
-	NSOperationQueue* _backgroundOperationQueue;
-	NSThread* _backgroundThread;
-	NSString* _path;
-	BOOL _enableWrites;
+  NSOperationQueue* _backgroundOperationQueue;
+  NSThread* _backgroundThread;
+  NSString* _path;
+  BOOL _enableWrites;
 }
 @property(readonly, retain) NSOperationQueue* backgroundOperationQueue;
 +(void)load;

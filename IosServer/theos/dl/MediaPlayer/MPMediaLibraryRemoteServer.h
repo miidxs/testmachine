@@ -12,8 +12,8 @@
 
 @interface MPMediaLibraryRemoteServer : MPServerObject <MPMediaLibrary> {
 @private
-	NSMutableArray* _clientPorts;
-	BOOL _filteringDisabled;
+  NSMutableArray* _clientPorts;
+  BOOL _filteringDisabled;
 }
 -(void)dealloc;
 -(void)prepareForDecodingWithCoder:(id)coder;

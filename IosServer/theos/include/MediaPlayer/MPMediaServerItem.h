@@ -13,8 +13,8 @@
 
 @interface MPMediaServerItem : NSObject <NSCoding> {
 @private
-	MLTrack* _track;
-	NSDictionary* _commonProperties;
+  MLTrack* _track;
+  NSDictionary* _commonProperties;
 }
 @property(readonly, assign, nonatomic) NSDictionary* commonProperties;
 @property(readonly, assign, nonatomic) MLTrack* MLTrack;

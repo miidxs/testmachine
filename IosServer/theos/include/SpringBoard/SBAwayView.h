@@ -20,57 +20,57 @@
 <UIKeyInput>
 #endif
 {
-	BOOL _isDimmed;
+  BOOL _isDimmed;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	BOOL _fullscreen;
-	BOOL _alwaysFullscreen;
+  BOOL _fullscreen;
+  BOOL _alwaysFullscreen;
 #endif
-	BOOL _deferAwayItemFetching;
-	BOOL _showingBlockedIndicator;
-	BOOL _hasTelephony;
-	BOOL _wasShowingAlertAtDismiss;
+  BOOL _deferAwayItemFetching;
+  BOOL _showingBlockedIndicator;
+  BOOL _hasTelephony;
+  BOOL _wasShowingAlertAtDismiss;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	BOOL _awayPluginIsVisible;
-	BOOL _ignoreFullScreenUpdates;
+  BOOL _awayPluginIsVisible;
+  BOOL _ignoreFullScreenUpdates;
 #endif
-	SBAwayChargingView* _chargingView;
-	SBAwayDateView* _dateView;
+  SBAwayChargingView* _chargingView;
+  SBAwayDateView* _dateView;
 #if __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_3_2
-	SBNowPlayingArtView* _albumArtView;
+  SBNowPlayingArtView* _albumArtView;
 #endif
-	SBAwayItemsView* _awayItemsView;
-	SBActivationView* _activationView;
-	SBAlertImageView* _firewireWarningView;
-	SBAwayViewPluginController* _awayPluginController;
-	SBAwaySwipeGestureRecognizer* _gestureRecognizer;
+  SBAwayItemsView* _awayItemsView;
+  SBActivationView* _activationView;
+  SBAlertImageView* _firewireWarningView;
+  SBAwayViewPluginController* _awayPluginController;
+  SBAwaySwipeGestureRecognizer* _gestureRecognizer;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	MPAudioDeviceController* _audioDeviceController;
+  MPAudioDeviceController* _audioDeviceController;
 #endif
-	NSTimer* _mediaControlsTimer;
+  NSTimer* _mediaControlsTimer;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	NSTimer* _fullscreenTimer;
-	NSTimer* _chargingViewTimer;
+  NSTimer* _fullscreenTimer;
+  NSTimer* _chargingViewTimer;
 #endif
-	NSDictionary* _nowPlayingInfo;
+  NSDictionary* _nowPlayingInfo;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	BOOL _isPlaying;
+  BOOL _isPlaying;
 #else
-	UIImage* _nowPlayingArt;
-	NSString* _lastTrackArtPath;
+  UIImage* _nowPlayingArt;
+  NSString* _lastTrackArtPath;
 #endif
-	NSTimer* _blockedStatusUpdateTimer;
-	UIModalView* _alertSheet;
+  NSTimer* _blockedStatusUpdateTimer;
+  UIModalView* _alertSheet;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	int _alertSheetPosition;
+  int _alertSheetPosition;
 #endif
-	SBAwayInCallController* _inCallController;
+  SBAwayInCallController* _inCallController;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	SBAwayLockBar* _lockBar;
+  SBAwayLockBar* _lockBar;
 #else
-	TPBottomLockBar* _lockBar;
+  TPBottomLockBar* _lockBar;
 #endif
-	TPBottomButtonBar* _cancelSyncBar;
-	UIPushButton* _infoButton;
+  TPBottomButtonBar* _cancelSyncBar;
+  UIPushButton* _infoButton;
 }
 // inherited: +(id)createBottomBarForInstance:(id)instance;
 +(id)lockLabels:(BOOL)labels fontSize:(float*)size;

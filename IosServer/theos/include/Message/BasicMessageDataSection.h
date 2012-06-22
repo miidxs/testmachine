@@ -11,10 +11,10 @@
 @class NSData, NSString;
 
 @interface BasicMessageDataSection : NSObject <MessageDataSection> {
-	NSData* _data;
-	BOOL _complete;
-	BOOL _partial;
-	NSString* _partName;
+  NSData* _data;
+  BOOL _complete;
+  BOOL _partial;
+  NSString* _partName;
 }
 @property(retain, nonatomic) NSData* data;
 @property(assign, nonatomic, getter=isPartial) BOOL partial;

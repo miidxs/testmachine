@@ -10,16 +10,16 @@
 
 @interface SBPasscodeField : UIPasscodeField {
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	int _style;
-	float _okFontSize;
-	float _cancelFontSize;
-	float _buttonWidth;
-	BOOL _showsCancelButton;	
+  int _style;
+  float _okFontSize;
+  float _cancelFontSize;
+  float _buttonWidth;
+  BOOL _showsCancelButton;  
 #endif
 #if __IPHONE_OS_VERSION_MIN_REQUIRED < __IPHONE_3_2
-	float _width;
+  float _width;
 #endif
-	BOOL _isAlphanumericField;
+  BOOL _isAlphanumericField;
 }
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
 @property(assign, nonatomic) BOOL isAlphanumericField;

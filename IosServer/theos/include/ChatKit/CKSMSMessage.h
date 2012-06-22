@@ -9,9 +9,9 @@
 @class CKSMSMessageDelivery, NSMutableArray;
 
 @interface CKSMSMessage : CKMessage {
-	NSMutableArray* _messages;
-	int _associationID;
-	CKSMSMessageDelivery* _delivery;
+  NSMutableArray* _messages;
+  int _associationID;
+  CKSMSMessageDelivery* _delivery;
 }
 @property(readonly, assign, nonatomic) int associationID;
 @property(retain, nonatomic) CKSMSMessageDelivery* delivery;

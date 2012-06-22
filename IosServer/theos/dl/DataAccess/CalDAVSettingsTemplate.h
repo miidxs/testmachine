@@ -10,15 +10,15 @@
 @class NSArray, NSString;
 
 @interface CalDAVSettingsTemplate : NSObject {
-	NSString* name;
-	int order;
-	NSString* primaryDomain;
-	NSArray* domainAliasPatterns;
-	NSString* primaryUsernameDomain;
-	int httpPort;
-	int httpsPort;
-	int port;
-	NSString* pathFormat;
+  NSString* name;
+  int order;
+  NSString* primaryDomain;
+  NSArray* domainAliasPatterns;
+  NSString* primaryUsernameDomain;
+  int httpPort;
+  int httpsPort;
+  int port;
+  NSString* pathFormat;
 }
 @property(retain, nonatomic) NSString* name;
 @property(assign, nonatomic) int order;

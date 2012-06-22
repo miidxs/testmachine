@@ -10,7 +10,7 @@
 @class CalDAVListingReader;
 
 @interface CalDAVListingRequest : DAVRequest {
-	CalDAVListingReader* _responseReader;
+  CalDAVListingReader* _responseReader;
 }
 +(id)nodeWithName:(id)name;
 +(id)nodeWithName:(id)name attributes:(id)attributes;

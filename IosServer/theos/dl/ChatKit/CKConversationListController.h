@@ -12,17 +12,17 @@
 @class UITableView, CKService, CKTranscriptController, UIToolbar, MFMailComposeViewController, CKConversationList, UINavigationController;
 
 @interface CKConversationListController : UIViewController <UITableViewDataSource, UITableViewDelegate, MFMailComposeViewControllerDelegate> {
-	UINavigationController* _navigationController;
-	UITableView* _table;
-	CKTranscriptController* _transcriptController;
-	UIToolbar* _buttonBar;
-	unsigned _willBeMarkedReadCount;
-	unsigned _dirty : 1;
-	unsigned _isVisible : 1;
-	unsigned _isUpdatingDisabled : 1;
-	CKService* _currentService;
-	CKConversationList* _conversationList;
-	MFMailComposeViewController* _mailComposeController;
+  UINavigationController* _navigationController;
+  UITableView* _table;
+  CKTranscriptController* _transcriptController;
+  UIToolbar* _buttonBar;
+  unsigned _willBeMarkedReadCount;
+  unsigned _dirty : 1;
+  unsigned _isVisible : 1;
+  unsigned _isUpdatingDisabled : 1;
+  CKService* _currentService;
+  CKConversationList* _conversationList;
+  MFMailComposeViewController* _mailComposeController;
 }
 @property(assign, nonatomic) CKConversationList* conversationList;
 -(id)initWithNavigationController:(id)navigationController service:(id)service;

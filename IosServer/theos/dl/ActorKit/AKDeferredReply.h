@@ -8,8 +8,8 @@
 @class NSInvocation, NSConditionLock;
 
 @interface AKDeferredReply : NSObject {
-	NSInvocation* _invocation;
-	NSConditionLock* _blockingLock;
+  NSInvocation* _invocation;
+  NSConditionLock* _blockingLock;
 }
 +(AKDeferredReply*)currentReply;
 +(void)initialize;

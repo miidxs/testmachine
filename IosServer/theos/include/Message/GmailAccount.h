@@ -10,10 +10,10 @@
 @class NSURLConnection, NSURLCredential;
 
 @interface GmailAccount : IMAPAccount {
-	NSURLConnection* _enablingConnection;
-	NSURLCredential* _credential;
-	unsigned _isEnabling : 1;
-	unsigned _didEnable : 1;
+  NSURLConnection* _enablingConnection;
+  NSURLCredential* _credential;
+  unsigned _isEnabling : 1;
+  unsigned _didEnable : 1;
 }
 +(id)emailAddressHostPart;
 // inherited: +(id)displayedAccountTypeString;

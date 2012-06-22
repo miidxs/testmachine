@@ -11,75 +11,75 @@
 @class NSDictionary, NSMutableSet, UIRemoteApplication, NSString, NSMutableArray, NSArray, SBCFBundle, NSTimer, SBAppContextHostView;
 
 @interface SBApplication : SBDisplay {
-	NSString* _bundleIdentifier;
-	NSString* _roleIdentifier;
-	NSString* _displayIdentifier;
-	NSString* _path;
+  NSString* _bundleIdentifier;
+  NSString* _roleIdentifier;
+  NSString* _displayIdentifier;
+  NSString* _path;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	NSDictionary* _spotlightIconNames;
+  NSDictionary* _spotlightIconNames;
 #else
-	NSString* _iconPath;
-	NSString* _smallIconPath;
-	NSDictionary* _spotlightIcons;
+  NSString* _iconPath;
+  NSString* _smallIconPath;
+  NSDictionary* _spotlightIcons;
 #endif
-	NSString* _bundleVersion;
-	NSString* _longDisplayName;
-	NSDictionary* _searchDomainLaunchInfo;
-	SBCFBundle* _cachedBundle;
-	NSString* _launchdJobLabel;
-	int _pid;
-	SBApplicationTimes* _times;
+  NSString* _bundleVersion;
+  NSString* _longDisplayName;
+  NSDictionary* _searchDomainLaunchInfo;
+  SBCFBundle* _cachedBundle;
+  NSString* _launchdJobLabel;
+  int _pid;
+  SBApplicationTimes* _times;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	double _modificationDate;
+  double _modificationDate;
 #endif
-	NSString* _displayName;
-	NSString* _demoRole;
-	NSMutableSet* _statusBarItemSet;
-	NSMutableArray* _tags;
-	UIRemoteApplication* _remoteApplication;
-	SBAppContextHostView* _contextHostView;
-	NSDictionary* _seatbeltEnvVars;
-	NSString* _signerIdentity;
-	unsigned _eventPort;
-	unsigned _activationEventSequenceNumber;
-	NSTimer* _watchdogTimer;
-	unsigned _watchdogType : 4;
-	unsigned _doingBackgroundNetworking : 16;
-	unsigned _failedLaunchCount : 8;
-	unsigned _provisioningProfileValidated : 1;
-	unsigned _enabled : 1;
-	unsigned _useDemoRole : 1;
-	unsigned _isDefaultRole : 1;
-	unsigned _isSystemApplication : 1;
-	unsigned _isSystemProvisioningApplication : 1;
-	unsigned _hasMiniAlerts : 1;
-	unsigned _isRevealable : 1;
+  NSString* _displayName;
+  NSString* _demoRole;
+  NSMutableSet* _statusBarItemSet;
+  NSMutableArray* _tags;
+  UIRemoteApplication* _remoteApplication;
+  SBAppContextHostView* _contextHostView;
+  NSDictionary* _seatbeltEnvVars;
+  NSString* _signerIdentity;
+  unsigned _eventPort;
+  unsigned _activationEventSequenceNumber;
+  NSTimer* _watchdogTimer;
+  unsigned _watchdogType : 4;
+  unsigned _doingBackgroundNetworking : 16;
+  unsigned _failedLaunchCount : 8;
+  unsigned _provisioningProfileValidated : 1;
+  unsigned _enabled : 1;
+  unsigned _useDemoRole : 1;
+  unsigned _isDefaultRole : 1;
+  unsigned _isSystemApplication : 1;
+  unsigned _isSystemProvisioningApplication : 1;
+  unsigned _hasMiniAlerts : 1;
+  unsigned _isRevealable : 1;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED < __IPHONE_3_2
-	unsigned _uiPrerederedIcon : 1;
+  unsigned _uiPrerederedIcon : 1;
 #endif
-	unsigned _uiRequiresPersistentWiFi : 1;
-	unsigned _dataFlagsIsSet : 1;
+  unsigned _uiRequiresPersistentWiFi : 1;
+  unsigned _dataFlagsIsSet : 1;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	unsigned _isClassic : 1;
-	unsigned _supportsPortraitOrientation : 1;
-	unsigned _supportsPortraitUpsideDownOrientation : 1;
-	unsigned _supportsLandscapeLeftOrientation : 1;
-	unsigned _supportsLandscapeRightOrientation : 1;	
+  unsigned _isClassic : 1;
+  unsigned _supportsPortraitOrientation : 1;
+  unsigned _supportsPortraitUpsideDownOrientation : 1;
+  unsigned _supportsLandscapeLeftOrientation : 1;
+  unsigned _supportsLandscapeRightOrientation : 1;  
 #endif
-	unsigned _defaultStatusBarStyle : 8;
+  unsigned _defaultStatusBarStyle : 8;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	unsigned _defaultInterfaceOrientation : 8;
+  unsigned _defaultInterfaceOrientation : 8;
 #else
-	unsigned _defaultInterfaceOrientaton : 8;
+  unsigned _defaultInterfaceOrientaton : 8;
 #endif
-	unsigned _sbUsesNetwork : 8;
-	unsigned _dataFlags : 8;
-	unsigned _launchAlerts : 8;
-	int _jetsamPriority;
-	int _ratingRank;
-	Class _iconClass;
-	NSArray* _customMachServices;
-	NSArray* _externalAccessoryProtocols;
+  unsigned _sbUsesNetwork : 8;
+  unsigned _dataFlags : 8;
+  unsigned _launchAlerts : 8;
+  int _jetsamPriority;
+  int _ratingRank;
+  Class _iconClass;
+  NSArray* _customMachServices;
+  NSArray* _externalAccessoryProtocols;
 }
 +(NSString*)snapshotsDirectory;
 +(void)flushLaunchAlertsOfType:(int)type;
@@ -176,7 +176,7 @@
 -(void)setLaunchdJobLabel:(id)label;
 -(NSDictionary*)seatbeltEnvironmentVariables;
 -(void)setSeatbeltEnvironmentVariables:(id)variables;
--(NSString*)signerIdentity;	// e.g. "Apple iPhone OS Application Signing"
+-(NSString*)signerIdentity; // e.g. "Apple iPhone OS Application Signing"
 -(int)applicationSignatureState;
 -(BOOL)_signatureNeedsExplicitUserTrust;
 -(BOOL)_doesProfileMatchSignerIdentity:(MISProfileRef)identity;

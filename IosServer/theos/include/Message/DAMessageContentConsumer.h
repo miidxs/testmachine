@@ -12,14 +12,14 @@
 @protocol DataConsumer, MessageDataConsumerFactory;
 
 @interface DAMessageContentConsumer : NSObject <DAMFStreamingContentConsumer> {
-	int _requestedFormat;
-	id<DataConsumer> _dataConsumer;
-	id<DataConsumer> _alternatePartConsumer;
-	id<MessageDataConsumerFactory> _consumerFactory;
-	BOOL _triedCreatingAlternatePartConsumer;
-	BOOL _succeeded;
-	NSMutableData* _bodyData;
-	double _timeOfLastActivity;
+  int _requestedFormat;
+  id<DataConsumer> _dataConsumer;
+  id<DataConsumer> _alternatePartConsumer;
+  id<MessageDataConsumerFactory> _consumerFactory;
+  BOOL _triedCreatingAlternatePartConsumer;
+  BOOL _succeeded;
+  NSMutableData* _bodyData;
+  double _timeOfLastActivity;
 }
 @property(retain, nonatomic) id<DataConsumer> dataConsumer;
 @property(retain, nonatomic) id<DataConsumer> alternatePartConsumer;

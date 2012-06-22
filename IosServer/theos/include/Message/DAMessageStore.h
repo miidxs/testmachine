@@ -11,7 +11,7 @@
 @class DAFolder;
 
 @interface DAMessageStore : LibraryStore {
-	DAFolder* _DAFolder;
+  DAFolder* _DAFolder;
 }
 // inherited: -(id)initWithMailboxUid:(id)mailboxUid readOnly:(BOOL)only;
 -(id)_folderIDForFetching;

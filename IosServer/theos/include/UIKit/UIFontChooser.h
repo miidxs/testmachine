@@ -10,13 +10,13 @@
 @class UITextField, UITable;
 
 @interface UIFontChooser : UIView <UITextFieldDelegate> {
-	UITable* _nameTable;
-	UITable* _sizeTable;
-	UITextField* _sizeField;
-	CFArrayRef _familyNames;
-	id _delegate;
-	unsigned _sizes[15];
-	unsigned _sizeBeforeEditing;
+  UITable* _nameTable;
+  UITable* _sizeTable;
+  UITextField* _sizeField;
+  CFArrayRef _familyNames;
+  id _delegate;
+  unsigned _sizes[15];
+  unsigned _sizeBeforeEditing;
 }
 +(UIFontChooser*)sharedFontChooser;
 -(id)_tableWithFrame:(CGRect)frame;

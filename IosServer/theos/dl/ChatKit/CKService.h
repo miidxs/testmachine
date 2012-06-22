@@ -8,8 +8,8 @@
 @class CKConversationList, NSString, CKEntity;
 
 @interface CKService : NSObject {
-	NSString* _serviceID;
-	CKConversationList* _conversationList;
+  NSString* _serviceID;
+  CKConversationList* _conversationList;
 }
 @property(readonly, assign, nonatomic) NSString* serviceID;
 @property(readonly, assign, nonatomic) CKConversationList* conversationList;

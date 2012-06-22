@@ -9,10 +9,10 @@
 @class UIPlacardButton;
 
 @interface CKTranscriptHeaderView : UIView {
-	id _delegate;
-	UIPlacardButton* _firstButton;
-	UIPlacardButton* _secondButton;
-	UIPlacardButton* _loadMoreButton;
+  id _delegate;
+  UIPlacardButton* _firstButton;
+  UIPlacardButton* _secondButton;
+  UIPlacardButton* _loadMoreButton;
 }
 +(float)defaultHeight;
 -(id)initWithFrame:(CGRect)frame withFirstTitle:(id)firstTitle withSecondTitle:(id)secondTitle displayLoadPrevious:(BOOL)previous;

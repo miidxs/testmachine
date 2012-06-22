@@ -12,10 +12,10 @@
 
 @interface MFContactsSearchTaskContext : NSObject {
 @private
-	id<MFContactsSearchConsumer> _consumer;
-	NSString* _text;
-	NSMutableSet* _operations;
-	NSMutableSet* _searchQueries;
+  id<MFContactsSearchConsumer> _consumer;
+  NSString* _text;
+  NSMutableSet* _operations;
+  NSMutableSet* _searchQueries;
 }
 @property(readonly, retain, nonatomic) id<MFContactsSearchConsumer> consumer;
 @property(readonly, retain, nonatomic) NSString* text;

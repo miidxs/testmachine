@@ -11,12 +11,12 @@
 @class NSString;
 
 @interface ASFolder : ASItem <NSCoding> {
-	int _folderType;
-	NSString* _serverID;
-	NSString* _parentID;
-	NSString* _displayName;
-	int _changeType;
-	int _localID;
+  int _folderType;
+  NSString* _serverID;
+  NSString* _parentID;
+  NSString* _displayName;
+  int _changeType;
+  int _localID;
 }
 // inherited: +(BOOL)acceptsTopLevelLeaves;
 // inherited: +(BOOL)parsingLeafNode;

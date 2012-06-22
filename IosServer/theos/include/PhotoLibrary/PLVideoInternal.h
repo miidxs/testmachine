@@ -12,13 +12,13 @@
 
 @interface PLVideoInternal : MLPhoto {
 @private
-	NSURL* _url;
-	AVController* _avController;
-	AVItem* _avItem;
-	PLVideoFileGroup* _videoFileGroup;
-	NSString* _temporaryPath;
-	unsigned _canCreateImages : 1;
-	unsigned _videoWasCaptured;
+  NSURL* _url;
+  AVController* _avController;
+  AVItem* _avItem;
+  PLVideoFileGroup* _videoFileGroup;
+  NSString* _temporaryPath;
+  unsigned _canCreateImages : 1;
+  unsigned _videoWasCaptured;
 }
 // inherited: -(void)dealloc;
 // inherited: -(BOOL)isVideo;

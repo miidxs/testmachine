@@ -23,7 +23,7 @@
 //
 - (id)initInView:(UIView *)view
 {
-	return [self initInView:view hitTest:YES];
+    return [self initInView:view hitTest:YES];
 }
 
 
@@ -36,39 +36,39 @@
 //
 - (id)initInView:(UIView *)view hitTest:(BOOL)hitTest
 {
-	self = [super init];
-	if (self != nil)
-	{
-		CGRect frameInWindow;
-		if ([view isKindOfClass:[UIWindow class]])
-		{
-			frameInWindow = view.frame;
-		}
-		else
-		{
-			frameInWindow =
-				[view.window convertRect:view.frame fromView:view.superview];
-		}
-		 
-		_tapCount = 1;
-		_locationInWindow =
-			CGPointMake(
-				frameInWindow.origin.x + 0.5 * frameInWindow.size.width,
-				frameInWindow.origin.y + 0.5 * frameInWindow.size.height);
-		_previousLocationInWindow = _locationInWindow;
+    self = [super init];
+    if (self != nil)
+    {
+        CGRect frameInWindow;
+        if ([view isKindOfClass:[UIWindow class]])
+        {
+            frameInWindow = view.frame;
+        }
+        else
+        {
+            frameInWindow =
+                [view.window convertRect:view.frame fromView:view.superview];
+        }
+         
+        _tapCount = 1;
+        _locationInWindow =
+            CGPointMake(
+                frameInWindow.origin.x + 0.5 * frameInWindow.size.width,
+                frameInWindow.origin.y + 0.5 * frameInWindow.size.height);
+        _previousLocationInWindow = _locationInWindow;
 
-		UIView *target = hitTest ?
-			[view.window hitTest:_locationInWindow withEvent:nil] :
-			view;
+        UIView *target = hitTest ?
+            [view.window hitTest:_locationInWindow withEvent:nil] :
+            view;
 
-		_window = [view.window retain];
-		_view = [target retain];
-		_phase = UITouchPhaseBegan;
-		_touchFlags._firstTouchForView = 1;
-		_touchFlags._isTap = 1;
-		_timestamp = [NSDate timeIntervalSinceReferenceDate];
-	}
-	return self;
+        _window = [view.window retain];
+        _view = [target retain];
+        _phase = UITouchPhaseBegan;
+        _touchFlags._firstTouchForView = 1;
+        _touchFlags._isTap = 1;
+        _timestamp = [NSDate timeIntervalSinceReferenceDate];
+    }
+    return self;
 }
 
 //
@@ -78,8 +78,8 @@
 //
 - (void)setPhase:(UITouchPhase)phase
 {
-	_phase = phase;
-	_timestamp = [NSDate timeIntervalSinceReferenceDate];
+    _phase = phase;
+    _timestamp = [NSDate timeIntervalSinceReferenceDate];
 }
 
 //
@@ -89,9 +89,9 @@
 //
 - (void)setLocationInWindow:(CGPoint)location
 {
-	_previousLocationInWindow = _locationInWindow;
-	_locationInWindow = location;
-	_timestamp = [NSDate timeIntervalSinceReferenceDate];
+    _previousLocationInWindow = _locationInWindow;
+    _locationInWindow = location;
+    _timestamp = [NSDate timeIntervalSinceReferenceDate];
 }
 
 //
@@ -101,8 +101,8 @@
 //
 - (void)moveLocationInWindow
 {
-	CGPoint moveTo = CGPointMake(_locationInWindow.x + 200, _locationInWindow.y);
-	[self setLocationInWindow:moveTo];
+    CGPoint moveTo = CGPointMake(_locationInWindow.x + 200, _locationInWindow.y);
+    [self setLocationInWindow:moveTo];
 }
 
 
@@ -113,8 +113,8 @@
 //
 - (void)moveLocationInWindowLeft
 {
-	CGPoint moveTo = CGPointMake(_locationInWindow.x - 200, _locationInWindow.y);
-	[self setLocationInWindow:moveTo];
+    CGPoint moveTo = CGPointMake(_locationInWindow.x - 200, _locationInWindow.y);
+    [self setLocationInWindow:moveTo];
 }
 
 
@@ -128,20 +128,20 @@
 @interface GSEventProxy : NSObject
 {
 @public
-	unsigned int flags;
-	unsigned int type;
-	unsigned int ignored1;
-	float x1;
-	float y1;
-	float x2;
-	float y2;
-	unsigned int ignored2[10];
-	unsigned int ignored3[7];
-	float sizeX;
-	float sizeY;
-	float x3;
-	float y3;
-	unsigned int ignored4[3];
+    unsigned int flags;
+    unsigned int type;
+    unsigned int ignored1;
+    float x1;
+    float y1;
+    float x2;
+    float y2;
+    unsigned int ignored2[10];
+    unsigned int ignored3[7];
+    float sizeX;
+    float sizeY;
+    float x3;
+    float y3;
+    unsigned int ignored4[3];
 }
 @end
 @implementation GSEventProxy
@@ -185,41 +185,41 @@
 
 - (id)initWithTouch:(UITouch *)touch
 {
-	CGPoint location = [touch locationInView:touch.window];
-	GSEventProxy *gsEventProxy = [[GSEventProxy alloc] init];
-	gsEventProxy->x1 = location.x;
-	gsEventProxy->y1 = location.y;
-	gsEventProxy->x2 = location.x;
-	gsEventProxy->y2 = location.y;
-	gsEventProxy->x3 = location.x;
-	gsEventProxy->y3 = location.y;
-	gsEventProxy->sizeX = 1.0;
-	gsEventProxy->sizeY = 1.0;
-	gsEventProxy->flags = ([touch phase] == UITouchPhaseEnded) ? 0x1010180 : 0x3010180;
-	gsEventProxy->type = 3001;	
-	
-	//
-	// On SDK versions 3.0 and greater, we need to reallocate as a
-	// UITouchesEvent.
-	//
-	Class touchesEventClass = objc_getClass("UITouchesEvent");
-	if (touchesEventClass && ![[self class] isEqual:touchesEventClass])
-	{
-		[self release];
-		self = [touchesEventClass alloc];
-	}
-	
-	self = [self _initWithEvent:gsEventProxy touches:[NSSet setWithObject:touch]];
+    CGPoint location = [touch locationInView:touch.window];
+    GSEventProxy *gsEventProxy = [[GSEventProxy alloc] init];
+    gsEventProxy->x1 = location.x;
+    gsEventProxy->y1 = location.y;
+    gsEventProxy->x2 = location.x;
+    gsEventProxy->y2 = location.y;
+    gsEventProxy->x3 = location.x;
+    gsEventProxy->y3 = location.y;
+    gsEventProxy->sizeX = 1.0;
+    gsEventProxy->sizeY = 1.0;
+    gsEventProxy->flags = ([touch phase] == UITouchPhaseEnded) ? 0x1010180 : 0x3010180;
+    gsEventProxy->type = 3001;  
+    
+    //
+    // On SDK versions 3.0 and greater, we need to reallocate as a
+    // UITouchesEvent.
+    //
+    Class touchesEventClass = objc_getClass("UITouchesEvent");
+    if (touchesEventClass && ![[self class] isEqual:touchesEventClass])
+    {
+        [self release];
+        self = [touchesEventClass alloc];
+    }
+    
+    self = [self _initWithEvent:gsEventProxy touches:[NSSet setWithObject:touch]];
 
-	return self;
+    return self;
 }
 
 - (void)moveLocation
 {
 #if __IPHONE_OS_VERSION_MIN_REQUIRED < 30000
-	PublicEvent *publicEvent = (PublicEvent *)self;
-	publicEvent->_timestamp = [NSDate timeIntervalSinceReferenceDate];
-	publicEvent->_event->x += 20;
+    PublicEvent *publicEvent = (PublicEvent *)self;
+    publicEvent->_timestamp = [NSDate timeIntervalSinceReferenceDate];
+    publicEvent->_event->x += 20;
 #endif
 }
 

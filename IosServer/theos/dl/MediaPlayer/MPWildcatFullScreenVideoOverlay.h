@@ -13,22 +13,22 @@
 
 @interface MPWildcatFullScreenVideoOverlay : MPWildcatVideoOverlay {
 @private
-	id<MPWildcatFullScreenVideoOverlayDelegate> _delegate;
-	MPWildcatFullScreenTransportControls* _transportControls;
-	UIImageView* _hudImageView;
-	UINavigationBar* _navigationBar;
-	UINavigationItem* _navigationItem;
-	UIImageView* _navigationBarBackgroundShort;
-	UIImageView* _navigationBarBackgroundTall;
-	UIImageView* _navigationBarShadow;
-	NSString* _title;
-	UINavigationButton* _scaleModeButton;
-	UILabel* _scrubSpeedLabel;
-	UILabel* _scrubInstructionsLabel;
-	UIBarButtonItem* _doneButton;
-	UIPopoverController* _popoverController;
-	UILabel* _loadingMovieLabel;
-	UIActivityIndicatorView* _loadingMovieIndicator;
+  id<MPWildcatFullScreenVideoOverlayDelegate> _delegate;
+  MPWildcatFullScreenTransportControls* _transportControls;
+  UIImageView* _hudImageView;
+  UINavigationBar* _navigationBar;
+  UINavigationItem* _navigationItem;
+  UIImageView* _navigationBarBackgroundShort;
+  UIImageView* _navigationBarBackgroundTall;
+  UIImageView* _navigationBarShadow;
+  NSString* _title;
+  UINavigationButton* _scaleModeButton;
+  UILabel* _scrubSpeedLabel;
+  UILabel* _scrubInstructionsLabel;
+  UIBarButtonItem* _doneButton;
+  UIPopoverController* _popoverController;
+  UILabel* _loadingMovieLabel;
+  UIActivityIndicatorView* _loadingMovieIndicator;
 }
 @property(assign, nonatomic) id<MPWildcatFullScreenVideoOverlayDelegate> delegate;
 @property(copy, nonatomic) NSString* title;

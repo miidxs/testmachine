@@ -2,8 +2,8 @@
 #import <AVFoundation/AVFoundation.h>
 
 @interface IosDriver : NSObject {
-	AVAudioPlayer *_player;
-	AVAudioRecorder *_recorder;
+  AVAudioPlayer *_player;
+  AVAudioRecorder *_recorder;
 }
 
 + (IosDriver *)instance;

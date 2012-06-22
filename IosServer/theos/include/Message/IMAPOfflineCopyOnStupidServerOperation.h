@@ -10,8 +10,8 @@
 
 
 @interface IMAPOfflineCopyOnStupidServerOperation : IMAPOperation {
-	CFArrayRef messageIds;
-	CFArrayRef internalDates;
+  CFArrayRef messageIds;
+  CFArrayRef internalDates;
 }
 // inherited: -(void)serializeIntoData:(id)data;
 // inherited: -(unsigned char)_magic;

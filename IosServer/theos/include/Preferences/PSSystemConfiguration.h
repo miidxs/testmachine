@@ -10,7 +10,7 @@
 
 
 @interface PSSystemConfiguration : NSObject {
-	SCPreferencesRef _prefs;
+  SCPreferencesRef _prefs;
 }
 +(id)sharedInstance;
 +(void)releaseSharedInstance;

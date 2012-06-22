@@ -9,8 +9,8 @@
 @class UIImageView;
 
 @interface CKWebImageBalloonView : CKWebBalloonView {
-	CGSize _originalImageSize;
-	UIImageView* _stillImage;
+  CGSize _originalImageSize;
+  UIImageView* _stillImage;
 }
 @property(assign, nonatomic) CGSize originalImageSize;
 +(CGPoint)offsetForBubbleInsetAtPoint:(CGPoint)point;

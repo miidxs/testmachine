@@ -39,9 +39,9 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 extern "C" {
 #endif
 
-	void GSLog(CFStringRef format, ...);
-	void GSInitialize();
-	
+  void GSLog(CFStringRef format, ...);
+  void GSInitialize();
+  
 #if __cplusplus
 }
 #endif

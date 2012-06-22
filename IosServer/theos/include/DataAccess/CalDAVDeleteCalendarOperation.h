@@ -10,9 +10,9 @@
 @class DAVSession, NSString;
 
 @interface CalDAVDeleteCalendarOperation : AYOperation {
-	NSString* _uri;
-	DAVSession* _session;
-	NSString* _inboxURI;
+  NSString* _uri;
+  DAVSession* _session;
+  NSString* _inboxURI;
 }
 -(id)initWithSession:(id)session URI:(id)uri inboxURI:(id)uri3;
 // inherited: -(void)dealloc;

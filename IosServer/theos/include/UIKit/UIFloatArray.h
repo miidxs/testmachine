@@ -8,20 +8,20 @@
 
 
 @interface UIFloatArray : NSObject {
-	int _count;
-	int _gapCount;
-	int* _gaps;
-	float _gapValue;
-	float _minValue;
-	union {
-		float singleton;
-		float* array;
-	} _values;
-	struct {
-		unsigned valueIsSingleton : 1;
-		unsigned hideGaps : 1;
-		unsigned unused : 30;
-	} _floatArrayFlags;
+  int _count;
+  int _gapCount;
+  int* _gaps;
+  float _gapValue;
+  float _minValue;
+  union {
+    float singleton;
+    float* array;
+  } _values;
+  struct {
+    unsigned valueIsSingleton : 1;
+    unsigned hideGaps : 1;
+    unsigned unused : 30;
+  } _floatArrayFlags;
 }
 -(BOOL)_setupValuesWithCount:(int)count singleValue:(float)value isRefresh:(BOOL)refresh;
 -(BOOL)_setupValuesWithCount:(int)count dataProvider:(id)provider isRefresh:(BOOL)refresh;

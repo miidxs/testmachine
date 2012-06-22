@@ -11,9 +11,9 @@
 @class NSString;
 
 @interface SBWiFiErrorAlertItem : SBAlertItem {
-	id _delegate;
-	NSString* _name;
-	int _error;
+  id _delegate;
+  NSString* _name;
+  int _error;
 }
 -(id)initWithNetworkName:(id)networkName error:(int)error;
 // inherited: -(void)dealloc;

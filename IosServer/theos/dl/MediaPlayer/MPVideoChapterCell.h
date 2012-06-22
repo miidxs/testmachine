@@ -11,7 +11,7 @@
 @class MPTimeMarker, MPVideoChapterCellContentView;
 
 @interface MPVideoChapterCell : UITableViewCell {
-	MPVideoChapterCellContentView* _chapterContentView;
+  MPVideoChapterCellContentView* _chapterContentView;
 }
 @property(retain, nonatomic) MPTimeMarker* timeMarker;
 @property(assign, nonatomic) float timeColumnWidth;

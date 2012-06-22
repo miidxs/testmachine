@@ -11,8 +11,8 @@
 @class MailMessageLibrary;
 
 @interface SqliteHandle : NSObject {
-	MailMessageLibrary* library;
-	sqlite3* db;
+  MailMessageLibrary* library;
+  sqlite3* db;
 }
 +(id)handleForDB:(sqlite3*)db library:(id)library;
 -(void)closeConnection;

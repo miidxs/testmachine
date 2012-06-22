@@ -6,12 +6,12 @@
 @class UILabel, UIImageView, UIImage, NSString;
 
 @interface SBHUDView : UIView {
-	int _level;
-	UILabel* _titleLabel;
-	UILabel* _subtitleLabel;
-	UIImageView* _imageView;
-	BOOL _showsProgress;
-	float _progress;
+  int _level;
+  UILabel* _titleLabel;
+  UILabel* _subtitleLabel;
+  UIImageView* _imageView;
+  BOOL _showsProgress;
+  float _progress;
 }
 @property(assign, nonatomic) int level;
 @property(assign, nonatomic) BOOL showsProgress;

@@ -13,15 +13,15 @@
 __attribute__((visibility("hidden")))
 #endif
 @interface UITableHeaderFooterView : UIView {
-	UILabel* _label;
-	UIImage* _backgroundImage;
-	int _tableViewStyle;
-	BOOL _sectionHeader;
-	CGRect _frame;
+  UILabel* _label;
+  UIImage* _backgroundImage;
+  int _tableViewStyle;
+  BOOL _sectionHeader;
+  CGRect _frame;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	int _textAlignment;
-	UITableView* _tableView;
-	float _maxTitleWidth;
+  int _textAlignment;
+  UITableView* _tableView;
+  float _maxTitleWidth;
 #endif
 }
 @property(assign, nonatomic) int tableViewStyle;

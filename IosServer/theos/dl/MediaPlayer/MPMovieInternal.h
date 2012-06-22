@@ -12,17 +12,17 @@
 
 @interface MPMovieInternal : NSObject {
 @private
-	MPItem* _item;
-	NSURL* _url;
-	AVFileValidator* _fileValidator;
-	int _movieSourceType;
-	double _startPlaybackTime;
-	double _endPlaybackTime;
-	BOOL _explicitlySetMovieSourceType;
-	BOOL _movieIsUnplayable;
-	double _lastKnownDuration;
-	CGSize _lastKnownNaturalSize;
-	unsigned _lastKnownType;
+  MPItem* _item;
+  NSURL* _url;
+  AVFileValidator* _fileValidator;
+  int _movieSourceType;
+  double _startPlaybackTime;
+  double _endPlaybackTime;
+  BOOL _explicitlySetMovieSourceType;
+  BOOL _movieIsUnplayable;
+  double _lastKnownDuration;
+  CGSize _lastKnownNaturalSize;
+  unsigned _lastKnownType;
 }
 @end
 

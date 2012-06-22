@@ -11,11 +11,11 @@
 @class NSString, UIImage, SBStatusBarOperatorNameView;
 
 @interface SBStatusBarCarrierView : SBStatusBarContentView {
-	UIImage* _operatorIcon;
-	SBStatusBarOperatorNameView* _operatorNameView;
-	NSString* _operatorName;
-	BOOL _operatorNameIsLooping;
-	BOOL _showCarrierView;
+  UIImage* _operatorIcon;
+  SBStatusBarOperatorNameView* _operatorNameView;
+  NSString* _operatorName;
+  BOOL _operatorNameIsLooping;
+  BOOL _showCarrierView;
 }
 // inherited: -(id)init;
 // inherited: -(void)dealloc;

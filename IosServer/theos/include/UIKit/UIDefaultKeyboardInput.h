@@ -11,7 +11,7 @@
 @protocol UITextSelectingContent;
 
 @interface UIDefaultKeyboardInput : UIView <UIKeyboardInput> {
-	UITextInputTraits* m_traits;
+  UITextInputTraits* m_traits;
 }
 // in a protocol: @property(assign, nonatomic) int autocapitalizationType;
 // in a protocol: @property(assign, nonatomic) int autocorrectionType;
@@ -47,53 +47,53 @@
 // inherited: -(void)forwardInvocation:(id)invocation;
 // inherited: -(id)methodSignatureForSelector:(SEL)selector;
 // in a protocol: -(void)takeTraitsFrom:(id)from;
--(id)delegate;	// in a protocol below 3.2.
+-(id)delegate;  // in a protocol below 3.2.
 // in a protocol: -(void)deleteBackward;
 // in a protocol: -(void)insertText:(id)text;
--(void)replaceRangeWithText:(NSRange)text replacementText:(id)text2;	// in a protocol below 3.2.
--(void)replaceCurrentWordWithText:(id)text;	// in a protocol below 3.2.
+-(void)replaceRangeWithText:(NSRange)text replacementText:(id)text2;  // in a protocol below 3.2.
+-(void)replaceCurrentWordWithText:(id)text; // in a protocol below 3.2.
 // in a protocol (N/A after 3.2): -(void)replaceRangeWithTextWithoutClosingTyping:(NSRange)textWithoutClosingTyping replacementText:(id)text;
 // in a protocol (since 3.2): -(void)replaceRangeWithTextWithoutClosingTyping:(id)textWithoutClosingTyping replacementText:(id)text;
 // in a protocol: -(void)setMarkedText:(id)text selectedRange:(NSRange)range;
 // in a protocol: -(void)setMarkedText:(id)text;
--(void)confirmMarkedText:(id)text;	// in a protocol below 3.2
+-(void)confirmMarkedText:(id)text;  // in a protocol below 3.2
 // in a protocol: -(id)markedText;
--(unsigned short)characterInRelationToCaretSelection:(int)caretSelection;	// in a protocol below 3.2
+-(unsigned short)characterInRelationToCaretSelection:(int)caretSelection; // in a protocol below 3.2
 // in a protocol: -(unsigned short)characterBeforeCaretSelection;
--(unsigned short)characterAfterCaretSelection;	// in a protocol below 3.2
+-(unsigned short)characterAfterCaretSelection;  // in a protocol below 3.2
 // in a protocol: -(id)fontForCaretSelection;
 // in a protocol: -(id)textColorForCaretSelection;
 // in a protocol: -(CGRect)rectForNSRange:(NSRange)nsrange;
--(id)rectsForNSRange:(NSRange)nsrange;	// in a protocol below 3.2
+-(id)rectsForNSRange:(NSRange)nsrange;  // in a protocol below 3.2
 // in a protocol: -(CGRect)rectContainingCaretSelection;
 // in a protocol: -(id)wordRangeContainingCaretSelection;
 // in a protocol: -(BOOL)shouldEnableAutoShift;
 // in a protocol: -(id)wordContainingCaretSelection;
 // in a protocol: -(id)wordInRange:(id)range;
--(void)expandSelectionToStartOfWordContainingCaretSelection;	// in a protocol below 3.2
--(int)wordOffsetInRange:(id)range;	// in a protocol below 3.2
+-(void)expandSelectionToStartOfWordContainingCaretSelection;  // in a protocol below 3.2
+-(int)wordOffsetInRange:(id)range;  // in a protocol below 3.2
 // in a protocol: -(BOOL)hasContent;
 // in a protocol: -(BOOL)hasSelection;
--(int)selectionState;	// in a protocol below 3.2
--(BOOL)selectionAtDocumentStart;	// in a protocol below 3.2
+-(int)selectionState; // in a protocol below 3.2
+-(BOOL)selectionAtDocumentStart;  // in a protocol below 3.2
 // in a protocol (N/A after 3.2): -(BOOL)selectionAtSentenceStart;
--(BOOL)selectionAtWordStart;	// in a protocol below 3.2
+-(BOOL)selectionAtWordStart;  // in a protocol below 3.2
 // in a protocol: -(NSRange)selectionRange;
 // in a protocol (N/A after 3.2): -(NSRange)markedTextRange;
 // in a protocol (since 3.2): -(NSRange)_markedTextRange;
 // in a protocol: -(id)selectedDOMRange;
 // in a protocol: -(void)setSelectedDOMRange:(id)range affinityDownstream:(BOOL)downstream;
--(id)rangeByMovingCurrentSelection:(int)selection;	// in a protocol below 3.2
--(id)rangeByExtendingCurrentSelection:(int)selection;	// in a protocol below 3.2
--(void)extendCurrentSelection:(int)selection;	// in a protocol below 3.2
+-(id)rangeByMovingCurrentSelection:(int)selection;  // in a protocol below 3.2
+-(id)rangeByExtendingCurrentSelection:(int)selection; // in a protocol below 3.2
+-(void)extendCurrentSelection:(int)selection; // in a protocol below 3.2
 // in a protocol: -(void)moveBackward:(unsigned)backward;
 // in a protocol: -(void)moveForward:(unsigned)forward;
 // in a protocol: -(void)selectAll;
--(void)setText:(id)text;	// in a protocol below 3.2
--(id)text;	// in a protocol below 3.2
+-(void)setText:(id)text;  // in a protocol below 3.2
+-(id)text;  // in a protocol below 3.2
 -(void)setSelectionWithPoint:(CGPoint)point;
 -(CGRect)caretRect;
--(CGRect)convertCaretRect:(CGRect)rect;	// in a protocol below 3.2
+-(CGRect)convertCaretRect:(CGRect)rect; // in a protocol below 3.2
 // in a protocol (N/A after 3.2): -(id)keyboardInputView;
 -(BOOL)isShowingPlaceholder;
 -(void)setupPlaceholderTextIfNeeded;
@@ -105,11 +105,11 @@
 // in a protocol: -(CGRect)selectionClipRect;
 // in a protocol: -(void)beginSelectionChange;
 // in a protocol: -(void)endSelectionChange;
--(void)updateSelection;	// in a protocol below 3.2
+-(void)updateSelection; // in a protocol below 3.2
 -(BOOL)becomesEditableWithGestures;
 -(void)setBecomesEditableWithGestures:(BOOL)gestures;
--(void)detachSelectionView;	// in a protocol below 3.2
--(void)detachInteractionAssistant;	// in a protocol below 3.2
+-(void)detachSelectionView; // in a protocol below 3.2
+-(void)detachInteractionAssistant;  // in a protocol below 3.2
 -(CGRect)visibleBounds;
 // in a protocol (since 3.2): -(BOOL)hasText;
 // in a protocol (since 3.2): -(id)textInRange:(id)range;

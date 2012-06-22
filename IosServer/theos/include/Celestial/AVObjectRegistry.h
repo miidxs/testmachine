@@ -10,8 +10,8 @@
 @class NSMutableSet, NSRecursiveLock;
 
 @interface AVObjectRegistry : NSObject {
-	NSMutableSet* _registeredObjects;
-	NSRecursiveLock* _lock;
+  NSMutableSet* _registeredObjects;
+  NSRecursiveLock* _lock;
 }
 +(id)defaultObjectRegistry;
 -(id)init;

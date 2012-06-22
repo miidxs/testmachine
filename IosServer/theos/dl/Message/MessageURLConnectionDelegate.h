@@ -10,9 +10,9 @@
 @class NSMutableData, NSError;
 
 @interface MessageURLConnectionDelegate : NSObject {
-	NSMutableData* _responseBody;
-	BOOL _done;
-	NSError* _error;
+  NSMutableData* _responseBody;
+  BOOL _done;
+  NSError* _error;
 }
 -(void)connection:(id)connection didReceiveData:(id)data;
 -(void)connection:(id)connection didFailWithError:(id)error;

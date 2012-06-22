@@ -11,10 +11,10 @@
 @class NSString;
 
 @interface DAVCertificateInfo : NSObject {
-	NSString* _title;
-	NSString* _message;
-	SecTrust* _trustRef;
-	int _returnCode;
+  NSString* _title;
+  NSString* _message;
+  SecTrust* _trustRef;
+  int _returnCode;
 }
 -(id)initWithTitle:(id)title message:(id)message trustRef:(SecTrust*)ref;
 // inherited: -(void)dealloc;

@@ -11,8 +11,8 @@
 
 @interface MPMovieThumbnailRequest : NSObject {
 @private
-	NSArray* _times;
-	int _timeOption;
+  NSArray* _times;
+  int _timeOption;
 }
 @property(retain, nonatomic) NSArray* times;
 @property(assign, nonatomic) int timeOption;

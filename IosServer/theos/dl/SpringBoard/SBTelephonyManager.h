@@ -10,15 +10,15 @@
 #import <Availability2.h>
 
 @interface SBTelephonyManager : NSObject {
-	void* _suspendDormancyAssertion;
-	NSString* _operatorName;
-	unsigned _suspendDormancyEnabled;
-	unsigned _usingWifi : 1;
-	unsigned _usingVPN : 1;
-	unsigned _iTunesNeedsToRecheckActivation : 1;
-	unsigned _pretendingToSearch : 1;
-	unsigned _callForwardingIndicator : 2;
-	unsigned _usingWirelessModem : 1;
+  void* _suspendDormancyAssertion;
+  NSString* _operatorName;
+  unsigned _suspendDormancyEnabled;
+  unsigned _usingWifi : 1;
+  unsigned _usingVPN : 1;
+  unsigned _iTunesNeedsToRecheckActivation : 1;
+  unsigned _pretendingToSearch : 1;
+  unsigned _callForwardingIndicator : 2;
+  unsigned _usingWirelessModem : 1;
 }
 +(SBTelephonyManager *)sharedTelephonyManager;
 // inherited: -(id)init;

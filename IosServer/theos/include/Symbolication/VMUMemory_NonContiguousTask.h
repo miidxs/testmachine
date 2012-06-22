@@ -12,9 +12,9 @@
 @class VMUMachTaskContainer, VMUArchitecture;
 
 @interface VMUMemory_NonContiguousTask : VMUMemory_Base <VMUMemory> {
-	VMUMachTaskContainer* _machTaskContainer;
-	VMURange _addressRange;
-	VMUArchitecture* _architecture;
+  VMUMachTaskContainer* _machTaskContainer;
+  VMURange _addressRange;
+  VMUArchitecture* _architecture;
 }
 +(id)memoryWithPid:(int)pid;
 +(id)memoryWithPid:(int)pid addressRange:(VMURange)range architecture:(id)architecture;

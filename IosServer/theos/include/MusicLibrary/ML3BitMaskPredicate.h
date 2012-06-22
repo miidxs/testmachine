@@ -11,8 +11,8 @@
 
 @interface ML3BitMaskPredicate : ML3PropertyPredicate {
 @private
-	long long _mask;
-	long long _value;
+  long long _mask;
+  long long _value;
 }
 @property(assign, nonatomic) long long mask;
 @property(assign, nonatomic) long long value;

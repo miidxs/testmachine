@@ -40,15 +40,15 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 extern "C" {
 #endif
 
-	CGAffineTransform GSGeometryGetTransformFromRectToRect(CGRect from, CGRect to);
+  CGAffineTransform GSGeometryGetTransformFromRectToRect(CGRect from, CGRect to);
 
-	/// Create a string representing the affine transform, in the form "[%f %f %f %f %f %f]"
-	CFStringRef CFStringCreateWithCGAffineTransform(CGAffineTransform tx);
-	
-	CFStringRef CFStringCreateWithCGSize(CGSize size);
-	CFStringRef CFStringCreateWithCGPoint(CGPoint pt);
-	CFStringRef CFStringCreateWithCGRect(CGRect rect);
-	
+  /// Create a string representing the affine transform, in the form "[%f %f %f %f %f %f]"
+  CFStringRef CFStringCreateWithCGAffineTransform(CGAffineTransform tx);
+  
+  CFStringRef CFStringCreateWithCGSize(CGSize size);
+  CFStringRef CFStringCreateWithCGPoint(CGPoint pt);
+  CFStringRef CFStringCreateWithCGRect(CGRect rect);
+  
 #if __cplusplus
 }
 #endif

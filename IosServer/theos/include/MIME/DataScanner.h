@@ -10,8 +10,8 @@
 @class NSData;
 
 @interface DataScanner : NSObject {
-	NSData* myData;
-	unsigned myLocation;
+  NSData* myData;
+  unsigned myLocation;
 }
 +(id)scannerWithData:(id)data;
 -(void)setData:(id)data;

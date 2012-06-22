@@ -12,22 +12,22 @@
 @class PLImageTile, UIImage, MLPhoto, PLCropOverlay, PLVideoRemaker, PLVideoView, NSString;
 
 @interface PLUIImageViewController : UIViewController <PLVideoViewDelegate> {
-	MLPhoto* _photo;
-	CGImageRef _imageRef;
-	UIImage* _image;
-	CGRect _cropRect;
-	PLCropOverlay* _cropOverlay;
-	PLImageTile* _imageTile;
-	PLVideoView* _videoView;
-	PLVideoRemaker* _remaker;
-	NSString* _videoPath;
-	int _previousStatusBarMode;
-	int _newStatusBarMode;
-	unsigned _allowEditing : 1;
-	unsigned _statusBarWasHidden : 1;
-	unsigned _isVideo : 1;
-	unsigned _isDisappearing : 1;
-	unsigned _remaking : 1;
+  MLPhoto* _photo;
+  CGImageRef _imageRef;
+  UIImage* _image;
+  CGRect _cropRect;
+  PLCropOverlay* _cropOverlay;
+  PLImageTile* _imageTile;
+  PLVideoView* _videoView;
+  PLVideoRemaker* _remaker;
+  NSString* _videoPath;
+  int _previousStatusBarMode;
+  int _newStatusBarMode;
+  unsigned _allowEditing : 1;
+  unsigned _statusBarWasHidden : 1;
+  unsigned _isVideo : 1;
+  unsigned _isDisappearing : 1;
+  unsigned _remaking : 1;
 }
 -(BOOL)_displaysFullScreen;
 -(id)initWithPhoto:(id)photo;

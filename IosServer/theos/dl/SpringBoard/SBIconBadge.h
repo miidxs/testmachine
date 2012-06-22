@@ -11,9 +11,9 @@
 @class NSString;
 
 @interface SBIconBadge : UIView {
-	NSString* _badge;
-	CGSize _badgeContentSize;
-	BOOL _highlighted;
+  NSString* _badge;
+  CGSize _badgeContentSize;
+  BOOL _highlighted;
 }
 -(id)initWithBadge:(id)badge;
 // inherited: -(void)dealloc;

@@ -10,7 +10,7 @@
 @class SBApplication;
 
 @interface SBRemoteNotificationNeedIdentityAlert : SBAlertItem {
-	SBApplication* _app;
+  SBApplication* _app;
 }
 -(id)initWithApplication:(id)application;
 // inherited: -(void)dealloc;

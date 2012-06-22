@@ -10,7 +10,7 @@
 @class NSDictionary;
 
 @interface MailAccountProxy : NSObject {
-	NSDictionary* _properties;
+  NSDictionary* _properties;
 }
 +(void)reloadAccounts;
 +(id)defaultMailAccountForDelivery;

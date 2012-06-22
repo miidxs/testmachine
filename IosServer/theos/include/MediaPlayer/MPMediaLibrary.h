@@ -33,7 +33,7 @@
 
 @interface MPMediaLibrary : NSObject {
 @private
-	id _internal;
+  id _internal;
 }
 @property(readonly, assign, nonatomic) NSDate* lastModifiedDate;
 +(Class)_implementationClass;

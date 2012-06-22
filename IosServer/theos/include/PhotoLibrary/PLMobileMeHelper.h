@@ -10,10 +10,10 @@
 @class NSDictionary, NSMutableArray, NSArray;
 
 @interface PLMobileMeHelper : NSObject {
-	BOOL _performedFullAccountScan;
-	NSMutableArray* _usernamesToCheck;
-	NSArray* _likelyValidUsernames;
-	NSDictionary* _usernameMap;
+  BOOL _performedFullAccountScan;
+  NSMutableArray* _usernamesToCheck;
+  NSArray* _likelyValidUsernames;
+  NSDictionary* _usernameMap;
 }
 // inherited: +(void)initialize;
 +(id)_copyPasswordForUsername:(id)username;

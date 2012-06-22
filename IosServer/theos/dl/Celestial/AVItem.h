@@ -11,7 +11,7 @@
 
 @interface AVItem : NSObject {
 @private
-	AVItemPrivate* _priv;
+  AVItemPrivate* _priv;
 }
 +(id)avItem;
 +(id)avItemWithPath:(id)path error:(id*)error;

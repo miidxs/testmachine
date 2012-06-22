@@ -9,9 +9,9 @@
 @class UIImageView;
 
 @interface CKProgressBar : UIView {
-	UIImageView* _well;
-	UIImageView* _fill;
-	float _progressValue;
+  UIImageView* _well;
+  UIImageView* _fill;
+  float _progressValue;
 }
 @property(assign, nonatomic) float progressValue;
 +(float)defaultHeight;

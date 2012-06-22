@@ -11,8 +11,8 @@
 @class NSString;
 
 @interface DADContactsSearchQuery : DADSearchQuery {
-	NSString* _searchBase;
-	NSString* _searchScope;
+  NSString* _searchBase;
+  NSString* _searchScope;
 }
 @property(retain) NSString* searchBase;
 @property(retain) NSString* searchScope;

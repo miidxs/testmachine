@@ -11,13 +11,13 @@
 @class NSTimer, SMTPConnection;
 
 @interface SMTPAccount : DeliveryAccount {
-	Class _deliveryClass;
-	SMTPConnection* _connection;
-	NSTimer* _timer;
-	int _lastTimerSetTime;
-	unsigned _supportsPipelining : 1;
-	unsigned _supportsOutboxCopy : 1;
-	unsigned _useCellDataOnly : 1;
+  Class _deliveryClass;
+  SMTPConnection* _connection;
+  NSTimer* _timer;
+  int _lastTimerSetTime;
+  unsigned _supportsPipelining : 1;
+  unsigned _supportsOutboxCopy : 1;
+  unsigned _useCellDataOnly : 1;
 }
 // inherited: +(id)basicAccountProperties;
 // inherited: +(id)accountTypeString;

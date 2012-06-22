@@ -11,13 +11,13 @@
 @class NSData, NSString;
 
 @interface ConnectionSettings : NSObject {
-	NSString* _hostname;
-	NSString* _serviceName;
-	unsigned _portNumber;
-	NSData* _serverCertificateDigest;
-	CFStringRef _connectionServiceType;
-	unsigned _usesSSL : 1;
-	unsigned _tryDirectSSLConnection : 1;
+  NSString* _hostname;
+  NSString* _serviceName;
+  unsigned _portNumber;
+  NSData* _serverCertificateDigest;
+  CFStringRef _connectionServiceType;
+  unsigned _usesSSL : 1;
+  unsigned _tryDirectSSLConnection : 1;
 }
 // inherited: -(void)dealloc;
 -(id)hostname;

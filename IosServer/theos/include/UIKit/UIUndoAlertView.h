@@ -8,9 +8,9 @@
 @class NSUndoManager;
 
 @interface UIUndoAlertView : UIAlertView {
-	int _undoButtonIndex;
-	int _redoButtonIndex;
-	NSUndoManager* _undoManager;
+  int _undoButtonIndex;
+  int _redoButtonIndex;
+  NSUndoManager* _undoManager;
 }
 @property(readonly, assign, nonatomic) int undoButtonIndex;
 @property(readonly, assign, nonatomic) int redoButtonIndex;

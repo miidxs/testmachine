@@ -10,8 +10,8 @@
 
 
 @interface SBNowPlayingAlertItemPushButton : UIPushButton {
-	float _yOffset;
-	float _xOffset;
+  float _yOffset;
+  float _xOffset;
 }
 // inherited: -(id)initWithImage:(id)image;
 -(void)setYOffset:(float)offset;

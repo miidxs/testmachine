@@ -13,10 +13,10 @@
 __attribute__((visibility("hidden")))
 @interface MLGroupQueryImpl_SQL : MLTrackQueryImpl_SQL {
 @private
-	unsigned _queryResultsSimplePropertyType;
-	MLSQLPredicate* _cpredParts;
-	MLSQLOrderBy* _orderByPart;
-	CFArrayRef _containedMediaTypes;
+  unsigned _queryResultsSimplePropertyType;
+  MLSQLPredicate* _cpredParts;
+  MLSQLOrderBy* _orderByPart;
+  CFArrayRef _containedMediaTypes;
 }
 -(void)freeQueryResults;
 -(void)evaluate;

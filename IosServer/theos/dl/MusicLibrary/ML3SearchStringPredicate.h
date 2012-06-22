@@ -12,8 +12,8 @@
 
 @interface ML3SearchStringPredicate : ML3Predicate {
 @private
-	NSArray* _properties;
-	NSString* _searchString;
+  NSArray* _properties;
+  NSString* _searchString;
 }
 @property(copy, nonatomic) NSArray* properties;
 @property(copy, nonatomic) NSString* searchString;

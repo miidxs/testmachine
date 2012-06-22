@@ -12,8 +12,8 @@
 
 @interface MPMediaItemArtworkInternal : NSObject {
 @private
-	MPMediaItem* _item;
-	MLArtworkInstanceInfo _artworkInfo;
+  MPMediaItem* _item;
+  MLArtworkInstanceInfo _artworkInfo;
 }
 @end
 

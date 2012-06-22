@@ -10,10 +10,10 @@
 @class ASAccount, NSMutableDictionary;
 
 @interface ASFolderHierarchy : NSObject {
-	ASAccount* _account;
-	NSMutableDictionary* _folderCache;
-	NSMutableDictionary* _folderByIdCache;
-	id _delegate;
+  ASAccount* _account;
+  NSMutableDictionary* _folderCache;
+  NSMutableDictionary* _folderByIdCache;
+  id _delegate;
 }
 +(id)_folderCacheFilenameWithId:(id)anId;
 +(void)cleanUpFilesForAccountWithId:(id)anId;

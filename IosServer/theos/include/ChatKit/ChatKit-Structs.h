@@ -19,21 +19,21 @@ typedef struct __CKSMSAddress* CKSMSAddressRef;
 #if __cplusplus
 extern "C" {
 #endif
-	
-	BOOL isEmoji(unichar character);
-	
-	CGFloat CKGetMaxPreviewImageDimensionLength();	// == 129
-	UIColor* CKGetTextEntryBackgroundColor();
-	NSString* CKLocalizedSMSActionString();
-	NSString* CKLocalizedMMSActionString(NSString* who);
-	
-	BOOL CKDeviceSupportsVideo();
-	void CKLog(NSString* context, NSString* format, ...);
-	BOOL CKShouldPlaySMSSounds();
-	ABAddressBookRef CKGetAddressBook();
-	BOOL CKMMSEnabled();
-	BOOL CKShowSubjectEnabled();
-	
+  
+  BOOL isEmoji(unichar character);
+  
+  CGFloat CKGetMaxPreviewImageDimensionLength();  // == 129
+  UIColor* CKGetTextEntryBackgroundColor();
+  NSString* CKLocalizedSMSActionString();
+  NSString* CKLocalizedMMSActionString(NSString* who);
+  
+  BOOL CKDeviceSupportsVideo();
+  void CKLog(NSString* context, NSString* format, ...);
+  BOOL CKShouldPlaySMSSounds();
+  ABAddressBookRef CKGetAddressBook();
+  BOOL CKMMSEnabled();
+  BOOL CKShowSubjectEnabled();
+  
 #if __cplusplus
 }
 #endif

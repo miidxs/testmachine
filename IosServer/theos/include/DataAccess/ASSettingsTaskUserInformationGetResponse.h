@@ -10,7 +10,7 @@
 @class NSArray;
 
 @interface ASSettingsTaskUserInformationGetResponse : ASItem {
-	NSArray* _emailAddresses;
+  NSArray* _emailAddresses;
 }
 @property(retain, nonatomic) NSArray* emailAddresses;
 // inherited: +(BOOL)acceptsTopLevelLeaves;

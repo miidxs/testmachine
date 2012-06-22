@@ -10,7 +10,7 @@
 @class SBCalendarIconContentsView;
 
 @interface SBCalendarApplicationIcon : SBApplicationIcon {
-	SBCalendarIconContentsView* _dateContents;
+  SBCalendarIconContentsView* _dateContents;
 }
 // inherited: -(id)initWithApplication:(id)application;
 // inherited: -(void)dealloc;

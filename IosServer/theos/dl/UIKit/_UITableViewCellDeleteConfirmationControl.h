@@ -9,7 +9,7 @@
 @class NSString;
 
 @interface _UITableViewCellDeleteConfirmationControl : UIControl {
-	NSString* _title;
+  NSString* _title;
 }
 @property(readonly, assign, nonatomic) NSString* title;
 @property(readonly, assign, nonatomic) CGSize size;

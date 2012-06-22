@@ -20,12 +20,12 @@
 @end
 
 @interface MobileCalDAVAccountRefreshActor : AKActor <MobileCalDAVAccountRefreshActor> {
-	id<CalDAVRefreshActorCallback> _callbackTarget;
-	NSThread* _callbackThread;
-	CalDAVOperationQueue* _queue;
-	BOOL _wasCancelledEarly;
-	CalDAVRefreshContext* _context;
-	NSTimer* _cancellationTimer;
+  id<CalDAVRefreshActorCallback> _callbackTarget;
+  NSThread* _callbackThread;
+  CalDAVOperationQueue* _queue;
+  BOOL _wasCancelledEarly;
+  CalDAVRefreshContext* _context;
+  NSTimer* _cancellationTimer;
 }
 // in a protocol: @property(readonly, assign, nonatomic) CalDAVRefreshContext* context;
 +(void)setCalDAVRefreshBackgroundTasksShouldCancel:(BOOL)cancel;

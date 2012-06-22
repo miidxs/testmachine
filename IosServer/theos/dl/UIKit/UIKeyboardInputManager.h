@@ -48,11 +48,11 @@
 /*!
  Tells the input manager an input is made and should be appended to the input string.
  
- @param input	The string to be appended.
- @param flags	Flags about the state that the input is produced. 1 = Shift, 2 = Autoshift.
- @param point	At which point on the keyboard the touch was made.
- @param charsToDelete	Returns how many characters will be deleted after this method is completed, although it seems there're no effects.
- @param fromVariantKey	Whether the input was made from a variant key.
+ @param input The string to be appended.
+ @param flags Flags about the state that the input is produced. 1 = Shift, 2 = Autoshift.
+ @param point At which point on the keyboard the touch was made.
+ @param charsToDelete Returns how many characters will be deleted after this method is completed, although it seems there're no effects.
+ @param fromVariantKey  Whether the input was made from a variant key.
  @return The actual string to insert.
  
  @p charsToDelete and the return value are ignored when there are candidates. The default behavior sets @p charsToDelete points to zero and returns @p input.
@@ -72,7 +72,7 @@
 /*!
  Tells the input manager characters should be deleted from the input string.
  
- @param charsToDelete	How many characters should the input delegate actually deleted. Default should store 1.
+ @param charsToDelete How many characters should the input delegate actually deleted. Default should store 1.
  @return The string to insert after this method is completed. Default to nil.
  
  Called from  -[UIKeyboardImpl handleDeleteWithNonZeroInputCount]. 

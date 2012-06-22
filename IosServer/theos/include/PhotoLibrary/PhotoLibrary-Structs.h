@@ -12,15 +12,15 @@
 #import <ImageIO/ImageIO.h>
 
 typedef struct {
-	id _field1;
-	float _field2;
-	CFArrayRef _field3;
-	float _field4;
+  id _field1;
+  float _field2;
+  CFArrayRef _field3;
+  float _field4;
 } XXStruct_z8YKPA;
 
 typedef struct {
-	CGRect _field1;
-	CGRect _field2;
-	CGRect _field3;
+  CGRect _field1;
+  CGRect _field2;
+  CGRect _field3;
 } XXStruct_SIyEID;
 

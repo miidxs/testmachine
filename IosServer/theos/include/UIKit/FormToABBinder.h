@@ -8,9 +8,9 @@
 @class NSDictionary, NSArray;
 
 @interface FormToABBinder : NSObject {
-	NSDictionary* _abPointers;
-	NSArray* _fieldLabels;
-	NSDictionary* _synonyms;
+  NSDictionary* _abPointers;
+  NSArray* _fieldLabels;
+  NSDictionary* _synonyms;
 }
 +(void)loadBinders;
 +(void)clearBinders;

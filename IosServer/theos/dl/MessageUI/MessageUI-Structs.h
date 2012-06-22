@@ -11,9 +11,9 @@
 #import <QuartzCore/QuartzCore.h>
 
 typedef struct {
-	unsigned _field1 : 1;
-	unsigned _field2 : 1;
-	unsigned _field3 : 1;
+  unsigned _field1 : 1;
+  unsigned _field2 : 1;
+  unsigned _field3 : 1;
 } XXStruct_mj3sZD;
 
 typedef struct TiledSurface TiledSurface;
@@ -21,7 +21,7 @@ typedef struct TiledSurface TiledSurface;
 /*
 template<>
 struct ProtectedPtr<JSC::JSGlobalObject> {
-	JSGlobalObjectRef _field1;
+  JSGlobalObjectRef _field1;
 };
 
 template<>
@@ -29,73 +29,73 @@ struct pair<JSC::JSObject*,unsigned int>;
 
 template<>
 struct HashTable<JSC::JSObject*,std::pair<JSC::JSObject*, unsigned int>,WTF::PairFirstExtractor<std::pair<JSC::JSObject*, unsigned int> >,WTF::PtrHash<JSC::JSObject*>,WTF::PairHashTraits<WTF::HashTraits<JSC::JSObject*>, WTF::HashTraits<unsigned int> >,WTF::HashTraits<JSC::JSObject*> > {
-	pair<JSC::JSObject*,unsigned int>* _field1;
-	int _field2;
-	int _field3;
-	int _field4;
-	int _field5;
+  pair<JSC::JSObject*,unsigned int>* _field1;
+  int _field2;
+  int _field3;
+  int _field4;
+  int _field5;
 };
 
 template<>
 struct HashMap<JSC::JSObject*,unsigned int,WTF::PtrHash<JSC::JSObject*>,WTF::HashTraits<JSC::JSObject*>,WTF::HashTraits<unsigned int> > {
-	HashTable<JSC::JSObject*,std::pair<JSC::JSObject*, unsigned int>,WTF::PairFirstExtractor<std::pair<JSC::JSObject*, unsigned int> >,WTF::PtrHash<JSC::JSObject*>,WTF::PairHashTraits<WTF::HashTraits<JSC::JSObject*>, WTF::HashTraits<unsigned int> >,WTF::HashTraits<JSC::JSObject*> > _field1;
+  HashTable<JSC::JSObject*,std::pair<JSC::JSObject*, unsigned int>,WTF::PairFirstExtractor<std::pair<JSC::JSObject*, unsigned int> >,WTF::PtrHash<JSC::JSObject*>,WTF::PairHashTraits<WTF::HashTraits<JSC::JSObject*>, WTF::HashTraits<unsigned int> >,WTF::HashTraits<JSC::JSObject*> > _field1;
 };
 
 template<>
 struct HashCountedSet<JSC::JSObject*,WTF::PtrHash<JSC::JSObject*>,WTF::HashTraits<JSC::JSObject*> > {
-	HashMap<JSC::JSObject*,unsigned int,WTF::PtrHash<JSC::JSObject*>,WTF::HashTraits<JSC::JSObject*>,WTF::HashTraits<unsigned int> > _field1;
+  HashMap<JSC::JSObject*,unsigned int,WTF::PtrHash<JSC::JSObject*>,WTF::HashTraits<JSC::JSObject*>,WTF::HashTraits<unsigned int> > _field1;
 };
 
 typedef struct RuntimeObjectImp RuntimeObjectImp;
 
 template<>
 struct HashTable<JSC::RuntimeObjectImp*,JSC::RuntimeObjectImp*,WTF::IdentityExtractor<JSC::RuntimeObjectImp*>,WTF::PtrHash<JSC::RuntimeObjectImp*>,WTF::HashTraits<JSC::RuntimeObjectImp*>,WTF::HashTraits<JSC::RuntimeObjectImp*> > {
-	RuntimeObjectImp** _field1;
-	int _field2;
-	int _field3;
-	int _field4;
-	int _field5;
+  RuntimeObjectImp** _field1;
+  int _field2;
+  int _field3;
+  int _field4;
+  int _field5;
 };
 
 template<>
 struct HashSet<JSC::RuntimeObjectImp*,WTF::PtrHash<JSC::RuntimeObjectImp*>,WTF::HashTraits<JSC::RuntimeObjectImp*> > {
-	HashTable<JSC::RuntimeObjectImp*,JSC::RuntimeObjectImp*,WTF::IdentityExtractor<JSC::RuntimeObjectImp*>,WTF::PtrHash<JSC::RuntimeObjectImp*>,WTF::HashTraits<JSC::RuntimeObjectImp*>,WTF::HashTraits<JSC::RuntimeObjectImp*> > _field1;
+  HashTable<JSC::RuntimeObjectImp*,JSC::RuntimeObjectImp*,WTF::IdentityExtractor<JSC::RuntimeObjectImp*>,WTF::PtrHash<JSC::RuntimeObjectImp*>,WTF::HashTraits<JSC::RuntimeObjectImp*>,WTF::HashTraits<JSC::RuntimeObjectImp*> > _field1;
 };
  
 typedef struct RootObject {
-	int _field1;
-	bool _field2;
-	void* _field3;
-	ProtectedPtr<JSC::JSGlobalObject> _field4;
-	HashCountedSet<JSC::JSObject*,WTF::PtrHash<JSC::JSObject*>,WTF::HashTraits<JSC::JSObject*> > _field5;
-	HashSet<JSC::RuntimeObjectImp*,WTF::PtrHash<JSC::RuntimeObjectImp*>,WTF::HashTraits<JSC::RuntimeObjectImp*> > _field6;
+  int _field1;
+  bool _field2;
+  void* _field3;
+  ProtectedPtr<JSC::JSGlobalObject> _field4;
+  HashCountedSet<JSC::JSObject*,WTF::PtrHash<JSC::JSObject*>,WTF::HashTraits<JSC::JSObject*> > _field5;
+  HashSet<JSC::RuntimeObjectImp*,WTF::PtrHash<JSC::RuntimeObjectImp*>,WTF::HashTraits<JSC::RuntimeObjectImp*> > _field6;
 } RootObject;
 
 typedef struct Structure Structure;
 
 template<>
 struct RefPtr<JSC::Structure> {
-	Structure* _field1;
+  Structure* _field1;
 };
 
 typedef struct JSCell* JSCellRef;
 typedef struct JSValuePtr {
-	JSCellRef _field1;
+  JSCellRef _field1;
 } JSValuePtr;
 
 struct JSCell* JSCellRef;
 
 typedef struct JSObject {
-	//function-pointer
-	void** _field1;
-	Structure* _field2;
-	RefPtr<JSC::Structure> _field3;
-	JSValuePtr* _field4;
-	JSValuePtr _field5[2];
+  //function-pointer
+  void** _field1;
+  Structure* _field2;
+  RefPtr<JSC::Structure> _field3;
+  JSValuePtr* _field4;
+  JSValuePtr _field5[2];
 } JSObject;
 
 template<>
 struct PassRefPtr<JSC::Bindings::RootObject> {
-	RootObject* _field1;
+  RootObject* _field1;
 };
 */

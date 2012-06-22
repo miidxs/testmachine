@@ -7,13 +7,13 @@
 __attribute__((visibility("hidden")))
 @interface UIInputSwitcherView : UIView <UITableViewDataSource, UITableViewDelegate> {
 @private
-	UITableView* m_table;
-	UIView* m_shadowView;
-	UIView* m_selExtraView;
-	int m_mode;
-	CGRect m_referenceRect;
-	float m_pointerOffset;
-	NSIndexPath* m_currentInputModeIndexPath;
+  UITableView* m_table;
+  UIView* m_shadowView;
+  UIView* m_selExtraView;
+  int m_mode;
+  CGRect m_referenceRect;
+  float m_pointerOffset;
+  NSIndexPath* m_currentInputModeIndexPath;
 }
 @property(readonly, assign, nonatomic) int mode;
 +(id)sharedInstance;

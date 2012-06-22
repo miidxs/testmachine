@@ -7,8 +7,8 @@
 
 
 @interface UIInformalDelegate : NSObject {
-	id _target;
-	id _default;
+  id _target;
+  id _default;
 }
 +(id)informalDelegateWithDefaultTarget:(id)defaultTarget;
 -(id)initWithDefaultTarget:(id)defaultTarget;

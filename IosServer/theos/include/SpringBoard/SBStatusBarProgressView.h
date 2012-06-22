@@ -11,10 +11,10 @@
 @class UIProgressIndicator;
 
 @interface SBStatusBarProgressView : SBStatusBarContentView {
-	UIProgressIndicator* _progressIndicator;
-	BOOL _wasLastUsingASlowConnection;
-	BOOL _showProgressView;
-	BOOL _showOnLeft;
+  UIProgressIndicator* _progressIndicator;
+  BOOL _wasLastUsingASlowConnection;
+  BOOL _showProgressView;
+  BOOL _showOnLeft;
 }
 // inherited: -(id)init;
 // inherited: -(void)dealloc;

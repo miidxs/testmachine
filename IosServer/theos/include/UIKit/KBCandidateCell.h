@@ -11,18 +11,18 @@
 
 __attribute__((visibility("hidden")))
 @interface KBCandidateCell : UIView {
-	NSString* _candidate;
-	unsigned _index;
-	CGSize _stringImageSize;
-	BOOL _isLastInLine;
-	BOOL _highlighted;
-	float _atBottom;
-	id _target;
-	SEL _action;
-	BOOL _drawDone;
-	BOOL _stringMayBeTooLong;
+  NSString* _candidate;
+  unsigned _index;
+  CGSize _stringImageSize;
+  BOOL _isLastInLine;
+  BOOL _highlighted;
+  float _atBottom;
+  id _target;
+  SEL _action;
+  BOOL _drawDone;
+  BOOL _stringMayBeTooLong;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	BOOL _drawLeftBoundary;
+  BOOL _drawLeftBoundary;
 #endif
 }
 +(id)font;

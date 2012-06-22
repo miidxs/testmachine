@@ -11,12 +11,12 @@
 @class MPTimeMarker;
 
 @interface MPVideoChapterCellContentView : UIView {
-	unsigned _current : 1;
-	unsigned _index;
-	unsigned _selected : 1;
-	unsigned _showThumbnailColumn : 1;
-	float _timeColumnWidth;
-	MPTimeMarker* _timeMarker;
+  unsigned _current : 1;
+  unsigned _index;
+  unsigned _selected : 1;
+  unsigned _showThumbnailColumn : 1;
+  float _timeColumnWidth;
+  MPTimeMarker* _timeMarker;
 }
 @property(assign, nonatomic) unsigned index;
 @property(assign, nonatomic) float timeColumnWidth;

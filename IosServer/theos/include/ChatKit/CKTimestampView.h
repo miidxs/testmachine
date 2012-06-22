@@ -8,7 +8,7 @@
 @class UILabel;
 
 @interface CKTimestampView : UITableViewCell {
-	UILabel* _label;
+  UILabel* _label;
 }
 -(id)initWithStyle:(int)style reuseIdentifier:(id)identifier;
 -(void)setDate:(id)date;

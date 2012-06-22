@@ -12,20 +12,20 @@
 @class NSMutableSet, NSMutableDictionary;
 
 @interface SBDisplay : NSObject {
-	NSMutableDictionary* _displayValues;
-	NSMutableDictionary* _activationValues;
-	NSMutableDictionary* _deactivationValues;
-	unsigned _displaySettings;
-	unsigned _activationSettings;
-	unsigned _deactivationSettings;
-	NSMutableSet* _suppressVolumeHudCategories;
-	float _autoDimOverride;
-	float _autoLockOverride;
-	float _accelerometerSampleInterval;
-	unsigned _expectsFaceContact : 1;
-	unsigned _accelerometerDeviceOrientationChangedEventsEnabled : 1;
-	unsigned _proximityEventsEnabled : 1;
-	unsigned _showsProgress;
+  NSMutableDictionary* _displayValues;
+  NSMutableDictionary* _activationValues;
+  NSMutableDictionary* _deactivationValues;
+  unsigned _displaySettings;
+  unsigned _activationSettings;
+  unsigned _deactivationSettings;
+  NSMutableSet* _suppressVolumeHudCategories;
+  float _autoDimOverride;
+  float _autoLockOverride;
+  float _accelerometerSampleInterval;
+  unsigned _expectsFaceContact : 1;
+  unsigned _accelerometerDeviceOrientationChangedEventsEnabled : 1;
+  unsigned _proximityEventsEnabled : 1;
+  unsigned _showsProgress;
 }
 +(NSString *)_displayStatePath;
 +(void)loadDisplayStates;

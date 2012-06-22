@@ -7,9 +7,9 @@
 __attribute__((visibility("hidden")))
 @interface UIInputSwitcherTableCellBackgroundView : UIView {
 @private
-	BOOL m_first;
-	BOOL m_last;
-	BOOL m_selected;
+  BOOL m_first;
+  BOOL m_last;
+  BOOL m_selected;
 }
 @property(assign, nonatomic) BOOL first;
 @property(assign, nonatomic) BOOL last;

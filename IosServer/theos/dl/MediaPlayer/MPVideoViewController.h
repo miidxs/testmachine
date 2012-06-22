@@ -14,30 +14,30 @@
 @class UIColor, MPTVOutWindow, MPVideoBackgroundView, MPSwipableView, MPVideoView, UIView, UIProgressIndicator, UIAlertView;
 
 @interface MPVideoViewController : MPViewController <MPSwipableViewDelegate, MPVideoTransferViewController, UIAlertViewDelegate> {
-	MPVideoBackgroundView* _backgroundView;
-	MPSwipableView* _backstopView;
-	unsigned _desiredParts;
-	unsigned _disabledParts;
-	unsigned _visibleParts;
-	unsigned _tvOutEnabled : 1;
-	unsigned _itemTypeOverride;
+  MPVideoBackgroundView* _backgroundView;
+  MPSwipableView* _backstopView;
+  unsigned _desiredParts;
+  unsigned _disabledParts;
+  unsigned _visibleParts;
+  unsigned _tvOutEnabled : 1;
+  unsigned _itemTypeOverride;
 @private
-	UIAlertView* _alertSheet;
-	UIColor* _backstopColor;
-	UIProgressIndicator* _loadingIndicator;
-	MPTVOutWindow* _tvOutWindow;
-	unsigned _scaleMode;
-	unsigned _canAnimateControlsOverlay : 1;
-	unsigned _canShowControlsOverlay : 1;
-	unsigned _disableControlsAutohide : 1;
-	unsigned _ownsStatusBar : 1;
-	unsigned _ownsVideoView : 1;
-	unsigned _playAfterPop : 1;
-	unsigned _scheduledLoadingIndicator : 1;
-	unsigned _displayPlaybackErrorAlerts : 1;
-	unsigned _allowsDetailScrubbing : 1;
-	unsigned _attemptAutoPlayWhenControlsHidden : 1;
-	unsigned _alwaysAllowHidingControlsOverlay : 1;
+  UIAlertView* _alertSheet;
+  UIColor* _backstopColor;
+  UIProgressIndicator* _loadingIndicator;
+  MPTVOutWindow* _tvOutWindow;
+  unsigned _scaleMode;
+  unsigned _canAnimateControlsOverlay : 1;
+  unsigned _canShowControlsOverlay : 1;
+  unsigned _disableControlsAutohide : 1;
+  unsigned _ownsStatusBar : 1;
+  unsigned _ownsVideoView : 1;
+  unsigned _playAfterPop : 1;
+  unsigned _scheduledLoadingIndicator : 1;
+  unsigned _displayPlaybackErrorAlerts : 1;
+  unsigned _allowsDetailScrubbing : 1;
+  unsigned _attemptAutoPlayWhenControlsHidden : 1;
+  unsigned _alwaysAllowHidingControlsOverlay : 1;
 }
 @property(assign, nonatomic) unsigned desiredParts;
 @property(assign, nonatomic) unsigned disabledParts;

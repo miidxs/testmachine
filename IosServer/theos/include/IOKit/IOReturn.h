@@ -42,7 +42,7 @@ extern "C" {
 
 #include <mach/error.h>
 
-typedef	kern_return_t		IOReturn;
+typedef kern_return_t   IOReturn;
 
 #ifndef sys_iokit
 #define sys_iokit                         err_system(0x38)
@@ -52,7 +52,7 @@ typedef	kern_return_t		IOReturn;
 #define sub_iokit_firewire                err_sub(2)
 #define sub_iokit_block_storage           err_sub(4)
 #define sub_iokit_graphics                err_sub(5)
-#define sub_iokit_networking		  err_sub(6)
+#define sub_iokit_networking      err_sub(6)
 #define sub_iokit_bluetooth               err_sub(8)
 #define sub_iokit_pmu                     err_sub(9)
 #define sub_iokit_acpi                    err_sub(10)
@@ -66,12 +66,12 @@ typedef	kern_return_t		IOReturn;
 #define sub_iokit_vendor_specific         err_sub(-2)
 #define sub_iokit_reserved                err_sub(-1)
 
-#define	iokit_common_err(return)          (sys_iokit|sub_iokit_common|return)
-#define	iokit_family_err(sub,return)      (sys_iokit|sub|return)
+#define iokit_common_err(return)          (sys_iokit|sub_iokit_common|return)
+#define iokit_family_err(sub,return)      (sys_iokit|sub|return)
 #define iokit_vendor_specific_err(return) (sys_iokit|sub_iokit_vendor_specific|return)
 
 #define kIOReturnSuccess         KERN_SUCCESS            // OK
-#define kIOReturnError           iokit_common_err(0x2bc) // general error 	
+#define kIOReturnError           iokit_common_err(0x2bc) // general error   
 #define kIOReturnNoMemory        iokit_common_err(0x2bd) // can't allocate memory 
 #define kIOReturnNoResources     iokit_common_err(0x2be) // resource shortage 
 #define kIOReturnIPCError        iokit_common_err(0x2bf) // error during IPC 
@@ -120,13 +120,13 @@ typedef	kern_return_t		IOReturn;
 #define kIOReturnUnsupportedMode iokit_common_err(0x2e6) // no such mode
 #define kIOReturnUnderrun        iokit_common_err(0x2e7) // data underrun
 #define kIOReturnOverrun         iokit_common_err(0x2e8) // data overrun
-#define kIOReturnDeviceError	 iokit_common_err(0x2e9) // the device is not working properly!
-#define kIOReturnNoCompletion	 iokit_common_err(0x2ea) // a completion routine is required
-#define kIOReturnAborted	 iokit_common_err(0x2eb) // operation aborted
-#define kIOReturnNoBandwidth	 iokit_common_err(0x2ec) // bus bandwidth would be exceeded
-#define kIOReturnNotResponding	 iokit_common_err(0x2ed) // device not responding
-#define kIOReturnIsoTooOld	 iokit_common_err(0x2ee) // isochronous I/O request for distant past!
-#define kIOReturnIsoTooNew	 iokit_common_err(0x2ef) // isochronous I/O request for distant future
+#define kIOReturnDeviceError   iokit_common_err(0x2e9) // the device is not working properly!
+#define kIOReturnNoCompletion  iokit_common_err(0x2ea) // a completion routine is required
+#define kIOReturnAborted   iokit_common_err(0x2eb) // operation aborted
+#define kIOReturnNoBandwidth   iokit_common_err(0x2ec) // bus bandwidth would be exceeded
+#define kIOReturnNotResponding   iokit_common_err(0x2ed) // device not responding
+#define kIOReturnIsoTooOld   iokit_common_err(0x2ee) // isochronous I/O request for distant past!
+#define kIOReturnIsoTooNew   iokit_common_err(0x2ef) // isochronous I/O request for distant future
 #define kIOReturnNotFound        iokit_common_err(0x2f0) // data was not found
 #define kIOReturnInvalid         iokit_common_err(0x1)   // should never be seen
 

@@ -10,8 +10,8 @@
 @class NSArray;
 
 @interface CalDAVGetResourceListOperation : CalDAVGetResourceOperation {
-	NSArray* _list;
-	int _index;
+  NSArray* _list;
+  int _index;
 }
 -(id)initWithSession:(id)session URI:(id)uri list:(id)list withIndex:(int)index;
 // inherited: -(void)dealloc;

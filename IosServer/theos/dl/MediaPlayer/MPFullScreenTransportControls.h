@@ -11,8 +11,8 @@
 @class UIImage;
 
 @interface MPFullScreenTransportControls : MPTransportControls {
-	UIImage* _backgroundImage;
-	float _requiredFrameSizeWidth;
+  UIImage* _backgroundImage;
+  float _requiredFrameSizeWidth;
 }
 -(id)init;
 -(void)dealloc;

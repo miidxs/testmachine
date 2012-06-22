@@ -11,9 +11,9 @@
 @class DAVXMLNode, NSMutableArray, NSMutableData;
 
 @interface DAVXMLTree : NSObject {
-	DAVXMLNode* root;
-	NSMutableArray* stack;
-	NSMutableData* contentData;
+  DAVXMLNode* root;
+  NSMutableArray* stack;
+  NSMutableData* contentData;
 }
 +(id)treeWithXMLData:(id)xmldata;
 -(id)initWithXMLData:(id)xmldata;

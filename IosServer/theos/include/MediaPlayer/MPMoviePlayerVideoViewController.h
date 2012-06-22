@@ -10,7 +10,7 @@
 
 
 @interface MPMoviePlayerVideoViewController : MPFullScreenVideoViewController {
-	BOOL _hideNavigationBar;
+  BOOL _hideNavigationBar;
 }
 @property(assign, nonatomic) BOOL hideNavigationBar;
 -(void)viewDidAppear:(BOOL)view;

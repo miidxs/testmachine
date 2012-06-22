@@ -12,21 +12,21 @@
 
 @interface AddressAtom : UIControl {
 @private
-	XXStruct_UUz0SD _atomImageSlices;
-	MFSlicedImageView* _leftCap;
-	MFSlicedImageView* _rightCap;
-	MFSlicedImageView* _center;
-	UITextLabel* _addressLabel;
-	id _delegate;
-	NSString* _fullAddress;
-	void* _person;
-	NSString* _displayString;
-	unsigned _maxWidth;
-	int _identifier;
-	unsigned _addressIsPhoneNumber : 1;
-	unsigned _needsToSendMouseUpEvents : 1;
-	unsigned _dragging : 1;
-	unsigned _updatedABPerson : 1;
+  XXStruct_UUz0SD _atomImageSlices;
+  MFSlicedImageView* _leftCap;
+  MFSlicedImageView* _rightCap;
+  MFSlicedImageView* _center;
+  UITextLabel* _addressLabel;
+  id _delegate;
+  NSString* _fullAddress;
+  void* _person;
+  NSString* _displayString;
+  unsigned _maxWidth;
+  int _identifier;
+  unsigned _addressIsPhoneNumber : 1;
+  unsigned _needsToSendMouseUpEvents : 1;
+  unsigned _dragging : 1;
+  unsigned _updatedABPerson : 1;
 }
 // inherited: +(void)initialize;
 -(void)_registerForNotifications;

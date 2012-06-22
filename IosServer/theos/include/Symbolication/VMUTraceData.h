@@ -11,13 +11,13 @@
 @class NSMapTable, NSMutableSet;
 
 @interface VMUTraceData : NSObject {
-	NSMapTable* pcMap;
-	NSMapTable* threadTraces;
-	NSMapTable* libXrefs;
-	NSMapTable* fnXrefs;
-	NSMutableSet* threadIDnumbers;
-	unsigned maxDepth;
-	unsigned threadCount;
+  NSMapTable* pcMap;
+  NSMapTable* threadTraces;
+  NSMapTable* libXrefs;
+  NSMapTable* fnXrefs;
+  NSMutableSet* threadIDnumbers;
+  unsigned maxDepth;
+  unsigned threadCount;
 }
 // inherited: -(id)init;
 -(void)freeXrefTable:(id)table;

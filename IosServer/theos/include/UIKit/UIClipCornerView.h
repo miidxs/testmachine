@@ -14,14 +14,14 @@
 @class UIImage;
 
 @interface UIClipCornerView : UIView {
-	float _cornerRadius;
-	int _rectCorner;
-	CGPoint _pathOrigin;
-	CGPathRef _clipPath;
-	UIImage* _backgroundImage;
-	CGRect _backgroundImageSubrect;
-	CGAffineTransform _backgroundTransform;
-	BOOL _useSnapshot;
+  float _cornerRadius;
+  int _rectCorner;
+  CGPoint _pathOrigin;
+  CGPathRef _clipPath;
+  UIImage* _backgroundImage;
+  CGRect _backgroundImageSubrect;
+  CGAffineTransform _backgroundTransform;
+  BOOL _useSnapshot;
 }
 @property(assign, nonatomic) float cornerRadius;
 @property(retain, nonatomic) UIImage* backgroundImage;

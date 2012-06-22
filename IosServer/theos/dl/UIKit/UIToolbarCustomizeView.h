@@ -9,15 +9,15 @@
 @class UIBarButtonItemProxy, UIImageView, NSMutableArray, UIBarButtonItem, UIToolbar;
 
 @interface UIToolbarCustomizeView : UIView {
-	UIToolbar* _toolbar;
-	NSMutableArray* _proxies;
-	NSMutableArray* _fixedItems;
-	UIBarButtonItemProxy* _draggingProxy;
-	UIBarButtonItem* _draggingItem;
-	UIImageView* _dragImage;
-	UIImageView* _replacementGlow;
-	UIBarButtonItem* _replaceItem;
-	CGPoint _startPoint;
+  UIToolbar* _toolbar;
+  NSMutableArray* _proxies;
+  NSMutableArray* _fixedItems;
+  UIBarButtonItemProxy* _draggingProxy;
+  UIBarButtonItem* _draggingItem;
+  UIImageView* _dragImage;
+  UIImageView* _replacementGlow;
+  UIBarButtonItem* _replaceItem;
+  CGPoint _startPoint;
 }
 -(void)setToolbar:(id)toolbar currentItems:(id)items availableItems:(id)items3;
 -(void)dealloc;

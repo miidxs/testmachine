@@ -9,7 +9,7 @@
 
 
 @interface SBLowPowerAlertItem : SBAlertItem {
-	unsigned _talkLevel;
+  unsigned _talkLevel;
 }
 +(id)systemVersionDescription;
 +(void)saveLowBatteryLogWithCapacity:(int)capacity;

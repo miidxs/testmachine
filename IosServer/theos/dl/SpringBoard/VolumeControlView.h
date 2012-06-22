@@ -15,13 +15,13 @@
 @class NSString, UITextLabel;
 
 @interface VolumeControlView : UIView {
-	float _volume;
-	int _mode;
-	BOOL _headphonesPresent;
-	UITextLabel* _label1;
-	UITextLabel* _label2;
-	NSString* _line1;
-	NSString* _line2;
+  float _volume;
+  int _mode;
+  BOOL _headphonesPresent;
+  UITextLabel* _label1;
+  UITextLabel* _label2;
+  NSString* _line1;
+  NSString* _line2;
 }
 +(void)loadImages;
 +(CGSize)controlSize;

@@ -11,9 +11,9 @@
 @class NSString;
 
 @interface SBCallFailureAlertItem : SBAlertItem {
-	int _causeCode;
-	NSString* _address;
-	CTCallRef _call;
+  int _causeCode;
+  NSString* _address;
+  CTCallRef _call;
 }
 -(id)initWithCauseCode:(long)causeCode call:(CTCallRef)call;
 // inherited: -(void)dealloc;

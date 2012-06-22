@@ -13,17 +13,17 @@
 @class NSString, MFData, NSData, NSMutableDictionary, PartialNetworkData;
 
 @interface MimePart : WRObject <WeakReferenceHolder> {
-	NSString* _type;
-	NSString* _subtype;
-	NSMutableDictionary* _bodyParameters;
-	NSString* _contentTransferEncoding;
-	NSMutableDictionary* _otherIvars;
-	NSRange _range;
-	id _parentOrBody;
-	MimePart* _nextPart;
-	PartialNetworkData* _partialData;
-	NSData* _fullData;
-	MFData* _decodedData;
+  NSString* _type;
+  NSString* _subtype;
+  NSMutableDictionary* _bodyParameters;
+  NSString* _contentTransferEncoding;
+  NSMutableDictionary* _otherIvars;
+  NSRange _range;
+  id _parentOrBody;
+  MimePart* _nextPart;
+  PartialNetworkData* _partialData;
+  NSData* _fullData;
+  MFData* _decodedData;
 }
 // inherited: +(void)initialize;
 +(BOOL)parseContentTypeHeader:(id)header type:(id*)type subtype:(id*)subtype;

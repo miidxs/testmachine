@@ -12,24 +12,24 @@
 @class NSArray, NSMutableSet, ASMailMessage, NSString;
 
 @interface ASFolderItemsSyncTask : ASTask <NSCopying> {
-	NSString* _folderID;
-	NSString* _previousSyncKey;
-	int _type;
-	NSArray* _commands;
-	NSMutableSet* _rejectedServerIds;
-	BOOL _isInitialSync;
-	BOOL _willUpdate;
-	BOOL _moreAvailable;
-	BOOL _isResyncAfterConnectionFailed;
-	BOOL _haveShortcut121Response;
-	int _numReplacedItems;
-	BOOL _isSpinning;
-	int _bodyTruncationBytes;
-	int _mimeSupport;
-	int _filterDays;
-	ASMailMessage* _streamingMailMessage;
+  NSString* _folderID;
+  NSString* _previousSyncKey;
+  int _type;
+  NSArray* _commands;
+  NSMutableSet* _rejectedServerIds;
+  BOOL _isInitialSync;
+  BOOL _willUpdate;
+  BOOL _moreAvailable;
+  BOOL _isResyncAfterConnectionFailed;
+  BOOL _haveShortcut121Response;
+  int _numReplacedItems;
+  BOOL _isSpinning;
+  int _bodyTruncationBytes;
+  int _mimeSupport;
+  int _filterDays;
+  ASMailMessage* _streamingMailMessage;
 @private
-	BOOL _deletesAsMoves;
+  BOOL _deletesAsMoves;
 }
 // inherited: -(int)commandCode;
 -(void)_setSpinning:(BOOL)spinning;

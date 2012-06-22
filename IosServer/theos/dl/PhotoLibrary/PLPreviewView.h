@@ -11,12 +11,12 @@
 @class PLCameraFocusView;
 
 @interface PLPreviewView : UIView {
-	CGPoint _touchLocation;
-	PLCameraFocusView* _focusView;
-	PLCameraFocusView* _autoFocusView;
-	UIView* _disabledView;
-	unsigned _canShowFocus : 1;
-	unsigned _controlsAreVisible : 1;
+  CGPoint _touchLocation;
+  PLCameraFocusView* _focusView;
+  PLCameraFocusView* _autoFocusView;
+  UIView* _disabledView;
+  unsigned _canShowFocus : 1;
+  unsigned _controlsAreVisible : 1;
 }
 // inherited: -(id)initWithFrame:(CGRect)frame;
 -(void)_focusAtPoint:(CGPoint)point;

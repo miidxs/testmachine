@@ -11,16 +11,16 @@
 
 @interface UIKeyboardLayout : UIView <UIKeyboardLayoutProtocol> {
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	NSMutableArray* m_uncommittedTouches;
-	UITouch* m_activeTouch;
-	UITouch* m_shiftKeyTouch;
-	UITouch* m_swipeTouch;
-	UIKeyboardZoomGesture* m_zoomGesture;
-#else	
-	unsigned m_currentPathFlags;
-	XXStruct__FxRIA m_activePathInfo;
-	int m_shiftKeyPathIndex;
-	int m_swipePathIndex;
+  NSMutableArray* m_uncommittedTouches;
+  UITouch* m_activeTouch;
+  UITouch* m_shiftKeyTouch;
+  UITouch* m_swipeTouch;
+  UIKeyboardZoomGesture* m_zoomGesture;
+#else 
+  unsigned m_currentPathFlags;
+  XXStruct__FxRIA m_activePathInfo;
+  int m_shiftKeyPathIndex;
+  int m_swipePathIndex;
 #endif
 }
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2

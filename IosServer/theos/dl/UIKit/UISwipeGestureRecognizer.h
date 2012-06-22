@@ -22,18 +22,18 @@
 #import "UIKit-Structs.h"
 
 @interface UISwipeGestureRecognizer : UIGestureRecognizer {
-	double _maximumDuration;
-	float _minimumHorizontalMovement;
-	float _maximumHorizontalMovement;
-	float _minimumVerticalMovement;
-	float _maximumVerticalMovement;
-	float _rateOfMinimumMovementDecay;
-	float _rateOfMaximumMovementDecay;
-	CGPoint _startLocation;
-	CGPoint _startContentOffset;
-	double _startTime;
-	unsigned _trackingTouch : 1;
-	unsigned _tableViewGesture : 1;
+  double _maximumDuration;
+  float _minimumHorizontalMovement;
+  float _maximumHorizontalMovement;
+  float _minimumVerticalMovement;
+  float _maximumVerticalMovement;
+  float _rateOfMinimumMovementDecay;
+  float _rateOfMaximumMovementDecay;
+  CGPoint _startLocation;
+  CGPoint _startContentOffset;
+  double _startTime;
+  unsigned _trackingTouch : 1;
+  unsigned _tableViewGesture : 1;
 }
 @property(assign, nonatomic) float minimumHorizontalMovement;
 @property(assign, nonatomic) float maximumHorizontalMovement;

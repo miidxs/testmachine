@@ -13,10 +13,10 @@
 
 @interface MLMusicLibrary_SQL : MusicLibrary <MLMusicLibrarySubclassImpl> {
 @private
-	CPRecordStoreRef _storeRef;
-	long long _lastRowid;
-	BOOL _markAndDeleteTracksInProgress;
-	NSMutableArray* _markAndDeleteTracksPendingQueue;
+  CPRecordStoreRef _storeRef;
+  long long _lastRowid;
+  BOOL _markAndDeleteTracksInProgress;
+  NSMutableArray* _markAndDeleteTracksPendingQueue;
 }
 +(CPRecordStoreRef)_sharedInstanceStoreRef;
 +(void)noteSharedRecordStoreChangedToStoreRef:(CPRecordStoreRef)storeRef;

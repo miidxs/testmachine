@@ -12,9 +12,9 @@
 __attribute__((visibility("hidden")))
 @interface MLMappedImageData : NSData {
 @private
-	MLMappedFileSegment* _mappedFileSegment;
-	void* _bytes;
-	unsigned _length;
+  MLMappedFileSegment* _mappedFileSegment;
+  void* _bytes;
+  unsigned _length;
 }
 +(id)mappedImageDataForFile:(id)file offset:(long long)offset length:(unsigned long)length fileIsFixedSize:(BOOL)size;
 -(id)initWithMappedFileSegment:(id)mappedFileSegment bytes:(void*)bytes length:(unsigned long)length;

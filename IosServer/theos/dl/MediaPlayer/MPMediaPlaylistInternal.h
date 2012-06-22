@@ -11,10 +11,10 @@
 
 @interface MPMediaPlaylistInternal : NSObject {
 @private
-	unsigned long long _uid;
-	NSMutableDictionary* _storage;
-	MPMediaQuery* _itemsQuery;
-	MLPlaylist* _playlist;
+  unsigned long long _uid;
+  NSMutableDictionary* _storage;
+  MPMediaQuery* _itemsQuery;
+  MLPlaylist* _playlist;
 }
 @end
 

@@ -10,8 +10,8 @@
 @class NSString;
 
 @interface ASSyncTaskCommand : NSObject {
-	NSString* _serverID;
-	int _type;
+  NSString* _serverID;
+  int _type;
 }
 -(id)initWithCommandType:(int)commandType serverID:(id)anId;
 -(int)type;

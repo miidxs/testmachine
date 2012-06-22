@@ -9,11 +9,11 @@
 @class NSString;
 
 @interface UIKeyboardGenericKeyView : UIKeyboardKeyView {
-	id _target;
-	SEL _action;
-	NSString* _label;
-	int _location;
-	BOOL _isMouseInside;
+  id _target;
+  SEL _action;
+  NSString* _label;
+  int _location;
+  BOOL _isMouseInside;
 }
 -(id)initWithFrame:(CGRect)frame target:(id)target action:(SEL)action;
 -(void)setLabel:(id)label;

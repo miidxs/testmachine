@@ -13,10 +13,10 @@
 @class UITextField, PLTextView;
 
 @interface PLTableViewEditableCell : UITableViewCell <UITextViewDelegate, UITextFieldDelegate> {
-	PLTextView* _textView;
-	UITextField* _textField;
-	id _delegate;
-	BOOL _forceFirstResponder;
+  PLTextView* _textView;
+  UITextField* _textField;
+  id _delegate;
+  BOOL _forceFirstResponder;
 }
 -(id)initWithFrame:(CGRect)frame multiLine:(BOOL)line;
 // inherited: -(void)dealloc;

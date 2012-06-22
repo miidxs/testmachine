@@ -12,12 +12,12 @@
 
 @interface AVCapture : NSObject {
 @private
-	AVCapturePrivate* _priv;
-	AVCamera* _sourceCamera;
-	NSString* _captureMode;
-	NSString* _qualityPreset;
-	BOOL _isCapturingPhoto;
-	NSURL* _fileURLForRecording;
+  AVCapturePrivate* _priv;
+  AVCamera* _sourceCamera;
+  NSString* _captureMode;
+  NSString* _qualityPreset;
+  BOOL _isCapturingPhoto;
+  NSURL* _fileURLForRecording;
 }
 @property(retain) AVCamera* sourceCamera;
 @property(retain) NSString* captureMode;

@@ -10,7 +10,7 @@
 @class UIWebClip;
 
 @interface SBBookmarkIcon : SBIcon {
-	UIWebClip* _webClip;
+  UIWebClip* _webClip;
 }
 -(id)initWithWebClip:(id)webClip;
 // inherited: -(void)dealloc;

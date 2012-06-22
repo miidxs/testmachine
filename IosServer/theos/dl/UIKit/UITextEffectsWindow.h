@@ -17,11 +17,11 @@ UIAutoRotatingWindow
 UIWindow 
 #endif
 {
-	unsigned _activeEffectsCount;
+  unsigned _activeEffectsCount;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED < __IPHONE_3_2
-	int _interfaceOrientation;
+  int _interfaceOrientation;
 #endif
-	NSMutableArray* _touchableSubviews;
+  NSMutableArray* _touchableSubviews;
 }
 +(UITextEffectsWindow*)sharedTextEffectsWindow;
 +(UITextEffectsWindow*)sharedTextEffectsWindowAboveStatusBar;

@@ -10,7 +10,7 @@
 #import <Availability2.h>
 
 @interface SBCFBundle : NSObject {
-	CFBundleRef _cfBundle;
+  CFBundleRef _cfBundle;
 }
 -(id)initWithPath:(id)path;
 -(id)initWithCFBundle:(CFBundleRef)cfbundle;

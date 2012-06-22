@@ -11,10 +11,10 @@
 @class UINavigationBar, UINavigationItem, UITextLabel;
 
 @interface MPVideoChapterFlipTransitionController : MPFlipTransitionController {
-	UINavigationBar* _navigationBar;
-	UINavigationItem* _originalNavigationItem;
-	UITextLabel* _chapterGuideTitleLabel;
-	unsigned _shouldPlayAfterFlip : 1;
+  UINavigationBar* _navigationBar;
+  UINavigationItem* _originalNavigationItem;
+  UITextLabel* _chapterGuideTitleLabel;
+  unsigned _shouldPlayAfterFlip : 1;
 }
 @property(retain, nonatomic) UINavigationBar* navigationBar;
 @property(assign, nonatomic) BOOL playAfterFlip;

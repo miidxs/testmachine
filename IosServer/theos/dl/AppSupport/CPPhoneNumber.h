@@ -42,10 +42,10 @@ extern "C" {
 #else
 #include <stdbool.h>
 #endif
-	
-	char _digitForAlpha(char alphabet);	// alphabet must be in uppercase.
-	
-	
+  
+  char _digitForAlpha(char alphabet); // alphabet must be in uppercase.
+  
+  
 #if __cplusplus
 }
 #endif

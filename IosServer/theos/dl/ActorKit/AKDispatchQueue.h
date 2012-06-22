@@ -9,19 +9,19 @@
 @class NSThread, NSConditionLock, NSNumber, NSRunLoop;
 
 enum AKDispatchQueueState {
-	AKDispatchQueueState_Initialized = 0,
-	AKDispatchQueueState_Start = 1,
-	AKDispatchQueueState_Running = 2,
-	AKDispatchQueueState_Stop = 5,
-	AKDispatchQueueState_Destroyed = 6
+  AKDispatchQueueState_Initialized = 0,
+  AKDispatchQueueState_Start = 1,
+  AKDispatchQueueState_Running = 2,
+  AKDispatchQueueState_Stop = 5,
+  AKDispatchQueueState_Destroyed = 6
 };
 
 @interface AKDispatchQueue : NSObject {
-	int _kqueueFD;
-	int _keventFDs[2];
-	NSThread* _thread;
-	qed_queue_u* _queue;
-	NSConditionLock* _runStateLock;
+  int _kqueueFD;
+  int _keventFDs[2];
+  NSThread* _thread;
+  qed_queue_u* _queue;
+  NSConditionLock* _runStateLock;
 }
 /** Return a shared instance of the dispatch queue of the current run loop. */
 +(id)currentRunLoopDispatchQueue;

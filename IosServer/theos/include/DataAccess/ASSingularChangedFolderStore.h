@@ -10,7 +10,7 @@
 @class NSString;
 
 @interface ASSingularChangedFolderStore : ASChangedFolderStore {
-	NSString* _serverId;
+  NSString* _serverId;
 }
 // inherited: +(BOOL)acceptsTopLevelLeaves;
 // inherited: +(BOOL)parsingLeafNode;

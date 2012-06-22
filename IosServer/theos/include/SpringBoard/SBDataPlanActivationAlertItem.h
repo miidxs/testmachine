@@ -5,7 +5,7 @@
 #import "SBDataPlanAccountAlertItem.h"
 
 @interface SBDataPlanActivationAlertItem : SBDataPlanAccountAlertItem {
-	BOOL _newAccount;
+  BOOL _newAccount;
 }
 @property(assign, nonatomic, getter=isNewAccount) BOOL newAccount;
 -(id)initWithAccountURL:(NSURL *)accountURL newAccount:(BOOL)account;

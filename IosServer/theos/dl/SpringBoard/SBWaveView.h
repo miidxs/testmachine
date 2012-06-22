@@ -10,18 +10,18 @@
 
 
 @interface SBWaveView : UIView {
-	float _phaseWidth;
-	float _phaseShift;
-	float _minAmplitude;
-	float _maxAmplitude;
-	float _amplitude;
-	float _levelDamping;
-	double _phaseDuration;
-	double _amplitudeChangeTime;
-	double _amplitudeChangeDuration;
-	float _lastAmplitude;
-	float _level;
-	BOOL _animating;
+  float _phaseWidth;
+  float _phaseShift;
+  float _minAmplitude;
+  float _maxAmplitude;
+  float _amplitude;
+  float _levelDamping;
+  double _phaseDuration;
+  double _amplitudeChangeTime;
+  double _amplitudeChangeDuration;
+  float _lastAmplitude;
+  float _level;
+  BOOL _animating;
 }
 -(void)setFrame:(CGRect)frame;
 -(void)setColor:(id)color;

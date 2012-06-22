@@ -8,8 +8,8 @@
 
 
 @interface CKContentOffsetAnimation : UIAnimation {
-	CGPoint _startContentOffset;
-	CGPoint _endContentOffset;
+  CGPoint _startContentOffset;
+  CGPoint _endContentOffset;
 }
 -(void)setProgress:(float)progress;
 -(void)setStartContentOffset:(CGPoint)offset;

@@ -11,9 +11,9 @@
 @class PSSpecifier;
 
 @interface PSEditingPane : UIView {
-	PSSpecifier* _specifier;
-	id _delegate;
-	unsigned _requiresKeyboard : 1;
+  PSSpecifier* _specifier;
+  id _delegate;
+  unsigned _requiresKeyboard : 1;
 }
 @property(retain) id preferenceSpecifier;
 @property(retain) id preferenceValue;

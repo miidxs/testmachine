@@ -10,7 +10,7 @@
 
 
 @interface SBEmergencyCallView : UIView {
-	UIView* _topBar;
+  UIView* _topBar;
 }
 -(id)initWithFrame:(CGRect)frame topBarFrame:(CGRect)frame2 bottomBarFrame:(CGRect)frame3;
 -(id)topBar;

@@ -10,9 +10,9 @@
 @class DAMailAccount, NSString;
 
 @interface DARequestQueue : RequestQueue {
-	DAMailAccount* account;
-	NSString* folderID;
-	double _invalidSyncKeyTimestamp;
+  DAMailAccount* account;
+  NSString* folderID;
+  double _invalidSyncKeyTimestamp;
 }
 -(id)initWithAccount:(id)account folderID:(id)anId;
 -(id)filterRequests:(id)requests consumers:(id)consumers newConsumers:(id*)consumers3;

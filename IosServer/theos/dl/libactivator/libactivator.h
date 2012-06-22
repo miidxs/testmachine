@@ -7,9 +7,9 @@
 
 @interface LAEvent : NSObject<NSCoding> {
 @private
-	NSString *_name;
-	NSString *_mode;
-	BOOL _handled;
+  NSString *_name;
+  NSString *_mode;
+  BOOL _handled;
 }
 + (id)eventWithName:(NSString *)name;
 + (id)eventWithName:(NSString *)name mode:(NSString *)mode;
@@ -54,12 +54,12 @@ typedef enum {
 
 @interface LAActivator : NSObject {
 @private
-	NSArray *_availableEventModes;
+  NSArray *_availableEventModes;
 @protected
-	NSMutableDictionary *_cachedListenerTitles;
-	NSMutableDictionary *_cachedListenerGroups;
-	NSMutableDictionary *_cachedListenerSmallIcons;
-	CFMutableSetRef _listenerInstances;
+  NSMutableDictionary *_cachedListenerTitles;
+  NSMutableDictionary *_cachedListenerGroups;
+  NSMutableDictionary *_cachedListenerSmallIcons;
+  CFMutableSetRef _listenerInstances;
 }
 + (LAActivator *)sharedInstance;
 
@@ -160,9 +160,9 @@ extern LAActivator *LASharedActivator;
 
 @interface LASettingsViewController : UIViewController {
 @private
-	UITableView *_tableView;
-	id<LASettingsViewControllerDelegate> _delegate;
-	UINavigationController *_savedNavigationController;
+  UITableView *_tableView;
+  id<LASettingsViewControllerDelegate> _delegate;
+  UINavigationController *_savedNavigationController;
 }
 
 + (id)controller;
@@ -176,9 +176,9 @@ extern LAActivator *LASharedActivator;
 
 @interface LAModeSettingsController : LASettingsViewController {
 @private
-	NSString *_eventMode;
-	NSMutableDictionary *_events;
-	NSArray *_groups;
+  NSString *_eventMode;
+  NSMutableDictionary *_events;
+  NSArray *_groups;
 }
 
 - (id)initWithMode:(NSString *)mode;
@@ -190,13 +190,13 @@ extern LAActivator *LASharedActivator;
 
 @interface LAEventSettingsController : LASettingsViewController {
 @private
-	NSArray *_modes;
-	NSMutableSet *_currentAssignments;
-	NSString *_eventName;
-	LAListenerTableViewDataSource *_dataSource;
-	ActivatorEventViewHeader *_headerView;
-	UISearchBar *_searchBar;
-	UIView *_headerWrapper;
+  NSArray *_modes;
+  NSMutableSet *_currentAssignments;
+  NSString *_eventName;
+  LAListenerTableViewDataSource *_dataSource;
+  ActivatorEventViewHeader *_headerView;
+  UISearchBar *_searchBar;
+  UIView *_headerWrapper;
 }
 
 - (id)initWithModes:(NSArray *)modes eventName:(NSString *)eventName;
@@ -206,11 +206,11 @@ extern LAActivator *LASharedActivator;
 
 @interface LAListenerSettingsViewController : LASettingsViewController {
 @private
-	NSString *_listenerName;
-	NSString *_eventMode;
-	NSMutableDictionary *_events;
-	NSMutableDictionary *_compatibleEvents;
-	NSArray *_groups;
+  NSString *_listenerName;
+  NSString *_eventMode;
+  NSMutableDictionary *_events;
+  NSMutableDictionary *_compatibleEvents;
+  NSArray *_groups;
 }
 
 @property (nonatomic, copy) NSString *listenerName;

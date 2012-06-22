@@ -8,10 +8,10 @@
 @class NSIndexPath;
 
 @interface UIUpdateItem : NSObject {
-	int _action;
-	NSIndexPath* _indexPath;
-	int _animation;
-	float _offset;
+  int _action;
+  NSIndexPath* _indexPath;
+  int _animation;
+  float _offset;
 }
 @property(readonly, assign, nonatomic) int action;
 @property(readonly, assign, nonatomic) NSIndexPath* indexPath;

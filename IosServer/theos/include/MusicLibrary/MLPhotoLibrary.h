@@ -12,10 +12,10 @@
 
 @interface MLPhotoLibrary : NSObject {
 @private
-	NSString* _path;
-	NSMutableArray* _albums;
-	NSDate* _referenceDate;
-	BOOL _cancelFileSystemGarbageCollection;
+  NSString* _path;
+  NSMutableArray* _albums;
+  NSDate* _referenceDate;
+  BOOL _cancelFileSystemGarbageCollection;
 }
 +(id)sharedPhotoLibrary;
 +(void)setApplicationIsWildcat:(BOOL)wildcat;

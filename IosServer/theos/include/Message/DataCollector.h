@@ -11,12 +11,12 @@
 @class LibraryMessage, MailMessageLibrary, NSString, MFBufferedDataConsumer;
 
 @interface DataCollector : NSObject <DataConsumer> {
-	MailMessageLibrary* _library;
-	LibraryMessage* _message;
-	MFBufferedDataConsumer* _consumer;
-	NSString* _part;
-	BOOL _partial;
-	BOOL _incomplete;
+  MailMessageLibrary* _library;
+  LibraryMessage* _message;
+  MFBufferedDataConsumer* _consumer;
+  NSString* _part;
+  BOOL _partial;
+  BOOL _incomplete;
 }
 -(id)initWithLibrary:(id)library message:(id)message part:(id)part partial:(BOOL)partial incomplete:(BOOL)incomplete;
 -(id)pathForStorage;

@@ -12,11 +12,11 @@
 
 @interface MPMediaServerItemCollection : NSObject <NSCoding> {
 @private
-	MPMediaServerQuery* _itemsQuery;
-	NSArray* _items;
-	unsigned _itemsCount;
-	MPMediaServerItem* _representativeItem;
-	int _containedMediaTypes;
+  MPMediaServerQuery* _itemsQuery;
+  NSArray* _items;
+  unsigned _itemsCount;
+  MPMediaServerItem* _representativeItem;
+  int _containedMediaTypes;
 }
 @property(readonly, assign, nonatomic) MPMediaServerQuery* itemsQuery;
 -(id)initWithItemsQuery:(id)itemsQuery itemsCount:(unsigned)count representativeItem:(id)item containedMediaTypes:(int)types;

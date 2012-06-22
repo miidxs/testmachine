@@ -9,7 +9,7 @@
 @class UIBezierPath;
 
 @interface UIRoundedRectButton : UIButton {
-	UIBezierPath* _fillPath;
+  UIBezierPath* _fillPath;
 }
 -(void)_commonRoundedRectButtonInit;
 -(id)initWithFrame:(CGRect)frame;

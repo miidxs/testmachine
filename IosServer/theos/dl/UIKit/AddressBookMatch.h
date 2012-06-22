@@ -8,10 +8,10 @@
 @class NSString;
 
 @interface AddressBookMatch : NSObject {
-	NSString* value;
-	NSString* property;
-	NSString* key;
-	int identifier;
+  NSString* value;
+  NSString* property;
+  NSString* key;
+  int identifier;
 }
 -(id)initWithValue:(id)value property:(id)property key:(id)key identifier:(int)identifier;
 -(id)description;

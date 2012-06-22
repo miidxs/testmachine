@@ -10,9 +10,9 @@
 @class NSArray, NSData;
 
 @interface CPSearchMatcher : NSObject {
-	@public
-	NSArray* _components;
-	NSData* _context;
+  @public
+  NSArray* _components;
+  NSData* _context;
 }
 -(BOOL)matchesUTF8String:(const char*)string;
 -(BOOL)matches:(id)matches;

@@ -8,11 +8,11 @@
 
 __attribute__((visibility("hidden")))
 @interface UIDeviceRGBColor : UIColor {
-	float redComponent;
-	float greenComponent;
-	float blueComponent;
-	float alphaComponent;
-	CGColorRef cachedColor;
+  float redComponent;
+  float greenComponent;
+  float blueComponent;
+  float alphaComponent;
+  CGColorRef cachedColor;
 }
 // inherited: -(id)initWithHue:(float)hue saturation:(float)saturation brightness:(float)brightness alpha:(float)alpha;
 // inherited: -(id)initWithRed:(float)red green:(float)green blue:(float)blue alpha:(float)alpha;

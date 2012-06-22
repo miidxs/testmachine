@@ -12,12 +12,12 @@
 @protocol RequestQueueResponseConsumer, DAMailAccountStreamConsumerFactory;
 
 @interface DAMessageStoreFetchRequest : DAMailboxFetchMessageRequest <DAMailAccountRequest> {
-	int format;
-	DAMessageStore* store;
-	Message* message;
-	id<DAMailAccountStreamConsumerFactory, RequestQueueResponseConsumer> consumer;
-	MimePart* part;
-	BOOL partial;
+  int format;
+  DAMessageStore* store;
+  Message* message;
+  id<DAMailAccountStreamConsumerFactory, RequestQueueResponseConsumer> consumer;
+  MimePart* part;
+  BOOL partial;
 }
 // in a protocol: -(double)generationTime;
 // in a protocol: -(BOOL)shouldSend;

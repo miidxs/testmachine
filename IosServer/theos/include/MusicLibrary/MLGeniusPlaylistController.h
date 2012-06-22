@@ -11,10 +11,10 @@
 
 @interface MLGeniusPlaylistController : NSObject {
 @private
-	void* _echo;
-	void* _echo_library;
-	void* _echo_cluster_playlist;
-	NSMutableData* _sharedBlobMutableData;
+  void* _echo;
+  void* _echo_library;
+  void* _echo_cluster_playlist;
+  NSMutableData* _sharedBlobMutableData;
 }
 +(void)ignoreUnusedWarnings;
 +(BOOL)useFakeGeniusData;

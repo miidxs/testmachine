@@ -8,24 +8,24 @@
 @class NSString, NSCalendarDate, NSArray, CKConversation;
 
 @interface CKMessage : NSObject {
-	unsigned _height;
-	NSArray* _messageParts;
-	float _cachedPercentComplete;
-	unsigned _dateLoaded : 1;
-	unsigned _heightAndFlagsLoaded : 1;
-	unsigned _failedSendCountLoaded : 1;
-	unsigned _outgoing : 1;
-	unsigned _outgoingLoaded : 1;
-	unsigned _messagePartsLoaded : 1;
-	unsigned _subjectLoaded : 1;
-	double _date;
-	NSCalendarDate* _calendarDate;
-	int _failedSendCount;
-	unsigned _flags;
-	NSString* _text;
-	NSString* _subject;
-	int _groupID;
-	CKConversation* _conversation;
+  unsigned _height;
+  NSArray* _messageParts;
+  float _cachedPercentComplete;
+  unsigned _dateLoaded : 1;
+  unsigned _heightAndFlagsLoaded : 1;
+  unsigned _failedSendCountLoaded : 1;
+  unsigned _outgoing : 1;
+  unsigned _outgoingLoaded : 1;
+  unsigned _messagePartsLoaded : 1;
+  unsigned _subjectLoaded : 1;
+  double _date;
+  NSCalendarDate* _calendarDate;
+  int _failedSendCount;
+  unsigned _flags;
+  NSString* _text;
+  NSString* _subject;
+  int _groupID;
+  CKConversation* _conversation;
 }
 @property(readonly, assign, nonatomic) NSArray* messageParts;
 @property(assign, nonatomic) CKConversation* conversation;

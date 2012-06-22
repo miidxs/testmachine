@@ -8,8 +8,8 @@
 
 
 @interface UITransformAnimation : UIAnimation {
-	CGAffineTransform _startTransform;
-	CGAffineTransform _endTransform;
+  CGAffineTransform _startTransform;
+  CGAffineTransform _endTransform;
 }
 -(void)setStartTransform:(CGAffineTransform)transform;
 -(void)setEndTransform:(CGAffineTransform)transform;

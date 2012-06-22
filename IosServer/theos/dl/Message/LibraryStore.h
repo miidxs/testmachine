@@ -11,15 +11,15 @@
 @class MessageCriterion, MessageLibrary, NSMutableSet, MailboxUid, NSMapTable;
 
 @interface LibraryStore : MailMessageStore {
-	MessageLibrary* _library;
-	MessageCriterion* _criterion;
-	double _lastUpdated;
-	unsigned _openOptions;
-	NSMutableSet* _memberMessageIDs;
-	unsigned _messageAvailabilityCount;
-	BOOL _mailboxUnreadCountUpdatePending;
-	unsigned _serverMessageCount;
-	unsigned _serverUnreadCount;
+  MessageLibrary* _library;
+  MessageCriterion* _criterion;
+  double _lastUpdated;
+  unsigned _openOptions;
+  NSMutableSet* _memberMessageIDs;
+  unsigned _messageAvailabilityCount;
+  BOOL _mailboxUnreadCountUpdatePending;
+  unsigned _serverMessageCount;
+  unsigned _serverUnreadCount;
 }
 // inherited: +(void)initialize;
 +(NSMapTable*)_storeCacheMapTable;

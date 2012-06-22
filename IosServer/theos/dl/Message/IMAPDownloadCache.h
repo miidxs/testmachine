@@ -11,7 +11,7 @@
 @class NSMutableArray;
 
 @interface IMAPDownloadCache : NSObject {
-	NSMutableArray* _downloads;
+  NSMutableArray* _downloads;
 }
 // inherited: -(void)dealloc;
 -(id)downloadForMessage:(id)message;

@@ -11,8 +11,8 @@
 @class MessageHeaders, NSData;
 
 @interface IMAPMessageWithCache : IMAPMessage {
-	NSData* _messageData;
-	MessageHeaders* _headers;
+  NSData* _messageData;
+  MessageHeaders* _headers;
 }
 // inherited: -(void)dealloc;
 // inherited: -(id)messageData;

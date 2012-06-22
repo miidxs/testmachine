@@ -9,10 +9,10 @@
 @protocol UIKeyboardEmojiController;
 
 @interface UIKeyboardEmojiRecentsController : NSObject {
-	id<UIKeyboardEmojiController> _controller;
-	int _currentSequence;
-	NSMutableArray* _recents;
-	NSMutableDictionary* _usageHistory;
+  id<UIKeyboardEmojiController> _controller;
+  int _currentSequence;
+  NSMutableArray* _recents;
+  NSMutableDictionary* _usageHistory;
 }
 -(id)initWithController:(id)controller;
 -(void)dealloc;

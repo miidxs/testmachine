@@ -16,29 +16,29 @@
 #endif
 {
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	UIScrollView* scroller;
-	UIWebBrowserView* browserView;
+  UIScrollView* scroller;
+  UIWebBrowserView* browserView;
 #else
-	UIScroller* scroller;
-	UIWebDocumentView* documentView;
+  UIScroller* scroller;
+  UIWebDocumentView* documentView;
 #endif
-	UICheckeredPatternView* checkeredPatternView;
-	id<UIWebViewDelegate> delegate;
-	unsigned scalesPageToFit : 1;
-	unsigned isLoading : 1;
-	unsigned drawsCheckeredPattern : 1;
-	unsigned usedGeolocation : 1;
-	unsigned webSelectionEnabled : 1;
-	unsigned drawInWebThread : 1;
+  UICheckeredPatternView* checkeredPatternView;
+  id<UIWebViewDelegate> delegate;
+  unsigned scalesPageToFit : 1;
+  unsigned isLoading : 1;
+  unsigned drawsCheckeredPattern : 1;
+  unsigned usedGeolocation : 1;
+  unsigned webSelectionEnabled : 1;
+  unsigned drawInWebThread : 1;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_1
-	unsigned allowsPopUps : 1;
+  unsigned allowsPopUps : 1;
 #endif
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	unsigned automaticallyUpdatesScrollerView : 1;
+  unsigned automaticallyUpdatesScrollerView : 1;
 #endif
-	NSURLRequest* request;
-	int clickedAlertButtonIndex;
-	UIWebViewWebViewDelegate* webViewDelegate;
+  NSURLRequest* request;
+  int clickedAlertButtonIndex;
+  UIWebViewWebViewDelegate* webViewDelegate;
 }
 #if __IPHONE_OS_VERSION_MAX_ALLOWED < __IPHONE_3_2
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_1

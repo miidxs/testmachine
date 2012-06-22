@@ -9,8 +9,8 @@
 @class UITableCell, UITable;
 
 @interface UITableSeparatorView : UIView {
-	UITableCell* _tableCell;
-	UITable* _table;
+  UITableCell* _tableCell;
+  UITable* _table;
 }
 -(id)initWithTableCell:(id)tableCell;
 -(id)initWithFrame:(CGRect)frame withTable:(id)table;

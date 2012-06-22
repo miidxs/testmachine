@@ -11,13 +11,13 @@
 @class NSMutableData;
 
 @interface Base64Decoder : NSObject <MFDataConsumer> {
-	id<MFDataConsumer> _consumer;
-	NSMutableData* _leftovers;
-	unsigned _decodedBits;
-	unsigned _validBytes;
-	unsigned _equalCount;
-	char* _table;
-	BOOL _bound;
+  id<MFDataConsumer> _consumer;
+  NSMutableData* _leftovers;
+  unsigned _decodedBits;
+  unsigned _validBytes;
+  unsigned _equalCount;
+  char* _table;
+  BOOL _bound;
 }
 @property(readonly, assign, nonatomic) id<MFDataConsumer> dataConsumer;
 @property(readonly, assign, nonatomic) unsigned unconverted;

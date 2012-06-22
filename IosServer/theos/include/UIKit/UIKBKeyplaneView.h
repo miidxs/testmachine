@@ -9,12 +9,12 @@
 @class NSString, UIKBKeyplane, UIKBKeyboard, UIKBHandwritingView, UIKBCandidateView;
 
 @interface UIKBKeyplaneView : UIView {
-	UIKBKeyboard* m_keyboard;
-	UIKBKeyplane* m_keyplane;
-	NSString* m_visualStyle;
+  UIKBKeyboard* m_keyboard;
+  UIKBKeyplane* m_keyplane;
+  NSString* m_visualStyle;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	UIKBHandwritingView* m_handwritingView;
-	UIKBCandidateView* m_candidateView;
+  UIKBHandwritingView* m_handwritingView;
+  UIKBCandidateView* m_candidateView;
 #endif
 }
 @property(retain, nonatomic) UIKBKeyplane* keyplane;

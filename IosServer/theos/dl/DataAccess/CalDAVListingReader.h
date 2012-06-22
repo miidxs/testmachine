@@ -12,20 +12,20 @@
 @class NSMutableData, NSMutableDictionary, NSError, NSMutableArray, NSData;
 
 @interface CalDAVListingReader : NSObject <DAVResponseBodyReader> {
-	NSMutableDictionary* _filenamesToETags;
-	NSError* _error;
-	xmlSAXHandler _xmlSAXHandler;
-	xmlParserCtxt* _xmlParserCtxt;
-	NSData* _chunkData;
-	NSMutableData* _content;
-	int _state;
-	NSMutableArray* _responseFilenames;
-	NSMutableArray* _responseProperties;
-	int _responseStatusCode;
-	NSMutableArray* _propstatProperties;
-	int _propstatStatusCode;
-	BOOL _foundResourceTypeCollection;
-	BOOL _foundResourceTypeCalendar;
+  NSMutableDictionary* _filenamesToETags;
+  NSError* _error;
+  xmlSAXHandler _xmlSAXHandler;
+  xmlParserCtxt* _xmlParserCtxt;
+  NSData* _chunkData;
+  NSMutableData* _content;
+  int _state;
+  NSMutableArray* _responseFilenames;
+  NSMutableArray* _responseProperties;
+  int _responseStatusCode;
+  NSMutableArray* _propstatProperties;
+  int _propstatStatusCode;
+  BOOL _foundResourceTypeCollection;
+  BOOL _foundResourceTypeCalendar;
 }
 +(int)parseStatusString:(id)string;
 +(id)firstPropertyWithType:(int)type inArray:(id)array;

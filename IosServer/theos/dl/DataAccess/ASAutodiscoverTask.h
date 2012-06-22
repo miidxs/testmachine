@@ -11,11 +11,11 @@
 @class NSError, NSMutableDictionary, NSString;
 
 @interface ASAutodiscoverTask : ASTask {
-	NSString* _serverURL;
-	NSString* _emailAddress;
-	NSString* _redirectEmail;
-	NSMutableDictionary* _accountInfo;
-	NSError* _discoveryError;
+  NSString* _serverURL;
+  NSString* _emailAddress;
+  NSString* _redirectEmail;
+  NSMutableDictionary* _accountInfo;
+  NSError* _discoveryError;
 }
 -(id)initWithURL:(id)url emailAddress:(id)address;
 // inherited: -(void)dealloc;

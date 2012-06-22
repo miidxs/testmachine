@@ -13,7 +13,7 @@
 __attribute__((visibility("hidden")))
 @interface MLTrackRepSQL : MLTrack {
 @private
-	MLChapterTOC* _chapterTOC;
+  MLChapterTOC* _chapterTOC;
 }
 @property(assign, nonatomic) BOOL hasChanges;
 -(id)initWithDBRecord:(void*)dbrecord;

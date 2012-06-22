@@ -10,8 +10,8 @@
 @class AYOperation;
 
 @interface _AYProxy : NSProxy {
-	AYOperation* _operation;
-	BOOL _asyncLaunch;
+  AYOperation* _operation;
+  BOOL _asyncLaunch;
 }
 -(id)initWithOperation:(id)operation;
 -(void)setAsyncLaunch:(BOOL)launch;

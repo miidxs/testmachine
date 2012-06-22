@@ -10,8 +10,8 @@
 @class ComposeRecipient, RecipientTableViewCellView;
 
 @interface RecipientTableViewCell : UITableViewCell {
-	RecipientTableViewCellView* _recipientView;
-	ComposeRecipient* _recipient;
+  RecipientTableViewCellView* _recipientView;
+  ComposeRecipient* _recipient;
 }
 +(id)identifier;
 +(id)cellForRecipient:(id)recipient;

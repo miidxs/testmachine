@@ -13,13 +13,13 @@
 
 @interface MFContactsSearchManager : NSObject <DASearchQueryConsumer> {
 @private
-	CFDictionaryRef _taskIDsBySearchQuery;
-	NSMutableDictionary* _taskContextsByTaskID;
-	void* _addressBook;
-	NSOperationQueue* _queue;
-	unsigned _genNumber;
-	NSSet* _properties;
-	unsigned _searchTypes;
+  CFDictionaryRef _taskIDsBySearchQuery;
+  NSMutableDictionary* _taskContextsByTaskID;
+  void* _addressBook;
+  NSOperationQueue* _queue;
+  unsigned _genNumber;
+  NSSet* _properties;
+  unsigned _searchTypes;
 }
 -(id)initWithAddressBook:(void*)addressBook properties:(int*)properties propertyCount:(unsigned)count;
 -(void)setSearchTypes:(unsigned)types;

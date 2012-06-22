@@ -12,16 +12,16 @@
 @class UIProgressIndicator, SBTextDisplayView, UITextField, TPBottomButtonBar, UITransitionView, UIScroller;
 
 @interface SBUSSDAlertDisplay : SBAlertDisplay <UITextFieldDelegate> {
-	TPBottomButtonBar* _responseBar;
-	UIView* _notifyView;
-	UIView* _replyView;
-	UITransitionView* _transitionView;
-	UIScroller* _scroller;
-	SBTextDisplayView* _contentView;
-	SBTextDisplayView* _charsRemainingView;
-	UIProgressIndicator* _progressIndicator;
-	UITextField* _responseField;
-	BOOL _allowsResponse;
+  TPBottomButtonBar* _responseBar;
+  UIView* _notifyView;
+  UIView* _replyView;
+  UITransitionView* _transitionView;
+  UIScroller* _scroller;
+  SBTextDisplayView* _contentView;
+  SBTextDisplayView* _charsRemainingView;
+  UIProgressIndicator* _progressIndicator;
+  UITextField* _responseField;
+  BOOL _allowsResponse;
 }
 // inherited: -(id)initWithFrame:(CGRect)frame;
 -(id)_notifyView;

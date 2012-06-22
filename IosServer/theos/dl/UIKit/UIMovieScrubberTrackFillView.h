@@ -9,9 +9,9 @@
 @class UIImageView;
 
 @interface UIMovieScrubberTrackFillView : UIView {
-	UIImageView* _leftImageView;
-	UIImageView* _middleImageView;
-	UIImageView* _rightImageView;
+  UIImageView* _leftImageView;
+  UIImageView* _middleImageView;
+  UIImageView* _rightImageView;
 }
 -(id)initWithFrame:(CGRect)frame;
 -(void)setFrame:(CGRect)frame;

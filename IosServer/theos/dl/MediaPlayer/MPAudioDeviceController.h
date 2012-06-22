@@ -10,12 +10,12 @@
 @class NSDictionary, NSArray, AVController, NSString;
 
 @interface MPAudioDeviceController : NSObject {
-	id _delegate;
-	AVController* _avController;
-	NSDictionary* _pickedRoute;
-	NSArray* _pickableRoutes;
-	NSString* _category;
-	BOOL _fakeRouteAvailable;
+  id _delegate;
+  AVController* _avController;
+  NSDictionary* _pickedRoute;
+  NSArray* _pickableRoutes;
+  NSString* _category;
+  BOOL _fakeRouteAvailable;
 }
 -(id)init;
 -(id)initWithAVController:(id)avcontroller;

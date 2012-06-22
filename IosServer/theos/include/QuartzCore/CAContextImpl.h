@@ -12,7 +12,7 @@
 __attribute__((visibility("hidden")))
 @interface CAContextImpl : CAContext {
 @private
-	Context* _impl;
+  Context* _impl;
 }
 -(id)initWithOptions:(id)options localContext:(bool)context;
 -(id)initRemoteWithOptions:(id)options;

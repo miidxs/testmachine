@@ -10,8 +10,8 @@
 @class NSString;
 
 @interface _DAVXMLNSTag : NSObject {
-	NSString* ns;
-	NSString* tag;
+  NSString* ns;
+  NSString* tag;
 }
 -(id)initWithNS:(id)ns andTag:(id)tag;
 // inherited: -(void)dealloc;

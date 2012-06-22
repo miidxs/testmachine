@@ -11,7 +11,7 @@
 @class UIImageView;
 
 @interface PLSyncProgressView : UIView {
-	UIImageView* _icon;
+  UIImageView* _icon;
 }
 -(void)layoutSubviews;
 // inherited: -(id)initWithFrame:(CGRect)frame;

@@ -12,8 +12,8 @@
 @class NSMutableArray;
 
 @interface SBAppContextHostView : UIView {
-	NSMutableArray* _contexts;
-	BOOL _hostingEnabled;
+  NSMutableArray* _contexts;
+  BOOL _hostingEnabled;
 }
 @property(readonly, assign, nonatomic) unsigned count;
 @property(assign, nonatomic, getter=isHostingEnabled) BOOL hostingEnabled;

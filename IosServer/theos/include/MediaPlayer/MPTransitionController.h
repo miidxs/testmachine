@@ -11,17 +11,17 @@
 @class UIView, MPViewController, NSMutableSet;
 
 @interface MPTransitionController : NSObject {
-	CFDictionaryRef _observers;
-	float _duration;
-	UIView* _rootView;
-	NSMutableSet* _persistentViewsToFadeOut;
-	NSMutableSet* _viewsToFadeOut;
-	NSMutableSet* _persistentViewsToFadeIn;
-	NSMutableSet* _viewsToFadeIn;
-	MPViewController* _fromViewController;
-	int _fromInterfaceOrientation;
-	MPViewController* _toViewController;
-	int _toInterfaceOrientation;
+  CFDictionaryRef _observers;
+  float _duration;
+  UIView* _rootView;
+  NSMutableSet* _persistentViewsToFadeOut;
+  NSMutableSet* _viewsToFadeOut;
+  NSMutableSet* _persistentViewsToFadeIn;
+  NSMutableSet* _viewsToFadeIn;
+  MPViewController* _fromViewController;
+  int _fromInterfaceOrientation;
+  MPViewController* _toViewController;
+  int _toInterfaceOrientation;
 }
 @property(assign, nonatomic) float duration;
 @property(assign, nonatomic) int fromInterfaceOrientation;

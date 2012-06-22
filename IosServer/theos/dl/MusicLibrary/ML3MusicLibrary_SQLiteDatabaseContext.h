@@ -12,9 +12,9 @@
 __attribute__((visibility("hidden")))
 @interface ML3MusicLibrary_SQLiteDatabaseContext : NSObject {
 @private
-	sqlite3** _dbStack;
-	unsigned _dbStackCurrentIndex;
-	void* _iTunesExtensions;
+  sqlite3** _dbStack;
+  unsigned _dbStackCurrentIndex;
+  void* _iTunesExtensions;
 }
 @property(readonly, assign, nonatomic) sqlite3* db;
 -(id)initWithDB:(sqlite3*)db;

@@ -12,15 +12,15 @@
 @class NSMutableArray, NSArray, UIView, CKTextContentView, CKContentEntryBridge;
 
 @interface CKContentEntryView : UIScrollView <CKEntryField, UITextContentViewDelegate, CKContentEntryBridgeClient> {
-	NSMutableArray* _contentViews;
-	CKTextContentView* _subjectView;
-	CKTextContentView* _activeView;
-	UIView* _subjectLine;
-	CKContentEntryBridge* _bridge;
-	unsigned _showsSubject : 1;
-	unsigned _viewsLoaded : 1;
-	id _entryFieldDelegate;
-	BOOL _needsScrollToVisible;
+  NSMutableArray* _contentViews;
+  CKTextContentView* _subjectView;
+  CKTextContentView* _activeView;
+  UIView* _subjectLine;
+  CKContentEntryBridge* _bridge;
+  unsigned _showsSubject : 1;
+  unsigned _viewsLoaded : 1;
+  id _entryFieldDelegate;
+  BOOL _needsScrollToVisible;
 }
 @property(readonly, assign, nonatomic) NSArray* contentViews;
 @property(assign, nonatomic) BOOL showsSubject;

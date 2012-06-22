@@ -10,11 +10,11 @@
 @class NSString;
 
 @interface SBCalendarAlertItem : SBAlertItem {
-	double _date;
-	NSString* _title;
-	NSString* _location;
-	int _eventId;
-	BOOL _isAllDay;
+  double _date;
+  NSString* _title;
+  NSString* _location;
+  int _eventId;
+  BOOL _isAllDay;
 }
 +(void)registerForAlerts;
 +(void)alarmsDidFire:(id)alarms;

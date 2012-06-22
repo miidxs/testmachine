@@ -164,10 +164,10 @@ typedef struct _IOHIDMouseEventData {
 
 typedef struct _IOHIDDigitizerEventData {
     IOHIDEVENT_BASE;                            // options = kIOHIDTransducerRange, kHIDTransducerTouch, kHIDTransducerInvert
-    IOHIDAXISEVENT_BASE;						// 3c, 40, 44
+    IOHIDAXISEVENT_BASE;            // 3c, 40, 44
 
     uint32_t        transducerIndex;   
-    uint32_t        transducerType;				// could overload this to include that both the hand and finger id.
+    uint32_t        transducerType;       // could overload this to include that both the hand and finger id.
     uint32_t        identity;                   // Specifies a unique ID of the current transducer action.
     uint32_t        eventMask;                  // the type of event that has occurred: range, touch, position
     uint32_t        childEventMask;             // CHILD: the type of event that has occurred: range, touch, position

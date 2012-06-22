@@ -8,9 +8,9 @@
 __attribute__((visibility("hidden")))
 @interface UIKeyboardCacheEntry : NSObject {
 @private
-	UIImage* image;
-	XXStruct_0aX3CD onDiskInfo;
-	NSString* key;
+  UIImage* image;
+  XXStruct_0aX3CD onDiskInfo;
+  NSString* key;
 }
 @property(retain, nonatomic) UIImage* image;
 @property(retain, nonatomic) NSString* key;

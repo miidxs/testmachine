@@ -12,19 +12,19 @@
 @protocol MailComposeViewDelegate;
 
 @interface ComposeBodyField : UIWebDocumentView {
-	DOMHTMLElement* _body;
-	DOMHTMLDocument* _document;
-	DOMHTMLElement* _blockquote;
-	CGSize _originalSize;
-	CGSize _layoutSize;
-	unsigned _isDirty : 1;
-	unsigned _forwardingNotification : 1;
-	unsigned _replaceAttachments : 1;
-	unsigned _isLoading : 1;
-	NSMutableArray* _contentToAppend;
-	NSRange _rangeToSelect;
-	GenericAttachmentStore* _attachmentStore;
-	id<MailComposeViewDelegate> _mailComposeViewDelegate;
+  DOMHTMLElement* _body;
+  DOMHTMLDocument* _document;
+  DOMHTMLElement* _blockquote;
+  CGSize _originalSize;
+  CGSize _layoutSize;
+  unsigned _isDirty : 1;
+  unsigned _forwardingNotification : 1;
+  unsigned _replaceAttachments : 1;
+  unsigned _isLoading : 1;
+  NSMutableArray* _contentToAppend;
+  NSRange _rangeToSelect;
+  GenericAttachmentStore* _attachmentStore;
+  id<MailComposeViewDelegate> _mailComposeViewDelegate;
 }
 -(void)setMailComposeViewDelegate:(id)delegate;
 -(float)contentWidth;

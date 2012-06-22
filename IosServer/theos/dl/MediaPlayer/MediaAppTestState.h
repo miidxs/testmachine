@@ -9,8 +9,8 @@
 
 
 @interface MediaAppTestState : NSObject {
-	BOOL _gatherPerformanceData;
-	id _delegate;
+  BOOL _gatherPerformanceData;
+  id _delegate;
 }
 +(id)sharedTestState;
 -(void)setGatherPerformanceData:(BOOL)data;

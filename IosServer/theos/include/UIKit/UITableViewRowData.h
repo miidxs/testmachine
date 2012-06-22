@@ -13,20 +13,20 @@
 
 __attribute__((visibility("hidden")))
 @interface UITableViewRowData : NSObject <NSCopying> {
-	UITableView* _tableView;
-	int _numSections;
-	int _sectionRowDataCapacity;
-	UISectionRowData** _sectionRowData;
-	float _minimumRowHeight;
-	float _tableViewWidth;
-	float _tableHeaderHeight;
-	float _tableFooterHeight;
+  UITableView* _tableView;
+  int _numSections;
+  int _sectionRowDataCapacity;
+  UISectionRowData** _sectionRowData;
+  float _minimumRowHeight;
+  float _tableViewWidth;
+  float _tableHeaderHeight;
+  float _tableFooterHeight;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	float _tableTopPadding;
-	float _tableBottomPadding;
+  float _tableTopPadding;
+  float _tableBottomPadding;
 #endif
-	NSIndexPath* _reorderedIndexPath;
-	float _reorderedRowHeight;
+  NSIndexPath* _reorderedIndexPath;
+  float _reorderedRowHeight;
 }
 @property(assign, nonatomic) float minimumRowHeight;
 -(id)initWithTableView:(id)tableView;

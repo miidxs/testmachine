@@ -12,7 +12,7 @@
 @class NSMutableArray;
 
 @interface MessageCollector : NSObject <MessageConsumer, QueryProgressMonitor> {
-	NSMutableArray* messages;
+  NSMutableArray* messages;
 }
 // inherited: -(id)init;
 // inherited: -(void)dealloc;

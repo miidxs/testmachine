@@ -8,7 +8,7 @@
 
 
 @interface UIWebSelectionOutline : UIView {
-	UIView* _lineViews[4];
+  UIView* _lineViews[4];
 }
 -(id)initWithFrame:(CGRect)frame;
 -(void)setFrame:(CGRect)frame;

@@ -11,15 +11,15 @@
 __attribute__((visibility("hidden")))
 @interface UIKBHandwritingView : UIKBKeyView {
 @private
-	KBStrokeList* _strokes;
-	id<UIKBHandwritingDelegateProtocol> _delegate;
-	CGColorRef _inkColor;
-	UIKBKeyboard* _keyboard;
-	CGPoint _last;
-	int _down;
-	BOOL _stroked;
-	BOOL _captureEnabled;
-	BOOL _inGesture;
+  KBStrokeList* _strokes;
+  id<UIKBHandwritingDelegateProtocol> _delegate;
+  CGColorRef _inkColor;
+  UIKBKeyboard* _keyboard;
+  CGPoint _last;
+  int _down;
+  BOOL _stroked;
+  BOOL _captureEnabled;
+  BOOL _inGesture;
 }
 // inherited: -(id)initWithFrame:(CGRect)frame keyboard:(id)keyboard key:(id)key state:(int)state;
 // inherited: -(void)dealloc;

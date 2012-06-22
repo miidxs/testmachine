@@ -13,9 +13,9 @@
 __attribute__((visibility("hidden")))
 #endif
 @interface UIClippedImageView : UIView {
-	UIImageView* m_imageView;
-	CGRect m_originalFrame;
-	CGRect m_baseFrame;
+  UIImageView* m_imageView;
+  CGRect m_originalFrame;
+  CGRect m_baseFrame;
 }
 -(id)initWithFrame:(CGRect)frame image:(id)image;
 -(void)dealloc;

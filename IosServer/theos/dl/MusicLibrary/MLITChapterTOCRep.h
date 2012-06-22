@@ -13,11 +13,11 @@
 __attribute__((visibility("hidden")))
 @interface MLITChapterTOCRep : MLChapterTOC {
 @private
-	MLTrack* _track;
-	ChapterData* _chapterDataRef;
-	unsigned* _picCookieIndexMap;
-	unsigned* _urlCookieIndexMap;
-	unsigned* _nameCookieIndexMap;
+  MLTrack* _track;
+  ChapterData* _chapterDataRef;
+  unsigned* _picCookieIndexMap;
+  unsigned* _urlCookieIndexMap;
+  unsigned* _nameCookieIndexMap;
 }
 +(unsigned**)_chapterDataCookieIndexMapForProperty:(int)property ofChapterTOC:(id)chapterTOC;
 -(id)initWithChapterDataRef:(ChapterData*)chapterDataRef track:(id)track;

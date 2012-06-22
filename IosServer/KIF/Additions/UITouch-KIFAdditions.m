@@ -25,41 +25,41 @@ MAKE_CATEGORIES_LOADABLE(UITouch_KIFAdditions)
 
 - (id)initAtPoint:(CGPoint)point inWindow:(UIWindow *)window;
 {
-	self = [super init];
-	if (self == nil) {
+    self = [super init];
+    if (self == nil) {
         return nil;
     }
     
     // Create a fake tap touch
     _tapCount = 1;
-    _locationInWindow =	point;
-	_previousLocationInWindow = _locationInWindow;
+    _locationInWindow = point;
+    _previousLocationInWindow = _locationInWindow;
     
-	UIView *hitTestView = [window hitTest:_locationInWindow withEvent:nil];
+    UIView *hitTestView = [window hitTest:_locationInWindow withEvent:nil];
   
     _window = [window retain];
-	_view = [hitTestView retain];
+    _view = [hitTestView retain];
     _gestureView = [hitTestView retain];
     _phase = UITouchPhaseBegan;
     _touchFlags._firstTouchForView = 1;
     _touchFlags._isTap = 1;
     _timestamp = [NSDate timeIntervalSinceReferenceDate];
 
-	return self;
+    return self;
 }
 
 - (id)initAtPoint:(CGPoint)point inView:(UIView *)view;
 {
-	UIWindow *window = [view isKindOfClass:[UIWindow class]] ? (UIWindow *)view : view.window;  // PETER
-	CGPoint p = [view isKindOfClass:[UIWindow class]] ? point : [view.window convertPoint:point fromView:view];
+    UIWindow *window = [view isKindOfClass:[UIWindow class]] ? (UIWindow *)view : view.window;  // PETER
+    CGPoint p = [view isKindOfClass:[UIWindow class]] ? point : [view.window convertPoint:point fromView:view];
     //return [self initAtPoint:[view.window convertPoint:point fromView:view] inWindow:view.window];
     return [self initAtPoint:p inWindow:window];  // PETER
 }
     
 - (void)setPhase:(UITouchPhase)phase;
 {
-	_phase = phase;
-	_timestamp = [NSDate timeIntervalSinceReferenceDate];
+    _phase = phase;
+    _timestamp = [NSDate timeIntervalSinceReferenceDate];
 }
 
 //
@@ -69,9 +69,9 @@ MAKE_CATEGORIES_LOADABLE(UITouch_KIFAdditions)
 //
 - (void)setLocationInWindow:(CGPoint)location
 {
-	_previousLocationInWindow = _locationInWindow;
-	_locationInWindow = location;
-	_timestamp = [NSDate timeIntervalSinceReferenceDate];
+    _previousLocationInWindow = _locationInWindow;
+    _locationInWindow = location;
+    _timestamp = [NSDate timeIntervalSinceReferenceDate];
 }
 
 @end

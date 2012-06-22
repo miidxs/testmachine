@@ -11,10 +11,10 @@
 @class UIImage;
 
 @interface MFSlicedImageView : UIView {
-	UIImage* _image;
-	UIImage* _imagePressed;
-	CGRect _imageSlice;
-	unsigned _isPressed : 1;
+  UIImage* _image;
+  UIImage* _imagePressed;
+  CGRect _imageSlice;
+  unsigned _isPressed : 1;
 }
 -(id)initWithFrame:(CGRect)frame image:(id)image pressed:(id)pressed slice:(CGRect)slice;
 // inherited: -(void)dealloc;

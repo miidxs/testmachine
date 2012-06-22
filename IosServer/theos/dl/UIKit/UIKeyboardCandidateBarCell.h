@@ -7,13 +7,13 @@
 __attribute__((visibility("hidden")))
 @interface UIKeyboardCandidateBarCell : UIView {
 @private
-	NSString* m_candidate;
-	id m_target;
-	SEL m_action;
-	CGSize m_textSize;
-	BOOL m_highlighted;
-	BOOL m_special;
-	BOOL m_arrow;
+  NSString* m_candidate;
+  id m_target;
+  SEL m_action;
+  CGSize m_textSize;
+  BOOL m_highlighted;
+  BOOL m_special;
+  BOOL m_arrow;
 }
 @property(readonly, assign, nonatomic) CGSize stringSize;
 @property(readonly, assign, nonatomic) BOOL isArrow;

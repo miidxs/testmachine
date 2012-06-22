@@ -8,11 +8,11 @@
 __attribute__((visibility("hidden")))
 @interface UIStatusBarViewController : UIViewController {
 @private
-	UIWindow* _window;
-	UIView* _statusBar;
-	UIImageView* _statusBarBackgroundImage;
-	UIWindow* _leftBottomCorner;
-	UIWindow* _rightBottomCorner;
+  UIWindow* _window;
+  UIView* _statusBar;
+  UIImageView* _statusBarBackgroundImage;
+  UIWindow* _leftBottomCorner;
+  UIWindow* _rightBottomCorner;
 }
 // inherited: -(id)init;
 // inherited: -(void)dealloc;

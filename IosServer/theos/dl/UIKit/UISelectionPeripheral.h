@@ -17,11 +17,11 @@
 @protocol UISelectedItemPrivate;
 
 @interface UISelectionPeripheral : UIPickerView <UIFormPeripheral, UIPickerViewDataSource, UIPickerViewDelegate> {
-	DOMHTMLSelectElement* _selectionNode;
-	id<UISelectedItemPrivate> _selectedItem;
-	NSMutableArray* _cachedItems;
-	int _orientation;
-	unsigned _firstSelectedIndex;
+  DOMHTMLSelectElement* _selectionNode;
+  id<UISelectedItemPrivate> _selectedItem;
+  NSMutableArray* _cachedItems;
+  int _orientation;
+  unsigned _firstSelectedIndex;
 }
 @property(retain, nonatomic) DOMHTMLSelectElement* _selectionNode;
 @property(retain, nonatomic) id<UISelectedItemPrivate> _selectedItem;

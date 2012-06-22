@@ -11,44 +11,44 @@
 @protocol UIMovieScrubberTrackViewDelegate, UIMovieScrubberTrackViewDataSource;
 
 @interface UIMovieScrubberTrackView : UIView {
-	id<UIMovieScrubberTrackViewDataSource> _dataSource;
-	id<UIMovieScrubberTrackViewDelegate> _delegate;
-	NSArray* _summaryThumbnailViews;
-	NSArray* _summaryThumbnailTimestamps;
-	NSArray* _summaryThumbnailChildTimestamps;
-	NSDictionary* _thumbnailStartXValues;
-	NSDictionary* _childThumbnailViews;
-	NSMutableDictionary* _thumbnailViews;
-	NSArray* _timestamps;
-	UIMovieScrubberTrackOverlayView* _overlayView;
-	UIView* _maskView;
-	UIView* _maskContainerView;
-	CGSize _thumbnailSize;
-	float _zoomOriginXDelta;
-	float _zoomWidthDelta;
+  id<UIMovieScrubberTrackViewDataSource> _dataSource;
+  id<UIMovieScrubberTrackViewDelegate> _delegate;
+  NSArray* _summaryThumbnailViews;
+  NSArray* _summaryThumbnailTimestamps;
+  NSArray* _summaryThumbnailChildTimestamps;
+  NSDictionary* _thumbnailStartXValues;
+  NSDictionary* _childThumbnailViews;
+  NSMutableDictionary* _thumbnailViews;
+  NSArray* _timestamps;
+  UIMovieScrubberTrackOverlayView* _overlayView;
+  UIView* _maskView;
+  UIView* _maskContainerView;
+  CGSize _thumbnailSize;
+  float _zoomOriginXDelta;
+  float _zoomWidthDelta;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_1
-	float _unclampedZoomWidthDelta;
+  float _unclampedZoomWidthDelta;
 #endif
-	float _zoomAnimationDuration;
-	double _duration;
-	double _value;
-	double _startValue;
-	double _endValue;
-	struct {
-		unsigned delegateSizeOriginDelta : 1;
-		unsigned delegateDidExpand : 1;
-		unsigned delegateDidCollapse : 1;
-		unsigned delegateWillRequestThumbs : 1;
-		unsigned delegateDidRequestThumbs : 1;
+  float _zoomAnimationDuration;
+  double _duration;
+  double _value;
+  double _startValue;
+  double _endValue;
+  struct {
+    unsigned delegateSizeOriginDelta : 1;
+    unsigned delegateDidExpand : 1;
+    unsigned delegateDidCollapse : 1;
+    unsigned delegateWillRequestThumbs : 1;
+    unsigned delegateDidRequestThumbs : 1;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_1
-		unsigned delegateZoomAnimationDuration : 1;
-		unsigned delegateZoomAnimationDelay : 1;
+    unsigned delegateZoomAnimationDuration : 1;
+    unsigned delegateZoomAnimationDelay : 1;
 #endif
-		unsigned needsReload : 1;
-		unsigned editing : 1;
-		unsigned editingHandle;
-		unsigned zoomIsDisabled : 1;
-	} _trackFlags;
+    unsigned needsReload : 1;
+    unsigned editing : 1;
+    unsigned editingHandle;
+    unsigned zoomIsDisabled : 1;
+  } _trackFlags;
 }
 @property(assign, nonatomic) id<UIMovieScrubberTrackViewDelegate> delegate;
 @property(assign, nonatomic) id<UIMovieScrubberTrackViewDataSource> dataSource;

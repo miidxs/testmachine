@@ -13,9 +13,9 @@
 
 __attribute__((visibility("hidden")))
 @interface CandWordString : NSObject {
-	NSString* _string;
-	char* _UTF8String;
-	NSData* _utf8Data;
+  NSString* _string;
+  char* _UTF8String;
+  NSData* _utf8Data;
 }
 -(id)initWithString:(id)string;
 -(void)dealloc;

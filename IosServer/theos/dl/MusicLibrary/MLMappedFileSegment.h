@@ -12,11 +12,11 @@
 __attribute__((visibility("hidden")))
 @interface MLMappedFileSegment : NSObject {
 @private
-	MLMappedFile* _mappedFile;
-	unsigned _index;
-	void* _ptr;
-	unsigned _length;
-	BOOL _dying;
+  MLMappedFile* _mappedFile;
+  unsigned _index;
+  void* _ptr;
+  unsigned _length;
+  BOOL _dying;
 }
 -(id)initWithMappedFile:(id)mappedFile index:(unsigned long)index length:(unsigned long)length idealAddress:(void*)address;
 -(id)initWithMappedFile:(id)mappedFile offset:(long long)offset length:(unsigned long)length;

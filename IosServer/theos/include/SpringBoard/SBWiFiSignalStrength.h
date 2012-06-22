@@ -11,16 +11,16 @@
 
 
 @interface SBWiFiSignalStrength : UIImageView {
-	int _bars;
-	float _rawStrength;
-	BOOL _hilited;
-	BOOL _selected;
-	BOOL _secure;
+  int _bars;
+  float _rawStrength;
+  BOOL _hilited;
+  BOOL _selected;
+  BOOL _secure;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	BOOL _requiresPassword;
+  BOOL _requiresPassword;
 #endif
-	BOOL _joining;
-	UIImageView* _icon;
+  BOOL _joining;
+  UIImageView* _icon;
 }
 +(void)hideSpinner;
 -(void)setSpinnerHilited:(BOOL)hilited;

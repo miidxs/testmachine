@@ -9,18 +9,18 @@
 @class NSMutableArray, UIPreferencesTableCell, UIKeyboard;
 
 @interface UIPreferencesTable : UITable {
-	UIPreferencesTableCell* _editingCell;
-	int _editingCellRow;
-	NSMutableArray* _groupItems;
-	UIKeyboard* _keyboard;
-	float _textOffset;
-	CFDictionaryRef _piecesForCell;
-	unsigned _datasourceCellForGroup : 1;
-	unsigned _datasourceIsRadioGroup : 1;
-	unsigned _datasourceIsLabelGroup : 1;
-	unsigned _datasourceIsRowCheckedInRadioGroup : 1;
-	unsigned _centersContent : 1;
-	unsigned _reserved : 27;
+  UIPreferencesTableCell* _editingCell;
+  int _editingCellRow;
+  NSMutableArray* _groupItems;
+  UIKeyboard* _keyboard;
+  float _textOffset;
+  CFDictionaryRef _piecesForCell;
+  unsigned _datasourceCellForGroup : 1;
+  unsigned _datasourceIsRadioGroup : 1;
+  unsigned _datasourceIsLabelGroup : 1;
+  unsigned _datasourceIsRowCheckedInRadioGroup : 1;
+  unsigned _centersContent : 1;
+  unsigned _reserved : 27;
 }
 -(void)dealloc;
 -(id)initWithFrame:(CGRect)frame;

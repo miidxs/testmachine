@@ -8,9 +8,9 @@
 @class NSString, NSArray;
 
 @interface UIKeyboardEmojiCategory : NSObject {
-	NSString* _name;
-	NSArray* _emoji;
-	int _lastViewedPage;
+  NSString* _name;
+  NSArray* _emoji;
+  int _lastViewedPage;
 }
 @property(retain) NSString* name;
 @property(retain) NSArray* emoji;

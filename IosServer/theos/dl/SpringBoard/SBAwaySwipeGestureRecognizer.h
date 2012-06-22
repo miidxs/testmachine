@@ -10,11 +10,11 @@
 
 
 @interface SBAwaySwipeGestureRecognizer : UIGestureRecognizer {
-	CGPoint _startLocation;
-	unsigned _startTouchCount;
-	double _startTime;
-	unsigned _requiredTouchCount;
-	int _gestureType;
+  CGPoint _startLocation;
+  unsigned _startTouchCount;
+  double _startTime;
+  unsigned _requiredTouchCount;
+  int _gestureType;
 }
 @property(assign, nonatomic) unsigned requiredTouchCount;
 // inherited: -(void)touchesBegan:(id)began withEvent:(id)event;

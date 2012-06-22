@@ -10,7 +10,7 @@
 
 
 @interface ASEmptyNode : ASItem <ASParsingFrontingBasicType> {
-	Class _expectedClassType;
+  Class _expectedClassType;
 }
 // inherited: +(BOOL)acceptsTopLevelLeaves;
 // inherited: +(BOOL)parsingLeafNode;

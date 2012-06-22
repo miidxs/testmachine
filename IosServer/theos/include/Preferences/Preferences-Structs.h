@@ -12,9 +12,9 @@
 #if __cplusplus
 extern "C" {
 #endif
-	@class UIImage, NSString;
+  @class UIImage, NSString;
 
-	UIImage* PSSettingsIconImageForUserAppBundlePath(NSString* path);
+  UIImage* PSSettingsIconImageForUserAppBundlePath(NSString* path);
 
 #if __cplusplus
 }

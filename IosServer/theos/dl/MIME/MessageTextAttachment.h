@@ -10,7 +10,7 @@
 @class MessageFileWrapper;
 
 @interface MessageTextAttachment : NSObject {
-	MessageFileWrapper* _fileWrapper;
+  MessageFileWrapper* _fileWrapper;
 }
 -(id)initWithWrapper:(id)wrapper;
 // inherited: -(void)dealloc;

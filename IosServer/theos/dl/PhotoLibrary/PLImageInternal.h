@@ -12,9 +12,9 @@
 
 @interface PLImageInternal : MLPhoto {
 @private
-	NSURL* _url;
-	NSData* _data;
-	CGImageSourceRef _imageSource;
+  NSURL* _url;
+  NSData* _data;
+  CGImageSourceRef _imageSource;
 }
 // inherited: -(void)dealloc;
 // inherited: -(id)title;

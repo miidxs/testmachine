@@ -8,7 +8,7 @@
 
 
 @interface CKSummaryLabel : UILabel {
-	BOOL _hasEmoji;
+  BOOL _hasEmoji;
 }
 -(void)setText:(id)text;
 -(void)drawRect:(CGRect)rect;

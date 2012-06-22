@@ -13,9 +13,9 @@
 @class NSString, NSDate;
 
 @interface ASEventUID : NSObject <ASParsingLeafNode, NSCopying> {
-	NSDate* _exceptionDate;
-	NSString* _uidWithoutExceptionDate;
-	BOOL _isOutlookCreatedUid;
+  NSDate* _exceptionDate;
+  NSString* _uidWithoutExceptionDate;
+  BOOL _isOutlookCreatedUid;
 }
 +(BOOL)acceptsTopLevelLeaves;
 +(BOOL)parsingLeafNode;

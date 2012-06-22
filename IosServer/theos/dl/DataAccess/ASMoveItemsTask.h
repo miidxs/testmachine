@@ -10,7 +10,7 @@
 @class NSMutableArray;
 
 @interface ASMoveItemsTask : ASTask {
-	NSMutableArray* _moveItems;
+  NSMutableArray* _moveItems;
 }
 // inherited: -(void)dealloc;
 // inherited: -(int)commandCode;

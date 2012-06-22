@@ -11,9 +11,9 @@
 @class NSData;
 
 @interface DAMessagePayloadFetchResponseImpl : NSObject <DAMessagePayloadFetchResponse> {
-	BOOL streaming;
-	BOOL streamingDone;
-	NSData* data;
+  BOOL streaming;
+  BOOL streamingDone;
+  NSData* data;
 }
 -(id)initWithData:(id)data streaming:(BOOL)streaming streamingDone:(BOOL)done;
 // in a protocol: -(BOOL)streaming;

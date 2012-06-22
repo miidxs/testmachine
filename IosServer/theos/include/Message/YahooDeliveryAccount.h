@@ -10,7 +10,7 @@
 @class YahooAccount;
 
 @interface YahooDeliveryAccount : DeliveryAccount {
-	YahooAccount* _yahooAccount;
+  YahooAccount* _yahooAccount;
 }
 // inherited: -(Class)deliveryClass;
 // inherited: -(id)preferredAuthScheme;

@@ -10,7 +10,7 @@
 @class NSData;
 
 @interface VMUUUIDLoadCommand : VMULoadCommand {
-	NSData* _uuid;
+  NSData* _uuid;
 }
 // inherited: -(id)initWithMemory:(id)memory;
 -(NSData*)uuid;

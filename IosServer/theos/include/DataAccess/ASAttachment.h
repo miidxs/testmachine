@@ -11,13 +11,13 @@
 @class NSNumber, NSString;
 
 @interface ASAttachment : ASItem <DAMailMessageAttachment> {
-	NSString* _attName;
-	NSNumber* _attSize;
-	NSNumber* _attMethod;
-	NSString* _attDisplayName;
-	NSString* _attContentId;
-	NSString* _attContentLocation;
-	NSNumber* _attIsInline;
+  NSString* _attName;
+  NSNumber* _attSize;
+  NSNumber* _attMethod;
+  NSString* _attDisplayName;
+  NSString* _attContentId;
+  NSString* _attContentLocation;
+  NSNumber* _attIsInline;
 }
 @property(copy) NSString* name;
 @property(copy) NSNumber* size;

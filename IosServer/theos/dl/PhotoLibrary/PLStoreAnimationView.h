@@ -11,7 +11,7 @@
 @class UIImageView;
 
 @interface PLStoreAnimationView : UIView {
-	UIImageView* _imageView;
+  UIImageView* _imageView;
 }
 -(id)imageView;
 -(id)initWithFrame:(CGRect)frame image:(id)image;

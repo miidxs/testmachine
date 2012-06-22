@@ -10,27 +10,27 @@
 @class NSArray, ASMeetingRequest, NSDate, NSString, NSData;
 
 @interface ASEmailItem : ASChangedCollectionLeaf {
-	NSString* _to;
-	NSString* _cc;
-	NSString* _from;
-	NSString* _replyTo;
-	NSDate* _date;
-	NSString* _subject;
-	NSString* _displayTo;
-	int _importance;
-	BOOL _read;
-	NSString* _body;
-	int _bodySize;
-	BOOL _bodyTruncated;
-	NSString* _messageClass;
-	NSArray* _attachments;
-	ASMeetingRequest* _meetingRequest;
-	NSString* _threadTopic;
-	NSString* _mimeData;
-	NSString* _folderId;
-	NSString* _longID;
-	int _bodyType;
-	BOOL _readIsSet;
+  NSString* _to;
+  NSString* _cc;
+  NSString* _from;
+  NSString* _replyTo;
+  NSDate* _date;
+  NSString* _subject;
+  NSString* _displayTo;
+  int _importance;
+  BOOL _read;
+  NSString* _body;
+  int _bodySize;
+  BOOL _bodyTruncated;
+  NSString* _messageClass;
+  NSArray* _attachments;
+  ASMeetingRequest* _meetingRequest;
+  NSString* _threadTopic;
+  NSString* _mimeData;
+  NSString* _folderId;
+  NSString* _longID;
+  int _bodyType;
+  BOOL _readIsSet;
 }
 @property(retain) NSString* to;
 @property(retain) NSString* cc;

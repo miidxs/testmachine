@@ -12,8 +12,8 @@
 __attribute__((visibility("hidden")))
 @interface ML3QueryLoadEntitesOperation : ML3QueryLoadOperation {
 @private
-	NSRange _loadRange;
-	BOOL _ordered;
+  NSRange _loadRange;
+  BOOL _ordered;
 }
 @property(assign) NSRange loadRange;
 @property(assign) BOOL ordered;

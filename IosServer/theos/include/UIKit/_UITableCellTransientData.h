@@ -8,12 +8,12 @@
 @class UIView, UIControl, UIRemoveControl;
 
 @interface _UITableCellTransientData : NSObject {
-	UIRemoveControl* _removeControl;
-	UIControl* _grabber;
-	UIView* _separator;
-	unsigned _reorderingEnabled : 1;
-	unsigned _hidSeparatorForRemoveConfirmation : 1;
-	unsigned _reserved : 30;
+  UIRemoveControl* _removeControl;
+  UIControl* _grabber;
+  UIView* _separator;
+  unsigned _reorderingEnabled : 1;
+  unsigned _hidSeparatorForRemoveConfirmation : 1;
+  unsigned _reserved : 30;
 }
 -(BOOL)dataRequired;
 @end

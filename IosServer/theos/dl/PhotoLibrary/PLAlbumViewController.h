@@ -10,10 +10,10 @@
 @class MLPhotoAlbum, PLAlbumView;
 
 @interface PLAlbumViewController : UIViewController {
-	MLPhotoAlbum* _album;
-	int _previousStatusBarMode;
-	int _newStatusBarMode;
-	unsigned _didSetPreviousStatusBarMode : 1;
+  MLPhotoAlbum* _album;
+  int _previousStatusBarMode;
+  int _newStatusBarMode;
+  unsigned _didSetPreviousStatusBarMode : 1;
 }
 @property(assign, nonatomic) int previousStatusBarMode;
 @property(readonly, assign, nonatomic) PLAlbumView* albumView;

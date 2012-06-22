@@ -10,20 +10,20 @@
 @class NSString, NSArray, ActivityMonitor, NSConditionLock, MFLock, POP3Connection;
 
 @interface POPAccount : MailAccount {
-	ActivityMonitor* _fetchMonitor;
-	POP3Connection* _connection;
-	NSConditionLock* _sharedConnectionCondition;
-	unsigned _connectionsInUse;
-	NSArray* _currentUIDs;
-	MFLock* _connectionActivityLock;
-	float _connectionTimeout;
-	BOOL _fetcherNeedsReset;
-	BOOL _deletingMessages;
-	BOOL _hasDoneBackgroundSynchronization;
-	BOOL _shouldAttemptAPOP;
-	NSString* _oldestMessageUID;
-	NSString* _newestMessageUID;
-	int _numberOfKnownUIDs;
+  ActivityMonitor* _fetchMonitor;
+  POP3Connection* _connection;
+  NSConditionLock* _sharedConnectionCondition;
+  unsigned _connectionsInUse;
+  NSArray* _currentUIDs;
+  MFLock* _connectionActivityLock;
+  float _connectionTimeout;
+  BOOL _fetcherNeedsReset;
+  BOOL _deletingMessages;
+  BOOL _hasDoneBackgroundSynchronization;
+  BOOL _shouldAttemptAPOP;
+  NSString* _oldestMessageUID;
+  NSString* _newestMessageUID;
+  int _numberOfKnownUIDs;
 }
 // inherited: +(id)accountTypeString;
 // inherited: +(id)saslProfileName;

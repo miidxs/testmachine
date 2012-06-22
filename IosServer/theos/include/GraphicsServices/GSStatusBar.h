@@ -40,12 +40,12 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 #if __cplusplus
 extern "C" {
-#endif	
+#endif  
 
-	CGFloat GSStatusBarHeight();
-	CGFloat GSDefaultStatusBarHeight();	// = 20
-	CGFloat GSSetStatusBarHeight(CGFloat newHeight);
-	
+  CGFloat GSStatusBarHeight();
+  CGFloat GSDefaultStatusBarHeight(); // = 20
+  CGFloat GSSetStatusBarHeight(CGFloat newHeight);
+  
 #if __cplusplus
 }
 #endif

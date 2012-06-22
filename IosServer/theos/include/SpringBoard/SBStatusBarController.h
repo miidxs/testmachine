@@ -11,49 +11,49 @@
 @class SBStatusBar, SBStatusBarContentsView;
 
 @interface SBStatusBarController : NSObject {
-	UIWindow* _slidingStatusBarWindow;
-	int _slidingStatusBarAnimation;
-	UIWindow* _animatingCallStatusBarWindow;
+  UIWindow* _slidingStatusBarWindow;
+  int _slidingStatusBarAnimation;
+  UIWindow* _animatingCallStatusBarWindow;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	UIWindow* _leftTopCorner;
-	UIWindow* _rightTopCorner;
+  UIWindow* _leftTopCorner;
+  UIWindow* _rightTopCorner;
 #endif
-	UIWindow* _leftBottomCorner;
-	UIWindow* _rightBottomCorner;
-	SBStatusBar* _statusBarView;
-	SBStatusBarContentsView* _statusBarContentsView;
-	SBStatusBar* _transitioningStatusBarView;
-	SBStatusBar* _animatingCallStatusBar;
-	SBStatusBar* _animatingCallStatusBarToFixUp;
-	SBStatusBarContentsView* _transitioningStatusBarContentsView;
-	unsigned _isLockVisible : 1;
-	unsigned _isTimeVisible : 1;
-	unsigned _lockOrTimeVisibleChanging : 1;
-	unsigned _dimmed : 1;
-	unsigned _showDimmerOverlay : 1;
-	unsigned _animating : 1;
-	unsigned _airplaneMode : 1;
-	unsigned _showsProgress : 1;
-	unsigned _showsProgressOnHomeScreen : 1;
-	unsigned _cloakStatusBar : 1;
-	unsigned _showAirport : 1;
-	unsigned _telephonyControllerCheckedIn : 1;
-	unsigned _bluetoothControllerCheckedIn : 1;
-	unsigned _enteringAirplaneMode : 1;
-	unsigned _doubleHeightStatusBarHeightDirty : 1;
-	unsigned _doubleHeightStatusBarContentDirty : 1;
-	unsigned _animatingStatusBarRotation : 1;
-	NSMutableArray* _statusBarIndicatorNames;
-	int _mode;
-	int _orientation;
-	int _animatingCallStatusBarOrientation;
-	NSString* _customText;
-	UIColor* _dimmerOverlayColor;
-	int _airPortSignalStrength;
-	NSMutableArray* _doubleHeightInfos;
+  UIWindow* _leftBottomCorner;
+  UIWindow* _rightBottomCorner;
+  SBStatusBar* _statusBarView;
+  SBStatusBarContentsView* _statusBarContentsView;
+  SBStatusBar* _transitioningStatusBarView;
+  SBStatusBar* _animatingCallStatusBar;
+  SBStatusBar* _animatingCallStatusBarToFixUp;
+  SBStatusBarContentsView* _transitioningStatusBarContentsView;
+  unsigned _isLockVisible : 1;
+  unsigned _isTimeVisible : 1;
+  unsigned _lockOrTimeVisibleChanging : 1;
+  unsigned _dimmed : 1;
+  unsigned _showDimmerOverlay : 1;
+  unsigned _animating : 1;
+  unsigned _airplaneMode : 1;
+  unsigned _showsProgress : 1;
+  unsigned _showsProgressOnHomeScreen : 1;
+  unsigned _cloakStatusBar : 1;
+  unsigned _showAirport : 1;
+  unsigned _telephonyControllerCheckedIn : 1;
+  unsigned _bluetoothControllerCheckedIn : 1;
+  unsigned _enteringAirplaneMode : 1;
+  unsigned _doubleHeightStatusBarHeightDirty : 1;
+  unsigned _doubleHeightStatusBarContentDirty : 1;
+  unsigned _animatingStatusBarRotation : 1;
+  NSMutableArray* _statusBarIndicatorNames;
+  int _mode;
+  int _orientation;
+  int _animatingCallStatusBarOrientation;
+  NSString* _customText;
+  UIColor* _dimmerOverlayColor;
+  int _airPortSignalStrength;
+  NSMutableArray* _doubleHeightInfos;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	NSString* _currentAnimationIDStr;
-	unsigned _currentAnimationID;
+  NSString* _currentAnimationIDStr;
+  unsigned _currentAnimationID;
 #endif
 }
 +(SBStatusBarController*)sharedStatusBarController;
@@ -87,7 +87,7 @@
 -(BOOL)useDoubleHeightSizeForMode:(int)mode orientation:(int)orientation;
 -(BOOL)useDoubleHeightStyle;
 -(BOOL)useDoubleHeightSize;
--(void)setIsInCall:(BOOL)isInCall;	// equivaent to [self setDoubleHeightMode:isInCall glowAnimationEnabled:YES bundleID:@"com.apple.mobilephone" priority:10];
+-(void)setIsInCall:(BOOL)isInCall;  // equivaent to [self setDoubleHeightMode:isInCall glowAnimationEnabled:YES bundleID:@"com.apple.mobilephone" priority:10];
 -(BOOL)isInCall;
 -(void)updateDoubleHeightStatusBarState;
 -(id)doubleHeightInfoForBundleID:(id)bundleID createIfNeeded:(BOOL)needed;
@@ -110,7 +110,7 @@
 -(id)statusBarIndicatorNames;
 -(id)customText;
 -(void)setCustomText:(id)text;
--(void)setAirPortStrength:(int)strength;	// 0 ~ 3
+-(void)setAirPortStrength:(int)strength;  // 0 ~ 3
 -(void)setShowsAirPort:(BOOL)port;
 -(void)dataConnectionTypeChanged;
 -(BOOL)showsAirPort;

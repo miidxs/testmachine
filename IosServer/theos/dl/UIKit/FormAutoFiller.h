@@ -8,15 +8,15 @@
 @class WebFrame, NSMutableArray, DOMElement, DOMHTMLInputElement, NSMutableDictionary;
 
 @interface FormAutoFiller : NSObject {
-	WebFrame* _frame;
-	DOMElement* _form;
-	int _formType;
-	DOMHTMLInputElement* _usernameElement;
-	DOMHTMLInputElement* _passwordElement;
-	NSMutableArray* _autoFilledControls;
-	NSMutableDictionary* _fieldsFilledFromAB;
-	NSMutableArray* _continuationFields;
-	BOOL _hasAutoFilled;
+  WebFrame* _frame;
+  DOMElement* _form;
+  int _formType;
+  DOMHTMLInputElement* _usernameElement;
+  DOMHTMLInputElement* _passwordElement;
+  NSMutableArray* _autoFilledControls;
+  NSMutableDictionary* _fieldsFilledFromAB;
+  NSMutableArray* _continuationFields;
+  BOOL _hasAutoFilled;
 }
 +(id)autoFillerForFrame:(id)frame form:(id)form create:(BOOL)create;
 +(id)matchForControl:(id)control rep:(id)rep fieldLabels:(id)labels useFieldName:(BOOL)name foundByPageScan:(BOOL*)scan;

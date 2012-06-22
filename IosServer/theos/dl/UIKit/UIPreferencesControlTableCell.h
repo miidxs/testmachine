@@ -9,7 +9,7 @@
 @class UIControl;
 
 @interface UIPreferencesControlTableCell : UIPreferencesTableCell {
-	UIControl* _control;
+  UIControl* _control;
 }
 -(void)setControl:(id)control;
 -(id)control;

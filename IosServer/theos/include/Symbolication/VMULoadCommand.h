@@ -9,8 +9,8 @@
 
 
 @interface VMULoadCommand : NSObject {
-	unsigned long long _cmdSize;
-	unsigned _command;
+  unsigned long long _cmdSize;
+  unsigned _command;
 }
 +(id)loadCommandWithMemory:(id)memory;
 -(id)initWithMemory:(id)memory;

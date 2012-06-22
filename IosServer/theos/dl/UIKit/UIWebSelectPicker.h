@@ -11,9 +11,9 @@
 __attribute__((visibility("hidden")))
 @interface UIWebSelectPicker : UIPickerView <UIWebSelectControl, UIPickerViewDataSource, UIPickerViewDelegate> {
 @private
-	NSArray* _cachedItems;
-	id<UIWebSelectedItemPrivate> _singleSelectionItem;
-	unsigned _singleSelectionIndex;
+  NSArray* _cachedItems;
+  id<UIWebSelectedItemPrivate> _singleSelectionItem;
+  unsigned _singleSelectionIndex;
 }
 @property(retain, nonatomic) NSArray* _cachedItems;
 @property(retain, nonatomic) id<UIWebSelectedItemPrivate> _singleSelectionItem;

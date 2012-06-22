@@ -10,13 +10,13 @@
 
 @interface MPMediaLibraryInternal : NSObject {
 @private
-	id _implementation;
-	int _libraryChangeObservers;
-	unsigned _determinedHasMedia : 1;
-	unsigned _hasMedia : 1;
-	unsigned _determinedHasSongs : 1;
-	unsigned _hasSongs : 1;
-	unsigned _filteringDisabled : 1;
+  id _implementation;
+  int _libraryChangeObservers;
+  unsigned _determinedHasMedia : 1;
+  unsigned _hasMedia : 1;
+  unsigned _determinedHasSongs : 1;
+  unsigned _hasSongs : 1;
+  unsigned _filteringDisabled : 1;
 }
 @end
 

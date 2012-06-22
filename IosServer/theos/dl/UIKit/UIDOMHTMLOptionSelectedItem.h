@@ -9,8 +9,8 @@
 @class DOMHTMLOptionElement;
 
 @interface UIDOMHTMLOptionSelectedItem : NSObject <UISelectedItemPrivate> {
-	BOOL _selected;
-	DOMHTMLOptionElement* _node;
+  BOOL _selected;
+  DOMHTMLOptionElement* _node;
 }
 @property(retain, nonatomic) DOMHTMLOptionElement* _node;
 -(id)initWithHTMLOptionNode:(id)htmloptionNode;

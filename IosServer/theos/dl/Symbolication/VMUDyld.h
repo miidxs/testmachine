@@ -10,8 +10,8 @@
 @class NSArray, VMUMachOHeader, NSString, NSDate;
 
 @interface VMUDyld : NSObject {
-	VMUMachOHeader* _dyldMachOHeader;
-	NSArray* _machOHeaders;
+  VMUMachOHeader* _dyldMachOHeader;
+  NSArray* _machOHeaders;
 }
 +(VMUDyld*)dyldWithMachOHeader:(VMUMachOHeader*)machOHeader memory:(id)memory;
 +(NSString*)nativeSharedCachePath;

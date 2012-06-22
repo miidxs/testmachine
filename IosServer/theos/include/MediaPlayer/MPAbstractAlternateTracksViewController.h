@@ -9,8 +9,8 @@
 
 
 @interface MPAbstractAlternateTracksViewController : MPViewController {
-	unsigned _selectedTracks[2];
-	unsigned _previousTracks[2];
+  unsigned _selectedTracks[2];
+  unsigned _previousTracks[2];
 }
 -(id)init;
 -(void)dealloc;

@@ -8,12 +8,12 @@
 
 
 @interface UIRemoveControlMinusButton : UIControl {
-	unsigned _rotated : 1;
-	unsigned _rotating : 1;
-	unsigned _hiding : 1;
-	unsigned _showAsPlus : 1;
-	unsigned _reserved : 28;
-	float _verticalOffset;
+  unsigned _rotated : 1;
+  unsigned _rotating : 1;
+  unsigned _hiding : 1;
+  unsigned _showAsPlus : 1;
+  unsigned _reserved : 28;
+  float _verticalOffset;
 }
 +(float)defaultWidth;
 +(id)minusImage;

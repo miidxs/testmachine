@@ -26,21 +26,21 @@
 
 @interface UIBookViewController : UIViewController {
 @private
-	id<UIBookViewControllerDelegate> _delegate;
-	UIView* _contentView;
-	UIViewController* _evenPage;
-	UIViewController* _oddPage;
-	UIViewController* _newEvenPage;
-	UIViewController* _newOddPage;
-	int _turnCount;
-	int _animatedPageTurns;
-	float _turnMargin;
-	UIEdgeInsets _contentInset;
-	double _turnDuration;
+  id<UIBookViewControllerDelegate> _delegate;
+  UIView* _contentView;
+  UIViewController* _evenPage;
+  UIViewController* _oddPage;
+  UIViewController* _newEvenPage;
+  UIViewController* _newOddPage;
+  int _turnCount;
+  int _animatedPageTurns;
+  float _turnMargin;
+  UIEdgeInsets _contentInset;
+  double _turnDuration;
 }
 @property(assign, nonatomic) id<UIBookViewControllerDelegate> delegate;
-@property(retain, nonatomic) UIViewController* oddPage;	// = right page
-@property(retain, nonatomic) UIViewController* evenPage;	// = left page
+@property(retain, nonatomic) UIViewController* oddPage; // = right page
+@property(retain, nonatomic) UIViewController* evenPage;  // = left page
 @property(assign, nonatomic) float turnMargin;
 @property(assign, nonatomic) UIEdgeInsets contentInset;
 @property(assign, nonatomic) double turnDuration;

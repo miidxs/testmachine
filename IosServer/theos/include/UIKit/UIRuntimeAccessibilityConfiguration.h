@@ -8,11 +8,11 @@
 @class NSString, NSNumber;
 
 @interface UIRuntimeAccessibilityConfiguration : NSObject {
-	NSString* accessibilityConfigurationHint;
-	NSString* accessibilityConfigurationLabel;
-	NSNumber* accessibilityConfigurationTraits;
-	NSNumber* isAccessibilityConfigurationElement;
-	NSObject* object;
+  NSString* accessibilityConfigurationHint;
+  NSString* accessibilityConfigurationLabel;
+  NSNumber* accessibilityConfigurationTraits;
+  NSNumber* isAccessibilityConfigurationElement;
+  NSObject* object;
 }
 @property(retain, nonatomic) NSString* accessibilityConfigurationHint;
 @property(retain, nonatomic) NSString* accessibilityConfigurationLabel;

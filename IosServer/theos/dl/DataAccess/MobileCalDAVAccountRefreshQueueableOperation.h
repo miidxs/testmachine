@@ -11,7 +11,7 @@
 @class CalDAVRefreshContext, MobileCalDAVAccountRefreshActor;
 
 @interface MobileCalDAVAccountRefreshQueueableOperation : CalDAVQueueableOperation <CalDAVRefreshActorCallback> {
-	MobileCalDAVAccountRefreshActor* _refreshActor;
+  MobileCalDAVAccountRefreshActor* _refreshActor;
 }
 @property(readonly, assign, nonatomic) CalDAVRefreshContext* context;
 -(id)initWithQueue:(id)queue context:(id)context;

@@ -13,8 +13,8 @@
 __attribute__((visibility("hidden")))
 #endif
 @interface UISelectionIndicatorView : UIView {
-	UIImage* _image;
-	XXStruct_4cr1oD _slices;
+  UIImage* _image;
+  XXStruct_4cr1oD _slices;
 }
 -(id)initWithFrame:(CGRect)frame withImageName:(id)imageName;
 -(void)dealloc;

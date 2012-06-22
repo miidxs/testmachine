@@ -11,8 +11,8 @@
 
 @interface MPSystemNowPlayingController : NSObject {
 @private
-	unsigned _lastPostedNowPlayingTrackUniqueID;
-	NSDictionary* _lastNowPlayingInfo;
+  unsigned _lastPostedNowPlayingTrackUniqueID;
+  NSDictionary* _lastNowPlayingInfo;
 }
 +(id)sharedInstance;
 -(id)init;

@@ -10,11 +10,11 @@
 @class NSMutableArray;
 
 @interface IMAPCommandPipeline : NSObject {
-	unsigned _chunkSize;
-	unsigned _expectedSize;
-	unsigned _full : 1;
-	unsigned _sending : 1;
-	NSMutableArray* _fetchUnits;
+  unsigned _chunkSize;
+  unsigned _expectedSize;
+  unsigned _full : 1;
+  unsigned _sending : 1;
+  NSMutableArray* _fetchUnits;
 }
 // inherited: -(void)dealloc;
 -(void)addFetchCommandForUid:(unsigned long)uid fetchItem:(id)item expectedLength:(unsigned long)length;

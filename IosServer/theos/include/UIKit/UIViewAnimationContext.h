@@ -8,8 +8,8 @@
 @class NSArray;
 
 @interface UIViewAnimationContext : NSObject {
-	NSArray* _viewAnimations;
-	int _animationCount;
+  NSArray* _viewAnimations;
+  int _animationCount;
 }
 @property(retain, nonatomic) NSArray* viewAnimations;
 @property(assign, nonatomic) int animationCount;

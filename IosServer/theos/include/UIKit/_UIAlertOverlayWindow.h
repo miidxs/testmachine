@@ -10,7 +10,7 @@
 __attribute__((visibility("hidden")))
 @interface _UIAlertOverlayWindow : UIWindow {
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	BOOL _shouldNormalizeScaleInClassic;
+  BOOL _shouldNormalizeScaleInClassic;
 #endif
 }
 @property(assign, nonatomic) BOOL shouldNormalizeScaleInClassic __OSX_AVAILABLE_STARTING(__MAC_NA, __IPHONE_3_2);

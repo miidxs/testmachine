@@ -12,12 +12,12 @@
 @class NSLock;
 
 @interface CALRunLoopSemaphore : NSObject {
-	CFRunLoopRef _rloop;
-	int _count;
-	int _pipe[2];
-	CFSocketRef _socket;
-	CFRunLoopSourceRef _socketSource;
-	NSLock* _countLock;
+  CFRunLoopRef _rloop;
+  int _count;
+  int _pipe[2];
+  CFSocketRef _socket;
+  CFRunLoopSourceRef _socketSource;
+  NSLock* _countLock;
 }
 // inherited: -(id)init;
 -(id)initWithCFRunLoop:(CFRunLoopRef)cfrunLoop;

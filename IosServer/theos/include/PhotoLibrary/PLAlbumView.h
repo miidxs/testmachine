@@ -13,26 +13,26 @@
 @class PLImageCountCell, PLThumbnailTableCell, NSMutableArray, NSArray, UITableView, UIToolbar, MLPhotoAlbum, PLEmptyAlbumView;
 
 @interface PLAlbumView : UIView <UITableViewDataSource, UITableViewDelegate> {
-	MLPhotoAlbum* _album;
-	int _filter;
-	UITableView* _indexTableView;
-	UIToolbar* _toolbar;
-	unsigned _gridHeight;
-	CGSize _cellSize;
-	BOOL _showImageCount;
-	id _delegate;
-	PLThumbnailTableCell* _highlightedCell;
-	PLImageCountCell* _imageCountCell;
-	PLEmptyAlbumView* _emptyAlbumView;
-	BOOL _forceTableReload;
-	BOOL _pictureWasTakenSinceLastReload;
-	BOOL _isCameraAlbum;
-	BOOL _didScrollToBottom;
-	UIEdgeInsets _lastTableContentInset;
-	unsigned _multipleSelectionEnabled : 1;
-	NSMutableArray* _selectedPhotos;
-	CFDictionaryRef _selectedPhotoIndexesByRow;
-	unsigned _canShowCopyCallout : 1;
+  MLPhotoAlbum* _album;
+  int _filter;
+  UITableView* _indexTableView;
+  UIToolbar* _toolbar;
+  unsigned _gridHeight;
+  CGSize _cellSize;
+  BOOL _showImageCount;
+  id _delegate;
+  PLThumbnailTableCell* _highlightedCell;
+  PLImageCountCell* _imageCountCell;
+  PLEmptyAlbumView* _emptyAlbumView;
+  BOOL _forceTableReload;
+  BOOL _pictureWasTakenSinceLastReload;
+  BOOL _isCameraAlbum;
+  BOOL _didScrollToBottom;
+  UIEdgeInsets _lastTableContentInset;
+  unsigned _multipleSelectionEnabled : 1;
+  NSMutableArray* _selectedPhotos;
+  CFDictionaryRef _selectedPhotoIndexesByRow;
+  unsigned _canShowCopyCallout : 1;
 }
 @property(readonly, assign, nonatomic) NSArray* selectedPhotos;
 @property(assign, nonatomic) BOOL multipleSelectionEnabled;

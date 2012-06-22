@@ -11,17 +11,17 @@
 @protocol SubCalURLRequestDelegate;
 
 @interface SubCalURLRequest : NSObject {
-	NSURL* _url;
-	id<SubCalURLRequestDelegate> _delegate;
-	NSString* _username;
-	NSString* _password;
-	double _timestamp;
-	NSURLConnection* _connection;
-	NSMutableData* _connectionData;
-	BOOL _useFileCache;
-	NSString* _filePath;
-	NSFileHandle* _fileHandle;
-	BOOL _sendDataUpdateCallback;
+  NSURL* _url;
+  id<SubCalURLRequestDelegate> _delegate;
+  NSString* _username;
+  NSString* _password;
+  double _timestamp;
+  NSURLConnection* _connection;
+  NSMutableData* _connectionData;
+  BOOL _useFileCache;
+  NSString* _filePath;
+  NSFileHandle* _fileHandle;
+  BOOL _sendDataUpdateCallback;
 }
 @property(readonly, retain, nonatomic) NSURL* url;
 @property(assign) id<SubCalURLRequestDelegate> delegate;

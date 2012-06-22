@@ -12,13 +12,13 @@
 @class UITableView, NSArray, ComposeRecipientView, UIScroller, SearchShadowView;
 
 @interface CKRecipientSelectionView : UIView <UITableViewDataSource, UITableViewDelegate, CKOverlayViewProtocol> {
-	ComposeRecipientView* _toField;
-	UIScroller* _toFieldScrollingView;
-	NSArray* _searchResults;
-	UITableView* _searchResultsTable;
-	SearchShadowView* _shadowView;
-	BOOL _showingSearchField;
-	id _delegate;
+  ComposeRecipientView* _toField;
+  UIScroller* _toFieldScrollingView;
+  NSArray* _searchResults;
+  UITableView* _searchResultsTable;
+  SearchShadowView* _shadowView;
+  BOOL _showingSearchField;
+  id _delegate;
 }
 @property(assign, nonatomic) id delegate;
 @property(readonly, assign, nonatomic, getter=isShowingSearchField) BOOL showingSearchField;

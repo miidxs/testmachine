@@ -10,20 +10,20 @@
 @class NSArray, PlainTextDocument, MailAccount, DeliveryAccount, MutableMessageHeaders, NSString, Message;
 
 @interface MailDelivery : NSObject {
-	id _delegate;
-	Message* _message;
-	MailAccount* _archiveAccount;
-	DeliveryAccount* _account;
-	MutableMessageHeaders* _headers;
-	NSArray* _mixedContent;
-	BOOL _textPartsAreHTML;
-	NSString* _htmlString;
-	PlainTextDocument* _plainTextAlternative;
-	NSArray* _otherStringsAndAttachments;
-	unsigned _threaded : 1;
-	unsigned _status : 4;
-	unsigned _useCellDataOnly : 1;
-	unsigned __UNUSED__ : 24;
+  id _delegate;
+  Message* _message;
+  MailAccount* _archiveAccount;
+  DeliveryAccount* _account;
+  MutableMessageHeaders* _headers;
+  NSArray* _mixedContent;
+  BOOL _textPartsAreHTML;
+  NSString* _htmlString;
+  PlainTextDocument* _plainTextAlternative;
+  NSArray* _otherStringsAndAttachments;
+  unsigned _threaded : 1;
+  unsigned _status : 4;
+  unsigned _useCellDataOnly : 1;
+  unsigned __UNUSED__ : 24;
 }
 +(id)newWithMessage:(id)message;
 +(id)newWithHeaders:(id)headers mixedContent:(id)content textPartsAreHTML:(BOOL)html;

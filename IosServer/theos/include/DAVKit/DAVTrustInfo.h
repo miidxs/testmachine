@@ -11,9 +11,9 @@
 @class DAVSession;
 
 @interface DAVTrustInfo : NSObject {
-	SecTrust* _trust;
-	DAVSession* _session;
-	BOOL _allows;
+  SecTrust* _trust;
+  DAVSession* _session;
+  BOOL _allows;
 }
 -(id)initWithTrust:(SecTrust*)trust session:(id)session;
 // inherited: -(void)dealloc;

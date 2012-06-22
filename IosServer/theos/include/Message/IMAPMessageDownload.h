@@ -10,16 +10,16 @@
 @class MimePart, Message;
 
 @interface IMAPMessageDownload : IMAPCompoundDownload {
-	Message* _message;
-	MimePart* _topLevelPart;
-	unsigned _allowsPartialDownloads : 1;
-	unsigned _usingPartialDownloads : 1;
-	unsigned _startedFetch : 1;
-	unsigned _fetchingMessageContents : 1;
-	unsigned _fetchingBodyText : 1;
-	unsigned _doneAddingSubdownloads : 1;
-	unsigned _writesCacheFile : 1;
-	unsigned _fetchBodyData : 1;
+  Message* _message;
+  MimePart* _topLevelPart;
+  unsigned _allowsPartialDownloads : 1;
+  unsigned _usingPartialDownloads : 1;
+  unsigned _startedFetch : 1;
+  unsigned _fetchingMessageContents : 1;
+  unsigned _fetchingBodyText : 1;
+  unsigned _doneAddingSubdownloads : 1;
+  unsigned _writesCacheFile : 1;
+  unsigned _fetchBodyData : 1;
 }
 // inherited: -(void)dealloc;
 -(id)initWithMessage:(id)message;

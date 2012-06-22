@@ -9,7 +9,7 @@
 
 
 @interface PLPhotosNavigationItem : UINavigationItem {
-	int _barStyle;
+  int _barStyle;
 }
 -(int)barStyle;
 -(void)setBarStyle:(int)style;

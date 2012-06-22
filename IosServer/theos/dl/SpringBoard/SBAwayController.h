@@ -12,54 +12,54 @@
 @class SBUIController, NSTimer, NSDictionary, NSTimeZone, NSString, SBAwayModel, NSMutableArray, SBSleepProofTimer, SBSlidingAlertDisplay, NSMutableDictionary, SBAwayView, SBAlertItem;
 
 @interface SBAwayController : SBAlert {
-	SBUIController* _uiController;
-	SBAwayModel* _model;
-	SBAwayView* _awayView;
-	NSTimer* _dimTimer;
-	unsigned _isLocked : 1;
+  SBUIController* _uiController;
+  SBAwayModel* _model;
+  SBAwayView* _awayView;
+  NSTimer* _dimTimer;
+  unsigned _isLocked : 1;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	unsigned _isUnlocking : 1;
+  unsigned _isUnlocking : 1;
 #endif
-	unsigned _isDeviceLocked : 1;
-	unsigned _isDeviceLockedInitialized : 1;
-	unsigned _isDimmed : 1;
-	unsigned _isDimming : 1;
-	unsigned _orderedOutDimmed : 1;
-	unsigned _frontDimmed : 1;
-	unsigned _isPermanentlyBlocked : 1;
-	unsigned _makingEmergencyCall : 1;
-	unsigned _appRequestedPasscodeEntry : 1;
-	unsigned _isSyncing : 1;
-	unsigned _relockAfterUnlock : 1;
-	unsigned _wasLockedOrMakingEmergencyCallBeforeSync : 1;
-	unsigned _wasDeviceLockedBeforeSync : 1;
-	unsigned _showOverheatUI : 1;
+  unsigned _isDeviceLocked : 1;
+  unsigned _isDeviceLockedInitialized : 1;
+  unsigned _isDimmed : 1;
+  unsigned _isDimming : 1;
+  unsigned _orderedOutDimmed : 1;
+  unsigned _frontDimmed : 1;
+  unsigned _isPermanentlyBlocked : 1;
+  unsigned _makingEmergencyCall : 1;
+  unsigned _appRequestedPasscodeEntry : 1;
+  unsigned _isSyncing : 1;
+  unsigned _relockAfterUnlock : 1;
+  unsigned _wasLockedOrMakingEmergencyCallBeforeSync : 1;
+  unsigned _wasDeviceLockedBeforeSync : 1;
+  unsigned _showOverheatUI : 1;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	unsigned _performingAutoUnlock : 1;
+  unsigned _performingAutoUnlock : 1;
 #endif
-	NSDictionary* _nowPlayingInfo;
+  NSDictionary* _nowPlayingInfo;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	NSNumber* _iPodNowPlayingPID;
-	BOOL _iPodIsPlaying;
+  NSNumber* _iPodNowPlayingPID;
+  BOOL _iPodIsPlaying;
 #endif
-	SBSlidingAlertDisplay* _deviceUnlockDisplay;
-	double _deviceLockBlockTime;
-	double _lastLockWallTime;
-	NSTimeZone* _lastLockTimeZone;
-	double _lastLockSecondsSinceBoot;
-	NSTimer* _deviceLockTimer;
-	BOOL _devicePasscodeLoaded;
-	NSString* _devicePasscode;
+  SBSlidingAlertDisplay* _deviceUnlockDisplay;
+  double _deviceLockBlockTime;
+  double _lastLockWallTime;
+  NSTimeZone* _lastLockTimeZone;
+  double _lastLockSecondsSinceBoot;
+  NSTimer* _deviceLockTimer;
+  BOOL _devicePasscodeLoaded;
+  NSString* _devicePasscode;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	BOOL _chargingViewHasFadedOut;
+  BOOL _chargingViewHasFadedOut;
 #endif
-	NSMutableArray* _pendingAlertItems;
-	SBAlertItem* _currentAlertItem;
-	NSMutableDictionary* _awayViewPluginControllers;
+  NSMutableArray* _pendingAlertItems;
+  SBAlertItem* _currentAlertItem;
+  NSMutableDictionary* _awayViewPluginControllers;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	NSString* _alwaysFullscreenAwayPluginName;
+  NSString* _alwaysFullscreenAwayPluginName;
 #endif
-	SBSleepProofTimer* _smsSoundWakeTimers[2];
+  SBSleepProofTimer* _smsSoundWakeTimers[2];
 }
 +(id)sharedAwayController;
 // inherited: +(void)registerForAlerts;

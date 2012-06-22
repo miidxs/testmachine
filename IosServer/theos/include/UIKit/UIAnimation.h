@@ -9,17 +9,17 @@
 
 
 @interface UIAnimation : NSObject {
-	id _target;
-	SEL _action;
-	id _delegate;
-	struct {
-		unsigned curve : 4;
-		unsigned tvOutput : 1;
-		unsigned reserved : 27;
-	} _animationFlags;
-	double _startTime;
-	double _duration;
-	int _state;
+  id _target;
+  SEL _action;
+  id _delegate;
+  struct {
+    unsigned curve : 4;
+    unsigned tvOutput : 1;
+    unsigned reserved : 27;
+  } _animationFlags;
+  double _startTime;
+  double _duration;
+  int _state;
 }
 -(id)initWithTarget:(id)target;
 -(void)stopAnimation;

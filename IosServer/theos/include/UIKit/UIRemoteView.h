@@ -9,9 +9,9 @@
 @class NSString, UIRemoteWindow;
 
 @interface UIRemoteView : UIView {
-	NSString* _remoteViewIdentifier;
-	UIRemoteWindow* _remoteWindow;
-	BOOL _captureAllWindows;
+  NSString* _remoteViewIdentifier;
+  UIRemoteWindow* _remoteWindow;
+  BOOL _captureAllWindows;
 }
 -(id)initWithFrame:(CGRect)frame captureAllWindows:(BOOL)windows;
 -(void)registerWithIdentifier:(id)identifier;

@@ -9,9 +9,9 @@
 
 
 @interface PSEditableTableCell : UIPreferencesTextTableCell {
-	id _userInfo;
-	SEL _targetSetter;
-	id _realTarget;
+  id _userInfo;
+  SEL _targetSetter;
+  id _realTarget;
 }
 -(void)controlChanged:(id)changed;
 -(void)setValueChangedOnReturn;

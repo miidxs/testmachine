@@ -10,9 +10,9 @@
 @class UIWindow, SBApplication;
 
 @interface SBMiniAlertController : NSObject {
-	SBApplication* _displayShowingAnAlert;
-	UIWindow* _dimmingWindow;
-	unsigned _miniAlertVisible : 1;
+  SBApplication* _displayShowingAnAlert;
+  UIWindow* _dimmingWindow;
+  unsigned _miniAlertVisible : 1;
 }
 +(id)sharedInstance;
 -(id)dimImageForKeyboard:(BOOL)keyboard;

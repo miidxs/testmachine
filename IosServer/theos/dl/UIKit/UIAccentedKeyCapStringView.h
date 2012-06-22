@@ -9,11 +9,11 @@
 @class NSArray;
 
 @interface UIAccentedKeyCapStringView : UIView {
-	BOOL m_selectedMode;
-	int m_expansion;
-	int m_orientation;
-	float m_stringWidth;
-	NSArray* m_caps;
+  BOOL m_selectedMode;
+  int m_expansion;
+  int m_orientation;
+  float m_stringWidth;
+  NSArray* m_caps;
 }
 -(void)dealloc;
 -(void)setSelectedMode:(BOOL)mode;

@@ -12,8 +12,8 @@
 @class DATaskManager;
 
 @interface SubCalDATask : NSObject <DATask> {
-	DATaskManager* _taskManager;
-	BOOL _finished;
+  DATaskManager* _taskManager;
+  BOOL _finished;
 }
 @property(assign, nonatomic) DATaskManager* taskManager;
 // inherited: -(void)dealloc;

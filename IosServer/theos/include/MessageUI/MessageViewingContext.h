@@ -10,18 +10,18 @@
 @class MailMessage, MessageBody, ActivityMonitor, MimePart;
 
 @interface MessageViewingContext : NSObject {
-	MailMessage* _message;
-	MessageBody* _body;
-	id _content;
-	unsigned _contentOffset;
-	id _delegate;
-	ActivityMonitor* _loadTask;
-	unsigned _loadIncrement;
-	BOOL _loadBestAlternative;
-	MimePart* _loadedPart;
-	BOOL _loadedFullData;
-	unsigned _hasNoContent : 1;
-	unsigned _isOutgoingMessage : 1;
+  MailMessage* _message;
+  MessageBody* _body;
+  id _content;
+  unsigned _contentOffset;
+  id _delegate;
+  ActivityMonitor* _loadTask;
+  unsigned _loadIncrement;
+  BOOL _loadBestAlternative;
+  MimePart* _loadedPart;
+  BOOL _loadedFullData;
+  unsigned _hasNoContent : 1;
+  unsigned _isOutgoingMessage : 1;
 }
 -(id)initWithMessage:(id)message;
 // inherited: -(void)dealloc;

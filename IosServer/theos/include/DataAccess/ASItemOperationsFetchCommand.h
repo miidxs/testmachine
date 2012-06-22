@@ -10,7 +10,7 @@
 @class NSString;
 
 @interface ASItemOperationsFetchCommand : NSObject {
-	NSString* _longID;
+  NSString* _longID;
 }
 -(id)initWithlongID:(id)anId;
 -(id)longID;

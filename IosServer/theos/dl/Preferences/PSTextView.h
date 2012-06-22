@@ -11,7 +11,7 @@
 @class PSTextViewTableCell;
 
 @interface PSTextView : UITextView {
-	PSTextViewTableCell* _cell;
+  PSTextViewTableCell* _cell;
 }
 -(void)setCell:(id)cell;
 // inherited: -(void)mouseDragged:(GSEventRef)dragged;

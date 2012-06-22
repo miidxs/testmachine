@@ -10,8 +10,8 @@
 @class NSMutableData;
 
 @interface PartialNetworkData : NSObject {
-	NSMutableData* _rawData;
-	NSMutableData* _unixData;
+  NSMutableData* _rawData;
+  NSMutableData* _unixData;
 }
 -(void)appendRawData:(id)data;
 -(void)setRawData:(id)data;

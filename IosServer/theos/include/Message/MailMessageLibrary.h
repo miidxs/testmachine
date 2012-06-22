@@ -12,25 +12,25 @@
 @protocol MailboxPathProvider;
 
 @interface MailMessageLibrary : MessageLibrary {
-	NSDate* _lastUpdateDate;
-	NSTimer* _commitTimer;
-	double _beginTransactionTime;
-	sqlite3* _writerDB;
-	CFDictionaryRef _mailboxCache;
-	NSMutableSet* _cachedDatabases;
-	CFDictionaryRef _statementCachesByDB;
-	double _dateDatabaseBecameLocked;
-	pthread_mutex_t _dbLock;
-	pthread_mutex_t _seqNumbersLock;
-	pthread_mutex_t _priorityLock;
-	BOOL _outstandingWritesExist;
-	BOOL _writerDBIsBeingUsedAsReader;
-	void* _ICUSearchContext;
-	void* _CPSearchContext;
-	id<MailboxPathProvider> _mailboxPathProvider;
-	/*function-pointer*/ void* resetHandler;
-	/*function-pointer*/ void* _busyHandler;
-	void* _busyHandlerContext;
+  NSDate* _lastUpdateDate;
+  NSTimer* _commitTimer;
+  double _beginTransactionTime;
+  sqlite3* _writerDB;
+  CFDictionaryRef _mailboxCache;
+  NSMutableSet* _cachedDatabases;
+  CFDictionaryRef _statementCachesByDB;
+  double _dateDatabaseBecameLocked;
+  pthread_mutex_t _dbLock;
+  pthread_mutex_t _seqNumbersLock;
+  pthread_mutex_t _priorityLock;
+  BOOL _outstandingWritesExist;
+  BOOL _writerDBIsBeingUsedAsReader;
+  void* _ICUSearchContext;
+  void* _CPSearchContext;
+  id<MailboxPathProvider> _mailboxPathProvider;
+  /*function-pointer*/ void* resetHandler;
+  /*function-pointer*/ void* _busyHandler;
+  void* _busyHandlerContext;
 }
 +(MailMessageLibrary*)defaultInstance;
 // inherited: +(void)initialize;

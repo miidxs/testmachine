@@ -10,11 +10,11 @@
 @class NSConditionLock, NSMutableArray;
 
 @interface InvocationQueue : NSObject {
-	NSMutableArray* _items;
-	unsigned _maxThreads : 16;
-	unsigned _numThreads : 16;
-	double _threadRecycleTimeout;
-	NSConditionLock* _threadRecycleLock;
+  NSMutableArray* _items;
+  unsigned _maxThreads : 16;
+  unsigned _numThreads : 16;
+  double _threadRecycleTimeout;
+  NSConditionLock* _threadRecycleLock;
 }
 // inherited: +(void)initialize;
 // inherited: -(id)init;

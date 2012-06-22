@@ -11,9 +11,9 @@
 @class NSString, NSTimer;
 
 @interface SBStatusBarTimeView : SBStatusBarContentView {
-	NSTimer* _dateTimer;
-	NSString* _time;
-	CGRect _textRect;
+  NSTimer* _dateTimer;
+  NSString* _time;
+  CGRect _textRect;
 }
 // inherited: -(id)init;
 -(void)updateClockFormat;

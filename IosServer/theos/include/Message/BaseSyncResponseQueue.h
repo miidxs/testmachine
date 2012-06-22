@@ -10,15 +10,15 @@
 @class NSArray, NSMutableArray, IMAPConnection, LibraryIMAPStore, NSString;
 
 @interface BaseSyncResponseQueue : BufferedMessageQueue {
-	LibraryIMAPStore* _store;
-	IMAPConnection* _connection;
-	NSString* _url;
-	unsigned _currentUID;
-	NSMutableArray* _missingUIDs;
-	NSArray* _libraryDetails;
-	BOOL _shouldCompact;
-	BOOL _shouldFetch;
-	BOOL _isSearching;
+  LibraryIMAPStore* _store;
+  IMAPConnection* _connection;
+  NSString* _url;
+  unsigned _currentUID;
+  NSMutableArray* _missingUIDs;
+  NSArray* _libraryDetails;
+  BOOL _shouldCompact;
+  BOOL _shouldFetch;
+  BOOL _isSearching;
 }
 // inherited: -(id)init;
 // inherited: -(unsigned)sizeForItem:(id)item;

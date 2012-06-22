@@ -8,12 +8,12 @@
 @class UITableViewCellDeleteConfirmationControl, UITableViewCellReorderControl, UITableViewCell, UIView, UITableViewCellEditControl;
 
 @interface UITableViewCellEditingData : NSObject {
-	UITableViewCell* _cell;
-	int _editingStyle;
-	UITableViewCellEditControl* _editControl;
-	UITableViewCellReorderControl* _reorderControl;
-	UITableViewCellDeleteConfirmationControl* _deleteConfirmationControl;
-	UIView* _reorderSeparatorView;
+  UITableViewCell* _cell;
+  int _editingStyle;
+  UITableViewCellEditControl* _editControl;
+  UITableViewCellReorderControl* _reorderControl;
+  UITableViewCellDeleteConfirmationControl* _deleteConfirmationControl;
+  UIView* _reorderSeparatorView;
 }
 @property(readonly, assign, nonatomic, getter=isDataRequired) BOOL dataRequired;
 -(id)initWithTableViewCell:(id)tableViewCell editingStyle:(int)style;

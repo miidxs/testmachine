@@ -12,15 +12,15 @@
 
 __attribute__((visibility("hidden")))
 @interface UILayoutContainerView : UIView <NSCoding> {
-	id _delegate;
+  id _delegate;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	BOOL _usesRoundedCorners;
-	float _cornerRadius;
-	BOOL _fastMode;
-	UIRoundedCornerView* _roundedCornerView;
-	BOOL _usesInnerShadow;
-	BOOL _shadowViewsInstalled;
-	UIView* _shadowView;	
+  BOOL _usesRoundedCorners;
+  float _cornerRadius;
+  BOOL _fastMode;
+  UIRoundedCornerView* _roundedCornerView;
+  BOOL _usesInnerShadow;
+  BOOL _shadowViewsInstalled;
+  UIView* _shadowView;  
 #endif
 }
 @property(assign, nonatomic) id delegate;

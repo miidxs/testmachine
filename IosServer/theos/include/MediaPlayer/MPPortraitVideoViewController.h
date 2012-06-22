@@ -12,10 +12,10 @@
 @class MPPortraitInfoOverlay, MPPortraitTransportControls, UINavigationBar;
 
 @interface MPPortraitVideoViewController : MPVideoViewController <MPSwipableViewDelegate> {
-	MPPortraitInfoOverlay* _overlayView;
-	UINavigationBar* _navigationBar;
-	MPPortraitTransportControls* _transportControls;
-	unsigned _ownsTransportControls : 1;
+  MPPortraitInfoOverlay* _overlayView;
+  UINavigationBar* _navigationBar;
+  MPPortraitTransportControls* _transportControls;
+  unsigned _ownsTransportControls : 1;
 }
 @property(retain, nonatomic) UINavigationBar* navigationBar;
 @property(readonly, assign, nonatomic) BOOL ownsTransportControls;

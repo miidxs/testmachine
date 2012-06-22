@@ -13,7 +13,7 @@
 #import <UIKit/UIWindow.h>
 
 @interface UIAutoRotatingWindow : UIWindow {
-	int _interfaceOrientation;
+  int _interfaceOrientation;
 }
 +(id)sharedPopoverHostingWindow;
 // inherited: -(id)initWithFrame:(CGRect)frame output:(int)output bitsPerComponent:(int)component;

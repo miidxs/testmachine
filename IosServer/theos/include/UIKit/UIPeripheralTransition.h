@@ -14,8 +14,8 @@
 @protocol UIFormPeripheral;
 
 @interface UIPeripheralTransition : NSObject {
-	DOMNode* _nextNode;
-	UIView<UIFormPeripheral>* _nextPeripheral;
+  DOMNode* _nextNode;
+  UIView<UIFormPeripheral>* _nextPeripheral;
 }
 @property(retain, nonatomic) DOMNode* _nextNode;
 @property(retain, nonatomic) UIView<UIFormPeripheral>* _nextPeripheral;

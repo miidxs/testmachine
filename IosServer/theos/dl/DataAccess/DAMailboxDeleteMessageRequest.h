@@ -10,7 +10,7 @@
 @class NSString;
 
 @interface DAMailboxDeleteMessageRequest : DAMailboxRequest {
-	NSString* _messageID;
+  NSString* _messageID;
 }
 -(id)initRequestWithMessageID:(id)messageID;
 -(id)messageID;

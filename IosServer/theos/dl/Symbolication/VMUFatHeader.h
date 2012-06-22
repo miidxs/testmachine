@@ -10,9 +10,9 @@
 @class NSString, NSArray, NSDate;
 
 @interface VMUFatHeader : VMUHeader {
-	NSDate* _timestamp;
-	NSString* _path;
-	NSArray* _fatArchs;
+  NSDate* _timestamp;
+  NSString* _path;
+  NSArray* _fatArchs;
 }
 +(id)fatHeaderWithMemory:(id)memory path:(id)path timestamp:(id)timestamp;
 -(id)initWithMemory:(id)memory path:(id)path timestamp:(id)timestamp;

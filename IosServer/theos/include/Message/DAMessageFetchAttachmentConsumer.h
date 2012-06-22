@@ -16,9 +16,9 @@
 @end
 
 @interface DAMessageFetchAttachmentConsumer : DAMailAccountConsumer <DAMessageFetchAttachmentConsumer> {
-	NSMutableData* _accumulatedData;
-	unsigned _expectedLength;
-	ActivityMonitor* _monitor;
+  NSMutableData* _accumulatedData;
+  unsigned _expectedLength;
+  ActivityMonitor* _monitor;
 }
 @property(readonly, assign, nonatomic) NSData* accumulatedData;
 @property(assign, nonatomic) unsigned expectedLength;

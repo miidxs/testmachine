@@ -11,20 +11,20 @@
 @class SBStatusBarDoubleHeightView, SBStatusWindow, SBStatusBarContentsView, UIView;
 
 @interface SBStatusBar : UIControl {
-	int _mode;
-	int _orientation;
-	SBStatusBarContentsView* _contentsView;
-	SBStatusBarDoubleHeightView* _doubleHeightView;
-	SBStatusWindow* _statusWindow;
-	UIView* _airplaneView;
-	UIView* _baseDoubleHeightColorView;
-	UIView* _glowDoubleheightColorView;
-	UIView* _dimmerView;
-	int _doubleHeightMode;
-	unsigned _animating : 1;
-	unsigned _glowAnimationEnabled : 1;
-	unsigned _isPressed : 1;
-	unsigned _airplaneMode : 1;
+  int _mode;
+  int _orientation;
+  SBStatusBarContentsView* _contentsView;
+  SBStatusBarDoubleHeightView* _doubleHeightView;
+  SBStatusWindow* _statusWindow;
+  UIView* _airplaneView;
+  UIView* _baseDoubleHeightColorView;
+  UIView* _glowDoubleheightColorView;
+  UIView* _dimmerView;
+  int _doubleHeightMode;
+  unsigned _animating : 1;
+  unsigned _glowAnimationEnabled : 1;
+  unsigned _isPressed : 1;
+  unsigned _airplaneMode : 1;
 }
 @property(assign, nonatomic, getter=isGlowAnimationEnabled) BOOL glowAnimationEnabled;
 -(id)initWithMode:(int)mode orientation:(int)orientation;

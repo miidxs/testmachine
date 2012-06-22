@@ -8,8 +8,8 @@
 @class NSArray;
 
 @interface CKRecipientGenerator : NSObject {
-	void* _addressBook;
-	NSArray* _searchABPropertyTypes;
+  void* _addressBook;
+  NSArray* _searchABPropertyTypes;
 }
 @property(retain, nonatomic) NSArray* searchABPropertyTypes;
 -(void)dealloc;

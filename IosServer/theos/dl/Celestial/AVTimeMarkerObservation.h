@@ -10,10 +10,10 @@
 @class NSArray;
 
 @interface AVTimeMarkerObservation : NSObject {
-	id _observer;
-	NSArray* _times;
-	id _context;
-	int _currentIndex;
+  id _observer;
+  NSArray* _times;
+  id _context;
+  int _currentIndex;
 }
 -(id)initWithObserver:(id)observer times:(id)times context:(id)context currentIndex:(int)index;
 -(void)dealloc;

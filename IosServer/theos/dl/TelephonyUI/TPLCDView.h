@@ -19,11 +19,11 @@ TPLCDBar
 UIImageView 
 #endif
 {
-	TPLCDTextView* _textView;
-	TPLCDTextView* _secondLineTextView;
-	TPLCDTextView* _labelView;
-	TPLCDSubImageView* _imageView;
-	unsigned _layoutAsLabelled : 1;
+  TPLCDTextView* _textView;
+  TPLCDTextView* _secondLineTextView;
+  TPLCDTextView* _labelView;
+  TPLCDSubImageView* _imageView;
+  unsigned _layoutAsLabelled : 1;
 }
 #if __IPHONE_OS_VERSION_MAX_ALLOWED < __IPHONE_3_2
 +(void)preloadImages;

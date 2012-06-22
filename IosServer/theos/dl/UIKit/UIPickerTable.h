@@ -9,15 +9,15 @@
 @class UIPickerScrollAnimation;
 
 @interface UIPickerTable : UITable {
-	CGRect _selectionBarRect;
-	UIPickerScrollAnimation* _scrollAnimation;
-	int _selectionBarRow;
-	CGPoint _lastOffset;
-	int _lastClickRow;
-	unsigned _allowSelectingCells : 1;
-	unsigned _allowsMultipleSelection : 1;
-	unsigned _lastShouldStick : 1;
-	unsigned _disableDidSelect : 1;
+  CGRect _selectionBarRect;
+  UIPickerScrollAnimation* _scrollAnimation;
+  int _selectionBarRow;
+  CGPoint _lastOffset;
+  int _lastClickRow;
+  unsigned _allowSelectingCells : 1;
+  unsigned _allowsMultipleSelection : 1;
+  unsigned _lastShouldStick : 1;
+  unsigned _disableDidSelect : 1;
 }
 -(id)initWithFrame:(CGRect)frame;
 -(BOOL)canHandleSwipes;

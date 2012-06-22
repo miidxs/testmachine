@@ -11,9 +11,9 @@
 
 @interface PLToolbar : UIToolbar {
 @private
-	unsigned _backgroundHidden : 1;
-	unsigned _backgroundAlwaysVisible : 1;
-	UIToolbar* _persistentToolbar;
+  unsigned _backgroundHidden : 1;
+  unsigned _backgroundAlwaysVisible : 1;
+  UIToolbar* _persistentToolbar;
 }
 @property(assign, nonatomic, getter=isBackgroundAlwaysVisible) BOOL backgroundAlwaysVisible;
 @property(assign, nonatomic, getter=isBackgroundHidden) BOOL backgroundHidden;

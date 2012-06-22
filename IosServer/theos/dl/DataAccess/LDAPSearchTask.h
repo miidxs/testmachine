@@ -11,11 +11,11 @@
 @class DADContactsSearchQuery, NSTimer, NSMutableArray;
 
 @interface LDAPSearchTask : LDAPTask {
-	ldap* _ld;
-	int _msgId;
-	DADContactsSearchQuery* _query;
-	NSTimer* _checkResultsTimer;
-	NSMutableArray* _foundContacts;
+  ldap* _ld;
+  int _msgId;
+  DADContactsSearchQuery* _query;
+  NSTimer* _checkResultsTimer;
+  NSMutableArray* _foundContacts;
 }
 @property(readonly, assign) DADContactsSearchQuery* query;
 -(id)initWithQuery:(id)query;

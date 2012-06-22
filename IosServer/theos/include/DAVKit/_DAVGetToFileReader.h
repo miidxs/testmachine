@@ -11,7 +11,7 @@
 @class NSFileHandle;
 
 @interface _DAVGetToFileReader : NSObject <DAVResponseBodyReader> {
-	NSFileHandle* _fileHandle;
+  NSFileHandle* _fileHandle;
 }
 -(id)initWithFileHandle:(id)fileHandle;
 // inherited: -(void)dealloc;

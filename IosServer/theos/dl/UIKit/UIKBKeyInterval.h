@@ -8,8 +8,8 @@
 @class UIKBKey;
 
 @interface UIKBKeyInterval : NSObject {
-	UIKBKey* m_key;
-	double m_interval;
+  UIKBKey* m_key;
+  double m_interval;
 }
 @property(retain, nonatomic) UIKBKey* key;
 @property(assign, nonatomic) double interval;

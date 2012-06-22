@@ -9,11 +9,11 @@
 @class NSData, NSString;
 
 @interface CKMediaObject : NSObject {
-	NSString* _filename;
-	NSData* _data;
-	NSString* _mimeType;
-	NSString* _exportedFilename;
-	double _duration;
+  NSString* _filename;
+  NSData* _data;
+  NSString* _mimeType;
+  NSString* _exportedFilename;
+  double _duration;
 }
 @property(readonly, assign, nonatomic) NSData* data;
 @property(readonly, assign, nonatomic) NSString* filename;

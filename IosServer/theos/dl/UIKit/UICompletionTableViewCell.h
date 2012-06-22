@@ -16,7 +16,7 @@
 __attribute__((visibility("hidden")))
 @interface UICompletionTableViewCell : UITableViewCell {
 @private
-	UITableCell* _tableCell;
+  UITableCell* _tableCell;
 }
 @property(retain, nonatomic) UITableCell* tableCell;
 // inherited: -(void)setHighlighted:(BOOL)highlighted animated:(BOOL)animated;

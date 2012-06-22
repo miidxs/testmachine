@@ -10,11 +10,11 @@
 @class UIImageView, CKAtomListView, UIScrollView;
 
 @interface CKRecipientListView : UIView <CKOverlayViewProtocol> {
-	UIScrollView* _recipientScrollView;
-	CKAtomListView* _toField;
-	UIImageView* _recipientSeparatorShadow;
-	CGSize _contentSize;
-	id _delegate;
+  UIScrollView* _recipientScrollView;
+  CKAtomListView* _toField;
+  UIImageView* _recipientSeparatorShadow;
+  CGSize _contentSize;
+  id _delegate;
 }
 @property(assign, nonatomic) id delegate;
 @property(readonly, assign, nonatomic) CGSize contentSize;

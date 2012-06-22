@@ -11,12 +11,12 @@
 @class SBSIMLockEntryAlert, NSString, SBSIMLockAlertItem;
 
 @interface SBSIMLockManager : NSObject {
-	BOOL _isInitialUpdate;
-	BOOL _isBrickedDevice;
-	int _status;
-	SBSIMLockAlertItem* _currentAlert;
-	SBSIMLockEntryAlert* _lockEntryAlert;
-	NSString* _languageCode;
+  BOOL _isInitialUpdate;
+  BOOL _isBrickedDevice;
+  int _status;
+  SBSIMLockAlertItem* _currentAlert;
+  SBSIMLockEntryAlert* _lockEntryAlert;
+  NSString* _languageCode;
 }
 +(id)sharedInstance;
 // inherited: -(void)dealloc;

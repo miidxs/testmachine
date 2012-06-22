@@ -10,7 +10,7 @@
 @class WeakSet;
 
 @interface WebAttachmentFactory : NSObject {
-	WeakSet* _instances;
+  WeakSet* _instances;
 }
 +(id)sharedInstance;
 // inherited: -(id)init;

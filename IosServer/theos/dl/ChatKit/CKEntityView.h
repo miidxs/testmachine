@@ -8,8 +8,8 @@
 @class UILabel, CKEntity;
 
 @interface CKEntityView : UITableViewCell {
-	UILabel* _label;
-	CKEntity* _entity;
+  UILabel* _label;
+  CKEntity* _entity;
 }
 +(float)defaultHeight;
 -(id)initWithStyle:(int)style reuseIdentifier:(id)identifier;

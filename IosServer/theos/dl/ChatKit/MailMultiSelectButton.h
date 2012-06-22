@@ -8,8 +8,8 @@
 
 
 @interface MailMultiSelectButton : UIControl {
-	unsigned _isChecked : 1;
-	unsigned _isSelected : 1;
+  unsigned _isChecked : 1;
+  unsigned _isSelected : 1;
 }
 +(float)defaultWidth;
 +(id)minusImage;

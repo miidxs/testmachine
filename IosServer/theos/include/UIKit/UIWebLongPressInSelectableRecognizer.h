@@ -9,7 +9,7 @@
 @class UIWebDocumentView;
 
 @interface UIWebLongPressInSelectableRecognizer : UILongPressGestureRecognizer {
-	UIWebDocumentView* _documentView;
+  UIWebDocumentView* _documentView;
 }
 @property(assign, nonatomic) UIWebDocumentView* documentView;
 -(void)setState:(int)state;

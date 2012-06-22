@@ -11,10 +11,10 @@
 @class NSString;
 
 @interface _DAVTotalChallenge : DAVChallenge {
-	CFHTTPMessageRef badAuthResponse;
-	NSString* username;
-	NSString* password;
-	BOOL supportsDigest;
+  CFHTTPMessageRef badAuthResponse;
+  NSString* username;
+  NSString* password;
+  BOOL supportsDigest;
 }
 -(id)initWithBadAuthResponse:(CFHTTPMessageRef)badAuthResponse username:(id)username password:(id)password supportsDigest:(BOOL)digest;
 // inherited: -(void)dealloc;

@@ -8,7 +8,7 @@
 __attribute__((visibility("hidden")))
 @interface _UIBookViewControllerView : UIView {
 @private
-	UIBookViewController* _bookViewController;
+  UIBookViewController* _bookViewController;
 }
 -(id)initWithBookViewController:(id)bookViewController withView:(id)view;
 // inherited: -(void)touchesEnded:(id)ended withEvent:(id)event;

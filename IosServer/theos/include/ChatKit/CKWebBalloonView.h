@@ -9,8 +9,8 @@
 @class UIWebDocumentView, DOMHTMLElement;
 
 @interface CKWebBalloonView : CKBalloonView {
-	UIWebDocumentView* _webLayer;
-	DOMHTMLElement* _textElement;
+  UIWebDocumentView* _webLayer;
+  DOMHTMLElement* _textElement;
 }
 +(BOOL)shouldHaveAccessoryDiclosure;
 +(CGSize)defaultSize;

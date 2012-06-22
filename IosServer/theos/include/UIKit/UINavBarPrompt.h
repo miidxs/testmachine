@@ -9,8 +9,8 @@
 @class UINavigationBar, NSString;
 
 @interface UINavBarPrompt : UIView {
-	NSString* _prompt;
-	UINavigationBar* _navBar;
+  NSString* _prompt;
+  UINavigationBar* _navBar;
 }
 -(id)initWithPrompt:(id)prompt navBar:(id)bar;
 -(void)clearWeakReference:(id)reference;

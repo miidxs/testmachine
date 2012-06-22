@@ -9,7 +9,7 @@
 @class UIImage;
 
 @interface UITabBarBadgeBackground : UIView {
-	UIImage* _image;
+  UIImage* _image;
 }
 -(id)initWithImage:(id)image;
 -(void)dealloc;

@@ -11,8 +11,8 @@
 
 
 @interface PSTableCell : UIPreferencesTableCell {
-	id _userInfo;
-	BOOL _checked;
+  id _userInfo;
+  BOOL _checked;
 }
 @property(retain) id userInfo;
 +(PSCellType)cellTypeFromString:(id)string;

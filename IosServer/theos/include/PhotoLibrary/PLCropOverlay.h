@@ -12,26 +12,26 @@
 @class TPPushButton, UIProgressHUD, TPBottomDualButtonBar, PLCropOverlayBottomBar, TPCameraPushButton, UIImageView, PLCropLCDLayer, PLCropOverlayCropView, PLToolbar;
 
 @interface PLCropOverlay : UIView {
-	id _delegate;
-	PLCropOverlayCropView* _cropView;
-	PLCropOverlayBottomBar* _bottomBar;
-	UIImageView* _shadowView;
-	UIView* _overlayContainerView;
-	CGRect _cropRect;
-	PLToolbar* _customToolbar;
-	PLCropLCDLayer* _lcd;
-	UIImageView* _lcdImage;
-	TPBottomDualButtonBar* _oldBottomBar;
-	TPPushButton* _cancelButton;
-	TPCameraPushButton* _okButton;
-	UIProgressHUD* _hud;
-	float _statusBarHeight;
-	int _mode;
-	unsigned _cropRectIsVisible : 1;
-	unsigned _offsetStatusBar : 1;
-	unsigned _tookPhoto : 1;
-	unsigned _showsCropRegion : 1;
-	unsigned _controlsAreVisible : 1;
+  id _delegate;
+  PLCropOverlayCropView* _cropView;
+  PLCropOverlayBottomBar* _bottomBar;
+  UIImageView* _shadowView;
+  UIView* _overlayContainerView;
+  CGRect _cropRect;
+  PLToolbar* _customToolbar;
+  PLCropLCDLayer* _lcd;
+  UIImageView* _lcdImage;
+  TPBottomDualButtonBar* _oldBottomBar;
+  TPPushButton* _cancelButton;
+  TPCameraPushButton* _okButton;
+  UIProgressHUD* _hud;
+  float _statusBarHeight;
+  int _mode;
+  unsigned _cropRectIsVisible : 1;
+  unsigned _offsetStatusBar : 1;
+  unsigned _tookPhoto : 1;
+  unsigned _showsCropRegion : 1;
+  unsigned _controlsAreVisible : 1;
 }
 -(void)_updateToolbarItems:(BOOL)items;
 -(id)initWithFrame:(CGRect)frame mode:(int)mode offsettingStatusBar:(BOOL)bar;

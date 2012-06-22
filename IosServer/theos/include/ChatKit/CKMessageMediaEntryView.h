@@ -9,7 +9,7 @@
 @class UIButton;
 
 @interface CKMessageMediaEntryView : CKMessageEntryView {
-	UIButton* _photoButton;
+  UIButton* _photoButton;
 }
 @property(readonly, assign, nonatomic) UIButton* photoButton;
 +(CGRect)sendButtonFrame:(CGRect)frame;

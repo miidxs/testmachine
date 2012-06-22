@@ -11,12 +11,12 @@
 @class NSString;
 
 @interface DAFolder : NSObject {
-	NSString* _folderName;
-	NSString* _folderID;
-	NSString* _parentFolderID;
-	int _folderType;
-	BOOL _isDefault;
-	BOOL _hasRemoteChanges;
+  NSString* _folderName;
+  NSString* _folderID;
+  NSString* _parentFolderID;
+  int _folderType;
+  BOOL _isDefault;
+  BOOL _hasRemoteChanges;
 }
 // inherited: -(void)dealloc;
 // inherited: -(id)description;

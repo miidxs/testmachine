@@ -9,15 +9,15 @@
 @class UIFont, NSString;
 
 @interface InlineCandidateCell : UIView {
-	NSString* _candidate;
-	unsigned _index;
-	UIFont* _font;
-	CGSize _stringImageSize;
-	BOOL _highlighted;
-	id _target;
-	SEL _action;
-	BOOL _lastItem;
-	BOOL _dontDrawRightEdge;
+  NSString* _candidate;
+  unsigned _index;
+  UIFont* _font;
+  CGSize _stringImageSize;
+  BOOL _highlighted;
+  id _target;
+  SEL _action;
+  BOOL _lastItem;
+  BOOL _dontDrawRightEdge;
 }
 -(id)initWithCandidate:(id)candidate andIndex:(unsigned)index withFontSize:(float)fontSize target:(id)target action:(SEL)action;
 -(void)dealloc;

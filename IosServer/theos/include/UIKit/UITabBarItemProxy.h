@@ -8,8 +8,8 @@
 @class UIImageView, UITabBarItem;
 
 @interface UITabBarItemProxy : NSObject {
-	UITabBarItem* _item;
-	UIImageView* _view;
+  UITabBarItem* _item;
+  UIImageView* _view;
 }
 -(id)initWithItem:(id)item inTabBar:(id)tabBar;
 -(void)dealloc;

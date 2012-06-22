@@ -11,18 +11,18 @@
 @class NSString, VMUCallTreeNode, NSArray;
 
 @interface VMUCallTreeNode : NSObject {
-	unsigned flags;
-	NSString* name;
-	unsigned address;
-	NSArray* sortedChildrenWithPseudoNode;
-	unsigned numBytes;
-	unsigned count;
-	union {
-		NSString* thePseudoName;
-		VMUCallTreeNode* theChild;
-		VMUCallTreeNode** theChildren;
-	} un;
-	VMUCallTreeNode* parent;
+  unsigned flags;
+  NSString* name;
+  unsigned address;
+  NSArray* sortedChildrenWithPseudoNode;
+  unsigned numBytes;
+  unsigned count;
+  union {
+    NSString* thePseudoName;
+    VMUCallTreeNode* theChild;
+    VMUCallTreeNode** theChildren;
+  } un;
+  VMUCallTreeNode* parent;
 }
 +(id)makeFakeRootForNode:(id)node;
 +(id)rootForSamples:(id)samples symbolicator:(id)symbolicator;

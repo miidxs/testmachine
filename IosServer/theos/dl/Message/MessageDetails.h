@@ -10,14 +10,14 @@
 @class MessageLibrary;
 
 @interface MessageDetails : NSObject {
-	MessageLibrary* library;
-	unsigned libraryID;
-	unsigned messageFlags;
-	unsigned uid;
-	unsigned encoding;
-	BOOL isInvalid;
-	int mailboxID;
-	unsigned dateReceived;
+  MessageLibrary* library;
+  unsigned libraryID;
+  unsigned messageFlags;
+  unsigned uid;
+  unsigned encoding;
+  BOOL isInvalid;
+  int mailboxID;
+  unsigned dateReceived;
 }
 // inherited: -(id)description;
 -(unsigned long)uid;

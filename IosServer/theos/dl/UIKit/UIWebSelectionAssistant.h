@@ -14,13 +14,13 @@
 <UILongPressGestureRecognizerDelegate>
 #endif
 {
-	UIWebDocumentView* _webView;
-	UIWebSelectionView* _tintView;
+  UIWebDocumentView* _webView;
+  UIWebSelectionView* _tintView;
 #if __IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_3_2
-	UILongPressGestureRecognizer* _longPressGestureRecognizer;
-	UITapAndAHalfRecognizer* _tapAndAHalfGestureRecognizer;
+  UILongPressGestureRecognizer* _longPressGestureRecognizer;
+  UITapAndAHalfRecognizer* _tapAndAHalfGestureRecognizer;
 #endif
-	BOOL _enabled;
+  BOOL _enabled;
 }
 @property(assign, nonatomic) BOOL enabled;
 @property(readonly, assign, nonatomic) CGRect selectionFrame;

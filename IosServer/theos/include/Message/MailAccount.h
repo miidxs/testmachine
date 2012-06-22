@@ -12,23 +12,23 @@
 @class NSString, MFError, MailboxUid, NSMutableDictionary, MessageLibrary, NSURL, DeliveryAccount;
 
 @interface MailAccount : Account {
-	NSString* _path;
-	MailboxUid* _rootMailboxUid;
-	struct {
-		unsigned cacheDirtyCount : 16;
-		unsigned synchronizationThreadIsRunning : 1;
-		unsigned backgroundFetchInProgress : 1;
-		unsigned cacheHasBeenRead : 1;
-		unsigned disableCacheWrite : 1;
-		unsigned _UNUSED_ : 12;
-	} _flags;
-	MailboxUid* _inboxMailboxUid;
-	MailboxUid* _draftsMailboxUid;
-	MailboxUid* _sentMessagesMailboxUid;
-	MailboxUid* _trashMailboxUid;
-	MFError* _lastConnectionError;
-	MessageLibrary* _library;
-	NSMutableDictionary* _currentChokedActions;
+  NSString* _path;
+  MailboxUid* _rootMailboxUid;
+  struct {
+    unsigned cacheDirtyCount : 16;
+    unsigned synchronizationThreadIsRunning : 1;
+    unsigned backgroundFetchInProgress : 1;
+    unsigned cacheHasBeenRead : 1;
+    unsigned disableCacheWrite : 1;
+    unsigned _UNUSED_ : 12;
+  } _flags;
+  MailboxUid* _inboxMailboxUid;
+  MailboxUid* _draftsMailboxUid;
+  MailboxUid* _sentMessagesMailboxUid;
+  MailboxUid* _trashMailboxUid;
+  MFError* _lastConnectionError;
+  MessageLibrary* _library;
+  NSMutableDictionary* _currentChokedActions;
 }
 // inherited: +(void)initialize;
 +(BOOL)mailboxListingNotificationAreEnabled;
@@ -39,7 +39,7 @@
 +(id)existingDAMailAccountForDAAccount:(id)daaccount;
 +(id)_loadAllAccounts;
 +(void)reloadAccounts;
-+(NSArray*)mailAccounts;	// NSArray of Accounts
++(NSArray*)mailAccounts;  // NSArray of Accounts
 +(void)setMailAccounts:(id)accounts;
 +(void)_removeAccountFromSortedPaths:(id)sortedPaths;
 +(NSArray*)activeAccounts;
@@ -61,7 +61,7 @@
 +(id)addressesThatReceivedMessage:(id)message;
 +(MailboxUid*)outboxMailboxUid;
 +(id)outboxMessageStore:(BOOL)store;
-+(NSArray*)allMailboxUids;	// NSArray of MailboxUids
++(NSArray*)allMailboxUids;  // NSArray of MailboxUids
 +(id)accountWithPath:(id)path;
 +(id)newAccountWithPath:(id)path;
 // inherited: +(id)createAccountWithDictionary:(id)dictionary;
@@ -139,7 +139,7 @@
 -(int)fetchSynchronously;
 -(BOOL)isFetching;
 -(void)newMailHasBeenReceived;
--(MailboxUid*)primaryMailboxUid;	// The Inbox
+-(MailboxUid*)primaryMailboxUid;  // The Inbox
 -(MailboxUid*)rootMailboxUid;
 -(BOOL)shouldExpungeMessagesOnDelete;
 -(id)mailboxUidOfType:(int)type createIfNeeded:(BOOL)needed;

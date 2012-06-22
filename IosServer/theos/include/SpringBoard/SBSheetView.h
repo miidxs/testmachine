@@ -10,8 +10,8 @@
 @class SBApplication, SBProxyRemoteView;
 
 @interface SBSheetView : UIView {
-	SBProxyRemoteView* _remoteProxyView;
-	SBApplication* _app;
+  SBProxyRemoteView* _remoteProxyView;
+  SBApplication* _app;
 }
 -(id)initWithRemoteViewIdentifier:(id)remoteViewIdentifier application:(id)application;
 -(id)remoteViewIdentifier;

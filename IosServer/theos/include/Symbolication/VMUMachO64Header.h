@@ -9,7 +9,7 @@
 
 
 @interface VMUMachO64Header : VMUMachOHeader {
-	unsigned _reserved;
+  unsigned _reserved;
 }
 +(id)machO64HeaderWithUniverse:(id)universe memory:(id)memory name:(id)name path:(id)path timestamp:(id)timestamp;
 -(id)initWithUniverse:(id)universe memory:(id)memory name:(id)name path:(id)path timestamp:(id)timestamp;

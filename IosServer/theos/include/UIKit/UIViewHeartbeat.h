@@ -9,9 +9,9 @@
 @class UIView;
 
 @interface UIViewHeartbeat : NSObject {
-	UIView* _view;
-	SEL _selector;
-	GSHeartbeatRef _heartbeat;
+  UIView* _view;
+  SEL _selector;
+  GSHeartbeatRef _heartbeat;
 }
 +(void)startHeartbeatWithView:(id)view selector:(SEL)selector inRunLoopMode:(id)runLoopMode;
 +(void)stopHeartbeatWithView:(id)view selector:(SEL)selector;

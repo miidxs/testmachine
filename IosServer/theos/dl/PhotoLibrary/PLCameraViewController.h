@@ -10,7 +10,7 @@
 @class PLCameraView;
 
 @interface PLCameraViewController : UIViewController {
-	PLCameraView* _cameraView;
+  PLCameraView* _cameraView;
 }
 -(BOOL)_displaysFullScreen;
 // inherited: -(void)dealloc;

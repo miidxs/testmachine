@@ -11,7 +11,7 @@
 @class ASClientAccount;
 
 @interface ASAccountActor : AKActor <ASAccountActorMessages> {
-	ASClientAccount* _account;
+  ASClientAccount* _account;
 }
 // in a protocol: -(id)mailboxes;
 // in a protocol: -(int)mailNumberOfPastDaysToSync;

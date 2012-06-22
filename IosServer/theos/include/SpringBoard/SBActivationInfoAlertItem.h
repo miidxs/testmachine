@@ -10,7 +10,7 @@
 @class UITextView;
 
 @interface SBActivationInfoAlertItem : SBDismissOnlyAlertItem {
-	UITextView* _textView;
+  UITextView* _textView;
 }
 +(id)activeItem;
 // inherited: -(id)init;

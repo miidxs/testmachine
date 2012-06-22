@@ -11,8 +11,8 @@
 @class UITextLabel, UIImageView;
 
 @interface MFComposeFromView : MFComposeHeaderView {
-	UITextLabel* _accountLabel;
-	UIImageView* _background;
+  UITextLabel* _accountLabel;
+  UIImageView* _background;
 }
 // inherited: -(id)initWithFrame:(CGRect)frame;
 // inherited: -(void)dealloc;

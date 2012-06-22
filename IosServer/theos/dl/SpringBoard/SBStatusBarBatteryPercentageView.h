@@ -10,9 +10,9 @@
 
 
 @interface SBStatusBarBatteryPercentageView : SBStatusBarContentView {
-	int _displayedCapacity;
-	BOOL _isOnAC;
-	BOOL _showBatteryPercentageView;
+  int _displayedCapacity;
+  BOOL _isOnAC;
+  BOOL _showBatteryPercentageView;
 }
 // inherited: -(id)init;
 -(void)updateBattery;

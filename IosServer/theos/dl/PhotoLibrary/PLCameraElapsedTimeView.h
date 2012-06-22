@@ -11,14 +11,14 @@
 @class UILabel, NSTimer, NSDate;
 
 @interface PLCameraElapsedTimeView : UIImageView {
-	UILabel* _hours;
-	UILabel* _minutes;
-	UILabel* _seconds;
-	NSTimer* _timer;
-	NSDate* _startTime;
-	BOOL _watchingOrientationChanges;
-	BOOL _animateTimeView;
-	int _orientation;
+  UILabel* _hours;
+  UILabel* _minutes;
+  UILabel* _seconds;
+  NSTimer* _timer;
+  NSDate* _startTime;
+  BOOL _watchingOrientationChanges;
+  BOOL _animateTimeView;
+  int _orientation;
 }
 // inherited: -(id)initWithFrame:(CGRect)frame;
 -(void)_update:(id)update;

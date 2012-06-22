@@ -10,9 +10,9 @@
 @class NSArray, DAVSession, NSString;
 
 @interface CalDAVMultiGetOperation : AYOperation {
-	NSString* _uri;
-	NSArray* _resourceURIs;
-	DAVSession* _session;
+  NSString* _uri;
+  NSArray* _resourceURIs;
+  DAVSession* _session;
 }
 -(id)initWithSession:(id)session URI:(id)uri resources:(id)resources;
 // inherited: -(void)dealloc;

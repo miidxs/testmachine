@@ -11,8 +11,8 @@
 @class UIImage, UIGradient;
 
 @interface MPNowPlayingReflectionView : UIView {
-	UIGradient* _gradient;
-	UIImage* _image;
+  UIGradient* _gradient;
+  UIImage* _image;
 }
 @property(retain, nonatomic) UIGradient* gradient;
 -(void)dealloc;

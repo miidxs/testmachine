@@ -9,7 +9,7 @@
 
 
 @interface LoginAuthenticator : SASLAuthenticator {
-	BOOL _justSentPassword;
+  BOOL _justSentPassword;
 }
 // inherited: -(id)saslName;
 // inherited: -(id)responseForServerData:(id)serverData;

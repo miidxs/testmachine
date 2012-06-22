@@ -9,7 +9,7 @@
 @class DOMNode;
 
 @interface UIThreadSafeNode : NSObject {
-	DOMNode* _node;
+  DOMNode* _node;
 }
 +(id)threadSafeNodeWithNode:(id)node;
 -(id)initWithNode:(id)node;

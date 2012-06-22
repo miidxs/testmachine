@@ -8,7 +8,7 @@
 
 
 @interface UIScrollerIndicator : UIView {
-	int _style;
+  int _style;
 }
 -(id)initInScroller:(id)scroller style:(int)style;
 -(void)drawRect:(CGRect)rect;

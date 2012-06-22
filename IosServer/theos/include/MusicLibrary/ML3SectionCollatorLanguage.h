@@ -12,15 +12,15 @@
 __attribute__((visibility("hidden")))
 @interface ML3SectionCollatorLanguage : NSObject {
 @private
-	NSMutableArray* _sections;
-	unsigned short* _firstCharacterCharacters;
-	unsigned _firstCharacterLength;
-	unsigned short* _endCharacterCharacters;
-	unsigned _endCharacterLength;
-	unsigned _languageIndex;
-	unsigned _startingSectionIndex;
-	BOOL _endCharacterIsInclusive;
-	ML3SectionCollator* _sectionCollator;
+  NSMutableArray* _sections;
+  unsigned short* _firstCharacterCharacters;
+  unsigned _firstCharacterLength;
+  unsigned short* _endCharacterCharacters;
+  unsigned _endCharacterLength;
+  unsigned _languageIndex;
+  unsigned _startingSectionIndex;
+  BOOL _endCharacterIsInclusive;
+  ML3SectionCollator* _sectionCollator;
 }
 @property(readonly, assign, nonatomic) unsigned languageIndex;
 @property(readonly, assign, nonatomic) unsigned startingSectionIndex;

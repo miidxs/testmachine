@@ -10,11 +10,11 @@
 @class NSArray, DAVRequest, NSString, DAVSession;
 
 @interface CalDAVGetPropertyOperation : AYOperation {
-	NSString* _uri;
-	DAVSession* _session;
-	NSArray* _properties;
-	NSString* _value;
-	DAVRequest* _request;
+  NSString* _uri;
+  DAVSession* _session;
+  NSArray* _properties;
+  NSString* _value;
+  DAVRequest* _request;
 }
 -(id)initWithSession:(id)session URI:(id)uri properties:(id)properties value:(id)value;
 -(id)initWithSession:(id)session URI:(id)uri property:(id)property value:(id)value;

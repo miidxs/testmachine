@@ -11,11 +11,11 @@
 @class NSString, SBProxyRemoteView, SBApplication;
 
 @interface SBRemoteViewInfo : NSObject {
-	NSString* _remoteViewIdentifier;
-	SBProxyRemoteView* _proxyRemoteView;
-	unsigned _contextID;
-	SBApplication* _application;
-	CGSize _viewSize;
+  NSString* _remoteViewIdentifier;
+  SBProxyRemoteView* _proxyRemoteView;
+  unsigned _contextID;
+  SBApplication* _application;
+  CGSize _viewSize;
 }
 @property(retain, nonatomic) NSString* remoteViewIdentifier;
 @property(assign, nonatomic) unsigned contextID;

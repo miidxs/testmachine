@@ -11,8 +11,8 @@
 @class UILabel;
 
 @interface PLVideoEditingOverlayView : UIView {
-	UILabel* _titleLabel;
-	UILabel* _bodyLabel;
+  UILabel* _titleLabel;
+  UILabel* _bodyLabel;
 }
 // inherited: -(id)initWithFrame:(CGRect)frame;
 -(void)drawRect:(CGRect)rect;

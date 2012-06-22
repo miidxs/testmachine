@@ -10,8 +10,8 @@
 @class NSMutableArray;
 
 @interface IMAPDownload : NSObject {
-	unsigned _uid;
-	NSMutableArray* _pendingFetchResults;
+  unsigned _uid;
+  NSMutableArray* _pendingFetchResults;
 }
 // inherited: -(void)dealloc;
 -(id)initWithUid:(unsigned long)uid;

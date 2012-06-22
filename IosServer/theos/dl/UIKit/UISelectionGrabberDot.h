@@ -9,7 +9,7 @@
 @class UISelectionGrabber;
 
 @interface UISelectionGrabberDot : UIView {
-	UISelectionGrabber* m_grabber;
+  UISelectionGrabber* m_grabber;
 }
 @property(assign, nonatomic) UISelectionGrabber* grabber;
 -(BOOL)pointInside:(CGPoint)inside withEvent:(id)event;
