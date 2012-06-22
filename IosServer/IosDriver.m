@@ -204,15 +204,12 @@ static IosDriver* _instance = NULL;
 }
 
 - (void)openUrl:(NSString *)url {
-	[[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]];
+	if (![[UIApplication sharedApplication] openURL:[NSURL URLWithString:url]]) {
+		[NSException raise:@"TestMachine" format:@"command failed"];		
+	}
 }
 
 - (void)startRecordingSound:(double)sampleRate {
-	if (_recorder) {
-		[_recorder release];
-		_recorder = NULL;
-	}
-
 	NSString *destinationString = [NSTemporaryDirectory() stringByAppendingPathComponent:@"testmachine.wav"];
 	NSURL *destinationURL = [NSURL fileURLWithPath: destinationString];
 	
@@ -236,7 +233,7 @@ static IosDriver* _instance = NULL;
 	[_recorder release];
 
 	// http://stackoverflow.com/questions/4506106/avaudiorecorder-avaudioplayer-not-always-playing-sound
-	UInt32 sessionCategory = kAudioSessionCategory_MediaPlayback;
+	UInt32 sessionCategory = kAudioSessionCategory_PlayAndRecord;
 	AudioSessionSetProperty(kAudioSessionProperty_AudioCategory, sizeof(sessionCategory), &sessionCategory);
 	AudioSessionSetActive(true);
 	

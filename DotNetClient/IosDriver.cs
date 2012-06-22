@@ -67,7 +67,7 @@ public class IosDriver {
     }
 
     /// <summary>
-    /// Performs a swipe on the element specified by the XPath expression, if the element is present.
+    /// Performs a swipe on the element specified by the XPath expression.
     /// <exception cref="System.Exception">Thrown when the element didn't appear within timeout or the operation failed</exception>
     /// </summary> 
     public void Swipe(String xpath, double x1, double y1, double x2, double y2) {
@@ -89,7 +89,7 @@ public class IosDriver {
     }
 
     /// <summary>
-    /// Sets the switch specified by the XPath expression on or off, if the element is present.
+    /// Sets the switch specified by the XPath expression on or off.
     /// <exception cref="System.Exception">Thrown when the element didn't appear within timeout or the operation failed</exception>
     /// </summary> 
     public void SetSwitch(String xpath, bool on) {
@@ -100,7 +100,7 @@ public class IosDriver {
     }
 
     /// <summary>
-    /// Sets a component of the picker view specified by the XPath expression, if the element is present.
+    /// Sets a component of the picker view specified by the XPath expression.
     /// <exception cref="System.Exception">Thrown when the element didn't appear within timeout or the operation failed</exception>
     /// </summary> 
     public void SelectPickerViewRow(String xpath, int rowIndex, int componentIndex) {
@@ -111,7 +111,7 @@ public class IosDriver {
     }
 
     /// <summary>
-    /// Sets a component of the picker view specified by the XPath expression, if the element is present.
+    /// Scrolls a section of the table view specified by the XPath expression to a row.
     /// <exception cref="System.Exception">Thrown when the element didn't appear within timeout or the operation failed</exception>
     /// </summary> 
     public void ScrollToTableViewRow(String xpath, int sectionIndex, int rowIndex) {

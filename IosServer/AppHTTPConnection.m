@@ -54,7 +54,7 @@
 		NSString *methodName = [NSString stringWithUTF8String:(const char *)methodNameObj->nodesetval->nodeTab[0]->content];
 		[Visualizer showMessage:methodName];
 		
-		xmlXPathObject *paramsObj = xmlXPathEvalExpression((const xmlChar *)"//param/value/*/text()", xpathCtx);  // FIXME: force element if text() is empty
+		xmlXPathObject *paramsObj = xmlXPathEvalExpression((const xmlChar *)"//param/value//text()", xpathCtx);  // FIXME: force element if text() is empty
 		int paramCount = paramsObj->nodesetval ? paramsObj->nodesetval->nodeNr : 0;
 		NSString **params = (NSString **)malloc(paramCount * sizeof(NSString *));
 		for (int i = 0; i < paramCount; i++) {
