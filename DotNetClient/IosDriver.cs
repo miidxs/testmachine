@@ -168,7 +168,7 @@ public class IosDriver {
 
     /// <summary>
     /// Finishes recording sound.
-    /// Return the sound as a raw byte array.
+    /// Returns the sound as a raw byte array.
     /// </summary>
     public void FinishRecordingSound(String soundFilePath) {
         byte[] data = _client.finishRecordingSound();

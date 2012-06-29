@@ -10,7 +10,7 @@
     l.backgroundColor = [UIColor yellowColor];
     l.textAlignment = UITextAlignmentCenter;
     [w addSubview:l];
-    [l performSelector:@selector(removeFromSuperview) withObject:NULL afterDelay:2.0];
+    [l performSelector:@selector(removeFromSuperview) withObject:NULL afterDelay:1.0];
 }
 
 @end

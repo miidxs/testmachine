@@ -4,10 +4,10 @@
 //
 
 #import <AudioToolbox/AudioToolbox.h>
-#import "brominet/UIApplication+XMLDescription.h"
-#import "brominet/XPathQuery.h"
+#import "UIApplication+XMLDescription.h"  // brominet
+#import "XPathQuery.h"  // brominet
 #import "IosDriver.h"
-#import "KIF/Additions/UIView-KIFAdditions.h"
+#import "UIView-KIFAdditions.h"
 #import "HTTPResponse.h"
 #import <notify.h>
 

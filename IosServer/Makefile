@@ -34,7 +34,7 @@ TestMachine_FILES = Tweak.xm \
   Visualizer.m
 
 
-TestMachine_CFLAGS = -I. -Iserver
+TestMachine_CFLAGS = -I. -Iserver -Ibrominet -IKIF/Additions
 
 TestMachine_LDFLAGS = -lxml2
 

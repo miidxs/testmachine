@@ -4,7 +4,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "server/HTTPConnection.h"
+#import "HTTPConnection.h"
 
 @interface AppHTTPConnection : HTTPConnection
 {

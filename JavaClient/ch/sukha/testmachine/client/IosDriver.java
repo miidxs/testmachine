@@ -7,6 +7,12 @@ import java.util.Vector;
 
 import org.apache.xmlrpc.XmlRpcClient;
 
+
+/**
+ * The default, XPath only device driver.
+ * 
+ * The driver code is <a target="_blank" href="https://github.com/sukhach/testmachine/tree/master/IosServer">open source.</a>
+ */
 public class IosDriver {
 
     private final int DEFAULT_PORT = 50000;
@@ -183,7 +189,7 @@ public class IosDriver {
     
     /**
      * Finishes recording sound.
-     * Return the sound as a raw byte array.
+     * Returns the sound as a raw byte array.
      */
     public void finishRecordingSound(String soundFilePath) throws Exception {
         byte[] data = (byte[]) execute("finishRecordingSound");

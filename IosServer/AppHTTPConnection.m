@@ -2,11 +2,11 @@
 #include <libxml/parser.h>
 #include <libxml/xpath.h>
 #include <libxml/xpathInternals.h>
-#import "server/HTTPServer.h"
-#import "server/HTTPResponse.h"
+#import "HTTPServer.h"
+#import "HTTPResponse.h"
 #import "AppHTTPConnection.h"
 #import "IosDriver.h"
-#import "brominet/UIApplication+XMLDescription.h"
+#import "UIApplication+XMLDescription.h"  // brominet
 #import "NSData+Base64.h"
 #import "Visualizer.h"
 
@@ -40,26 +40,42 @@
 - (NSObject<HTTPResponse> *)httpResponseForURI:(NSString *)path {
     NSMutableString *response = [[NSMutableString alloc] init];
     if ([path isEqual:@"/"]) {
-        [Visualizer showMessage:@"(dump screen)"];
-
         [response appendString:@"<?xml version=\"1.0\"?>"];
         [response appendString:[[UIApplication sharedApplication] xmlDescription]];
-    } else if ([path isEqual:@"/rpc"]) {
+
+        [Visualizer showMessage:@"(dump screen)"];  // after processing
+   } else if ([path isEqual:@"/rpc"]) {
         NSLog(@"TESTMACHINE: request: %@", [[[NSString alloc] initWithData:multipartData encoding:NSUTF8StringEncoding] autorelease]);  
         
+        
         xmlDoc *doc = xmlReadMemory(multipartData.bytes, multipartData.length, NULL, "UTF-8", 0);
-        xmlXPathContext *xpathCtx = xmlXPathNewContext(doc);
-        
-        xmlXPathObject *methodNameObj = xmlXPathEvalExpression((const xmlChar *)"//methodName/text()", xpathCtx);
+        xmlXPathContext *outerContext = xmlXPathNewContext(doc);        
+
+        xmlXPathObject *methodNameObj = xmlXPathEvalExpression((const xmlChar *)"//methodName/text()", outerContext);
         NSString *methodName = [NSString stringWithUTF8String:(const char *)methodNameObj->nodesetval->nodeTab[0]->content];
-        [Visualizer showMessage:methodName];
+        xmlXPathFreeObject(methodNameObj);      
         
-        xmlXPathObject *paramsObj = xmlXPathEvalExpression((const xmlChar *)"//param/value//text()", xpathCtx);  // FIXME: force element if text() is empty
+        xmlXPathObject *paramsObj = xmlXPathEvalExpression((const xmlChar *)"//param", outerContext);
         int paramCount = paramsObj->nodesetval ? paramsObj->nodesetval->nodeNr : 0;
         NSString **params = (NSString **)malloc(paramCount * sizeof(NSString *));
         for (int i = 0; i < paramCount; i++) {
-            params[i] = [NSString stringWithUTF8String:(const char *)paramsObj->nodesetval->nodeTab[i]->content];
+            xmlXPathContext *innerContext = xmlXPathNewContext(doc);
+            innerContext->node = paramsObj->nodesetval->nodeTab[i];
+            
+            xmlXPathObject *textObj = xmlXPathEvalExpression((const xmlChar *)".//text()", innerContext);
+            params[i] = @"";
+            if (textObj->nodesetval->nodeNr) {
+                params[i] = [NSString stringWithUTF8String:(const char *)textObj->nodesetval->nodeTab[0]->content];
+            }
+            xmlXPathFreeObject(textObj);      
+
+            xmlXPathFreeContext(innerContext);
         }
+        xmlXPathFreeObject(paramsObj);      
+        
+        xmlXPathFreeContext(outerContext); 
+        xmlFreeDoc(doc);
+        
         
         [response appendString:@"<methodResponse>"];
         @try {
@@ -104,6 +120,8 @@
             [response appendString:@"    </value>"];
             [response appendString:@"  </param>"];
             [response appendFormat:@"</params>"];
+            
+            [Visualizer showMessage:methodName];  // after processing
         } @catch (NSException *e) {
             [response setString:@""];
             [response appendString:@"<methodResponse>"];
@@ -119,10 +137,6 @@
         [response appendString:@"</methodResponse>"];
         
         free(params);
-        xmlXPathFreeObject(paramsObj);      
-        xmlXPathFreeObject(methodNameObj);      
-        xmlXPathFreeContext(xpathCtx); 
-        xmlFreeDoc(doc);
     }
 
     NSLog(@"TESTMACHINE: response: %@", response);
