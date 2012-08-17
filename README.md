@@ -1,4 +1,4 @@
-With this tweak, you can run automated GUI tests on the device. For every app (including the "SpringBoard" app), an HTTP server is started that executes test commands like "tap", "swipe", "setText", etc.
+With this tweak, you can run automated GUI tests on the iPhone. For every app (including the "SpringBoard" app), an HTTP server is started that executes test commands like "tap", "swipe", "setText", etc.
 
 
 ## Setup
