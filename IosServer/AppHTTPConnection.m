@@ -37,9 +37,11 @@
  * HTTPFileResponse is a wrapper for an NSFileHandle object, and is the preferred way to send a file response.
  * HTTPDataResopnse is a wrapper for an NSData object, and may be used to send a custom response.
 **/
-- (NSObject<HTTPResponse> *)httpResponseForURI:(NSString *)path {
+- (NSObject<HTTPResponse> *)httpResponseForURI:(NSString *)path {   
     NSMutableString *response = [[NSMutableString alloc] init];
     if ([path isEqual:@"/"]) {
+        [Visualizer hideMessage];
+        
         [response appendString:@"<?xml version=\"1.0\"?>"];
         [response appendString:[[UIApplication sharedApplication] xmlDescription]];
 
@@ -47,6 +49,7 @@
    } else if ([path isEqual:@"/rpc"]) {
         NSLog(@"TESTMACHINE: request: %@", [[[NSString alloc] initWithData:multipartData encoding:NSUTF8StringEncoding] autorelease]);  
         
+        [Visualizer hideMessage];
         
         xmlDoc *doc = xmlReadMemory(multipartData.bytes, multipartData.length, NULL, "UTF-8", 0);
         xmlXPathContext *outerContext = xmlXPathNewContext(doc);        

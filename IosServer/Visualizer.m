@@ -3,14 +3,36 @@
 
 @implementation Visualizer
 
+UILabel *_label = NULL;
+
+NSTimer *_timer = NULL;
+
 + (void)showMessage:(NSString *)message {
+    [Visualizer hideMessage];
+    
     UIWindow *w = [[UIApplication sharedApplication] keyWindow];
-    UILabel *l = [[[UILabel alloc] initWithFrame:CGRectMake(0, w.bounds.size.height - 40, w.bounds.size.width, 40)] autorelease];
-    l.text = message;
-    l.backgroundColor = [UIColor yellowColor];
-    l.textAlignment = UITextAlignmentCenter;
-    [w addSubview:l];
-    [l performSelector:@selector(removeFromSuperview) withObject:NULL afterDelay:1.0];
+    _label = [[UILabel alloc] initWithFrame:CGRectMake(0, w.bounds.size.height - 40, w.bounds.size.width, 40)];
+    _label.text = message;
+    _label.backgroundColor = [UIColor yellowColor];
+    _label.textAlignment = UITextAlignmentCenter;
+    [w addSubview:_label];
+
+    _timer = [NSTimer scheduledTimerWithTimeInterval:5.0 target:[Visualizer class] selector:@selector(hideMessage) userInfo:NULL repeats:FALSE];
+    [_timer retain]; 
+}
+
++ (void)hideMessage {
+    if (_timer) {
+        [_timer invalidate];
+        [_timer release];
+        _timer = NULL;        
+    }
+
+    if (_label) {    
+        [_label removeFromSuperview];
+        [_label release];
+        _label = NULL;
+    }
 }
 
 @end

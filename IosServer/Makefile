@@ -3,8 +3,8 @@ GO_EASY_ON_ME = 1
 
 include theos/makefiles/common.mk
 
-TWEAK_NAME = TestMachine
-TestMachine_FILES = Tweak.xm \
+TWEAK_NAME = testmachine
+testmachine_FILES = Tweak.xm \
   server/HTTPServer.m \
   server/AsyncSocket.m \
   server/HTTPConnection.m \
@@ -34,11 +34,11 @@ TestMachine_FILES = Tweak.xm \
   Visualizer.m
 
 
-TestMachine_CFLAGS = -I. -Iserver -Ibrominet -IKIF/Additions
+testmachine_CFLAGS = -I. -Iserver -Ibrominet -IKIF/Additions
 
-TestMachine_LDFLAGS = -lxml2
+testmachine_LDFLAGS = -lxml2
 
-TestMachine_FRAMEWORKS = UIKit CFNetwork AVFoundation AudioToolbox MediaPlayer
+testmachine_FRAMEWORKS = UIKit CFNetwork AVFoundation AudioToolbox MediaPlayer
 
 include $(THEOS_MAKE_PATH)/tweak.mk
 

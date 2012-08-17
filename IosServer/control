@@ -1,9 +1,10 @@
-Package: ch.sukha.TestMachine
-Name: TestMachine
+Package: ch.sukha.testmachine
+Name: TestMachine iPhone driver
 Depends: mobilesubstrate
-Version: 0.0.1
+Version: 1.0.0
 Architecture: iphoneos-arm
-Description: An awesome MobileSubstrate tweak!
-Maintainer: Peter Farkas
-Author: Peter Farkas
+Description: A tweak for driving the iPhone through XML-RPC.
+Homepage: https://github.com/sukhach/testmachine
+Maintainer: Peter Farkas <peter.farkas@testmachine.ch>
+Author: Peter Farkas <peter.farkas@testmachine.ch>
 Section: Tweaks

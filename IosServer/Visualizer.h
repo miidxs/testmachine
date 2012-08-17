@@ -2,5 +2,6 @@
 }
 
 + (void)showMessage:(NSString *)message;
++ (void)hideMessage;
 
 @end

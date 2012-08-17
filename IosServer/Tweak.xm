@@ -1,5 +1,6 @@
 #import "server/HTTPServer.h"
 #import "TestMachine.h"
+#import "Visualizer.h"
 #import <MediaPlayer/MediaPlayer.h>
 
 
@@ -16,7 +17,8 @@
 	// otherwise, the screen will be locked, even if "Auto-Lock" is set to "never"
 	[[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"prefs:"]];
 
-	
+
+	/*	
 	// http://stackoverflow.com/questions/4141403/reroute-iphone-audio-through-speaker-headphone-or-bluetooth
 	
 	// Display the audio route button (Bluetooth / Speaker / iPhone)
@@ -30,7 +32,7 @@
 	
 	[[[UIApplication sharedApplication] keyWindow] addSubview:mpVolumeViewParentView];
 	[mpVolumeViewParentView release];	
-
+	*/
 }
 
 %end
@@ -56,12 +58,13 @@ static BOOL _wasActive = FALSE;
 			return orig;  // handled separately
 		}	
 		if (active) {
-			NSLog(@"TESTMACHINE: %@ became active", className);
+            int port = 50000 + className.hash % 10000;
 			
-			int port = 50000 + className.hash % 10000;
+			NSLog(@"TESTMACHINE: %@ became active", className);
 			NSLog(@"TESTMACHINE: assigning port number %d", port);
+            [Visualizer showMessage:[NSString stringWithFormat:@"port %d", port]];
 
-			[TestMachine start:port];
+			[TestMachine start:port];			
 		} else {
 			NSLog(@"TESTMACHINE: %@ became not active", className);
 
