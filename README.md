@@ -7,7 +7,7 @@ With this tweak, you can run automated GUI tests on the iPhone. For every app (i
 
 * Through Cydia, install "TestMachine iPhone driver"
 
-* Point a browser (Firefox or Chrome) on the host machine to the "\_\_DEVICE\_IP\_\_:59247". You should see an XML representation of the iPhone GUI.
+* Point a browser (Firefox or Chrome) on the host machine to "\_\_DEVICE\_IP\_\_:59247". You should see an XML representation of the iPhone GUI.
 
 
 ## Port numbers
