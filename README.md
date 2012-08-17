@@ -7,10 +7,12 @@
 * Point browser (Firefox or Chrome) on the host machine to the "\_\_DEVICE\_IP\_\_:59247". You should see an XML representation of the iPhone GUI.
 
 
-## Using the tweak
+## Port numbers
 
 * For every app, a HTTP server is started that executes the test commands.
 
-* The server for the "SpringBoard" app is always running. It listens on port 50000.
+* For the "SpringBoard" app the port number is 50000. The server is always running.
 
+* For the other apps, the port number is generated. It's guaranteed to be the same for every run of the app.
+The server is started when the app becomes active and stopped when it becomes inactive.
 
