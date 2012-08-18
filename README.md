@@ -14,7 +14,7 @@ With this tweak, you can run automated GUI tests on the iPhone. For every app (i
 
 * For the "SpringBoard" app the port number is 50000. The server is always running.
 
-* For the other apps, the port number is arbitrary but generated to be the same for every run. The server is started when the app becomes active and stoppen when it becomes inactive.
+* For the other apps, the port number is arbitrary but guaranteed to be the same for every run. The server is started when the app becomes active and stopped when it becomes inactive.
 
 ## Command set
 
