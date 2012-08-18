@@ -3,9 +3,9 @@ With this tweak, you can run automated GUI tests on the iPhone. For every app (i
 
 ## Setup
 
-* Jailbreak the iPhone
+* Jailbreak the iPhone.
 
-* Through Cydia, install "TestMachine iPhone driver"
+* Through Cydia, install "TestMachine iPhone driver".
 
 * Point a browser (Firefox or Chrome) on the host machine to "\_\_DEVICE\_IP\_\_:59247". You should see an XML representation of the GUI.
 
